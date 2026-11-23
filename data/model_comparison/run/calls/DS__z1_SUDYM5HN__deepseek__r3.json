@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789655762-SHmfuOWsghBvG1CQCJPY",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00411456,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15682,
+    "completion_tokens": 98,
+    "total_tokens": 15780,
+    "cost": 0.00411456,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00411456,
+      "upstream_inference_prompt_cost": 0.00407732,
+      "upstream_inference_completions_cost": 3.724e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: The paper implements a scenario-based land-use change assessment framework for China, explicitly modeling national-scale land use projections under eight different SSP/RCP scenarios from 2010 to 2100. It includes quantitative accuracy metrics (kappa coefficient, figure of merit), spatial downscaling to 1km resolution, and produces mapped LULC projections for comparison. The primary research focus is on LULC prediction and its response to global socioeconomic and emission scenarios.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:35:57.903426+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.242,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789655762-SHmfuOWsghBvG1CQCJPY\",\"object\":\"chat.completion\",\"created\":1789655762,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: The paper implements a scenario-based land-use change assessment framework for China, explicitly modeling national-scale land use projections under eight different SSP/RCP scenarios from 2010 to 2100. It includes quantitative accuracy metrics (kappa coefficient, figure of merit), spatial downscaling to 1km resolution, and produces mapped LULC projections for comparison. The primary research focus is on LULC prediction and its response to global socioeconomic and emission scenarios.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15682,\"completion_tokens\":98,\"total_tokens\":15780,\"cost\":0.00411456,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00411456,\"upstream_inference_prompt_cost\":0.00407732,\"upstream_inference_completions_cost\":0.00003724},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655762-SHmfuOWsghBvG1CQCJPY",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 15682,
+        "completion_tokens": 98,
+        "total_tokens": 15780,
+        "cost": 0.00411456,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00411456,
+          "upstream_inference_prompt_cost": 0.00407732,
+          "upstream_inference_completions_cost": 3.724e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.242,
+  "call_id": "DS__z1_SUDYM5HN__deepseek__r3",
+  "fingerprint": "151f0047b61fb51abf8f4b88682e683ac58a1bd6b4306bcfbac251eddaf2ac0c",
+  "paper_id": "z1_SUDYM5HN",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:36:02.145942+00:00",
+  "input_sha256": "cbde37da610320d2267d2dcdc64d7e2e377cd0ec1429938279c5cce072510c9b",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

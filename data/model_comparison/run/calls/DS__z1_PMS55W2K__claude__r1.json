@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789653022-ZpXMotY89hJyH4u26SNJ",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.016446,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 11181,
+    "completion_tokens": 1053,
+    "total_tokens": 12234,
+    "cost": 0.016446,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.016446,
+      "upstream_inference_prompt_cost": 0.011181,
+      "upstream_inference_completions_cost": 0.005265
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Fire Impact in Brazilian Biomes\n\n## Initial Assessment\n\n**Is this a review article?**\nNO - This is an original research paper (explicitly stated: \"ORIGINAL RESEARCH published: 28 March 2022\"). It presents primary empirical analysis using remote sensing data and spatial modeling.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA (Non-Review Paper):\n\n1. **Explicit national-scale spatial implementation (entire country)?**\n   - ✓ YES - Study covers all six Brazilian biomes (Amazon, Cerrado, Pantanal, Atlantic Forest, Caatinga, Pampa) across the entire nation\n\n2. **Primary focus = LULC prediction/simulation (central research question)?**\n   - ✗ NO - Primary focus is **fire impact determinants and fire dynamics**, not LULC prediction\n   - LULC change is used as an **explanatory variable/input** to explain fire patterns, not the primary prediction target\n   - Central research question: \"What are the determinants of fire impact in Brazilian biomes?\"\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ✓ YES - Multiple scenarios tested: RCP4.5-MIROC5, RCP8.5-MIROC5 with Strong Environmental Governance (SEG) and Weak Environmental Governance (WEG)\n   - Quantitative projections to 2050 provided\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ✓ YES - Spatial autoregressive (SAR) models, Random Forest models with R² values reported (Pantanal R²=0.86, Cerrado R²=0.79, Amazon R²=0.66)\n\n5. **Outputs include mapped LULC projections?**\n   - ✗ PARTIAL - Outputs include **fire impact projections** (Figure 3), not LULC projections\n   - LULC scenarios (from Otimizagro model) are used as inputs, not generated as primary outputs\n\n### SPECIFIC EXCLUSION CRITERIA:\n\n- ✓ Global-scale analysis without national disaggregation? NO\n- ✓ Local/regional/global scale focus? NO - national scale\n- ✓ No LULC prediction component? **YES - LULC prediction is NOT a component; LULC change is an input variable**\n- ✓ Species-specific/ecological focus unrelated to LULC? Partially relevant (vegetation stress measured via NDVI), but fire is the primary focus\n- ✓ Economic/urban models lacking spatially explicit LULC? NO\n- ✓ Biomass/bioenergy/carbon studies without LULC change analysis? NO\n- ✓ Methodological papers without application? NO - applied study\n- ✓ Purely qualitative/historical only? NO - includes future projections\n- ✓ Remote sensing technical studies without predictive modeling? NO - includes predictive modeling\n- ✓ Single-scenario projections? NO - multiple scenarios\n\n---\n\n## Primary Focus Determination\n\n**What is being predicted?**\n- Fire impact (characterized by intensity, recurrence, burned area size, fire seasonality)\n- NOT land use/land cover change itself\n\n**Role of LULC in this paper:**\n- LULC change is an **independent variable/driver** explaining fire patterns\n- LULC scenarios from external source (Otimizagro model) are used as inputs to fire impact models\n- The paper uses LULC predictions made by others; it does not generate LULC predictions\n\n**Classification:** POSSIBLE (not OK)\n\n---\n\n## Final Categorization\n\n**Final categorization: EXCLUDED**\n\n**Justification:** \nThis paper fails the primary inclusion criterion for LULC prediction research. While it implements national-scale spatial modeling with multiple future scenarios and quantitative metrics, its **primary research objective is fire impact modeling and determining fire drivers, not LULC prediction**. Land-use/land-cover change is used as an explanatory input variable to understand fire dynamics, not as the prediction target. The paper uses LULC projections from an external model (Otimizagro) as inputs rather than generating its own LULC predictions. The outputs are fire impact maps (2050 projections), not LULC change maps. This represents a **POSSIBLE** case where LULC prediction is instrumental but not the primary focus of the research.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:50:17.461708+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 10.95,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653022-ZpXMotY89hJyH4u26SNJ\",\"object\":\"chat.completion\",\"created\":1789653022,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Fire Impact in Brazilian Biomes\\n\\n## Initial Assessment\\n\\n**Is this a review article?**\\nNO - This is an original research paper (explicitly stated: \\\"ORIGINAL RESEARCH published: 28 March 2022\\\"). It presents primary empirical analysis using remote sensing data and spatial modeling.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA (Non-Review Paper):\\n\\n1. **Explicit national-scale spatial implementation (entire country)?**\\n   - ✓ YES - Study covers all six Brazilian biomes (Amazon, Cerrado, Pantanal, Atlantic Forest, Caatinga, Pampa) across the entire nation\\n\\n2. **Primary focus = LULC prediction/simulation (central research question)?**\\n   - ✗ NO - Primary focus is **fire impact determinants and fire dynamics**, not LULC prediction\\n   - LULC change is used as an **explanatory variable/input** to explain fire patterns, not the primary prediction target\\n   - Central research question: \\\"What are the determinants of fire impact in Brazilian biomes?\\\"\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ✓ YES - Multiple scenarios tested: RCP4.5-MIROC5, RCP8.5-MIROC5 with Strong Environmental Governance (SEG) and Weak Environmental Governance (WEG)\\n   - Quantitative projections to 2050 provided\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ✓ YES - Spatial autoregressive (SAR) models, Random Forest models with R² values reported (Pantanal R²=0.86, Cerrado R²=0.79, Amazon R²=0.66)\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ✗ PARTIAL - Outputs include **fire impact projections** (Figure 3), not LULC projections\\n   - LULC scenarios (from Otimizagro model) are used as inputs, not generated as primary outputs\\n\\n### SPECIFIC EXCLUSION CRITERIA:\\n\\n- ✓ Global-scale analysis without national disaggregation? NO\\n- ✓ Local/regional/global scale focus? NO - national scale\\n- ✓ No LULC prediction component? **YES - LULC prediction is NOT a component; LULC change is an input variable**\\n- ✓ Species-specific/ecological focus unrelated to LULC? Partially relevant (vegetation stress measured via NDVI), but fire is the primary focus\\n- ✓ Economic/urban models lacking spatially explicit LULC? NO\\n- ✓ Biomass/bioenergy/carbon studies without LULC change analysis? NO\\n- ✓ Methodological papers without application? NO - applied study\\n- ✓ Purely qualitative/historical only? NO - includes future projections\\n- ✓ Remote sensing technical studies without predictive modeling? NO - includes predictive modeling\\n- ✓ Single-scenario projections? NO - multiple scenarios\\n\\n---\\n\\n## Primary Focus Determination\\n\\n**What is being predicted?**\\n- Fire impact (characterized by intensity, recurrence, burned area size, fire seasonality)\\n- NOT land use/land cover change itself\\n\\n**Role of LULC in this paper:**\\n- LULC change is an **independent variable/driver** explaining fire patterns\\n- LULC scenarios from external source (Otimizagro model) are used as inputs to fire impact models\\n- The paper uses LULC predictions made by others; it does not generate LULC predictions\\n\\n**Classification:** POSSIBLE (not OK)\\n\\n---\\n\\n## Final Categorization\\n\\n**Final categorization: EXCLUDED**\\n\\n**Justification:** \\nThis paper fails the primary inclusion criterion for LULC prediction research. While it implements national-scale spatial modeling with multiple future scenarios and quantitative metrics, its **primary research objective is fire impact modeling and determining fire drivers, not LULC prediction**. Land-use/land-cover change is used as an explanatory input variable to understand fire dynamics, not as the prediction target. The paper uses LULC projections from an external model (Otimizagro) as inputs rather than generating its own LULC predictions. The outputs are fire impact maps (2050 projections), not LULC change maps. This represents a **POSSIBLE** case where LULC prediction is instrumental but not the primary focus of the research.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":11181,\"completion_tokens\":1053,\"total_tokens\":12234,\"cost\":0.016446,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.016446,\"upstream_inference_prompt_cost\":0.011181,\"upstream_inference_completions_cost\":0.005265},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653022-ZpXMotY89hJyH4u26SNJ",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 11181,
+        "completion_tokens": 1053,
+        "total_tokens": 12234,
+        "cost": 0.016446,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.016446,
+          "upstream_inference_prompt_cost": 0.011181,
+          "upstream_inference_completions_cost": 0.005265
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 10.951,
+  "call_id": "DS__z1_PMS55W2K__claude__r1",
+  "fingerprint": "4c7040f8094382298dfb5c31cc253b7b4a4e46379c5e6eb1fa9cd04c45f7b0f4",
+  "paper_id": "z1_PMS55W2K",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:50:28.412314+00:00",
+  "input_sha256": "cb2f38ef52d02afca5154d0bc2d65e9c5ad164057441ec1f3851c9dfd44c2f17",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

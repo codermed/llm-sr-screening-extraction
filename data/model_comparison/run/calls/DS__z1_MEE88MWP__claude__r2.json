@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789654504-ba8EgcKcrq239bjfmExC",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.025666,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 17366,
+    "completion_tokens": 1660,
+    "total_tokens": 19026,
+    "cost": 0.025666,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.025666,
+      "upstream_inference_prompt_cost": 0.017366,
+      "upstream_inference_completions_cost": 0.0083
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: LULC Simulation Study for Taiwan\n\n## Step 1: Determine if Review Article\n**Result: NOT A REVIEW** - This is a primary research paper presenting original empirical analysis and modeling of LULC changes in Taiwan from 1990-2020 with future projections to 2030 and 2050.\n\n---\n\n## Step 2: Evaluate Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA ASSESSMENT:\n\n**1. Explicit national-scale spatial implementation (entire country)**\n- ✅ **PASS**: Study explicitly covers Taiwan island (35,808 sq.km) as stated: \"the study of LULC simulation...for complete Taiwan island\" and \"no studies, to date, have tracked the past dynamics of LULC and predicted the future LULC for complete Taiwan island\"\n- Methodology section confirms: \"the main island, is 144 km wide and 394 km long having the area of 35,808 sq.km\"\n\n**2. Primary focus = LULC prediction/simulation (central research question)**\n- ✅ **PASS**: Central research objective explicitly stated in abstract: \"computed the LULC simulation for 2030 and 2050\"\n- Title emphasizes: \"Decadal analysis and simulation of land use and land cover changes\"\n- Entire methodology structured around LULC classification (1990-2020) and simulation (2030-2050)\n\n**3. Implementation of ≥2 future scenarios with quantitative comparison**\n- ✅ **PASS**: Four distinct scenarios implemented:\n  - 2-variables scenario\n  - 3-variables scenario\n  - 5-variables scenario\n  - 6-variables scenario\n- Quantitative comparison provided in Results (Section 4.4, Table 3, Figure 8, Figure 9)\n- Example: \"for both 2030 and 2050, the 3 variables and 6 variables provide almost exact the same results\"\n\n**4. Spatial modeling with quantitative accuracy metrics**\n- ✅ **PASS**: Multiple accuracy metrics reported:\n  - Overall Accuracy (Oa) = 0.87 for 2020 validation\n  - Kappa coefficient (K) = 0.74 for 2020 validation\n  - Producer's Accuracy (Pa) and User's Accuracy (Ua) by class\n  - RMSE calculations\n  - Confusion matrix analysis with 655 ground control points (GCPs)\n  - Class-specific accuracy tables in supplementary materials\n\n**5. Outputs include mapped LULC projections**\n- ✅ **PASS**: Multiple mapped outputs provided:\n  - Figure 5: LULC maps for 1990, 2000, 2010, 2020\n  - Figure 7: Simulation maps for 2030 and 2050 under all four scenarios\n  - Figure 9: Change analysis visualization 1990-2050\n\n---\n\n### EXCLUSION CRITERIA ASSESSMENT:\n\n**Global-scale analysis without national-level disaggregation**\n- ✅ **PASS**: Study is explicitly national-scale (Taiwan only), not global\n\n**Local/regional/global/transboundary scale focus**\n- ✅ **PASS**: National-scale focus, not local/regional/transboundary\n\n**No LULC prediction component**\n- ✅ **PASS**: LULC prediction is the primary component\n\n**Species-specific/ecological focus unrelated to LULC**\n- ✅ **PASS**: Study focuses on LULC classes (built-up, forest, cultivated, water, barren, uncultivated), not species-specific ecology\n\n**Economic/urban models lacking spatially explicit LULC outputs**\n- ✅ **PASS**: Produces spatially explicit LULC maps with quantified areal changes\n\n**Biomass/bioenergy/carbon studies without LULC change analysis**\n- ✅ **PASS**: While carbon emissions are mentioned in introduction, LULC change analysis is the primary focus with detailed results\n\n**Methodological papers without application to national-scale prediction**\n- ✅ **PASS**: Applied methodology to Taiwan national-scale with full results\n\n**Purely qualitative/historical analysis only**\n- ✅ **PASS**: Includes quantitative historical analysis (1990-2020) AND future projections (2030, 2050)\n\n**Remote sensing technical studies without predictive modeling**\n- ✅ **PASS**: Remote sensing used as tool within predictive modeling framework (SVM-Markov Chain)\n\n**Single-scenario \"business-as-usual\" projections**\n- ✅ **PASS**: Four distinct scenarios implemented, not single BAU scenario\n\n---\n\n## Step 3: Determine Primary Focus\n\n**Primary objective**: LULC prediction and simulation for Taiwan 1990-2050\n- Central research question: How will LULC change in Taiwan through 2030 and 2050 under different environmental variable scenarios?\n- **Classification: PRIMARY FOCUS = LULC PREDICTION**\n\n---\n\n## Step 4: Verify Full Text Details\n\n**Scale verification**: \n- Confirmed national-scale throughout methodology and results\n- All 35,808 sq.km of Taiwan island covered\n- No local/regional subsetting\n\n**Quantitative metrics verification**:\n- Accuracy metrics explicitly reported (Oa=0.87, K=0.74 for 2020)\n- Change rates quantified in sq.km and percentages\n- Example: \"Built-up area increased to 140% in 2020 from 1990\"\n\n**Spatial explicitness**:\n- SVM classification with 6 spatial variables (aspect, elevation, hillshade, distance to river, distance to road, slope)\n- Markov Chain transition probability matrices\n- Grid-based 30×30m spatial resolution\n- Mapped outputs for all time periods\n\n---\n\n# FINAL CATEGORIZATION\n\n**Final categorization: OK**\n\n**Justification**: \nThis paper meets ALL core inclusion criteria for a research-focused LULC prediction study at national scale:\n1. ✅ Explicit national-scale implementation (complete Taiwan island, 35,808 sq.km)\n2. ✅ Primary focus on LULC prediction/simulation (central research objective)\n3. ✅ Four distinct future scenarios (2-var, 3-var, 5-var, 6-var) with quantitative comparison\n4. ✅ Spatial modeling with reported accuracy metrics (Oa=0.87, K=0.74, confusion matrices, 655 GCPs)\n5. ✅ Mapped LULC projections for 2030 and 2050\n\nThe paper passes ALL exclusion criteria checks. It represents a comprehensive, quantitative, spatially-explicit national-scale LULC prediction study using integrated SVM-Markov Chain methodology, with rigorous accuracy assessment and scenario-based comparison. This is the first such study conducted for the entire Taiwan island, as authors explicitly state.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:14:59.887375+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 15.53,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789654504-ba8EgcKcrq239bjfmExC\",\"object\":\"chat.completion\",\"created\":1789654504,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: LULC Simulation Study for Taiwan\\n\\n## Step 1: Determine if Review Article\\n**Result: NOT A REVIEW** - This is a primary research paper presenting original empirical analysis and modeling of LULC changes in Taiwan from 1990-2020 with future projections to 2030 and 2050.\\n\\n---\\n\\n## Step 2: Evaluate Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA ASSESSMENT:\\n\\n**1. Explicit national-scale spatial implementation (entire country)**\\n- ✅ **PASS**: Study explicitly covers Taiwan island (35,808 sq.km) as stated: \\\"the study of LULC simulation...for complete Taiwan island\\\" and \\\"no studies, to date, have tracked the past dynamics of LULC and predicted the future LULC for complete Taiwan island\\\"\\n- Methodology section confirms: \\\"the main island, is 144 km wide and 394 km long having the area of 35,808 sq.km\\\"\\n\\n**2. Primary focus = LULC prediction/simulation (central research question)**\\n- ✅ **PASS**: Central research objective explicitly stated in abstract: \\\"computed the LULC simulation for 2030 and 2050\\\"\\n- Title emphasizes: \\\"Decadal analysis and simulation of land use and land cover changes\\\"\\n- Entire methodology structured around LULC classification (1990-2020) and simulation (2030-2050)\\n\\n**3. Implementation of ≥2 future scenarios with quantitative comparison**\\n- ✅ **PASS**: Four distinct scenarios implemented:\\n  - 2-variables scenario\\n  - 3-variables scenario\\n  - 5-variables scenario\\n  - 6-variables scenario\\n- Quantitative comparison provided in Results (Section 4.4, Table 3, Figure 8, Figure 9)\\n- Example: \\\"for both 2030 and 2050, the 3 variables and 6 variables provide almost exact the same results\\\"\\n\\n**4. Spatial modeling with quantitative accuracy metrics**\\n- ✅ **PASS**: Multiple accuracy metrics reported:\\n  - Overall Accuracy (Oa) = 0.87 for 2020 validation\\n  - Kappa coefficient (K) = 0.74 for 2020 validation\\n  - Producer's Accuracy (Pa) and User's Accuracy (Ua) by class\\n  - RMSE calculations\\n  - Confusion matrix analysis with 655 ground control points (GCPs)\\n  - Class-specific accuracy tables in supplementary materials\\n\\n**5. Outputs include mapped LULC projections**\\n- ✅ **PASS**: Multiple mapped outputs provided:\\n  - Figure 5: LULC maps for 1990, 2000, 2010, 2020\\n  - Figure 7: Simulation maps for 2030 and 2050 under all four scenarios\\n  - Figure 9: Change analysis visualization 1990-2050\\n\\n---\\n\\n### EXCLUSION CRITERIA ASSESSMENT:\\n\\n**Global-scale analysis without national-level disaggregation**\\n- ✅ **PASS**: Study is explicitly national-scale (Taiwan only), not global\\n\\n**Local/regional/global/transboundary scale focus**\\n- ✅ **PASS**: National-scale focus, not local/regional/transboundary\\n\\n**No LULC prediction component**\\n- ✅ **PASS**: LULC prediction is the primary component\\n\\n**Species-specific/ecological focus unrelated to LULC**\\n- ✅ **PASS**: Study focuses on LULC classes (built-up, forest, cultivated, water, barren, uncultivated), not species-specific ecology\\n\\n**Economic/urban models lacking spatially explicit LULC outputs**\\n- ✅ **PASS**: Produces spatially explicit LULC maps with quantified areal changes\\n\\n**Biomass/bioenergy/carbon studies without LULC change analysis**\\n- ✅ **PASS**: While carbon emissions are mentioned in introduction, LULC change analysis is the primary focus with detailed results\\n\\n**Methodological papers without application to national-scale prediction**\\n- ✅ **PASS**: Applied methodology to Taiwan national-scale with full results\\n\\n**Purely qualitative/historical analysis only**\\n- ✅ **PASS**: Includes quantitative historical analysis (1990-2020) AND future projections (2030, 2050)\\n\\n**Remote sensing technical studies without predictive modeling**\\n- ✅ **PASS**: Remote sensing used as tool within predictive modeling framework (SVM-Markov Chain)\\n\\n**Single-scenario \\\"business-as-usual\\\" projections**\\n- ✅ **PASS**: Four distinct scenarios implemented, not single BAU scenario\\n\\n---\\n\\n## Step 3: Determine Primary Focus\\n\\n**Primary objective**: LULC prediction and simulation for Taiwan 1990-2050\\n- Central research question: How will LULC change in Taiwan through 2030 and 2050 under different environmental variable scenarios?\\n- **Classification: PRIMARY FOCUS = LULC PREDICTION**\\n\\n---\\n\\n## Step 4: Verify Full Text Details\\n\\n**Scale verification**: \\n- Confirmed national-scale throughout methodology and results\\n- All 35,808 sq.km of Taiwan island covered\\n- No local/regional subsetting\\n\\n**Quantitative metrics verification**:\\n- Accuracy metrics explicitly reported (Oa=0.87, K=0.74 for 2020)\\n- Change rates quantified in sq.km and percentages\\n- Example: \\\"Built-up area increased to 140% in 2020 from 1990\\\"\\n\\n**Spatial explicitness**:\\n- SVM classification with 6 spatial variables (aspect, elevation, hillshade, distance to river, distance to road, slope)\\n- Markov Chain transition probability matrices\\n- Grid-based 30×30m spatial resolution\\n- Mapped outputs for all time periods\\n\\n---\\n\\n# FINAL CATEGORIZATION\\n\\n**Final categorization: OK**\\n\\n**Justification**: \\nThis paper meets ALL core inclusion criteria for a research-focused LULC prediction study at national scale:\\n1. ✅ Explicit national-scale implementation (complete Taiwan island, 35,808 sq.km)\\n2. ✅ Primary focus on LULC prediction/simulation (central research objective)\\n3. ✅ Four distinct future scenarios (2-var, 3-var, 5-var, 6-var) with quantitative comparison\\n4. ✅ Spatial modeling with reported accuracy metrics (Oa=0.87, K=0.74, confusion matrices, 655 GCPs)\\n5. ✅ Mapped LULC projections for 2030 and 2050\\n\\nThe paper passes ALL exclusion criteria checks. It represents a comprehensive, quantitative, spatially-explicit national-scale LULC prediction study using integrated SVM-Markov Chain methodology, with rigorous accuracy assessment and scenario-based comparison. This is the first such study conducted for the entire Taiwan island, as authors explicitly state.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":17366,\"completion_tokens\":1660,\"total_tokens\":19026,\"cost\":0.025666,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.025666,\"upstream_inference_prompt_cost\":0.017366,\"upstream_inference_completions_cost\":0.0083},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654504-ba8EgcKcrq239bjfmExC",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 17366,
+        "completion_tokens": 1660,
+        "total_tokens": 19026,
+        "cost": 0.025666,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.025666,
+          "upstream_inference_prompt_cost": 0.017366,
+          "upstream_inference_completions_cost": 0.0083
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 15.53,
+  "call_id": "DS__z1_MEE88MWP__claude__r2",
+  "fingerprint": "2bb11efab7cd5327917f243fa2fe9abc0b82719a3ba5805f2fc67ccd570d5ac3",
+  "paper_id": "z1_MEE88MWP",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:15:15.417306+00:00",
+  "input_sha256": "7ba93337d4ee8fc18059d82d643e2f5bf44b90fe58928ccef8602d55c1d6bf96",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

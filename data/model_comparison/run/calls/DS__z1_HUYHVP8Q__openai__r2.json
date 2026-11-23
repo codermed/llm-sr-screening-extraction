@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653868-IBn5GqBsfgJG7acZxJEd",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.001564,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12558,
+    "completion_tokens": 166,
+    "total_tokens": 12724,
+    "cost": 0.001564,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 12416,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001564,
+      "upstream_inference_prompt_cost": 0.0012984,
+      "upstream_inference_completions_cost": 0.0002656
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This paper is a non-review original research article focusing on the impacts of healthier diets and agricultural productivity on sustainability and climate goals in the U.S., with an emphasis on greenhouse gas emissions and land use changes. However, it does not present explicit spatially explicit national-scale land use land cover (LULC) predictions or mapped LULC projections. The land use modeling is done through sectoral accounting and partial equilibrium models without spatially explicit LULC outputs or quantitative accuracy metrics for spatial predictions. The primary focus is on scenario analysis of emissions and land use area changes at aggregate scales rather than spatially explicit LULC simulation or mapping. Therefore, it fails the core inclusion criteria requiring spatial modeling with mapped LULC projections and quantitative accuracy metrics at the national scale.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:04:23.494469+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 5.168,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789653868-IBn5GqBsfgJG7acZxJEd\",\"object\":\"chat.completion\",\"created\":1789653868,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This paper is a non-review original research article focusing on the impacts of healthier diets and agricultural productivity on sustainability and climate goals in the U.S., with an emphasis on greenhouse gas emissions and land use changes. However, it does not present explicit spatially explicit national-scale land use land cover (LULC) predictions or mapped LULC projections. The land use modeling is done through sectoral accounting and partial equilibrium models without spatially explicit LULC outputs or quantitative accuracy metrics for spatial predictions. The primary focus is on scenario analysis of emissions and land use area changes at aggregate scales rather than spatially explicit LULC simulation or mapping. Therefore, it fails the core inclusion criteria requiring spatial modeling with mapped LULC projections and quantitative accuracy metrics at the national scale.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12558,\"completion_tokens\":166,\"total_tokens\":12724,\"cost\":0.001564,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":12416,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.001564,\"upstream_inference_prompt_cost\":0.0012984,\"upstream_inference_completions_cost\":0.0002656},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653868-IBn5GqBsfgJG7acZxJEd",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 12558,
+        "completion_tokens": 166,
+        "total_tokens": 12724,
+        "cost": 0.001564,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 12416,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001564,
+          "upstream_inference_prompt_cost": 0.0012984,
+          "upstream_inference_completions_cost": 0.0002656
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 5.169,
+  "call_id": "DS__z1_HUYHVP8Q__openai__r2",
+  "fingerprint": "c3a61f906612222cb8b1f9ee080d8d8951323612ee7320a2a487513751acb20d",
+  "paper_id": "z1_HUYHVP8Q",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:04:28.662758+00:00",
+  "input_sha256": "c090aa4d31bafec8b8b57528ca1265c36e69028d72585c31a374d3fec6a65b45",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

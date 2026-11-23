@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789652628-Lpr0D4fB2NMIhJa6mH5D",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.018468,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 13618,
+    "completion_tokens": 970,
+    "total_tokens": 14588,
+    "cost": 0.018468,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.018468,
+      "upstream_inference_prompt_cost": 0.013618,
+      "upstream_inference_completions_cost": 0.00485
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Scenario-based assessment of future land use change on butterfly species distributions\n\n## Initial Determination\n**Is this a review article?** NO - This is an original research paper (explicitly labeled \"ORIGINAL PAPER\")\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria for Non-Review Papers\n\n### CORE INCLUSION CRITERIA ASSESSMENT:\n\n1. **Explicit national-scale spatial implementation (entire country)?**\n   - ✓ YES - Study covers entire Switzerland (41,293 km²), divided into 2,836 communes. Methodology states: \"we use data that are aggregated to the spatial extent of the 2,836 communes present in 2003\"\n\n2. **Primary focus = LULC prediction/simulation (central research question)?**\n   - ✗ NO - Primary focus is **species distribution modeling** under land use change scenarios. Research question 1 asks \"which factors explain current species distribution,\" and question 2 asks \"how will butterfly species distribution change.\" LULC scenarios are inputs/drivers, not the primary output.\n   - The paper's stated aims: \"(1) to identify important drivers of butterfly species persistence or extinction, and (2) to analyse the responses of endangered butterfly species...\"\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ✓ YES - Four scenarios implemented: BAU (business as usual), LIB (liberalisation), LAP1 (moderately lowered production), LAP2 (strongly lowered production). Quantitative comparisons provided in results and figures.\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ✓ YES - GLM-based species distribution models with accuracy metrics: Kappa statistics (0.68-0.69), AUC values (0.91-0.93), deviance explained (45-52%)\n\n5. **Outputs include mapped LULC projections?**\n   - ✗ PARTIAL - Figure 3 shows land use category changes across scenarios, but outputs are primarily **species probability maps** (Figure 4), not LULC projections. LULC changes are presented as supporting data, not primary outputs.\n\n### SPECIFIC EXCLUSION CRITERIA ASSESSMENT:\n\n- ✓ **Species-specific/ecological focus (flora/fauna) unrelated to LULC**: MATCHES EXCLUSION - The paper's primary focus is on butterfly species distributions and their responses to land use changes. While LULC scenarios are used, the central research questions, modeling approach, and outputs are fundamentally ecological/species-focused, not LULC-focused.\n\n- ✓ **LULC prediction used as input/step (not primary focus)**: MATCHES EXCLUSION - LULC scenarios are pre-generated inputs (based on transition probabilities from Bolliger et al. 2007). The paper applies these scenarios to model species responses, rather than developing or predicting LULC changes itself.\n\n---\n\n## Critical Assessment\n\n**Primary Objective Classification:**\n- LULC prediction is **NOT** the primary objective\n- LULC scenarios are **used as input** to drive species distribution models\n- Central research questions concern **species persistence/extinction**, not LULC change prediction\n- Outputs are **species probability maps**, not LULC projections\n- The paper explicitly states it uses \"scenarios for future landscapes\" created by others as tools to study species reactions\n\n**Scale Note:** While national-scale implementation exists, this does not override the fundamental mismatch between paper focus (species ecology) and review scope (LULC prediction).\n\n---\n\n## Final Categorization: **EXCLUDED**\n\n**Justification:** \nThis paper fails the primary inclusion criterion that LULC prediction/simulation must be the central research focus. Although the study implements multiple land use scenarios at the national scale of Switzerland with quantitative modeling, the primary objective is species distribution modeling and conservation ecology. LULC scenarios serve as inputs/drivers rather than research outputs. The paper's research questions, methodology, and outputs are fundamentally oriented toward understanding butterfly species responses to land use change, not toward predicting or simulating LULC change itself. This represents a species-ecological focus unrelated to LULC prediction as the primary research objective.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:43:43.285068+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 11.176,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789652628-Lpr0D4fB2NMIhJa6mH5D\",\"object\":\"chat.completion\",\"created\":1789652628,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Scenario-based assessment of future land use change on butterfly species distributions\\n\\n## Initial Determination\\n**Is this a review article?** NO - This is an original research paper (explicitly labeled \\\"ORIGINAL PAPER\\\")\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria for Non-Review Papers\\n\\n### CORE INCLUSION CRITERIA ASSESSMENT:\\n\\n1. **Explicit national-scale spatial implementation (entire country)?**\\n   - ✓ YES - Study covers entire Switzerland (41,293 km²), divided into 2,836 communes. Methodology states: \\\"we use data that are aggregated to the spatial extent of the 2,836 communes present in 2003\\\"\\n\\n2. **Primary focus = LULC prediction/simulation (central research question)?**\\n   - ✗ NO - Primary focus is **species distribution modeling** under land use change scenarios. Research question 1 asks \\\"which factors explain current species distribution,\\\" and question 2 asks \\\"how will butterfly species distribution change.\\\" LULC scenarios are inputs/drivers, not the primary output.\\n   - The paper's stated aims: \\\"(1) to identify important drivers of butterfly species persistence or extinction, and (2) to analyse the responses of endangered butterfly species...\\\"\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ✓ YES - Four scenarios implemented: BAU (business as usual), LIB (liberalisation), LAP1 (moderately lowered production), LAP2 (strongly lowered production). Quantitative comparisons provided in results and figures.\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ✓ YES - GLM-based species distribution models with accuracy metrics: Kappa statistics (0.68-0.69), AUC values (0.91-0.93), deviance explained (45-52%)\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ✗ PARTIAL - Figure 3 shows land use category changes across scenarios, but outputs are primarily **species probability maps** (Figure 4), not LULC projections. LULC changes are presented as supporting data, not primary outputs.\\n\\n### SPECIFIC EXCLUSION CRITERIA ASSESSMENT:\\n\\n- ✓ **Species-specific/ecological focus (flora/fauna) unrelated to LULC**: MATCHES EXCLUSION - The paper's primary focus is on butterfly species distributions and their responses to land use changes. While LULC scenarios are used, the central research questions, modeling approach, and outputs are fundamentally ecological/species-focused, not LULC-focused.\\n\\n- ✓ **LULC prediction used as input/step (not primary focus)**: MATCHES EXCLUSION - LULC scenarios are pre-generated inputs (based on transition probabilities from Bolliger et al. 2007). The paper applies these scenarios to model species responses, rather than developing or predicting LULC changes itself.\\n\\n---\\n\\n## Critical Assessment\\n\\n**Primary Objective Classification:**\\n- LULC prediction is **NOT** the primary objective\\n- LULC scenarios are **used as input** to drive species distribution models\\n- Central research questions concern **species persistence/extinction**, not LULC change prediction\\n- Outputs are **species probability maps**, not LULC projections\\n- The paper explicitly states it uses \\\"scenarios for future landscapes\\\" created by others as tools to study species reactions\\n\\n**Scale Note:** While national-scale implementation exists, this does not override the fundamental mismatch between paper focus (species ecology) and review scope (LULC prediction).\\n\\n---\\n\\n## Final Categorization: **EXCLUDED**\\n\\n**Justification:** \\nThis paper fails the primary inclusion criterion that LULC prediction/simulation must be the central research focus. Although the study implements multiple land use scenarios at the national scale of Switzerland with quantitative modeling, the primary objective is species distribution modeling and conservation ecology. LULC scenarios serve as inputs/drivers rather than research outputs. The paper's research questions, methodology, and outputs are fundamentally oriented toward understanding butterfly species responses to land use change, not toward predicting or simulating LULC change itself. This represents a species-ecological focus unrelated to LULC prediction as the primary research objective.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":13618,\"completion_tokens\":970,\"total_tokens\":14588,\"cost\":0.018468,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.018468,\"upstream_inference_prompt_cost\":0.013618,\"upstream_inference_completions_cost\":0.00485},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652628-Lpr0D4fB2NMIhJa6mH5D",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 13618,
+        "completion_tokens": 970,
+        "total_tokens": 14588,
+        "cost": 0.018468,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.018468,
+          "upstream_inference_prompt_cost": 0.013618,
+          "upstream_inference_completions_cost": 0.00485
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 11.177,
+  "call_id": "DS__z1_BKCJ9DJR__claude__r1",
+  "fingerprint": "d05d60efa926251e9024a871f8661706afab145becc9505c09cdd71289d1a6a9",
+  "paper_id": "z1_BKCJ9DJR",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:43:54.461663+00:00",
+  "input_sha256": "78cf2f3b8e04b3e1cd2fe37f14f134fdbf1d3dea6b1de4388622c8921da9705d",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

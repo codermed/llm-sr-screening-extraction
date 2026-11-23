@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789653632-gOIuwwOiVx3ojTzEdOr4",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.024135,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 17805,
+    "completion_tokens": 1266,
+    "total_tokens": 19071,
+    "cost": 0.024135,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.024135,
+      "upstream_inference_prompt_cost": 0.017805,
+      "upstream_inference_completions_cost": 0.00633
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land Use Change and Habitat Quality in Lithuania\n\n## Initial Assessment\n\n**Is this a review article?**\nNo. This is a primary research paper presenting original modeling and analysis of future LULC scenarios for Lithuania.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA (Non-Review Paper):\n\n**1. Explicit national-scale spatial implementation (entire country)**\n✓ **PASS** - Study covers entire Lithuania (65,300 km²), divided into 319 elderships. Methodology explicitly states national coverage with 100m × 100m spatial resolution across the country.\n\n**2. Primary focus = LULC prediction/simulation**\n✓ **PASS** - Primary objective clearly stated: \"This work aims to study the impacts of LULC changes under different scenarios\" and \"to study the effects of future LULC changes under different scenarios in HQ.\" LULC prediction is the central research question, with habitat quality assessment as a secondary application of the predictions.\n\n**3. Implementation of ≥2 future scenarios with quantitative comparison**\n✓ **PASS** - Four distinct scenarios implemented:\n- A0: Business as usual\n- A1: Urbanisation\n- A2: Land abandonment and afforestation\n- A3: Agriculture intensification\n\nQuantitative comparisons provided (e.g., A1: +4,628 ha urban; A2: +375,820 ha forest; A3: +884,030 ha cropland).\n\n**4. Spatial modeling with quantitative accuracy metrics**\n✓ **PASS** - Cellular Automata model with:\n- Calibration/validation accuracy: 80% (Reciprocal Similarity Comparison method)\n- Multiple window sizes tested (1, 3, 5, 7, 9, 11)\n- Transition matrices calculated\n- Weights of evidence coefficients estimated\n- Habitat quality model validation: r² = 0.67 (tree density), r² = 0.26 (imperviousness)\n- Spatial statistics: Moran's I index, Getis-Ord hotspot analysis\n\n**5. Outputs include mapped LULC projections**\n✓ **PASS** - Figures 4 and 5 show mapped LULC for 1990, 2018, and all four 2050 scenarios with quantified changes by land-use class.\n\n### SPECIFIC EXCLUSION CRITERIA:\n\n**Global-scale analysis without national-level disaggregation**\n✓ **PASS** - National scale only; no global analysis.\n\n**Local/regional/global/transboundary scale focus**\n✓ **PASS** - National scale (Lithuania); not local/regional/global/transboundary.\n\n**No LULC prediction component**\n✓ **PASS** - LULC prediction is central.\n\n**Species-specific/ecological focus unrelated to LULC**\n✓ **PASS** - Habitat quality is assessed as proxy for biodiversity capacity in relation to LULC changes; not species-specific ecology.\n\n**Economic/urban models lacking spatially explicit LULC outputs**\n✓ **PASS** - Spatially explicit LULC outputs provided with mapped projections.\n\n**Biomass/bioenergy/carbon studies without LULC change analysis**\n✓ **PASS** - LULC change is primary focus; habitat quality is secondary application.\n\n**Methodological papers without application to national-scale prediction**\n✓ **PASS** - Applied methodology with national-scale implementation.\n\n**Purely qualitative/historical analysis only**\n✓ **PASS** - Quantitative future projections (to 2050) with statistical validation.\n\n**Remote sensing technical studies without predictive modeling**\n✓ **PASS** - Includes predictive modeling (Cellular Automata).\n\n**Single-scenario \"business-as-usual\" projections**\n✓ **PASS** - Four scenarios implemented; not single-scenario.\n\n---\n\n## Additional Verification Checks\n\n**Scale verification:** Methodology section (2.1) confirms national-scale study area. Results section reports findings at eldership level (319 administrative units) and national aggregates. No downscaling to local areas; entire country analyzed.\n\n**Quantitative metrics reported:** Yes - accuracy percentages, hectare changes by land-use class, correlation coefficients, Moran's I values, z-scores for hotspot analysis.\n\n**Spatial explicitness:** Yes - CA model with Moore neighborhood configuration, 100m cell resolution, transition probability maps, distance-based driving forces (Euclidean distance to roads, urban areas, etc.).\n\n---\n\n## Final Categorization\n\n**Final categorization: OK**\n\n**Justification:** This paper fully meets all core inclusion criteria for national-scale LULC prediction research. It implements a spatially explicit Cellular Automata model at national scale (Lithuania, entire country) with four quantitatively compared future scenarios to 2050. The model is properly calibrated (80% accuracy) and validated using multiple spatial statistics methods. Quantitative LULC projections are mapped and reported by land-use class with hectare-level precision. The primary research objective is LULC prediction under different policy/socioeconomic scenarios. The secondary application to habitat quality assessment does not diminish the paper's core contribution to LULC prediction methodology and national-scale scenario analysis. The paper meets zero exclusion criteria.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:00:27.461221+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 13.069,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653632-gOIuwwOiVx3ojTzEdOr4\",\"object\":\"chat.completion\",\"created\":1789653632,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land Use Change and Habitat Quality in Lithuania\\n\\n## Initial Assessment\\n\\n**Is this a review article?**\\nNo. This is a primary research paper presenting original modeling and analysis of future LULC scenarios for Lithuania.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA (Non-Review Paper):\\n\\n**1. Explicit national-scale spatial implementation (entire country)**\\n✓ **PASS** - Study covers entire Lithuania (65,300 km²), divided into 319 elderships. Methodology explicitly states national coverage with 100m × 100m spatial resolution across the country.\\n\\n**2. Primary focus = LULC prediction/simulation**\\n✓ **PASS** - Primary objective clearly stated: \\\"This work aims to study the impacts of LULC changes under different scenarios\\\" and \\\"to study the effects of future LULC changes under different scenarios in HQ.\\\" LULC prediction is the central research question, with habitat quality assessment as a secondary application of the predictions.\\n\\n**3. Implementation of ≥2 future scenarios with quantitative comparison**\\n✓ **PASS** - Four distinct scenarios implemented:\\n- A0: Business as usual\\n- A1: Urbanisation\\n- A2: Land abandonment and afforestation\\n- A3: Agriculture intensification\\n\\nQuantitative comparisons provided (e.g., A1: +4,628 ha urban; A2: +375,820 ha forest; A3: +884,030 ha cropland).\\n\\n**4. Spatial modeling with quantitative accuracy metrics**\\n✓ **PASS** - Cellular Automata model with:\\n- Calibration/validation accuracy: 80% (Reciprocal Similarity Comparison method)\\n- Multiple window sizes tested (1, 3, 5, 7, 9, 11)\\n- Transition matrices calculated\\n- Weights of evidence coefficients estimated\\n- Habitat quality model validation: r² = 0.67 (tree density), r² = 0.26 (imperviousness)\\n- Spatial statistics: Moran's I index, Getis-Ord hotspot analysis\\n\\n**5. Outputs include mapped LULC projections**\\n✓ **PASS** - Figures 4 and 5 show mapped LULC for 1990, 2018, and all four 2050 scenarios with quantified changes by land-use class.\\n\\n### SPECIFIC EXCLUSION CRITERIA:\\n\\n**Global-scale analysis without national-level disaggregation**\\n✓ **PASS** - National scale only; no global analysis.\\n\\n**Local/regional/global/transboundary scale focus**\\n✓ **PASS** - National scale (Lithuania); not local/regional/global/transboundary.\\n\\n**No LULC prediction component**\\n✓ **PASS** - LULC prediction is central.\\n\\n**Species-specific/ecological focus unrelated to LULC**\\n✓ **PASS** - Habitat quality is assessed as proxy for biodiversity capacity in relation to LULC changes; not species-specific ecology.\\n\\n**Economic/urban models lacking spatially explicit LULC outputs**\\n✓ **PASS** - Spatially explicit LULC outputs provided with mapped projections.\\n\\n**Biomass/bioenergy/carbon studies without LULC change analysis**\\n✓ **PASS** - LULC change is primary focus; habitat quality is secondary application.\\n\\n**Methodological papers without application to national-scale prediction**\\n✓ **PASS** - Applied methodology with national-scale implementation.\\n\\n**Purely qualitative/historical analysis only**\\n✓ **PASS** - Quantitative future projections (to 2050) with statistical validation.\\n\\n**Remote sensing technical studies without predictive modeling**\\n✓ **PASS** - Includes predictive modeling (Cellular Automata).\\n\\n**Single-scenario \\\"business-as-usual\\\" projections**\\n✓ **PASS** - Four scenarios implemented; not single-scenario.\\n\\n---\\n\\n## Additional Verification Checks\\n\\n**Scale verification:** Methodology section (2.1) confirms national-scale study area. Results section reports findings at eldership level (319 administrative units) and national aggregates. No downscaling to local areas; entire country analyzed.\\n\\n**Quantitative metrics reported:** Yes - accuracy percentages, hectare changes by land-use class, correlation coefficients, Moran's I values, z-scores for hotspot analysis.\\n\\n**Spatial explicitness:** Yes - CA model with Moore neighborhood configuration, 100m cell resolution, transition probability maps, distance-based driving forces (Euclidean distance to roads, urban areas, etc.).\\n\\n---\\n\\n## Final Categorization\\n\\n**Final categorization: OK**\\n\\n**Justification:** This paper fully meets all core inclusion criteria for national-scale LULC prediction research. It implements a spatially explicit Cellular Automata model at national scale (Lithuania, entire country) with four quantitatively compared future scenarios to 2050. The model is properly calibrated (80% accuracy) and validated using multiple spatial statistics methods. Quantitative LULC projections are mapped and reported by land-use class with hectare-level precision. The primary research objective is LULC prediction under different policy/socioeconomic scenarios. The secondary application to habitat quality assessment does not diminish the paper's core contribution to LULC prediction methodology and national-scale scenario analysis. The paper meets zero exclusion criteria.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":17805,\"completion_tokens\":1266,\"total_tokens\":19071,\"cost\":0.024135,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.024135,\"upstream_inference_prompt_cost\":0.017805,\"upstream_inference_completions_cost\":0.00633},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653632-gOIuwwOiVx3ojTzEdOr4",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 17805,
+        "completion_tokens": 1266,
+        "total_tokens": 19071,
+        "cost": 0.024135,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.024135,
+          "upstream_inference_prompt_cost": 0.017805,
+          "upstream_inference_completions_cost": 0.00633
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 13.069,
+  "call_id": "DS__z1_5XHKN2GZ__claude__r1",
+  "fingerprint": "2223b102d6d540321ed52e43a6f83c184b5c2bcee9fa8289fced32603ac582cd",
+  "paper_id": "z1_5XHKN2GZ",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T14:00:40.529936+00:00",
+  "input_sha256": "b5367beccda133727a47c6ebf05821a90b1b18fba03fdb6a6c405aeba581bb04",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

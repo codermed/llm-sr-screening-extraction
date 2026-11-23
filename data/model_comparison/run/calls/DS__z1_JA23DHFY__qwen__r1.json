@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789653063-U9NZadvcyhm2u85vPCOw",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.01306188,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15566,
+    "completion_tokens": 236,
+    "total_tokens": 15802,
+    "cost": 0.01306188,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01306188,
+      "upstream_inference_prompt_cost": 0.01214148,
+      "upstream_inference_completions_cost": 0.0009204
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED  \n(Justification: Although the paper is a non-review research article that models future land suitability for rainfed corn in Georgia, USA under multiple climate scenarios (RCP4.5 and RCP8.5), it fails core inclusion criteria. First, the study is conducted at the subnational (state) scale, not national (USA-wide), violating the \"explicit national-scale spatial implementation\" requirement. Second, the focus is on land suitability for a single crop (corn) under climate change—not on predicting or simulating actual Land Use/Land Cover (LULC) change. The model classifies biophysical suitability based on climate, soil, and topography but does not project future LULC transitions, conversions, or mapped LULC categories (e.g., cropland expansion, urbanization). Third, while future scenarios are compared, there are no quantitative accuracy metrics for LULC prediction (because no LULC prediction is made); validation is against historical yield and crop loss data, not land cover maps. Thus, the paper falls outside the scope of LULC prediction research as defined by the inclusion criteria.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:50:58.704611+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 6.645,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789653063-U9NZadvcyhm2u85vPCOw\",\"object\":\"chat.completion\",\"created\":1789653063,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED  \\n(Justification: Although the paper is a non-review research article that models future land suitability for rainfed corn in Georgia, USA under multiple climate scenarios (RCP4.5 and RCP8.5), it fails core inclusion criteria. First, the study is conducted at the subnational (state) scale, not national (USA-wide), violating the \\\"explicit national-scale spatial implementation\\\" requirement. Second, the focus is on land suitability for a single crop (corn) under climate change—not on predicting or simulating actual Land Use/Land Cover (LULC) change. The model classifies biophysical suitability based on climate, soil, and topography but does not project future LULC transitions, conversions, or mapped LULC categories (e.g., cropland expansion, urbanization). Third, while future scenarios are compared, there are no quantitative accuracy metrics for LULC prediction (because no LULC prediction is made); validation is against historical yield and crop loss data, not land cover maps. Thus, the paper falls outside the scope of LULC prediction research as defined by the inclusion criteria.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15566,\"completion_tokens\":236,\"total_tokens\":15802,\"cost\":0.01306188,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.01306188,\"upstream_inference_prompt_cost\":0.01214148,\"upstream_inference_completions_cost\":0.0009204},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653063-U9NZadvcyhm2u85vPCOw",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 15566,
+        "completion_tokens": 236,
+        "total_tokens": 15802,
+        "cost": 0.01306188,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01306188,
+          "upstream_inference_prompt_cost": 0.01214148,
+          "upstream_inference_completions_cost": 0.0009204
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 6.645,
+  "call_id": "DS__z1_JA23DHFY__qwen__r1",
+  "fingerprint": "f40612114c56fe5e701be6e633670a81a84d6621c6507ba0aa65e65188ce1947",
+  "paper_id": "z1_JA23DHFY",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:51:05.349783+00:00",
+  "input_sha256": "792e0ad810d4238de27dc8498843234f61ddf8095b83156a2c97c0cdd03918bf",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

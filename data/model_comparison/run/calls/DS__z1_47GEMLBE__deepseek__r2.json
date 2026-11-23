@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653717-unCYnO1XrmtgUOImdcf1",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00421588,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15984,
+    "completion_tokens": 158,
+    "total_tokens": 16142,
+    "cost": 0.00421588,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00421588,
+      "upstream_inference_prompt_cost": 0.00415584,
+      "upstream_inference_completions_cost": 6.004e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper's primary focus is not on LULC prediction. It uses a global agricultural trade model to analyze the economic and food security impacts of U.S. vehicle electrification and climate change on agricultural markets. While it includes land-use change as a *result* of these drivers (e.g., changes in cropland area), it does not implement or test a spatial LULC prediction model. The core research question is about interactions between transportation, climate, and commodity markets, not about predicting or simulating future LULC patterns at a national scale. The study uses exogenous yield projections and economic models to calculate area changes, but it does not produce spatially explicit LULC maps or evaluate a predictive LULC model's accuracy.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:01:52.292937+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 10.652,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653717-unCYnO1XrmtgUOImdcf1\",\"object\":\"chat.completion\",\"created\":1789653717,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper's primary focus is not on LULC prediction. It uses a global agricultural trade model to analyze the economic and food security impacts of U.S. vehicle electrification and climate change on agricultural markets. While it includes land-use change as a *result* of these drivers (e.g., changes in cropland area), it does not implement or test a spatial LULC prediction model. The core research question is about interactions between transportation, climate, and commodity markets, not about predicting or simulating future LULC patterns at a national scale. The study uses exogenous yield projections and economic models to calculate area changes, but it does not produce spatially explicit LULC maps or evaluate a predictive LULC model's accuracy.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15984,\"completion_tokens\":158,\"total_tokens\":16142,\"cost\":0.00421588,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00421588,\"upstream_inference_prompt_cost\":0.00415584,\"upstream_inference_completions_cost\":0.00006004},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653717-unCYnO1XrmtgUOImdcf1",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 15984,
+        "completion_tokens": 158,
+        "total_tokens": 16142,
+        "cost": 0.00421588,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00421588,
+          "upstream_inference_prompt_cost": 0.00415584,
+          "upstream_inference_completions_cost": 6.004e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 10.653,
+  "call_id": "DS__z1_47GEMLBE__deepseek__r2",
+  "fingerprint": "32f630ecb2554b4ae6e3f6eca4fd7ae78c62a053dc65118dba3eb302121dd034",
+  "paper_id": "z1_47GEMLBE",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:02:02.945425+00:00",
+  "input_sha256": "7f9c574a44015f89013b3c002e959bca10a54860fdd9f6f55f160bcd77b79b8f",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

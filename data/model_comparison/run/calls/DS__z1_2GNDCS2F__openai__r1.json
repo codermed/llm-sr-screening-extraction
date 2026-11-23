@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789652882-7hgQlQMwC3dy3baiUMag",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0041776,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 9740,
+    "completion_tokens": 176,
+    "total_tokens": 9916,
+    "cost": 0.0041776,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0041776,
+      "upstream_inference_prompt_cost": 0.003896,
+      "upstream_inference_completions_cost": 0.0002816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: OK (Justification: This is a non-review research paper focused on land use/cover (LULC) prediction at the national scale for China. The study explicitly couples a national integrated assessment model (Threshold21-China) with the spatial land use change model CLUMondo to simulate spatial LULC changes from 2000 to 2050 under three future scenarios representing different sustainable development policy pathways. The paper includes quantitative spatial modeling with accuracy metrics (Kappa = 0.84), mapped LULC projections, and detailed scenario comparisons. The primary objective is clearly LULC prediction and its impacts on terrestrial ecosystem carbon storage, fulfilling all core inclusion criteria. It is not a global-scale or local/regional study, nor is it purely ecological, methodological, or qualitative. Hence, it meets all requirements for an ‘OK’ categorization.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:47:57.393490+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.418,
+      "raw_body": "\n         \n{\"id\":\"gen-1789652882-7hgQlQMwC3dy3baiUMag\",\"object\":\"chat.completion\",\"created\":1789652882,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: This is a non-review research paper focused on land use/cover (LULC) prediction at the national scale for China. The study explicitly couples a national integrated assessment model (Threshold21-China) with the spatial land use change model CLUMondo to simulate spatial LULC changes from 2000 to 2050 under three future scenarios representing different sustainable development policy pathways. The paper includes quantitative spatial modeling with accuracy metrics (Kappa = 0.84), mapped LULC projections, and detailed scenario comparisons. The primary objective is clearly LULC prediction and its impacts on terrestrial ecosystem carbon storage, fulfilling all core inclusion criteria. It is not a global-scale or local/regional study, nor is it purely ecological, methodological, or qualitative. Hence, it meets all requirements for an ‘OK’ categorization.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":9740,\"completion_tokens\":176,\"total_tokens\":9916,\"cost\":0.0041776,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0041776,\"upstream_inference_prompt_cost\":0.003896,\"upstream_inference_completions_cost\":0.0002816},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652882-7hgQlQMwC3dy3baiUMag",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 9740,
+        "completion_tokens": 176,
+        "total_tokens": 9916,
+        "cost": 0.0041776,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0041776,
+          "upstream_inference_prompt_cost": 0.003896,
+          "upstream_inference_completions_cost": 0.0002816
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.418,
+  "call_id": "DS__z1_2GNDCS2F__openai__r1",
+  "fingerprint": "b7f48f64f8eb2f962971e528c106c63d1505e55b127f8f4cf56adad9924b5cec",
+  "paper_id": "z1_2GNDCS2F",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:48:00.811446+00:00",
+  "input_sha256": "24406ffea880e23dd42889d9735217df97d793743208c6bc2807f6507cfac3c3",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

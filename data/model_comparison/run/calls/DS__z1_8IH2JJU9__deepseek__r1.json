@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653214-MtIZ18T22i7DlEZPlHhI",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00309794,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10819,
+    "completion_tokens": 750,
+    "total_tokens": 11569,
+    "cost": 0.00309794,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00309794,
+      "upstream_inference_prompt_cost": 0.00281294,
+      "upstream_inference_completions_cost": 0.000285
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: National-scale LULC prediction for Turkey using spatial modeling (CLUMondo) with quantitative metrics, implementing and comparing a Business-as-Usual and an LDN scenario with quantitative land system change analysis.)\n\n**Full Text Analysis:**\n\n1.  **Review Article Determination:** This is **NOT** a review article. It is an original research article presenting a scenario simulation study.\n\n2.  **Categorization Flow Application (for Non-Review Papers):**\n    *   **Core Inclusion Criteria Check:**\n        *   ✅ **Explicit national-scale spatial implementation:** The study area is explicitly the Republic of Turkey. The methodology uses a national-scale land system map (2x2km resolution for the entire country) and models land system change at the national level, with regional (biogeographical) breakdowns.\n        *   ✅ **Primary focus = LULC prediction/simulation:** The central research question is to demonstrate how Land Degradation Neutrality (LDN) affects *future land system patterns*. The core methodology is land system modeling (using CLUMondo) to project changes to 2050.\n        *   ✅ **Implementation of ≥2 future scenarios with quantitative comparison:** The paper explicitly develops and compares a \"business-as-usual scenario\" and an \"LDN scenario\". It conducts sensitivity analyses on LDN principles, which are additional scenario variants.\n        *   ✅ **Spatial modeling with quantitative accuracy metrics:** The CLUMondo model is a spatial allocation model. While traditional classification accuracy for the 2010 base map is not the focus, the paper reports extensive *quantitative metrics of change*: areas (in km² and percentages) of land degradation/improvement, changes in land system extents, and supply/demand balances. Figure 4 and associated results provide a quantitative comparison of scenario outcomes.\n        *   ✅ **Outputs include mapped LULC projections:** Figure 4 presents maps of projected land system patterns for 2050 for both scenarios.\n    *   **Exclusion Criteria Check:**\n        *   ❌ **Fails NONE.** The study is not global, local, or transboundary; it is national. LULC (land system) prediction is the core component. It is not species-specific. It is not a purely economic model. It includes biomass/carbon (SOC) as an *indicator* within the LULC change framework, not as the sole focus. It is an applied study, not purely methodological. It projects future scenarios (to 2050). It uses remote sensing data as input for the base map but is fundamentally a predictive modeling study. It implements multiple scenarios, not just a single BAU projection.\n\n3.  **Primary Focus Determination:** The primary objective is to simulate and compare how future land system patterns (LULC prediction) are altered by the implementation of LDN policy. Therefore, it is categorized as **'OK'**.\n\n4.  **Additional Checks:**\n    *   The scale is confirmed in the Methods (Section 2.1, 2.2): \"using the Republic of Turkey as a case study\", national demand calculations, and a country-wide land system map.\n    *   Quantitative metrics are provided throughout the Results (Section 3), e.g., \"about 20% of Turkey’s territory was afforested\", relative sizes of areas experiencing loss/gain, and comparative statistics between scenarios.\n    *   The modeling approach is spatially explicit, using suitability maps and allocation rules at a 2x2km resolution.\n    *   The assessment is based solely on the paper's stated methodology and study area (Turkey).",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:53:29.950795+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 24.861,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653214-MtIZ18T22i7DlEZPlHhI\",\"object\":\"chat.completion\",\"created\":1789653214,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: National-scale LULC prediction for Turkey using spatial modeling (CLUMondo) with quantitative metrics, implementing and comparing a Business-as-Usual and an LDN scenario with quantitative land system change analysis.)\\n\\n**Full Text Analysis:**\\n\\n1.  **Review Article Determination:** This is **NOT** a review article. It is an original research article presenting a scenario simulation study.\\n\\n2.  **Categorization Flow Application (for Non-Review Papers):**\\n    *   **Core Inclusion Criteria Check:**\\n        *   ✅ **Explicit national-scale spatial implementation:** The study area is explicitly the Republic of Turkey. The methodology uses a national-scale land system map (2x2km resolution for the entire country) and models land system change at the national level, with regional (biogeographical) breakdowns.\\n        *   ✅ **Primary focus = LULC prediction/simulation:** The central research question is to demonstrate how Land Degradation Neutrality (LDN) affects *future land system patterns*. The core methodology is land system modeling (using CLUMondo) to project changes to 2050.\\n        *   ✅ **Implementation of ≥2 future scenarios with quantitative comparison:** The paper explicitly develops and compares a \\\"business-as-usual scenario\\\" and an \\\"LDN scenario\\\". It conducts sensitivity analyses on LDN principles, which are additional scenario variants.\\n        *   ✅ **Spatial modeling with quantitative accuracy metrics:** The CLUMondo model is a spatial allocation model. While traditional classification accuracy for the 2010 base map is not the focus, the paper reports extensive *quantitative metrics of change*: areas (in km² and percentages) of land degradation/improvement, changes in land system extents, and supply/demand balances. Figure 4 and associated results provide a quantitative comparison of scenario outcomes.\\n        *   ✅ **Outputs include mapped LULC projections:** Figure 4 presents maps of projected land system patterns for 2050 for both scenarios.\\n    *   **Exclusion Criteria Check:**\\n        *   ❌ **Fails NONE.** The study is not global, local, or transboundary; it is national. LULC (land system) prediction is the core component. It is not species-specific. It is not a purely economic model. It includes biomass/carbon (SOC) as an *indicator* within the LULC change framework, not as the sole focus. It is an applied study, not purely methodological. It projects future scenarios (to 2050). It uses remote sensing data as input for the base map but is fundamentally a predictive modeling study. It implements multiple scenarios, not just a single BAU projection.\\n\\n3.  **Primary Focus Determination:** The primary objective is to simulate and compare how future land system patterns (LULC prediction) are altered by the implementation of LDN policy. Therefore, it is categorized as **'OK'**.\\n\\n4.  **Additional Checks:**\\n    *   The scale is confirmed in the Methods (Section 2.1, 2.2): \\\"using the Republic of Turkey as a case study\\\", national demand calculations, and a country-wide land system map.\\n    *   Quantitative metrics are provided throughout the Results (Section 3), e.g., \\\"about 20% of Turkey’s territory was afforested\\\", relative sizes of areas experiencing loss/gain, and comparative statistics between scenarios.\\n    *   The modeling approach is spatially explicit, using suitability maps and allocation rules at a 2x2km resolution.\\n    *   The assessment is based solely on the paper's stated methodology and study area (Turkey).\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10819,\"completion_tokens\":750,\"total_tokens\":11569,\"cost\":0.00309794,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00309794,\"upstream_inference_prompt_cost\":0.00281294,\"upstream_inference_completions_cost\":0.000285},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653214-MtIZ18T22i7DlEZPlHhI",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 10819,
+        "completion_tokens": 750,
+        "total_tokens": 11569,
+        "cost": 0.00309794,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00309794,
+          "upstream_inference_prompt_cost": 0.00281294,
+          "upstream_inference_completions_cost": 0.000285
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 24.861,
+  "call_id": "DS__z1_8IH2JJU9__deepseek__r1",
+  "fingerprint": "378130bf138cc9ed06aa3d8892b938dfd3cb2cad8d321742d4e88cd14aebff5b",
+  "paper_id": "z1_8IH2JJU9",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:53:54.811621+00:00",
+  "input_sha256": "a1ef6b2aae24be14c95abe98d3d084197472fdf671b3f0714968e1a3b1b0ec67",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

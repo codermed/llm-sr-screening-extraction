@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789654017-wJOtBA0Qw4g29i3GMKEL",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.025406,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 17871,
+    "completion_tokens": 1507,
+    "total_tokens": 19378,
+    "cost": 0.025406,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.025406,
+      "upstream_inference_prompt_cost": 0.017871,
+      "upstream_inference_completions_cost": 0.007535
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: LPJ-FLUS Model for Land Use/Cover Change Simulation\n\n## Step 1: Determine if Review Article\n**Result: NOT A REVIEW**\nThis is a research paper presenting a novel coupled modeling approach (LPJ-FLUS), with original methodology, empirical validation, and future projections. It is not a synthesis of existing literature.\n\n---\n\n## Step 2: Apply Non-Review Paper Evaluation\n\n### CORE INCLUSION CRITERIA ASSESSMENT:\n\n**1. Explicit national-scale spatial implementation (entire country)**\n- ✅ **PASS**: Study area is China at 1 km spatial resolution\n- Text: \"The proposed LPJ-FLUS model is employed to predict the future LUCC under two SSP-RCP scenarios in China from 2015 to 2100\"\n- Maps (Figures 2-10) show nationwide coverage\n\n**2. Primary focus = LULC prediction/simulation**\n- ✅ **PASS**: Central research question explicitly addresses LUCC simulation\n- Text: \"herein, a novel model that couples Lund Potsdam Jena (LPJ), a mechanistic model, and CA at the cell level is proposed to consider the mechanisms and statistics in LUCC simulations\"\n- Five LULC types simulated: forest land, grassland, farmland, urban land, barren land\n\n**3. Implementation of ≥2 future scenarios with quantitative comparison**\n- ✅ **PASS**: Two SSP-RCP scenarios implemented\n- SSP1-RCP2.6 (low emission, sustainable development)\n- SSP5-RCP8.5 (high emission, fossil-fueled development)\n- Quantitative comparison provided in Figure 6 and narrative discussion (Section 3.2)\n\n**4. Spatial modeling with quantitative accuracy metrics**\n- ✅ **PASS**: Multiple quantitative metrics reported\n- Figure of Merit (FoM): 23.37% (2010), 16.73% (2015) for LPJ-FLUS\n- Per-land-type FoM values in Table 4\n- ROC/AUC curves (Figure 5): AUC ≥ 0.94\n- Pearson correlation coefficients (Table 5): R = 0.6478-0.8267\n- Comparative accuracy improvements: 5% overall, up to 8% for natural vegetation\n\n**5. Outputs include mapped LULC projections**\n- ✅ **PASS**: Extensive spatial outputs\n- Figures 2-3: Historical validation maps (2010, 2015)\n- Figures 8-10: Future projection maps by scenario and region (2015-2100)\n- Figure 7: Suitability probability maps\n\n---\n\n### EXCLUSION CRITERIA ASSESSMENT:\n\n**Global-scale without national disaggregation**\n- ✅ **PASS**: National-scale focus (China), not global\n\n**Local/regional/global/transboundary focus**\n- ✅ **PASS**: National-scale (China), not local/regional/global/transboundary\n\n**No LULC prediction component**\n- ✅ **PASS**: LULC prediction is the primary component\n\n**Species-specific/ecological focus unrelated to LULC**\n- ✅ **PASS**: Plant functional types (PFTs) are integrated into LULC categories; ecological modeling serves LULC simulation\n\n**Economic/urban models lacking spatially explicit LULC outputs**\n- ✅ **PASS**: Spatially explicit 1 km resolution LULC outputs provided\n\n**Biomass/bioenergy/carbon studies without LULC change analysis**\n- ✅ **PASS**: LULC change is the primary focus (not biomass/carbon as primary objective)\n\n**Methodological papers without national-scale application**\n- ✅ **PASS**: Methodology applied to national-scale China simulations\n\n**Purely qualitative/historical analysis only**\n- ✅ **PASS**: Future projections to 2100 under two scenarios\n\n**Remote sensing technical studies without predictive modeling**\n- ✅ **PASS**: Predictive modeling is central; remote sensing data are inputs\n\n**Single-scenario \"business-as-usual\" projections**\n- ✅ **PASS**: Two contrasting scenarios (low and high emission pathways)\n\n---\n\n## Step 3: Verify Full Text Details\n\n**Scale verification**: \n- Methodology Section 2.4 confirms national coverage: \"The historical land use and land cover product of China from the MODIS Land Cover Type Product (MCD12Q1)\"\n- Resolution: 1 km × 1 km (stated multiple times)\n\n**Quantitative metrics confirmed**:\n- Table 3: FoM values for 2010 and 2015\n- Table 4: Per-class FoM values\n- Table 5: Pearson correlation coefficients\n- Comparative analysis vs. RF-FLUS and ANN-FLUS models\n\n**Spatial explicitness**:\n- Cell-level coupling mechanism (Section 2.3)\n- Suitability probability calculations at 1 km resolution\n- Neighborhood interactions modeled with Moore neighborhood (Eq. 2)\n\n**Future projections**:\n- Section 3.3-3.4: Spatial performance of future simulations to 2100\n- Figures 8-10: Regional examples showing scenario differentiation\n\n---\n\n## Final Categorization\n\n**Final categorization: OK**\n\n**Justification**: \nThis paper meets ALL core inclusion criteria for a national-scale LULC prediction research paper. It presents a novel methodological contribution (tight cell-level coupling of mechanistic and statistical models) with explicit application to China at 1 km spatial resolution. The study implements two contrasting future scenarios (SSP1-RCP2.6 and SSP5-RCP8.5) with quantitative validation metrics (FoM, AUC, Pearson correlation). Historical validation (2001-2010, 2001-2015) demonstrates superior performance over conventional CA models (5-8% improvement in accuracy). Future projections to 2100 are spatially mapped with scenario-specific outcomes. The paper passes all inclusion criteria and none of the exclusion criteria. It directly addresses LULC simulation as the primary research objective with rigorous quantitative assessment and national-scale spatial implementation.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:06:52.272202+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 14.983,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789654017-wJOtBA0Qw4g29i3GMKEL\",\"object\":\"chat.completion\",\"created\":1789654017,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: LPJ-FLUS Model for Land Use/Cover Change Simulation\\n\\n## Step 1: Determine if Review Article\\n**Result: NOT A REVIEW**\\nThis is a research paper presenting a novel coupled modeling approach (LPJ-FLUS), with original methodology, empirical validation, and future projections. It is not a synthesis of existing literature.\\n\\n---\\n\\n## Step 2: Apply Non-Review Paper Evaluation\\n\\n### CORE INCLUSION CRITERIA ASSESSMENT:\\n\\n**1. Explicit national-scale spatial implementation (entire country)**\\n- ✅ **PASS**: Study area is China at 1 km spatial resolution\\n- Text: \\\"The proposed LPJ-FLUS model is employed to predict the future LUCC under two SSP-RCP scenarios in China from 2015 to 2100\\\"\\n- Maps (Figures 2-10) show nationwide coverage\\n\\n**2. Primary focus = LULC prediction/simulation**\\n- ✅ **PASS**: Central research question explicitly addresses LUCC simulation\\n- Text: \\\"herein, a novel model that couples Lund Potsdam Jena (LPJ), a mechanistic model, and CA at the cell level is proposed to consider the mechanisms and statistics in LUCC simulations\\\"\\n- Five LULC types simulated: forest land, grassland, farmland, urban land, barren land\\n\\n**3. Implementation of ≥2 future scenarios with quantitative comparison**\\n- ✅ **PASS**: Two SSP-RCP scenarios implemented\\n- SSP1-RCP2.6 (low emission, sustainable development)\\n- SSP5-RCP8.5 (high emission, fossil-fueled development)\\n- Quantitative comparison provided in Figure 6 and narrative discussion (Section 3.2)\\n\\n**4. Spatial modeling with quantitative accuracy metrics**\\n- ✅ **PASS**: Multiple quantitative metrics reported\\n- Figure of Merit (FoM): 23.37% (2010), 16.73% (2015) for LPJ-FLUS\\n- Per-land-type FoM values in Table 4\\n- ROC/AUC curves (Figure 5): AUC ≥ 0.94\\n- Pearson correlation coefficients (Table 5): R = 0.6478-0.8267\\n- Comparative accuracy improvements: 5% overall, up to 8% for natural vegetation\\n\\n**5. Outputs include mapped LULC projections**\\n- ✅ **PASS**: Extensive spatial outputs\\n- Figures 2-3: Historical validation maps (2010, 2015)\\n- Figures 8-10: Future projection maps by scenario and region (2015-2100)\\n- Figure 7: Suitability probability maps\\n\\n---\\n\\n### EXCLUSION CRITERIA ASSESSMENT:\\n\\n**Global-scale without national disaggregation**\\n- ✅ **PASS**: National-scale focus (China), not global\\n\\n**Local/regional/global/transboundary focus**\\n- ✅ **PASS**: National-scale (China), not local/regional/global/transboundary\\n\\n**No LULC prediction component**\\n- ✅ **PASS**: LULC prediction is the primary component\\n\\n**Species-specific/ecological focus unrelated to LULC**\\n- ✅ **PASS**: Plant functional types (PFTs) are integrated into LULC categories; ecological modeling serves LULC simulation\\n\\n**Economic/urban models lacking spatially explicit LULC outputs**\\n- ✅ **PASS**: Spatially explicit 1 km resolution LULC outputs provided\\n\\n**Biomass/bioenergy/carbon studies without LULC change analysis**\\n- ✅ **PASS**: LULC change is the primary focus (not biomass/carbon as primary objective)\\n\\n**Methodological papers without national-scale application**\\n- ✅ **PASS**: Methodology applied to national-scale China simulations\\n\\n**Purely qualitative/historical analysis only**\\n- ✅ **PASS**: Future projections to 2100 under two scenarios\\n\\n**Remote sensing technical studies without predictive modeling**\\n- ✅ **PASS**: Predictive modeling is central; remote sensing data are inputs\\n\\n**Single-scenario \\\"business-as-usual\\\" projections**\\n- ✅ **PASS**: Two contrasting scenarios (low and high emission pathways)\\n\\n---\\n\\n## Step 3: Verify Full Text Details\\n\\n**Scale verification**: \\n- Methodology Section 2.4 confirms national coverage: \\\"The historical land use and land cover product of China from the MODIS Land Cover Type Product (MCD12Q1)\\\"\\n- Resolution: 1 km × 1 km (stated multiple times)\\n\\n**Quantitative metrics confirmed**:\\n- Table 3: FoM values for 2010 and 2015\\n- Table 4: Per-class FoM values\\n- Table 5: Pearson correlation coefficients\\n- Comparative analysis vs. RF-FLUS and ANN-FLUS models\\n\\n**Spatial explicitness**:\\n- Cell-level coupling mechanism (Section 2.3)\\n- Suitability probability calculations at 1 km resolution\\n- Neighborhood interactions modeled with Moore neighborhood (Eq. 2)\\n\\n**Future projections**:\\n- Section 3.3-3.4: Spatial performance of future simulations to 2100\\n- Figures 8-10: Regional examples showing scenario differentiation\\n\\n---\\n\\n## Final Categorization\\n\\n**Final categorization: OK**\\n\\n**Justification**: \\nThis paper meets ALL core inclusion criteria for a national-scale LULC prediction research paper. It presents a novel methodological contribution (tight cell-level coupling of mechanistic and statistical models) with explicit application to China at 1 km spatial resolution. The study implements two contrasting future scenarios (SSP1-RCP2.6 and SSP5-RCP8.5) with quantitative validation metrics (FoM, AUC, Pearson correlation). Historical validation (2001-2010, 2001-2015) demonstrates superior performance over conventional CA models (5-8% improvement in accuracy). Future projections to 2100 are spatially mapped with scenario-specific outcomes. The paper passes all inclusion criteria and none of the exclusion criteria. It directly addresses LULC simulation as the primary research objective with rigorous quantitative assessment and national-scale spatial implementation.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":17871,\"completion_tokens\":1507,\"total_tokens\":19378,\"cost\":0.025406,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.025406,\"upstream_inference_prompt_cost\":0.017871,\"upstream_inference_completions_cost\":0.007535},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654017-wJOtBA0Qw4g29i3GMKEL",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 17871,
+        "completion_tokens": 1507,
+        "total_tokens": 19378,
+        "cost": 0.025406,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.025406,
+          "upstream_inference_prompt_cost": 0.017871,
+          "upstream_inference_completions_cost": 0.007535
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 14.984,
+  "call_id": "DS__z1_WK8BHC2I__claude__r2",
+  "fingerprint": "11dad1b3fcc769eea660a27ec121aff03d6be4721518adfaadd8b9c66f70ebdc",
+  "paper_id": "z1_WK8BHC2I",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:07:07.256064+00:00",
+  "input_sha256": "a57e1cb25fccf0c1cb0321db5e5bb6b3f91cb391adeed083d8fab18e58b757ce",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

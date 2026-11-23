@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789654590-FT0gTvCT0lUivN2Z9OS6",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00268008,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10118,
+    "completion_tokens": 130,
+    "total_tokens": 10248,
+    "cost": 0.00268008,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00268008,
+      "upstream_inference_prompt_cost": 0.00263068,
+      "upstream_inference_completions_cost": 4.94e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: **EXCLUDED** (Justification: The paper is a review/synthesis article that analyzes and compares existing studies on greenhouse gas emission projections under international climate pledges. Its primary focus is on the emissions gap relative to a 2°C target, the interpretation of national pledges, and accounting rules (e.g., LULUCF, surplus units). It does **not** review or synthesize research on land use land cover (LULC) future prediction. While it discusses LULUCF as an accounting issue, the core subject is GHG emissions trajectories, not the spatial simulation or prediction of LULC change itself.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:16:25.893470+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 7.141,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789654590-FT0gTvCT0lUivN2Z9OS6\",\"object\":\"chat.completion\",\"created\":1789654590,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: **EXCLUDED** (Justification: The paper is a review/synthesis article that analyzes and compares existing studies on greenhouse gas emission projections under international climate pledges. Its primary focus is on the emissions gap relative to a 2°C target, the interpretation of national pledges, and accounting rules (e.g., LULUCF, surplus units). It does **not** review or synthesize research on land use land cover (LULC) future prediction. While it discusses LULUCF as an accounting issue, the core subject is GHG emissions trajectories, not the spatial simulation or prediction of LULC change itself.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10118,\"completion_tokens\":130,\"total_tokens\":10248,\"cost\":0.00268008,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00268008,\"upstream_inference_prompt_cost\":0.00263068,\"upstream_inference_completions_cost\":0.0000494},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654590-FT0gTvCT0lUivN2Z9OS6",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 10118,
+        "completion_tokens": 130,
+        "total_tokens": 10248,
+        "cost": 0.00268008,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00268008,
+          "upstream_inference_prompt_cost": 0.00263068,
+          "upstream_inference_completions_cost": 4.94e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 7.141,
+  "call_id": "DS__z1_YPBFGDU6__deepseek__r2",
+  "fingerprint": "91ddb6faf15711db35175ac2018627bb68b552445423b7aba5ed12fd038ac369",
+  "paper_id": "z1_YPBFGDU6",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:16:33.034266+00:00",
+  "input_sha256": "478dabecbd52c5fcd768fecd9f5fafc8ff8e880153d5dd8c5af63568fd175d4e",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

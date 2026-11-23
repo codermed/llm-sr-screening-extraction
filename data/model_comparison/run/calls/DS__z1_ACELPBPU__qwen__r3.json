@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789655231-l9eyAnJ1SYi2BtCy7F92",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.01574898,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 19381,
+    "completion_tokens": 162,
+    "total_tokens": 19543,
+    "cost": 0.01574898,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01574898,
+      "upstream_inference_prompt_cost": 0.01511718,
+      "upstream_inference_completions_cost": 0.0006318
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a non-review research article that does not focus on land use land cover (LULC) prediction. LULC data is used only as a static input to identify cropping pixels (Kharif-only, Rabi-only, double/triple) based on an existing 5 km resolution LULC map from SAC, Ahmedabad. There is no LULC modeling, simulation, or future projection of land cover changes. The primary objective is to estimate and project net irrigation requirement (NIR) under climate change using satellite-derived crop coefficients and downscaled climate data. Thus, the study fails the core inclusion criterion that the primary focus must be LULC prediction, and it meets the exclusion criterion \"No LULC prediction component.\")",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:27:06.774090+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.648,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789655231-l9eyAnJ1SYi2BtCy7F92\",\"object\":\"chat.completion\",\"created\":1789655231,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a non-review research article that does not focus on land use land cover (LULC) prediction. LULC data is used only as a static input to identify cropping pixels (Kharif-only, Rabi-only, double/triple) based on an existing 5 km resolution LULC map from SAC, Ahmedabad. There is no LULC modeling, simulation, or future projection of land cover changes. The primary objective is to estimate and project net irrigation requirement (NIR) under climate change using satellite-derived crop coefficients and downscaled climate data. Thus, the study fails the core inclusion criterion that the primary focus must be LULC prediction, and it meets the exclusion criterion \\\"No LULC prediction component.\\\")\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":19381,\"completion_tokens\":162,\"total_tokens\":19543,\"cost\":0.01574898,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.01574898,\"upstream_inference_prompt_cost\":0.01511718,\"upstream_inference_completions_cost\":0.0006318},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655231-l9eyAnJ1SYi2BtCy7F92",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 19381,
+        "completion_tokens": 162,
+        "total_tokens": 19543,
+        "cost": 0.01574898,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01574898,
+          "upstream_inference_prompt_cost": 0.01511718,
+          "upstream_inference_completions_cost": 0.0006318
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.649,
+  "call_id": "DS__z1_ACELPBPU__qwen__r3",
+  "fingerprint": "0c1726ac1fd77e5ffe3847ed9013be46061fd8a7613e990d930c514b711cf507",
+  "paper_id": "z1_ACELPBPU",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:27:11.422704+00:00",
+  "input_sha256": "3de22c5f649533d690d2e59a03cb28f0c95f0b00b9629d4e93c2344404d393f7",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789653794-5Rhof4AZqX8MUyfVj6C6",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.01638,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10810,
+    "completion_tokens": 1114,
+    "total_tokens": 11924,
+    "cost": 0.01638,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01638,
+      "upstream_inference_prompt_cost": 0.01081,
+      "upstream_inference_completions_cost": 0.00557
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land-Use Intensity and China's Terrestrial Ecosystem Carbon Storage\n\n## Initial Determination\n**Is this a review article?** NO - This is a research paper presenting original modeling and analysis.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA (Non-Review Paper):\n\n1. **Explicit national-scale spatial implementation (entire country)** ✓\n   - Study explicitly covers China nationwide (stated: \"national-scale predictions\")\n   - Methodology section confirms national coverage with provincial-level analysis\n   - Results presented with spatial distribution across all Chinese provinces and regions\n\n2. **Primary focus = LULC prediction/simulation** ✓\n   - Central research question: \"what are the potential effects on TECS in China due to land changes from 2000 to 2050 considering China-specified policies?\"\n   - Primary objective is simulating spatial land-use changes using coupled T21-China and CLUMondo models\n   - LULC prediction is the main research output, not secondary\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\n   - Three scenarios explicitly modeled: \"base scenario,\" \"balanced scenario,\" \"narrowly focused scenario\"\n   - Quantitative comparisons provided (e.g., settlement land increases: 2.13% vs 2.83% vs 15.25% from 2020-2050)\n   - Scenario differences analyzed in detail (Sections 3.2-3.3)\n\n4. **Spatial modeling with quantitative accuracy metrics** ✓\n   - Kappa statistic validation: 0.84 (Section 3.1)\n   - Error rates reported: 9.8% (aboveground biomass), 7.4% (below-ground biomass), 20.9% (soil carbon)\n   - Spatial outputs with 27 land system types\n   - Change rates quantified (e.g., cultivated land: 2.14 to 1.76-1.91 million km²)\n\n5. **Outputs include mapped LULC projections** ✓\n   - Figure 4 shows spatial land system maps for 2000 and 2050 under three scenarios\n   - Figure 8 displays spatial disparities of TECS changes with provincial-level detail\n   - Land system categories mapped with intensity variations (low/middle/high)\n\n### EXCLUSION CRITERIA CHECK:\n\n- ❌ Global-scale analysis without national disaggregation: NOT APPLICABLE (national-scale focus)\n- ❌ Local/regional focus: NOT APPLICABLE (national coverage)\n- ❌ No LULC prediction component: NOT APPLICABLE (LULC is primary focus)\n- ❌ Species-specific/ecological focus unrelated to LULC: NOT APPLICABLE (LULC-centered)\n- ❌ Economic/urban models lacking spatial LULC outputs: NOT APPLICABLE (spatial LULC outputs provided)\n- ❌ Biomass/carbon studies without LULC change analysis: NOT APPLICABLE (LULC changes are analyzed)\n- ❌ Methodological papers without application: NOT APPLICABLE (applied to national-scale prediction)\n- ❌ Purely qualitative/historical only: NOT APPLICABLE (future projections to 2050)\n- ❌ Remote sensing technical studies: NOT APPLICABLE (predictive modeling focus)\n- ❌ Single-scenario projections: NOT APPLICABLE (three scenarios implemented)\n\n---\n\n## Additional Full-Text Verification:\n\n**Scale verification:** Methodology explicitly uses national IAM (T21-China) coupled with CLUMondo for spatial allocation. Results section confirms national aggregation with provincial breakdown (Figure 8).\n\n**Quantitative metrics:** Kappa statistic (0.84), error rates (9.8%-20.9%), area changes in million km², carbon storage in Tg C, percentage changes across scenarios all reported.\n\n**Spatial explicitness:** CLUMondo provides 27 land system types with spatial mapping; figures show geographic distribution of changes.\n\n---\n\n## Final Categorization: **OK**\n\n**Justification:** This paper meets ALL core inclusion criteria for national-scale LULC prediction research. It presents a primary research objective focused on simulating spatial land-use changes across China from 2000-2050 using a coupled national IAM (T21-China) and spatial allocation model (CLUMondo). The study implements three quantitatively distinct scenarios with rigorous validation metrics (Kappa=0.84), provides mapped spatial outputs with 27 land system types, and reports quantified changes in LULC categories and intensities. The paper does not meet any exclusion criteria. LULC prediction is the central research focus, not an incidental input or methodological exercise.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:03:09.238380+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 11.671,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653794-5Rhof4AZqX8MUyfVj6C6\",\"object\":\"chat.completion\",\"created\":1789653794,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land-Use Intensity and China's Terrestrial Ecosystem Carbon Storage\\n\\n## Initial Determination\\n**Is this a review article?** NO - This is a research paper presenting original modeling and analysis.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA (Non-Review Paper):\\n\\n1. **Explicit national-scale spatial implementation (entire country)** ✓\\n   - Study explicitly covers China nationwide (stated: \\\"national-scale predictions\\\")\\n   - Methodology section confirms national coverage with provincial-level analysis\\n   - Results presented with spatial distribution across all Chinese provinces and regions\\n\\n2. **Primary focus = LULC prediction/simulation** ✓\\n   - Central research question: \\\"what are the potential effects on TECS in China due to land changes from 2000 to 2050 considering China-specified policies?\\\"\\n   - Primary objective is simulating spatial land-use changes using coupled T21-China and CLUMondo models\\n   - LULC prediction is the main research output, not secondary\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\\n   - Three scenarios explicitly modeled: \\\"base scenario,\\\" \\\"balanced scenario,\\\" \\\"narrowly focused scenario\\\"\\n   - Quantitative comparisons provided (e.g., settlement land increases: 2.13% vs 2.83% vs 15.25% from 2020-2050)\\n   - Scenario differences analyzed in detail (Sections 3.2-3.3)\\n\\n4. **Spatial modeling with quantitative accuracy metrics** ✓\\n   - Kappa statistic validation: 0.84 (Section 3.1)\\n   - Error rates reported: 9.8% (aboveground biomass), 7.4% (below-ground biomass), 20.9% (soil carbon)\\n   - Spatial outputs with 27 land system types\\n   - Change rates quantified (e.g., cultivated land: 2.14 to 1.76-1.91 million km²)\\n\\n5. **Outputs include mapped LULC projections** ✓\\n   - Figure 4 shows spatial land system maps for 2000 and 2050 under three scenarios\\n   - Figure 8 displays spatial disparities of TECS changes with provincial-level detail\\n   - Land system categories mapped with intensity variations (low/middle/high)\\n\\n### EXCLUSION CRITERIA CHECK:\\n\\n- ❌ Global-scale analysis without national disaggregation: NOT APPLICABLE (national-scale focus)\\n- ❌ Local/regional focus: NOT APPLICABLE (national coverage)\\n- ❌ No LULC prediction component: NOT APPLICABLE (LULC is primary focus)\\n- ❌ Species-specific/ecological focus unrelated to LULC: NOT APPLICABLE (LULC-centered)\\n- ❌ Economic/urban models lacking spatial LULC outputs: NOT APPLICABLE (spatial LULC outputs provided)\\n- ❌ Biomass/carbon studies without LULC change analysis: NOT APPLICABLE (LULC changes are analyzed)\\n- ❌ Methodological papers without application: NOT APPLICABLE (applied to national-scale prediction)\\n- ❌ Purely qualitative/historical only: NOT APPLICABLE (future projections to 2050)\\n- ❌ Remote sensing technical studies: NOT APPLICABLE (predictive modeling focus)\\n- ❌ Single-scenario projections: NOT APPLICABLE (three scenarios implemented)\\n\\n---\\n\\n## Additional Full-Text Verification:\\n\\n**Scale verification:** Methodology explicitly uses national IAM (T21-China) coupled with CLUMondo for spatial allocation. Results section confirms national aggregation with provincial breakdown (Figure 8).\\n\\n**Quantitative metrics:** Kappa statistic (0.84), error rates (9.8%-20.9%), area changes in million km², carbon storage in Tg C, percentage changes across scenarios all reported.\\n\\n**Spatial explicitness:** CLUMondo provides 27 land system types with spatial mapping; figures show geographic distribution of changes.\\n\\n---\\n\\n## Final Categorization: **OK**\\n\\n**Justification:** This paper meets ALL core inclusion criteria for national-scale LULC prediction research. It presents a primary research objective focused on simulating spatial land-use changes across China from 2000-2050 using a coupled national IAM (T21-China) and spatial allocation model (CLUMondo). The study implements three quantitatively distinct scenarios with rigorous validation metrics (Kappa=0.84), provides mapped spatial outputs with 27 land system types, and reports quantified changes in LULC categories and intensities. The paper does not meet any exclusion criteria. LULC prediction is the central research focus, not an incidental input or methodological exercise.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10810,\"completion_tokens\":1114,\"total_tokens\":11924,\"cost\":0.01638,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.01638,\"upstream_inference_prompt_cost\":0.01081,\"upstream_inference_completions_cost\":0.00557},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653794-5Rhof4AZqX8MUyfVj6C6",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 10810,
+        "completion_tokens": 1114,
+        "total_tokens": 11924,
+        "cost": 0.01638,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01638,
+          "upstream_inference_prompt_cost": 0.01081,
+          "upstream_inference_completions_cost": 0.00557
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 11.672,
+  "call_id": "DS__z1_2GNDCS2F__claude__r2",
+  "fingerprint": "f0f1a1390f37f5eed0985f12bd9a23071cc2b65e397eadae137f8654120b8456",
+  "paper_id": "z1_2GNDCS2F",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:03:20.910389+00:00",
+  "input_sha256": "24406ffea880e23dd42889d9735217df97d793743208c6bc2807f6507cfac3c3",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

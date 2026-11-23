@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789652811-RMShJirp1poi7yBFM0OC",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.022886,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 17376,
+    "completion_tokens": 1102,
+    "total_tokens": 18478,
+    "cost": 0.022886,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.022886,
+      "upstream_inference_prompt_cost": 0.017376,
+      "upstream_inference_completions_cost": 0.00551
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Ecological Restoration Priority in China\n\n## Initial Assessment\n\n**Is this a review article?**\nNo. This is a research article (explicitly stated as \"Research article\" in header) presenting original empirical analysis and modeling.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA (Non-Review Research):\n\n1. **Explicit national-scale spatial implementation (entire country)?**\n   - ✅ YES. Study covers all of China at provincial and county levels. Methodology explicitly states \"national scale in China\" and analyzes 31 provinces/regions.\n\n2. **Primary focus = LULC prediction/simulation (central research question)?**\n   - ❌ NO. Primary focus is **ecological restoration priority optimization**, not LULC prediction. The paper's central questions are:\n     - \"How to optimize ecological restoration by classified management and optimal total benefits?\"\n     - \"How can overall socioecological benefits be improved by optimizing ecological restoration?\"\n   - LULC is used as **input data** to detect past restoration sites (2000-2020), not as the prediction target.\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ✅ YES. Seven restoration scenarios (3 single-objective + 4 multi-objective) with quantitative comparisons of priority areas and costs.\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ✅ YES. Uses MaxEnt, CASA, InVEST models with quantitative outputs (habitat conservation scores, water yield in mm, carbon sequestration in gC/m²).\n\n5. **Outputs include mapped LULC projections?**\n   - ❌ NO. Outputs are restoration priority maps, not LULC projections. The paper maps where restoration *should occur* based on ecological performance regimes, not future LULC states.\n\n### SPECIFIC EXCLUSION CRITERIA:\n\n- **Species-specific/ecological focus (flora/fauna) unrelated to LULC?**\n  - ✅ TRIGGERED. While the paper uses LULC data, its primary focus is biodiversity conservation (MaxEnt species distribution modeling), water yield, and carbon sequestration as **ecological restoration objectives**, not LULC change prediction. The ecological restoration priority is the dependent variable, not LULC.\n\n- **No LULC prediction component?**\n  - ✅ TRIGGERED. The paper explicitly detects *past* ERP sites from 2000-2020 using land use change detection, but does not predict *future* LULC states. It uses historical LULC to identify where restoration occurred, then optimizes where restoration *should occur* based on ecological performance regimes.\n\n- **Economic/urban models lacking spatially explicit LULC outputs?**\n  - Partially relevant. The paper includes cost analysis but lacks LULC output projections.\n\n---\n\n## Critical Distinction\n\n**What the paper DOES:**\n- Classifies ecological performance regimes using planetary boundaries\n- Detects where ecological restoration projects occurred (2000-2020) via LULC change detection\n- Optimizes restoration priority areas based on multiple ecosystem services and costs\n- Maps restoration priority zones for future planning\n\n**What the paper DOES NOT do:**\n- Predict future LULC states/transitions\n- Model LULC change dynamics with scenarios\n- Project how land use categories will change under different restoration scenarios\n- Provide quantitative LULC accuracy metrics (e.g., Kappa, overall accuracy of predicted LULC)\n\nThe LULC data serves as **historical context and input** for detecting past restoration sites, not as the **prediction target** or primary analytical output.\n\n---\n\n## Final Categorization\n\n**Final categorization: EXCLUDED**\n\n**Justification:** \nThis paper fails multiple core inclusion criteria for LULC prediction research:\n1. **Primary focus is NOT LULC prediction.** The central research question concerns ecological restoration priority optimization under different sustainability regimes, not land use/land cover change prediction.\n2. **No future LULC projections.** While the paper uses LULC change detection to identify past restoration sites (2000-2020), it does not predict future LULC states or transitions.\n3. **LULC is input, not output.** Land use data functions as a detection tool for historical restoration sites and a constraint in the optimization model, not as the modeled/predicted variable.\n4. **Species/ecological focus exclusion criterion triggered.** The paper's primary objectives (biodiversity, water yield, carbon sequestration) represent ecological restoration goals rather than LULC prediction targets.\n\nThe paper is a strong ecological restoration planning study but falls outside the scope of national-scale LULC prediction research.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:46:46.812064+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 11.756,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789652811-RMShJirp1poi7yBFM0OC\",\"object\":\"chat.completion\",\"created\":1789652811,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Ecological Restoration Priority in China\\n\\n## Initial Assessment\\n\\n**Is this a review article?**\\nNo. This is a research article (explicitly stated as \\\"Research article\\\" in header) presenting original empirical analysis and modeling.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA (Non-Review Research):\\n\\n1. **Explicit national-scale spatial implementation (entire country)?**\\n   - ✅ YES. Study covers all of China at provincial and county levels. Methodology explicitly states \\\"national scale in China\\\" and analyzes 31 provinces/regions.\\n\\n2. **Primary focus = LULC prediction/simulation (central research question)?**\\n   - ❌ NO. Primary focus is **ecological restoration priority optimization**, not LULC prediction. The paper's central questions are:\\n     - \\\"How to optimize ecological restoration by classified management and optimal total benefits?\\\"\\n     - \\\"How can overall socioecological benefits be improved by optimizing ecological restoration?\\\"\\n   - LULC is used as **input data** to detect past restoration sites (2000-2020), not as the prediction target.\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ✅ YES. Seven restoration scenarios (3 single-objective + 4 multi-objective) with quantitative comparisons of priority areas and costs.\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ✅ YES. Uses MaxEnt, CASA, InVEST models with quantitative outputs (habitat conservation scores, water yield in mm, carbon sequestration in gC/m²).\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ❌ NO. Outputs are restoration priority maps, not LULC projections. The paper maps where restoration *should occur* based on ecological performance regimes, not future LULC states.\\n\\n### SPECIFIC EXCLUSION CRITERIA:\\n\\n- **Species-specific/ecological focus (flora/fauna) unrelated to LULC?**\\n  - ✅ TRIGGERED. While the paper uses LULC data, its primary focus is biodiversity conservation (MaxEnt species distribution modeling), water yield, and carbon sequestration as **ecological restoration objectives**, not LULC change prediction. The ecological restoration priority is the dependent variable, not LULC.\\n\\n- **No LULC prediction component?**\\n  - ✅ TRIGGERED. The paper explicitly detects *past* ERP sites from 2000-2020 using land use change detection, but does not predict *future* LULC states. It uses historical LULC to identify where restoration occurred, then optimizes where restoration *should occur* based on ecological performance regimes.\\n\\n- **Economic/urban models lacking spatially explicit LULC outputs?**\\n  - Partially relevant. The paper includes cost analysis but lacks LULC output projections.\\n\\n---\\n\\n## Critical Distinction\\n\\n**What the paper DOES:**\\n- Classifies ecological performance regimes using planetary boundaries\\n- Detects where ecological restoration projects occurred (2000-2020) via LULC change detection\\n- Optimizes restoration priority areas based on multiple ecosystem services and costs\\n- Maps restoration priority zones for future planning\\n\\n**What the paper DOES NOT do:**\\n- Predict future LULC states/transitions\\n- Model LULC change dynamics with scenarios\\n- Project how land use categories will change under different restoration scenarios\\n- Provide quantitative LULC accuracy metrics (e.g., Kappa, overall accuracy of predicted LULC)\\n\\nThe LULC data serves as **historical context and input** for detecting past restoration sites, not as the **prediction target** or primary analytical output.\\n\\n---\\n\\n## Final Categorization\\n\\n**Final categorization: EXCLUDED**\\n\\n**Justification:** \\nThis paper fails multiple core inclusion criteria for LULC prediction research:\\n1. **Primary focus is NOT LULC prediction.** The central research question concerns ecological restoration priority optimization under different sustainability regimes, not land use/land cover change prediction.\\n2. **No future LULC projections.** While the paper uses LULC change detection to identify past restoration sites (2000-2020), it does not predict future LULC states or transitions.\\n3. **LULC is input, not output.** Land use data functions as a detection tool for historical restoration sites and a constraint in the optimization model, not as the modeled/predicted variable.\\n4. **Species/ecological focus exclusion criterion triggered.** The paper's primary objectives (biodiversity, water yield, carbon sequestration) represent ecological restoration goals rather than LULC prediction targets.\\n\\nThe paper is a strong ecological restoration planning study but falls outside the scope of national-scale LULC prediction research.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":17376,\"completion_tokens\":1102,\"total_tokens\":18478,\"cost\":0.022886,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.022886,\"upstream_inference_prompt_cost\":0.017376,\"upstream_inference_completions_cost\":0.00551},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652811-RMShJirp1poi7yBFM0OC",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 17376,
+        "completion_tokens": 1102,
+        "total_tokens": 18478,
+        "cost": 0.022886,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.022886,
+          "upstream_inference_prompt_cost": 0.017376,
+          "upstream_inference_completions_cost": 0.00551
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 11.756,
+  "call_id": "DS__z1_VYGKANT4__claude__r1",
+  "fingerprint": "8fc358cbc58559a8b2b395a70bff0b0da159d32d600d14bd6b2f9422d84eae9a",
+  "paper_id": "z1_VYGKANT4",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:46:58.568197+00:00",
+  "input_sha256": "333f005ae2dfe31a75a9ec49d572e44389f5a7719c0ae4bd4d6150e066cc19f4",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789655087-6XepE63rASvHMlWrQo5Q",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.01567098,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 19211,
+    "completion_tokens": 176,
+    "total_tokens": 19387,
+    "cost": 0.01567098,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01567098,
+      "upstream_inference_prompt_cost": 0.01498458,
+      "upstream_inference_completions_cost": 0.0006864
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a non-review research article focused on modeling potential future suitable habitat for 76 tree species under climate change scenarios using the DISTRIB regression tree model. While it produces spatially explicit county-level projections across the eastern United States (east of the 100th meridian), its primary objective is species distribution modeling—not land use/land cover (LULC) prediction. The study explicitly models ecological suitability for individual tree species based on climate, soils, and topography, not transitions between land cover classes (e.g., forest, cropland, urban). It meets some inclusion criteria (multi-scenario, spatially explicit, quantitative outputs), but fails the core requirement that the primary focus be LULC prediction. Instead, it falls under species-specific ecological modeling, which is an exclusion criterion.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:24:42.381243+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 5.036,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789655087-6XepE63rASvHMlWrQo5Q\",\"object\":\"chat.completion\",\"created\":1789655087,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a non-review research article focused on modeling potential future suitable habitat for 76 tree species under climate change scenarios using the DISTRIB regression tree model. While it produces spatially explicit county-level projections across the eastern United States (east of the 100th meridian), its primary objective is species distribution modeling—not land use/land cover (LULC) prediction. The study explicitly models ecological suitability for individual tree species based on climate, soils, and topography, not transitions between land cover classes (e.g., forest, cropland, urban). It meets some inclusion criteria (multi-scenario, spatially explicit, quantitative outputs), but fails the core requirement that the primary focus be LULC prediction. Instead, it falls under species-specific ecological modeling, which is an exclusion criterion.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":19211,\"completion_tokens\":176,\"total_tokens\":19387,\"cost\":0.01567098,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.01567098,\"upstream_inference_prompt_cost\":0.01498458,\"upstream_inference_completions_cost\":0.0006864},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655087-6XepE63rASvHMlWrQo5Q",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 19211,
+        "completion_tokens": 176,
+        "total_tokens": 19387,
+        "cost": 0.01567098,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01567098,
+          "upstream_inference_prompt_cost": 0.01498458,
+          "upstream_inference_completions_cost": 0.0006864
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 5.037,
+  "call_id": "DS__z1_QR5UV8HK__qwen__r3",
+  "fingerprint": "9b8747c00a13c527d074456cfe3ca685089e930f55dad8b0c7f76322c44d225a",
+  "paper_id": "z1_QR5UV8HK",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:24:47.417627+00:00",
+  "input_sha256": "7f0bd85cf36e3fe5cf3e73f842ca0a4f4ce16948e540df88ec985f995e6e6275",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

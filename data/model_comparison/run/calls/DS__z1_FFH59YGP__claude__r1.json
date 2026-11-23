@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789652997-XLiOtUNK9wXhEDUrgHn8",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.022925,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 18205,
+    "completion_tokens": 944,
+    "total_tokens": 19149,
+    "cost": 0.022925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.022925,
+      "upstream_inference_prompt_cost": 0.018205,
+      "upstream_inference_completions_cost": 0.00472
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: LULC Prediction Paper Assessment\n\n## Initial Determination\n**Is this a review article?** NO - This is a research paper presenting original empirical analysis.\n\n---\n\n## Non-Review Paper Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA CHECK:\n\n1. **Explicit national-scale spatial implementation (entire country)?**\n   - ✓ YES - Study explicitly covers \"the entirety of Afghanistan\" (Section 2.2)\n   - Entire country analyzed at 30m resolution using GlobeLand30 data\n\n2. **Primary focus = LULC prediction/simulation (central research question)?**\n   - ✓ YES - Primary objective stated: \"assess various possible future scenarios of ESV change in Afghanistan\" through LULC simulation\n   - Core research question addresses LULC changes and their ecosystem service implications\n   - Section 2.4.3 describes DLS model for LULC prediction for 2030\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ✓ YES - Three scenarios explicitly developed and compared:\n     - Business-As-Usual (BAU)\n     - Rapid Economic Development (RED)\n     - Environmental Protection (ENP)\n   - Quantitative results provided for each scenario (Section 3.4 and results tables)\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ✓ YES - DLS model validation reported:\n     - Overall accuracy: 89%\n     - Kappa value: 0.78 (Table 4)\n     - Regression AUC values reported (Table 3, range 0.76-0.84)\n     - Change rates quantified in percentages (Table 6)\n\n5. **Outputs include mapped LULC projections?**\n   - ✓ YES - Figure 4 shows LULC maps for 2000, 2010, 2020\n   - Paper states: \"The final outputs of the DLS modeling were spatial maps of LULC for 2030 under BAU, ENP, and RED scenarios\"\n   - Predicted ESV maps referenced (Figure 5)\n\n### EXCLUSION CRITERIA CHECK:\n\n- ✗ Global-scale analysis without national disaggregation? NO - National-scale focus\n- ✗ Local/regional/transboundary focus? NO - Entire country\n- ✗ No LULC prediction component? NO - LULC prediction is central\n- ✗ Species-specific/ecological focus unrelated to LULC? NO - LULC-based ecosystem services\n- ✗ Economic/urban models lacking spatial LULC outputs? NO - Spatial LULC maps produced\n- ✗ Biomass/bioenergy/carbon without LULC change analysis? NO - LULC change is primary\n- ✗ Methodological paper without application? NO - Full national-scale application\n- ✗ Purely qualitative/historical only? NO - Future projections (2030) included\n- ✗ Remote sensing technical study? NO - Predictive modeling focus\n- ✗ Single BAU scenario only? NO - Three scenarios compared\n\n---\n\n## FINAL CATEGORIZATION\n\n**Final categorization: OK**\n\n**Justification:** \nThis paper fully meets all core inclusion criteria for national-scale LULC prediction research. It implements spatially explicit LULC simulation (DLS model) across Afghanistan's entire territory with quantitative accuracy validation (Kappa=0.78, accuracy=89%). The primary research objective is LULC prediction for 2030 under three distinct scenarios (BAU, RED, ENP) with quantitative comparative analysis. Spatial modeling outputs include mapped LULC projections and ecosystem service value estimates. The study incorporates multiple driving factors through regression analysis and couples linear programming with scenario development for rational allocation of future land uses. All outputs are spatially explicit with documented accuracy metrics, meeting the rigorous standards for national-scale LULC prediction research.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:49:52.769871+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 9.525,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789652997-XLiOtUNK9wXhEDUrgHn8\",\"object\":\"chat.completion\",\"created\":1789652997,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: LULC Prediction Paper Assessment\\n\\n## Initial Determination\\n**Is this a review article?** NO - This is a research paper presenting original empirical analysis.\\n\\n---\\n\\n## Non-Review Paper Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA CHECK:\\n\\n1. **Explicit national-scale spatial implementation (entire country)?**\\n   - ✓ YES - Study explicitly covers \\\"the entirety of Afghanistan\\\" (Section 2.2)\\n   - Entire country analyzed at 30m resolution using GlobeLand30 data\\n\\n2. **Primary focus = LULC prediction/simulation (central research question)?**\\n   - ✓ YES - Primary objective stated: \\\"assess various possible future scenarios of ESV change in Afghanistan\\\" through LULC simulation\\n   - Core research question addresses LULC changes and their ecosystem service implications\\n   - Section 2.4.3 describes DLS model for LULC prediction for 2030\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ✓ YES - Three scenarios explicitly developed and compared:\\n     - Business-As-Usual (BAU)\\n     - Rapid Economic Development (RED)\\n     - Environmental Protection (ENP)\\n   - Quantitative results provided for each scenario (Section 3.4 and results tables)\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ✓ YES - DLS model validation reported:\\n     - Overall accuracy: 89%\\n     - Kappa value: 0.78 (Table 4)\\n     - Regression AUC values reported (Table 3, range 0.76-0.84)\\n     - Change rates quantified in percentages (Table 6)\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ✓ YES - Figure 4 shows LULC maps for 2000, 2010, 2020\\n   - Paper states: \\\"The final outputs of the DLS modeling were spatial maps of LULC for 2030 under BAU, ENP, and RED scenarios\\\"\\n   - Predicted ESV maps referenced (Figure 5)\\n\\n### EXCLUSION CRITERIA CHECK:\\n\\n- ✗ Global-scale analysis without national disaggregation? NO - National-scale focus\\n- ✗ Local/regional/transboundary focus? NO - Entire country\\n- ✗ No LULC prediction component? NO - LULC prediction is central\\n- ✗ Species-specific/ecological focus unrelated to LULC? NO - LULC-based ecosystem services\\n- ✗ Economic/urban models lacking spatial LULC outputs? NO - Spatial LULC maps produced\\n- ✗ Biomass/bioenergy/carbon without LULC change analysis? NO - LULC change is primary\\n- ✗ Methodological paper without application? NO - Full national-scale application\\n- ✗ Purely qualitative/historical only? NO - Future projections (2030) included\\n- ✗ Remote sensing technical study? NO - Predictive modeling focus\\n- ✗ Single BAU scenario only? NO - Three scenarios compared\\n\\n---\\n\\n## FINAL CATEGORIZATION\\n\\n**Final categorization: OK**\\n\\n**Justification:** \\nThis paper fully meets all core inclusion criteria for national-scale LULC prediction research. It implements spatially explicit LULC simulation (DLS model) across Afghanistan's entire territory with quantitative accuracy validation (Kappa=0.78, accuracy=89%). The primary research objective is LULC prediction for 2030 under three distinct scenarios (BAU, RED, ENP) with quantitative comparative analysis. Spatial modeling outputs include mapped LULC projections and ecosystem service value estimates. The study incorporates multiple driving factors through regression analysis and couples linear programming with scenario development for rational allocation of future land uses. All outputs are spatially explicit with documented accuracy metrics, meeting the rigorous standards for national-scale LULC prediction research.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":18205,\"completion_tokens\":944,\"total_tokens\":19149,\"cost\":0.022925,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.022925,\"upstream_inference_prompt_cost\":0.018205,\"upstream_inference_completions_cost\":0.00472},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652997-XLiOtUNK9wXhEDUrgHn8",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 18205,
+        "completion_tokens": 944,
+        "total_tokens": 19149,
+        "cost": 0.022925,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.022925,
+          "upstream_inference_prompt_cost": 0.018205,
+          "upstream_inference_completions_cost": 0.00472
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 9.525,
+  "call_id": "DS__z1_FFH59YGP__claude__r1",
+  "fingerprint": "214c4e6c4ad452a2fb47564630cae23bf5d342255d747d86b2c704b94502e3c3",
+  "paper_id": "z1_FFH59YGP",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:50:02.294971+00:00",
+  "input_sha256": "99ed07a830354535e9eb0481465e6298a7742a9234011807a1244ddf5d78824a",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

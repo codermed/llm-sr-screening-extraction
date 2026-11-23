@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789656141-ogFpNVgLENHri3JN3noS",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.021401,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 16191,
+    "completion_tokens": 1042,
+    "total_tokens": 17233,
+    "cost": 0.021401,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.021401,
+      "upstream_inference_prompt_cost": 0.016191,
+      "upstream_inference_completions_cost": 0.00521
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Kerry et al. (2024) - Land Suitability for Rainfed Corn in Georgia\n\n## Initial Assessment\n**Is this a review article?** No. This is an original research paper presenting empirical analysis and modeling of land suitability classifications.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA CHECK (Non-Review Paper):\n\n1. **Explicit national-scale spatial implementation (entire country)?**\n   - ❌ **FAILS** - Study is limited to Georgia state (USA), not national scale\n   - Methodology section clearly states: \"Annual and monthly climate normals (1991–2020)...for each weather station in Georgia\"\n   - Analysis conducted at county level within Georgia only\n\n2. **Primary focus = LULC prediction/simulation?**\n   - ⚠️ **PARTIAL** - Primary focus is land suitability (LS) classification for corn, not LULC prediction per se\n   - The paper develops LS zones but does NOT predict actual future LULC change or conversion\n   - LS classification ≠ LULC prediction (LS identifies where crops *could* grow; LULC predicts what *will* be grown)\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ✓ **PASSES** - Two emissions scenarios implemented (RCP4.5 and RCP8.5)\n   - Quantitative comparison of mean center shifts: \"100–150 km\" (RCP4.5) vs \"200–300 km\" (RCP8.5)\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ⚠️ **PARTIAL** - Spatial modeling present but limited accuracy metrics\n   - Validation uses statistical tests (Mann-Whitney U, Kruskal-Wallis H) on historical data\n   - Reports proportions of significant differences (Table 2) but lacks traditional spatial accuracy metrics (e.g., kappa, confusion matrices)\n\n5. **Outputs include mapped LULC projections?**\n   - ❌ **FAILS** - Outputs are LS class maps, NOT LULC projections\n   - Figures 7-8 show suitability zones, not actual land use/cover predictions\n   - Paper explicitly states: \"LS classifications show whether the climate, topography, and soil factors...are 'suitable' for growing certain crops\" (not what will actually be grown)\n\n---\n\n### SPECIFIC EXCLUSION CRITERIA CHECK:\n\n- ✓ **Local/regional scale focus** - TRIGGERS EXCLUSION (state-level, not national)\n- ✓ **No LULC prediction component** - TRIGGERS EXCLUSION (suitability classification ≠ LULC prediction)\n- ✓ **Methodological paper without national-scale application** - TRIGGERS EXCLUSION (develops LS framework for single state)\n\n---\n\n## Critical Distinction\nThe paper focuses on **land suitability classification** (where crops *could* be grown under climate scenarios), not **LULC prediction** (actual spatial distribution of land use/cover types). While climate-driven suitability shifts are presented, there is no modeling of:\n- Actual conversion of land from one use to another\n- Spatial LULC change dynamics\n- Competing land uses or allocation models\n- Future LULC maps with quantified change rates\n\nThe authors acknowledge this limitation: \"strategies other than moving where corn is grown...need to be sought, such as planting earlier, irrigating...or even switching to other crops\" - indicating uncertainty about actual future LULC outcomes.\n\n---\n\n## Final Categorization\n\n**EXCLUDED**\n\n**Justification:** \n1. **Scale failure**: Study limited to Georgia state (USA), not national scale as required by inclusion criteria\n2. **Primary focus mismatch**: Paper develops land suitability classifications, not LULC predictions. LS zones identify potential growing areas under climate scenarios but do not predict actual future land use/cover distributions\n3. **Output type**: Maps show suitability classes (S1-N4), not predicted LULC categories or change rates\n4. **Missing LULC components**: No modeling of land use conversion, competing uses, or spatial allocation of actual future LULC; no quantified LULC change metrics\n5. **Methodological scope**: Primarily a crop suitability assessment tool application, not a national-scale LULC prediction study",
+  "automated_status": "invalid_output",
+  "parsed_label": "",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:42:16.914900+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 13.63,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789656141-ogFpNVgLENHri3JN3noS\",\"object\":\"chat.completion\",\"created\":1789656141,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Kerry et al. (2024) - Land Suitability for Rainfed Corn in Georgia\\n\\n## Initial Assessment\\n**Is this a review article?** No. This is an original research paper presenting empirical analysis and modeling of land suitability classifications.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA CHECK (Non-Review Paper):\\n\\n1. **Explicit national-scale spatial implementation (entire country)?**\\n   - ❌ **FAILS** - Study is limited to Georgia state (USA), not national scale\\n   - Methodology section clearly states: \\\"Annual and monthly climate normals (1991–2020)...for each weather station in Georgia\\\"\\n   - Analysis conducted at county level within Georgia only\\n\\n2. **Primary focus = LULC prediction/simulation?**\\n   - ⚠️ **PARTIAL** - Primary focus is land suitability (LS) classification for corn, not LULC prediction per se\\n   - The paper develops LS zones but does NOT predict actual future LULC change or conversion\\n   - LS classification ≠ LULC prediction (LS identifies where crops *could* grow; LULC predicts what *will* be grown)\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ✓ **PASSES** - Two emissions scenarios implemented (RCP4.5 and RCP8.5)\\n   - Quantitative comparison of mean center shifts: \\\"100–150 km\\\" (RCP4.5) vs \\\"200–300 km\\\" (RCP8.5)\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ⚠️ **PARTIAL** - Spatial modeling present but limited accuracy metrics\\n   - Validation uses statistical tests (Mann-Whitney U, Kruskal-Wallis H) on historical data\\n   - Reports proportions of significant differences (Table 2) but lacks traditional spatial accuracy metrics (e.g., kappa, confusion matrices)\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ❌ **FAILS** - Outputs are LS class maps, NOT LULC projections\\n   - Figures 7-8 show suitability zones, not actual land use/cover predictions\\n   - Paper explicitly states: \\\"LS classifications show whether the climate, topography, and soil factors...are 'suitable' for growing certain crops\\\" (not what will actually be grown)\\n\\n---\\n\\n### SPECIFIC EXCLUSION CRITERIA CHECK:\\n\\n- ✓ **Local/regional scale focus** - TRIGGERS EXCLUSION (state-level, not national)\\n- ✓ **No LULC prediction component** - TRIGGERS EXCLUSION (suitability classification ≠ LULC prediction)\\n- ✓ **Methodological paper without national-scale application** - TRIGGERS EXCLUSION (develops LS framework for single state)\\n\\n---\\n\\n## Critical Distinction\\nThe paper focuses on **land suitability classification** (where crops *could* be grown under climate scenarios), not **LULC prediction** (actual spatial distribution of land use/cover types). While climate-driven suitability shifts are presented, there is no modeling of:\\n- Actual conversion of land from one use to another\\n- Spatial LULC change dynamics\\n- Competing land uses or allocation models\\n- Future LULC maps with quantified change rates\\n\\nThe authors acknowledge this limitation: \\\"strategies other than moving where corn is grown...need to be sought, such as planting earlier, irrigating...or even switching to other crops\\\" - indicating uncertainty about actual future LULC outcomes.\\n\\n---\\n\\n## Final Categorization\\n\\n**EXCLUDED**\\n\\n**Justification:** \\n1. **Scale failure**: Study limited to Georgia state (USA), not national scale as required by inclusion criteria\\n2. **Primary focus mismatch**: Paper develops land suitability classifications, not LULC predictions. LS zones identify potential growing areas under climate scenarios but do not predict actual future land use/cover distributions\\n3. **Output type**: Maps show suitability classes (S1-N4), not predicted LULC categories or change rates\\n4. **Missing LULC components**: No modeling of land use conversion, competing uses, or spatial allocation of actual future LULC; no quantified LULC change metrics\\n5. **Methodological scope**: Primarily a crop suitability assessment tool application, not a national-scale LULC prediction study\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":16191,\"completion_tokens\":1042,\"total_tokens\":17233,\"cost\":0.021401,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.021401,\"upstream_inference_prompt_cost\":0.016191,\"upstream_inference_completions_cost\":0.00521},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789656141-ogFpNVgLENHri3JN3noS",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 16191,
+        "completion_tokens": 1042,
+        "total_tokens": 17233,
+        "cost": 0.021401,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.021401,
+          "upstream_inference_prompt_cost": 0.016191,
+          "upstream_inference_completions_cost": 0.00521
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 13.63,
+  "call_id": "DS__z1_JA23DHFY__claude__r3",
+  "fingerprint": "21e61af024f75984b44291738f019d7c40af6493662e4e308198f207dd2b14fb",
+  "paper_id": "z1_JA23DHFY",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:42:30.544622+00:00",
+  "input_sha256": "792e0ad810d4238de27dc8498843234f61ddf8095b83156a2c97c0cdd03918bf",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

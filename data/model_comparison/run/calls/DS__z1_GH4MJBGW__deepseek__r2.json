@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789654511-4irWhsEqM0gdI3lCFjAA",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0036864,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 14006,
+    "completion_tokens": 118,
+    "total_tokens": 14124,
+    "cost": 0.0036864,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0036864,
+      "upstream_inference_prompt_cost": 0.00364156,
+      "upstream_inference_completions_cost": 4.484e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper's primary focus is integrated energy system modeling and the CLEWS nexus assessment for Mauritius. While it mentions land-use as part of the integrated framework, LULC prediction is not the central research question. The study uses land-use data and models (AEZ) to inform energy and water scenarios, but does not implement or present its own national-scale, spatially explicit LULC predictions with multiple future scenarios and quantitative accuracy metrics. The core objective is to demonstrate the value of integrated resource assessment, not to predict future land cover.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:15:07.012973+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 7.261,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789654511-4irWhsEqM0gdI3lCFjAA\",\"object\":\"chat.completion\",\"created\":1789654511,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper's primary focus is integrated energy system modeling and the CLEWS nexus assessment for Mauritius. While it mentions land-use as part of the integrated framework, LULC prediction is not the central research question. The study uses land-use data and models (AEZ) to inform energy and water scenarios, but does not implement or present its own national-scale, spatially explicit LULC predictions with multiple future scenarios and quantitative accuracy metrics. The core objective is to demonstrate the value of integrated resource assessment, not to predict future land cover.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":14006,\"completion_tokens\":118,\"total_tokens\":14124,\"cost\":0.0036864,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0036864,\"upstream_inference_prompt_cost\":0.00364156,\"upstream_inference_completions_cost\":0.00004484},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654511-4irWhsEqM0gdI3lCFjAA",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 14006,
+        "completion_tokens": 118,
+        "total_tokens": 14124,
+        "cost": 0.0036864,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0036864,
+          "upstream_inference_prompt_cost": 0.00364156,
+          "upstream_inference_completions_cost": 4.484e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 7.261,
+  "call_id": "DS__z1_GH4MJBGW__deepseek__r2",
+  "fingerprint": "8721882131d098ad53166be985e7640a1cc5c41ef37c93d5f16bddcf8b7c88d5",
+  "paper_id": "z1_GH4MJBGW",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:15:14.273625+00:00",
+  "input_sha256": "9c51d2f4aed05dbf1796358bfb112777a592ec001ae47b2299270681ca23203b",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

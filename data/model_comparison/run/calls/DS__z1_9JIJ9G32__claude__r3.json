@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789655445-kw1yiVujaLH3MSlMc43W",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.023069,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 18034,
+    "completion_tokens": 1007,
+    "total_tokens": 19041,
+    "cost": 0.023069,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.023069,
+      "upstream_inference_prompt_cost": 0.018034,
+      "upstream_inference_completions_cost": 0.005035
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: SOC Stocks and Long-term Temporal Changes in Agricultural Soils in Ireland\n\n## Initial Assessment\n\n**Is this a review article?**\nNO. This is a primary research paper presenting original empirical analysis and modeling of soil organic carbon (SOC) stocks in Ireland using national datasets and spatial analysis.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### Core Inclusion Criteria for Non-Review Papers:\n\n**1. Explicit national-scale spatial implementation (entire country)?**\n✓ YES - The study covers Ireland at national level, using Land Parcel Identification System (LPIS) data from 2000-2014, National Soil Database (NSDB), and Indicative Soil Type maps overlaid with ArcGIS.\n\n**2. Primary focus = LULC prediction/simulation?**\n✗ NO - The primary focus is **quantifying SOC stocks and their changes**, not predicting future land use/land cover changes. While the paper analyzes historical LU changes (2000-2014) and projects SOC values forward to 2014 based on past trends, the core research question concerns SOC dynamics, not LULC prediction.\n\n**3. Implementation of ≥2 future scenarios with quantitative comparison?**\n✗ NO - The paper does not implement multiple future LULC scenarios. It uses a single backward/forward projection approach (1990-2006-2014) based on historical trends and IPCC density change factors, not alternative future LULC scenarios.\n\n**4. Spatial modeling with quantitative accuracy metrics?**\n✓ YES - The paper includes spatial modeling using GIS, pedotransfer functions, depth distribution models, and reports statistical metrics (R², CV, SSE, MSE, RMSE).\n\n**5. Outputs include mapped LULC projections?**\n✗ NO - Outputs are SOC density/stock projections, not LULC projections. While historical LU categories are mapped and analyzed, future LULC distributions are not predicted or mapped.\n\n---\n\n### Specific Exclusion Criteria Check:\n\n- **Biomass/bioenergy/carbon studies without LULC change analysis?** \n  ✓ APPLIES - This is fundamentally a carbon/SOC study. While it uses historical LU data as an input variable, the paper does not predict or model LULC changes. Historical LU changes (2000-2014) are documented but not projected forward.\n\n- **Methodological papers without application to national-scale prediction?**\n  ✓ PARTIALLY APPLIES - The paper develops refined models (depth distribution models, PTFs, exponential 3P models) primarily for SOC prediction, not LULC prediction.\n\n- **No LULC prediction component?**\n  ✓ APPLIES - There is no LULC prediction component. The paper analyzes historical LU distributions and their relationship to SOC, but does not predict future LULC scenarios or changes.\n\n---\n\n## Critical Distinction\n\nThe paper uses **LULC as an explanatory variable** to understand SOC dynamics, but does not **predict LULC changes**. The research question is: \"How much SOC is stored under different land uses and soil types in Ireland, and how has this changed?\" Not: \"How will Irish agricultural land use change in the future?\"\n\n---\n\n## Final Categorization\n\n**EXCLUDED**\n\n**Justification:** \nThis is a primary research paper focused on quantifying soil organic carbon (SOC) stocks and their temporal changes across agricultural land uses in Ireland (1990-2014). While the study implements national-scale spatial analysis with GIS and develops sophisticated modeling approaches (exponential 3P models, pedotransfer functions), it **lacks a primary focus on LULC prediction**. The paper analyzes historical land use patterns (2000-2014) as contextual data and uses them to explain SOC dynamics, but does not predict or simulate future LULC scenarios or changes. Historical LU categories are documented and mapped, but no forward-looking LULC projections are generated. The research is fundamentally a carbon/soil science study, not an LULC prediction study, and therefore fails the core inclusion criterion that LULC prediction must be the primary research objective. It meets the specific exclusion criterion: \"Biomass/bioenergy/carbon studies without LULC change analysis.\"",
+  "automated_status": "invalid_output",
+  "parsed_label": "",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:30:40.575715+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.716,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655445-kw1yiVujaLH3MSlMc43W\",\"object\":\"chat.completion\",\"created\":1789655445,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: SOC Stocks and Long-term Temporal Changes in Agricultural Soils in Ireland\\n\\n## Initial Assessment\\n\\n**Is this a review article?**\\nNO. This is a primary research paper presenting original empirical analysis and modeling of soil organic carbon (SOC) stocks in Ireland using national datasets and spatial analysis.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### Core Inclusion Criteria for Non-Review Papers:\\n\\n**1. Explicit national-scale spatial implementation (entire country)?**\\n✓ YES - The study covers Ireland at national level, using Land Parcel Identification System (LPIS) data from 2000-2014, National Soil Database (NSDB), and Indicative Soil Type maps overlaid with ArcGIS.\\n\\n**2. Primary focus = LULC prediction/simulation?**\\n✗ NO - The primary focus is **quantifying SOC stocks and their changes**, not predicting future land use/land cover changes. While the paper analyzes historical LU changes (2000-2014) and projects SOC values forward to 2014 based on past trends, the core research question concerns SOC dynamics, not LULC prediction.\\n\\n**3. Implementation of ≥2 future scenarios with quantitative comparison?**\\n✗ NO - The paper does not implement multiple future LULC scenarios. It uses a single backward/forward projection approach (1990-2006-2014) based on historical trends and IPCC density change factors, not alternative future LULC scenarios.\\n\\n**4. Spatial modeling with quantitative accuracy metrics?**\\n✓ YES - The paper includes spatial modeling using GIS, pedotransfer functions, depth distribution models, and reports statistical metrics (R², CV, SSE, MSE, RMSE).\\n\\n**5. Outputs include mapped LULC projections?**\\n✗ NO - Outputs are SOC density/stock projections, not LULC projections. While historical LU categories are mapped and analyzed, future LULC distributions are not predicted or mapped.\\n\\n---\\n\\n### Specific Exclusion Criteria Check:\\n\\n- **Biomass/bioenergy/carbon studies without LULC change analysis?** \\n  ✓ APPLIES - This is fundamentally a carbon/SOC study. While it uses historical LU data as an input variable, the paper does not predict or model LULC changes. Historical LU changes (2000-2014) are documented but not projected forward.\\n\\n- **Methodological papers without application to national-scale prediction?**\\n  ✓ PARTIALLY APPLIES - The paper develops refined models (depth distribution models, PTFs, exponential 3P models) primarily for SOC prediction, not LULC prediction.\\n\\n- **No LULC prediction component?**\\n  ✓ APPLIES - There is no LULC prediction component. The paper analyzes historical LU distributions and their relationship to SOC, but does not predict future LULC scenarios or changes.\\n\\n---\\n\\n## Critical Distinction\\n\\nThe paper uses **LULC as an explanatory variable** to understand SOC dynamics, but does not **predict LULC changes**. The research question is: \\\"How much SOC is stored under different land uses and soil types in Ireland, and how has this changed?\\\" Not: \\\"How will Irish agricultural land use change in the future?\\\"\\n\\n---\\n\\n## Final Categorization\\n\\n**EXCLUDED**\\n\\n**Justification:** \\nThis is a primary research paper focused on quantifying soil organic carbon (SOC) stocks and their temporal changes across agricultural land uses in Ireland (1990-2014). While the study implements national-scale spatial analysis with GIS and develops sophisticated modeling approaches (exponential 3P models, pedotransfer functions), it **lacks a primary focus on LULC prediction**. The paper analyzes historical land use patterns (2000-2014) as contextual data and uses them to explain SOC dynamics, but does not predict or simulate future LULC scenarios or changes. Historical LU categories are documented and mapped, but no forward-looking LULC projections are generated. The research is fundamentally a carbon/soil science study, not an LULC prediction study, and therefore fails the core inclusion criterion that LULC prediction must be the primary research objective. It meets the specific exclusion criterion: \\\"Biomass/bioenergy/carbon studies without LULC change analysis.\\\"\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":18034,\"completion_tokens\":1007,\"total_tokens\":19041,\"cost\":0.023069,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.023069,\"upstream_inference_prompt_cost\":0.018034,\"upstream_inference_completions_cost\":0.005035},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655445-kw1yiVujaLH3MSlMc43W",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 18034,
+        "completion_tokens": 1007,
+        "total_tokens": 19041,
+        "cost": 0.023069,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.023069,
+          "upstream_inference_prompt_cost": 0.018034,
+          "upstream_inference_completions_cost": 0.005035
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.717,
+  "call_id": "DS__z1_9JIJ9G32__claude__r3",
+  "fingerprint": "dc2b1abf3991be2e282e1eb4658f0e5482df149796b87dd455d6b445f633b5be",
+  "paper_id": "z1_9JIJ9G32",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:30:53.292529+00:00",
+  "input_sha256": "70de6962f672a5fd10e268e99299ab6580984901c432198ce2dec398175c73e0",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

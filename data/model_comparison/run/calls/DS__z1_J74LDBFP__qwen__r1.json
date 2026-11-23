@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789653598-xmnlUeYResGbuHxlaaFO",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.01472718,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 17946,
+    "completion_tokens": 187,
+    "total_tokens": 18133,
+    "cost": 0.01472718,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01472718,
+      "upstream_inference_prompt_cost": 0.01399788,
+      "upstream_inference_completions_cost": 0.0007293
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: The paper is a non-review research article that explicitly focuses on national-scale land use and land cover (LULC) prediction in China from 2000 to 2060. It implements three distinct future policy scenarios—baseline, cropland protection, and green development—and quantitatively compares projected changes in area proportions, conversions, and spatial patterns across all major land classes. The study uses the PLUS model, a spatially explicit simulation framework, and reports quantitative accuracy metrics including kappa coefficient (0.827), overall accuracy (OA = 0.878), and Figure of Merit (FOM = 0.161). It produces mapped LULC projections for 2030 and 2060 at 1-km resolution covering mainland China, satisfying all core inclusion criteria and none of the exclusion criteria.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:59:53.214190+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 5.054,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789653598-xmnlUeYResGbuHxlaaFO\",\"object\":\"chat.completion\",\"created\":1789653598,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: The paper is a non-review research article that explicitly focuses on national-scale land use and land cover (LULC) prediction in China from 2000 to 2060. It implements three distinct future policy scenarios—baseline, cropland protection, and green development—and quantitatively compares projected changes in area proportions, conversions, and spatial patterns across all major land classes. The study uses the PLUS model, a spatially explicit simulation framework, and reports quantitative accuracy metrics including kappa coefficient (0.827), overall accuracy (OA = 0.878), and Figure of Merit (FOM = 0.161). It produces mapped LULC projections for 2030 and 2060 at 1-km resolution covering mainland China, satisfying all core inclusion criteria and none of the exclusion criteria.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":17946,\"completion_tokens\":187,\"total_tokens\":18133,\"cost\":0.01472718,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.01472718,\"upstream_inference_prompt_cost\":0.01399788,\"upstream_inference_completions_cost\":0.0007293},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653598-xmnlUeYResGbuHxlaaFO",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 17946,
+        "completion_tokens": 187,
+        "total_tokens": 18133,
+        "cost": 0.01472718,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01472718,
+          "upstream_inference_prompt_cost": 0.01399788,
+          "upstream_inference_completions_cost": 0.0007293
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 5.055,
+  "call_id": "DS__z1_J74LDBFP__qwen__r1",
+  "fingerprint": "68d3a2693a32b9f7999c83e3a1aea20474896ab0cabbe007a39fa4e05d74a9b4",
+  "paper_id": "z1_J74LDBFP",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:59:58.268785+00:00",
+  "input_sha256": "ad966324fdc88ad8a59772e59dd22fa60e5b94e807f989afd655f03d0c9cb32a",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789653371-OCaQPeaUzkTSriAPTqfD",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.020412,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15042,
+    "completion_tokens": 1074,
+    "total_tokens": 16116,
+    "cost": 0.020412,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.020412,
+      "upstream_inference_prompt_cost": 0.015042,
+      "upstream_inference_completions_cost": 0.00537
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land Use Projections in Bangladesh\n\n## Initial Determination\n**Is this a review article?** NO - This is a research paper presenting original modeling and simulation work.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA (Non-Review Paper):\n\n1. **Explicit national-scale spatial implementation (entire country)** ✓\n   - Study area explicitly states: \"The study area encompasses the entire Bangladesh\"\n   - Covers all 64 districts across 7-8 divisions\n   - Total area: 147,570 km²\n\n2. **Primary focus = LULC prediction/simulation** ✓\n   - Central research question: \"we predicted the land use and land cover changes from 2010 to 2030\"\n   - Abstract states: \"we applied a previously developed Dynamics of Land Systems (DLS) model to simulate the changes in land uses\"\n   - Primary objective is explicitly LULC change prediction\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\n   - Three distinct scenarios implemented:\n     - Baseline scenario\n     - Ecological protection priority scenario\n     - Economic growth scenario\n   - Quantitative comparisons provided (Table 5, Figures 4-5)\n   - Percentage changes reported for each land use type under each scenario\n\n4. **Spatial modeling with quantitative accuracy metrics** ✓\n   - DLS (Dynamics of Land Systems) model applied with spatial regression analysis\n   - Accuracy validation: Kappa coefficient = 0.667 (Section 3.1)\n   - Kappa value interpreted as \"substantial\" and \"good\" agreement\n   - Logistic regression with coefficients and standard errors reported (Table 4)\n   - Pseudo R² values provided for each land use type (0.110-0.432)\n\n5. **Outputs include mapped LULC projections** ✓\n   - Figure 3: Simulated vs. actual 2010 maps\n   - Figure 5: Projected land use maps for 2020 and 2030 under all three scenarios\n   - Spatial patterns explicitly described for each scenario\n\n### SPECIFIC EXCLUSION CRITERIA:\n\n- **Global-scale analysis without national disaggregation?** NO ✓\n- **Local/regional/global/transboundary scale focus?** NO ✓ (explicitly national)\n- **No LULC prediction component?** NO ✓ (prediction is primary focus)\n- **Species-specific/ecological focus unrelated to LULC?** NO ✓ (forest/grassland changes are LULC categories)\n- **Economic/urban models lacking spatially explicit LULC outputs?** NO ✓ (includes spatial maps)\n- **Biomass/bioenergy/carbon studies without LULC change analysis?** NO ✓ (LULC change is focus)\n- **Methodological paper without application?** NO ✓ (applied to Bangladesh)\n- **Purely qualitative/historical only?** NO ✓ (includes future projections to 2030)\n- **Remote sensing technical study without predictive modeling?** NO ✓ (includes predictive modeling)\n- **Single-scenario \"business-as-usual\" only?** NO ✓ (three scenarios implemented)\n\n---\n\n## Additional Verification Checks:\n\n**Scale verification in methodology:** Confirmed - entire Bangladesh (147,570 km²) with 1 km × 1 km resolution grid\n\n**Quantitative metrics reported:** Yes - Kappa coefficient, percentage changes, regression coefficients, standard errors, Pseudo R² values, transition probabilities\n\n**Spatial explicitness:** Yes - Six land use categories mapped at pixel level with driving factor analysis incorporating geophysical, climatic, proximity, and socioeconomic variables\n\n**Modeling approach:** Spatially explicit with logistic regression incorporating spatial lag terms (Equation 2)\n\n---\n\n## Final Categorization: **OK**\n\n**Justification:** This paper fully meets all core inclusion criteria for national-scale LULC prediction research. It implements the DLS model to simulate LULC changes across entire Bangladesh under three distinct future scenarios (baseline, ecological protection, economic growth) from 2010-2030. The methodology includes spatial regression analysis with validated accuracy metrics (Kappa = 0.667), quantitative scenario comparison with percentage changes for all six land use types, and mapped projections for both 2020 and 2030. The primary research objective is explicitly LULC prediction/simulation, and all outputs are spatially explicit with rigorous quantitative assessment. No exclusion criteria are met.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:56:06.906490+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 10.318,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653371-OCaQPeaUzkTSriAPTqfD\",\"object\":\"chat.completion\",\"created\":1789653371,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land Use Projections in Bangladesh\\n\\n## Initial Determination\\n**Is this a review article?** NO - This is a research paper presenting original modeling and simulation work.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA (Non-Review Paper):\\n\\n1. **Explicit national-scale spatial implementation (entire country)** ✓\\n   - Study area explicitly states: \\\"The study area encompasses the entire Bangladesh\\\"\\n   - Covers all 64 districts across 7-8 divisions\\n   - Total area: 147,570 km²\\n\\n2. **Primary focus = LULC prediction/simulation** ✓\\n   - Central research question: \\\"we predicted the land use and land cover changes from 2010 to 2030\\\"\\n   - Abstract states: \\\"we applied a previously developed Dynamics of Land Systems (DLS) model to simulate the changes in land uses\\\"\\n   - Primary objective is explicitly LULC change prediction\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\\n   - Three distinct scenarios implemented:\\n     - Baseline scenario\\n     - Ecological protection priority scenario\\n     - Economic growth scenario\\n   - Quantitative comparisons provided (Table 5, Figures 4-5)\\n   - Percentage changes reported for each land use type under each scenario\\n\\n4. **Spatial modeling with quantitative accuracy metrics** ✓\\n   - DLS (Dynamics of Land Systems) model applied with spatial regression analysis\\n   - Accuracy validation: Kappa coefficient = 0.667 (Section 3.1)\\n   - Kappa value interpreted as \\\"substantial\\\" and \\\"good\\\" agreement\\n   - Logistic regression with coefficients and standard errors reported (Table 4)\\n   - Pseudo R² values provided for each land use type (0.110-0.432)\\n\\n5. **Outputs include mapped LULC projections** ✓\\n   - Figure 3: Simulated vs. actual 2010 maps\\n   - Figure 5: Projected land use maps for 2020 and 2030 under all three scenarios\\n   - Spatial patterns explicitly described for each scenario\\n\\n### SPECIFIC EXCLUSION CRITERIA:\\n\\n- **Global-scale analysis without national disaggregation?** NO ✓\\n- **Local/regional/global/transboundary scale focus?** NO ✓ (explicitly national)\\n- **No LULC prediction component?** NO ✓ (prediction is primary focus)\\n- **Species-specific/ecological focus unrelated to LULC?** NO ✓ (forest/grassland changes are LULC categories)\\n- **Economic/urban models lacking spatially explicit LULC outputs?** NO ✓ (includes spatial maps)\\n- **Biomass/bioenergy/carbon studies without LULC change analysis?** NO ✓ (LULC change is focus)\\n- **Methodological paper without application?** NO ✓ (applied to Bangladesh)\\n- **Purely qualitative/historical only?** NO ✓ (includes future projections to 2030)\\n- **Remote sensing technical study without predictive modeling?** NO ✓ (includes predictive modeling)\\n- **Single-scenario \\\"business-as-usual\\\" only?** NO ✓ (three scenarios implemented)\\n\\n---\\n\\n## Additional Verification Checks:\\n\\n**Scale verification in methodology:** Confirmed - entire Bangladesh (147,570 km²) with 1 km × 1 km resolution grid\\n\\n**Quantitative metrics reported:** Yes - Kappa coefficient, percentage changes, regression coefficients, standard errors, Pseudo R² values, transition probabilities\\n\\n**Spatial explicitness:** Yes - Six land use categories mapped at pixel level with driving factor analysis incorporating geophysical, climatic, proximity, and socioeconomic variables\\n\\n**Modeling approach:** Spatially explicit with logistic regression incorporating spatial lag terms (Equation 2)\\n\\n---\\n\\n## Final Categorization: **OK**\\n\\n**Justification:** This paper fully meets all core inclusion criteria for national-scale LULC prediction research. It implements the DLS model to simulate LULC changes across entire Bangladesh under three distinct future scenarios (baseline, ecological protection, economic growth) from 2010-2030. The methodology includes spatial regression analysis with validated accuracy metrics (Kappa = 0.667), quantitative scenario comparison with percentage changes for all six land use types, and mapped projections for both 2020 and 2030. The primary research objective is explicitly LULC prediction/simulation, and all outputs are spatially explicit with rigorous quantitative assessment. No exclusion criteria are met.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15042,\"completion_tokens\":1074,\"total_tokens\":16116,\"cost\":0.020412,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.020412,\"upstream_inference_prompt_cost\":0.015042,\"upstream_inference_completions_cost\":0.00537},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653371-OCaQPeaUzkTSriAPTqfD",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 15042,
+        "completion_tokens": 1074,
+        "total_tokens": 16116,
+        "cost": 0.020412,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.020412,
+          "upstream_inference_prompt_cost": 0.015042,
+          "upstream_inference_completions_cost": 0.00537
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 10.319,
+  "call_id": "DS__z1_SDIEK3PU__claude__r1",
+  "fingerprint": "65b73033a1b36712a2b7096c87df29789c30b6487835ea4558af505fa8e8812b",
+  "paper_id": "z1_SDIEK3PU",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:56:17.225008+00:00",
+  "input_sha256": "c47be58486aff8de47aaa95452dfb95976a8ab0d26c817809301ee825f335227",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

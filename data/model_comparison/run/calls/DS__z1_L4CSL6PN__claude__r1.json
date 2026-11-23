@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789652952-PTOsU3mhpi7dWuDni1Ol",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.012509,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 7759,
+    "completion_tokens": 950,
+    "total_tokens": 8709,
+    "cost": 0.012509,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.012509,
+      "upstream_inference_prompt_cost": 0.007759,
+      "upstream_inference_completions_cost": 0.00475
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis\n\n## Initial Determination: Review vs. Research Paper\n\nThis is a **NON-REVIEW PAPER**. It is an original research article (labeled \"oRIgInAl pApeR\") presenting empirical data collection and statistical analysis of soil organic carbon across multiple sites.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA (must pass ALL):\n\n1. **Explicit national-scale spatial implementation (entire country)?**\n   - ✗ FAIL: Study covers 9 locations across the Czech Republic, but this is a sample-based study of existing afforested sites, not a national-scale LULC prediction model. The sites are distributed across the country but represent point measurements, not comprehensive national coverage.\n\n2. **Primary focus = LULC prediction/simulation?**\n   - ✗ FAIL: The primary focus is measuring and analyzing soil organic carbon (SOC) accumulation in existing afforested farmland. The study examines historical land-use change (agricultural land → forest) but does NOT predict future LULC scenarios or simulate LULC change.\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ✗ FAIL: No future scenarios are modeled. The paper compares two land-use states (afforested farmland vs. permanent forest) but does not project future LULC scenarios.\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ✗ PARTIAL: The paper includes statistical modeling (GLMM, PCA) and quantitative metrics (carbon accumulation rates, t/ha), but these are not LULC prediction accuracy metrics. The modeling predicts SOC content based on age/altitude, not LULC change.\n\n5. **Outputs include mapped LULC projections?**\n   - ✗ FAIL: No LULC projection maps are produced. Figure 1 shows research plot locations only; no predictive LULC maps are presented.\n\n---\n\n### SPECIFIC EXCLUSION CRITERIA (must pass NONE):\n\n- **Biomass/bioenergy/carbon studies without LULC change analysis?**\n  - ✓ MEETS EXCLUSION: This is fundamentally a carbon sequestration study. While it examines land-use change (agricultural → forest), the primary research question concerns SOC accumulation dynamics, not LULC prediction. The land-use change is historical/observed, not predicted.\n\n- **No LULC prediction component?**\n  - ✓ MEETS EXCLUSION: The paper contains no predictive modeling of future LULC scenarios, no LULC transition probabilities, and no projections of where or how agricultural land will be afforested in the future.\n\n- **Local/regional scale focus?**\n  - ✓ MEETS EXCLUSION: Despite national distribution of sites, the study is fundamentally regional/local in scope—analyzing existing afforested plots rather than modeling national-scale LULC change.\n\n---\n\n## Summary\n\n**Primary Objective:** Quantifying soil organic carbon accumulation in afforested farmland vs. permanent forest stands in the Czech Republic.\n\n**What it IS:** An empirical study of carbon dynamics following historical land-use change.\n\n**What it is NOT:** A spatial LULC prediction/simulation model with future scenarios.\n\n---\n\n## Final Categorization: **EXCLUDED**\n\n**Justification:** This paper is a carbon sequestration study examining historical afforestation of agricultural land in the Czech Republic. While it addresses land-use change, it lacks the core requirement of **LULC prediction/simulation with future scenarios**. The study:\n- Analyzes observed SOC in existing stands (not predictive modeling)\n- Contains no future LULC scenarios or projections\n- Produces no spatial LULC prediction outputs or maps\n- Focuses on carbon dynamics rather than LULC change modeling\n- Meets the exclusion criterion: \"Biomass/bioenergy/carbon studies without LULC change analysis\" (the LULC change is historical, not predictive)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:49:07.560379+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 11.565,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789652952-PTOsU3mhpi7dWuDni1Ol\",\"object\":\"chat.completion\",\"created\":1789652952,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis\\n\\n## Initial Determination: Review vs. Research Paper\\n\\nThis is a **NON-REVIEW PAPER**. It is an original research article (labeled \\\"oRIgInAl pApeR\\\") presenting empirical data collection and statistical analysis of soil organic carbon across multiple sites.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA (must pass ALL):\\n\\n1. **Explicit national-scale spatial implementation (entire country)?**\\n   - ✗ FAIL: Study covers 9 locations across the Czech Republic, but this is a sample-based study of existing afforested sites, not a national-scale LULC prediction model. The sites are distributed across the country but represent point measurements, not comprehensive national coverage.\\n\\n2. **Primary focus = LULC prediction/simulation?**\\n   - ✗ FAIL: The primary focus is measuring and analyzing soil organic carbon (SOC) accumulation in existing afforested farmland. The study examines historical land-use change (agricultural land → forest) but does NOT predict future LULC scenarios or simulate LULC change.\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ✗ FAIL: No future scenarios are modeled. The paper compares two land-use states (afforested farmland vs. permanent forest) but does not project future LULC scenarios.\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ✗ PARTIAL: The paper includes statistical modeling (GLMM, PCA) and quantitative metrics (carbon accumulation rates, t/ha), but these are not LULC prediction accuracy metrics. The modeling predicts SOC content based on age/altitude, not LULC change.\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ✗ FAIL: No LULC projection maps are produced. Figure 1 shows research plot locations only; no predictive LULC maps are presented.\\n\\n---\\n\\n### SPECIFIC EXCLUSION CRITERIA (must pass NONE):\\n\\n- **Biomass/bioenergy/carbon studies without LULC change analysis?**\\n  - ✓ MEETS EXCLUSION: This is fundamentally a carbon sequestration study. While it examines land-use change (agricultural → forest), the primary research question concerns SOC accumulation dynamics, not LULC prediction. The land-use change is historical/observed, not predicted.\\n\\n- **No LULC prediction component?**\\n  - ✓ MEETS EXCLUSION: The paper contains no predictive modeling of future LULC scenarios, no LULC transition probabilities, and no projections of where or how agricultural land will be afforested in the future.\\n\\n- **Local/regional scale focus?**\\n  - ✓ MEETS EXCLUSION: Despite national distribution of sites, the study is fundamentally regional/local in scope—analyzing existing afforested plots rather than modeling national-scale LULC change.\\n\\n---\\n\\n## Summary\\n\\n**Primary Objective:** Quantifying soil organic carbon accumulation in afforested farmland vs. permanent forest stands in the Czech Republic.\\n\\n**What it IS:** An empirical study of carbon dynamics following historical land-use change.\\n\\n**What it is NOT:** A spatial LULC prediction/simulation model with future scenarios.\\n\\n---\\n\\n## Final Categorization: **EXCLUDED**\\n\\n**Justification:** This paper is a carbon sequestration study examining historical afforestation of agricultural land in the Czech Republic. While it addresses land-use change, it lacks the core requirement of **LULC prediction/simulation with future scenarios**. The study:\\n- Analyzes observed SOC in existing stands (not predictive modeling)\\n- Contains no future LULC scenarios or projections\\n- Produces no spatial LULC prediction outputs or maps\\n- Focuses on carbon dynamics rather than LULC change modeling\\n- Meets the exclusion criterion: \\\"Biomass/bioenergy/carbon studies without LULC change analysis\\\" (the LULC change is historical, not predictive)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":7759,\"completion_tokens\":950,\"total_tokens\":8709,\"cost\":0.012509,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.012509,\"upstream_inference_prompt_cost\":0.007759,\"upstream_inference_completions_cost\":0.00475},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652952-PTOsU3mhpi7dWuDni1Ol",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 7759,
+        "completion_tokens": 950,
+        "total_tokens": 8709,
+        "cost": 0.012509,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.012509,
+          "upstream_inference_prompt_cost": 0.007759,
+          "upstream_inference_completions_cost": 0.00475
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 11.565,
+  "call_id": "DS__z1_L4CSL6PN__claude__r1",
+  "fingerprint": "49bf9b3ca1780a74555398dd286d235e692db7c631d536fd5bb67e3ba7afab9a",
+  "paper_id": "z1_L4CSL6PN",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:49:19.125095+00:00",
+  "input_sha256": "f7430750989407df2289c92e241c8a362ba6c5ef7c025421433ca02db2694bfb",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

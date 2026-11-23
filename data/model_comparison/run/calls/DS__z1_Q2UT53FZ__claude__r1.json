@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789652927-LaBQLV8Mo4nfJaB83c8g",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.021496,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 17391,
+    "completion_tokens": 821,
+    "total_tokens": 18212,
+    "cost": 0.021496,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.021496,
+      "upstream_inference_prompt_cost": 0.017391,
+      "upstream_inference_completions_cost": 0.004105
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land-Use Flux Estimates Paper\n\n## STEP 1: Determine if Review Article\nThis is **NOT a review article**. It is a primary research paper presenting original analysis comparing bookkeeping models (BMs), dynamic global vegetation models (DGVMs), and national greenhouse gas inventories (NGHGIs) for 2000-2020.\n\n## STEP 2: Apply Categorization Flow for Non-Review Papers\n\n### Evaluation Against Core Inclusion Criteria:\n\n**Criterion 1: Explicit national-scale spatial implementation (entire country)**\n- ✗ FAILS: Paper provides global and regional comparisons with country-level data aggregation, but does NOT implement spatial modeling at national scale with gridded outputs\n- Analysis is primarily at country-aggregate level using compiled inventory data, not spatially explicit national implementation\n\n**Criterion 2: Primary focus = LULC prediction/simulation**\n- ✗ FAILS: Primary focus is RECONCILIATION and HARMONIZATION of existing flux estimates (2000-2020 historical period)\n- Paper explicitly states: \"This study provides a blueprint for harmonising the estimations of anthropogenic land-use fluxes\"\n- No future LULC prediction component; analysis is retrospective (2000-2020)\n\n**Criterion 3: Implementation of ≥2 future scenarios with quantitative comparison**\n- ✗ FAILS: No future scenarios implemented\n- Study period is historical (2000-2020 only)\n\n**Criterion 4: Spatial modeling with quantitative accuracy metrics**\n- ✗ FAILS: No spatial modeling of LULC change\n- Uses existing maps (Hansen forest, intact forest maps) as inputs but does not conduct predictive spatial modeling\n- Metrics presented are flux comparisons, not LULC accuracy metrics\n\n**Criterion 5: Outputs include mapped LULC projections**\n- ✗ FAILS: No LULC projections provided\n- Outputs are flux estimates and reconciliation tables, not LULC change maps\n\n### Evaluation Against Exclusion Criteria:\n\n**Exclusion Check:**\n- ✓ Global-scale analysis without national-level disaggregation: APPLIES (global synthesis with country aggregates, not national-scale spatial modeling)\n- ✓ No LULC prediction component: APPLIES (historical reconciliation only)\n- ✓ Methodological paper without application to national-scale prediction: APPLIES (develops harmonization approach but doesn't predict LULC)\n\n---\n\n## FINAL CATEGORIZATION\n\n**Final categorization: EXCLUDED**\n\n**Justification:** \nThis paper fails ALL core inclusion criteria for LULC prediction research. While it provides valuable analysis of land-use carbon fluxes and reconciles global models with national inventories, it is fundamentally a **retrospective harmonization study (2000-2020)** rather than a **predictive LULC modeling study**. The paper:\n\n1. Contains **no future LULC projections or scenarios** (historical period only)\n2. Performs **no spatial LULC modeling** (uses existing maps as reference layers only)\n3. Lacks **national-scale spatial implementation** (country-level data aggregation, not gridded prediction)\n4. Focuses on **flux reconciliation methodology** rather than LULC prediction\n5. Provides **no mapped LULC change projections**\n\nThe study is methodologically sound and policy-relevant for carbon accounting, but falls outside the scope of research focused on predicting future land-use and land-cover change at national scales.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:48:42.711052+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 9.185,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789652927-LaBQLV8Mo4nfJaB83c8g\",\"object\":\"chat.completion\",\"created\":1789652927,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land-Use Flux Estimates Paper\\n\\n## STEP 1: Determine if Review Article\\nThis is **NOT a review article**. It is a primary research paper presenting original analysis comparing bookkeeping models (BMs), dynamic global vegetation models (DGVMs), and national greenhouse gas inventories (NGHGIs) for 2000-2020.\\n\\n## STEP 2: Apply Categorization Flow for Non-Review Papers\\n\\n### Evaluation Against Core Inclusion Criteria:\\n\\n**Criterion 1: Explicit national-scale spatial implementation (entire country)**\\n- ✗ FAILS: Paper provides global and regional comparisons with country-level data aggregation, but does NOT implement spatial modeling at national scale with gridded outputs\\n- Analysis is primarily at country-aggregate level using compiled inventory data, not spatially explicit national implementation\\n\\n**Criterion 2: Primary focus = LULC prediction/simulation**\\n- ✗ FAILS: Primary focus is RECONCILIATION and HARMONIZATION of existing flux estimates (2000-2020 historical period)\\n- Paper explicitly states: \\\"This study provides a blueprint for harmonising the estimations of anthropogenic land-use fluxes\\\"\\n- No future LULC prediction component; analysis is retrospective (2000-2020)\\n\\n**Criterion 3: Implementation of ≥2 future scenarios with quantitative comparison**\\n- ✗ FAILS: No future scenarios implemented\\n- Study period is historical (2000-2020 only)\\n\\n**Criterion 4: Spatial modeling with quantitative accuracy metrics**\\n- ✗ FAILS: No spatial modeling of LULC change\\n- Uses existing maps (Hansen forest, intact forest maps) as inputs but does not conduct predictive spatial modeling\\n- Metrics presented are flux comparisons, not LULC accuracy metrics\\n\\n**Criterion 5: Outputs include mapped LULC projections**\\n- ✗ FAILS: No LULC projections provided\\n- Outputs are flux estimates and reconciliation tables, not LULC change maps\\n\\n### Evaluation Against Exclusion Criteria:\\n\\n**Exclusion Check:**\\n- ✓ Global-scale analysis without national-level disaggregation: APPLIES (global synthesis with country aggregates, not national-scale spatial modeling)\\n- ✓ No LULC prediction component: APPLIES (historical reconciliation only)\\n- ✓ Methodological paper without application to national-scale prediction: APPLIES (develops harmonization approach but doesn't predict LULC)\\n\\n---\\n\\n## FINAL CATEGORIZATION\\n\\n**Final categorization: EXCLUDED**\\n\\n**Justification:** \\nThis paper fails ALL core inclusion criteria for LULC prediction research. While it provides valuable analysis of land-use carbon fluxes and reconciles global models with national inventories, it is fundamentally a **retrospective harmonization study (2000-2020)** rather than a **predictive LULC modeling study**. The paper:\\n\\n1. Contains **no future LULC projections or scenarios** (historical period only)\\n2. Performs **no spatial LULC modeling** (uses existing maps as reference layers only)\\n3. Lacks **national-scale spatial implementation** (country-level data aggregation, not gridded prediction)\\n4. Focuses on **flux reconciliation methodology** rather than LULC prediction\\n5. Provides **no mapped LULC change projections**\\n\\nThe study is methodologically sound and policy-relevant for carbon accounting, but falls outside the scope of research focused on predicting future land-use and land-cover change at national scales.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":17391,\"completion_tokens\":821,\"total_tokens\":18212,\"cost\":0.021496,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.021496,\"upstream_inference_prompt_cost\":0.017391,\"upstream_inference_completions_cost\":0.004105},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652927-LaBQLV8Mo4nfJaB83c8g",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 17391,
+        "completion_tokens": 821,
+        "total_tokens": 18212,
+        "cost": 0.021496,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.021496,
+          "upstream_inference_prompt_cost": 0.017391,
+          "upstream_inference_completions_cost": 0.004105
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 9.185,
+  "call_id": "DS__z1_Q2UT53FZ__claude__r1",
+  "fingerprint": "c001f5efd0a710e843c3692045a0a80765c2b57a5eeecb515fb0d8d807efce6c",
+  "paper_id": "z1_Q2UT53FZ",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:48:51.895926+00:00",
+  "input_sha256": "23d64cf40079a5f52d4f0282e02883de77dbd090159903cbfb0b3762ce113b3e",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

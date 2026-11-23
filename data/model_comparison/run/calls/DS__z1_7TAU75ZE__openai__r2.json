@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653851-NHjDYL6E2nCwTBdfB9Ro",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0017304,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 14210,
+    "completion_tokens": 169,
+    "total_tokens": 14379,
+    "cost": 0.0017304,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 14080,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0017304,
+      "upstream_inference_prompt_cost": 0.00146,
+      "upstream_inference_completions_cost": 0.0002704
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED\n\nJustification: This paper is a review and comparative analysis of sustainability impact assessment (SIA) tools for land use policy advice. It does not present original research focused on national-scale spatial land use/land cover (LULC) prediction or simulation with mapped future projections. Instead, it reviews five existing SIA tools (SIAT, FoPIA, SEAMLESS-IF, ScalA, SPARD-IS) discussing their methodologies, end-user participation, and challenges in policy uptake. The study focuses on tool development processes, participatory frameworks, and policy relevance rather than implementing spatially explicit LULC future predictions with quantitative accuracy metrics at national scale. Therefore, as a review article not focused on LULC future prediction, it falls under EXCLUDED according to the categorization criteria.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:04:06.749474+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.814,
+      "raw_body": "\n         \n{\"id\":\"gen-1789653851-NHjDYL6E2nCwTBdfB9Ro\",\"object\":\"chat.completion\",\"created\":1789653851,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED\\n\\nJustification: This paper is a review and comparative analysis of sustainability impact assessment (SIA) tools for land use policy advice. It does not present original research focused on national-scale spatial land use/land cover (LULC) prediction or simulation with mapped future projections. Instead, it reviews five existing SIA tools (SIAT, FoPIA, SEAMLESS-IF, ScalA, SPARD-IS) discussing their methodologies, end-user participation, and challenges in policy uptake. The study focuses on tool development processes, participatory frameworks, and policy relevance rather than implementing spatially explicit LULC future predictions with quantitative accuracy metrics at national scale. Therefore, as a review article not focused on LULC future prediction, it falls under EXCLUDED according to the categorization criteria.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":14210,\"completion_tokens\":169,\"total_tokens\":14379,\"cost\":0.0017304,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":14080,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0017304,\"upstream_inference_prompt_cost\":0.00146,\"upstream_inference_completions_cost\":0.0002704},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653851-NHjDYL6E2nCwTBdfB9Ro",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 14210,
+        "completion_tokens": 169,
+        "total_tokens": 14379,
+        "cost": 0.0017304,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 14080,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0017304,
+          "upstream_inference_prompt_cost": 0.00146,
+          "upstream_inference_completions_cost": 0.0002704
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.815,
+  "call_id": "DS__z1_7TAU75ZE__openai__r2",
+  "fingerprint": "1edf9524d09db84c2aa73b544701c739176b8d1cb67429fa361c486d8870df0d",
+  "paper_id": "z1_7TAU75ZE",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:04:09.563474+00:00",
+  "input_sha256": "37859721a4192b4723e52705002dd8a524755772c3abd6104e556cf9d8c1009e",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

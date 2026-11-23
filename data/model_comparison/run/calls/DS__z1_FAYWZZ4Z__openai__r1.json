@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789652559-rX0H4kUBai5uQXy4GpfT",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0055216,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 13264,
+    "completion_tokens": 135,
+    "total_tokens": 13399,
+    "cost": 0.0055216,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0055216,
+      "upstream_inference_prompt_cost": 0.0053056,
+      "upstream_inference_completions_cost": 0.000216
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: OK (Justification: This is a research article focused on simulating future urban expansion (a form of LULC change) across the entire country of China, explicitly at national scale. The study implements multiple future socioeconomic scenarios (localized SSPs) for 2020–2050 with quantitative spatial modeling using an improved LUSD-urban model coupled with CNN, and reports quantitative accuracy metrics (overall accuracy, Kappa, FoM). It includes mapped spatial projections of urban land expansion and evaluates impacts on natural habitats. The primary objective is future LULC (urban land) prediction, meeting all core inclusion criteria, with no exclusion criteria met.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:42:34.926789+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.92,
+      "raw_body": "\n         \n{\"id\":\"gen-1789652559-rX0H4kUBai5uQXy4GpfT\",\"object\":\"chat.completion\",\"created\":1789652559,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: This is a research article focused on simulating future urban expansion (a form of LULC change) across the entire country of China, explicitly at national scale. The study implements multiple future socioeconomic scenarios (localized SSPs) for 2020–2050 with quantitative spatial modeling using an improved LUSD-urban model coupled with CNN, and reports quantitative accuracy metrics (overall accuracy, Kappa, FoM). It includes mapped spatial projections of urban land expansion and evaluates impacts on natural habitats. The primary objective is future LULC (urban land) prediction, meeting all core inclusion criteria, with no exclusion criteria met.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":13264,\"completion_tokens\":135,\"total_tokens\":13399,\"cost\":0.0055216,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0055216,\"upstream_inference_prompt_cost\":0.0053056,\"upstream_inference_completions_cost\":0.000216},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652559-rX0H4kUBai5uQXy4GpfT",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 13264,
+        "completion_tokens": 135,
+        "total_tokens": 13399,
+        "cost": 0.0055216,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0055216,
+          "upstream_inference_prompt_cost": 0.0053056,
+          "upstream_inference_completions_cost": 0.000216
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.92,
+  "call_id": "DS__z1_FAYWZZ4Z__openai__r1",
+  "fingerprint": "f1495b14d5f5ac91acf2a1b174b0ad62a9f59f177c0ef3cce1b64f8e853b82a4",
+  "paper_id": "z1_FAYWZZ4Z",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:42:37.846742+00:00",
+  "input_sha256": "d21921adc2bdf3e8fa7ed93bb436def843bde1ceb30e1347e2e03833ab2d9abd",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

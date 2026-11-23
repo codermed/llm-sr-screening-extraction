@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789652643-yQc7eUBiPiIVae1U4siE",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.020443,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 14038,
+    "completion_tokens": 1281,
+    "total_tokens": 15319,
+    "cost": 0.020443,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.020443,
+      "upstream_inference_prompt_cost": 0.014038,
+      "upstream_inference_completions_cost": 0.006405
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Wu et al. (2023)\n\n## Step 1: Determine if Review Article\nThis is **NOT a review article**. It is an original research article (explicitly labeled \"SPECIAL FEATURE: ORIGINAL ARTICLE\") presenting primary modeling results of dietary and agricultural scenarios.\n\n## Step 2: Evaluate Against Inclusion/Exclusion Criteria for Non-Review Papers\n\n### CORE INCLUSION CRITERIA ASSESSMENT:\n\n**1. Explicit national-scale spatial implementation (entire country)?**\n- ❌ **FAILS**: The paper uses two models (US FABLE Calculator and GLOBIOM). While the Calculator operates at national scale for the U.S., GLOBIOM operates at global scale with medium resolution for the U.S. and coarse resolution for rest-of-world. The analysis is not spatially explicit at national resolution—it aggregates to national/regional levels rather than providing gridded spatial outputs.\n\n**2. Primary focus = LULC prediction/simulation?**\n- ⚠️ **PARTIAL**: LULC change is a component of the analysis, but the primary research objective is to assess GHG emissions impacts of dietary and productivity scenarios. LULC changes (pastureland, cropland, natural lands) are outputs used to explain emissions reductions, not the primary focus. The central research question concerns climate/sustainability goals through diet and productivity changes.\n\n**3. Implementation of ≥2 future scenarios with quantitative comparison?**\n- ✅ **PASSES**: Seven GLOBIOM scenarios + five additional Calculator sensitivity scenarios with quantitative comparisons of land use and emissions outcomes.\n\n**4. Spatial modeling with quantitative accuracy metrics?**\n- ❌ **FAILS**: No accuracy metrics reported (no validation against observed data, no accuracy assessment, no error bounds). The paper reports changes in land area and emissions but not spatial accuracy of predictions.\n\n**5. Outputs include mapped LULC projections?**\n- ❌ **FAILS**: No maps of projected LULC are provided. Figures show time-series graphs of land area changes (hectares) and emissions, but no spatial maps of where LULC changes occur across the U.S.\n\n### EXCLUSION CRITERIA ASSESSMENT:\n\n**Global-scale analysis without national-level disaggregation?**\n- ⚠️ **BORDERLINE**: GLOBIOM is a global model; while it includes U.S.-specific results, the framework is inherently global with coarse resolution for rest-of-world.\n\n**No LULC prediction component?**\n- ❌ **DOES NOT APPLY**: LULC prediction is present (land use changes are modeled).\n\n**Economic/urban models lacking spatially explicit LULC outputs?**\n- ✅ **MEETS EXCLUSION**: The models are agricultural/economic optimization models (partial equilibrium) that output aggregate national-level land use changes, not spatially explicit gridded LULC maps.\n\n**Biomass/bioenergy/carbon studies without LULC change analysis?**\n- ❌ **DOES NOT APPLY**: LULC change analysis is included.\n\n**Single-scenario \"business-as-usual\" projections?**\n- ❌ **DOES NOT APPLY**: Multiple scenarios are tested.\n\n**Methodological papers without application?**\n- ❌ **DOES NOT APPLY**: This is an applied analysis.\n\n**Purely qualitative/historical analysis?**\n- ❌ **DOES NOT APPLY**: Quantitative modeling is employed.\n\n## Step 3: Determine Primary Focus\n\nThe paper's primary objective is **NOT LULC prediction**. Rather:\n- **Primary objective**: Assess GHG emissions impacts of healthier diets and agricultural productivity on U.S. climate goals\n- **LULC role**: LULC changes (pastureland, cropland reductions) are **intermediate outcomes/inputs** used to explain emissions reductions, not the central research question\n- The paper explicitly states: \"Here, we explore the GHG emissions impacts of seven scenarios that vary U.S. crop yields and healthier diets\"\n\n## Step 4: Critical Limitations for LULC Prediction Categorization\n\n1. **No spatial mapping**: Results are presented as national aggregates (e.g., \"37 mil ha pastureland decline\") without spatial distribution across the U.S.\n2. **No accuracy assessment**: No validation metrics or spatial accuracy reporting\n3. **Not spatially explicit**: GLOBIOM operates at coarse resolution; outputs are aggregated nationally\n4. **LULC is instrumental**: Land use changes are modeled to explain emissions, not as the primary research product\n\n---\n\n## FINAL CATEGORIZATION: **EXCLUDED**\n\n**Justification**: \nThis paper fails multiple core inclusion criteria for LULC prediction research:\n1. **No spatially explicit national-scale LULC outputs**: Results are national aggregates without gridded spatial maps\n2. **No accuracy metrics**: No validation or spatial accuracy assessment reported\n3. **LULC not primary focus**: The central research question concerns GHG emissions impacts of diets/productivity; LULC changes are intermediate outcomes used to explain emissions reductions\n4. **Global model with coarse non-U.S. resolution**: While U.S.-focused, GLOBIOM is fundamentally a global model not optimized for national-scale spatial LULC prediction\n\nThe paper is a valuable agricultural/climate policy analysis but does not meet the criteria for research focused on **national-scale LULC prediction with spatial explicitness and accuracy assessment**.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:43:58.119830+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 13.814,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789652643-yQc7eUBiPiIVae1U4siE\",\"object\":\"chat.completion\",\"created\":1789652643,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Wu et al. (2023)\\n\\n## Step 1: Determine if Review Article\\nThis is **NOT a review article**. It is an original research article (explicitly labeled \\\"SPECIAL FEATURE: ORIGINAL ARTICLE\\\") presenting primary modeling results of dietary and agricultural scenarios.\\n\\n## Step 2: Evaluate Against Inclusion/Exclusion Criteria for Non-Review Papers\\n\\n### CORE INCLUSION CRITERIA ASSESSMENT:\\n\\n**1. Explicit national-scale spatial implementation (entire country)?**\\n- ❌ **FAILS**: The paper uses two models (US FABLE Calculator and GLOBIOM). While the Calculator operates at national scale for the U.S., GLOBIOM operates at global scale with medium resolution for the U.S. and coarse resolution for rest-of-world. The analysis is not spatially explicit at national resolution—it aggregates to national/regional levels rather than providing gridded spatial outputs.\\n\\n**2. Primary focus = LULC prediction/simulation?**\\n- ⚠️ **PARTIAL**: LULC change is a component of the analysis, but the primary research objective is to assess GHG emissions impacts of dietary and productivity scenarios. LULC changes (pastureland, cropland, natural lands) are outputs used to explain emissions reductions, not the primary focus. The central research question concerns climate/sustainability goals through diet and productivity changes.\\n\\n**3. Implementation of ≥2 future scenarios with quantitative comparison?**\\n- ✅ **PASSES**: Seven GLOBIOM scenarios + five additional Calculator sensitivity scenarios with quantitative comparisons of land use and emissions outcomes.\\n\\n**4. Spatial modeling with quantitative accuracy metrics?**\\n- ❌ **FAILS**: No accuracy metrics reported (no validation against observed data, no accuracy assessment, no error bounds). The paper reports changes in land area and emissions but not spatial accuracy of predictions.\\n\\n**5. Outputs include mapped LULC projections?**\\n- ❌ **FAILS**: No maps of projected LULC are provided. Figures show time-series graphs of land area changes (hectares) and emissions, but no spatial maps of where LULC changes occur across the U.S.\\n\\n### EXCLUSION CRITERIA ASSESSMENT:\\n\\n**Global-scale analysis without national-level disaggregation?**\\n- ⚠️ **BORDERLINE**: GLOBIOM is a global model; while it includes U.S.-specific results, the framework is inherently global with coarse resolution for rest-of-world.\\n\\n**No LULC prediction component?**\\n- ❌ **DOES NOT APPLY**: LULC prediction is present (land use changes are modeled).\\n\\n**Economic/urban models lacking spatially explicit LULC outputs?**\\n- ✅ **MEETS EXCLUSION**: The models are agricultural/economic optimization models (partial equilibrium) that output aggregate national-level land use changes, not spatially explicit gridded LULC maps.\\n\\n**Biomass/bioenergy/carbon studies without LULC change analysis?**\\n- ❌ **DOES NOT APPLY**: LULC change analysis is included.\\n\\n**Single-scenario \\\"business-as-usual\\\" projections?**\\n- ❌ **DOES NOT APPLY**: Multiple scenarios are tested.\\n\\n**Methodological papers without application?**\\n- ❌ **DOES NOT APPLY**: This is an applied analysis.\\n\\n**Purely qualitative/historical analysis?**\\n- ❌ **DOES NOT APPLY**: Quantitative modeling is employed.\\n\\n## Step 3: Determine Primary Focus\\n\\nThe paper's primary objective is **NOT LULC prediction**. Rather:\\n- **Primary objective**: Assess GHG emissions impacts of healthier diets and agricultural productivity on U.S. climate goals\\n- **LULC role**: LULC changes (pastureland, cropland reductions) are **intermediate outcomes/inputs** used to explain emissions reductions, not the central research question\\n- The paper explicitly states: \\\"Here, we explore the GHG emissions impacts of seven scenarios that vary U.S. crop yields and healthier diets\\\"\\n\\n## Step 4: Critical Limitations for LULC Prediction Categorization\\n\\n1. **No spatial mapping**: Results are presented as national aggregates (e.g., \\\"37 mil ha pastureland decline\\\") without spatial distribution across the U.S.\\n2. **No accuracy assessment**: No validation metrics or spatial accuracy reporting\\n3. **Not spatially explicit**: GLOBIOM operates at coarse resolution; outputs are aggregated nationally\\n4. **LULC is instrumental**: Land use changes are modeled to explain emissions, not as the primary research product\\n\\n---\\n\\n## FINAL CATEGORIZATION: **EXCLUDED**\\n\\n**Justification**: \\nThis paper fails multiple core inclusion criteria for LULC prediction research:\\n1. **No spatially explicit national-scale LULC outputs**: Results are national aggregates without gridded spatial maps\\n2. **No accuracy metrics**: No validation or spatial accuracy assessment reported\\n3. **LULC not primary focus**: The central research question concerns GHG emissions impacts of diets/productivity; LULC changes are intermediate outcomes used to explain emissions reductions\\n4. **Global model with coarse non-U.S. resolution**: While U.S.-focused, GLOBIOM is fundamentally a global model not optimized for national-scale spatial LULC prediction\\n\\nThe paper is a valuable agricultural/climate policy analysis but does not meet the criteria for research focused on **national-scale LULC prediction with spatial explicitness and accuracy assessment**.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":14038,\"completion_tokens\":1281,\"total_tokens\":15319,\"cost\":0.020443,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.020443,\"upstream_inference_prompt_cost\":0.014038,\"upstream_inference_completions_cost\":0.006405},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652643-yQc7eUBiPiIVae1U4siE",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 14038,
+        "completion_tokens": 1281,
+        "total_tokens": 15319,
+        "cost": 0.020443,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.020443,
+          "upstream_inference_prompt_cost": 0.014038,
+          "upstream_inference_completions_cost": 0.006405
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 13.814,
+  "call_id": "DS__z1_HUYHVP8Q__claude__r1",
+  "fingerprint": "f4f1ca5e3c9c038dcd1b20ebe932d93613739e9cfec15c4e4abb6e9d266fd169",
+  "paper_id": "z1_HUYHVP8Q",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:44:11.933879+00:00",
+  "input_sha256": "c090aa4d31bafec8b8b57528ca1265c36e69028d72585c31a374d3fec6a65b45",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

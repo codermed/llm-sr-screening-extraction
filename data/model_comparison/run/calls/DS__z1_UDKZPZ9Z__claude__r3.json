@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789655656-tGg03Z0yPyXguEUm4Wvh",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.016136,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10516,
+    "completion_tokens": 1124,
+    "total_tokens": 11640,
+    "cost": 0.016136,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.016136,
+      "upstream_inference_prompt_cost": 0.010516,
+      "upstream_inference_completions_cost": 0.00562
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Modeling Pollinator Community Response to Contrasting Bioenergy Scenarios\n\n## STEP 1: Determine if Paper is a Review Article\n**Result: NOT A REVIEW** - This is an empirical research paper with original field data collection (bee observations across 20 soybean fields in Michigan during 2012), model development, and scenario projections.\n\n---\n\n## STEP 2: Apply Categorization Flow for Non-Review Paper\n\n### Evaluation Against Core Inclusion Criteria:\n\n**Criterion 1: Explicit national-scale spatial implementation (entire country)**\n- ❌ **FAILS** - Study is limited to Lower Michigan (southern Michigan). The paper explicitly states: \"we developed models that related bee abundance, diversity, and community composition to the land cover surrounding study sites\" based on \"observations from flower-visiting bees across the state of Michigan\" but projections are made only for \"Lower Michigan\" (see Methods and Results sections).\n\n**Criterion 2: Primary focus = LULC prediction/simulation**\n- ⚠️ **PARTIAL** - LULC change is a component (600,000 ha conversions modeled), but the PRIMARY focus is **pollinator community response** to bioenergy scenarios, not LULC prediction itself. The paper's central research question concerns how bees respond to land-use changes, not predicting future LULC patterns.\n\n**Criterion 3: Implementation of ≥2 future scenarios with quantitative comparison**\n- ✅ **PASSES** - Two contrasting scenarios: (1) Perennial grassland bioenergy scenario, (2) Annual bioenergy scenario, with quantitative comparisons of percent change in bee metrics.\n\n**Criterion 4: Spatial modeling with quantitative accuracy metrics**\n- ⚠️ **PARTIAL** - Spatial modeling is present (GIS-based projections across Lower Michigan), but accuracy metrics for LULC predictions are NOT reported. The paper reports pseudo-R² values for bee abundance/diversity/composition models (0.60-0.66), not accuracy of LULC projections themselves.\n\n**Criterion 5: Outputs include mapped LULC projections**\n- ✅ **PASSES** - Figure 5 shows mapped projections of bee metrics under different scenarios across Michigan landscape.\n\n---\n\n### Evaluation Against Specific Exclusion Criteria:\n\n- ❌ **Species-specific/ecological focus unrelated to LULC**: The paper is fundamentally focused on **species response (bees) to land cover change**, not on predicting LULC itself. While LULC scenarios are inputs to the analysis, the research question is ecological: \"How do pollinator communities respond to contrasting bioenergy scenarios?\"\n\n- ❌ **Biomass/bioenergy/carbon studies without LULC change analysis**: This is a bioenergy study, but it includes LULC change analysis (600,000 ha conversions). However, the LULC change is **predetermined and imposed** (not predicted/modeled) for scenario analysis purposes.\n\n- ❌ **Local/regional scale focus**: The study is explicitly regional (Lower Michigan only), not national-scale.\n\n---\n\n## STEP 3: Determine Primary Focus\n\n**Primary objective analysis:**\n- The research question centers on: **\"How will bee communities respond under two contrasting bioenergy production scenarios?\"**\n- LULC change (conversion of 600,000 ha) is a **predetermined input** to scenario analysis, not the prediction target\n- The modeling effort is directed at **predicting bee abundance, diversity, and composition**, not LULC patterns\n- LULC scenarios are manually constructed in GIS based on USDA capability classes, not derived from predictive modeling\n\n**Classification: LULC prediction is used as input/step in ecological modeling, not the primary focus**\n\n---\n\n## FINAL CATEGORIZATION\n\n**Final categorization: EXCLUDED**\n\n**Justification:**\n1. **Scale mismatch**: Study is limited to Lower Michigan (regional), not national-scale as required for inclusion\n2. **Primary focus is ecological, not LULC prediction**: The paper's central research question concerns pollinator community response to land-use scenarios, not predicting future LULC patterns themselves\n3. **LULC scenarios are predetermined inputs, not predictive outputs**: The 600,000 ha conversions are manually specified based on soil capability classes and randomly selected in GIS, not derived from LULC prediction modeling\n4. **No LULC accuracy metrics**: Quantitative accuracy assessment is provided only for bee models (pseudo-R²), not for LULC projections\n5. **Fails core inclusion criterion #1**: Lacks explicit national-scale spatial implementation\n6. **Meets exclusion criterion**: Species-specific ecological focus (bees) where LULC change is instrumental to ecological analysis rather than the primary research target",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:34:12.098329+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.055,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655656-tGg03Z0yPyXguEUm4Wvh\",\"object\":\"chat.completion\",\"created\":1789655656,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Modeling Pollinator Community Response to Contrasting Bioenergy Scenarios\\n\\n## STEP 1: Determine if Paper is a Review Article\\n**Result: NOT A REVIEW** - This is an empirical research paper with original field data collection (bee observations across 20 soybean fields in Michigan during 2012), model development, and scenario projections.\\n\\n---\\n\\n## STEP 2: Apply Categorization Flow for Non-Review Paper\\n\\n### Evaluation Against Core Inclusion Criteria:\\n\\n**Criterion 1: Explicit national-scale spatial implementation (entire country)**\\n- ❌ **FAILS** - Study is limited to Lower Michigan (southern Michigan). The paper explicitly states: \\\"we developed models that related bee abundance, diversity, and community composition to the land cover surrounding study sites\\\" based on \\\"observations from flower-visiting bees across the state of Michigan\\\" but projections are made only for \\\"Lower Michigan\\\" (see Methods and Results sections).\\n\\n**Criterion 2: Primary focus = LULC prediction/simulation**\\n- ⚠️ **PARTIAL** - LULC change is a component (600,000 ha conversions modeled), but the PRIMARY focus is **pollinator community response** to bioenergy scenarios, not LULC prediction itself. The paper's central research question concerns how bees respond to land-use changes, not predicting future LULC patterns.\\n\\n**Criterion 3: Implementation of ≥2 future scenarios with quantitative comparison**\\n- ✅ **PASSES** - Two contrasting scenarios: (1) Perennial grassland bioenergy scenario, (2) Annual bioenergy scenario, with quantitative comparisons of percent change in bee metrics.\\n\\n**Criterion 4: Spatial modeling with quantitative accuracy metrics**\\n- ⚠️ **PARTIAL** - Spatial modeling is present (GIS-based projections across Lower Michigan), but accuracy metrics for LULC predictions are NOT reported. The paper reports pseudo-R² values for bee abundance/diversity/composition models (0.60-0.66), not accuracy of LULC projections themselves.\\n\\n**Criterion 5: Outputs include mapped LULC projections**\\n- ✅ **PASSES** - Figure 5 shows mapped projections of bee metrics under different scenarios across Michigan landscape.\\n\\n---\\n\\n### Evaluation Against Specific Exclusion Criteria:\\n\\n- ❌ **Species-specific/ecological focus unrelated to LULC**: The paper is fundamentally focused on **species response (bees) to land cover change**, not on predicting LULC itself. While LULC scenarios are inputs to the analysis, the research question is ecological: \\\"How do pollinator communities respond to contrasting bioenergy scenarios?\\\"\\n\\n- ❌ **Biomass/bioenergy/carbon studies without LULC change analysis**: This is a bioenergy study, but it includes LULC change analysis (600,000 ha conversions). However, the LULC change is **predetermined and imposed** (not predicted/modeled) for scenario analysis purposes.\\n\\n- ❌ **Local/regional scale focus**: The study is explicitly regional (Lower Michigan only), not national-scale.\\n\\n---\\n\\n## STEP 3: Determine Primary Focus\\n\\n**Primary objective analysis:**\\n- The research question centers on: **\\\"How will bee communities respond under two contrasting bioenergy production scenarios?\\\"**\\n- LULC change (conversion of 600,000 ha) is a **predetermined input** to scenario analysis, not the prediction target\\n- The modeling effort is directed at **predicting bee abundance, diversity, and composition**, not LULC patterns\\n- LULC scenarios are manually constructed in GIS based on USDA capability classes, not derived from predictive modeling\\n\\n**Classification: LULC prediction is used as input/step in ecological modeling, not the primary focus**\\n\\n---\\n\\n## FINAL CATEGORIZATION\\n\\n**Final categorization: EXCLUDED**\\n\\n**Justification:**\\n1. **Scale mismatch**: Study is limited to Lower Michigan (regional), not national-scale as required for inclusion\\n2. **Primary focus is ecological, not LULC prediction**: The paper's central research question concerns pollinator community response to land-use scenarios, not predicting future LULC patterns themselves\\n3. **LULC scenarios are predetermined inputs, not predictive outputs**: The 600,000 ha conversions are manually specified based on soil capability classes and randomly selected in GIS, not derived from LULC prediction modeling\\n4. **No LULC accuracy metrics**: Quantitative accuracy assessment is provided only for bee models (pseudo-R²), not for LULC projections\\n5. **Fails core inclusion criterion #1**: Lacks explicit national-scale spatial implementation\\n6. **Meets exclusion criterion**: Species-specific ecological focus (bees) where LULC change is instrumental to ecological analysis rather than the primary research target\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10516,\"completion_tokens\":1124,\"total_tokens\":11640,\"cost\":0.016136,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.016136,\"upstream_inference_prompt_cost\":0.010516,\"upstream_inference_completions_cost\":0.00562},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655656-tGg03Z0yPyXguEUm4Wvh",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 10516,
+        "completion_tokens": 1124,
+        "total_tokens": 11640,
+        "cost": 0.016136,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.016136,
+          "upstream_inference_prompt_cost": 0.010516,
+          "upstream_inference_completions_cost": 0.00562
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.056,
+  "call_id": "DS__z1_UDKZPZ9Z__claude__r3",
+  "fingerprint": "465ff4d01cc1692993eb9ca5c8560888bb234de57a3a82649417f2750b5ffe09",
+  "paper_id": "z1_UDKZPZ9Z",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:34:24.153608+00:00",
+  "input_sha256": "1a04e9cb396d1f12d8418c9d175cf4fe9a63f6cfce5da2749f62bce83763c807",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

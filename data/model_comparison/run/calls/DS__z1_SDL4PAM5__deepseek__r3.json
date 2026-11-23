@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789655665-3uL41XbNPWAoMUjV8hJ8",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00394858,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15086,
+    "completion_tokens": 69,
+    "total_tokens": 15155,
+    "cost": 0.00394858,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00394858,
+      "upstream_inference_prompt_cost": 0.00392236,
+      "upstream_inference_completions_cost": 2.622e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper's primary objective is modeling ecosystem service provision under future scenarios, not LULC prediction. LULC change is a simulated outcome of agent-based decisions, not the central research question. The core inclusion criterion of \"Primary focus = LULC prediction/simulation\" is not met.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:34:20.305869+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.107,
+      "raw_body": "\n         \n{\"id\":\"gen-1789655665-3uL41XbNPWAoMUjV8hJ8\",\"object\":\"chat.completion\",\"created\":1789655665,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper's primary objective is modeling ecosystem service provision under future scenarios, not LULC prediction. LULC change is a simulated outcome of agent-based decisions, not the central research question. The core inclusion criterion of \\\"Primary focus = LULC prediction/simulation\\\" is not met.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15086,\"completion_tokens\":69,\"total_tokens\":15155,\"cost\":0.00394858,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00394858,\"upstream_inference_prompt_cost\":0.00392236,\"upstream_inference_completions_cost\":0.00002622},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655665-3uL41XbNPWAoMUjV8hJ8",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 15086,
+        "completion_tokens": 69,
+        "total_tokens": 15155,
+        "cost": 0.00394858,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00394858,
+          "upstream_inference_prompt_cost": 0.00392236,
+          "upstream_inference_completions_cost": 2.622e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.108,
+  "call_id": "DS__z1_SDL4PAM5__deepseek__r3",
+  "fingerprint": "3dc20b6d0594a13df2b9162387ed3ced4e4fd28e164ff1e98cae6410d3c96c0f",
+  "paper_id": "z1_SDL4PAM5",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:34:23.413678+00:00",
+  "input_sha256": "096cea9fe51615bd51a489b3e2947f8aaa44031e08659e6e9c35898f94e6301a",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789654300-hFqrzSDw4a4BJDaDkmqk",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00241994,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 9211,
+    "completion_tokens": 66,
+    "total_tokens": 9277,
+    "cost": 0.00241994,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00241994,
+      "upstream_inference_prompt_cost": 0.00239486,
+      "upstream_inference_completions_cost": 2.508e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The study is global/transboundary in scale, focusing on the Silk Road region, not a single nation. While it implements multiple scenarios and spatial modeling, its scale is a collection of countries/sub-regions, not an explicit national-scale implementation for an entire sovereign country.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:11:35.191075+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 5.576,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789654300-hFqrzSDw4a4BJDaDkmqk\",\"object\":\"chat.completion\",\"created\":1789654300,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The study is global/transboundary in scale, focusing on the Silk Road region, not a single nation. While it implements multiple scenarios and spatial modeling, its scale is a collection of countries/sub-regions, not an explicit national-scale implementation for an entire sovereign country.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":9211,\"completion_tokens\":66,\"total_tokens\":9277,\"cost\":0.00241994,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00241994,\"upstream_inference_prompt_cost\":0.00239486,\"upstream_inference_completions_cost\":0.00002508},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654300-hFqrzSDw4a4BJDaDkmqk",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 9211,
+        "completion_tokens": 66,
+        "total_tokens": 9277,
+        "cost": 0.00241994,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00241994,
+          "upstream_inference_prompt_cost": 0.00239486,
+          "upstream_inference_completions_cost": 2.508e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 5.577,
+  "call_id": "DS__z1_DHLQR8CQ__deepseek__r2",
+  "fingerprint": "fcf4de9388637e6bfa166d0c7c69095bd95ccdc75a804b6cc109bbcd8e94bf8d",
+  "paper_id": "z1_DHLQR8CQ",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:11:40.767491+00:00",
+  "input_sha256": "f7de1944c1dce2a43998a8b162f733e5ff7ce71bc142e6b401cd6cf55fcedd3b",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

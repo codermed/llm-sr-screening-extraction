@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789655332-AtA5C0oLTPldNHROvyPU",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00363224,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 13710,
+    "completion_tokens": 178,
+    "total_tokens": 13888,
+    "cost": 0.00363224,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00363224,
+      "upstream_inference_prompt_cost": 0.0035646,
+      "upstream_inference_completions_cost": 6.764e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a research article, not a review. Its primary focus is on quantifying the impact of past and future agricultural land-use change on European farmland bird populations, using a trait-based risk assessment framework. While it uses and predicts future land-use change scenarios, the central research question is ecological impact assessment, not LULC prediction itself. The LULC predictions are used as an input to drive the ecological model, not as the primary output for analysis. The paper fails the core inclusion criterion that the primary focus must be LULC prediction/simulation. It also lacks explicit national-scale spatial implementation of a LULC model; its spatial unit of analysis for scenarios is primarily at the regional level (e.g., East, West Europe) and its risk framework is applied to species trends, not to producing mapped LULC projections.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:28:47.462185+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 5.669,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789655332-AtA5C0oLTPldNHROvyPU\",\"object\":\"chat.completion\",\"created\":1789655332,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a research article, not a review. Its primary focus is on quantifying the impact of past and future agricultural land-use change on European farmland bird populations, using a trait-based risk assessment framework. While it uses and predicts future land-use change scenarios, the central research question is ecological impact assessment, not LULC prediction itself. The LULC predictions are used as an input to drive the ecological model, not as the primary output for analysis. The paper fails the core inclusion criterion that the primary focus must be LULC prediction/simulation. It also lacks explicit national-scale spatial implementation of a LULC model; its spatial unit of analysis for scenarios is primarily at the regional level (e.g., East, West Europe) and its risk framework is applied to species trends, not to producing mapped LULC projections.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":13710,\"completion_tokens\":178,\"total_tokens\":13888,\"cost\":0.00363224,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00363224,\"upstream_inference_prompt_cost\":0.0035646,\"upstream_inference_completions_cost\":0.00006764},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655332-AtA5C0oLTPldNHROvyPU",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 13710,
+        "completion_tokens": 178,
+        "total_tokens": 13888,
+        "cost": 0.00363224,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00363224,
+          "upstream_inference_prompt_cost": 0.0035646,
+          "upstream_inference_completions_cost": 6.764e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 5.669,
+  "call_id": "DS__z1_KDK8WS46__deepseek__r3",
+  "fingerprint": "01faca30eab84846369e8127c1fd39dd12d2b84839e89a80ce2354b5e7948ab0",
+  "paper_id": "z1_KDK8WS46",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:28:53.131103+00:00",
+  "input_sha256": "2a692c9f363ca6ab4066d460cb9b5cbae71d2c6155afe98586edbc8d69fb11e2",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

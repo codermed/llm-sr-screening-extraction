@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789652729-d4gaaZnCVZy8ilHX5DJE",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00464968,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 17727,
+    "completion_tokens": 107,
+    "total_tokens": 17834,
+    "cost": 0.00464968,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00464968,
+      "upstream_inference_prompt_cost": 0.00460902,
+      "upstream_inference_completions_cost": 4.066e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: This is a review article that provides an overview of the FGOALS climate system model, its development, performance improvements, and contributions to major projects like CMIP5. The paper's focus is on evaluating and summarizing the model's capabilities for simulating general climate phenomena (e.g., clouds, ENSO, monsoons, AMOC) and its role in climate science. It does not focus on, synthesize, or review land use land cover (LULC) future prediction.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:45:25.108288+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.688,
+      "raw_body": "\n         \n{\"id\":\"gen-1789652729-d4gaaZnCVZy8ilHX5DJE\",\"object\":\"chat.completion\",\"created\":1789652729,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This is a review article that provides an overview of the FGOALS climate system model, its development, performance improvements, and contributions to major projects like CMIP5. The paper's focus is on evaluating and summarizing the model's capabilities for simulating general climate phenomena (e.g., clouds, ENSO, monsoons, AMOC) and its role in climate science. It does not focus on, synthesize, or review land use land cover (LULC) future prediction.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":17727,\"completion_tokens\":107,\"total_tokens\":17834,\"cost\":0.00464968,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00464968,\"upstream_inference_prompt_cost\":0.00460902,\"upstream_inference_completions_cost\":0.00004066},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652729-d4gaaZnCVZy8ilHX5DJE",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 17727,
+        "completion_tokens": 107,
+        "total_tokens": 17834,
+        "cost": 0.00464968,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00464968,
+          "upstream_inference_prompt_cost": 0.00460902,
+          "upstream_inference_completions_cost": 4.066e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.688,
+  "call_id": "DS__z1_Q3FKRKAE__deepseek__r1",
+  "fingerprint": "f95420e99fb554f52c3615dd0b3cfb87d1bfe890fa5afe3da23f95baba37d95c",
+  "paper_id": "z1_Q3FKRKAE",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:45:28.796267+00:00",
+  "input_sha256": "49a14288c89b806c6c6cb0c777f300da6c780af99c34f910a7beeb0c9d152a9c",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789655251-CID0BFrhid2YUm4yd6Pj",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0012864,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10580,
+    "completion_tokens": 103,
+    "total_tokens": 10683,
+    "cost": 0.0012864,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 10368,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0012864,
+      "upstream_inference_prompt_cost": 0.0011216,
+      "upstream_inference_completions_cost": 0.0001648
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This paper is a review study focused on agroforestry practices, ecosystem services, and sustainable development goals in Nepal. It does not address land use land cover (LULC) future prediction or modeling. The primary focus is on agroforestry transitions, management modalities, and ecosystem service trade-offs rather than any spatially explicit LULC prediction or simulation. Therefore, it does not meet the core inclusion criteria for LULC prediction papers and is excluded.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:27:26.270117+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 1.933,
+      "raw_body": "\n         \n{\"id\":\"gen-1789655251-CID0BFrhid2YUm4yd6Pj\",\"object\":\"chat.completion\",\"created\":1789655251,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This paper is a review study focused on agroforestry practices, ecosystem services, and sustainable development goals in Nepal. It does not address land use land cover (LULC) future prediction or modeling. The primary focus is on agroforestry transitions, management modalities, and ecosystem service trade-offs rather than any spatially explicit LULC prediction or simulation. Therefore, it does not meet the core inclusion criteria for LULC prediction papers and is excluded.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10580,\"completion_tokens\":103,\"total_tokens\":10683,\"cost\":0.0012864,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":10368,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0012864,\"upstream_inference_prompt_cost\":0.0011216,\"upstream_inference_completions_cost\":0.0001648},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655251-CID0BFrhid2YUm4yd6Pj",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 10580,
+        "completion_tokens": 103,
+        "total_tokens": 10683,
+        "cost": 0.0012864,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 10368,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0012864,
+          "upstream_inference_prompt_cost": 0.0011216,
+          "upstream_inference_completions_cost": 0.0001648
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 1.933,
+  "call_id": "DS__z1_Y5FALXY7__openai__r3",
+  "fingerprint": "e31c278e5810e84a57695dfe1a47af33c28e2c71b7022ffdda4a75b01d9f5bd1",
+  "paper_id": "z1_Y5FALXY7",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:27:28.203248+00:00",
+  "input_sha256": "2bff40084b172bac62116d5a3c76ed5ea530e47fd3308762bddbeb61ede976c4",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

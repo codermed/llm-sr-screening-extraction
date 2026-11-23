@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789653410-u6OuTHw1Nq4qHoWI2IdC",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.021009,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15254,
+    "completion_tokens": 1151,
+    "total_tokens": 16405,
+    "cost": 0.021009,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.021009,
+      "upstream_inference_prompt_cost": 0.015254,
+      "upstream_inference_completions_cost": 0.005755
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Siamese Eld's Deer Distribution Study\n\n## PAPER TYPE DETERMINATION\nThis is a **NON-REVIEW RESEARCH PAPER** (original empirical research with species distribution modeling).\n\n---\n\n## EVALUATION AGAINST INCLUSION/EXCLUSION CRITERIA\n\n### CORE INCLUSION CRITERIA ASSESSMENT:\n\n**1. Explicit national-scale spatial implementation (entire country)?**\n- ❌ **FAILS** - Study area is transboundary (Thailand, Cambodia, Lao PDR) covering the Emerald Triangle Protected Forests Complex (ETFC), not national-scale implementation. Total study area: 25,056 km² distributed across three countries (Thailand: 13,038 km², Cambodia: 4,657 km², Lao PDR: 7,361 km²). This is explicitly a **transboundary conservation area**, not a single nation's territory.\n\n**2. Primary focus = LULC prediction/simulation?**\n- ⚠️ **PARTIAL** - LULC change is included but is secondary. Primary focus is **species distribution modeling** (Siamese Eld's deer). The paper states: \"The objectives of this article were to predict Siamese Eld's deer distribution and to determine potential shifts in its suitable habitat as the results of different land use and climate change scenarios.\"\n- LULC prediction is an **input/supporting component**, not the central research objective.\n\n**3. Implementation of ≥2 future scenarios with quantitative comparison?**\n- ✅ **PASSES** - Four land use scenarios for 2030 plus climate change scenarios (2050) are modeled with quantitative comparisons (Table 3 provides habitat extent in km² and percentages).\n\n**4. Spatial modeling with quantitative accuracy metrics?**\n- ✅ **PASSES** - Species distribution models (logistic regression, Maxent) with accuracy metrics: AUC values, contingency tables, overall accuracy (90% for logistic regression), commission/omission errors reported.\n\n**5. Outputs include mapped LULC projections?**\n- ✅ **PASSES** - Figure 2 shows \"Predicted land use maps in 2030 based on different scenarios.\"\n\n### SPECIFIC EXCLUSION CRITERIA ASSESSMENT:\n\n**1. Transboundary/regional/global scale focus (not national)?**\n- ✅ **TRIGGERS EXCLUSION** - Explicitly stated as transboundary study area across three countries. This violates the national-scale requirement.\n\n**2. Species-specific/ecological focus (flora/fauna) unrelated to LULC?**\n- ✅ **TRIGGERS EXCLUSION** - Primary research question centers on **wildlife species distribution modeling** (Siamese Eld's deer). LULC is used as a predictor variable in the species distribution model, not as the primary focus. The paper's central objective is ecological/conservation-focused, not LULC prediction.\n\n**3. No LULC prediction component?**\n- ❌ Does not trigger (LULC is included as input/scenario).\n\n---\n\n## DETAILED JUSTIFICATION\n\n**Primary Research Objective:** The paper explicitly states its objectives are to:\n1. \"Predict Siamese Eld's deer distribution\"\n2. \"Determine potential shifts in its suitable habitat as the results of different land use and climate change scenarios\"\n\nThe **primary dependent variable is species distribution** (presence/absence of deer), not LULC change itself. LULC scenarios are inputs to the species distribution models.\n\n**LULC Role:** LULC functions as:\n- One of multiple predictor variables in the logistic regression model\n- A scenario input for future projections\n- Supporting context for conservation planning\n\nThe paper does not focus on **predicting or simulating LULC change mechanisms**. Land use scenarios were \"defined by multi-stakeholders from the three countries\" (pre-defined, not modeled), and the paper applies these external scenarios to assess species impacts.\n\n**Scale Issue:** The transboundary designation explicitly disqualifies this from national-scale implementation criteria. While the paper covers portions of three nations, it is not a national-scale LULC prediction study for any single country.\n\n---\n\n## FINAL CATEGORIZATION\n\n**Final categorization: EXCLUDED**\n\n**Justification:** \n1. **Scale violation**: Transboundary study area (three countries) rather than national-scale implementation\n2. **Primary focus mismatch**: Research is centered on species distribution modeling and conservation ecology, not LULC prediction. LULC scenarios are inputs/supporting variables, not primary research outputs\n3. **Meets species-specific ecological exclusion criterion**: The central research question concerns wildlife habitat suitability and population viability under environmental change, not LULC change prediction itself\n\nWhile the paper includes LULC scenario analysis and spatial modeling with quantitative metrics, it does not meet the fundamental requirement that LULC prediction be the primary research focus at national scale.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:56:45.779978+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.965,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653410-u6OuTHw1Nq4qHoWI2IdC\",\"object\":\"chat.completion\",\"created\":1789653410,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Siamese Eld's Deer Distribution Study\\n\\n## PAPER TYPE DETERMINATION\\nThis is a **NON-REVIEW RESEARCH PAPER** (original empirical research with species distribution modeling).\\n\\n---\\n\\n## EVALUATION AGAINST INCLUSION/EXCLUSION CRITERIA\\n\\n### CORE INCLUSION CRITERIA ASSESSMENT:\\n\\n**1. Explicit national-scale spatial implementation (entire country)?**\\n- ❌ **FAILS** - Study area is transboundary (Thailand, Cambodia, Lao PDR) covering the Emerald Triangle Protected Forests Complex (ETFC), not national-scale implementation. Total study area: 25,056 km² distributed across three countries (Thailand: 13,038 km², Cambodia: 4,657 km², Lao PDR: 7,361 km²). This is explicitly a **transboundary conservation area**, not a single nation's territory.\\n\\n**2. Primary focus = LULC prediction/simulation?**\\n- ⚠️ **PARTIAL** - LULC change is included but is secondary. Primary focus is **species distribution modeling** (Siamese Eld's deer). The paper states: \\\"The objectives of this article were to predict Siamese Eld's deer distribution and to determine potential shifts in its suitable habitat as the results of different land use and climate change scenarios.\\\"\\n- LULC prediction is an **input/supporting component**, not the central research objective.\\n\\n**3. Implementation of ≥2 future scenarios with quantitative comparison?**\\n- ✅ **PASSES** - Four land use scenarios for 2030 plus climate change scenarios (2050) are modeled with quantitative comparisons (Table 3 provides habitat extent in km² and percentages).\\n\\n**4. Spatial modeling with quantitative accuracy metrics?**\\n- ✅ **PASSES** - Species distribution models (logistic regression, Maxent) with accuracy metrics: AUC values, contingency tables, overall accuracy (90% for logistic regression), commission/omission errors reported.\\n\\n**5. Outputs include mapped LULC projections?**\\n- ✅ **PASSES** - Figure 2 shows \\\"Predicted land use maps in 2030 based on different scenarios.\\\"\\n\\n### SPECIFIC EXCLUSION CRITERIA ASSESSMENT:\\n\\n**1. Transboundary/regional/global scale focus (not national)?**\\n- ✅ **TRIGGERS EXCLUSION** - Explicitly stated as transboundary study area across three countries. This violates the national-scale requirement.\\n\\n**2. Species-specific/ecological focus (flora/fauna) unrelated to LULC?**\\n- ✅ **TRIGGERS EXCLUSION** - Primary research question centers on **wildlife species distribution modeling** (Siamese Eld's deer). LULC is used as a predictor variable in the species distribution model, not as the primary focus. The paper's central objective is ecological/conservation-focused, not LULC prediction.\\n\\n**3. No LULC prediction component?**\\n- ❌ Does not trigger (LULC is included as input/scenario).\\n\\n---\\n\\n## DETAILED JUSTIFICATION\\n\\n**Primary Research Objective:** The paper explicitly states its objectives are to:\\n1. \\\"Predict Siamese Eld's deer distribution\\\"\\n2. \\\"Determine potential shifts in its suitable habitat as the results of different land use and climate change scenarios\\\"\\n\\nThe **primary dependent variable is species distribution** (presence/absence of deer), not LULC change itself. LULC scenarios are inputs to the species distribution models.\\n\\n**LULC Role:** LULC functions as:\\n- One of multiple predictor variables in the logistic regression model\\n- A scenario input for future projections\\n- Supporting context for conservation planning\\n\\nThe paper does not focus on **predicting or simulating LULC change mechanisms**. Land use scenarios were \\\"defined by multi-stakeholders from the three countries\\\" (pre-defined, not modeled), and the paper applies these external scenarios to assess species impacts.\\n\\n**Scale Issue:** The transboundary designation explicitly disqualifies this from national-scale implementation criteria. While the paper covers portions of three nations, it is not a national-scale LULC prediction study for any single country.\\n\\n---\\n\\n## FINAL CATEGORIZATION\\n\\n**Final categorization: EXCLUDED**\\n\\n**Justification:** \\n1. **Scale violation**: Transboundary study area (three countries) rather than national-scale implementation\\n2. **Primary focus mismatch**: Research is centered on species distribution modeling and conservation ecology, not LULC prediction. LULC scenarios are inputs/supporting variables, not primary research outputs\\n3. **Meets species-specific ecological exclusion criterion**: The central research question concerns wildlife habitat suitability and population viability under environmental change, not LULC change prediction itself\\n\\nWhile the paper includes LULC scenario analysis and spatial modeling with quantitative metrics, it does not meet the fundamental requirement that LULC prediction be the primary research focus at national scale.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15254,\"completion_tokens\":1151,\"total_tokens\":16405,\"cost\":0.021009,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.021009,\"upstream_inference_prompt_cost\":0.015254,\"upstream_inference_completions_cost\":0.005755},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653410-u6OuTHw1Nq4qHoWI2IdC",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 15254,
+        "completion_tokens": 1151,
+        "total_tokens": 16405,
+        "cost": 0.021009,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.021009,
+          "upstream_inference_prompt_cost": 0.015254,
+          "upstream_inference_completions_cost": 0.005755
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.965,
+  "call_id": "DS__z1_62M9Z4AJ__claude__r1",
+  "fingerprint": "e619dd0d50b2ed201a32a13f31638d7aec81d343e8e101f72ea1bb6d33bcacf2",
+  "paper_id": "z1_62M9Z4AJ",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:56:58.744807+00:00",
+  "input_sha256": "b116f8e7014f23ab582bf7cfb6feb626427a4df147f546a041ef53b4504e6389",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

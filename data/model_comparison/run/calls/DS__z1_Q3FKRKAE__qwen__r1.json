@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789653196-sx5ipEQDNfvQz74EcA3S",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.01558596,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 19442,
+    "completion_tokens": 108,
+    "total_tokens": 19550,
+    "cost": 0.01558596,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01558596,
+      "upstream_inference_prompt_cost": 0.01516476,
+      "upstream_inference_completions_cost": 0.0004212
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a review article, but it does not focus on land use/land cover (LULC) future prediction. Instead, it provides an overview of the FGOALS climate system model, highlighting its performance in simulating climate phenomena such as ENSO, monsoons, cloud-radiation processes, AMOC, and sea ice, and its contributions to CMIP5 and IPCC AR5. LULC is not discussed as a central component or prediction target.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:53:11.264749+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.594,
+      "raw_body": "\n         \n{\"id\":\"gen-1789653196-sx5ipEQDNfvQz74EcA3S\",\"object\":\"chat.completion\",\"created\":1789653196,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a review article, but it does not focus on land use/land cover (LULC) future prediction. Instead, it provides an overview of the FGOALS climate system model, highlighting its performance in simulating climate phenomena such as ENSO, monsoons, cloud-radiation processes, AMOC, and sea ice, and its contributions to CMIP5 and IPCC AR5. LULC is not discussed as a central component or prediction target.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":19442,\"completion_tokens\":108,\"total_tokens\":19550,\"cost\":0.01558596,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.01558596,\"upstream_inference_prompt_cost\":0.01516476,\"upstream_inference_completions_cost\":0.0004212},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653196-sx5ipEQDNfvQz74EcA3S",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 19442,
+        "completion_tokens": 108,
+        "total_tokens": 19550,
+        "cost": 0.01558596,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01558596,
+          "upstream_inference_prompt_cost": 0.01516476,
+          "upstream_inference_completions_cost": 0.0004212
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.595,
+  "call_id": "DS__z1_Q3FKRKAE__qwen__r1",
+  "fingerprint": "87ba5d516bc56f624504bdf94592a9f64c7da3b6cc11b744202cff789ee35ed5",
+  "paper_id": "z1_Q3FKRKAE",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:53:14.858807+00:00",
+  "input_sha256": "49a14288c89b806c6c6cb0c777f300da6c780af99c34f910a7beeb0c9d152a9c",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

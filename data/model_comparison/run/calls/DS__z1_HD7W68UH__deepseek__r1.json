@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789652576-rxYcW8ZlJveyQAHwAZRw",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00404266,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15385,
+    "completion_tokens": 112,
+    "total_tokens": 15497,
+    "cost": 0.00404266,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00404266,
+      "upstream_inference_prompt_cost": 0.0040001,
+      "upstream_inference_completions_cost": 4.256e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: This is a review article focused on modeling soil carbon and nitrogen cycles during land use change. It synthesizes existing models and presents a case study of a specific model to demonstrate its capabilities. The paper's primary focus is on biogeochemical processes (C/N cycles) and their response to moisture dynamics under different land uses, not on predicting or simulating future Land Use and Land Cover (LULC) change itself. Therefore, it is categorized as a review article that is NOT focused on LULC future prediction.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:42:52.050414+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.229,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789652576-rxYcW8ZlJveyQAHwAZRw\",\"object\":\"chat.completion\",\"created\":1789652576,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This is a review article focused on modeling soil carbon and nitrogen cycles during land use change. It synthesizes existing models and presents a case study of a specific model to demonstrate its capabilities. The paper's primary focus is on biogeochemical processes (C/N cycles) and their response to moisture dynamics under different land uses, not on predicting or simulating future Land Use and Land Cover (LULC) change itself. Therefore, it is categorized as a review article that is NOT focused on LULC future prediction.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15385,\"completion_tokens\":112,\"total_tokens\":15497,\"cost\":0.00404266,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00404266,\"upstream_inference_prompt_cost\":0.0040001,\"upstream_inference_completions_cost\":0.00004256},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652576-rxYcW8ZlJveyQAHwAZRw",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 15385,
+        "completion_tokens": 112,
+        "total_tokens": 15497,
+        "cost": 0.00404266,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00404266,
+          "upstream_inference_prompt_cost": 0.0040001,
+          "upstream_inference_completions_cost": 4.256e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.229,
+  "call_id": "DS__z1_HD7W68UH__deepseek__r1",
+  "fingerprint": "3df656503a8d0c1fb6452d9984891059bb67e5ffd7bc203fcbb62ba783949472",
+  "paper_id": "z1_HD7W68UH",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:42:56.279656+00:00",
+  "input_sha256": "960d3514a0c339a1527db953135e817faf48377e9555a4e7d60adb6c1ba44c31",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

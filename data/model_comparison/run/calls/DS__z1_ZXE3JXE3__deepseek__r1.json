@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789652612-ztEz4RP5nZMVwQMVMnfD",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0040883,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15543,
+    "completion_tokens": 124,
+    "total_tokens": 15667,
+    "cost": 0.0040883,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0040883,
+      "upstream_inference_prompt_cost": 0.00404118,
+      "upstream_inference_completions_cost": 4.712e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper's primary objective is a conservation assessment prioritizing areas for protection under climate change scenarios, not LULC prediction. While it uses future vegetation productivity projections based on climate scenarios, these are not LULC maps (e.g., forest, urban, agriculture). The core methodology is systematic conservation planning (Marxan/MarProb) to select reserve networks, not simulating or predicting changes in land use or land cover classes. The study meets the scale criterion (Canada's boreal forest) but fails the core inclusion criteria of having LULC prediction as its primary focus.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:43:27.907949+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.506,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789652612-ztEz4RP5nZMVwQMVMnfD\",\"object\":\"chat.completion\",\"created\":1789652612,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper's primary objective is a conservation assessment prioritizing areas for protection under climate change scenarios, not LULC prediction. While it uses future vegetation productivity projections based on climate scenarios, these are not LULC maps (e.g., forest, urban, agriculture). The core methodology is systematic conservation planning (Marxan/MarProb) to select reserve networks, not simulating or predicting changes in land use or land cover classes. The study meets the scale criterion (Canada's boreal forest) but fails the core inclusion criteria of having LULC prediction as its primary focus.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15543,\"completion_tokens\":124,\"total_tokens\":15667,\"cost\":0.0040883,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0040883,\"upstream_inference_prompt_cost\":0.00404118,\"upstream_inference_completions_cost\":0.00004712},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652612-ztEz4RP5nZMVwQMVMnfD",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 15543,
+        "completion_tokens": 124,
+        "total_tokens": 15667,
+        "cost": 0.0040883,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0040883,
+          "upstream_inference_prompt_cost": 0.00404118,
+          "upstream_inference_completions_cost": 4.712e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.507,
+  "call_id": "DS__z1_ZXE3JXE3__deepseek__r1",
+  "fingerprint": "a887da1c0b0e6979722cc36180bbbdba33fa0b05e6aa0e38de59ebd8c2c739fa",
+  "paper_id": "z1_ZXE3JXE3",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:43:32.414329+00:00",
+  "input_sha256": "6d258c68d368a2b33c7613927ebd12dbd8abe3124198ee010210196d3860beb1",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

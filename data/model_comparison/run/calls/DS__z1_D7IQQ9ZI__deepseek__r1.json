@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789652933-nOhJ1qZjEir10jDmVHwH",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0041223,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15665,
+    "completion_tokens": 130,
+    "total_tokens": 15795,
+    "cost": 0.0041223,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0041223,
+      "upstream_inference_prompt_cost": 0.0040729,
+      "upstream_inference_completions_cost": 4.94e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper's primary focus is on assessing soil conservation status and land degradation neutrality (LDN) planning using current and historical land use data. While it uses land use maps (COS 2015) and models potential soil erosion, it does not perform or focus on predicting or simulating future LULC changes. The \"scenarios\" (S1, S2, S3) refer to different assumptions for current soil cover protection (C-factor values), not to future LULC scenarios. The study is a spatial assessment and prioritization tool for restoration, not a predictive LULC model.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:48:48.914546+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.395,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789652933-nOhJ1qZjEir10jDmVHwH\",\"object\":\"chat.completion\",\"created\":1789652933,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper's primary focus is on assessing soil conservation status and land degradation neutrality (LDN) planning using current and historical land use data. While it uses land use maps (COS 2015) and models potential soil erosion, it does not perform or focus on predicting or simulating future LULC changes. The \\\"scenarios\\\" (S1, S2, S3) refer to different assumptions for current soil cover protection (C-factor values), not to future LULC scenarios. The study is a spatial assessment and prioritization tool for restoration, not a predictive LULC model.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15665,\"completion_tokens\":130,\"total_tokens\":15795,\"cost\":0.0041223,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0041223,\"upstream_inference_prompt_cost\":0.0040729,\"upstream_inference_completions_cost\":0.0000494},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652933-nOhJ1qZjEir10jDmVHwH",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 15665,
+        "completion_tokens": 130,
+        "total_tokens": 15795,
+        "cost": 0.0041223,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0041223,
+          "upstream_inference_prompt_cost": 0.0040729,
+          "upstream_inference_completions_cost": 4.94e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.396,
+  "call_id": "DS__z1_D7IQQ9ZI__deepseek__r1",
+  "fingerprint": "39dc950956ca29a04ce04cc435a89da66cb64ab0897ceabd4b0e84b24b54e623",
+  "paper_id": "z1_D7IQQ9ZI",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:48:53.310078+00:00",
+  "input_sha256": "b3ede537b91d7b416be5881332080f38639363a233c7f8551218979260597df1",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

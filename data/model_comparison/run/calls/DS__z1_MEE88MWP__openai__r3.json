@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789655024-yR2NisZWFSUVZ88F6iei",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.001928,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15632,
+    "completion_tokens": 201,
+    "total_tokens": 15833,
+    "cost": 0.001928,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 15488,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001928,
+      "upstream_inference_prompt_cost": 0.0016064,
+      "upstream_inference_completions_cost": 0.0003216
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: OK (Justification: This is a non-review research paper focused explicitly on national-scale (entire Taiwan island, 35,808 sq.km) spatial prediction/simulation of Land Use Land Cover (LULC) changes. It analyzes decadal LULC changes from 1990–2020 and performs future scenario simulations for 2030 and 2050 using machine learning (SVM) combined with Markov Chain modeling. The study implements four different scenarios with combinations of six independent physical variables, providing quantitative outputs including mapped LULC projections. Accuracy metrics (overall accuracy ~0.87, kappa ~0.74) and validation against actual 2020 data are reported. The work explicitly addresses multiple future scenarios with quantitative comparison at national scale, meeting all core inclusion criteria. It is not a review, excludes local/regional scale only, and includes spatially explicit modeling with accuracy assessment. Therefore, it qualifies as an ‘OK’ category paper.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:23:39.188443+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.44,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789655024-yR2NisZWFSUVZ88F6iei\",\"object\":\"chat.completion\",\"created\":1789655024,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: This is a non-review research paper focused explicitly on national-scale (entire Taiwan island, 35,808 sq.km) spatial prediction/simulation of Land Use Land Cover (LULC) changes. It analyzes decadal LULC changes from 1990–2020 and performs future scenario simulations for 2030 and 2050 using machine learning (SVM) combined with Markov Chain modeling. The study implements four different scenarios with combinations of six independent physical variables, providing quantitative outputs including mapped LULC projections. Accuracy metrics (overall accuracy ~0.87, kappa ~0.74) and validation against actual 2020 data are reported. The work explicitly addresses multiple future scenarios with quantitative comparison at national scale, meeting all core inclusion criteria. It is not a review, excludes local/regional scale only, and includes spatially explicit modeling with accuracy assessment. Therefore, it qualifies as an ‘OK’ category paper.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15632,\"completion_tokens\":201,\"total_tokens\":15833,\"cost\":0.001928,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":15488,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.001928,\"upstream_inference_prompt_cost\":0.0016064,\"upstream_inference_completions_cost\":0.0003216},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655024-yR2NisZWFSUVZ88F6iei",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 15632,
+        "completion_tokens": 201,
+        "total_tokens": 15833,
+        "cost": 0.001928,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 15488,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001928,
+          "upstream_inference_prompt_cost": 0.0016064,
+          "upstream_inference_completions_cost": 0.0003216
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.441,
+  "call_id": "DS__z1_MEE88MWP__openai__r3",
+  "fingerprint": "afbf7f3e7c2d3b8b1536ff97e6d858b5ed2f930ed544243549cca3b7b0613132",
+  "paper_id": "z1_MEE88MWP",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:23:43.628596+00:00",
+  "input_sha256": "7ba93337d4ee8fc18059d82d643e2f5bf44b90fe58928ccef8602d55c1d6bf96",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

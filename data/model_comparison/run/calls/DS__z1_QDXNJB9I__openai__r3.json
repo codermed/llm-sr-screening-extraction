@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654979-3kziA5csWJwKbIIIWrMN",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0013696,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10268,
+    "completion_tokens": 185,
+    "total_tokens": 10453,
+    "cost": 0.0013696,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 10112,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0013696,
+      "upstream_inference_prompt_cost": 0.0010736,
+      "upstream_inference_completions_cost": 0.000296
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This is a non-review research paper focused on biodiversity conservation and future distribution modeling of rupestrian grasslands, primarily using species distribution modeling (MaxEnt) under climate change scenarios. The study does not center on land use land cover (LULC) change prediction or simulation at the national scale, nor does it implement ≥2 future LULC scenarios with quantitative spatial modeling and accuracy metrics. Instead, it models climatic suitability for an ecosystem and overlays current land-use and mining impact data without projecting spatial LULC changes or simulating future LULC patterns. The LULC-related analyses are limited to overlay and impact assessment, not predictive spatial LULC modeling. The scale is national (Brazil), but the primary focus is ecological niche/climatic suitability modeling, not LULC prediction. Therefore, it fails core inclusion criteria for LULC prediction studies.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:22:54.535436+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.652,
+      "raw_body": "\n         \n{\"id\":\"gen-1789654979-3kziA5csWJwKbIIIWrMN\",\"object\":\"chat.completion\",\"created\":1789654979,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This is a non-review research paper focused on biodiversity conservation and future distribution modeling of rupestrian grasslands, primarily using species distribution modeling (MaxEnt) under climate change scenarios. The study does not center on land use land cover (LULC) change prediction or simulation at the national scale, nor does it implement ≥2 future LULC scenarios with quantitative spatial modeling and accuracy metrics. Instead, it models climatic suitability for an ecosystem and overlays current land-use and mining impact data without projecting spatial LULC changes or simulating future LULC patterns. The LULC-related analyses are limited to overlay and impact assessment, not predictive spatial LULC modeling. The scale is national (Brazil), but the primary focus is ecological niche/climatic suitability modeling, not LULC prediction. Therefore, it fails core inclusion criteria for LULC prediction studies.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10268,\"completion_tokens\":185,\"total_tokens\":10453,\"cost\":0.0013696,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":10112,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0013696,\"upstream_inference_prompt_cost\":0.0010736,\"upstream_inference_completions_cost\":0.000296},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654979-3kziA5csWJwKbIIIWrMN",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 10268,
+        "completion_tokens": 185,
+        "total_tokens": 10453,
+        "cost": 0.0013696,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 10112,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0013696,
+          "upstream_inference_prompt_cost": 0.0010736,
+          "upstream_inference_completions_cost": 0.000296
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.653,
+  "call_id": "DS__z1_QDXNJB9I__openai__r3",
+  "fingerprint": "595242e4b5af54fdb4bb168dea93ea3a33e20e3038570fba34b6b73e2a59373d",
+  "paper_id": "z1_QDXNJB9I",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:22:57.187172+00:00",
+  "input_sha256": "a4e75cce971ba693ac1f55068476354fe32e64b9741d66c7da2d8f0d5a665595",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

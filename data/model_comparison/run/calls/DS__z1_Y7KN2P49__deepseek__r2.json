@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653671-bnYvuuBMTzG3XSXvoE7U",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0057106,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 21806,
+    "completion_tokens": 108,
+    "total_tokens": 21914,
+    "cost": 0.0057106,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0057106,
+      "upstream_inference_prompt_cost": 0.00566956,
+      "upstream_inference_completions_cost": 4.104e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a non-review research article that fails the core inclusion criteria. Its primary focus is on hydrological modeling to assess the impacts of climate change and land-use change on water resources, not on LULC prediction. The LULC predictions are used as an input to the hydrological model, not as the central research objective. Furthermore, the study area is the Upper Ganges river basin, which is a regional/sub-national scale, not a national-scale implementation for an entire country.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:01:06.637245+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 7.882,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789653671-bnYvuuBMTzG3XSXvoE7U\",\"object\":\"chat.completion\",\"created\":1789653671,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a non-review research article that fails the core inclusion criteria. Its primary focus is on hydrological modeling to assess the impacts of climate change and land-use change on water resources, not on LULC prediction. The LULC predictions are used as an input to the hydrological model, not as the central research objective. Furthermore, the study area is the Upper Ganges river basin, which is a regional/sub-national scale, not a national-scale implementation for an entire country.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":21806,\"completion_tokens\":108,\"total_tokens\":21914,\"cost\":0.0057106,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0057106,\"upstream_inference_prompt_cost\":0.00566956,\"upstream_inference_completions_cost\":0.00004104},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653671-bnYvuuBMTzG3XSXvoE7U",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 21806,
+        "completion_tokens": 108,
+        "total_tokens": 21914,
+        "cost": 0.0057106,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0057106,
+          "upstream_inference_prompt_cost": 0.00566956,
+          "upstream_inference_completions_cost": 4.104e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 7.883,
+  "call_id": "DS__z1_Y7KN2P49__deepseek__r2",
+  "fingerprint": "1f658e82b5d73e410bf66122f5bcd9ba79ff93ea95dd6dccdfdfa21368fce4e9",
+  "paper_id": "z1_Y7KN2P49",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:01:14.519248+00:00",
+  "input_sha256": "5d599d611d15ba8da844c04d7006e036a2077f8ea9bb2a37f19f93af00e89937",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

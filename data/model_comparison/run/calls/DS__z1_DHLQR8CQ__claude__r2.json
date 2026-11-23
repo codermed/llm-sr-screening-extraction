@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789654909-pGydUP8omhAK5ODmRXUx",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.01663,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10385,
+    "completion_tokens": 1249,
+    "total_tokens": 11634,
+    "cost": 0.01663,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01663,
+      "upstream_inference_prompt_cost": 0.010385,
+      "upstream_inference_completions_cost": 0.006245
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis\n\n## Step 1: Determine if Review Article\nThis is a **research paper**, not a review article. It presents original empirical research with novel methodology (SD-CA-ANN coupled modeling), primary data analysis, and new findings rather than synthesizing existing literature.\n\n---\n\n## Step 2: Evaluate Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA ASSESSMENT:\n\n**1. Explicit national-scale spatial implementation?**\n- ✅ YES - Study covers 9 sub-regions along the Silk Road with explicit country-level analysis (China, Russia, India, Thailand, Indonesia, Greece, Romania, Slovakia, Tajikistan, etc.)\n- Spatial resolution: 300m\n- Methods section explicitly defines 9 sub-regions based on geopolitical boundaries\n\n**2. Primary focus = LULC prediction/simulation?**\n- ✅ YES - Central research question explicitly states: \"How are SDG scenarios set? What are the trends of future land-use change in different sub-regions under SDG scenarios?\"\n- Primary objective is projecting future land use (2020-2030)\n- Not using LULC as input; LULC change IS the primary output\n\n**3. Implementation of ≥2 future scenarios with quantitative comparison?**\n- ✅ YES - Four distinct SDG scenarios implemented:\n  - REF (Reference)\n  - ECO (Sustainable Economy)\n  - GRA (Sustainable Grain)\n  - ENV (Sustainable Environment)\n- Quantitative comparisons throughout (Figures 1, 5, 6; Tables S3-S4, S13)\n- Growth rates calculated and compared across scenarios\n\n**4. Spatial modeling with quantitative accuracy metrics?**\n- ✅ YES - Multiple accuracy metrics reported:\n  - CA-ANN model kappa coefficient: 0.77 (Tables S11-S12)\n  - SD model average relative error: <5% (Table S9)\n  - Growth rates calculated (Equation 1)\n  - Quantitative changes in carbon stocks (Pg C)\n\n**5. Outputs include mapped LULC projections?**\n- ✅ YES - Extensive spatial outputs:\n  - Figures 2-4: Spatialised urban, cultivated land, and forest distributions for 2030\n  - Figures S3-S11: Land-use change maps for all scenarios and sub-regions\n  - 300m resolution spatial data for 2020-2030\n\n---\n\n### EXCLUSION CRITERIA ASSESSMENT:\n\n**Global-scale without national disaggregation?**\n- ✅ PASS - Despite Silk Road span, study explicitly disaggregates to 9 sub-regions with national-level analysis\n\n**Local/regional/global/transboundary focus?**\n- ✅ PASS - Multi-national but with explicit national-level implementation (not purely transboundary)\n\n**No LULC prediction component?**\n- ✅ PASS - LULC prediction is core component\n\n**Species-specific/ecological focus unrelated to LULC?**\n- ✅ PASS - Focus is on land use types and carbon pools, not species\n\n**Economic/urban models lacking spatially explicit LULC outputs?**\n- ✅ PASS - Spatially explicit LULC outputs provided (Figures 2-4, S3-S11)\n\n**Biomass/bioenergy/carbon studies without LULC change analysis?**\n- ✅ PASS - Carbon analysis is secondary; LULC change is primary with carbon as impact metric\n\n**Methodological papers without application?**\n- ✅ PASS - Full application to Silk Road region with results\n\n**Purely qualitative/historical only?**\n- ✅ PASS - Future projections (2020-2030) with quantitative modeling\n\n**Remote sensing technical studies without predictive modeling?**\n- ✅ PASS - Predictive modeling is central (SD-CA-ANN coupling)\n\n**Single-scenario projections?**\n- ✅ PASS - Four scenarios implemented\n\n---\n\n## Step 3: Determine Primary Focus\n\n**Primary objective**: Land-use change prediction under SDG scenarios for 2020-2030 along the Silk Road\n\n**LULC prediction role**: **PRIMARY** - This is the central research output, not an input or incidental component\n\n**Evidence**:\n- Research questions explicitly focus on land-use trends\n- Methodology dedicates major effort to SD and CA-ANN modeling for LULC\n- Results section (3.1-3.2) primarily reports LULC changes\n- Carbon pool analysis (3.3) is secondary impact assessment\n\n---\n\n## Final Categorization\n\n**OK** (Justification: This research paper meets ALL core inclusion criteria for national-scale LULC prediction studies. It implements explicit multi-country spatial modeling (9 sub-regions, 300m resolution) with four contrasting SDG scenarios, reports quantitative accuracy metrics (kappa=0.77, RMSE<5%), provides spatially explicit LULC projections mapped for 2030, and focuses primarily on land-use change simulation rather than using LULC as an input. The study successfully disaggregates Silk Road analysis to national levels and compares scenario outcomes quantitatively across multiple land-use types.)",
+  "automated_status": "invalid_output",
+  "parsed_label": "",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:21:44.749738+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 14.165,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789654909-pGydUP8omhAK5ODmRXUx\",\"object\":\"chat.completion\",\"created\":1789654909,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis\\n\\n## Step 1: Determine if Review Article\\nThis is a **research paper**, not a review article. It presents original empirical research with novel methodology (SD-CA-ANN coupled modeling), primary data analysis, and new findings rather than synthesizing existing literature.\\n\\n---\\n\\n## Step 2: Evaluate Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA ASSESSMENT:\\n\\n**1. Explicit national-scale spatial implementation?**\\n- ✅ YES - Study covers 9 sub-regions along the Silk Road with explicit country-level analysis (China, Russia, India, Thailand, Indonesia, Greece, Romania, Slovakia, Tajikistan, etc.)\\n- Spatial resolution: 300m\\n- Methods section explicitly defines 9 sub-regions based on geopolitical boundaries\\n\\n**2. Primary focus = LULC prediction/simulation?**\\n- ✅ YES - Central research question explicitly states: \\\"How are SDG scenarios set? What are the trends of future land-use change in different sub-regions under SDG scenarios?\\\"\\n- Primary objective is projecting future land use (2020-2030)\\n- Not using LULC as input; LULC change IS the primary output\\n\\n**3. Implementation of ≥2 future scenarios with quantitative comparison?**\\n- ✅ YES - Four distinct SDG scenarios implemented:\\n  - REF (Reference)\\n  - ECO (Sustainable Economy)\\n  - GRA (Sustainable Grain)\\n  - ENV (Sustainable Environment)\\n- Quantitative comparisons throughout (Figures 1, 5, 6; Tables S3-S4, S13)\\n- Growth rates calculated and compared across scenarios\\n\\n**4. Spatial modeling with quantitative accuracy metrics?**\\n- ✅ YES - Multiple accuracy metrics reported:\\n  - CA-ANN model kappa coefficient: 0.77 (Tables S11-S12)\\n  - SD model average relative error: <5% (Table S9)\\n  - Growth rates calculated (Equation 1)\\n  - Quantitative changes in carbon stocks (Pg C)\\n\\n**5. Outputs include mapped LULC projections?**\\n- ✅ YES - Extensive spatial outputs:\\n  - Figures 2-4: Spatialised urban, cultivated land, and forest distributions for 2030\\n  - Figures S3-S11: Land-use change maps for all scenarios and sub-regions\\n  - 300m resolution spatial data for 2020-2030\\n\\n---\\n\\n### EXCLUSION CRITERIA ASSESSMENT:\\n\\n**Global-scale without national disaggregation?**\\n- ✅ PASS - Despite Silk Road span, study explicitly disaggregates to 9 sub-regions with national-level analysis\\n\\n**Local/regional/global/transboundary focus?**\\n- ✅ PASS - Multi-national but with explicit national-level implementation (not purely transboundary)\\n\\n**No LULC prediction component?**\\n- ✅ PASS - LULC prediction is core component\\n\\n**Species-specific/ecological focus unrelated to LULC?**\\n- ✅ PASS - Focus is on land use types and carbon pools, not species\\n\\n**Economic/urban models lacking spatially explicit LULC outputs?**\\n- ✅ PASS - Spatially explicit LULC outputs provided (Figures 2-4, S3-S11)\\n\\n**Biomass/bioenergy/carbon studies without LULC change analysis?**\\n- ✅ PASS - Carbon analysis is secondary; LULC change is primary with carbon as impact metric\\n\\n**Methodological papers without application?**\\n- ✅ PASS - Full application to Silk Road region with results\\n\\n**Purely qualitative/historical only?**\\n- ✅ PASS - Future projections (2020-2030) with quantitative modeling\\n\\n**Remote sensing technical studies without predictive modeling?**\\n- ✅ PASS - Predictive modeling is central (SD-CA-ANN coupling)\\n\\n**Single-scenario projections?**\\n- ✅ PASS - Four scenarios implemented\\n\\n---\\n\\n## Step 3: Determine Primary Focus\\n\\n**Primary objective**: Land-use change prediction under SDG scenarios for 2020-2030 along the Silk Road\\n\\n**LULC prediction role**: **PRIMARY** - This is the central research output, not an input or incidental component\\n\\n**Evidence**:\\n- Research questions explicitly focus on land-use trends\\n- Methodology dedicates major effort to SD and CA-ANN modeling for LULC\\n- Results section (3.1-3.2) primarily reports LULC changes\\n- Carbon pool analysis (3.3) is secondary impact assessment\\n\\n---\\n\\n## Final Categorization\\n\\n**OK** (Justification: This research paper meets ALL core inclusion criteria for national-scale LULC prediction studies. It implements explicit multi-country spatial modeling (9 sub-regions, 300m resolution) with four contrasting SDG scenarios, reports quantitative accuracy metrics (kappa=0.77, RMSE<5%), provides spatially explicit LULC projections mapped for 2030, and focuses primarily on land-use change simulation rather than using LULC as an input. The study successfully disaggregates Silk Road analysis to national levels and compares scenario outcomes quantitatively across multiple land-use types.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10385,\"completion_tokens\":1249,\"total_tokens\":11634,\"cost\":0.01663,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.01663,\"upstream_inference_prompt_cost\":0.010385,\"upstream_inference_completions_cost\":0.006245},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654909-pGydUP8omhAK5ODmRXUx",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 10385,
+        "completion_tokens": 1249,
+        "total_tokens": 11634,
+        "cost": 0.01663,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01663,
+          "upstream_inference_prompt_cost": 0.010385,
+          "upstream_inference_completions_cost": 0.006245
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 14.166,
+  "call_id": "DS__z1_DHLQR8CQ__claude__r2",
+  "fingerprint": "730c21afe5ce9f3e84cb79416b230c4051483e3af77d7ef3787ed247f1492b40",
+  "paper_id": "z1_DHLQR8CQ",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:21:58.915331+00:00",
+  "input_sha256": "f7de1944c1dce2a43998a8b162f733e5ff7ce71bc142e6b401cd6cf55fcedd3b",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

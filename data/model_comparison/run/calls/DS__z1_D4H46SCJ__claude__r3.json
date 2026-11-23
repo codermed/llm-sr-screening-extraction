@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789656018-banAeNmrHBkrdomiQRNc",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.018539,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12929,
+    "completion_tokens": 1122,
+    "total_tokens": 14051,
+    "cost": 0.018539,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.018539,
+      "upstream_inference_prompt_cost": 0.012929,
+      "upstream_inference_completions_cost": 0.00561
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: MC2 DGVM Results into Ecosystem Services\n\n## Initial Assessment: Review Status\n**This is NOT a review article.** This is a research paper presenting original modeling results from the MC2 dynamic global vegetation model applied to the conterminous USA.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA FOR NON-REVIEW PAPERS:\n\n**1. Explicit national-scale spatial implementation (entire country)?**\n- ✓ YES - Study explicitly covers \"conterminous USA\" at 30 arcsec (~800 m) spatial resolution\n- Methodology states: \"we used the dynamic global vegetation model (DGVM) MC2...to simulate vegetation dynamics...over the conterminous USA\"\n\n**2. Primary focus = LULC prediction/simulation (central research question)?**\n- ✗ **NO** - The primary focus is **ecosystem services (ES) valuation**, not LULC prediction\n- Central research question: \"Translating MC2 DGVM Results into Ecosystem Services for Climate Change Mitigation and Adaptation\"\n- LULC is used as a **component/input** to evaluate ecosystem services (carbon sequestration, timber supply, habitat stability)\n- The paper explicitly states: \"We translated results into key ES such as carbon sequestration...timber biomass...and evaluated constraints\"\n\n**3. Implementation of ≥2 future scenarios with quantitative comparison?**\n- ✓ YES - Three climate models (CSIRO, CGCM3, MIROC) × three emission scenarios (A2, A1B, B1)\n- Quantitative comparisons provided (Table 1, Figures 1-4)\n\n**4. Spatial modeling with quantitative accuracy metrics?**\n- ✓ PARTIAL - Spatial modeling at 30 arcsec resolution; model calibrated against Küchler's potential vegetation map and NBCD biomass data\n- However, metrics focus on ES outputs (carbon, timber, habitat change) rather than LULC prediction accuracy\n\n**5. Outputs include mapped LULC projections?**\n- ✓ PARTIAL - Figure 3 shows vegetation cover changes, but this is secondary output used to evaluate habitat ES, not primary LULC prediction product\n\n---\n\n### SPECIFIC EXCLUSION CRITERIA:\n\n**Biomass/bioenergy/carbon studies without LULC change analysis?**\n- ⚠️ **APPLIES** - While the paper does include some LULC change analysis (Figure 3, vegetation type shifts), the **primary focus is carbon sequestration and ecosystem services valuation**, not LULC prediction itself\n- LULC changes are analyzed as a **supporting element** to understand ES constraints, not as the central research objective\n\n**Species-specific/ecological focus unrelated to LULC?**\n- ⚠️ **PARTIALLY APPLIES** - Significant portions address vegetation dynamics and wildlife habitat (Section 3.3), which are ecological rather than LULC prediction objectives\n\n**No LULC prediction component?**\n- ✗ Does NOT apply - LULC prediction IS present but not primary\n\n---\n\n## Critical Assessment\n\n**Why this paper does NOT meet inclusion criteria:**\n\n1. **Primary objective mismatch**: The paper's central research question is ecosystem services valuation under climate change, not LULC prediction. The authors explicitly state they are \"translating MC2 DGVM results into ecosystem services.\"\n\n2. **LULC as input, not output**: LULC is implemented as a model input (land use scenarios + fire suppression) to compare managed vs. natural lands. LULC change is analyzed to understand habitat impacts on ES, not as the primary modeling objective.\n\n3. **Secondary LULC focus**: While vegetation shifts are discussed (Figure 3), they serve to illustrate constraints on ecosystem services (habitat stability as a \"supporting service\"), not to predict LULC change patterns.\n\n4. **Ecosystem services framing**: The entire paper is framed around three ES categories (regulatory, provisioning, supporting) and their climate-change-driven changes—not around LULC prediction methodology or accuracy.\n\n---\n\n## Final Categorization\n\n**Final categorization: POSSIBLE**\n\n**Justification:** This is a spatially explicit national-scale modeling study that includes LULC change analysis (with/without land use scenarios, fire suppression effects, vegetation type transitions). However, LULC prediction is **not the primary focus**—it is used as an input variable and analytical framework to evaluate ecosystem services under climate change. The paper implements LULC scenarios to compare managed vs. natural lands and assesses vegetation shifts as constraints on habitat quality (a supporting ES), but the central research objective is ecosystem services valuation, not LULC prediction. The study meets spatial and scenario criteria but fails the \"primary focus\" criterion for full inclusion.",
+  "automated_status": "usable",
+  "parsed_label": "POSSIBLE",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:40:13.283489+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.979,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789656018-banAeNmrHBkrdomiQRNc\",\"object\":\"chat.completion\",\"created\":1789656018,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: MC2 DGVM Results into Ecosystem Services\\n\\n## Initial Assessment: Review Status\\n**This is NOT a review article.** This is a research paper presenting original modeling results from the MC2 dynamic global vegetation model applied to the conterminous USA.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA FOR NON-REVIEW PAPERS:\\n\\n**1. Explicit national-scale spatial implementation (entire country)?**\\n- ✓ YES - Study explicitly covers \\\"conterminous USA\\\" at 30 arcsec (~800 m) spatial resolution\\n- Methodology states: \\\"we used the dynamic global vegetation model (DGVM) MC2...to simulate vegetation dynamics...over the conterminous USA\\\"\\n\\n**2. Primary focus = LULC prediction/simulation (central research question)?**\\n- ✗ **NO** - The primary focus is **ecosystem services (ES) valuation**, not LULC prediction\\n- Central research question: \\\"Translating MC2 DGVM Results into Ecosystem Services for Climate Change Mitigation and Adaptation\\\"\\n- LULC is used as a **component/input** to evaluate ecosystem services (carbon sequestration, timber supply, habitat stability)\\n- The paper explicitly states: \\\"We translated results into key ES such as carbon sequestration...timber biomass...and evaluated constraints\\\"\\n\\n**3. Implementation of ≥2 future scenarios with quantitative comparison?**\\n- ✓ YES - Three climate models (CSIRO, CGCM3, MIROC) × three emission scenarios (A2, A1B, B1)\\n- Quantitative comparisons provided (Table 1, Figures 1-4)\\n\\n**4. Spatial modeling with quantitative accuracy metrics?**\\n- ✓ PARTIAL - Spatial modeling at 30 arcsec resolution; model calibrated against Küchler's potential vegetation map and NBCD biomass data\\n- However, metrics focus on ES outputs (carbon, timber, habitat change) rather than LULC prediction accuracy\\n\\n**5. Outputs include mapped LULC projections?**\\n- ✓ PARTIAL - Figure 3 shows vegetation cover changes, but this is secondary output used to evaluate habitat ES, not primary LULC prediction product\\n\\n---\\n\\n### SPECIFIC EXCLUSION CRITERIA:\\n\\n**Biomass/bioenergy/carbon studies without LULC change analysis?**\\n- ⚠️ **APPLIES** - While the paper does include some LULC change analysis (Figure 3, vegetation type shifts), the **primary focus is carbon sequestration and ecosystem services valuation**, not LULC prediction itself\\n- LULC changes are analyzed as a **supporting element** to understand ES constraints, not as the central research objective\\n\\n**Species-specific/ecological focus unrelated to LULC?**\\n- ⚠️ **PARTIALLY APPLIES** - Significant portions address vegetation dynamics and wildlife habitat (Section 3.3), which are ecological rather than LULC prediction objectives\\n\\n**No LULC prediction component?**\\n- ✗ Does NOT apply - LULC prediction IS present but not primary\\n\\n---\\n\\n## Critical Assessment\\n\\n**Why this paper does NOT meet inclusion criteria:**\\n\\n1. **Primary objective mismatch**: The paper's central research question is ecosystem services valuation under climate change, not LULC prediction. The authors explicitly state they are \\\"translating MC2 DGVM results into ecosystem services.\\\"\\n\\n2. **LULC as input, not output**: LULC is implemented as a model input (land use scenarios + fire suppression) to compare managed vs. natural lands. LULC change is analyzed to understand habitat impacts on ES, not as the primary modeling objective.\\n\\n3. **Secondary LULC focus**: While vegetation shifts are discussed (Figure 3), they serve to illustrate constraints on ecosystem services (habitat stability as a \\\"supporting service\\\"), not to predict LULC change patterns.\\n\\n4. **Ecosystem services framing**: The entire paper is framed around three ES categories (regulatory, provisioning, supporting) and their climate-change-driven changes—not around LULC prediction methodology or accuracy.\\n\\n---\\n\\n## Final Categorization\\n\\n**Final categorization: POSSIBLE**\\n\\n**Justification:** This is a spatially explicit national-scale modeling study that includes LULC change analysis (with/without land use scenarios, fire suppression effects, vegetation type transitions). However, LULC prediction is **not the primary focus**—it is used as an input variable and analytical framework to evaluate ecosystem services under climate change. The paper implements LULC scenarios to compare managed vs. natural lands and assesses vegetation shifts as constraints on habitat quality (a supporting ES), but the central research objective is ecosystem services valuation, not LULC prediction. The study meets spatial and scenario criteria but fails the \\\"primary focus\\\" criterion for full inclusion.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12929,\"completion_tokens\":1122,\"total_tokens\":14051,\"cost\":0.018539,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.018539,\"upstream_inference_prompt_cost\":0.012929,\"upstream_inference_completions_cost\":0.00561},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789656018-banAeNmrHBkrdomiQRNc",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 12929,
+        "completion_tokens": 1122,
+        "total_tokens": 14051,
+        "cost": 0.018539,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.018539,
+          "upstream_inference_prompt_cost": 0.012929,
+          "upstream_inference_completions_cost": 0.00561
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.979,
+  "call_id": "DS__z1_D4H46SCJ__claude__r3",
+  "fingerprint": "9bb81c8bf4697e6c1edc5fe30d898c5f51e2b20d52401d58817b6a5b287a341d",
+  "paper_id": "z1_D4H46SCJ",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:40:26.262615+00:00",
+  "input_sha256": "830914e1cdf8b0bd500d4172c6c3a10eb4053a87479d5890d920b894332a3673",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

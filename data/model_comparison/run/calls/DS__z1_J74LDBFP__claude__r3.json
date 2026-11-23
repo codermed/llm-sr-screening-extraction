@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789655936-u7tBwC5LK0HIRDqhgWsK",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.022656,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 17506,
+    "completion_tokens": 1030,
+    "total_tokens": 18536,
+    "cost": 0.022656,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.022656,
+      "upstream_inference_prompt_cost": 0.017506,
+      "upstream_inference_completions_cost": 0.00515
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land Use and Cover Change in China (2000-2060)\n\n## Initial Assessment\nThis is **NOT a review article** — it is an original research paper presenting empirical analysis and modeling of LULC changes.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA (Non-Review Papers):\n\n1. **Explicit national-scale spatial implementation (entire country)** ✓\n   - Study area: \"mainland China, excluding Taiwan Province and the South China Sea Islands\"\n   - Methodology explicitly states national-scale analysis\n   - Data at 1000m resolution covering entire mainland China\n\n2. **Primary focus = LULC prediction/simulation** ✓\n   - Central research question: \"simulate future scenarios (2030 and 2060)\" of LULC\n   - Abstract states: \"Projections for 2030 and 2060 indicate...\"\n   - PLUS model used for spatiotemporal LULC simulation\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\n   - Three distinct policy scenarios modeled:\n     - Baseline scenario\n     - Cropland protection scenario\n     - Green development scenario\n   - Quantitative comparisons provided (Table 1, Fig. 6): area changes in km², percentage changes by land type\n\n4. **Spatial modeling with quantitative accuracy metrics** ✓\n   - PLUS model validation metrics reported:\n     - Kappa coefficient: 0.827\n     - Overall accuracy (OA): 0.878\n     - Figure of Merit (FOM): 0.161\n   - Bootstrap statistical significance testing (p < 0.01)\n   - Comparison with alternative model (FLUS): kappa 0.726, OA 0.801\n\n5. **Outputs include mapped LULC projections** ✓\n   - Figure 5: Spatial maps of LULC in 2030 and 2060 under three scenarios\n   - Figure 1: Spatial distribution 2000-2020\n   - Explicit spatial visualization of land type changes\n\n---\n\n### SPECIFIC EXCLUSION CRITERIA:\n\n- **Global-scale without national disaggregation**: ✗ (Not applicable; national-scale focus)\n- **Local/regional/global/transboundary focus**: ✗ (National scale)\n- **No LULC prediction component**: ✗ (Core component present)\n- **Species-specific/ecological focus unrelated to LULC**: ✗ (LULC-centered)\n- **Economic/urban models lacking spatially explicit LULC outputs**: ✗ (Spatial LULC maps provided)\n- **Biomass/bioenergy/carbon without LULC change analysis**: ✗ (LULC change is primary focus)\n- **Methodological paper without national-scale application**: ✗ (Applied to China)\n- **Purely qualitative/historical only**: ✗ (Includes future projections)\n- **Remote sensing technical study without predictive modeling**: ✗ (Includes predictive modeling)\n- **Single-scenario \"business-as-usual\" only**: ✗ (Three scenarios implemented)\n\n---\n\n### ADDITIONAL FULL TEXT VERIFICATION:\n\n- **Scale verification**: Methodology confirms 1000m resolution national dataset; results section provides nationwide spatial analysis\n- **Quantitative metrics**: Extensive quantitative reporting (Table 1: area changes; Fig. 6: proportional changes; validation coefficients)\n- **Spatial explicitness**: PLUS model with LEAS and CARS modules explicitly designed for spatial patch-level simulation\n- **Driving factor analysis**: Identifies physiographic, socioeconomic, and transportation factors with contribution proportions quantified (Fig. 3)\n\n---\n\n## Final Categorization\n\n**OK** \n\n**Justification**: This paper fully satisfies all core inclusion criteria for national-scale LULC prediction research. It implements the PLUS model to simulate LULC changes across mainland China with three distinct policy scenarios (baseline, cropland protection, green development), providing quantitative outputs including mapped projections for 2030 and 2060, validated accuracy metrics (kappa=0.827, OA=0.878), and scenario-specific area and proportion comparisons. The primary research objective is LULC prediction with explicit spatial modeling at national scale, meeting all requirements for the 'OK' category.",
+  "automated_status": "invalid_output",
+  "parsed_label": "",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:38:51.141146+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 11.063,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655936-u7tBwC5LK0HIRDqhgWsK\",\"object\":\"chat.completion\",\"created\":1789655936,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land Use and Cover Change in China (2000-2060)\\n\\n## Initial Assessment\\nThis is **NOT a review article** — it is an original research paper presenting empirical analysis and modeling of LULC changes.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA (Non-Review Papers):\\n\\n1. **Explicit national-scale spatial implementation (entire country)** ✓\\n   - Study area: \\\"mainland China, excluding Taiwan Province and the South China Sea Islands\\\"\\n   - Methodology explicitly states national-scale analysis\\n   - Data at 1000m resolution covering entire mainland China\\n\\n2. **Primary focus = LULC prediction/simulation** ✓\\n   - Central research question: \\\"simulate future scenarios (2030 and 2060)\\\" of LULC\\n   - Abstract states: \\\"Projections for 2030 and 2060 indicate...\\\"\\n   - PLUS model used for spatiotemporal LULC simulation\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\\n   - Three distinct policy scenarios modeled:\\n     - Baseline scenario\\n     - Cropland protection scenario\\n     - Green development scenario\\n   - Quantitative comparisons provided (Table 1, Fig. 6): area changes in km², percentage changes by land type\\n\\n4. **Spatial modeling with quantitative accuracy metrics** ✓\\n   - PLUS model validation metrics reported:\\n     - Kappa coefficient: 0.827\\n     - Overall accuracy (OA): 0.878\\n     - Figure of Merit (FOM): 0.161\\n   - Bootstrap statistical significance testing (p < 0.01)\\n   - Comparison with alternative model (FLUS): kappa 0.726, OA 0.801\\n\\n5. **Outputs include mapped LULC projections** ✓\\n   - Figure 5: Spatial maps of LULC in 2030 and 2060 under three scenarios\\n   - Figure 1: Spatial distribution 2000-2020\\n   - Explicit spatial visualization of land type changes\\n\\n---\\n\\n### SPECIFIC EXCLUSION CRITERIA:\\n\\n- **Global-scale without national disaggregation**: ✗ (Not applicable; national-scale focus)\\n- **Local/regional/global/transboundary focus**: ✗ (National scale)\\n- **No LULC prediction component**: ✗ (Core component present)\\n- **Species-specific/ecological focus unrelated to LULC**: ✗ (LULC-centered)\\n- **Economic/urban models lacking spatially explicit LULC outputs**: ✗ (Spatial LULC maps provided)\\n- **Biomass/bioenergy/carbon without LULC change analysis**: ✗ (LULC change is primary focus)\\n- **Methodological paper without national-scale application**: ✗ (Applied to China)\\n- **Purely qualitative/historical only**: ✗ (Includes future projections)\\n- **Remote sensing technical study without predictive modeling**: ✗ (Includes predictive modeling)\\n- **Single-scenario \\\"business-as-usual\\\" only**: ✗ (Three scenarios implemented)\\n\\n---\\n\\n### ADDITIONAL FULL TEXT VERIFICATION:\\n\\n- **Scale verification**: Methodology confirms 1000m resolution national dataset; results section provides nationwide spatial analysis\\n- **Quantitative metrics**: Extensive quantitative reporting (Table 1: area changes; Fig. 6: proportional changes; validation coefficients)\\n- **Spatial explicitness**: PLUS model with LEAS and CARS modules explicitly designed for spatial patch-level simulation\\n- **Driving factor analysis**: Identifies physiographic, socioeconomic, and transportation factors with contribution proportions quantified (Fig. 3)\\n\\n---\\n\\n## Final Categorization\\n\\n**OK** \\n\\n**Justification**: This paper fully satisfies all core inclusion criteria for national-scale LULC prediction research. It implements the PLUS model to simulate LULC changes across mainland China with three distinct policy scenarios (baseline, cropland protection, green development), providing quantitative outputs including mapped projections for 2030 and 2060, validated accuracy metrics (kappa=0.827, OA=0.878), and scenario-specific area and proportion comparisons. The primary research objective is LULC prediction with explicit spatial modeling at national scale, meeting all requirements for the 'OK' category.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":17506,\"completion_tokens\":1030,\"total_tokens\":18536,\"cost\":0.022656,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.022656,\"upstream_inference_prompt_cost\":0.017506,\"upstream_inference_completions_cost\":0.00515},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655936-u7tBwC5LK0HIRDqhgWsK",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 17506,
+        "completion_tokens": 1030,
+        "total_tokens": 18536,
+        "cost": 0.022656,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.022656,
+          "upstream_inference_prompt_cost": 0.017506,
+          "upstream_inference_completions_cost": 0.00515
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 11.064,
+  "call_id": "DS__z1_J74LDBFP__claude__r3",
+  "fingerprint": "f157d137645ac36bf25e70bafca3dd8a47a82468f56fd66548524c970bf94ead",
+  "paper_id": "z1_J74LDBFP",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:39:02.203887+00:00",
+  "input_sha256": "ad966324fdc88ad8a59772e59dd22fa60e5b94e807f989afd655f03d0c9cb32a",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

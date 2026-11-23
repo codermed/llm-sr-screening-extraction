@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789653049-tQWWtZqYhoGCXd2kKQTo",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.027501,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 21186,
+    "completion_tokens": 1263,
+    "total_tokens": 22449,
+    "cost": 0.027501,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.027501,
+      "upstream_inference_prompt_cost": 0.021186,
+      "upstream_inference_completions_cost": 0.006315
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Effects of climate and land-cover change on the conservation status of gibbons\n\n## Initial Assessment\n\n**Is this a review article?** No. This is a primary research paper presenting original ecological niche modeling and spatial conservation prioritization analysis.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA (Non-Review Paper):\n\n1. **Explicit national-scale spatial implementation (entire country)?**\n   - ❌ **FAILS** - Study area spans 89-120°E; -11 to 30°N across Southeast Asia covering 18,302,400 km² across multiple countries (Indonesia, Myanmar, India, China, Vietnam, Laos, Cambodia, Malaysia, Thailand, Brunei). This is a **transnational/regional scale**, not national-scale implementation.\n\n2. **Primary focus = LULC prediction/simulation (central research question)?**\n   - ❌ **FAILS** - The primary research objective is **species conservation prioritization for gibbons** under climate and land-cover change. LULC change scenarios (A2 and B1) are used as **inputs** to ecological niche modeling, not the primary focus of prediction/simulation.\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ✓ **PASSES** - Multiple scenarios tested: climate-change-only, climate-change + A2 (pessimistic land-cover), climate-change + B1 (optimistic land-cover), with 4 SSPs each. Quantitative comparisons provided (Welch t-tests, effect sizes).\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ✓ **PASSES** - Ecological niche models evaluated with TSS (mean 0.87, SD 0.08) and ROC scores; ensemble modeling approach with 3 of 5 methods selected based on performance.\n\n5. **Outputs include mapped LULC projections?**\n   - ⚠️ **PARTIAL** - LULC data are incorporated (broadleaf forest, human-modified areas from GeoSOS-FLUS), but the paper does not produce LULC projections as primary outputs. Rather, it uses pre-existing LULC scenarios (A2, B1 for 2050s) from external sources to model species range shifts. No independent LULC modeling/prediction is performed.\n\n---\n\n### SPECIFIC EXCLUSION CRITERIA:\n\n1. **Global-scale analysis without national-level disaggregation?**\n   - ✓ **TRIGGERS EXCLUSION** - Study spans multiple countries (transnational/regional scale). While country-level responsibility assessment is provided (Figure 6), the modeling itself is not national-scale implementation.\n\n2. **Local/regional/global/transboundary scale focus?**\n   - ✓ **TRIGGERS EXCLUSION** - Explicitly transnational/transboundary (10 countries across Southeast Asia).\n\n3. **No LULC prediction component?**\n   - ❌ Does not trigger - LULC scenarios ARE incorporated.\n\n4. **Species-specific/ecological focus unrelated to LULC?**\n   - ✓ **TRIGGERS EXCLUSION** - Primary focus is **gibbon conservation prioritization** (species-specific ecological objective). LULC change is a secondary factor/input variable, not the central research question.\n\n5. **Methodological papers without application?**\n   - ❌ Does not trigger - Applied study with results.\n\n6. **Single-scenario projections?**\n   - ❌ Does not trigger - Multiple scenarios tested.\n\n---\n\n## Additional Verification\n\n**Stated Primary Objective (Abstract):**\n> \"We examined the effects of climate and land-cover change on potential range of gibbons and sought to identify PCAs that would conserve them effectively.\"\n\nThe primary objective is **gibbon conservation prioritization**, not LULC prediction. LULC change scenarios serve as environmental drivers in the ecological niche model.\n\n**Methodology:** Ecological niche modeling (ENM) combined with spatial conservation prioritization (Zonation algorithm). LULC variables are environmental predictors, not the subject of prediction modeling.\n\n**Outputs:** Priority conservation areas (PCAs) for gibbon species; country-level conservation responsibilities. No LULC change maps or LULC prediction products generated.\n\n---\n\n## Final Categorization\n\n**EXCLUDED**\n\n**Justification:**\n1. **Scale mismatch**: Transnational/regional study (10 countries across Southeast Asia), not national-scale implementation as required by core inclusion criteria.\n2. **Primary focus mismatch**: Central research question addresses **species conservation prioritization**, not LULC prediction/simulation. LULC change scenarios (A2, B1) are pre-existing inputs from external sources (GeoSOS-FLUS), not independently modeled or predicted.\n3. **Exclusion trigger**: Meets \"species-specific/ecological focus\" exclusion criterion - gibbons are the focal unit, with LULC as a secondary environmental variable rather than primary modeling objective.\n4. **No LULC prediction outputs**: Paper does not generate LULC change projections; it applies existing LULC scenarios to ecological niche modeling for conservation planning.\n\nThis is a well-executed conservation biology study but falls outside the scope of papers focused on **national-scale LULC prediction/simulation**.",
+  "automated_status": "invalid_output",
+  "parsed_label": "",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:50:44.587041+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 14.098,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653049-tQWWtZqYhoGCXd2kKQTo\",\"object\":\"chat.completion\",\"created\":1789653049,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Effects of climate and land-cover change on the conservation status of gibbons\\n\\n## Initial Assessment\\n\\n**Is this a review article?** No. This is a primary research paper presenting original ecological niche modeling and spatial conservation prioritization analysis.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA (Non-Review Paper):\\n\\n1. **Explicit national-scale spatial implementation (entire country)?**\\n   - ❌ **FAILS** - Study area spans 89-120°E; -11 to 30°N across Southeast Asia covering 18,302,400 km² across multiple countries (Indonesia, Myanmar, India, China, Vietnam, Laos, Cambodia, Malaysia, Thailand, Brunei). This is a **transnational/regional scale**, not national-scale implementation.\\n\\n2. **Primary focus = LULC prediction/simulation (central research question)?**\\n   - ❌ **FAILS** - The primary research objective is **species conservation prioritization for gibbons** under climate and land-cover change. LULC change scenarios (A2 and B1) are used as **inputs** to ecological niche modeling, not the primary focus of prediction/simulation.\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ✓ **PASSES** - Multiple scenarios tested: climate-change-only, climate-change + A2 (pessimistic land-cover), climate-change + B1 (optimistic land-cover), with 4 SSPs each. Quantitative comparisons provided (Welch t-tests, effect sizes).\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ✓ **PASSES** - Ecological niche models evaluated with TSS (mean 0.87, SD 0.08) and ROC scores; ensemble modeling approach with 3 of 5 methods selected based on performance.\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ⚠️ **PARTIAL** - LULC data are incorporated (broadleaf forest, human-modified areas from GeoSOS-FLUS), but the paper does not produce LULC projections as primary outputs. Rather, it uses pre-existing LULC scenarios (A2, B1 for 2050s) from external sources to model species range shifts. No independent LULC modeling/prediction is performed.\\n\\n---\\n\\n### SPECIFIC EXCLUSION CRITERIA:\\n\\n1. **Global-scale analysis without national-level disaggregation?**\\n   - ✓ **TRIGGERS EXCLUSION** - Study spans multiple countries (transnational/regional scale). While country-level responsibility assessment is provided (Figure 6), the modeling itself is not national-scale implementation.\\n\\n2. **Local/regional/global/transboundary scale focus?**\\n   - ✓ **TRIGGERS EXCLUSION** - Explicitly transnational/transboundary (10 countries across Southeast Asia).\\n\\n3. **No LULC prediction component?**\\n   - ❌ Does not trigger - LULC scenarios ARE incorporated.\\n\\n4. **Species-specific/ecological focus unrelated to LULC?**\\n   - ✓ **TRIGGERS EXCLUSION** - Primary focus is **gibbon conservation prioritization** (species-specific ecological objective). LULC change is a secondary factor/input variable, not the central research question.\\n\\n5. **Methodological papers without application?**\\n   - ❌ Does not trigger - Applied study with results.\\n\\n6. **Single-scenario projections?**\\n   - ❌ Does not trigger - Multiple scenarios tested.\\n\\n---\\n\\n## Additional Verification\\n\\n**Stated Primary Objective (Abstract):**\\n> \\\"We examined the effects of climate and land-cover change on potential range of gibbons and sought to identify PCAs that would conserve them effectively.\\\"\\n\\nThe primary objective is **gibbon conservation prioritization**, not LULC prediction. LULC change scenarios serve as environmental drivers in the ecological niche model.\\n\\n**Methodology:** Ecological niche modeling (ENM) combined with spatial conservation prioritization (Zonation algorithm). LULC variables are environmental predictors, not the subject of prediction modeling.\\n\\n**Outputs:** Priority conservation areas (PCAs) for gibbon species; country-level conservation responsibilities. No LULC change maps or LULC prediction products generated.\\n\\n---\\n\\n## Final Categorization\\n\\n**EXCLUDED**\\n\\n**Justification:**\\n1. **Scale mismatch**: Transnational/regional study (10 countries across Southeast Asia), not national-scale implementation as required by core inclusion criteria.\\n2. **Primary focus mismatch**: Central research question addresses **species conservation prioritization**, not LULC prediction/simulation. LULC change scenarios (A2, B1) are pre-existing inputs from external sources (GeoSOS-FLUS), not independently modeled or predicted.\\n3. **Exclusion trigger**: Meets \\\"species-specific/ecological focus\\\" exclusion criterion - gibbons are the focal unit, with LULC as a secondary environmental variable rather than primary modeling objective.\\n4. **No LULC prediction outputs**: Paper does not generate LULC change projections; it applies existing LULC scenarios to ecological niche modeling for conservation planning.\\n\\nThis is a well-executed conservation biology study but falls outside the scope of papers focused on **national-scale LULC prediction/simulation**.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":21186,\"completion_tokens\":1263,\"total_tokens\":22449,\"cost\":0.027501,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.027501,\"upstream_inference_prompt_cost\":0.021186,\"upstream_inference_completions_cost\":0.006315},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653049-tQWWtZqYhoGCXd2kKQTo",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 21186,
+        "completion_tokens": 1263,
+        "total_tokens": 22449,
+        "cost": 0.027501,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.027501,
+          "upstream_inference_prompt_cost": 0.021186,
+          "upstream_inference_completions_cost": 0.006315
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 14.098,
+  "call_id": "DS__z1_YZZJMJJD__claude__r1",
+  "fingerprint": "c33230218951c21dd776e61f26ba97a9b4da89d721b5dcc1f21480fcaf60410b",
+  "paper_id": "z1_YZZJMJJD",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:50:58.685006+00:00",
+  "input_sha256": "a09a5f462e10797c4a980c4cdaf2bf9e5f4a857502861dc396b874eb405a69fa",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

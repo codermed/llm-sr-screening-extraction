@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789655123-qg6wnd6M0hnhiwtTJCMM",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00194122,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 7228,
+    "completion_tokens": 163,
+    "total_tokens": 7391,
+    "cost": 0.00194122,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00194122,
+      "upstream_inference_prompt_cost": 0.00187928,
+      "upstream_inference_completions_cost": 6.194e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper's primary focus is on analyzing the impacts of urbanization, climate change, and socioeconomic change on land and water resources, using land-use change simulations as a tool. While it implements multiple scenarios and includes national-scale (Jordan) spatial projections, the central research question is not LULC prediction itself. The LULC model (LandSHIFT.R) is an input to assess impacts on crop yields, irrigation water requirements, and food security. The study does not present or evaluate quantitative accuracy metrics for the LULC predictions; the validation mentioned is a qualitative comparison of urban expansion magnitudes to past observations. Therefore, it fails the core inclusion criteria of having LULC prediction as the primary focus and providing quantitative accuracy metrics for the LULC simulations.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:25:18.952634+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 7.5,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789655123-qg6wnd6M0hnhiwtTJCMM\",\"object\":\"chat.completion\",\"created\":1789655123,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper's primary focus is on analyzing the impacts of urbanization, climate change, and socioeconomic change on land and water resources, using land-use change simulations as a tool. While it implements multiple scenarios and includes national-scale (Jordan) spatial projections, the central research question is not LULC prediction itself. The LULC model (LandSHIFT.R) is an input to assess impacts on crop yields, irrigation water requirements, and food security. The study does not present or evaluate quantitative accuracy metrics for the LULC predictions; the validation mentioned is a qualitative comparison of urban expansion magnitudes to past observations. Therefore, it fails the core inclusion criteria of having LULC prediction as the primary focus and providing quantitative accuracy metrics for the LULC simulations.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":7228,\"completion_tokens\":163,\"total_tokens\":7391,\"cost\":0.00194122,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00194122,\"upstream_inference_prompt_cost\":0.00187928,\"upstream_inference_completions_cost\":0.00006194},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655123-qg6wnd6M0hnhiwtTJCMM",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 7228,
+        "completion_tokens": 163,
+        "total_tokens": 7391,
+        "cost": 0.00194122,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00194122,
+          "upstream_inference_prompt_cost": 0.00187928,
+          "upstream_inference_completions_cost": 6.194e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 7.501,
+  "call_id": "DS__z1_XS6I9NIC__deepseek__r3",
+  "fingerprint": "8c3c10f6f1b4d72474c0adf908a011e3d02d6be3e25801a2ab4b0dcfe36f4d72",
+  "paper_id": "z1_XS6I9NIC",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:25:26.453310+00:00",
+  "input_sha256": "a1817ab987d0526021fed65191ea3fe0e65f5cc66ed8a0eb388a478069844ac3",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

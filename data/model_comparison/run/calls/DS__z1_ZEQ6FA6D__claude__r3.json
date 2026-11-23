@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789655816-C0T2UD82QI6BywOfUd68",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.019403,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 13003,
+    "completion_tokens": 1280,
+    "total_tokens": 14283,
+    "cost": 0.019403,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.019403,
+      "upstream_inference_prompt_cost": 0.013003,
+      "upstream_inference_completions_cost": 0.0064
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land Use and Carbon Storage Assessment in China\n\n## STEP 1: Review Article Determination\n**Is this a review article?** NO\nThis is a primary research paper presenting original methodology (LUH2-PLUS-InVEST framework) and empirical results for China's land use and carbon storage projections.\n\n---\n\n## STEP 2: Non-Review Paper Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA ASSESSMENT:\n\n**1. Explicit national-scale spatial implementation (entire country)?**\n✅ **YES** - Study explicitly covers entire China at 500m × 500m resolution\n- Methods Section 2.1: \"500 m × 500 m resolution simulation mapping of China's land use from 2025 to 2050\"\n- Results Section 3.1: \"At national scale, the LPI result...conformed to the spatial distribution characteristics\"\n\n**2. Primary focus = LULC prediction/simulation (central research question)?**\n✅ **YES** - Core objective explicitly stated\n- Abstract: \"investigate the potential impacts...on China's future LULC and CS\"\n- Introduction: \"evaluating the impact of LULC on CS and conducting future projections for both\"\n- Framework integrates three components with LULC simulation as central component\n\n**3. Implementation of ≥2 future scenarios with quantitative comparison?**\n✅ **YES** - Three SSP-RCP scenarios analyzed quantitatively\n- SSP245, SSP370, SSP585 scenarios implemented\n- Table 2: Quantitative area predictions (km²) for all land types across all scenarios and time periods\n- Results Section 3.2: Detailed comparative analysis of scenario outcomes with percentage changes\n\n**4. Spatial modeling with quantitative accuracy metrics?**\n✅ **YES** - Comprehensive accuracy assessment provided\n- Figure 3: Overall accuracy = 94.09% at national scale; Kappa coefficient = 0.92\n- Individual land type accuracy >85.21%\n- Regional validation: 91.04% accuracy with area deviation 1.80%-4.00%\n- Validation methodology: Confusion matrix analysis\n\n**5. Outputs include mapped LULC projections?**\n✅ **YES** - Multiple mapped outputs at 500m resolution\n- Figures S1-S3: Land use maps 2025-2050 for all scenarios\n- Figure 4: Spatial distribution maps showing expansion patterns\n- Figure 6: Carbon storage spatial distribution maps\n\n### EXCLUSION CRITERIA ASSESSMENT:\n\n**Global-scale without national disaggregation?**\n❌ NOT EXCLUDED - Study focuses on national-scale (China) with downscaling from global LUH2 data\n\n**Local/regional/global/transboundary focus?**\n❌ NOT EXCLUDED - Explicitly national-scale implementation\n\n**No LULC prediction component?**\n❌ NOT EXCLUDED - LULC prediction is primary component\n\n**Species-specific/ecological focus unrelated to LULC?**\n❌ NOT EXCLUDED - Carbon storage analyzed through LULC perspective (InVEST model)\n\n**Economic/urban models lacking spatially explicit LULC outputs?**\n❌ NOT EXCLUDED - Produces explicit spatial LULC maps at 500m resolution\n\n**Biomass/bioenergy/carbon studies without LULC change analysis?**\n❌ NOT EXCLUDED - Carbon storage explicitly linked to LULC changes; CS analysis depends on LULC simulation outputs\n\n**Methodological paper without national-scale application?**\n❌ NOT EXCLUDED - Framework applied to national-scale China with empirical results\n\n**Purely qualitative/historical analysis only?**\n❌ NOT EXCLUDED - Future projections to 2050 with quantitative modeling\n\n**Remote sensing technical study without predictive modeling?**\n❌ NOT EXCLUDED - Includes predictive PLUS model for spatial simulation\n\n**Single-scenario projections only?**\n❌ NOT EXCLUDED - Three distinct scenarios implemented and compared\n\n---\n\n## STEP 3: Primary Focus Determination\n\n**Is LULC prediction the primary objective?**\n✅ **YES** - Central research question explicitly stated in abstract and introduction\n- Framework designed to \"forecast land use...under different SSP-RCP scenarios\"\n- Carbon storage analysis is downstream application dependent on LULC predictions\n- Results organized with LULC simulation (Section 3.2) as primary output, followed by CS analysis (Section 3.3)\n\n---\n\n## FINAL CATEGORIZATION:\n\n**Final categorization: OK**\n\n**Justification:**\nThis paper meets ALL core inclusion criteria for national-scale LULC prediction research:\n1. ✅ Explicit national-scale implementation (entire China, 500m resolution)\n2. ✅ Primary focus on LULC prediction/simulation (central research question)\n3. ✅ Three quantitatively compared future scenarios (SSP245, SSP370, SSP585)\n4. ✅ Spatial modeling with rigorous accuracy metrics (94.09% overall accuracy, Kappa=0.92)\n5. ✅ Mapped LULC projection outputs (Figures S1-S3, Figure 4)\n\nThe paper passes ALL inclusion criteria and meets NONE of the exclusion criteria. The LUH2-PLUS-InVEST framework represents a methodologically sound approach to national-scale LULC prediction with carbon storage as a legitimate downstream application of LULC outputs.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:36:51.633980+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 14.787,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655816-C0T2UD82QI6BywOfUd68\",\"object\":\"chat.completion\",\"created\":1789655816,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land Use and Carbon Storage Assessment in China\\n\\n## STEP 1: Review Article Determination\\n**Is this a review article?** NO\\nThis is a primary research paper presenting original methodology (LUH2-PLUS-InVEST framework) and empirical results for China's land use and carbon storage projections.\\n\\n---\\n\\n## STEP 2: Non-Review Paper Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA ASSESSMENT:\\n\\n**1. Explicit national-scale spatial implementation (entire country)?**\\n✅ **YES** - Study explicitly covers entire China at 500m × 500m resolution\\n- Methods Section 2.1: \\\"500 m × 500 m resolution simulation mapping of China's land use from 2025 to 2050\\\"\\n- Results Section 3.1: \\\"At national scale, the LPI result...conformed to the spatial distribution characteristics\\\"\\n\\n**2. Primary focus = LULC prediction/simulation (central research question)?**\\n✅ **YES** - Core objective explicitly stated\\n- Abstract: \\\"investigate the potential impacts...on China's future LULC and CS\\\"\\n- Introduction: \\\"evaluating the impact of LULC on CS and conducting future projections for both\\\"\\n- Framework integrates three components with LULC simulation as central component\\n\\n**3. Implementation of ≥2 future scenarios with quantitative comparison?**\\n✅ **YES** - Three SSP-RCP scenarios analyzed quantitatively\\n- SSP245, SSP370, SSP585 scenarios implemented\\n- Table 2: Quantitative area predictions (km²) for all land types across all scenarios and time periods\\n- Results Section 3.2: Detailed comparative analysis of scenario outcomes with percentage changes\\n\\n**4. Spatial modeling with quantitative accuracy metrics?**\\n✅ **YES** - Comprehensive accuracy assessment provided\\n- Figure 3: Overall accuracy = 94.09% at national scale; Kappa coefficient = 0.92\\n- Individual land type accuracy >85.21%\\n- Regional validation: 91.04% accuracy with area deviation 1.80%-4.00%\\n- Validation methodology: Confusion matrix analysis\\n\\n**5. Outputs include mapped LULC projections?**\\n✅ **YES** - Multiple mapped outputs at 500m resolution\\n- Figures S1-S3: Land use maps 2025-2050 for all scenarios\\n- Figure 4: Spatial distribution maps showing expansion patterns\\n- Figure 6: Carbon storage spatial distribution maps\\n\\n### EXCLUSION CRITERIA ASSESSMENT:\\n\\n**Global-scale without national disaggregation?**\\n❌ NOT EXCLUDED - Study focuses on national-scale (China) with downscaling from global LUH2 data\\n\\n**Local/regional/global/transboundary focus?**\\n❌ NOT EXCLUDED - Explicitly national-scale implementation\\n\\n**No LULC prediction component?**\\n❌ NOT EXCLUDED - LULC prediction is primary component\\n\\n**Species-specific/ecological focus unrelated to LULC?**\\n❌ NOT EXCLUDED - Carbon storage analyzed through LULC perspective (InVEST model)\\n\\n**Economic/urban models lacking spatially explicit LULC outputs?**\\n❌ NOT EXCLUDED - Produces explicit spatial LULC maps at 500m resolution\\n\\n**Biomass/bioenergy/carbon studies without LULC change analysis?**\\n❌ NOT EXCLUDED - Carbon storage explicitly linked to LULC changes; CS analysis depends on LULC simulation outputs\\n\\n**Methodological paper without national-scale application?**\\n❌ NOT EXCLUDED - Framework applied to national-scale China with empirical results\\n\\n**Purely qualitative/historical analysis only?**\\n❌ NOT EXCLUDED - Future projections to 2050 with quantitative modeling\\n\\n**Remote sensing technical study without predictive modeling?**\\n❌ NOT EXCLUDED - Includes predictive PLUS model for spatial simulation\\n\\n**Single-scenario projections only?**\\n❌ NOT EXCLUDED - Three distinct scenarios implemented and compared\\n\\n---\\n\\n## STEP 3: Primary Focus Determination\\n\\n**Is LULC prediction the primary objective?**\\n✅ **YES** - Central research question explicitly stated in abstract and introduction\\n- Framework designed to \\\"forecast land use...under different SSP-RCP scenarios\\\"\\n- Carbon storage analysis is downstream application dependent on LULC predictions\\n- Results organized with LULC simulation (Section 3.2) as primary output, followed by CS analysis (Section 3.3)\\n\\n---\\n\\n## FINAL CATEGORIZATION:\\n\\n**Final categorization: OK**\\n\\n**Justification:**\\nThis paper meets ALL core inclusion criteria for national-scale LULC prediction research:\\n1. ✅ Explicit national-scale implementation (entire China, 500m resolution)\\n2. ✅ Primary focus on LULC prediction/simulation (central research question)\\n3. ✅ Three quantitatively compared future scenarios (SSP245, SSP370, SSP585)\\n4. ✅ Spatial modeling with rigorous accuracy metrics (94.09% overall accuracy, Kappa=0.92)\\n5. ✅ Mapped LULC projection outputs (Figures S1-S3, Figure 4)\\n\\nThe paper passes ALL inclusion criteria and meets NONE of the exclusion criteria. The LUH2-PLUS-InVEST framework represents a methodologically sound approach to national-scale LULC prediction with carbon storage as a legitimate downstream application of LULC outputs.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":13003,\"completion_tokens\":1280,\"total_tokens\":14283,\"cost\":0.019403,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.019403,\"upstream_inference_prompt_cost\":0.013003,\"upstream_inference_completions_cost\":0.0064},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655816-C0T2UD82QI6BywOfUd68",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 13003,
+        "completion_tokens": 1280,
+        "total_tokens": 14283,
+        "cost": 0.019403,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.019403,
+          "upstream_inference_prompt_cost": 0.013003,
+          "upstream_inference_completions_cost": 0.0064
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 14.787,
+  "call_id": "DS__z1_ZEQ6FA6D__claude__r3",
+  "fingerprint": "fa89bc8ce157f29bbc028b82b68cfe699649c7ee05a8981eba3be4462f69cb70",
+  "paper_id": "z1_ZEQ6FA6D",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:37:06.420795+00:00",
+  "input_sha256": "68b2523ff6c4446261ed51db89a808975ab159f9bc390f9fccb0d726a4021690",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

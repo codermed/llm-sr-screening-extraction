@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653908-p3Rd4TVtJ9AtANb9D18E",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00276862,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10403,
+    "completion_tokens": 168,
+    "total_tokens": 10571,
+    "cost": 0.00276862,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00276862,
+      "upstream_inference_prompt_cost": 0.00270478,
+      "upstream_inference_completions_cost": 6.384e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a non-review article presenting case studies on landscape research methodologies. Its primary focus is on developing an integrative, transdisciplinary framework for landscape assessment and planning, not on LULC prediction/simulation. While it uses spatial data and modeling techniques (e.g., GIS, neural nets, genetic algorithms) for tasks like soil mapping and habitat potential, these are not used to predict or simulate future LULC changes. The paper discusses scenarios for future land use but does not implement a quantitative, spatially explicit LULC prediction model with multiple scenarios and accuracy metrics at a national scale. The case studies are regional (e.g., Hohenlohe in Germany) and the core research question is bridging human and natural sciences for application-oriented landscape research, not LULC prediction.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:05:03.962329+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 8.775,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789653908-p3Rd4TVtJ9AtANb9D18E\",\"object\":\"chat.completion\",\"created\":1789653908,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a non-review article presenting case studies on landscape research methodologies. Its primary focus is on developing an integrative, transdisciplinary framework for landscape assessment and planning, not on LULC prediction/simulation. While it uses spatial data and modeling techniques (e.g., GIS, neural nets, genetic algorithms) for tasks like soil mapping and habitat potential, these are not used to predict or simulate future LULC changes. The paper discusses scenarios for future land use but does not implement a quantitative, spatially explicit LULC prediction model with multiple scenarios and accuracy metrics at a national scale. The case studies are regional (e.g., Hohenlohe in Germany) and the core research question is bridging human and natural sciences for application-oriented landscape research, not LULC prediction.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10403,\"completion_tokens\":168,\"total_tokens\":10571,\"cost\":0.00276862,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00276862,\"upstream_inference_prompt_cost\":0.00270478,\"upstream_inference_completions_cost\":0.00006384},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653908-p3Rd4TVtJ9AtANb9D18E",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 10403,
+        "completion_tokens": 168,
+        "total_tokens": 10571,
+        "cost": 0.00276862,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00276862,
+          "upstream_inference_prompt_cost": 0.00270478,
+          "upstream_inference_completions_cost": 6.384e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 8.776,
+  "call_id": "DS__z1_2BC2K26N__deepseek__r2",
+  "fingerprint": "de7b1e402c03c1440bca3daaebcf1c3496880570e133081c8056875c20a4656c",
+  "paper_id": "z1_2BC2K26N",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:05:12.737710+00:00",
+  "input_sha256": "5fb20e4436b834ff0ff70a41fea699794cc498f1de360dedc45ab5be1fff89a2",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

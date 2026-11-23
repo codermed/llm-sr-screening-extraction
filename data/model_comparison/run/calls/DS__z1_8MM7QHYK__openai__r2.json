@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653984-qDQhWgjN6sNDhQGcWevR",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.001192,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 9192,
+    "completion_tokens": 127,
+    "total_tokens": 9319,
+    "cost": 0.001192,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 8960,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001192,
+      "upstream_inference_prompt_cost": 0.0009888,
+      "upstream_inference_completions_cost": 0.0002032
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This paper is a systematic review of land use and landscape pattern transformation in global mountains based on local and regional case studies. It does not focus on land use land cover (LULC) future prediction or simulation, nor does it implement spatial modeling of LULC with quantitative future scenarios. The study synthesizes existing knowledge on historical and current patterns and trends but does not include any future LULC prediction component, quantitative accuracy metrics, or mapped projections. Additionally, the scale is global with aggregation of local/regional studies, not an explicit national-scale spatial implementation for future prediction.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:06:19.457927+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.485,
+      "raw_body": "\n         \n{\"id\":\"gen-1789653984-qDQhWgjN6sNDhQGcWevR\",\"object\":\"chat.completion\",\"created\":1789653984,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This paper is a systematic review of land use and landscape pattern transformation in global mountains based on local and regional case studies. It does not focus on land use land cover (LULC) future prediction or simulation, nor does it implement spatial modeling of LULC with quantitative future scenarios. The study synthesizes existing knowledge on historical and current patterns and trends but does not include any future LULC prediction component, quantitative accuracy metrics, or mapped projections. Additionally, the scale is global with aggregation of local/regional studies, not an explicit national-scale spatial implementation for future prediction.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":9192,\"completion_tokens\":127,\"total_tokens\":9319,\"cost\":0.001192,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":8960,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.001192,\"upstream_inference_prompt_cost\":0.0009888,\"upstream_inference_completions_cost\":0.0002032},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653984-qDQhWgjN6sNDhQGcWevR",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 9192,
+        "completion_tokens": 127,
+        "total_tokens": 9319,
+        "cost": 0.001192,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 8960,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001192,
+          "upstream_inference_prompt_cost": 0.0009888,
+          "upstream_inference_completions_cost": 0.0002032
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.486,
+  "call_id": "DS__z1_8MM7QHYK__openai__r2",
+  "fingerprint": "772b94c3cb088be94576453a523b8694c52e06649b7b654e5af1636b9e51595d",
+  "paper_id": "z1_8MM7QHYK",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:06:21.943367+00:00",
+  "input_sha256": "9cb025528fd19bca72ae09fca502097ed024dcf61a8b4b6b128013cc7f5d16bc",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

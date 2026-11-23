@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789654988-sOzSy2vMIIWZIdtRoRzR",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00386334,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 14574,
+    "completion_tokens": 195,
+    "total_tokens": 14769,
+    "cost": 0.00386334,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00386334,
+      "upstream_inference_prompt_cost": 0.00378924,
+      "upstream_inference_completions_cost": 7.41e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED\n\nJustification: This is a NON-REVIEW paper that fails the core inclusion criteria for LULC prediction research. The primary focus is on **land suitability (LS) analysis for a specific crop (rainfed corn) under climate change**, not on predicting or simulating changes in land use and land cover (LULC) classes (e.g., forest to urban, cropland to grassland). The study models the spatial shift of *climatic suitability zones* for corn cultivation within Georgia, USA, using climate projections. While it uses spatial modeling and multiple future scenarios (RCP4.5, RCP8.5), its outputs are maps of suitability classes, not projections of LULC. The work is better classified as agricultural climatology or crop suitability modeling. It does not simulate how land cover itself will change in response to drivers like urbanization or policy, which is the core of LULC prediction studies.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:23:03.704420+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 8.272,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789654988-sOzSy2vMIIWZIdtRoRzR\",\"object\":\"chat.completion\",\"created\":1789654988,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED\\n\\nJustification: This is a NON-REVIEW paper that fails the core inclusion criteria for LULC prediction research. The primary focus is on **land suitability (LS) analysis for a specific crop (rainfed corn) under climate change**, not on predicting or simulating changes in land use and land cover (LULC) classes (e.g., forest to urban, cropland to grassland). The study models the spatial shift of *climatic suitability zones* for corn cultivation within Georgia, USA, using climate projections. While it uses spatial modeling and multiple future scenarios (RCP4.5, RCP8.5), its outputs are maps of suitability classes, not projections of LULC. The work is better classified as agricultural climatology or crop suitability modeling. It does not simulate how land cover itself will change in response to drivers like urbanization or policy, which is the core of LULC prediction studies.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":14574,\"completion_tokens\":195,\"total_tokens\":14769,\"cost\":0.00386334,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00386334,\"upstream_inference_prompt_cost\":0.00378924,\"upstream_inference_completions_cost\":0.0000741},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654988-sOzSy2vMIIWZIdtRoRzR",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 14574,
+        "completion_tokens": 195,
+        "total_tokens": 14769,
+        "cost": 0.00386334,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00386334,
+          "upstream_inference_prompt_cost": 0.00378924,
+          "upstream_inference_completions_cost": 7.41e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 8.273,
+  "call_id": "DS__z1_JA23DHFY__deepseek__r3",
+  "fingerprint": "e38086c1c171ac2f67c3322f799adb448c10373022a269a47db127057eb1e930",
+  "paper_id": "z1_JA23DHFY",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:23:11.976696+00:00",
+  "input_sha256": "792e0ad810d4238de27dc8498843234f61ddf8095b83156a2c97c0cdd03918bf",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

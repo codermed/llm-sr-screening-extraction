@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789654436-rDNLZlTYFVM4MiGYJuph",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.019015,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 11800,
+    "completion_tokens": 1443,
+    "total_tokens": 13243,
+    "cost": 0.019015,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.019015,
+      "upstream_inference_prompt_cost": 0.0118,
+      "upstream_inference_completions_cost": 0.007215
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Brazilian Rupestrian Grasslands Paper\n\n## Initial Assessment\n\n**Is this a review article?**\nNo. This is an original research paper (explicitly labeled \"ORIGINAL PAPER\") that presents primary empirical analysis using predictive modeling.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA CHECK (Non-Review Paper):\n\n1. **Explicit national-scale spatial implementation (entire country)?**\n   - ✓ YES - Study covers entire known distribution of rupestrian grasslands across Brazil, with analysis at Brazilian national territory scale using 0.0083° (~1 km²) spatial resolution across multiple states (Minas Gerais, Bahia, Goiás, Mato Grosso, Roraima).\n\n2. **Primary focus = LULC prediction/simulation (central research question)?**\n   - ✗ NO - Primary focus is on **species habitat suitability modeling** for rupestrian grasslands ecosystem under climate change. The central research question concerns \"projected distribution and identify emergent patterns of potential future expansion or contraction\" of the **ecosystem itself**, not land use/land cover change prediction.\n   - LULC is used as an **input variable** (lithology, slope, aspect) and analyzed as a **threat overlay**, but not as the primary prediction target.\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ✓ YES - 12 scenarios tested: current, 2050 RCP4.5, 2050 RCP8.5, 2070 RCP4.5, 2070 RCP8.5, plus mining expansion variants. Quantitative comparisons provided (% area loss, habitat metrics).\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ✓ YES - MaxEnt distribution modeling with AUC = 0.972 (±0.003), tenfold cross-validation, jackknife procedure, permutation importance analysis reported.\n\n5. **Outputs include mapped LULC projections?**\n   - ✗ PARTIAL - Outputs include **habitat suitability maps** (Figures 3a-d), not LULC class predictions. Mining threat overlays are analyzed but not predicted/modeled as LULC change.\n\n---\n\n### EXCLUSION CRITERIA CHECK:\n\n1. **Global-scale analysis without national-level disaggregation?**\n   - ✓ PASS - National scale maintained throughout.\n\n2. **Local/regional/global/transboundary scale focus?**\n   - ✓ PASS - National Brazil-scale focus.\n\n3. **No LULC prediction component?**\n   - ✗ **FAILS** - Paper contains NO predictive modeling of LULC classes. LULC is analyzed descriptively (current mining, agriculture, silviculture overlaid with habitat suitability) but not predicted forward in time. Mining expansion scenario is speculative, not modeled.\n\n4. **Species-specific/ecological focus (flora/fauna) unrelated to LULC?**\n   - ✗ **FAILS** - This is explicitly an **ecosystem/habitat suitability study** focused on rupestrian grasslands biodiversity and climate-driven habitat change. While land-use threats are discussed, the modeling core is **ecological/biogeographic** (MaxEnt species distribution modeling applied to ecosystem), not LULC prediction.\n\n5. **Economic/urban models lacking spatially explicit LULC outputs?**\n   - ✓ PASS - Not applicable (not economic/urban focus).\n\n6. **Biomass/bioenergy/carbon studies without LULC change analysis?**\n   - ✓ PASS - Not applicable.\n\n7. **Methodological papers without application to national-scale prediction?**\n   - ✓ PASS - Applied study with national-scale outputs.\n\n8. **Purely Qualitative/Historical analysis only?**\n   - ✓ PASS - Contains quantitative predictive modeling.\n\n9. **Remote sensing technical studies without predictive modeling?**\n   - ✓ PASS - Not a remote sensing methods paper.\n\n10. **Single-scenario \"business-as-usual\" projections?**\n    - ✓ PASS - Multiple scenarios with RCP pathways.\n\n---\n\n## Critical Distinction\n\n**The paper models ECOSYSTEM HABITAT SUITABILITY under climate change, NOT land use/land cover change prediction.**\n\n- **What it does:** Predicts where rupestrian grasslands will remain climatically suitable (MaxEnt habitat modeling)\n- **What it does NOT do:** Predict how LULC classes will change (e.g., forest→agriculture, grassland→urban)\n- **LULC role:** Used as threat overlay analysis (current mining, agriculture areas overlapped with habitat suitability) but not as prediction output\n\nThe landscape metrics analysis (patches, connectivity, fragmentation) measures ecological consequences of habitat loss, not LULC change itself.\n\n---\n\n## Final Categorization\n\n**EXCLUDED**\n\n**Justification:** \nThis paper fails multiple core inclusion criteria for LULC prediction research:\n\n1. **Primary focus mismatch**: The paper's central objective is **species/ecosystem habitat suitability modeling** under climate change scenarios using MaxEnt, not LULC prediction. The research question concerns where rupestrian grasslands will remain suitable, not how LULC classes will transition.\n\n2. **No LULC prediction component**: While land-use threats (mining, agriculture) are analyzed as overlays with current and future habitat suitability, there is **no predictive modeling of LULC change**. LULC appears as static threat variables and descriptive threat analysis, not as modeled outputs.\n\n3. **Ecological rather than LULC focus**: The paper explicitly addresses \"species interactions, ecosystem connectivity and environmental services\" and uses species distribution modeling methodology. This is biogeographic/ecological research, not LULC prediction research.\n\n4. **Exclusion criterion met**: Falls under \"Species-specific/ecological focus (flora/fauna) unrelated to LULC\" - the ecosystem habitat suitability modeling is the core contribution, with LULC as secondary threat context.",
+  "automated_status": "invalid_output",
+  "parsed_label": "",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:13:51.335752+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 17.459,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789654436-rDNLZlTYFVM4MiGYJuph\",\"object\":\"chat.completion\",\"created\":1789654436,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Brazilian Rupestrian Grasslands Paper\\n\\n## Initial Assessment\\n\\n**Is this a review article?**\\nNo. This is an original research paper (explicitly labeled \\\"ORIGINAL PAPER\\\") that presents primary empirical analysis using predictive modeling.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA CHECK (Non-Review Paper):\\n\\n1. **Explicit national-scale spatial implementation (entire country)?**\\n   - ✓ YES - Study covers entire known distribution of rupestrian grasslands across Brazil, with analysis at Brazilian national territory scale using 0.0083° (~1 km²) spatial resolution across multiple states (Minas Gerais, Bahia, Goiás, Mato Grosso, Roraima).\\n\\n2. **Primary focus = LULC prediction/simulation (central research question)?**\\n   - ✗ NO - Primary focus is on **species habitat suitability modeling** for rupestrian grasslands ecosystem under climate change. The central research question concerns \\\"projected distribution and identify emergent patterns of potential future expansion or contraction\\\" of the **ecosystem itself**, not land use/land cover change prediction.\\n   - LULC is used as an **input variable** (lithology, slope, aspect) and analyzed as a **threat overlay**, but not as the primary prediction target.\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ✓ YES - 12 scenarios tested: current, 2050 RCP4.5, 2050 RCP8.5, 2070 RCP4.5, 2070 RCP8.5, plus mining expansion variants. Quantitative comparisons provided (% area loss, habitat metrics).\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ✓ YES - MaxEnt distribution modeling with AUC = 0.972 (±0.003), tenfold cross-validation, jackknife procedure, permutation importance analysis reported.\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ✗ PARTIAL - Outputs include **habitat suitability maps** (Figures 3a-d), not LULC class predictions. Mining threat overlays are analyzed but not predicted/modeled as LULC change.\\n\\n---\\n\\n### EXCLUSION CRITERIA CHECK:\\n\\n1. **Global-scale analysis without national-level disaggregation?**\\n   - ✓ PASS - National scale maintained throughout.\\n\\n2. **Local/regional/global/transboundary scale focus?**\\n   - ✓ PASS - National Brazil-scale focus.\\n\\n3. **No LULC prediction component?**\\n   - ✗ **FAILS** - Paper contains NO predictive modeling of LULC classes. LULC is analyzed descriptively (current mining, agriculture, silviculture overlaid with habitat suitability) but not predicted forward in time. Mining expansion scenario is speculative, not modeled.\\n\\n4. **Species-specific/ecological focus (flora/fauna) unrelated to LULC?**\\n   - ✗ **FAILS** - This is explicitly an **ecosystem/habitat suitability study** focused on rupestrian grasslands biodiversity and climate-driven habitat change. While land-use threats are discussed, the modeling core is **ecological/biogeographic** (MaxEnt species distribution modeling applied to ecosystem), not LULC prediction.\\n\\n5. **Economic/urban models lacking spatially explicit LULC outputs?**\\n   - ✓ PASS - Not applicable (not economic/urban focus).\\n\\n6. **Biomass/bioenergy/carbon studies without LULC change analysis?**\\n   - ✓ PASS - Not applicable.\\n\\n7. **Methodological papers without application to national-scale prediction?**\\n   - ✓ PASS - Applied study with national-scale outputs.\\n\\n8. **Purely Qualitative/Historical analysis only?**\\n   - ✓ PASS - Contains quantitative predictive modeling.\\n\\n9. **Remote sensing technical studies without predictive modeling?**\\n   - ✓ PASS - Not a remote sensing methods paper.\\n\\n10. **Single-scenario \\\"business-as-usual\\\" projections?**\\n    - ✓ PASS - Multiple scenarios with RCP pathways.\\n\\n---\\n\\n## Critical Distinction\\n\\n**The paper models ECOSYSTEM HABITAT SUITABILITY under climate change, NOT land use/land cover change prediction.**\\n\\n- **What it does:** Predicts where rupestrian grasslands will remain climatically suitable (MaxEnt habitat modeling)\\n- **What it does NOT do:** Predict how LULC classes will change (e.g., forest→agriculture, grassland→urban)\\n- **LULC role:** Used as threat overlay analysis (current mining, agriculture areas overlapped with habitat suitability) but not as prediction output\\n\\nThe landscape metrics analysis (patches, connectivity, fragmentation) measures ecological consequences of habitat loss, not LULC change itself.\\n\\n---\\n\\n## Final Categorization\\n\\n**EXCLUDED**\\n\\n**Justification:** \\nThis paper fails multiple core inclusion criteria for LULC prediction research:\\n\\n1. **Primary focus mismatch**: The paper's central objective is **species/ecosystem habitat suitability modeling** under climate change scenarios using MaxEnt, not LULC prediction. The research question concerns where rupestrian grasslands will remain suitable, not how LULC classes will transition.\\n\\n2. **No LULC prediction component**: While land-use threats (mining, agriculture) are analyzed as overlays with current and future habitat suitability, there is **no predictive modeling of LULC change**. LULC appears as static threat variables and descriptive threat analysis, not as modeled outputs.\\n\\n3. **Ecological rather than LULC focus**: The paper explicitly addresses \\\"species interactions, ecosystem connectivity and environmental services\\\" and uses species distribution modeling methodology. This is biogeographic/ecological research, not LULC prediction research.\\n\\n4. **Exclusion criterion met**: Falls under \\\"Species-specific/ecological focus (flora/fauna) unrelated to LULC\\\" - the ecosystem habitat suitability modeling is the core contribution, with LULC as secondary threat context.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":11800,\"completion_tokens\":1443,\"total_tokens\":13243,\"cost\":0.019015,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.019015,\"upstream_inference_prompt_cost\":0.0118,\"upstream_inference_completions_cost\":0.007215},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654436-rDNLZlTYFVM4MiGYJuph",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 11800,
+        "completion_tokens": 1443,
+        "total_tokens": 13243,
+        "cost": 0.019015,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.019015,
+          "upstream_inference_prompt_cost": 0.0118,
+          "upstream_inference_completions_cost": 0.007215
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 17.46,
+  "call_id": "DS__z1_QDXNJB9I__claude__r2",
+  "fingerprint": "d1beb7f3498fda1897f2448c58651bdec912aad69151bd92e20c18902bbf222a",
+  "paper_id": "z1_QDXNJB9I",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:14:08.795379+00:00",
+  "input_sha256": "a4e75cce971ba693ac1f55068476354fe32e64b9741d66c7da2d8f0d5a665595",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

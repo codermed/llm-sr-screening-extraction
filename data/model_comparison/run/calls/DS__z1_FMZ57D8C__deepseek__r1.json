@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653049-4Dgd1wjMnj8EhaPQ5xVH",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00285892,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10838,
+    "completion_tokens": 108,
+    "total_tokens": 10946,
+    "cost": 0.00285892,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00285892,
+      "upstream_inference_prompt_cost": 0.00281788,
+      "upstream_inference_completions_cost": 4.104e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: **EXCLUDED** (Justification: This is a non-review paper that fails the core inclusion criteria. Its primary focus is on modeling soil carbon emission factors under biofuel feedstock production scenarios, not on LULC prediction. While it mentions land use change scenarios, these are used as inputs to a soil carbon model, not as the central predictive output. The paper lacks spatial LULC prediction outputs, quantitative LULC accuracy metrics, and does not implement a spatial LULC prediction model for the entire country.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:50:44.874935+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.812,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789653049-4Dgd1wjMnj8EhaPQ5xVH\",\"object\":\"chat.completion\",\"created\":1789653049,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: **EXCLUDED** (Justification: This is a non-review paper that fails the core inclusion criteria. Its primary focus is on modeling soil carbon emission factors under biofuel feedstock production scenarios, not on LULC prediction. While it mentions land use change scenarios, these are used as inputs to a soil carbon model, not as the central predictive output. The paper lacks spatial LULC prediction outputs, quantitative LULC accuracy metrics, and does not implement a spatial LULC prediction model for the entire country.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10838,\"completion_tokens\":108,\"total_tokens\":10946,\"cost\":0.00285892,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00285892,\"upstream_inference_prompt_cost\":0.00281788,\"upstream_inference_completions_cost\":0.00004104},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653049-4Dgd1wjMnj8EhaPQ5xVH",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 10838,
+        "completion_tokens": 108,
+        "total_tokens": 10946,
+        "cost": 0.00285892,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00285892,
+          "upstream_inference_prompt_cost": 0.00281788,
+          "upstream_inference_completions_cost": 4.104e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.812,
+  "call_id": "DS__z1_FMZ57D8C__deepseek__r1",
+  "fingerprint": "caa9db20fee3f63ff2472d3c2223a73c15aac9647d8bf3e28449be1976cfef5a",
+  "paper_id": "z1_FMZ57D8C",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:50:48.686730+00:00",
+  "input_sha256": "ddaeb38e99bc4c8dce4fc37792fa908fa0efd19d7ead51fb0b73568140c3d61a",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

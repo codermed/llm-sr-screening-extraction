@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789656054-LstNCYm6nPkpq2NmlXeH",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.017433,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 11873,
+    "completion_tokens": 1112,
+    "total_tokens": 12985,
+    "cost": 0.017433,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.017433,
+      "upstream_inference_prompt_cost": 0.011873,
+      "upstream_inference_completions_cost": 0.00556
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land Use Cover Change Hotspots in Mexico\n\n## Initial Classification\n**This is NOT a review article** – it is an original research paper presenting primary modeling and analysis.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA (Non-Review Papers):\n\n✅ **Explicit national-scale spatial implementation**\n- Study area: entire Mexico (1,907,382 km²), stated as \"national level for Mexico\"\n- Methods section: \"The total extent was 1 907 382 km² excluding islands and water bodies\"\n- Results presented at national scale with regional hotspot identification\n\n✅ **Primary focus = LULC prediction/simulation**\n- Central research questions explicitly state: \"What are the main drivers of LUCC in Mexico?\" and \"What ecosystems will be the most threatened by LUCC under diverse socioeconomic conditions and climate change scenarios?\"\n- Abstract: \"identifies the hotspots of land use cover change (LUCC) under two socioeconomic and climate change scenarios\"\n- Primary objective is modeling future LULC distributions\n\n✅ **Implementation of ≥2 future scenarios with quantitative comparison**\n- Two scenarios implemented: BAU (business-as-usual) and pessimistic scenario\n- Multiple time periods: 2020, 2050, 2080\n- Quantitative comparisons provided (e.g., \"20–33% loss BAU vs. 43–46% pessimistic for grassland\")\n\n✅ **Spatial modeling with quantitative accuracy metrics**\n- Weights of Evidence (WofE) methodology with numerical values reported\n- Model validation metrics: Kappa Fuzzy (κ = 94%), figure of merit, allocation/quantity disagreement (4% and 1%)\n- Change rates quantified: \"28,000 km²/year during 1993–2002\" and \"16,000 km²/year during 2002–2007\"\n- Transition matrices with area calculations (Tables 1-2)\n\n✅ **Outputs include mapped LULC projections**\n- Figure 2 shows explicit LULC maps for 2007, 2020, 2050, 2080 under both scenarios\n- Spatial distribution maps of agreement between GCMs (Figure 4)\n\n### SPECIFIC EXCLUSION CRITERIA:\n\n❌ **Global-scale analysis without national disaggregation** – NOT APPLICABLE (national-scale study)\n\n❌ **Local/regional/global/transboundary focus** – NOT APPLICABLE (explicitly national)\n\n❌ **No LULC prediction component** – NOT APPLICABLE (core focus is LULC prediction)\n\n❌ **Species-specific/ecological focus unrelated to LULC** – NOT APPLICABLE (LULC is primary focus)\n\n❌ **Economic/urban models lacking spatially explicit LULC outputs** – NOT APPLICABLE (spatial LULC outputs provided)\n\n❌ **Biomass/bioenergy/carbon studies without LULC change analysis** – NOT APPLICABLE (LULC change is analyzed)\n\n❌ **Methodological papers without application** – NOT APPLICABLE (applied to national case)\n\n❌ **Purely qualitative/historical analysis only** – NOT APPLICABLE (includes future projections)\n\n❌ **Remote sensing technical studies without predictive modeling** – NOT APPLICABLE (includes predictive modeling)\n\n❌ **Single-scenario \"business-as-usual\" projections** – NOT APPLICABLE (two scenarios compared)\n\n---\n\n## Additional Full Text Verification\n\n✅ **Scale claims verified**: Methodology confirms national implementation with 1 km × 1 km grid cells across entire Mexican territory\n\n✅ **Quantitative metrics reported**: Extensive numerical results (WofE values, transition areas, accuracy statistics, change rates)\n\n✅ **Spatial explicitness**: Weights of Evidence applied per variable-transition combination; spatial allocation disagreement calculated; GCM agreement maps produced\n\n✅ **Future projections**: Projections to 2020, 2050, 2080 with quantified ecosystem losses (e.g., grassland reduced to 43% of 1993 extent by 2050)\n\n---\n\n## Final Categorization\n\n**OK**\n\n**Justification**: This paper fully meets all core inclusion criteria for national-scale LULC prediction research. It implements explicit spatial modeling of land use/cover change across Mexico's entire territory under two contrasting socioeconomic and climate scenarios (2020, 2050, 2080), with rigorous quantitative validation metrics (94% Kappa, WofE analysis), mapped projections (Figure 2), and comprehensive identification of LULC hotspots. The primary research objective is LULC prediction, not incidental application. No exclusion criteria are triggered.",
+  "automated_status": "invalid_output",
+  "parsed_label": "",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:40:49.902723+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 13.484,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789656054-LstNCYm6nPkpq2NmlXeH\",\"object\":\"chat.completion\",\"created\":1789656054,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land Use Cover Change Hotspots in Mexico\\n\\n## Initial Classification\\n**This is NOT a review article** – it is an original research paper presenting primary modeling and analysis.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA (Non-Review Papers):\\n\\n✅ **Explicit national-scale spatial implementation**\\n- Study area: entire Mexico (1,907,382 km²), stated as \\\"national level for Mexico\\\"\\n- Methods section: \\\"The total extent was 1 907 382 km² excluding islands and water bodies\\\"\\n- Results presented at national scale with regional hotspot identification\\n\\n✅ **Primary focus = LULC prediction/simulation**\\n- Central research questions explicitly state: \\\"What are the main drivers of LUCC in Mexico?\\\" and \\\"What ecosystems will be the most threatened by LUCC under diverse socioeconomic conditions and climate change scenarios?\\\"\\n- Abstract: \\\"identifies the hotspots of land use cover change (LUCC) under two socioeconomic and climate change scenarios\\\"\\n- Primary objective is modeling future LULC distributions\\n\\n✅ **Implementation of ≥2 future scenarios with quantitative comparison**\\n- Two scenarios implemented: BAU (business-as-usual) and pessimistic scenario\\n- Multiple time periods: 2020, 2050, 2080\\n- Quantitative comparisons provided (e.g., \\\"20–33% loss BAU vs. 43–46% pessimistic for grassland\\\")\\n\\n✅ **Spatial modeling with quantitative accuracy metrics**\\n- Weights of Evidence (WofE) methodology with numerical values reported\\n- Model validation metrics: Kappa Fuzzy (κ = 94%), figure of merit, allocation/quantity disagreement (4% and 1%)\\n- Change rates quantified: \\\"28,000 km²/year during 1993–2002\\\" and \\\"16,000 km²/year during 2002–2007\\\"\\n- Transition matrices with area calculations (Tables 1-2)\\n\\n✅ **Outputs include mapped LULC projections**\\n- Figure 2 shows explicit LULC maps for 2007, 2020, 2050, 2080 under both scenarios\\n- Spatial distribution maps of agreement between GCMs (Figure 4)\\n\\n### SPECIFIC EXCLUSION CRITERIA:\\n\\n❌ **Global-scale analysis without national disaggregation** – NOT APPLICABLE (national-scale study)\\n\\n❌ **Local/regional/global/transboundary focus** – NOT APPLICABLE (explicitly national)\\n\\n❌ **No LULC prediction component** – NOT APPLICABLE (core focus is LULC prediction)\\n\\n❌ **Species-specific/ecological focus unrelated to LULC** – NOT APPLICABLE (LULC is primary focus)\\n\\n❌ **Economic/urban models lacking spatially explicit LULC outputs** – NOT APPLICABLE (spatial LULC outputs provided)\\n\\n❌ **Biomass/bioenergy/carbon studies without LULC change analysis** – NOT APPLICABLE (LULC change is analyzed)\\n\\n❌ **Methodological papers without application** – NOT APPLICABLE (applied to national case)\\n\\n❌ **Purely qualitative/historical analysis only** – NOT APPLICABLE (includes future projections)\\n\\n❌ **Remote sensing technical studies without predictive modeling** – NOT APPLICABLE (includes predictive modeling)\\n\\n❌ **Single-scenario \\\"business-as-usual\\\" projections** – NOT APPLICABLE (two scenarios compared)\\n\\n---\\n\\n## Additional Full Text Verification\\n\\n✅ **Scale claims verified**: Methodology confirms national implementation with 1 km × 1 km grid cells across entire Mexican territory\\n\\n✅ **Quantitative metrics reported**: Extensive numerical results (WofE values, transition areas, accuracy statistics, change rates)\\n\\n✅ **Spatial explicitness**: Weights of Evidence applied per variable-transition combination; spatial allocation disagreement calculated; GCM agreement maps produced\\n\\n✅ **Future projections**: Projections to 2020, 2050, 2080 with quantified ecosystem losses (e.g., grassland reduced to 43% of 1993 extent by 2050)\\n\\n---\\n\\n## Final Categorization\\n\\n**OK**\\n\\n**Justification**: This paper fully meets all core inclusion criteria for national-scale LULC prediction research. It implements explicit spatial modeling of land use/cover change across Mexico's entire territory under two contrasting socioeconomic and climate scenarios (2020, 2050, 2080), with rigorous quantitative validation metrics (94% Kappa, WofE analysis), mapped projections (Figure 2), and comprehensive identification of LULC hotspots. The primary research objective is LULC prediction, not incidental application. No exclusion criteria are triggered.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":11873,\"completion_tokens\":1112,\"total_tokens\":12985,\"cost\":0.017433,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.017433,\"upstream_inference_prompt_cost\":0.011873,\"upstream_inference_completions_cost\":0.00556},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789656054-LstNCYm6nPkpq2NmlXeH",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 11873,
+        "completion_tokens": 1112,
+        "total_tokens": 12985,
+        "cost": 0.017433,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.017433,
+          "upstream_inference_prompt_cost": 0.011873,
+          "upstream_inference_completions_cost": 0.00556
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 13.485,
+  "call_id": "DS__z1_52U7H3GL__claude__r3",
+  "fingerprint": "092e39c67b63ee2f1addc1b6215a22e4369e77881e6be3ce69a5693622a32940",
+  "paper_id": "z1_52U7H3GL",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:41:03.386965+00:00",
+  "input_sha256": "ce40f429364b5d87de9195fad1cadd5c68d7919517a638b4ad1b5f3f5dcf5456",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

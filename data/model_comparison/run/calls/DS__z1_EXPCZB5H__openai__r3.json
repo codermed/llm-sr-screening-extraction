@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654831-VEhP19es56yUVpRfXzB7",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0017196,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 14275,
+    "completion_tokens": 146,
+    "total_tokens": 14421,
+    "cost": 0.0017196,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 14080,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0017196,
+      "upstream_inference_prompt_cost": 0.001486,
+      "upstream_inference_completions_cost": 0.0002336
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: OK (Justification: This is a non-review research paper focused on simulating and predicting future land use land cover (LULC) changes for China at the national scale. The study develops and applies an integrated spatially explicit model combining socioeconomic, ecological, and land allocation modules to project LULC patterns under two future scenarios with different crop yield trajectories. It includes explicit national-scale spatial implementation, uses ≥2 future scenarios with quantitative comparison, provides mapped spatial LULC projections, and includes validation and quantitative metrics. The primary objective is LULC prediction/simulation. It does not meet any exclusion criteria such as lack of spatial outputs, local/regional scale only, or single-scenario projection.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:20:26.813281+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.448,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789654831-VEhP19es56yUVpRfXzB7\",\"object\":\"chat.completion\",\"created\":1789654831,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: This is a non-review research paper focused on simulating and predicting future land use land cover (LULC) changes for China at the national scale. The study develops and applies an integrated spatially explicit model combining socioeconomic, ecological, and land allocation modules to project LULC patterns under two future scenarios with different crop yield trajectories. It includes explicit national-scale spatial implementation, uses ≥2 future scenarios with quantitative comparison, provides mapped spatial LULC projections, and includes validation and quantitative metrics. The primary objective is LULC prediction/simulation. It does not meet any exclusion criteria such as lack of spatial outputs, local/regional scale only, or single-scenario projection.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":14275,\"completion_tokens\":146,\"total_tokens\":14421,\"cost\":0.0017196,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":14080,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0017196,\"upstream_inference_prompt_cost\":0.001486,\"upstream_inference_completions_cost\":0.0002336},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654831-VEhP19es56yUVpRfXzB7",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 14275,
+        "completion_tokens": 146,
+        "total_tokens": 14421,
+        "cost": 0.0017196,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 14080,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0017196,
+          "upstream_inference_prompt_cost": 0.001486,
+          "upstream_inference_completions_cost": 0.0002336
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.448,
+  "call_id": "DS__z1_EXPCZB5H__openai__r3",
+  "fingerprint": "d903732b2dfa83c98961064077a52fb32b3eeb6ebbce3419a6f6c7507a3f1892",
+  "paper_id": "z1_EXPCZB5H",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:20:31.261071+00:00",
+  "input_sha256": "40b29472bbd7e8aa5fe91fde7558effa1ae4f450532a3337d7c57d891f2d4e0e",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

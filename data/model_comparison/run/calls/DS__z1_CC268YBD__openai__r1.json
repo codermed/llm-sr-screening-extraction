@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653244-BR3tFJWJiYJPFN1sht5O",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0061772,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 14755,
+    "completion_tokens": 172,
+    "total_tokens": 14927,
+    "cost": 0.0061772,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0061772,
+      "upstream_inference_prompt_cost": 0.005902,
+      "upstream_inference_completions_cost": 0.0002752
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This is a review paper focusing broadly on fluvial flood modeling, hydrological and hydraulic modeling, rainfall modeling, climate change impacts, and land-use change impacts on flooding. While it discusses land-use change effects (notably urbanization and afforestation) on hydrology and flood risk, it does not focus on land use/land cover (LULC) future prediction or simulation as a primary research question. The paper does not implement national-scale spatial LULC prediction, nor does it provide spatial modeling of LULC with quantitative accuracy metrics or mapped projections. It is a general review of flood modeling science and future research needs, with only limited discussion of land-use change impacts without LULC prediction modeling. Therefore, it does not meet inclusion criteria for LULC prediction-focused review or research.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:53:59.624505+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 6.672,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789653244-BR3tFJWJiYJPFN1sht5O\",\"object\":\"chat.completion\",\"created\":1789653244,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This is a review paper focusing broadly on fluvial flood modeling, hydrological and hydraulic modeling, rainfall modeling, climate change impacts, and land-use change impacts on flooding. While it discusses land-use change effects (notably urbanization and afforestation) on hydrology and flood risk, it does not focus on land use/land cover (LULC) future prediction or simulation as a primary research question. The paper does not implement national-scale spatial LULC prediction, nor does it provide spatial modeling of LULC with quantitative accuracy metrics or mapped projections. It is a general review of flood modeling science and future research needs, with only limited discussion of land-use change impacts without LULC prediction modeling. Therefore, it does not meet inclusion criteria for LULC prediction-focused review or research.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":14755,\"completion_tokens\":172,\"total_tokens\":14927,\"cost\":0.0061772,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0061772,\"upstream_inference_prompt_cost\":0.005902,\"upstream_inference_completions_cost\":0.0002752},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653244-BR3tFJWJiYJPFN1sht5O",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 14755,
+        "completion_tokens": 172,
+        "total_tokens": 14927,
+        "cost": 0.0061772,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0061772,
+          "upstream_inference_prompt_cost": 0.005902,
+          "upstream_inference_completions_cost": 0.0002752
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 6.673,
+  "call_id": "DS__z1_CC268YBD__openai__r1",
+  "fingerprint": "83b8ad156c37cd4a75ba2e0c1877574d0836ab8f6d4ba6b8e77c0d5c66fbef53",
+  "paper_id": "z1_CC268YBD",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:54:06.296849+00:00",
+  "input_sha256": "8ebaee36111dd7a7feb9a13f6478a44a4248e57fa6fb5b2fea9c65b12de610e9",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789655822-M9Z9zr9l651dkF6VENdT",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00764946,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 8767,
+    "completion_tokens": 208,
+    "total_tokens": 8975,
+    "cost": 0.00764946,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00764946,
+      "upstream_inference_prompt_cost": 0.00683826,
+      "upstream_inference_completions_cost": 0.0008112
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED  \n(Justification: Although the paper is a research article (not a review) that develops and evaluates multiple land cover change simulations for Bolivia at national scale, it fails a core inclusion criterion: it does not implement future LULC projections beyond 2014. The simulations model deforestation from 2010 to 2014—a historical period—and are validated against observed reference data for that same period. Thus, there are no actual future scenarios; all six scenarios are retrospective “business-as-usual” simulations used to assess biodiversity impacts, not to project future land cover. This violates the inclusion requirement of “Implementation of ≥2 future scenarios with quantitative comparison” and also meets the exclusion criterion “Single-scenario ‘business-as-usual’ projections”—extended here to multiple retrospective scenarios lacking true future projection. Additionally, while LULC modeling is central, the primary objective is evaluating model error in relation to biodiversity impact assessment, not advancing or focusing on LULC prediction itself.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:36:57.726515+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 5.73,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789655822-M9Z9zr9l651dkF6VENdT\",\"object\":\"chat.completion\",\"created\":1789655822,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED  \\n(Justification: Although the paper is a research article (not a review) that develops and evaluates multiple land cover change simulations for Bolivia at national scale, it fails a core inclusion criterion: it does not implement future LULC projections beyond 2014. The simulations model deforestation from 2010 to 2014—a historical period—and are validated against observed reference data for that same period. Thus, there are no actual future scenarios; all six scenarios are retrospective “business-as-usual” simulations used to assess biodiversity impacts, not to project future land cover. This violates the inclusion requirement of “Implementation of ≥2 future scenarios with quantitative comparison” and also meets the exclusion criterion “Single-scenario ‘business-as-usual’ projections”—extended here to multiple retrospective scenarios lacking true future projection. Additionally, while LULC modeling is central, the primary objective is evaluating model error in relation to biodiversity impact assessment, not advancing or focusing on LULC prediction itself.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":8767,\"completion_tokens\":208,\"total_tokens\":8975,\"cost\":0.00764946,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00764946,\"upstream_inference_prompt_cost\":0.00683826,\"upstream_inference_completions_cost\":0.0008112},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655822-M9Z9zr9l651dkF6VENdT",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 8767,
+        "completion_tokens": 208,
+        "total_tokens": 8975,
+        "cost": 0.00764946,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00764946,
+          "upstream_inference_prompt_cost": 0.00683826,
+          "upstream_inference_completions_cost": 0.0008112
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 5.731,
+  "call_id": "DS__z1_HXYQTPZG__qwen__r3",
+  "fingerprint": "cf82b929ffa7eaa9afa6b86f376e08843e88aa246844bc9565ea7917fb31f462",
+  "paper_id": "z1_HXYQTPZG",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:37:03.456819+00:00",
+  "input_sha256": "eb8b94cc29c09ec3ab6a925249d85614cca1d2b4246120bf31fdf82f3f6913b2",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

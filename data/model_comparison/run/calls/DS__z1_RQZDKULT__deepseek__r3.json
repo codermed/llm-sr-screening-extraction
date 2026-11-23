@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789655427-U8kokc2vrrEjiWUTkpwc",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00370548,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 13847,
+    "completion_tokens": 277,
+    "total_tokens": 14124,
+    "cost": 0.00370548,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00370548,
+      "upstream_inference_prompt_cost": 0.00360022,
+      "upstream_inference_completions_cost": 0.00010526
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "**Final categorization: EXCLUDED**  \n\n**Justification:**  \n- **Not a review article** – This is a research paper presenting original modeling work.  \n- **Fails core inclusion criteria** – The paper’s primary focus is **not LULC prediction**. Instead, it uses an **Agent-Based Model (ABM)** to simulate **population allocation, housing demand, and traffic impacts** under future urban growth scenarios in Kuwait.  \n- **LULC role** – Land use is treated as a **static or pre-classified input** (districts categorized as residential, mixed, etc.) and as a **spatial container for agent interactions**, not as a dynamically predicted output. The model selects new districts based on suitability, but it does not simulate LULC change per se (e.g., transitions between land cover classes).  \n- **Exclusion criteria met** – The paper fits under: *“Economic/urban models lacking spatially explicit LULC outputs”* and *“No LULC prediction component.”* The outputs are maps of population distribution, housing shortage, and traffic accidents—not projected LULC maps.  \n- **Scale** – While the study is national-scale (Kuwait), the absence of LULC prediction as the central focus disqualifies it from the “OK” or “POSSIBLE” categories.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:30:22.710741+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 7.517,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789655427-U8kokc2vrrEjiWUTkpwc\",\"object\":\"chat.completion\",\"created\":1789655427,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"**Final categorization: EXCLUDED**  \\n\\n**Justification:**  \\n- **Not a review article** – This is a research paper presenting original modeling work.  \\n- **Fails core inclusion criteria** – The paper’s primary focus is **not LULC prediction**. Instead, it uses an **Agent-Based Model (ABM)** to simulate **population allocation, housing demand, and traffic impacts** under future urban growth scenarios in Kuwait.  \\n- **LULC role** – Land use is treated as a **static or pre-classified input** (districts categorized as residential, mixed, etc.) and as a **spatial container for agent interactions**, not as a dynamically predicted output. The model selects new districts based on suitability, but it does not simulate LULC change per se (e.g., transitions between land cover classes).  \\n- **Exclusion criteria met** – The paper fits under: *“Economic/urban models lacking spatially explicit LULC outputs”* and *“No LULC prediction component.”* The outputs are maps of population distribution, housing shortage, and traffic accidents—not projected LULC maps.  \\n- **Scale** – While the study is national-scale (Kuwait), the absence of LULC prediction as the central focus disqualifies it from the “OK” or “POSSIBLE” categories.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":13847,\"completion_tokens\":277,\"total_tokens\":14124,\"cost\":0.00370548,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00370548,\"upstream_inference_prompt_cost\":0.00360022,\"upstream_inference_completions_cost\":0.00010526},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655427-U8kokc2vrrEjiWUTkpwc",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 13847,
+        "completion_tokens": 277,
+        "total_tokens": 14124,
+        "cost": 0.00370548,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00370548,
+          "upstream_inference_prompt_cost": 0.00360022,
+          "upstream_inference_completions_cost": 0.00010526
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 7.517,
+  "call_id": "DS__z1_RQZDKULT__deepseek__r3",
+  "fingerprint": "59661adab29b2c13c1a4210b59bd85aba8750a411bf8510bda3f8158b976275f",
+  "paper_id": "z1_RQZDKULT",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:30:30.227844+00:00",
+  "input_sha256": "4041f66ed5613439b752567af19adefd8dff671cafb45be3d5d9d835df181495",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789652534-NhjfuI7nBObthGmWcood",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0046763,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 17806,
+    "completion_tokens": 123,
+    "total_tokens": 17929,
+    "cost": 0.0046763,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0046763,
+      "upstream_inference_prompt_cost": 0.00462956,
+      "upstream_inference_completions_cost": 4.674e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a non-review research article whose primary objective is species distribution modeling (SDM) for an endangered hare, not LULC prediction. While it uses static LULC-derived variables (e.g., distance to shrubland, wetland) as inputs for its present-day model, it does not simulate or predict future LULC changes. The future scenarios are based solely on climate projections, with LULC variables held constant. The study's core focus is ecological conservation planning for a specific species, not national-scale LULC prediction/simulation.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:42:09.850199+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 9.667,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789652534-NhjfuI7nBObthGmWcood\",\"object\":\"chat.completion\",\"created\":1789652534,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a non-review research article whose primary objective is species distribution modeling (SDM) for an endangered hare, not LULC prediction. While it uses static LULC-derived variables (e.g., distance to shrubland, wetland) as inputs for its present-day model, it does not simulate or predict future LULC changes. The future scenarios are based solely on climate projections, with LULC variables held constant. The study's core focus is ecological conservation planning for a specific species, not national-scale LULC prediction/simulation.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":17806,\"completion_tokens\":123,\"total_tokens\":17929,\"cost\":0.0046763,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0046763,\"upstream_inference_prompt_cost\":0.00462956,\"upstream_inference_completions_cost\":0.00004674},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652534-NhjfuI7nBObthGmWcood",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 17806,
+        "completion_tokens": 123,
+        "total_tokens": 17929,
+        "cost": 0.0046763,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0046763,
+          "upstream_inference_prompt_cost": 0.00462956,
+          "upstream_inference_completions_cost": 4.674e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 9.667,
+  "call_id": "DS__z1_KJ77IG9S__deepseek__r1",
+  "fingerprint": "8c51d0337a54a15da02d506c36d9a5dacebafd8ace112592d4469875c56df24c",
+  "paper_id": "z1_KJ77IG9S",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:42:19.516822+00:00",
+  "input_sha256": "9e183a4f3a05d909645f884fba508b0ebda1d211ae00b53d5c37a2d8a3f1c161",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

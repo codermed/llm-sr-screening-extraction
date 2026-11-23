@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789655494-6QYxrUZVyCWqamQuO9yf",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0022642,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15800,
+    "completion_tokens": 534,
+    "total_tokens": 16334,
+    "cost": 0.0022642,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 15744,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0022642,
+      "upstream_inference_prompt_cost": 0.00206128,
+      "upstream_inference_completions_cost": 0.00020292
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: POSSIBLE (Justification: LULC prediction is a significant component but not the primary research objective; the paper uses the LULC model (LUTO) as a tool within a broader integrated systems analysis to explore future scenarios for agricultural production, land use, and policy implications at the national scale.)\n\n**Justification:**\n\n1.  **Non-Review Paper:** This is a primary research article presenting original modeling results, not a review.\n2.  **Inclusion Criteria Check (for \"OK\"):**\n    *   ✅ **National-scale spatial implementation:** The study area explicitly covers Australia's \"intensively managed agricultural lands\" (~85 million ha), which is a national-scale analysis for the relevant agricultural sector.\n    *   ❌ **Primary focus = LULC prediction/simulation:** While LULC prediction via the LUTO model is a major part of the methodology, the paper's *primary objective* is broader. It aims to \"explore the response of Australian land use and agricultural production\" to global changes and to inform policy on food security, productivity, and climate mitigation. LULC change is a key *output* used to assess these higher-order questions.\n    *   ✅ **≥2 future scenarios with quantitative comparison:** The paper implements four distinct global outlooks (L1, M2, M3, H3) and multiple sensitivity settings (productivity, adoption hurdles), with quantitative comparisons of land use area, production, output rates, and value.\n    *   ✅ **Spatial modeling with quantitative metrics:** The LUTO model is a spatial partial equilibrium model operating at ~1.1 km resolution. The results report quantitative metrics like changes in area (Mha), production (%), output rates (%), and value (%).\n    *   ✅ **Outputs include mapped LULC projections:** Figures and supplementary materials show spatial patterns of potential land use change (e.g., Fig. 5, Figs. S1-S8).\n3.  **Exclusion Criteria Check:** The paper does **not** meet any of the specific exclusion criteria. It is national-scale, includes LULC prediction, is not species-specific, and provides quantitative, multi-scenario, spatially explicit projections.\n4.  **Primary Focus Determination:** The central research question is not solely to predict LULC for its own sake. Instead, LULC predictions from the LUTO model are used as a critical *input/step* to answer questions about agricultural production resilience, economic returns, and policy implications under different global futures. Therefore, it aligns with the definition for **'POSSIBLE'**.",
+  "automated_status": "usable",
+  "parsed_label": "POSSIBLE",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:31:29.543623+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.335,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655494-6QYxrUZVyCWqamQuO9yf\",\"object\":\"chat.completion\",\"created\":1789655494,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: POSSIBLE (Justification: LULC prediction is a significant component but not the primary research objective; the paper uses the LULC model (LUTO) as a tool within a broader integrated systems analysis to explore future scenarios for agricultural production, land use, and policy implications at the national scale.)\\n\\n**Justification:**\\n\\n1.  **Non-Review Paper:** This is a primary research article presenting original modeling results, not a review.\\n2.  **Inclusion Criteria Check (for \\\"OK\\\"):**\\n    *   ✅ **National-scale spatial implementation:** The study area explicitly covers Australia's \\\"intensively managed agricultural lands\\\" (~85 million ha), which is a national-scale analysis for the relevant agricultural sector.\\n    *   ❌ **Primary focus = LULC prediction/simulation:** While LULC prediction via the LUTO model is a major part of the methodology, the paper's *primary objective* is broader. It aims to \\\"explore the response of Australian land use and agricultural production\\\" to global changes and to inform policy on food security, productivity, and climate mitigation. LULC change is a key *output* used to assess these higher-order questions.\\n    *   ✅ **≥2 future scenarios with quantitative comparison:** The paper implements four distinct global outlooks (L1, M2, M3, H3) and multiple sensitivity settings (productivity, adoption hurdles), with quantitative comparisons of land use area, production, output rates, and value.\\n    *   ✅ **Spatial modeling with quantitative metrics:** The LUTO model is a spatial partial equilibrium model operating at ~1.1 km resolution. The results report quantitative metrics like changes in area (Mha), production (%), output rates (%), and value (%).\\n    *   ✅ **Outputs include mapped LULC projections:** Figures and supplementary materials show spatial patterns of potential land use change (e.g., Fig. 5, Figs. S1-S8).\\n3.  **Exclusion Criteria Check:** The paper does **not** meet any of the specific exclusion criteria. It is national-scale, includes LULC prediction, is not species-specific, and provides quantitative, multi-scenario, spatially explicit projections.\\n4.  **Primary Focus Determination:** The central research question is not solely to predict LULC for its own sake. Instead, LULC predictions from the LUTO model are used as a critical *input/step* to answer questions about agricultural production resilience, economic returns, and policy implications under different global futures. Therefore, it aligns with the definition for **'POSSIBLE'**.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15800,\"completion_tokens\":534,\"total_tokens\":16334,\"cost\":0.0022642,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":15744,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0022642,\"upstream_inference_prompt_cost\":0.00206128,\"upstream_inference_completions_cost\":0.00020292},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655494-6QYxrUZVyCWqamQuO9yf",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 15800,
+        "completion_tokens": 534,
+        "total_tokens": 16334,
+        "cost": 0.0022642,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 15744,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0022642,
+          "upstream_inference_prompt_cost": 0.00206128,
+          "upstream_inference_completions_cost": 0.00020292
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.336,
+  "call_id": "DS__z1_XH9FNEWH__deepseek__r3",
+  "fingerprint": "4345c79537dc78a40d8e4cbd2730dd6c38dee30886dba81b326b322449db9aa0",
+  "paper_id": "z1_XH9FNEWH",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:31:41.879340+00:00",
+  "input_sha256": "b9dcd4956861fd2ddfe435b59862a95116fedd47ec611d8fff939aef7b574040",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

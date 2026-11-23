@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653668-cC31qZWNuJpH2U343OOq",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0013508,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10669,
+    "completion_tokens": 145,
+    "total_tokens": 10814,
+    "cost": 0.0013508,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 10496,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0013508,
+      "upstream_inference_prompt_cost": 0.0011188,
+      "upstream_inference_completions_cost": 0.000232
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a research study focused on vulnerability assessment of forest vegetation to anthropogenic climate change in China using species distribution modeling and endemics–area relationship. It does not focus on land use land cover (LULC) future prediction or simulation as a primary objective. The study does not implement spatially explicit LULC prediction or mapping of future LULC change scenarios, nor does it provide quantitative accuracy metrics related to LULC. Instead, it addresses ecological vulnerability of forest communities and vegetation types, which falls under species/ecological focus unrelated to LULC prediction. Therefore, it fails the core inclusion criterion of primary focus on LULC prediction.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:01:03.882577+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.737,
+      "raw_body": "\n         \n{\"id\":\"gen-1789653668-cC31qZWNuJpH2U343OOq\",\"object\":\"chat.completion\",\"created\":1789653668,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a research study focused on vulnerability assessment of forest vegetation to anthropogenic climate change in China using species distribution modeling and endemics–area relationship. It does not focus on land use land cover (LULC) future prediction or simulation as a primary objective. The study does not implement spatially explicit LULC prediction or mapping of future LULC change scenarios, nor does it provide quantitative accuracy metrics related to LULC. Instead, it addresses ecological vulnerability of forest communities and vegetation types, which falls under species/ecological focus unrelated to LULC prediction. Therefore, it fails the core inclusion criterion of primary focus on LULC prediction.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10669,\"completion_tokens\":145,\"total_tokens\":10814,\"cost\":0.0013508,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":10496,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0013508,\"upstream_inference_prompt_cost\":0.0011188,\"upstream_inference_completions_cost\":0.000232},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653668-cC31qZWNuJpH2U343OOq",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 10669,
+        "completion_tokens": 145,
+        "total_tokens": 10814,
+        "cost": 0.0013508,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 10496,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0013508,
+          "upstream_inference_prompt_cost": 0.0011188,
+          "upstream_inference_completions_cost": 0.000232
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.737,
+  "call_id": "DS__z1_VN2L9BE9__openai__r2",
+  "fingerprint": "909f408126e777d74a6fac44d18052b92570a05141a1daf6787414d0d6625bd3",
+  "paper_id": "z1_VN2L9BE9",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:01:06.619544+00:00",
+  "input_sha256": "2878aabf7aa90385eaf32d2c9591488d86cb44a57804057db2bfae2311c9c571",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

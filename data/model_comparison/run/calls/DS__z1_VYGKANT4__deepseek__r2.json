@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789654564-TRU21emqWFn79KqLZrAO",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00410582,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15644,
+    "completion_tokens": 101,
+    "total_tokens": 15745,
+    "cost": 0.00410582,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00410582,
+      "upstream_inference_prompt_cost": 0.00406744,
+      "upstream_inference_completions_cost": 3.838e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The primary objective is multi-objective ecological restoration prioritization using cost-benefit optimization and classification based on planetary boundaries. While it uses land use data and identifies past restoration project sites via land use change detection, it does NOT implement or focus on predicting or simulating future LULC change. The modeling (Zonation) is for spatial conservation planning, not LULC prediction. The paper meets the exclusion criterion \"No LULC prediction component.\")",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:15:59.742275+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 5.881,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789654564-TRU21emqWFn79KqLZrAO\",\"object\":\"chat.completion\",\"created\":1789654564,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The primary objective is multi-objective ecological restoration prioritization using cost-benefit optimization and classification based on planetary boundaries. While it uses land use data and identifies past restoration project sites via land use change detection, it does NOT implement or focus on predicting or simulating future LULC change. The modeling (Zonation) is for spatial conservation planning, not LULC prediction. The paper meets the exclusion criterion \\\"No LULC prediction component.\\\")\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15644,\"completion_tokens\":101,\"total_tokens\":15745,\"cost\":0.00410582,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00410582,\"upstream_inference_prompt_cost\":0.00406744,\"upstream_inference_completions_cost\":0.00003838},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654564-TRU21emqWFn79KqLZrAO",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 15644,
+        "completion_tokens": 101,
+        "total_tokens": 15745,
+        "cost": 0.00410582,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00410582,
+          "upstream_inference_prompt_cost": 0.00406744,
+          "upstream_inference_completions_cost": 3.838e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 5.881,
+  "call_id": "DS__z1_VYGKANT4__deepseek__r2",
+  "fingerprint": "3fd370ae3aa45b991e433bddbd0e657dd9982da1c2c70280896e51794ed6ff8f",
+  "paper_id": "z1_VYGKANT4",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:16:05.623403+00:00",
+  "input_sha256": "333f005ae2dfe31a75a9ec49d572e44389f5a7719c0ae4bd4d6150e066cc19f4",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

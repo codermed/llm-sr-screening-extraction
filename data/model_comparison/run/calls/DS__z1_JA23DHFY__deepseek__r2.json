@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789654228-k3pIDEfXajttuLXBOYyv",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00383142,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 14574,
+    "completion_tokens": 111,
+    "total_tokens": 14685,
+    "cost": 0.00383142,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00383142,
+      "upstream_inference_prompt_cost": 0.00378924,
+      "upstream_inference_completions_cost": 4.218e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a non-review research article. Its primary focus is on predicting future land *suitability* for a specific crop (rainfed corn) under climate change, not on predicting future *land use/land cover (LULC)* change. The study models shifts in climatic suitability zones but does not simulate or project changes in actual land cover categories (e.g., forest to cropland). It fails the core inclusion criterion requiring \"Primary focus = LULC prediction/simulation.\")",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:10:23.286037+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 8.234,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789654228-k3pIDEfXajttuLXBOYyv\",\"object\":\"chat.completion\",\"created\":1789654228,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a non-review research article. Its primary focus is on predicting future land *suitability* for a specific crop (rainfed corn) under climate change, not on predicting future *land use/land cover (LULC)* change. The study models shifts in climatic suitability zones but does not simulate or project changes in actual land cover categories (e.g., forest to cropland). It fails the core inclusion criterion requiring \\\"Primary focus = LULC prediction/simulation.\\\")\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":14574,\"completion_tokens\":111,\"total_tokens\":14685,\"cost\":0.00383142,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00383142,\"upstream_inference_prompt_cost\":0.00378924,\"upstream_inference_completions_cost\":0.00004218},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654228-k3pIDEfXajttuLXBOYyv",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 14574,
+        "completion_tokens": 111,
+        "total_tokens": 14685,
+        "cost": 0.00383142,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00383142,
+          "upstream_inference_prompt_cost": 0.00378924,
+          "upstream_inference_completions_cost": 4.218e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 8.234,
+  "call_id": "DS__z1_JA23DHFY__deepseek__r2",
+  "fingerprint": "fe6075de5ef69a7b38bc841a12cc0f072d9769315a631d28c3187fa059e400f7",
+  "paper_id": "z1_JA23DHFY",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:10:31.519867+00:00",
+  "input_sha256": "792e0ad810d4238de27dc8498843234f61ddf8095b83156a2c97c0cdd03918bf",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

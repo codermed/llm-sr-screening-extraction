@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789655567-zS3aGUjS7h54QJ1Q0Ugu",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.009951,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 5991,
+    "completion_tokens": 792,
+    "total_tokens": 6783,
+    "cost": 0.009951,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.009951,
+      "upstream_inference_prompt_cost": 0.005991,
+      "upstream_inference_completions_cost": 0.00396
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis\n\n## Step 1: Determine if Paper is a Review Article\n**Result: NOT A REVIEW** - This is an original research article (clearly labeled \"ORIGINAL ARTICLE\") presenting primary research with methods, simulations, and optimization modeling.\n\n## Step 2: Apply Categorization Flow for Non-Review Paper\n\nSince this is a non-review paper, I evaluate against inclusion/exclusion criteria.\n\n### Core Inclusion Criteria Assessment:\n\n1. **Explicit national-scale spatial implementation (entire country)**: ✓ YES\n   - Study explicitly covers France at national scale\n   - \"at the scale of France\" and \"590 of the 780 French SARs\" included\n   - Small Agricultural Regions (SARs) are the spatial units\n\n2. **Primary focus = LULC prediction/simulation (central research question)**: ✗ NO\n   - Primary focus is **agricultural intensity allocation optimization** for reconciling food production and biodiversity\n   - Central research question: \"whether the optimization of allocation of intensity could improve food production and biodiversity outcomes\"\n   - LULC is NOT the primary focus; agricultural intensity is the decision variable\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison**: ✓ YES\n   - Three scenarios tested: intensification, extensification, and reallocation\n   - Quantitative comparison through optimization and efficiency frontier analysis\n\n4. **Spatial modeling with quantitative accuracy metrics**: ✓ PARTIAL\n   - Spatial modeling present (SAR-level allocation)\n   - Quantitative metrics reported (production in Gcal/ha, bird community indices)\n   - However, these are performance metrics for criteria optimization, not LULC accuracy metrics\n\n5. **Outputs include mapped LULC projections**: ✗ NO\n   - Outputs are agricultural intensity allocations, not LULC class predictions\n   - No land cover type mapping or classification outputs\n\n### Specific Exclusion Criteria Assessment:\n\n- **Species-specific/ecological focus (flora/fauna) unrelated to LULC**: ✓ APPLIES\n  - Primary focus is farmland bird community composition as a biodiversity performance criterion\n  - Agricultural intensity optimization is the means, not LULC prediction\n  - Bird communities are the central ecological focus\n\n- **No LULC prediction component**: ✓ APPLIES\n  - The paper does not predict or simulate future LULC classes or transitions\n  - It optimizes agricultural intensity allocation within existing land use patterns\n\n### Primary Focus Assessment:\nThe paper's primary objective is **optimization of agricultural intensity allocation** to achieve trade-offs between food production and biodiversity conservation. While the study operates at national scale with spatial modeling, LULC prediction is neither the primary focus nor a central component—it is entirely absent.\n\n---\n\n## Final Categorization: **EXCLUDED**\n\n**Justification:** \nThis paper fails multiple core inclusion criteria for LULC prediction research. While it implements national-scale spatial modeling with multiple scenarios and quantitative metrics, its primary focus is agricultural intensity optimization and biodiversity conservation, not LULC prediction or simulation. The paper contains no LULC class predictions, land cover change projections, or LULC mapping outputs. The ecological/species focus (farmland birds) is unrelated to LULC change analysis. Agricultural intensity (measured in €/ha of inputs) is fundamentally different from LULC classification or prediction. This is agricultural systems optimization research, not LULC prediction research.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:32:42.556049+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 9.402,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789655567-zS3aGUjS7h54QJ1Q0Ugu\",\"object\":\"chat.completion\",\"created\":1789655567,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis\\n\\n## Step 1: Determine if Paper is a Review Article\\n**Result: NOT A REVIEW** - This is an original research article (clearly labeled \\\"ORIGINAL ARTICLE\\\") presenting primary research with methods, simulations, and optimization modeling.\\n\\n## Step 2: Apply Categorization Flow for Non-Review Paper\\n\\nSince this is a non-review paper, I evaluate against inclusion/exclusion criteria.\\n\\n### Core Inclusion Criteria Assessment:\\n\\n1. **Explicit national-scale spatial implementation (entire country)**: ✓ YES\\n   - Study explicitly covers France at national scale\\n   - \\\"at the scale of France\\\" and \\\"590 of the 780 French SARs\\\" included\\n   - Small Agricultural Regions (SARs) are the spatial units\\n\\n2. **Primary focus = LULC prediction/simulation (central research question)**: ✗ NO\\n   - Primary focus is **agricultural intensity allocation optimization** for reconciling food production and biodiversity\\n   - Central research question: \\\"whether the optimization of allocation of intensity could improve food production and biodiversity outcomes\\\"\\n   - LULC is NOT the primary focus; agricultural intensity is the decision variable\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison**: ✓ YES\\n   - Three scenarios tested: intensification, extensification, and reallocation\\n   - Quantitative comparison through optimization and efficiency frontier analysis\\n\\n4. **Spatial modeling with quantitative accuracy metrics**: ✓ PARTIAL\\n   - Spatial modeling present (SAR-level allocation)\\n   - Quantitative metrics reported (production in Gcal/ha, bird community indices)\\n   - However, these are performance metrics for criteria optimization, not LULC accuracy metrics\\n\\n5. **Outputs include mapped LULC projections**: ✗ NO\\n   - Outputs are agricultural intensity allocations, not LULC class predictions\\n   - No land cover type mapping or classification outputs\\n\\n### Specific Exclusion Criteria Assessment:\\n\\n- **Species-specific/ecological focus (flora/fauna) unrelated to LULC**: ✓ APPLIES\\n  - Primary focus is farmland bird community composition as a biodiversity performance criterion\\n  - Agricultural intensity optimization is the means, not LULC prediction\\n  - Bird communities are the central ecological focus\\n\\n- **No LULC prediction component**: ✓ APPLIES\\n  - The paper does not predict or simulate future LULC classes or transitions\\n  - It optimizes agricultural intensity allocation within existing land use patterns\\n\\n### Primary Focus Assessment:\\nThe paper's primary objective is **optimization of agricultural intensity allocation** to achieve trade-offs between food production and biodiversity conservation. While the study operates at national scale with spatial modeling, LULC prediction is neither the primary focus nor a central component—it is entirely absent.\\n\\n---\\n\\n## Final Categorization: **EXCLUDED**\\n\\n**Justification:** \\nThis paper fails multiple core inclusion criteria for LULC prediction research. While it implements national-scale spatial modeling with multiple scenarios and quantitative metrics, its primary focus is agricultural intensity optimization and biodiversity conservation, not LULC prediction or simulation. The paper contains no LULC class predictions, land cover change projections, or LULC mapping outputs. The ecological/species focus (farmland birds) is unrelated to LULC change analysis. Agricultural intensity (measured in €/ha of inputs) is fundamentally different from LULC classification or prediction. This is agricultural systems optimization research, not LULC prediction research.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":5991,\"completion_tokens\":792,\"total_tokens\":6783,\"cost\":0.009951,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.009951,\"upstream_inference_prompt_cost\":0.005991,\"upstream_inference_completions_cost\":0.00396},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655567-zS3aGUjS7h54QJ1Q0Ugu",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 5991,
+        "completion_tokens": 792,
+        "total_tokens": 6783,
+        "cost": 0.009951,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.009951,
+          "upstream_inference_prompt_cost": 0.005991,
+          "upstream_inference_completions_cost": 0.00396
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 9.403,
+  "call_id": "DS__z1_C92ZJEIS__claude__r3",
+  "fingerprint": "424dbdb909c179e43b88c60807beb6a3934c657ac28dd43ed93ee7a71a19a7eb",
+  "paper_id": "z1_C92ZJEIS",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:32:51.958983+00:00",
+  "input_sha256": "23dc3cd226443edc63923ee3e569c4933474eed09fe6337ff63eb17bb6f7ac53",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

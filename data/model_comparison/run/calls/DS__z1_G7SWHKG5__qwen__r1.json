@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789653258-NmMHWXdlTpDp6qwaVub9",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0114738,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 13790,
+    "completion_tokens": 184,
+    "total_tokens": 13974,
+    "cost": 0.0114738,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0114738,
+      "upstream_inference_prompt_cost": 0.0107562,
+      "upstream_inference_completions_cost": 0.0007176
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a non-review research article that focuses on carbon storage (vegetation and soil) under climate change using a dynamic vegetation model (LPJ-GUESS). Although it simulates changes in tree species composition, its primary objective is not land use/land cover (LULC) prediction but rather assessing climate impacts on carbon stocks. It does not produce mapped LULC projections, nor does it treat LULC change as a central research question. Furthermore, the study assumes potential natural vegetation without human land use or management, and while it models species shifts, this is within an ecological/carbon cycle context, not a land cover classification or mapping framework. Thus, it fails core inclusion criterion #2 (Primary focus = LULC prediction) and meets exclusion criterion: \"Biomass/bioenergy/carbon studies without LULC change analysis.\")",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:54:13.356987+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 5.262,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789653258-NmMHWXdlTpDp6qwaVub9\",\"object\":\"chat.completion\",\"created\":1789653258,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a non-review research article that focuses on carbon storage (vegetation and soil) under climate change using a dynamic vegetation model (LPJ-GUESS). Although it simulates changes in tree species composition, its primary objective is not land use/land cover (LULC) prediction but rather assessing climate impacts on carbon stocks. It does not produce mapped LULC projections, nor does it treat LULC change as a central research question. Furthermore, the study assumes potential natural vegetation without human land use or management, and while it models species shifts, this is within an ecological/carbon cycle context, not a land cover classification or mapping framework. Thus, it fails core inclusion criterion #2 (Primary focus = LULC prediction) and meets exclusion criterion: \\\"Biomass/bioenergy/carbon studies without LULC change analysis.\\\")\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":13790,\"completion_tokens\":184,\"total_tokens\":13974,\"cost\":0.0114738,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0114738,\"upstream_inference_prompt_cost\":0.0107562,\"upstream_inference_completions_cost\":0.0007176},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653258-NmMHWXdlTpDp6qwaVub9",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 13790,
+        "completion_tokens": 184,
+        "total_tokens": 13974,
+        "cost": 0.0114738,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0114738,
+          "upstream_inference_prompt_cost": 0.0107562,
+          "upstream_inference_completions_cost": 0.0007176
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 5.262,
+  "call_id": "DS__z1_G7SWHKG5__qwen__r1",
+  "fingerprint": "87013f6a22230f231354ee63b4ec588e0951238700fdf426eeb04e7ce96333a5",
+  "paper_id": "z1_G7SWHKG5",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:54:18.618733+00:00",
+  "input_sha256": "bf1612e4632e07032a7a303a95b7ec15093309a6eab14d4793b9404d369990a6",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

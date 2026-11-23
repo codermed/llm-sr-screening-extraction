@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789653485-r3fufxP1GV5avIEOQXjo",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.021186,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 16191,
+    "completion_tokens": 999,
+    "total_tokens": 17190,
+    "cost": 0.021186,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.021186,
+      "upstream_inference_prompt_cost": 0.016191,
+      "upstream_inference_completions_cost": 0.004995
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land Suitability Classification for Rainfed Corn in Georgia\n\n## Initial Assessment\nThis is a **NON-REVIEW PAPER** - it presents original research with methodology, results, and conclusions based on empirical analysis.\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA CHECK:\n\n1. **Explicit national-scale spatial implementation (entire country)?**\n   - ❌ **FAILS** - Study focuses on Georgia STATE (USA), not national-scale. This is a regional/state-level analysis, not country-wide.\n\n2. **Primary focus = LULC prediction/simulation?**\n   - ⚠️ **PARTIAL** - Primary focus is land suitability (LS) classification for corn cultivation, not LULC prediction per se. LS classification is related to but distinct from LULC change prediction. The paper assesses \"suitability\" for growing corn, not actual predicted changes in land use/land cover across multiple classes.\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ✓ **PASSES** - Two emissions scenarios (RCP4.5 and RCP8.5) with temporal periods (2040-2070, 2070-2100) are compared quantitatively.\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ⚠️ **PARTIAL** - Spatial modeling is present (kriging, GIS analysis), but accuracy metrics for predictive modeling are limited. Validation uses historical data comparison (Mann-Whitney U, Kruskal-Wallis H tests) but not standard LULC prediction accuracy metrics (e.g., confusion matrices, Kappa statistics for change prediction).\n\n5. **Outputs include mapped LULC projections?**\n   - ❌ **FAILS** - Outputs show suitability CLASS MAPS, not LULC change projections. The maps show where corn \"would be suitable\" under future climate, not predicted actual changes in land use/land cover distribution or transitions between LULC classes.\n\n### SPECIFIC EXCLUSION CRITERIA CHECK:\n\n- ❌ **Local/regional scale focus** - Study explicitly focuses on Georgia state, not national scale\n- ⚠️ **No LULC prediction component** - The paper predicts suitability zones, not actual LULC changes or transitions\n- ⚠️ **Species-specific/ecological focus** - While focused on corn (single crop), this is more agricultural suitability assessment than LULC prediction\n\n### ADDITIONAL FULL TEXT VERIFICATION:\n\n- **Scale confirmation**: Methods clearly state \"state of Georgia, USA\" with county-level analysis (Figure 1a shows county boundaries). This is explicitly regional, not national.\n- **LULC vs. Suitability**: Paper develops \"land suitability classifications\" based on climate, topography, and soil factors. It does NOT predict actual LULC changes or quantify transitions between different land use/cover classes.\n- **Spatial outputs**: Maps show suitability classes (S1-N4), not predicted LULC categories or change rates.\n- **Quantitative metrics**: Historical validation uses statistical tests but not predictive accuracy metrics for LULC change.\n\n## Conclusion\n\nThis paper addresses **agricultural land suitability assessment** rather than **LULC prediction/change modeling**. While it includes spatial modeling and future climate scenarios, it fails the fundamental criterion of national-scale implementation and does not produce LULC change predictions (which would show transitions between land use categories across space and time).\n\n---\n\n**Final categorization: EXCLUDED**\n\n**Justification:** \n1. **Scale mismatch** - Regional (Georgia state) analysis, not national-scale implementation\n2. **Primary focus misalignment** - Land suitability classification for a single crop (corn), not LULC prediction across multiple land cover/use classes\n3. **Output type** - Maps show suitability zones, not predicted LULC distributions or change trajectories\n4. **Lacks LULC change component** - Does not quantify or spatially model transitions between different LULC categories; instead assesses where conditions are favorable for rainfed corn cultivation\n5. **Methodology** - Agricultural suitability modeling rather than LULC change prediction modeling",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:58:01.097753+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.356,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653485-r3fufxP1GV5avIEOQXjo\",\"object\":\"chat.completion\",\"created\":1789653485,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land Suitability Classification for Rainfed Corn in Georgia\\n\\n## Initial Assessment\\nThis is a **NON-REVIEW PAPER** - it presents original research with methodology, results, and conclusions based on empirical analysis.\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA CHECK:\\n\\n1. **Explicit national-scale spatial implementation (entire country)?**\\n   - ❌ **FAILS** - Study focuses on Georgia STATE (USA), not national-scale. This is a regional/state-level analysis, not country-wide.\\n\\n2. **Primary focus = LULC prediction/simulation?**\\n   - ⚠️ **PARTIAL** - Primary focus is land suitability (LS) classification for corn cultivation, not LULC prediction per se. LS classification is related to but distinct from LULC change prediction. The paper assesses \\\"suitability\\\" for growing corn, not actual predicted changes in land use/land cover across multiple classes.\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ✓ **PASSES** - Two emissions scenarios (RCP4.5 and RCP8.5) with temporal periods (2040-2070, 2070-2100) are compared quantitatively.\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ⚠️ **PARTIAL** - Spatial modeling is present (kriging, GIS analysis), but accuracy metrics for predictive modeling are limited. Validation uses historical data comparison (Mann-Whitney U, Kruskal-Wallis H tests) but not standard LULC prediction accuracy metrics (e.g., confusion matrices, Kappa statistics for change prediction).\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ❌ **FAILS** - Outputs show suitability CLASS MAPS, not LULC change projections. The maps show where corn \\\"would be suitable\\\" under future climate, not predicted actual changes in land use/land cover distribution or transitions between LULC classes.\\n\\n### SPECIFIC EXCLUSION CRITERIA CHECK:\\n\\n- ❌ **Local/regional scale focus** - Study explicitly focuses on Georgia state, not national scale\\n- ⚠️ **No LULC prediction component** - The paper predicts suitability zones, not actual LULC changes or transitions\\n- ⚠️ **Species-specific/ecological focus** - While focused on corn (single crop), this is more agricultural suitability assessment than LULC prediction\\n\\n### ADDITIONAL FULL TEXT VERIFICATION:\\n\\n- **Scale confirmation**: Methods clearly state \\\"state of Georgia, USA\\\" with county-level analysis (Figure 1a shows county boundaries). This is explicitly regional, not national.\\n- **LULC vs. Suitability**: Paper develops \\\"land suitability classifications\\\" based on climate, topography, and soil factors. It does NOT predict actual LULC changes or quantify transitions between different land use/cover classes.\\n- **Spatial outputs**: Maps show suitability classes (S1-N4), not predicted LULC categories or change rates.\\n- **Quantitative metrics**: Historical validation uses statistical tests but not predictive accuracy metrics for LULC change.\\n\\n## Conclusion\\n\\nThis paper addresses **agricultural land suitability assessment** rather than **LULC prediction/change modeling**. While it includes spatial modeling and future climate scenarios, it fails the fundamental criterion of national-scale implementation and does not produce LULC change predictions (which would show transitions between land use categories across space and time).\\n\\n---\\n\\n**Final categorization: EXCLUDED**\\n\\n**Justification:** \\n1. **Scale mismatch** - Regional (Georgia state) analysis, not national-scale implementation\\n2. **Primary focus misalignment** - Land suitability classification for a single crop (corn), not LULC prediction across multiple land cover/use classes\\n3. **Output type** - Maps show suitability zones, not predicted LULC distributions or change trajectories\\n4. **Lacks LULC change component** - Does not quantify or spatially model transitions between different LULC categories; instead assesses where conditions are favorable for rainfed corn cultivation\\n5. **Methodology** - Agricultural suitability modeling rather than LULC change prediction modeling\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":16191,\"completion_tokens\":999,\"total_tokens\":17190,\"cost\":0.021186,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.021186,\"upstream_inference_prompt_cost\":0.016191,\"upstream_inference_completions_cost\":0.004995},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653485-r3fufxP1GV5avIEOQXjo",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 16191,
+        "completion_tokens": 999,
+        "total_tokens": 17190,
+        "cost": 0.021186,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.021186,
+          "upstream_inference_prompt_cost": 0.016191,
+          "upstream_inference_completions_cost": 0.004995
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.357,
+  "call_id": "DS__z1_JA23DHFY__claude__r1",
+  "fingerprint": "9cf8c4a94d1be6c449d6b333088415d7cda0f6ba29899912b93c40583ce6ad98",
+  "paper_id": "z1_JA23DHFY",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:58:13.454207+00:00",
+  "input_sha256": "792e0ad810d4238de27dc8498843234f61ddf8095b83156a2c97c0cdd03918bf",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789654263-LtlffyQnfUMJ4W1en1On",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.016692,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12267,
+    "completion_tokens": 885,
+    "total_tokens": 13152,
+    "cost": 0.016692,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.016692,
+      "upstream_inference_prompt_cost": 0.012267,
+      "upstream_inference_completions_cost": 0.004425
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Soil Carbon Emission Factors for US Biofuel Production\n\n## Initial Assessment\n\n**Is this a review article?** No. This is a primary research paper presenting original modeling framework and results.\n\n---\n\n## Categorization Flow for Non-Review Paper\n\n### Core Inclusion Criteria Evaluation:\n\n1. **Explicit national-scale spatial implementation (entire country)?**\n   - **FAIL** - The study covers 40 of 48 conterminous US states. Eight states (Arizona, Maine, Montana, Nevada, New Mexico, Oregon, Utah, Wyoming) were explicitly excluded as unsuitable for biofuel feedstock production systems. This is NOT full national-scale coverage.\n\n2. **Primary focus = LULC prediction/simulation?**\n   - **FAIL** - The primary focus is soil carbon (C) emission factors (EFs) estimation for different biofuel feedstock scenarios. While land use change (LUC) scenarios are modeled, the central research question concerns soil carbon dynamics, not LULC prediction itself. The paper states: \"we developed a modeling framework to estimate these EFs at the state-level\" where EFs are \"C emissions per land area per year.\"\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - **PASS** - 32 LUC scenarios are modeled across four feedstock systems (corn-corn, corn with stover, switchgrass, miscanthus) with multiple tillage options and harvest rates, with quantitative results presented.\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - **PARTIAL/FAIL** - While spatial modeling is conducted at state-level, there are NO accuracy metrics reported (no validation against observed data, no accuracy assessments). Results are compared qualitatively to other studies but no quantitative accuracy validation is provided.\n\n5. **Outputs include mapped LULC projections?**\n   - **FAIL** - No LULC maps are produced. The paper projects soil carbon changes under assumed LUC scenarios but does NOT predict where LULC will occur or produce spatial LULC projections.\n\n### Exclusion Criteria Evaluation:\n\n- **Biomass/bioenergy/carbon studies without LULC change analysis?** - **TRIGGERED** - This is fundamentally a bioenergy carbon assessment study. While it models scenarios involving land use conversion, it does not predict LULC changes; rather, it assumes predetermined conversions and models their carbon consequences.\n\n- **No LULC prediction component?** - **TRIGGERED** - The paper does not predict what LULC will occur, where it will occur, or how land use patterns will change. It assumes hypothetical conversion scenarios and evaluates their soil carbon outcomes.\n\n---\n\n## Final Categorization\n\n**Final categorization: EXCLUDED**\n\n**Justification:** \n\nThis paper fails multiple core inclusion criteria for LULC prediction research:\n\n1. **Not national-scale**: Only 40 of 48 conterminous states are included; 8 states explicitly excluded.\n\n2. **Primary focus is NOT LULC prediction**: The research objective centers on soil carbon emission factors under biofuel production, not on predicting land use/land cover changes. LULC is treated as an input (assumed conversion scenarios) rather than the research output.\n\n3. **No LULC projections produced**: The paper models soil carbon consequences under hypothetical LUC scenarios but does not predict where, when, or how much LULC will actually occur. No spatial LULC maps are generated.\n\n4. **Meets exclusion criterion**: This is explicitly a \"Biomass/bioenergy/carbon study\" that evaluates carbon outcomes of assumed land conversions without performing LULC prediction/simulation itself.\n\nThe paper is valuable for biofuel lifecycle assessment but falls outside the scope of national-scale LULC prediction research.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:10:58.707397+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 11.946,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789654263-LtlffyQnfUMJ4W1en1On\",\"object\":\"chat.completion\",\"created\":1789654263,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Soil Carbon Emission Factors for US Biofuel Production\\n\\n## Initial Assessment\\n\\n**Is this a review article?** No. This is a primary research paper presenting original modeling framework and results.\\n\\n---\\n\\n## Categorization Flow for Non-Review Paper\\n\\n### Core Inclusion Criteria Evaluation:\\n\\n1. **Explicit national-scale spatial implementation (entire country)?**\\n   - **FAIL** - The study covers 40 of 48 conterminous US states. Eight states (Arizona, Maine, Montana, Nevada, New Mexico, Oregon, Utah, Wyoming) were explicitly excluded as unsuitable for biofuel feedstock production systems. This is NOT full national-scale coverage.\\n\\n2. **Primary focus = LULC prediction/simulation?**\\n   - **FAIL** - The primary focus is soil carbon (C) emission factors (EFs) estimation for different biofuel feedstock scenarios. While land use change (LUC) scenarios are modeled, the central research question concerns soil carbon dynamics, not LULC prediction itself. The paper states: \\\"we developed a modeling framework to estimate these EFs at the state-level\\\" where EFs are \\\"C emissions per land area per year.\\\"\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - **PASS** - 32 LUC scenarios are modeled across four feedstock systems (corn-corn, corn with stover, switchgrass, miscanthus) with multiple tillage options and harvest rates, with quantitative results presented.\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - **PARTIAL/FAIL** - While spatial modeling is conducted at state-level, there are NO accuracy metrics reported (no validation against observed data, no accuracy assessments). Results are compared qualitatively to other studies but no quantitative accuracy validation is provided.\\n\\n5. **Outputs include mapped LULC projections?**\\n   - **FAIL** - No LULC maps are produced. The paper projects soil carbon changes under assumed LUC scenarios but does NOT predict where LULC will occur or produce spatial LULC projections.\\n\\n### Exclusion Criteria Evaluation:\\n\\n- **Biomass/bioenergy/carbon studies without LULC change analysis?** - **TRIGGERED** - This is fundamentally a bioenergy carbon assessment study. While it models scenarios involving land use conversion, it does not predict LULC changes; rather, it assumes predetermined conversions and models their carbon consequences.\\n\\n- **No LULC prediction component?** - **TRIGGERED** - The paper does not predict what LULC will occur, where it will occur, or how land use patterns will change. It assumes hypothetical conversion scenarios and evaluates their soil carbon outcomes.\\n\\n---\\n\\n## Final Categorization\\n\\n**Final categorization: EXCLUDED**\\n\\n**Justification:** \\n\\nThis paper fails multiple core inclusion criteria for LULC prediction research:\\n\\n1. **Not national-scale**: Only 40 of 48 conterminous states are included; 8 states explicitly excluded.\\n\\n2. **Primary focus is NOT LULC prediction**: The research objective centers on soil carbon emission factors under biofuel production, not on predicting land use/land cover changes. LULC is treated as an input (assumed conversion scenarios) rather than the research output.\\n\\n3. **No LULC projections produced**: The paper models soil carbon consequences under hypothetical LUC scenarios but does not predict where, when, or how much LULC will actually occur. No spatial LULC maps are generated.\\n\\n4. **Meets exclusion criterion**: This is explicitly a \\\"Biomass/bioenergy/carbon study\\\" that evaluates carbon outcomes of assumed land conversions without performing LULC prediction/simulation itself.\\n\\nThe paper is valuable for biofuel lifecycle assessment but falls outside the scope of national-scale LULC prediction research.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12267,\"completion_tokens\":885,\"total_tokens\":13152,\"cost\":0.016692,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.016692,\"upstream_inference_prompt_cost\":0.012267,\"upstream_inference_completions_cost\":0.004425},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654263-LtlffyQnfUMJ4W1en1On",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 12267,
+        "completion_tokens": 885,
+        "total_tokens": 13152,
+        "cost": 0.016692,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.016692,
+          "upstream_inference_prompt_cost": 0.012267,
+          "upstream_inference_completions_cost": 0.004425
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 11.947,
+  "call_id": "DS__z1_FMZ57D8C__claude__r2",
+  "fingerprint": "cf88e26f07146f400ed4ec284ae44d123fe5837bbe3ee2b80cc85ae7d7cef476",
+  "paper_id": "z1_FMZ57D8C",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:11:10.653845+00:00",
+  "input_sha256": "ddaeb38e99bc4c8dce4fc37792fa908fa0efd19d7ead51fb0b73568140c3d61a",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

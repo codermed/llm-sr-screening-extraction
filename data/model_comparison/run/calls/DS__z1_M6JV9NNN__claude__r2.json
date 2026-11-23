@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789654381-nYgIVCeEU5VrvIrpjc2T",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.015879,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 9564,
+    "completion_tokens": 1263,
+    "total_tokens": 10827,
+    "cost": 0.015879,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.015879,
+      "upstream_inference_prompt_cost": 0.009564,
+      "upstream_inference_completions_cost": 0.006315
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Paper Categorization\n\n## STEP 1: Determine if Review Article\n**Result: NO** - This is a research article (stated as \"RESEARCH ARTICLE\" in header). It presents original modeling work using the RULEX agent-based model applied to a case study area.\n\n---\n\n## STEP 2: Apply Categorization Flow for Non-Review Papers\n\n### Evaluation Against Core Inclusion Criteria:\n\n**Criterion 1: Explicit national-scale spatial implementation (entire country)**\n- ❌ **FAILS** - Study is explicitly regional/local scale\n- Case study area: ~300 km² in Baakse Beek area, Province of Gelderland, Netherlands\n- Quote: \"case study area in the province of Gelderland\"\n- Not implemented at national level; focuses on single province/region\n\n**Criterion 2: Primary focus = LULC prediction/simulation**\n- ⚠️ **PARTIALLY** - Paper simulates land-use change through agent-based modeling\n- However, primary focus is on **land transactions and acquisition dynamics for nature conservation implementation**, not general LULC prediction\n- The model (RULEX) simulates land exchanges between farmers, NCOs, and estate owners\n- LULC change is a byproduct of simulating market transactions, not the primary research objective\n\n**Criterion 3: Implementation of ≥2 future scenarios with quantitative comparison**\n- ✅ **PASSES** - Two contrasting global change scenarios (GE and RC)\n- Quantitative comparisons provided (Figures 2-9, Tables 1)\n- Results show 26% difference in land purchases between scenarios\n\n**Criterion 4: Spatial modeling with quantitative accuracy metrics**\n- ⚠️ **PARTIAL** - Model produces spatial outputs (maps in Figures 4, 8)\n- However, no traditional accuracy metrics (e.g., accuracy assessment, validation against observed LULC)\n- Model was \"calibrated\" and underwent \"performance verification\" on 2001-2009 data (Bakker et al. 2014), but validation metrics not reported in this paper\n- Outputs are cumulative areas and spatial patterns, not accuracy-assessed LULC maps\n\n**Criterion 5: Outputs include mapped LULC projections**\n- ✅ **PASSES** - Figures 4 and 8 show spatial maps of \"new nature parcels in 2025\"\n- Maps display land-use change projections\n\n---\n\n### Evaluation Against Exclusion Criteria:\n\n**Exclusion Check 1: Local/regional/global scale focus (without national disaggregation)**\n- ❌ **MEETS EXCLUSION** - Study is explicitly local/regional scale\n- 300 km² case study area in single province\n- No national-level disaggregation or implementation\n\n**Exclusion Check 2: No LULC prediction component**\n- ✅ **PASSES** - LULC prediction is present\n\n**Exclusion Check 3: Species-specific/ecological focus unrelated to LULC**\n- ⚠️ **BORDERLINE** - Paper focuses heavily on ecological network implementation and nature conservation\n- While LULC change occurs, the primary driver and motivation is ecological/conservation-focused\n- Quote: \"Our aim in this paper is to simulate land transaction dynamics between NCOs and farmers, in order to test whether pre-deﬁned spatial planning targets can be achieved\"\n- Primary objective is testing feasibility of ecological network implementation, not predicting LULC patterns\n\n**Exclusion Check 4: Single-scenario projections**\n- ✅ **PASSES** - Two scenarios implemented\n\n---\n\n## STEP 3: Determine Primary Focus\n\n**Primary Research Question:** Can the National Ecological Network (NEN) implementation targets be achieved through land market dynamics under global change conditions?\n\n**Primary Objective:** Test feasibility of ecological network implementation by simulating land transactions between farmers and nature-conservation organizations under different socioeconomic and climate scenarios.\n\n**LULC Role:** LULC change is a **byproduct/output** of simulating land market transactions, not the central research objective. The paper uses LULC predictions (nature reserve expansion) as a means to evaluate ecological network feasibility.\n\n---\n\n## FINAL CATEGORIZATION\n\n**Final categorization: EXCLUDED**\n\n**Justification:**\n\n1. **Scale Mismatch (Critical):** Study operates at local/regional scale (300 km² case study in single Dutch province), failing the explicit national-scale implementation requirement. This is a mandatory inclusion criterion for this filter.\n\n2. **Primary Focus Mismatch:** While the paper includes LULC modeling and spatial projections, the primary research objective is evaluating **ecological network implementation feasibility through land market simulation**, not predicting LULC patterns. LULC change is instrumental to answering the conservation policy question, not the central research focus.\n\n3. **Exclusion Criterion Met:** Paper meets the \"Local/regional scale focus\" exclusion criterion without national-level disaggregation.\n\n4. **Secondary Concern:** Although two scenarios are modeled, accuracy metrics for LULC predictions are not reported in this paper (validation details referenced to Bakker et al. 2014).\n\nThe paper is a well-executed agent-based modeling study addressing an important policy question about nature conservation, but it does not meet the spatial scale and primary focus requirements for inclusion in a national-scale LULC prediction assessment.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:12:57.086380+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 14.279,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789654381-nYgIVCeEU5VrvIrpjc2T\",\"object\":\"chat.completion\",\"created\":1789654381,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Paper Categorization\\n\\n## STEP 1: Determine if Review Article\\n**Result: NO** - This is a research article (stated as \\\"RESEARCH ARTICLE\\\" in header). It presents original modeling work using the RULEX agent-based model applied to a case study area.\\n\\n---\\n\\n## STEP 2: Apply Categorization Flow for Non-Review Papers\\n\\n### Evaluation Against Core Inclusion Criteria:\\n\\n**Criterion 1: Explicit national-scale spatial implementation (entire country)**\\n- ❌ **FAILS** - Study is explicitly regional/local scale\\n- Case study area: ~300 km² in Baakse Beek area, Province of Gelderland, Netherlands\\n- Quote: \\\"case study area in the province of Gelderland\\\"\\n- Not implemented at national level; focuses on single province/region\\n\\n**Criterion 2: Primary focus = LULC prediction/simulation**\\n- ⚠️ **PARTIALLY** - Paper simulates land-use change through agent-based modeling\\n- However, primary focus is on **land transactions and acquisition dynamics for nature conservation implementation**, not general LULC prediction\\n- The model (RULEX) simulates land exchanges between farmers, NCOs, and estate owners\\n- LULC change is a byproduct of simulating market transactions, not the primary research objective\\n\\n**Criterion 3: Implementation of ≥2 future scenarios with quantitative comparison**\\n- ✅ **PASSES** - Two contrasting global change scenarios (GE and RC)\\n- Quantitative comparisons provided (Figures 2-9, Tables 1)\\n- Results show 26% difference in land purchases between scenarios\\n\\n**Criterion 4: Spatial modeling with quantitative accuracy metrics**\\n- ⚠️ **PARTIAL** - Model produces spatial outputs (maps in Figures 4, 8)\\n- However, no traditional accuracy metrics (e.g., accuracy assessment, validation against observed LULC)\\n- Model was \\\"calibrated\\\" and underwent \\\"performance verification\\\" on 2001-2009 data (Bakker et al. 2014), but validation metrics not reported in this paper\\n- Outputs are cumulative areas and spatial patterns, not accuracy-assessed LULC maps\\n\\n**Criterion 5: Outputs include mapped LULC projections**\\n- ✅ **PASSES** - Figures 4 and 8 show spatial maps of \\\"new nature parcels in 2025\\\"\\n- Maps display land-use change projections\\n\\n---\\n\\n### Evaluation Against Exclusion Criteria:\\n\\n**Exclusion Check 1: Local/regional/global scale focus (without national disaggregation)**\\n- ❌ **MEETS EXCLUSION** - Study is explicitly local/regional scale\\n- 300 km² case study area in single province\\n- No national-level disaggregation or implementation\\n\\n**Exclusion Check 2: No LULC prediction component**\\n- ✅ **PASSES** - LULC prediction is present\\n\\n**Exclusion Check 3: Species-specific/ecological focus unrelated to LULC**\\n- ⚠️ **BORDERLINE** - Paper focuses heavily on ecological network implementation and nature conservation\\n- While LULC change occurs, the primary driver and motivation is ecological/conservation-focused\\n- Quote: \\\"Our aim in this paper is to simulate land transaction dynamics between NCOs and farmers, in order to test whether pre-deﬁned spatial planning targets can be achieved\\\"\\n- Primary objective is testing feasibility of ecological network implementation, not predicting LULC patterns\\n\\n**Exclusion Check 4: Single-scenario projections**\\n- ✅ **PASSES** - Two scenarios implemented\\n\\n---\\n\\n## STEP 3: Determine Primary Focus\\n\\n**Primary Research Question:** Can the National Ecological Network (NEN) implementation targets be achieved through land market dynamics under global change conditions?\\n\\n**Primary Objective:** Test feasibility of ecological network implementation by simulating land transactions between farmers and nature-conservation organizations under different socioeconomic and climate scenarios.\\n\\n**LULC Role:** LULC change is a **byproduct/output** of simulating land market transactions, not the central research objective. The paper uses LULC predictions (nature reserve expansion) as a means to evaluate ecological network feasibility.\\n\\n---\\n\\n## FINAL CATEGORIZATION\\n\\n**Final categorization: EXCLUDED**\\n\\n**Justification:**\\n\\n1. **Scale Mismatch (Critical):** Study operates at local/regional scale (300 km² case study in single Dutch province), failing the explicit national-scale implementation requirement. This is a mandatory inclusion criterion for this filter.\\n\\n2. **Primary Focus Mismatch:** While the paper includes LULC modeling and spatial projections, the primary research objective is evaluating **ecological network implementation feasibility through land market simulation**, not predicting LULC patterns. LULC change is instrumental to answering the conservation policy question, not the central research focus.\\n\\n3. **Exclusion Criterion Met:** Paper meets the \\\"Local/regional scale focus\\\" exclusion criterion without national-level disaggregation.\\n\\n4. **Secondary Concern:** Although two scenarios are modeled, accuracy metrics for LULC predictions are not reported in this paper (validation details referenced to Bakker et al. 2014).\\n\\nThe paper is a well-executed agent-based modeling study addressing an important policy question about nature conservation, but it does not meet the spatial scale and primary focus requirements for inclusion in a national-scale LULC prediction assessment.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":9564,\"completion_tokens\":1263,\"total_tokens\":10827,\"cost\":0.015879,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.015879,\"upstream_inference_prompt_cost\":0.009564,\"upstream_inference_completions_cost\":0.006315},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654381-nYgIVCeEU5VrvIrpjc2T",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 9564,
+        "completion_tokens": 1263,
+        "total_tokens": 10827,
+        "cost": 0.015879,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.015879,
+          "upstream_inference_prompt_cost": 0.009564,
+          "upstream_inference_completions_cost": 0.006315
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 14.279,
+  "call_id": "DS__z1_M6JV9NNN__claude__r2",
+  "fingerprint": "53d3931ffafde19da92d10a2460fce0476fccce7c3c560a7fa71f5eb1a3d9027",
+  "paper_id": "z1_M6JV9NNN",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:13:11.365321+00:00",
+  "input_sha256": "8812d87fb51284332b9141926993705dd096033a7899aaa78f5d5dab186fe97a",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

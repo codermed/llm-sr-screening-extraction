@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653900-LueNqzgC1sS0sQiuAe7r",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0019236,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 16237,
+    "completion_tokens": 143,
+    "total_tokens": 16380,
+    "cost": 0.0019236,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 16000,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0019236,
+      "upstream_inference_prompt_cost": 0.0016948,
+      "upstream_inference_completions_cost": 0.0002288
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: OK (Justification: This is a non-review research paper focusing explicitly on national-scale spatial implementation of future land use and land cover (LULC) changes in Lithuania. The study applies Cellular Automata modeling to simulate multiple future scenarios (business as usual, urbanisation, land abandonment and afforestation, agriculture intensification) with mapped LULC projections to the year 2050. The model calibration and validation are quantitatively assessed (80% accuracy), and habitat quality impacts are evaluated spatially. The work includes spatially explicit modeling, quantitative accuracy metrics, and comparison of ≥2 future scenarios at the national scale, fully meeting all core inclusion criteria and none of the exclusion criteria.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:04:55.363623+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.924,
+      "raw_body": "\n         \n{\"id\":\"gen-1789653900-LueNqzgC1sS0sQiuAe7r\",\"object\":\"chat.completion\",\"created\":1789653900,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: This is a non-review research paper focusing explicitly on national-scale spatial implementation of future land use and land cover (LULC) changes in Lithuania. The study applies Cellular Automata modeling to simulate multiple future scenarios (business as usual, urbanisation, land abandonment and afforestation, agriculture intensification) with mapped LULC projections to the year 2050. The model calibration and validation are quantitatively assessed (80% accuracy), and habitat quality impacts are evaluated spatially. The work includes spatially explicit modeling, quantitative accuracy metrics, and comparison of ≥2 future scenarios at the national scale, fully meeting all core inclusion criteria and none of the exclusion criteria.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":16237,\"completion_tokens\":143,\"total_tokens\":16380,\"cost\":0.0019236,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":16000,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0019236,\"upstream_inference_prompt_cost\":0.0016948,\"upstream_inference_completions_cost\":0.0002288},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653900-LueNqzgC1sS0sQiuAe7r",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 16237,
+        "completion_tokens": 143,
+        "total_tokens": 16380,
+        "cost": 0.0019236,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 16000,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0019236,
+          "upstream_inference_prompt_cost": 0.0016948,
+          "upstream_inference_completions_cost": 0.0002288
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.925,
+  "call_id": "DS__z1_5XHKN2GZ__openai__r2",
+  "fingerprint": "9b2939f56593e266ad95c6471ffd961a825f715a2660c888cf6970234b87f827",
+  "paper_id": "z1_5XHKN2GZ",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:04:58.288123+00:00",
+  "input_sha256": "b5367beccda133727a47c6ebf05821a90b1b18fba03fdb6a6c405aeba581bb04",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

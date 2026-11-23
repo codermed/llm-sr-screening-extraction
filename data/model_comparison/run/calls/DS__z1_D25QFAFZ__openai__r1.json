@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789652704-nm84LC8m1tPRqG3UddtE",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0051032,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12174,
+    "completion_tokens": 146,
+    "total_tokens": 12320,
+    "cost": 0.0051032,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0051032,
+      "upstream_inference_prompt_cost": 0.0048696,
+      "upstream_inference_completions_cost": 0.0002336
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: OK (Justification: This original research article presents a spatially explicit land use change (LUC) modeling study conducted at the national scale for Italy. It introduces a modified CLUE-S model (LUC@CMCC) and performs an ensemble forecasting of 32 future scenarios for the year 2100, incorporating different climate, demographic, policy, spatial and temporal assumptions. The study explicitly includes multiple future scenarios with quantitative comparison, uses logistic regression with accuracy assessment (ROC/AUC), and outputs mapped LUC projections. The primary focus is on LUC prediction and simulation at the national scale with detailed multi-scale spatial analyses. Thus, it meets all core inclusion criteria and none of the exclusion criteria.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:44:59.188678+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.014,
+      "raw_body": "\n         \n{\"id\":\"gen-1789652704-nm84LC8m1tPRqG3UddtE\",\"object\":\"chat.completion\",\"created\":1789652704,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: This original research article presents a spatially explicit land use change (LUC) modeling study conducted at the national scale for Italy. It introduces a modified CLUE-S model (LUC@CMCC) and performs an ensemble forecasting of 32 future scenarios for the year 2100, incorporating different climate, demographic, policy, spatial and temporal assumptions. The study explicitly includes multiple future scenarios with quantitative comparison, uses logistic regression with accuracy assessment (ROC/AUC), and outputs mapped LUC projections. The primary focus is on LUC prediction and simulation at the national scale with detailed multi-scale spatial analyses. Thus, it meets all core inclusion criteria and none of the exclusion criteria.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12174,\"completion_tokens\":146,\"total_tokens\":12320,\"cost\":0.0051032,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0051032,\"upstream_inference_prompt_cost\":0.0048696,\"upstream_inference_completions_cost\":0.0002336},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652704-nm84LC8m1tPRqG3UddtE",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 12174,
+        "completion_tokens": 146,
+        "total_tokens": 12320,
+        "cost": 0.0051032,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0051032,
+          "upstream_inference_prompt_cost": 0.0048696,
+          "upstream_inference_completions_cost": 0.0002336
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.015,
+  "call_id": "DS__z1_D25QFAFZ__openai__r1",
+  "fingerprint": "dacddad318634e265ecea7e779fc27480e34cfa7e7cf438550094e4c758e8cf2",
+  "paper_id": "z1_D25QFAFZ",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:45:02.202948+00:00",
+  "input_sha256": "e3703b826419683f88a0f2079e76435585d5abd37dda2906e2a5f37ba4670692",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

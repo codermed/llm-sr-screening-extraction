@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789653175-s6zTMT16W3WnvJJi67AW",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.011093,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 5923,
+    "completion_tokens": 1034,
+    "total_tokens": 6957,
+    "cost": 0.011093,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.011093,
+      "upstream_inference_prompt_cost": 0.005923,
+      "upstream_inference_completions_cost": 0.00517
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis\n\n## Initial Determination\n**Is this a review article?** No. This is a research paper presenting original spatial analysis and modeling.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA (Non-Review Research Paper):\n\n1. **Explicit national-scale spatial implementation (entire country)**\n   - ✓ YES - Study area explicitly stated: \"entire geographical area of India with geo coordinate expression from 6°44'N to 35°30'N latitude and 68°07'E to 97°25'E longitude\"\n   - ✓ Full country coverage confirmed in methodology\n\n2. **Primary focus = LULC prediction/simulation (central research question)**\n   - ✗ NO - Primary focus is **vegetation health evaluation** using NDVI analysis, not LULC prediction\n   - The paper evaluates negative vegetation change trends across existing harmonized land cover categories\n   - LULC is used as a framework for analysis, not the prediction target\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison**\n   - ✓ PARTIAL - Climate anomaly predictions for 2030 using RCP 4.5 model are included\n   - ✗ However, only ONE climate scenario (RCP 4.5) is presented, not multiple scenarios for comparison\n   - No LULC transition scenarios modeled\n\n4. **Spatial modeling with quantitative accuracy metrics**\n   - ✗ NO - No accuracy assessment metrics reported for NDVI analysis\n   - No validation of climate projections\n   - Results presented as area estimates and percentages, not predictive model accuracy\n\n5. **Outputs include mapped LULC projections**\n   - ✗ NO - Outputs are:\n     - NDVI-based negative change maps (not LULC predictions)\n     - Forest fire distribution maps\n     - Invasive species hotspot maps\n     - Climate anomaly maps (temperature/rainfall, not LULC)\n   - No future LULC class distribution maps or transitions predicted\n\n### SPECIFIC EXCLUSION CRITERIA:\n\n- **Species-specific/ecological focus unrelated to LULC**: ✓ TRIGGERS EXCLUSION\n  - Paper focuses on vegetation health (NDVI), forest fires, invasive species distribution, and climate impacts\n  - Ecological assessment is primary objective, not LULC prediction\n  \n- **Remote sensing technical studies without predictive modeling**: ✓ PARTIAL TRIGGER\n  - NDVI analysis is observational (1982-2006 historical trend analysis)\n  - Climate predictions are climate model outputs, not LULC modeling\n\n- **Purely qualitative/historical analysis only**: ✓ PARTIAL TRIGGER\n  - NDVI analysis is entirely historical (1982-2006)\n  - Climate projections are secondary component, not LULC-focused\n\n---\n\n## Critical Assessment\n\n**What the paper actually does:**\n- Analyzes historical vegetation health trends (1982-2006) using NDVI\n- Maps forest fire incidence, invasive species hotspots\n- Overlays climate anomaly projections (2030) with existing land cover categories\n- Identifies vulnerable forest types to multiple stressors\n\n**What the paper does NOT do:**\n- Predict future LULC class distributions or transitions\n- Model LULC change scenarios\n- Provide quantitative LULC prediction accuracy metrics\n- Compare multiple LULC future scenarios\n\n**Primary research question:** \"What is the spatial pattern of vegetation health degradation and how do multiple stressors (fire, invasives, climate) interact across forest types?\" \n\n**Not:** \"How will LULC classes change spatially in the future?\"\n\n---\n\n## Final Categorization\n\n**Final categorization: EXCLUDED**\n\n**Justification:** This paper fails multiple core inclusion criteria for LULC prediction research. While it is a national-scale study with spatial modeling components, its primary focus is vegetation health evaluation and ecological vulnerability assessment, not LULC prediction or simulation. The paper uses existing harmonized land cover categories as an analytical framework but does not predict future LULC distributions, model LULC transitions, or implement multiple LULC scenarios. The temporal analysis is entirely historical (1982-2006), and climate projections, while included, are secondary outputs used to contextualize current ecological stress rather than to drive LULC change predictions. The work is fundamentally an ecological/remote sensing assessment study, not a LULC prediction modeling study.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:52:50.242747+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 11.589,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653175-s6zTMT16W3WnvJJi67AW\",\"object\":\"chat.completion\",\"created\":1789653175,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis\\n\\n## Initial Determination\\n**Is this a review article?** No. This is a research paper presenting original spatial analysis and modeling.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA (Non-Review Research Paper):\\n\\n1. **Explicit national-scale spatial implementation (entire country)**\\n   - ✓ YES - Study area explicitly stated: \\\"entire geographical area of India with geo coordinate expression from 6°44'N to 35°30'N latitude and 68°07'E to 97°25'E longitude\\\"\\n   - ✓ Full country coverage confirmed in methodology\\n\\n2. **Primary focus = LULC prediction/simulation (central research question)**\\n   - ✗ NO - Primary focus is **vegetation health evaluation** using NDVI analysis, not LULC prediction\\n   - The paper evaluates negative vegetation change trends across existing harmonized land cover categories\\n   - LULC is used as a framework for analysis, not the prediction target\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison**\\n   - ✓ PARTIAL - Climate anomaly predictions for 2030 using RCP 4.5 model are included\\n   - ✗ However, only ONE climate scenario (RCP 4.5) is presented, not multiple scenarios for comparison\\n   - No LULC transition scenarios modeled\\n\\n4. **Spatial modeling with quantitative accuracy metrics**\\n   - ✗ NO - No accuracy assessment metrics reported for NDVI analysis\\n   - No validation of climate projections\\n   - Results presented as area estimates and percentages, not predictive model accuracy\\n\\n5. **Outputs include mapped LULC projections**\\n   - ✗ NO - Outputs are:\\n     - NDVI-based negative change maps (not LULC predictions)\\n     - Forest fire distribution maps\\n     - Invasive species hotspot maps\\n     - Climate anomaly maps (temperature/rainfall, not LULC)\\n   - No future LULC class distribution maps or transitions predicted\\n\\n### SPECIFIC EXCLUSION CRITERIA:\\n\\n- **Species-specific/ecological focus unrelated to LULC**: ✓ TRIGGERS EXCLUSION\\n  - Paper focuses on vegetation health (NDVI), forest fires, invasive species distribution, and climate impacts\\n  - Ecological assessment is primary objective, not LULC prediction\\n  \\n- **Remote sensing technical studies without predictive modeling**: ✓ PARTIAL TRIGGER\\n  - NDVI analysis is observational (1982-2006 historical trend analysis)\\n  - Climate predictions are climate model outputs, not LULC modeling\\n\\n- **Purely qualitative/historical analysis only**: ✓ PARTIAL TRIGGER\\n  - NDVI analysis is entirely historical (1982-2006)\\n  - Climate projections are secondary component, not LULC-focused\\n\\n---\\n\\n## Critical Assessment\\n\\n**What the paper actually does:**\\n- Analyzes historical vegetation health trends (1982-2006) using NDVI\\n- Maps forest fire incidence, invasive species hotspots\\n- Overlays climate anomaly projections (2030) with existing land cover categories\\n- Identifies vulnerable forest types to multiple stressors\\n\\n**What the paper does NOT do:**\\n- Predict future LULC class distributions or transitions\\n- Model LULC change scenarios\\n- Provide quantitative LULC prediction accuracy metrics\\n- Compare multiple LULC future scenarios\\n\\n**Primary research question:** \\\"What is the spatial pattern of vegetation health degradation and how do multiple stressors (fire, invasives, climate) interact across forest types?\\\" \\n\\n**Not:** \\\"How will LULC classes change spatially in the future?\\\"\\n\\n---\\n\\n## Final Categorization\\n\\n**Final categorization: EXCLUDED**\\n\\n**Justification:** This paper fails multiple core inclusion criteria for LULC prediction research. While it is a national-scale study with spatial modeling components, its primary focus is vegetation health evaluation and ecological vulnerability assessment, not LULC prediction or simulation. The paper uses existing harmonized land cover categories as an analytical framework but does not predict future LULC distributions, model LULC transitions, or implement multiple LULC scenarios. The temporal analysis is entirely historical (1982-2006), and climate projections, while included, are secondary outputs used to contextualize current ecological stress rather than to drive LULC change predictions. The work is fundamentally an ecological/remote sensing assessment study, not a LULC prediction modeling study.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":5923,\"completion_tokens\":1034,\"total_tokens\":6957,\"cost\":0.011093,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.011093,\"upstream_inference_prompt_cost\":0.005923,\"upstream_inference_completions_cost\":0.00517},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653175-s6zTMT16W3WnvJJi67AW",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 5923,
+        "completion_tokens": 1034,
+        "total_tokens": 6957,
+        "cost": 0.011093,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.011093,
+          "upstream_inference_prompt_cost": 0.005923,
+          "upstream_inference_completions_cost": 0.00517
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 11.589,
+  "call_id": "DS__z1_SJMLMA6U__claude__r1",
+  "fingerprint": "2f095c5ca64421c2e44e56e41bb6ae54ee6415c2ed6936fe5557d42dcd0803a5",
+  "paper_id": "z1_SJMLMA6U",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:53:01.831844+00:00",
+  "input_sha256": "91f8fc7e66d33ad8cab61aa813c767bc219a8be59668a103c78d1ba77a39884e",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

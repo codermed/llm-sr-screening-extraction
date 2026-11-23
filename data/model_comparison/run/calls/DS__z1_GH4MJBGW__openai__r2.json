@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654074-4YxPW0D9OV1SA8Uk19Kx",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0017408,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 14092,
+    "completion_tokens": 181,
+    "total_tokens": 14273,
+    "cost": 0.0017408,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 13952,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0017408,
+      "upstream_inference_prompt_cost": 0.0014512,
+      "upstream_inference_completions_cost": 0.0002896
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This paper is not focused on land use/land cover (LULC) future prediction as its primary objective. Instead, it presents an integrated assessment of climate, land-use, energy, and water systems (CLEWS) with a primary emphasis on energy system modeling and interdependencies in Mauritius. While land-use is modeled, the focus is on energy system impacts and interlinkages rather than on spatially explicit national-scale LULC future prediction with quantitative accuracy metrics and mapped projections. The paper does not implement multiple future LULC scenarios with quantitative LULC prediction accuracy assessments. It is a case study of integrated resource modeling rather than a study focused on LULC scenario simulation and mapping. Therefore, it fails core inclusion criteria for LULC prediction-focused research and does not meet the criteria for review articles on LULC future prediction.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:07:49.393364+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.554,
+      "raw_body": "\n         \n{\"id\":\"gen-1789654074-4YxPW0D9OV1SA8Uk19Kx\",\"object\":\"chat.completion\",\"created\":1789654074,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This paper is not focused on land use/land cover (LULC) future prediction as its primary objective. Instead, it presents an integrated assessment of climate, land-use, energy, and water systems (CLEWS) with a primary emphasis on energy system modeling and interdependencies in Mauritius. While land-use is modeled, the focus is on energy system impacts and interlinkages rather than on spatially explicit national-scale LULC future prediction with quantitative accuracy metrics and mapped projections. The paper does not implement multiple future LULC scenarios with quantitative LULC prediction accuracy assessments. It is a case study of integrated resource modeling rather than a study focused on LULC scenario simulation and mapping. Therefore, it fails core inclusion criteria for LULC prediction-focused research and does not meet the criteria for review articles on LULC future prediction.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":14092,\"completion_tokens\":181,\"total_tokens\":14273,\"cost\":0.0017408,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":13952,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0017408,\"upstream_inference_prompt_cost\":0.0014512,\"upstream_inference_completions_cost\":0.0002896},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654074-4YxPW0D9OV1SA8Uk19Kx",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 14092,
+        "completion_tokens": 181,
+        "total_tokens": 14273,
+        "cost": 0.0017408,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 13952,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0017408,
+          "upstream_inference_prompt_cost": 0.0014512,
+          "upstream_inference_completions_cost": 0.0002896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.555,
+  "call_id": "DS__z1_GH4MJBGW__openai__r2",
+  "fingerprint": "84104e143e64a09b51858df1e4ff9ce3442a1eae78b437ce6f8625ab16f90d33",
+  "paper_id": "z1_GH4MJBGW",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:07:51.947551+00:00",
+  "input_sha256": "9c51d2f4aed05dbf1796358bfb112777a592ec001ae47b2299270681ca23203b",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

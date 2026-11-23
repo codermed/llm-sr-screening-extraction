@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653315-R9E2jKox8JmiZPbbWk97",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00319,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12088,
+    "completion_tokens": 124,
+    "total_tokens": 12212,
+    "cost": 0.00319,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00319,
+      "upstream_inference_prompt_cost": 0.00314288,
+      "upstream_inference_completions_cost": 4.712e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper's primary focus is species distribution modeling (SDM) for butterfly conservation, using LULC scenarios as input data. It does not have LULC prediction/simulation as its central research question. The LULC scenarios were implemented in a separate study (Bolliger et al., 2007; Rutherford et al., 2008) and are used here as exogenous drivers. The paper's core objective is to assess the impact of these pre-defined LULC changes on species occurrence, not to model or validate the LULC changes themselves.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:55:11.047121+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.475,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789653315-R9E2jKox8JmiZPbbWk97\",\"object\":\"chat.completion\",\"created\":1789653315,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper's primary focus is species distribution modeling (SDM) for butterfly conservation, using LULC scenarios as input data. It does not have LULC prediction/simulation as its central research question. The LULC scenarios were implemented in a separate study (Bolliger et al., 2007; Rutherford et al., 2008) and are used here as exogenous drivers. The paper's core objective is to assess the impact of these pre-defined LULC changes on species occurrence, not to model or validate the LULC changes themselves.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12088,\"completion_tokens\":124,\"total_tokens\":12212,\"cost\":0.00319,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00319,\"upstream_inference_prompt_cost\":0.00314288,\"upstream_inference_completions_cost\":0.00004712},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653315-R9E2jKox8JmiZPbbWk97",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 12088,
+        "completion_tokens": 124,
+        "total_tokens": 12212,
+        "cost": 0.00319,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00319,
+          "upstream_inference_prompt_cost": 0.00314288,
+          "upstream_inference_completions_cost": 4.712e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.475,
+  "call_id": "DS__z1_BKCJ9DJR__deepseek__r1",
+  "fingerprint": "0772b3b5f2f327445da5e97a76aa587fa5aad7e4c067119d1b0294ec59bedf9b",
+  "paper_id": "z1_BKCJ9DJR",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:55:15.522125+00:00",
+  "input_sha256": "78cf2f3b8e04b3e1cd2fe37f14f134fdbf1d3dea6b1de4388622c8921da9705d",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

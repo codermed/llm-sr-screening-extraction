@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653710-FTyKJRTVisk95Fuse2RA",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00274422,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 9650,
+    "completion_tokens": 619,
+    "total_tokens": 10269,
+    "cost": 0.00274422,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00274422,
+      "upstream_inference_prompt_cost": 0.002509,
+      "upstream_inference_completions_cost": 0.00023522
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: Non-review research paper with explicit national-scale LULC prediction for multiple SAARC countries, implementing four future climate scenarios (RCPs), using spatial MLP-NN modeling with quantitative accuracy metrics (AUC/TOC), and producing mapped projections of Agriculture, Forestry and Other Land Use change for 2050.)\n\n**Analysis Breakdown:**\n\n1.  **Review Article Check:** This is **not** a review article. It is an original research paper presenting a new modeling application and its results.\n\n2.  **Inclusion/Exclusion Criteria Evaluation (Non-Review Paper):**\n    *   **CORE INCLUSION CRITERIA (ALL MET):**\n        *   ✅ **National-scale spatial implementation:** The study explicitly models and projects LULC for the eight sovereign nations of the SAARC region (Afghanistan, Bangladesh, Bhutan, India, Nepal, Maldives, Pakistan, Sri Lanka). The methodology and results are presented for this multinational, national-scale set.\n        *   ✅ **Primary focus = LULC prediction:** The central research question is to project future Agriculture, Forestry and Other Land Use (AFOLU) for the year 2050 using a multilayer perceptron neural network (MLP-NN) model.\n        *   ✅ **≥2 future scenarios with comparison:** The study implements and compares four distinct future climate scenarios (RCP 2.6, RCP 4.5, RCP 6.0, RCP 8.5).\n        *   ✅ **Spatial modeling with quantitative metrics:** It uses MLP-NN, a spatial modeling technique. Model accuracy is quantitatively assessed using the Total Operating Characteristic (TOC) and Area Under the Curve (AUC), reporting values of 0.56 (2007) and 0.87 (2016).\n        *   ✅ **Outputs include mapped LULC projections:** Figures 8 and 9 present the spatially explicit AFOLU projection maps for 2050 under each RCP scenario.\n\n    *   **EXCLUSION CRITERIA (NONE MET):**\n        *   ❌ Not global/regional without national disaggregation (results are given per nation).\n        *   ❌ Not lacking LULC prediction (this is the core).\n        *   ❌ Not species-specific/ecological.\n        *   ❌ Not an economic model without spatial outputs.\n        *   ❌ Not a methodological paper without application (method is applied).\n        *   ❌ Not purely qualitative/historical (has future projections).\n        *   ❌ Not a remote sensing technical study without predictive modeling (RS data is input for prediction).\n        *   ❌ Not single-scenario (uses four scenarios).\n\n3.  **Primary Focus Determination:** The primary objective is unequivocally **LULC prediction** (\"We test the application of the multilayer perceptron neural network... to project the future AFOLU\"). Therefore, it is categorized as **'OK'**.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:01:45.410753+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 22.183,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653710-FTyKJRTVisk95Fuse2RA\",\"object\":\"chat.completion\",\"created\":1789653710,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: Non-review research paper with explicit national-scale LULC prediction for multiple SAARC countries, implementing four future climate scenarios (RCPs), using spatial MLP-NN modeling with quantitative accuracy metrics (AUC/TOC), and producing mapped projections of Agriculture, Forestry and Other Land Use change for 2050.)\\n\\n**Analysis Breakdown:**\\n\\n1.  **Review Article Check:** This is **not** a review article. It is an original research paper presenting a new modeling application and its results.\\n\\n2.  **Inclusion/Exclusion Criteria Evaluation (Non-Review Paper):**\\n    *   **CORE INCLUSION CRITERIA (ALL MET):**\\n        *   ✅ **National-scale spatial implementation:** The study explicitly models and projects LULC for the eight sovereign nations of the SAARC region (Afghanistan, Bangladesh, Bhutan, India, Nepal, Maldives, Pakistan, Sri Lanka). The methodology and results are presented for this multinational, national-scale set.\\n        *   ✅ **Primary focus = LULC prediction:** The central research question is to project future Agriculture, Forestry and Other Land Use (AFOLU) for the year 2050 using a multilayer perceptron neural network (MLP-NN) model.\\n        *   ✅ **≥2 future scenarios with comparison:** The study implements and compares four distinct future climate scenarios (RCP 2.6, RCP 4.5, RCP 6.0, RCP 8.5).\\n        *   ✅ **Spatial modeling with quantitative metrics:** It uses MLP-NN, a spatial modeling technique. Model accuracy is quantitatively assessed using the Total Operating Characteristic (TOC) and Area Under the Curve (AUC), reporting values of 0.56 (2007) and 0.87 (2016).\\n        *   ✅ **Outputs include mapped LULC projections:** Figures 8 and 9 present the spatially explicit AFOLU projection maps for 2050 under each RCP scenario.\\n\\n    *   **EXCLUSION CRITERIA (NONE MET):**\\n        *   ❌ Not global/regional without national disaggregation (results are given per nation).\\n        *   ❌ Not lacking LULC prediction (this is the core).\\n        *   ❌ Not species-specific/ecological.\\n        *   ❌ Not an economic model without spatial outputs.\\n        *   ❌ Not a methodological paper without application (method is applied).\\n        *   ❌ Not purely qualitative/historical (has future projections).\\n        *   ❌ Not a remote sensing technical study without predictive modeling (RS data is input for prediction).\\n        *   ❌ Not single-scenario (uses four scenarios).\\n\\n3.  **Primary Focus Determination:** The primary objective is unequivocally **LULC prediction** (\\\"We test the application of the multilayer perceptron neural network... to project the future AFOLU\\\"). Therefore, it is categorized as **'OK'**.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":9650,\"completion_tokens\":619,\"total_tokens\":10269,\"cost\":0.00274422,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00274422,\"upstream_inference_prompt_cost\":0.002509,\"upstream_inference_completions_cost\":0.00023522},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653710-FTyKJRTVisk95Fuse2RA",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 9650,
+        "completion_tokens": 619,
+        "total_tokens": 10269,
+        "cost": 0.00274422,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00274422,
+          "upstream_inference_prompt_cost": 0.002509,
+          "upstream_inference_completions_cost": 0.00023522
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 22.183,
+  "call_id": "DS__z1_U4VVEYKW__deepseek__r2",
+  "fingerprint": "2c4560289fe4452602626e6ed6c3026ac5a94b1ef1ce3c12b206c659fc80ae3e",
+  "paper_id": "z1_U4VVEYKW",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:02:07.593700+00:00",
+  "input_sha256": "e276eceeaeaed4eccbc48e8acc7d015df2fe426d3fb0a8af639ffcbad69bf8cc",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789655178-tGnizNQ8SM4G5AGOFtbk",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0084201,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10050,
+    "completion_tokens": 149,
+    "total_tokens": 10199,
+    "cost": 0.0084201,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0084201,
+      "upstream_inference_prompt_cost": 0.007839,
+      "upstream_inference_completions_cost": 0.0005811
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED  \n(Justification: The paper is explicitly identified as a \"systematic review\" (ORIGINAL ARTICLE but described as a \"systematic review\" in the abstract and methodology) synthesizing case studies on historical land use and landscape pattern transformation in global mountains from the 1850s to the 2020s. It does not focus on or include any future LULC prediction, modeling, scenarios, or projections. While it discusses past transitions and trends, there is no predictive component—no future scenarios, no spatial modeling of future LULC, and no quantitative accuracy metrics for predictions. Per instructions, reviews not focused on LULC future prediction are categorized as 'EXCLUDED'.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:26:13.480751+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.085,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789655178-tGnizNQ8SM4G5AGOFtbk\",\"object\":\"chat.completion\",\"created\":1789655178,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED  \\n(Justification: The paper is explicitly identified as a \\\"systematic review\\\" (ORIGINAL ARTICLE but described as a \\\"systematic review\\\" in the abstract and methodology) synthesizing case studies on historical land use and landscape pattern transformation in global mountains from the 1850s to the 2020s. It does not focus on or include any future LULC prediction, modeling, scenarios, or projections. While it discusses past transitions and trends, there is no predictive component—no future scenarios, no spatial modeling of future LULC, and no quantitative accuracy metrics for predictions. Per instructions, reviews not focused on LULC future prediction are categorized as 'EXCLUDED'.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10050,\"completion_tokens\":149,\"total_tokens\":10199,\"cost\":0.0084201,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0084201,\"upstream_inference_prompt_cost\":0.007839,\"upstream_inference_completions_cost\":0.0005811},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655178-tGnizNQ8SM4G5AGOFtbk",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 10050,
+        "completion_tokens": 149,
+        "total_tokens": 10199,
+        "cost": 0.0084201,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0084201,
+          "upstream_inference_prompt_cost": 0.007839,
+          "upstream_inference_completions_cost": 0.0005811
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.086,
+  "call_id": "DS__z1_8MM7QHYK__qwen__r3",
+  "fingerprint": "e6a995fef68a8259545bcadcca4f7dd94d320bc4f3a6873cfd1f6010c6f128f8",
+  "paper_id": "z1_8MM7QHYK",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:26:17.566350+00:00",
+  "input_sha256": "9cb025528fd19bca72ae09fca502097ed024dcf61a8b4b6b128013cc7f5d16bc",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

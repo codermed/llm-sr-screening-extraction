@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789655791-a8YGCpql01hiE7qPyjCu",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00689286,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 8047,
+    "completion_tokens": 158,
+    "total_tokens": 8205,
+    "cost": 0.00689286,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00689286,
+      "upstream_inference_prompt_cost": 0.00627666,
+      "upstream_inference_completions_cost": 0.0006162
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: The paper presents original research with a primary focus on LULC prediction for continental Portugal—a national-scale spatial implementation. It explicitly models and projects land use/cover changes from 1980 to 2040 using Markov chains combined with cellular automata. The study implements multiple future scenarios (Environmental Sustainability, GDP-driven, Desertification) alongside a Business-as-Usual baseline and quantitatively compares them (e.g., Table 7, Figures 5–6). Spatially explicit mapped projections are produced (Figure 4), and quantitative validation metrics are reported (9.7% quantity disagreement, 22.4% allocation disagreement). All core inclusion criteria are met, and none of the exclusion criteria apply.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:36:26.701009+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.583,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789655791-a8YGCpql01hiE7qPyjCu\",\"object\":\"chat.completion\",\"created\":1789655791,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: The paper presents original research with a primary focus on LULC prediction for continental Portugal—a national-scale spatial implementation. It explicitly models and projects land use/cover changes from 1980 to 2040 using Markov chains combined with cellular automata. The study implements multiple future scenarios (Environmental Sustainability, GDP-driven, Desertification) alongside a Business-as-Usual baseline and quantitatively compares them (e.g., Table 7, Figures 5–6). Spatially explicit mapped projections are produced (Figure 4), and quantitative validation metrics are reported (9.7% quantity disagreement, 22.4% allocation disagreement). All core inclusion criteria are met, and none of the exclusion criteria apply.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":8047,\"completion_tokens\":158,\"total_tokens\":8205,\"cost\":0.00689286,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00689286,\"upstream_inference_prompt_cost\":0.00627666,\"upstream_inference_completions_cost\":0.0006162},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655791-a8YGCpql01hiE7qPyjCu",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 8047,
+        "completion_tokens": 158,
+        "total_tokens": 8205,
+        "cost": 0.00689286,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00689286,
+          "upstream_inference_prompt_cost": 0.00627666,
+          "upstream_inference_completions_cost": 0.0006162
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.584,
+  "call_id": "DS__z1_MRT7BTZU__qwen__r3",
+  "fingerprint": "761f23334fac5bb7fb97a7ae083a24bf9a4b1f4745e365e2c2b97f0c1bd309ba",
+  "paper_id": "z1_MRT7BTZU",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:36:31.284892+00:00",
+  "input_sha256": "d061a2d47bdb53f2c3ce396cf31a5e9bb95a122e55027da0323e8ed46e6e7996",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

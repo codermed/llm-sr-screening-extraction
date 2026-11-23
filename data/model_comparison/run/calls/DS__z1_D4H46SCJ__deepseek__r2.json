@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789654709-7VK42bFChdaPmSmef3op",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00300364,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 11323,
+    "completion_tokens": 157,
+    "total_tokens": 11480,
+    "cost": 0.00300364,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00300364,
+      "upstream_inference_prompt_cost": 0.00294398,
+      "upstream_inference_completions_cost": 5.966e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper's primary focus is on modeling ecosystem services (carbon sequestration, timber supply, habitat stability) under climate change, using a Dynamic Global Vegetation Model (DGVM). While it uses land use projections as an input scenario and produces mapped vegetation outputs, the core research question is not LULC prediction. The LULC data is an externally provided input used to assess its impact on ecosystem services, not a predicted output of the study itself. The paper does not implement or validate a dedicated LULC prediction model, nor does it report quantitative accuracy metrics for LULC prediction. It fails the core inclusion criteria of having LULC prediction as its primary focus and providing spatial modeling with quantitative accuracy metrics for LULC.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:18:24.748537+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 5.195,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789654709-7VK42bFChdaPmSmef3op\",\"object\":\"chat.completion\",\"created\":1789654709,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper's primary focus is on modeling ecosystem services (carbon sequestration, timber supply, habitat stability) under climate change, using a Dynamic Global Vegetation Model (DGVM). While it uses land use projections as an input scenario and produces mapped vegetation outputs, the core research question is not LULC prediction. The LULC data is an externally provided input used to assess its impact on ecosystem services, not a predicted output of the study itself. The paper does not implement or validate a dedicated LULC prediction model, nor does it report quantitative accuracy metrics for LULC prediction. It fails the core inclusion criteria of having LULC prediction as its primary focus and providing spatial modeling with quantitative accuracy metrics for LULC.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":11323,\"completion_tokens\":157,\"total_tokens\":11480,\"cost\":0.00300364,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00300364,\"upstream_inference_prompt_cost\":0.00294398,\"upstream_inference_completions_cost\":0.00005966},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654709-7VK42bFChdaPmSmef3op",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 11323,
+        "completion_tokens": 157,
+        "total_tokens": 11480,
+        "cost": 0.00300364,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00300364,
+          "upstream_inference_prompt_cost": 0.00294398,
+          "upstream_inference_completions_cost": 5.966e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 5.195,
+  "call_id": "DS__z1_D4H46SCJ__deepseek__r2",
+  "fingerprint": "449afd24b8f0a64a15705a25094990821117014b800d085a7f76046f6d652256",
+  "paper_id": "z1_D4H46SCJ",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:18:29.943478+00:00",
+  "input_sha256": "830914e1cdf8b0bd500d4172c6c3a10eb4053a87479d5890d920b894332a3673",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

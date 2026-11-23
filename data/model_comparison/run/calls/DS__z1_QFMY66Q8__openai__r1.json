@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653291-Zs3YB91mvpqEaL5f6I23",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.004778,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 11461,
+    "completion_tokens": 121,
+    "total_tokens": 11582,
+    "cost": 0.004778,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004778,
+      "upstream_inference_prompt_cost": 0.0045844,
+      "upstream_inference_completions_cost": 0.0001936
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: The study focuses on the impact of scale variation on the behavior of a cellular automata model for land use change modeling primarily at regional (county and province) scales within China. It does not present an explicit national-scale spatial implementation covering an entire country, nor does it implement multiple future scenarios with quantitative comparison. The study evaluates model precision and algorithm expression but does not provide national-level future land use projections or multiple scenario simulations. Therefore, it fails the core inclusion criteria requiring explicit national-scale implementation and scenario-based future LULC prediction with quantitative accuracy metrics.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:54:46.265349+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.312,
+      "raw_body": "\n         \n{\"id\":\"gen-1789653291-Zs3YB91mvpqEaL5f6I23\",\"object\":\"chat.completion\",\"created\":1789653291,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The study focuses on the impact of scale variation on the behavior of a cellular automata model for land use change modeling primarily at regional (county and province) scales within China. It does not present an explicit national-scale spatial implementation covering an entire country, nor does it implement multiple future scenarios with quantitative comparison. The study evaluates model precision and algorithm expression but does not provide national-level future land use projections or multiple scenario simulations. Therefore, it fails the core inclusion criteria requiring explicit national-scale implementation and scenario-based future LULC prediction with quantitative accuracy metrics.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":11461,\"completion_tokens\":121,\"total_tokens\":11582,\"cost\":0.004778,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.004778,\"upstream_inference_prompt_cost\":0.0045844,\"upstream_inference_completions_cost\":0.0001936},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653291-Zs3YB91mvpqEaL5f6I23",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 11461,
+        "completion_tokens": 121,
+        "total_tokens": 11582,
+        "cost": 0.004778,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.004778,
+          "upstream_inference_prompt_cost": 0.0045844,
+          "upstream_inference_completions_cost": 0.0001936
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.313,
+  "call_id": "DS__z1_QFMY66Q8__openai__r1",
+  "fingerprint": "6a4e10c633e81213b9e5201e096c9bc664c222aacbc73f00922cf2cb995612ea",
+  "paper_id": "z1_QFMY66Q8",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:54:48.577727+00:00",
+  "input_sha256": "f365f86df6cd0a1521e3822029cb4267ed1af1113ff4c6a71607e8d256dbe570",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789652977-frupHRgU4cWGE6NsNfun",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.021693,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 16178,
+    "completion_tokens": 1103,
+    "total_tokens": 17281,
+    "cost": 0.021693,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.021693,
+      "upstream_inference_prompt_cost": 0.016178,
+      "upstream_inference_completions_cost": 0.005515
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land Use/Cover Prediction in Romania\n\n## Initial Assessment\n\n**Is this a review article?** NO - This is a research paper presenting original modeling work using CLUE-S simulation.\n\n---\n\n## Non-Review Paper Evaluation Against Inclusion Criteria\n\n### CORE INCLUSION CRITERIA CHECK:\n\n**1. Explicit national-scale spatial implementation (entire country)?**\n✓ YES - Study explicitly covers Romania at national level, disaggregated into 8 Development Regions. Methodology section states: \"assessment of the past changes in the agricultural land use pattern during the 1990–2006 period and to simulate future changes (2007–2050)\" at \"regional-level (Development Regions)\" across the entire country.\n\n**2. Primary focus = LULC prediction/simulation?**\n✓ YES - Central research question explicitly stated: \"aims at analysing the main future land use/cover change flows related to agricultural lands\" using CLUE-S model for 2007-2050 projections.\n\n**3. Implementation of ≥2 future scenarios with quantitative comparison?**\n✓ YES - Two distinct scenarios implemented:\n   - S1: Based on 1990-2000 change rates\n   - S2: Based on 2000-2006 change rates\n   - Table 2 and Table 4 provide quantitative comparisons (ha, percentages)\n\n**4. Spatial modeling with quantitative accuracy metrics?**\n✓ YES - Multiple accuracy metrics reported:\n   - Overall Accuracy (OA): 85.7% (S1), 86.1% (S2)\n   - Kappa index: 0.8 (S1), 0.82 (S2)\n   - Producer's Accuracy (PA) and User's Accuracy (UA) for individual classes\n   - ROC (AUC) values for logistic regression models (0.60-0.91)\n   - Change rates in hectares and percentages\n\n**5. Outputs include mapped LULC projections?**\n✓ YES - Figure 5b shows predicted agricultural flows; Figure 6 shows comparative graphics of predicted flows by landform units; text references \"predicted maps\" for 2050.\n\n---\n\n### EXCLUSION CRITERIA CHECK:\n\n**Global-scale without national disaggregation?** NO - National scale with regional disaggregation ✓\n\n**Local/regional/global/transboundary focus?** NO - National scale ✓\n\n**No LULC prediction component?** NO - LULC prediction is primary focus ✓\n\n**Species-specific/ecological focus unrelated to LULC?** NO - Agricultural land use classes are the focus ✓\n\n**Economic/urban models lacking spatially explicit LULC outputs?** NO - Spatially explicit CLUE-S model with mapped outputs ✓\n\n**Biomass/bioenergy/carbon studies without LULC change analysis?** NO - LULC change is central ✓\n\n**Methodological paper without application?** NO - Applied to Romania ✓\n\n**Purely qualitative/historical only?** NO - Includes future projections (2007-2050) ✓\n\n**Remote sensing technical studies without predictive modeling?** NO - Includes predictive modeling ✓\n\n**Single-scenario \"business-as-usual\"?** NO - Two contrasting scenarios ✓\n\n---\n\n## Additional Full Text Verification:\n\n- **Scale claims verified:** Methodology clearly states Development Regions analysis; results disaggregated by relief units\n- **Quantitative metrics:** Extensively reported (Tables 2, 3, 4; accuracy assessments)\n- **Spatial explicitness:** CLUE-S is inherently spatially explicit; raster-based at 500m resolution\n- **Temporal scope:** Past (1990-2006) and future (2007-2050)\n- **Model calibration:** Logistic regression with 18 explanatory variables; conversion elasticity and transition sequences defined\n\n---\n\n## Final Categorization: **OK**\n\n**Justification:** This paper meets ALL core inclusion criteria for a national-scale LULC prediction study:\n1. Explicit national implementation across Romania with regional disaggregation\n2. Primary research focus on LULC prediction/simulation (agricultural land use flows)\n3. Two contrasting future scenarios (S1 and S2) with quantitative comparisons\n4. Spatially explicit CLUE-S modeling with comprehensive accuracy metrics (OA, Kappa, AUC, PA, UA)\n5. Mapped projections of agricultural flows for 2050\n6. Passes all exclusion criteria\n\nThe paper represents a rigorous application of CLUE-S modeling to national-scale LULC prediction with multiple validation approaches.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:49:32.448104+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 10.727,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789652977-frupHRgU4cWGE6NsNfun\",\"object\":\"chat.completion\",\"created\":1789652977,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land Use/Cover Prediction in Romania\\n\\n## Initial Assessment\\n\\n**Is this a review article?** NO - This is a research paper presenting original modeling work using CLUE-S simulation.\\n\\n---\\n\\n## Non-Review Paper Evaluation Against Inclusion Criteria\\n\\n### CORE INCLUSION CRITERIA CHECK:\\n\\n**1. Explicit national-scale spatial implementation (entire country)?**\\n✓ YES - Study explicitly covers Romania at national level, disaggregated into 8 Development Regions. Methodology section states: \\\"assessment of the past changes in the agricultural land use pattern during the 1990–2006 period and to simulate future changes (2007–2050)\\\" at \\\"regional-level (Development Regions)\\\" across the entire country.\\n\\n**2. Primary focus = LULC prediction/simulation?**\\n✓ YES - Central research question explicitly stated: \\\"aims at analysing the main future land use/cover change flows related to agricultural lands\\\" using CLUE-S model for 2007-2050 projections.\\n\\n**3. Implementation of ≥2 future scenarios with quantitative comparison?**\\n✓ YES - Two distinct scenarios implemented:\\n   - S1: Based on 1990-2000 change rates\\n   - S2: Based on 2000-2006 change rates\\n   - Table 2 and Table 4 provide quantitative comparisons (ha, percentages)\\n\\n**4. Spatial modeling with quantitative accuracy metrics?**\\n✓ YES - Multiple accuracy metrics reported:\\n   - Overall Accuracy (OA): 85.7% (S1), 86.1% (S2)\\n   - Kappa index: 0.8 (S1), 0.82 (S2)\\n   - Producer's Accuracy (PA) and User's Accuracy (UA) for individual classes\\n   - ROC (AUC) values for logistic regression models (0.60-0.91)\\n   - Change rates in hectares and percentages\\n\\n**5. Outputs include mapped LULC projections?**\\n✓ YES - Figure 5b shows predicted agricultural flows; Figure 6 shows comparative graphics of predicted flows by landform units; text references \\\"predicted maps\\\" for 2050.\\n\\n---\\n\\n### EXCLUSION CRITERIA CHECK:\\n\\n**Global-scale without national disaggregation?** NO - National scale with regional disaggregation ✓\\n\\n**Local/regional/global/transboundary focus?** NO - National scale ✓\\n\\n**No LULC prediction component?** NO - LULC prediction is primary focus ✓\\n\\n**Species-specific/ecological focus unrelated to LULC?** NO - Agricultural land use classes are the focus ✓\\n\\n**Economic/urban models lacking spatially explicit LULC outputs?** NO - Spatially explicit CLUE-S model with mapped outputs ✓\\n\\n**Biomass/bioenergy/carbon studies without LULC change analysis?** NO - LULC change is central ✓\\n\\n**Methodological paper without application?** NO - Applied to Romania ✓\\n\\n**Purely qualitative/historical only?** NO - Includes future projections (2007-2050) ✓\\n\\n**Remote sensing technical studies without predictive modeling?** NO - Includes predictive modeling ✓\\n\\n**Single-scenario \\\"business-as-usual\\\"?** NO - Two contrasting scenarios ✓\\n\\n---\\n\\n## Additional Full Text Verification:\\n\\n- **Scale claims verified:** Methodology clearly states Development Regions analysis; results disaggregated by relief units\\n- **Quantitative metrics:** Extensively reported (Tables 2, 3, 4; accuracy assessments)\\n- **Spatial explicitness:** CLUE-S is inherently spatially explicit; raster-based at 500m resolution\\n- **Temporal scope:** Past (1990-2006) and future (2007-2050)\\n- **Model calibration:** Logistic regression with 18 explanatory variables; conversion elasticity and transition sequences defined\\n\\n---\\n\\n## Final Categorization: **OK**\\n\\n**Justification:** This paper meets ALL core inclusion criteria for a national-scale LULC prediction study:\\n1. Explicit national implementation across Romania with regional disaggregation\\n2. Primary research focus on LULC prediction/simulation (agricultural land use flows)\\n3. Two contrasting future scenarios (S1 and S2) with quantitative comparisons\\n4. Spatially explicit CLUE-S modeling with comprehensive accuracy metrics (OA, Kappa, AUC, PA, UA)\\n5. Mapped projections of agricultural flows for 2050\\n6. Passes all exclusion criteria\\n\\nThe paper represents a rigorous application of CLUE-S modeling to national-scale LULC prediction with multiple validation approaches.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":16178,\"completion_tokens\":1103,\"total_tokens\":17281,\"cost\":0.021693,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.021693,\"upstream_inference_prompt_cost\":0.016178,\"upstream_inference_completions_cost\":0.005515},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652977-frupHRgU4cWGE6NsNfun",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 16178,
+        "completion_tokens": 1103,
+        "total_tokens": 17281,
+        "cost": 0.021693,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.021693,
+          "upstream_inference_prompt_cost": 0.016178,
+          "upstream_inference_completions_cost": 0.005515
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 10.727,
+  "call_id": "DS__z1_2V67FZMI__claude__r1",
+  "fingerprint": "8f0e715b064f627935cbc8fb7fea027ea8c0098f2a7f4ac6e6bbd3cc10f5c098",
+  "paper_id": "z1_2V67FZMI",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:49:43.174953+00:00",
+  "input_sha256": "319ab64fd25e5e80a1dd6221daf40d2afd9a48662f3109700458c3729fc01ec4",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

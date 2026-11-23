@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789655221-7gDOHJ2qh4dX27meSL2P",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0013272,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 9642,
+    "completion_tokens": 195,
+    "total_tokens": 9837,
+    "cost": 0.0013272,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 9472,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0013272,
+      "upstream_inference_prompt_cost": 0.0010152,
+      "upstream_inference_completions_cost": 0.000312
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: OK (Justification: This is a non-review research paper with a primary focus on future land use land cover (LULC) prediction for the SAARC nations at a national scale. The study applies a multilayer perceptron neural network (MLP-NN) model to project Agriculture, Forestry and Other Land Use (AFOLU) spatially explicit maps for the year 2050 under multiple climate change scenarios (RCP 2.6, 4.5, 6.0, 8.5). The paper includes quantitative accuracy assessment using AUC and total operating characteristic (TOC) metrics. It implements multiple future scenarios with quantitative spatial outputs and compares land use changes by country across scenarios. The modeling is spatially explicit, covers all SAARC nations (national scale for each country), and provides mapped projections of LULC classes. Therefore, it meets all core inclusion criteria and none of the exclusion criteria.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:26:56.414062+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.536,
+      "raw_body": "\n         \n{\"id\":\"gen-1789655221-7gDOHJ2qh4dX27meSL2P\",\"object\":\"chat.completion\",\"created\":1789655221,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: This is a non-review research paper with a primary focus on future land use land cover (LULC) prediction for the SAARC nations at a national scale. The study applies a multilayer perceptron neural network (MLP-NN) model to project Agriculture, Forestry and Other Land Use (AFOLU) spatially explicit maps for the year 2050 under multiple climate change scenarios (RCP 2.6, 4.5, 6.0, 8.5). The paper includes quantitative accuracy assessment using AUC and total operating characteristic (TOC) metrics. It implements multiple future scenarios with quantitative spatial outputs and compares land use changes by country across scenarios. The modeling is spatially explicit, covers all SAARC nations (national scale for each country), and provides mapped projections of LULC classes. Therefore, it meets all core inclusion criteria and none of the exclusion criteria.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":9642,\"completion_tokens\":195,\"total_tokens\":9837,\"cost\":0.0013272,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":9472,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0013272,\"upstream_inference_prompt_cost\":0.0010152,\"upstream_inference_completions_cost\":0.000312},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655221-7gDOHJ2qh4dX27meSL2P",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 9642,
+        "completion_tokens": 195,
+        "total_tokens": 9837,
+        "cost": 0.0013272,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 9472,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0013272,
+          "upstream_inference_prompt_cost": 0.0010152,
+          "upstream_inference_completions_cost": 0.000312
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.536,
+  "call_id": "DS__z1_U4VVEYKW__openai__r3",
+  "fingerprint": "4e2c07bfb18d0920103aa1ef264dd69c620d0ac8a056ff902b81409510265356",
+  "paper_id": "z1_U4VVEYKW",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:26:59.949802+00:00",
+  "input_sha256": "e276eceeaeaed4eccbc48e8acc7d015df2fe426d3fb0a8af639ffcbad69bf8cc",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

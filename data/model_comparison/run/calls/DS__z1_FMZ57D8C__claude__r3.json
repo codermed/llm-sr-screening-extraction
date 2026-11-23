@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789655064-SFDOV4tVt40q7Elrr67N",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.017187,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12267,
+    "completion_tokens": 984,
+    "total_tokens": 13251,
+    "cost": 0.017187,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.017187,
+      "upstream_inference_prompt_cost": 0.012267,
+      "upstream_inference_completions_cost": 0.00492
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Kwon et al. (2013)\n\n## Initial Assessment\n\n**Is this a review article?**\nNo. This is a primary research paper presenting original modeling framework development and empirical results.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA CHECK (Non-Review Paper):\n\n1. **Explicit national-scale spatial implementation (entire country)?**\n   - ✓ YES - Study covers \"conterminous US\" with state-level modeling across 40 states (48 conterminous states evaluated for suitability)\n\n2. **Primary focus = LULC prediction/simulation?**\n   - ✗ NO - Primary focus is **soil carbon emission factors** for biofuel lifecycle assessment, not LULC change prediction itself\n   - The paper models land use *conversion scenarios* but does NOT predict which land uses will actually change or where/when conversion will occur\n   - LULC scenarios are pre-defined inputs (croplands→corn, grasslands→switchgrass, etc.), not predictive outputs\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ✓ YES - 32 different LUC scenarios modeled across multiple feedstocks, tillage practices, and harvest rates with quantitative EF comparisons (2011-2040 period)\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ✗ PARTIAL/NO - While state-level spatial modeling is present, the paper lacks validation metrics (accuracy assessment, comparison to observed LULC change data). Results are sensitivity analyses of assumptions, not accuracy assessments of LULC predictions.\n\n5. **Outputs include mapped LULC projections?**\n   - ✗ NO - No maps of projected LULC change are provided. Outputs are soil carbon emission factors (Mg C ha⁻¹ yr⁻¹) by state and scenario, not LULC projections.\n\n---\n\n### SPECIFIC EXCLUSION CRITERIA CHECK:\n\n- **Biomass/bioenergy/carbon studies without LULC change analysis?**\n  - ✓ APPLIES - This is fundamentally a **bioenergy/carbon study** examining soil carbon dynamics under hypothetical land use conversion scenarios. It does not analyze or predict actual LULC change patterns.\n  \n- **Methodological papers without application to national-scale prediction?**\n  - PARTIAL - While applied to national scale, it's methodological in nature (develops SCSOC surrogate model framework) without predictive LULC outputs.\n\n- **No LULC prediction component?**\n  - ✓ APPLIES - The paper assumes land use conversions as fixed scenarios rather than predicting them. LULC change is an input assumption, not a prediction output.\n\n---\n\n## Primary Focus Analysis\n\n**Central research question:** \"How do soil carbon stocks change under different biofuel feedstock production scenarios?\"\n\n**Not:** \"Where and when will land use change occur in the US?\"\n\nThe paper uses LULC scenarios (e.g., \"grassland converted to miscanthus\") as **input assumptions to drive soil carbon modeling**, but does not predict spatial patterns, extent, or timing of actual LULC change. The modeling framework is designed to support biofuel lifecycle assessment (LCA) by providing soil carbon emission factors—a carbon accounting tool, not an LULC prediction tool.\n\n---\n\n## Final Categorization\n\n**EXCLUDED**\n\n**Justification:** \nThis is a bioenergy/carbon modeling paper that uses pre-defined land use conversion scenarios as inputs to estimate soil carbon dynamics, rather than a paper that predicts land use/land cover change. While it operates at national-scale and involves spatial modeling, it lacks the core characteristic of LULC prediction research: quantitative projection of where, when, and how much LULC change will occur. The paper explicitly states its purpose is to \"refine soil C emission factors\" for lifecycle assessment, not to forecast LULC patterns. LULC scenarios are hypothetical assumptions (not predictions), and outputs are carbon emission factors, not LULC projections. This falls squarely within the exclusion criterion: \"Biomass/bioenergy/carbon studies without LULC change analysis.\"",
+  "automated_status": "invalid_output",
+  "parsed_label": "",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:24:19.957893+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.228,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655064-SFDOV4tVt40q7Elrr67N\",\"object\":\"chat.completion\",\"created\":1789655064,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Kwon et al. (2013)\\n\\n## Initial Assessment\\n\\n**Is this a review article?**\\nNo. This is a primary research paper presenting original modeling framework development and empirical results.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA CHECK (Non-Review Paper):\\n\\n1. **Explicit national-scale spatial implementation (entire country)?**\\n   - ✓ YES - Study covers \\\"conterminous US\\\" with state-level modeling across 40 states (48 conterminous states evaluated for suitability)\\n\\n2. **Primary focus = LULC prediction/simulation?**\\n   - ✗ NO - Primary focus is **soil carbon emission factors** for biofuel lifecycle assessment, not LULC change prediction itself\\n   - The paper models land use *conversion scenarios* but does NOT predict which land uses will actually change or where/when conversion will occur\\n   - LULC scenarios are pre-defined inputs (croplands→corn, grasslands→switchgrass, etc.), not predictive outputs\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ✓ YES - 32 different LUC scenarios modeled across multiple feedstocks, tillage practices, and harvest rates with quantitative EF comparisons (2011-2040 period)\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ✗ PARTIAL/NO - While state-level spatial modeling is present, the paper lacks validation metrics (accuracy assessment, comparison to observed LULC change data). Results are sensitivity analyses of assumptions, not accuracy assessments of LULC predictions.\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ✗ NO - No maps of projected LULC change are provided. Outputs are soil carbon emission factors (Mg C ha⁻¹ yr⁻¹) by state and scenario, not LULC projections.\\n\\n---\\n\\n### SPECIFIC EXCLUSION CRITERIA CHECK:\\n\\n- **Biomass/bioenergy/carbon studies without LULC change analysis?**\\n  - ✓ APPLIES - This is fundamentally a **bioenergy/carbon study** examining soil carbon dynamics under hypothetical land use conversion scenarios. It does not analyze or predict actual LULC change patterns.\\n  \\n- **Methodological papers without application to national-scale prediction?**\\n  - PARTIAL - While applied to national scale, it's methodological in nature (develops SCSOC surrogate model framework) without predictive LULC outputs.\\n\\n- **No LULC prediction component?**\\n  - ✓ APPLIES - The paper assumes land use conversions as fixed scenarios rather than predicting them. LULC change is an input assumption, not a prediction output.\\n\\n---\\n\\n## Primary Focus Analysis\\n\\n**Central research question:** \\\"How do soil carbon stocks change under different biofuel feedstock production scenarios?\\\"\\n\\n**Not:** \\\"Where and when will land use change occur in the US?\\\"\\n\\nThe paper uses LULC scenarios (e.g., \\\"grassland converted to miscanthus\\\") as **input assumptions to drive soil carbon modeling**, but does not predict spatial patterns, extent, or timing of actual LULC change. The modeling framework is designed to support biofuel lifecycle assessment (LCA) by providing soil carbon emission factors—a carbon accounting tool, not an LULC prediction tool.\\n\\n---\\n\\n## Final Categorization\\n\\n**EXCLUDED**\\n\\n**Justification:** \\nThis is a bioenergy/carbon modeling paper that uses pre-defined land use conversion scenarios as inputs to estimate soil carbon dynamics, rather than a paper that predicts land use/land cover change. While it operates at national-scale and involves spatial modeling, it lacks the core characteristic of LULC prediction research: quantitative projection of where, when, and how much LULC change will occur. The paper explicitly states its purpose is to \\\"refine soil C emission factors\\\" for lifecycle assessment, not to forecast LULC patterns. LULC scenarios are hypothetical assumptions (not predictions), and outputs are carbon emission factors, not LULC projections. This falls squarely within the exclusion criterion: \\\"Biomass/bioenergy/carbon studies without LULC change analysis.\\\"\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12267,\"completion_tokens\":984,\"total_tokens\":13251,\"cost\":0.017187,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.017187,\"upstream_inference_prompt_cost\":0.012267,\"upstream_inference_completions_cost\":0.00492},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655064-SFDOV4tVt40q7Elrr67N",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 12267,
+        "completion_tokens": 984,
+        "total_tokens": 13251,
+        "cost": 0.017187,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.017187,
+          "upstream_inference_prompt_cost": 0.012267,
+          "upstream_inference_completions_cost": 0.00492
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.228,
+  "call_id": "DS__z1_FMZ57D8C__claude__r3",
+  "fingerprint": "88b8322ebe18f3a76426a8e9828ee6bf7535271d79872846997a107307acbac6",
+  "paper_id": "z1_FMZ57D8C",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:24:32.186341+00:00",
+  "input_sha256": "ddaeb38e99bc4c8dce4fc37792fa908fa0efd19d7ead51fb0b73568140c3d61a",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

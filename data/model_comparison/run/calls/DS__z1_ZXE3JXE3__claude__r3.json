@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789656076-QWLJ54JyUfiEYzsmYCJ6",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.022751,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 17446,
+    "completion_tokens": 1061,
+    "total_tokens": 18507,
+    "cost": 0.022751,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.022751,
+      "upstream_inference_prompt_cost": 0.017446,
+      "upstream_inference_completions_cost": 0.005305
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Conservation Assessment of Canada's Boreal Forest\n\n## Step 1: Determine if Review Article\n**Result: NO** - This is an original research paper (stated as \"ORIGINAL RESEARCH\" in header), not a review article.\n\n---\n\n## Step 2: Apply Non-Review Paper Evaluation\n\n### Core Inclusion Criteria Assessment:\n\n**Criterion 1: Explicit national-scale spatial implementation (entire country)**\n- ✓ **PASS** - Study area is \"the entire Canadian boreal forest (~5.37 million km²)\" as stated in Methods\n- Partitioned into 10×10 km planning units (50,529 sites)\n- National-level assessment explicitly stated\n\n**Criterion 2: Primary focus = LULC prediction/simulation**\n- ✗ **FAIL** - Primary focus is **conservation planning and reserve network design**, NOT LULC prediction\n- The paper uses vegetation productivity projections (DHI - Dynamic Habitat Index) as an INPUT to conservation prioritization\n- Central research questions: \"where are high priority areas?\" and \"how is productivity variability influenced by climate?\" - these are conservation questions, not LULC prediction questions\n- LULC prediction is NOT the primary objective\n\n**Criterion 3: Implementation of ≥2 future scenarios with quantitative comparison**\n- ✓ **PASS** - Three climate scenarios (B1, A1B, A2) with quantitative comparisons of reserve costs, areas, and VVP proportions\n\n**Criterion 4: Spatial modeling with quantitative accuracy metrics**\n- ⚠ **PARTIAL** - Spatial modeling is present, but accuracy metrics are limited\n- The underlying DHI productivity models (Nelson et al. 2014) report model performance (72.0-74.0% variance explained, mean 0.6-0.9)\n- However, this paper does NOT conduct LULC classification/prediction itself\n\n**Criterion 5: Outputs include mapped LULC projections**\n- ✗ **FAIL** - Outputs are conservation priority maps and reserve networks, NOT LULC class maps\n- Figure 1 shows \"vegetation variability probability\" (derived from productivity), not LULC class predictions\n- No land cover classification system applied; no LULC transition matrices or class-level predictions\n\n---\n\n### Exclusion Criteria Assessment:\n\n**Exclusion: Species-specific/ecological focus (flora/fauna) unrelated to LULC**\n- ✓ **TRIGGERS** - Paper explicitly focuses on biodiversity conservation and species habitat\n- 16 at-risk fauna species are conservation features (Table 1)\n- Primary objective is protecting species and habitats, not predicting LULC change\n\n**Exclusion: Remote sensing technical studies without predictive modeling**\n- ✓ **TRIGGERS** - While remote sensing data (AVHRR) is used, the paper is NOT about LULC prediction\n- It applies existing vegetation productivity models to conservation planning\n\n**Exclusion: No LULC prediction component**\n- ✓ **TRIGGERS** - The paper does NOT predict future land cover classes or transitions\n- Vegetation productivity variability ≠ LULC prediction\n\n---\n\n## Step 3: Clarification of Paper's Actual Focus\n\nThe paper integrates:\n1. **Existing climate-driven vegetation productivity projections** (from Nelson et al. 2014)\n2. **Systematic conservation planning algorithms** (Marxan and MarProb)\n3. **Biodiversity features** (environmental domains + species distributions)\n\n**Purpose**: Design spatially optimized protected area networks that account for climate-induced productivity variability to meet conservation targets with 90% certainty by 2080.\n\nThis is a **conservation planning application paper**, not an LULC prediction paper.\n\n---\n\n## Final Categorization: **EXCLUDED**\n\n**Justification**: \n- While the paper operates at national scale (Canada) and uses spatial modeling with quantitative metrics, it **fails the primary inclusion criterion** that LULC prediction must be the central research focus\n- The paper's primary objective is **conservation reserve network design**, not land use/land cover prediction or simulation\n- Vegetation productivity projections are used as **inputs** to a conservation planning algorithm, not as the primary research output\n- No LULC classification, mapping, or transition analysis is conducted\n- The paper explicitly focuses on **species habitat protection and biodiversity conservation** (exclusion criterion: species-specific/ecological focus unrelated to LULC)\n- Outputs are conservation priority maps and reserve designs, not LULC class predictions or change maps",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:41:11.715553+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.325,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789656076-QWLJ54JyUfiEYzsmYCJ6\",\"object\":\"chat.completion\",\"created\":1789656076,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Conservation Assessment of Canada's Boreal Forest\\n\\n## Step 1: Determine if Review Article\\n**Result: NO** - This is an original research paper (stated as \\\"ORIGINAL RESEARCH\\\" in header), not a review article.\\n\\n---\\n\\n## Step 2: Apply Non-Review Paper Evaluation\\n\\n### Core Inclusion Criteria Assessment:\\n\\n**Criterion 1: Explicit national-scale spatial implementation (entire country)**\\n- ✓ **PASS** - Study area is \\\"the entire Canadian boreal forest (~5.37 million km²)\\\" as stated in Methods\\n- Partitioned into 10×10 km planning units (50,529 sites)\\n- National-level assessment explicitly stated\\n\\n**Criterion 2: Primary focus = LULC prediction/simulation**\\n- ✗ **FAIL** - Primary focus is **conservation planning and reserve network design**, NOT LULC prediction\\n- The paper uses vegetation productivity projections (DHI - Dynamic Habitat Index) as an INPUT to conservation prioritization\\n- Central research questions: \\\"where are high priority areas?\\\" and \\\"how is productivity variability influenced by climate?\\\" - these are conservation questions, not LULC prediction questions\\n- LULC prediction is NOT the primary objective\\n\\n**Criterion 3: Implementation of ≥2 future scenarios with quantitative comparison**\\n- ✓ **PASS** - Three climate scenarios (B1, A1B, A2) with quantitative comparisons of reserve costs, areas, and VVP proportions\\n\\n**Criterion 4: Spatial modeling with quantitative accuracy metrics**\\n- ⚠ **PARTIAL** - Spatial modeling is present, but accuracy metrics are limited\\n- The underlying DHI productivity models (Nelson et al. 2014) report model performance (72.0-74.0% variance explained, mean 0.6-0.9)\\n- However, this paper does NOT conduct LULC classification/prediction itself\\n\\n**Criterion 5: Outputs include mapped LULC projections**\\n- ✗ **FAIL** - Outputs are conservation priority maps and reserve networks, NOT LULC class maps\\n- Figure 1 shows \\\"vegetation variability probability\\\" (derived from productivity), not LULC class predictions\\n- No land cover classification system applied; no LULC transition matrices or class-level predictions\\n\\n---\\n\\n### Exclusion Criteria Assessment:\\n\\n**Exclusion: Species-specific/ecological focus (flora/fauna) unrelated to LULC**\\n- ✓ **TRIGGERS** - Paper explicitly focuses on biodiversity conservation and species habitat\\n- 16 at-risk fauna species are conservation features (Table 1)\\n- Primary objective is protecting species and habitats, not predicting LULC change\\n\\n**Exclusion: Remote sensing technical studies without predictive modeling**\\n- ✓ **TRIGGERS** - While remote sensing data (AVHRR) is used, the paper is NOT about LULC prediction\\n- It applies existing vegetation productivity models to conservation planning\\n\\n**Exclusion: No LULC prediction component**\\n- ✓ **TRIGGERS** - The paper does NOT predict future land cover classes or transitions\\n- Vegetation productivity variability ≠ LULC prediction\\n\\n---\\n\\n## Step 3: Clarification of Paper's Actual Focus\\n\\nThe paper integrates:\\n1. **Existing climate-driven vegetation productivity projections** (from Nelson et al. 2014)\\n2. **Systematic conservation planning algorithms** (Marxan and MarProb)\\n3. **Biodiversity features** (environmental domains + species distributions)\\n\\n**Purpose**: Design spatially optimized protected area networks that account for climate-induced productivity variability to meet conservation targets with 90% certainty by 2080.\\n\\nThis is a **conservation planning application paper**, not an LULC prediction paper.\\n\\n---\\n\\n## Final Categorization: **EXCLUDED**\\n\\n**Justification**: \\n- While the paper operates at national scale (Canada) and uses spatial modeling with quantitative metrics, it **fails the primary inclusion criterion** that LULC prediction must be the central research focus\\n- The paper's primary objective is **conservation reserve network design**, not land use/land cover prediction or simulation\\n- Vegetation productivity projections are used as **inputs** to a conservation planning algorithm, not as the primary research output\\n- No LULC classification, mapping, or transition analysis is conducted\\n- The paper explicitly focuses on **species habitat protection and biodiversity conservation** (exclusion criterion: species-specific/ecological focus unrelated to LULC)\\n- Outputs are conservation priority maps and reserve designs, not LULC class predictions or change maps\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":17446,\"completion_tokens\":1061,\"total_tokens\":18507,\"cost\":0.022751,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.022751,\"upstream_inference_prompt_cost\":0.017446,\"upstream_inference_completions_cost\":0.005305},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789656076-QWLJ54JyUfiEYzsmYCJ6",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 17446,
+        "completion_tokens": 1061,
+        "total_tokens": 18507,
+        "cost": 0.022751,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.022751,
+          "upstream_inference_prompt_cost": 0.017446,
+          "upstream_inference_completions_cost": 0.005305
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.325,
+  "call_id": "DS__z1_ZXE3JXE3__claude__r3",
+  "fingerprint": "e92695f9f383c63ccf1f1c1447cec17bf53af3f28c0aa1b94dfc4d480280e87f",
+  "paper_id": "z1_ZXE3JXE3",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:41:24.040722+00:00",
+  "input_sha256": "6d258c68d368a2b33c7613927ebd12dbd8abe3124198ee010210196d3860beb1",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

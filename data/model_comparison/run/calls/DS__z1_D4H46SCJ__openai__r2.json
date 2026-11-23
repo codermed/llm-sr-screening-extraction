@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653748-5TiOa6NYA7VdPHluISt6",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0014892,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 11435,
+    "completion_tokens": 184,
+    "total_tokens": 11619,
+    "cost": 0.0014892,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 11264,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0014892,
+      "upstream_inference_prompt_cost": 0.0011948,
+      "upstream_inference_completions_cost": 0.0002944
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a research study using the MC2 dynamic global vegetation model to simulate vegetation dynamics, carbon sequestration, timber production, and fire effects under climate change scenarios for the conterminous USA. It focuses primarily on ecosystem services related to climate change mitigation and adaptation rather than explicitly on land use land cover (LULC) future prediction as a primary objective. Although land use scenarios are included as inputs to the model, the primary focus is on ecosystem service estimation, carbon fluxes, and vegetation functional types, not on spatially explicit LULC prediction or mapping with accuracy metrics. The study is not primarily about LULC modeling or prediction, does not include quantitative accuracy assessments of LULC projections, and does not center on LULC change analysis as the main research question. Therefore, it fails core inclusion criteria for LULC prediction papers.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:02:23.213372+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.378,
+      "raw_body": "\n         \n{\"id\":\"gen-1789653748-5TiOa6NYA7VdPHluISt6\",\"object\":\"chat.completion\",\"created\":1789653748,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a research study using the MC2 dynamic global vegetation model to simulate vegetation dynamics, carbon sequestration, timber production, and fire effects under climate change scenarios for the conterminous USA. It focuses primarily on ecosystem services related to climate change mitigation and adaptation rather than explicitly on land use land cover (LULC) future prediction as a primary objective. Although land use scenarios are included as inputs to the model, the primary focus is on ecosystem service estimation, carbon fluxes, and vegetation functional types, not on spatially explicit LULC prediction or mapping with accuracy metrics. The study is not primarily about LULC modeling or prediction, does not include quantitative accuracy assessments of LULC projections, and does not center on LULC change analysis as the main research question. Therefore, it fails core inclusion criteria for LULC prediction papers.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":11435,\"completion_tokens\":184,\"total_tokens\":11619,\"cost\":0.0014892,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":11264,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0014892,\"upstream_inference_prompt_cost\":0.0011948,\"upstream_inference_completions_cost\":0.0002944},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653748-5TiOa6NYA7VdPHluISt6",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 11435,
+        "completion_tokens": 184,
+        "total_tokens": 11619,
+        "cost": 0.0014892,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 11264,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0014892,
+          "upstream_inference_prompt_cost": 0.0011948,
+          "upstream_inference_completions_cost": 0.0002944
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.379,
+  "call_id": "DS__z1_D4H46SCJ__openai__r2",
+  "fingerprint": "c8db906e93ad21e5a2854aeac8e697ec47fa6f8f94e5824391dd5ee54535e2d6",
+  "paper_id": "z1_D4H46SCJ",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:02:26.591692+00:00",
+  "input_sha256": "830914e1cdf8b0bd500d4172c6c3a10eb4053a87479d5890d920b894332a3673",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

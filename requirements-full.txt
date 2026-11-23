@@ -1,0 +1,23 @@
+# Optional: re-run the model calls, recompute text-similarity metrics, and run the notebook
+-r requirements.txt
+
+# LLM workflow (scripts/run_pipeline.py)
+openai>=1.0
+requests
+tqdm
+pyzotero
+bibtexparser
+rdflib
+PyPDF2
+pdfplumber
+pypdf
+pymupdf4llm
+
+# Extraction similarity metrics and BERTScore baseline (LLMInsightsEvaluator, notebooks/)
+nltk>=3.8
+textdistance
+sentence-transformers
+bert-score==0.3.13
+transformers>=4.41,<5
+torch>=2.2
+ipykernel

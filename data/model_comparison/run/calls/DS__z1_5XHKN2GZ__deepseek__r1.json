@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653188-D1bRVImGzdkpeQavgZ26",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0044276,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 16278,
+    "completion_tokens": 514,
+    "total_tokens": 16792,
+    "cost": 0.0044276,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0044276,
+      "upstream_inference_prompt_cost": 0.00423228,
+      "upstream_inference_completions_cost": 0.00019532
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: Explicit national-scale implementation for Lithuania, primary focus is LULC prediction/simulation, implements and compares 4 future scenarios, uses spatial modeling (Cellular Automata) with quantitative accuracy metrics (80% validation), outputs include mapped LULC projections for 2050.)\n\n**Explanation:**\n*   **Review Article?** No. This is a primary research article presenting original modeling and analysis.\n*   **Core Inclusion Criteria (ALL MET):**\n    1.  **Explicit national-scale spatial implementation:** The study area is the entire country of Lithuania (~65,300 km²). The methodology and results are applied uniformly across the nation.\n    2.  **Primary focus = LULC prediction/simulation:** The central research question is to \"study the impacts of LULC changes under different scenarios... in 2050.\" The core methodology is building and validating a Cellular Automata model for LULC prediction.\n    3.  **Implementation of ≥2 future scenarios:** The paper implements and quantitatively compares four distinct scenarios: Business as Usual (A0), Urbanisation (A1), Land Abandonment and Afforestation (A2), and Agricultural Intensification (A3).\n    4.  **Spatial modeling with quantitative accuracy metrics:** The CA model is validated using the Reciprocal Similarity Comparison method, achieving an 80% accuracy. Quantitative change rates (in hectares and percentage) are reported for all LULC classes under each scenario.\n    5.  **Outputs include mapped LULC projections:** Figures 4 and S3 provide explicit maps of the predicted LULC for Lithuania under each 2050 scenario.\n*   **Exclusion Criteria (NONE MET):** The paper is not excluded by any of the specified criteria. It is not a global, local, or regional study; LULC prediction is the core component; it is not species-specific; it produces spatially explicit LULC outputs; it is an application paper, not purely methodological; it includes future projections; and it implements multiple scenarios beyond a single BAU projection.\n*   **Primary Focus:** The primary objective is unequivocally LULC prediction under various scenarios. The subsequent Habitat Quality (HQ) assessment is an application *of* the LULC predictions, not the other way around. The paper's structure (introduction, methodology centered on CA modeling, results first showing LULC changes) confirms this. Therefore, it is categorized as **'OK'**.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:53:03.724763+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 10.371,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653188-D1bRVImGzdkpeQavgZ26\",\"object\":\"chat.completion\",\"created\":1789653188,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: Explicit national-scale implementation for Lithuania, primary focus is LULC prediction/simulation, implements and compares 4 future scenarios, uses spatial modeling (Cellular Automata) with quantitative accuracy metrics (80% validation), outputs include mapped LULC projections for 2050.)\\n\\n**Explanation:**\\n*   **Review Article?** No. This is a primary research article presenting original modeling and analysis.\\n*   **Core Inclusion Criteria (ALL MET):**\\n    1.  **Explicit national-scale spatial implementation:** The study area is the entire country of Lithuania (~65,300 km²). The methodology and results are applied uniformly across the nation.\\n    2.  **Primary focus = LULC prediction/simulation:** The central research question is to \\\"study the impacts of LULC changes under different scenarios... in 2050.\\\" The core methodology is building and validating a Cellular Automata model for LULC prediction.\\n    3.  **Implementation of ≥2 future scenarios:** The paper implements and quantitatively compares four distinct scenarios: Business as Usual (A0), Urbanisation (A1), Land Abandonment and Afforestation (A2), and Agricultural Intensification (A3).\\n    4.  **Spatial modeling with quantitative accuracy metrics:** The CA model is validated using the Reciprocal Similarity Comparison method, achieving an 80% accuracy. Quantitative change rates (in hectares and percentage) are reported for all LULC classes under each scenario.\\n    5.  **Outputs include mapped LULC projections:** Figures 4 and S3 provide explicit maps of the predicted LULC for Lithuania under each 2050 scenario.\\n*   **Exclusion Criteria (NONE MET):** The paper is not excluded by any of the specified criteria. It is not a global, local, or regional study; LULC prediction is the core component; it is not species-specific; it produces spatially explicit LULC outputs; it is an application paper, not purely methodological; it includes future projections; and it implements multiple scenarios beyond a single BAU projection.\\n*   **Primary Focus:** The primary objective is unequivocally LULC prediction under various scenarios. The subsequent Habitat Quality (HQ) assessment is an application *of* the LULC predictions, not the other way around. The paper's structure (introduction, methodology centered on CA modeling, results first showing LULC changes) confirms this. Therefore, it is categorized as **'OK'**.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":16278,\"completion_tokens\":514,\"total_tokens\":16792,\"cost\":0.0044276,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0044276,\"upstream_inference_prompt_cost\":0.00423228,\"upstream_inference_completions_cost\":0.00019532},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653188-D1bRVImGzdkpeQavgZ26",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 16278,
+        "completion_tokens": 514,
+        "total_tokens": 16792,
+        "cost": 0.0044276,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0044276,
+          "upstream_inference_prompt_cost": 0.00423228,
+          "upstream_inference_completions_cost": 0.00019532
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 10.372,
+  "call_id": "DS__z1_5XHKN2GZ__deepseek__r1",
+  "fingerprint": "1eca3f6fc338cf725d5cf8783a0fba93a734e310dcafb81965bfc62e31d12e75",
+  "paper_id": "z1_5XHKN2GZ",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:53:14.095955+00:00",
+  "input_sha256": "b5367beccda133727a47c6ebf05821a90b1b18fba03fdb6a6c405aeba581bb04",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

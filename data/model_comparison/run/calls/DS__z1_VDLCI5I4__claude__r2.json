@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789654374-2WsY2Y7cpSmFNpENkVjC",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.018457,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 13512,
+    "completion_tokens": 989,
+    "total_tokens": 14501,
+    "cost": 0.018457,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.018457,
+      "upstream_inference_prompt_cost": 0.013512,
+      "upstream_inference_completions_cost": 0.004945
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Impact of future land-cover changes on HNO3 and O3 surface dry deposition\n\n## Step 1: Determine if Review Article\n**Result: NO** - This is a research paper presenting original modeling simulations with methodology, results, and discussion sections. It is not a synthesis/review of existing literature.\n\n## Step 2: Apply Categorization Flow for Non-Review Research Paper\n\n### Evaluation Against Core Inclusion Criteria:\n\n**Criterion 1: Explicit national-scale spatial implementation**\n- ❌ FAILS: The paper uses global-scale modeling (LMDz-INCA at 1.85° latitude × 3.75° longitude resolution)\n- Analysis focuses on continental regions and 10 selected regions globally, but NOT disaggregated to national level\n- Text states: \"global chemistry–climate model LMDz-INCA\" and discusses \"global-scale study purposes\"\n\n**Criterion 2: Primary focus = LULC prediction/simulation**\n- ❌ FAILS: LULC prediction is NOT the primary research objective\n- Primary focus: Impact of GIVEN land-cover changes on dry deposition of O₃ and HNO₃\n- LULC maps are INPUT data from RCP scenarios (external, pre-existing projections)\n- Paper states: \"The objective of this study is to investigate and isolate the potential impact of land-cover changes...on dry deposition velocities\"\n- LULC prediction is a means to an end (atmospheric chemistry modeling), not the research goal\n\n**Criterion 3: Implementation of ≥2 future scenarios with quantitative comparison**\n- ✓ PASSES: Three RCP scenarios (2.6, 4.5, 8.5) with quantitative comparison of deposition velocities and atmospheric concentrations\n\n**Criterion 4: Spatial modeling with quantitative accuracy metrics**\n- ❌ FAILS: No accuracy metrics for LULC prediction reported\n- Quantitative metrics provided for deposition velocities and atmospheric chemistry, not LULC prediction accuracy\n- LULC data are sourced from external RCP/IAM models, not validated by authors\n\n**Criterion 5: Outputs include mapped LULC projections**\n- ✓ PARTIAL: Figures 3 and 4 show vegetation fraction changes, but these are visualization of INPUT data from RCP scenarios, not model outputs predicting LULC\n\n### Evaluation Against Exclusion Criteria:\n\n**Exclusion Check:**\n- ✓ Global-scale analysis without national-level disaggregation → **MEETS EXCLUSION CRITERION**\n- ✓ LULC prediction NOT the primary component → **MEETS EXCLUSION CRITERION**\n- ✓ Atmospheric chemistry/dry deposition is primary focus, not LULC prediction → **MEETS EXCLUSION CRITERION**\n\n## Step 3: Determine Primary Focus\n\n**Primary Objective:** Quantifying how GIVEN land-cover changes (from RCP scenarios) affect surface dry deposition of O₃ and HNO₃ and atmospheric composition\n\n**LULC Role:** Input parameter/driver for atmospheric chemistry modeling (not prediction target)\n\n---\n\n## Final Categorization: **EXCLUDED**\n\n**Justification:** \nThis paper fails multiple core inclusion criteria for LULC prediction research:\n\n1. **Scale mismatch**: Global-scale modeling without national-level spatial disaggregation or implementation\n2. **Primary focus misalignment**: The research objective is atmospheric chemistry impact modeling, not LULC prediction/simulation\n3. **LULC as input, not output**: Land-cover scenarios are sourced from external RCP/IAM projections and used as model inputs; the paper does not generate or validate LULC predictions\n4. **No LULC accuracy metrics**: No spatial modeling accuracy assessment for LULC predictions\n5. **Methodological scope**: This is an atmospheric chemistry application study that uses pre-existing LULC scenarios, not a LULC prediction methodology or implementation paper\n\nThe paper is scientifically rigorous and relevant to land-atmosphere interactions, but does not meet the inclusion criteria for a LULC prediction research database, as LULC prediction is neither the primary research objective nor a novel methodological contribution.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:12:48.995773+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.855,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789654374-2WsY2Y7cpSmFNpENkVjC\",\"object\":\"chat.completion\",\"created\":1789654374,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Impact of future land-cover changes on HNO3 and O3 surface dry deposition\\n\\n## Step 1: Determine if Review Article\\n**Result: NO** - This is a research paper presenting original modeling simulations with methodology, results, and discussion sections. It is not a synthesis/review of existing literature.\\n\\n## Step 2: Apply Categorization Flow for Non-Review Research Paper\\n\\n### Evaluation Against Core Inclusion Criteria:\\n\\n**Criterion 1: Explicit national-scale spatial implementation**\\n- ❌ FAILS: The paper uses global-scale modeling (LMDz-INCA at 1.85° latitude × 3.75° longitude resolution)\\n- Analysis focuses on continental regions and 10 selected regions globally, but NOT disaggregated to national level\\n- Text states: \\\"global chemistry–climate model LMDz-INCA\\\" and discusses \\\"global-scale study purposes\\\"\\n\\n**Criterion 2: Primary focus = LULC prediction/simulation**\\n- ❌ FAILS: LULC prediction is NOT the primary research objective\\n- Primary focus: Impact of GIVEN land-cover changes on dry deposition of O₃ and HNO₃\\n- LULC maps are INPUT data from RCP scenarios (external, pre-existing projections)\\n- Paper states: \\\"The objective of this study is to investigate and isolate the potential impact of land-cover changes...on dry deposition velocities\\\"\\n- LULC prediction is a means to an end (atmospheric chemistry modeling), not the research goal\\n\\n**Criterion 3: Implementation of ≥2 future scenarios with quantitative comparison**\\n- ✓ PASSES: Three RCP scenarios (2.6, 4.5, 8.5) with quantitative comparison of deposition velocities and atmospheric concentrations\\n\\n**Criterion 4: Spatial modeling with quantitative accuracy metrics**\\n- ❌ FAILS: No accuracy metrics for LULC prediction reported\\n- Quantitative metrics provided for deposition velocities and atmospheric chemistry, not LULC prediction accuracy\\n- LULC data are sourced from external RCP/IAM models, not validated by authors\\n\\n**Criterion 5: Outputs include mapped LULC projections**\\n- ✓ PARTIAL: Figures 3 and 4 show vegetation fraction changes, but these are visualization of INPUT data from RCP scenarios, not model outputs predicting LULC\\n\\n### Evaluation Against Exclusion Criteria:\\n\\n**Exclusion Check:**\\n- ✓ Global-scale analysis without national-level disaggregation → **MEETS EXCLUSION CRITERION**\\n- ✓ LULC prediction NOT the primary component → **MEETS EXCLUSION CRITERION**\\n- ✓ Atmospheric chemistry/dry deposition is primary focus, not LULC prediction → **MEETS EXCLUSION CRITERION**\\n\\n## Step 3: Determine Primary Focus\\n\\n**Primary Objective:** Quantifying how GIVEN land-cover changes (from RCP scenarios) affect surface dry deposition of O₃ and HNO₃ and atmospheric composition\\n\\n**LULC Role:** Input parameter/driver for atmospheric chemistry modeling (not prediction target)\\n\\n---\\n\\n## Final Categorization: **EXCLUDED**\\n\\n**Justification:** \\nThis paper fails multiple core inclusion criteria for LULC prediction research:\\n\\n1. **Scale mismatch**: Global-scale modeling without national-level spatial disaggregation or implementation\\n2. **Primary focus misalignment**: The research objective is atmospheric chemistry impact modeling, not LULC prediction/simulation\\n3. **LULC as input, not output**: Land-cover scenarios are sourced from external RCP/IAM projections and used as model inputs; the paper does not generate or validate LULC predictions\\n4. **No LULC accuracy metrics**: No spatial modeling accuracy assessment for LULC predictions\\n5. **Methodological scope**: This is an atmospheric chemistry application study that uses pre-existing LULC scenarios, not a LULC prediction methodology or implementation paper\\n\\nThe paper is scientifically rigorous and relevant to land-atmosphere interactions, but does not meet the inclusion criteria for a LULC prediction research database, as LULC prediction is neither the primary research objective nor a novel methodological contribution.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":13512,\"completion_tokens\":989,\"total_tokens\":14501,\"cost\":0.018457,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.018457,\"upstream_inference_prompt_cost\":0.013512,\"upstream_inference_completions_cost\":0.004945},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654374-2WsY2Y7cpSmFNpENkVjC",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 13512,
+        "completion_tokens": 989,
+        "total_tokens": 14501,
+        "cost": 0.018457,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.018457,
+          "upstream_inference_prompt_cost": 0.013512,
+          "upstream_inference_completions_cost": 0.004945
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.856,
+  "call_id": "DS__z1_VDLCI5I4__claude__r2",
+  "fingerprint": "d4adbcbbb86cdc984986559a983ecfc2b2bc0c468dabf2105f0ac9ed5081e05c",
+  "paper_id": "z1_VDLCI5I4",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:13:01.851358+00:00",
+  "input_sha256": "32e547cd8b53f387d85cb0878c038e7a9ee7a44cabbb9db5046ebdbeaaf17cda",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789653175-6pnbOUjwjZu2tKRvT5ao",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00533052,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 5699,
+    "completion_tokens": 227,
+    "total_tokens": 5926,
+    "cost": 0.00533052,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00533052,
+      "upstream_inference_prompt_cost": 0.00444522,
+      "upstream_inference_completions_cost": 0.0008853
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a non-review research article that does not focus on land use/land cover (LULC) prediction. Its primary objective is to evaluate historical vegetation health trends (1982–2006) using NDVI, forest fire data, invasive species hotspots, and future climate anomalies (temperature and rainfall) under RCP 4.5 for 2030. While it uses a harmonized land cover map (FAO VEGA 2000) as a static baseline for categorizing vegetation types, it does not simulate, model, or predict future LULC changes. The future projections relate only to climate variables (temperature and rainfall anomalies), not LULC transitions. Thus, it fails the core inclusion criterion that the primary focus must be LULC prediction/simulation. Additionally, it uses only one future scenario (RCP 4.5), violating the requirement of ≥2 future scenarios with quantitative comparison. Although national-scale and spatially explicit, the absence of any LULC prediction component leads to exclusion.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:52:51.161602+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 5.778,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789653175-6pnbOUjwjZu2tKRvT5ao\",\"object\":\"chat.completion\",\"created\":1789653175,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a non-review research article that does not focus on land use/land cover (LULC) prediction. Its primary objective is to evaluate historical vegetation health trends (1982–2006) using NDVI, forest fire data, invasive species hotspots, and future climate anomalies (temperature and rainfall) under RCP 4.5 for 2030. While it uses a harmonized land cover map (FAO VEGA 2000) as a static baseline for categorizing vegetation types, it does not simulate, model, or predict future LULC changes. The future projections relate only to climate variables (temperature and rainfall anomalies), not LULC transitions. Thus, it fails the core inclusion criterion that the primary focus must be LULC prediction/simulation. Additionally, it uses only one future scenario (RCP 4.5), violating the requirement of ≥2 future scenarios with quantitative comparison. Although national-scale and spatially explicit, the absence of any LULC prediction component leads to exclusion.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":5699,\"completion_tokens\":227,\"total_tokens\":5926,\"cost\":0.00533052,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00533052,\"upstream_inference_prompt_cost\":0.00444522,\"upstream_inference_completions_cost\":0.0008853},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653175-6pnbOUjwjZu2tKRvT5ao",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 5699,
+        "completion_tokens": 227,
+        "total_tokens": 5926,
+        "cost": 0.00533052,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00533052,
+          "upstream_inference_prompt_cost": 0.00444522,
+          "upstream_inference_completions_cost": 0.0008853
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 5.779,
+  "call_id": "DS__z1_SJMLMA6U__qwen__r1",
+  "fingerprint": "9e876dc81408d3fc42f51b5fdc8d8370fb1201753384ecf5653cb3db7d2cbd88",
+  "paper_id": "z1_SJMLMA6U",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:52:56.940289+00:00",
+  "input_sha256": "91f8fc7e66d33ad8cab61aa813c767bc219a8be59668a103c78d1ba77a39884e",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789653430-sPKAmNAxzfN3vscrWgyY",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.023402,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 17207,
+    "completion_tokens": 1239,
+    "total_tokens": 18446,
+    "cost": 0.023402,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.023402,
+      "upstream_inference_prompt_cost": 0.017207,
+      "upstream_inference_completions_cost": 0.006195
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: CRAFTY-Sweden Land-Use Change Model\n\n## Initial Assessment\nThis is a **NON-REVIEW PAPER** – a primary research article presenting the development and application of an agent-based modeling framework.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA CHECK:\n\n1. **Explicit national-scale spatial implementation (entire country)** ✓\n   - Study area: Sweden (entire country)\n   - Methodology Section 2.1.3: \"To create a baseline land ownership map for 2010...throughout Sweden\"\n   - Spatial resolution: 1 km² grid covering all of Sweden\n   - Figure 2 shows complete national land-use map\n\n2. **Primary focus = LULC prediction/simulation** ✓\n   - Central research question explicitly stated (Introduction): \"To explore: a) future ES provision and how ES demands may be met, b) land-use change, and c) changes in land owner objectives, in the Swedish forestry sector\"\n   - Model purpose: \"designed to model land-use changes in Sweden, with a focus on forestry\" (Appendix A)\n   - Primary outputs are land-use change projections\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\n   - Section 2.2 describes 5 future scenarios: SSP1-RCP4.5, SSP3-RCP4.5, SSP3-RCP8.5, SSP4-RCP4.5, SSP5-RCP8.5\n   - Table 4 presents scenario matrix with specific parameters\n   - Multiple climate models (EC-Earth-RCA4, IPSL-RCA4, NorESM-RCA4)\n   - Quantitative comparison across scenarios in Results and Discussion\n\n4. **Spatial modeling with quantitative accuracy metrics** ✓\n   - Agent-based spatial model operating on 1 km² grid cells\n   - Quantitative outputs: percentage land-use change, timber supply volumes, service provision levels\n   - Figures 4-5 present quantitative results with error bars showing ranges across climate models\n   - Section 4.1 provides detailed quantitative analysis of changes\n\n5. **Outputs include mapped LULC projections** ✓\n   - Figure 2 shows baseline land-use map\n   - Figures 4-5 show spatial distribution of land-use changes by region and scenario\n   - Model generates spatial outputs at 1 km² resolution throughout simulation period (2010-2100)\n\n### SPECIFIC EXCLUSION CRITERIA CHECK:\n\n- ✗ Global-scale analysis without national disaggregation: **NOT APPLICABLE** (national-scale study)\n- ✗ Local/regional/global/transboundary focus: **NOT APPLICABLE** (national-scale)\n- ✗ No LULC prediction component: **NOT APPLICABLE** (LULC is primary focus)\n- ✗ Species-specific/ecological focus unrelated to LULC: **NOT APPLICABLE** (forest owner behavior and land-use change is primary focus)\n- ✗ Economic/urban models lacking spatially explicit LULC outputs: **NOT APPLICABLE** (includes explicit spatial LULC outputs)\n- ✗ Biomass/bioenergy/carbon studies without LULC change analysis: **NOT APPLICABLE** (LULC change is central)\n- ✗ Methodological papers without national-scale application: **NOT APPLICABLE** (applied to national scale)\n- ✗ Purely qualitative/historical analysis: **NOT APPLICABLE** (future projections 2010-2100)\n- ✗ Remote sensing technical studies: **NOT APPLICABLE** (agent-based model)\n- ✗ Single-scenario projections: **NOT APPLICABLE** (5 scenarios implemented)\n\n---\n\n## Additional Full-Text Verification\n\n**Scale verification:** Methodology explicitly states \"CRAFTY-Sweden simulations were run for Sweden for the 2010–2100 period at a 1 km² resolution\" (Section 2.2)\n\n**Quantitative metrics reported:** \n- Percentage land-use change by scenario and region (Figure 4)\n- Spatial hotspots of change (Figure 5)\n- Timber supply trajectories\n- Service provision levels with error bars\n\n**Spatial explicitness:** Model operates on explicit 1 km² grid with mapped capitals, agent locations, and land-use types throughout Sweden\n\n**Future projections:** Simulations extend from 2010-2100 with decadal output analysis\n\n---\n\n## Final Categorization\n\n**OK** \n\n**Justification:** This paper meets ALL core inclusion criteria for national-scale LULC prediction research. It presents an explicit application of an agent-based land-use model to Sweden's entire territory at 1 km² resolution, with LULC change as the primary research focus. The study implements 5 distinct future scenarios (SSP-RCP combinations) with quantitative comparisons, generates spatially explicit LULC projections mapped across the country, and reports quantitative metrics (percentage changes, spatial distributions, service provision levels). The paper fails NONE of the exclusion criteria. The integration of ecosystem services, forest owner behavior, and climate change impacts does not diminish the core focus on land-use change prediction and simulation.",
+  "automated_status": "invalid_output",
+  "parsed_label": "",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:57:05.521701+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.5,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653430-sPKAmNAxzfN3vscrWgyY\",\"object\":\"chat.completion\",\"created\":1789653430,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: CRAFTY-Sweden Land-Use Change Model\\n\\n## Initial Assessment\\nThis is a **NON-REVIEW PAPER** – a primary research article presenting the development and application of an agent-based modeling framework.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA CHECK:\\n\\n1. **Explicit national-scale spatial implementation (entire country)** ✓\\n   - Study area: Sweden (entire country)\\n   - Methodology Section 2.1.3: \\\"To create a baseline land ownership map for 2010...throughout Sweden\\\"\\n   - Spatial resolution: 1 km² grid covering all of Sweden\\n   - Figure 2 shows complete national land-use map\\n\\n2. **Primary focus = LULC prediction/simulation** ✓\\n   - Central research question explicitly stated (Introduction): \\\"To explore: a) future ES provision and how ES demands may be met, b) land-use change, and c) changes in land owner objectives, in the Swedish forestry sector\\\"\\n   - Model purpose: \\\"designed to model land-use changes in Sweden, with a focus on forestry\\\" (Appendix A)\\n   - Primary outputs are land-use change projections\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\\n   - Section 2.2 describes 5 future scenarios: SSP1-RCP4.5, SSP3-RCP4.5, SSP3-RCP8.5, SSP4-RCP4.5, SSP5-RCP8.5\\n   - Table 4 presents scenario matrix with specific parameters\\n   - Multiple climate models (EC-Earth-RCA4, IPSL-RCA4, NorESM-RCA4)\\n   - Quantitative comparison across scenarios in Results and Discussion\\n\\n4. **Spatial modeling with quantitative accuracy metrics** ✓\\n   - Agent-based spatial model operating on 1 km² grid cells\\n   - Quantitative outputs: percentage land-use change, timber supply volumes, service provision levels\\n   - Figures 4-5 present quantitative results with error bars showing ranges across climate models\\n   - Section 4.1 provides detailed quantitative analysis of changes\\n\\n5. **Outputs include mapped LULC projections** ✓\\n   - Figure 2 shows baseline land-use map\\n   - Figures 4-5 show spatial distribution of land-use changes by region and scenario\\n   - Model generates spatial outputs at 1 km² resolution throughout simulation period (2010-2100)\\n\\n### SPECIFIC EXCLUSION CRITERIA CHECK:\\n\\n- ✗ Global-scale analysis without national disaggregation: **NOT APPLICABLE** (national-scale study)\\n- ✗ Local/regional/global/transboundary focus: **NOT APPLICABLE** (national-scale)\\n- ✗ No LULC prediction component: **NOT APPLICABLE** (LULC is primary focus)\\n- ✗ Species-specific/ecological focus unrelated to LULC: **NOT APPLICABLE** (forest owner behavior and land-use change is primary focus)\\n- ✗ Economic/urban models lacking spatially explicit LULC outputs: **NOT APPLICABLE** (includes explicit spatial LULC outputs)\\n- ✗ Biomass/bioenergy/carbon studies without LULC change analysis: **NOT APPLICABLE** (LULC change is central)\\n- ✗ Methodological papers without national-scale application: **NOT APPLICABLE** (applied to national scale)\\n- ✗ Purely qualitative/historical analysis: **NOT APPLICABLE** (future projections 2010-2100)\\n- ✗ Remote sensing technical studies: **NOT APPLICABLE** (agent-based model)\\n- ✗ Single-scenario projections: **NOT APPLICABLE** (5 scenarios implemented)\\n\\n---\\n\\n## Additional Full-Text Verification\\n\\n**Scale verification:** Methodology explicitly states \\\"CRAFTY-Sweden simulations were run for Sweden for the 2010–2100 period at a 1 km² resolution\\\" (Section 2.2)\\n\\n**Quantitative metrics reported:** \\n- Percentage land-use change by scenario and region (Figure 4)\\n- Spatial hotspots of change (Figure 5)\\n- Timber supply trajectories\\n- Service provision levels with error bars\\n\\n**Spatial explicitness:** Model operates on explicit 1 km² grid with mapped capitals, agent locations, and land-use types throughout Sweden\\n\\n**Future projections:** Simulations extend from 2010-2100 with decadal output analysis\\n\\n---\\n\\n## Final Categorization\\n\\n**OK** \\n\\n**Justification:** This paper meets ALL core inclusion criteria for national-scale LULC prediction research. It presents an explicit application of an agent-based land-use model to Sweden's entire territory at 1 km² resolution, with LULC change as the primary research focus. The study implements 5 distinct future scenarios (SSP-RCP combinations) with quantitative comparisons, generates spatially explicit LULC projections mapped across the country, and reports quantitative metrics (percentage changes, spatial distributions, service provision levels). The paper fails NONE of the exclusion criteria. The integration of ecosystem services, forest owner behavior, and climate change impacts does not diminish the core focus on land-use change prediction and simulation.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":17207,\"completion_tokens\":1239,\"total_tokens\":18446,\"cost\":0.023402,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.023402,\"upstream_inference_prompt_cost\":0.017207,\"upstream_inference_completions_cost\":0.006195},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653430-sPKAmNAxzfN3vscrWgyY",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 17207,
+        "completion_tokens": 1239,
+        "total_tokens": 18446,
+        "cost": 0.023402,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.023402,
+          "upstream_inference_prompt_cost": 0.017207,
+          "upstream_inference_completions_cost": 0.006195
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.5,
+  "call_id": "DS__z1_SDL4PAM5__claude__r1",
+  "fingerprint": "a93af296dfdb04985739e3a38e5c31df282283b2e036f1caa0cd715f94a98c91",
+  "paper_id": "z1_SDL4PAM5",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:57:18.021730+00:00",
+  "input_sha256": "096cea9fe51615bd51a489b3e2947f8aaa44031e08659e6e9c35898f94e6301a",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

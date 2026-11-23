@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789652910-NXGFZM4LpEndUI1O4yYJ",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00328452,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12510,
+    "completion_tokens": 84,
+    "total_tokens": 12594,
+    "cost": 0.00328452,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00328452,
+      "upstream_inference_prompt_cost": 0.0032526,
+      "upstream_inference_completions_cost": 3.192e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: This is a non-review research paper with an explicit national-scale (China) spatial implementation focused on land use prediction. It implements eight future SSP-RCP scenarios with quantitative comparisons, uses the FLUS spatial model with accuracy metrics (FoM), and produces mapped LULC projections at the PFT level. It meets all core inclusion criteria and does not trigger any exclusion criteria.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:48:25.876264+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 6.616,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789652910-NXGFZM4LpEndUI1O4yYJ\",\"object\":\"chat.completion\",\"created\":1789652910,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: This is a non-review research paper with an explicit national-scale (China) spatial implementation focused on land use prediction. It implements eight future SSP-RCP scenarios with quantitative comparisons, uses the FLUS spatial model with accuracy metrics (FoM), and produces mapped LULC projections at the PFT level. It meets all core inclusion criteria and does not trigger any exclusion criteria.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12510,\"completion_tokens\":84,\"total_tokens\":12594,\"cost\":0.00328452,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00328452,\"upstream_inference_prompt_cost\":0.0032526,\"upstream_inference_completions_cost\":0.00003192},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652910-NXGFZM4LpEndUI1O4yYJ",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 12510,
+        "completion_tokens": 84,
+        "total_tokens": 12594,
+        "cost": 0.00328452,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00328452,
+          "upstream_inference_prompt_cost": 0.0032526,
+          "upstream_inference_completions_cost": 3.192e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 6.616,
+  "call_id": "DS__z1_CRABZ3YZ__deepseek__r1",
+  "fingerprint": "6b6b52535c706f8e60b0ad3302511843986f21d68c64f963a3e272223af6d74b",
+  "paper_id": "z1_CRABZ3YZ",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:48:32.492291+00:00",
+  "input_sha256": "6ef59fd89e7a18ec8a07c97f6a4b822ff0b2f17496d426d7c8afbaad63037ca8",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

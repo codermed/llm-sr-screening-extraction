@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653540-lnIaYpEr5Me7Ho2q01oX",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0067876,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 16233,
+    "completion_tokens": 184,
+    "total_tokens": 16417,
+    "cost": 0.0067876,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0067876,
+      "upstream_inference_prompt_cost": 0.0064932,
+      "upstream_inference_completions_cost": 0.0002944
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This paper is a non-review research article focusing on greenhouse gas emissions and their trends across Africa over multiple decades. It analyzes emissions of CO2, CH4, and N2O using bottom-up and top-down methods, including inventories, atmospheric inversions, and process-based models. The primary focus is on quantifying emission trends and uncertainties rather than on land use land cover (LULC) future prediction or simulation. While it includes analysis of LULUCF CO2 fluxes, this is part of emissions accounting and not a future LULC prediction study. There is no implementation or comparison of multiple future scenarios of LULC change, no spatial modeling with accuracy metrics for LULC prediction, and no mapped LULC projections. Therefore, it fails the core inclusion criteria for LULC prediction research and does not meet the requirements for inclusion.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:58:55.472559+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 14.119,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653540-lnIaYpEr5Me7Ho2q01oX\",\"object\":\"chat.completion\",\"created\":1789653540,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This paper is a non-review research article focusing on greenhouse gas emissions and their trends across Africa over multiple decades. It analyzes emissions of CO2, CH4, and N2O using bottom-up and top-down methods, including inventories, atmospheric inversions, and process-based models. The primary focus is on quantifying emission trends and uncertainties rather than on land use land cover (LULC) future prediction or simulation. While it includes analysis of LULUCF CO2 fluxes, this is part of emissions accounting and not a future LULC prediction study. There is no implementation or comparison of multiple future scenarios of LULC change, no spatial modeling with accuracy metrics for LULC prediction, and no mapped LULC projections. Therefore, it fails the core inclusion criteria for LULC prediction research and does not meet the requirements for inclusion.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":16233,\"completion_tokens\":184,\"total_tokens\":16417,\"cost\":0.0067876,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0067876,\"upstream_inference_prompt_cost\":0.0064932,\"upstream_inference_completions_cost\":0.0002944},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653540-lnIaYpEr5Me7Ho2q01oX",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 16233,
+        "completion_tokens": 184,
+        "total_tokens": 16417,
+        "cost": 0.0067876,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0067876,
+          "upstream_inference_prompt_cost": 0.0064932,
+          "upstream_inference_completions_cost": 0.0002944
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 14.119,
+  "call_id": "DS__z1_RBKKCYUG__openai__r1",
+  "fingerprint": "7c4530d223d441a532cbd0f3f2c79b9478cb045b9fe785db13888a54fd7a9d9a",
+  "paper_id": "z1_RBKKCYUG",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:59:09.591771+00:00",
+  "input_sha256": "ef542f13d0426926fd90396ad03219f2f37677559a836a6c5ba7e5d42f1e2194",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

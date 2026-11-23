@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654249-YipJFea8mhgMFdjP1nUB",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0016872,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12958,
+    "completion_tokens": 215,
+    "total_tokens": 13173,
+    "cost": 0.0016872,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 12800,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0016872,
+      "upstream_inference_prompt_cost": 0.0013432,
+      "upstream_inference_completions_cost": 0.000344
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a species distribution modeling study focused on predicting future distributions of East Asian Cerris oaks under climate change, land use and land cover change (LULC), and dispersal limitations. While it incorporates LULC data as an input to assess habitat fragmentation and impacts on species ranges, the primary focus is ecological/species distribution modeling rather than LULC prediction or simulation. The study does not develop or implement national-scale spatial LULC prediction scenarios as a central research question, nor does it report quantitative accuracy metrics for LULC prediction itself. The spatial scale is national (China), but the LULC data are used as secondary environmental variables rather than being the primary modeled output. Therefore, it fails core inclusion criteria that require LULC prediction/simulation as the central research objective with mapped LULC projections and quantitative evaluation. The focus on species ecology and habitat suitability under climate and land cover change places it under the exclusion criterion of species-specific/ecological focus unrelated to LULC prediction.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:10:45.056521+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.756,
+      "raw_body": "\n         \n{\"id\":\"gen-1789654249-YipJFea8mhgMFdjP1nUB\",\"object\":\"chat.completion\",\"created\":1789654249,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a species distribution modeling study focused on predicting future distributions of East Asian Cerris oaks under climate change, land use and land cover change (LULC), and dispersal limitations. While it incorporates LULC data as an input to assess habitat fragmentation and impacts on species ranges, the primary focus is ecological/species distribution modeling rather than LULC prediction or simulation. The study does not develop or implement national-scale spatial LULC prediction scenarios as a central research question, nor does it report quantitative accuracy metrics for LULC prediction itself. The spatial scale is national (China), but the LULC data are used as secondary environmental variables rather than being the primary modeled output. Therefore, it fails core inclusion criteria that require LULC prediction/simulation as the central research objective with mapped LULC projections and quantitative evaluation. The focus on species ecology and habitat suitability under climate and land cover change places it under the exclusion criterion of species-specific/ecological focus unrelated to LULC prediction.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12958,\"completion_tokens\":215,\"total_tokens\":13173,\"cost\":0.0016872,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":12800,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0016872,\"upstream_inference_prompt_cost\":0.0013432,\"upstream_inference_completions_cost\":0.000344},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654249-YipJFea8mhgMFdjP1nUB",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 12958,
+        "completion_tokens": 215,
+        "total_tokens": 13173,
+        "cost": 0.0016872,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 12800,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0016872,
+          "upstream_inference_prompt_cost": 0.0013432,
+          "upstream_inference_completions_cost": 0.000344
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.756,
+  "call_id": "DS__z1_T6D52VIR__openai__r2",
+  "fingerprint": "a4e9ec60395348db4b17770be8dc38f20c831a8875037d41fba82241e21cf5a2",
+  "paper_id": "z1_T6D52VIR",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:10:48.812413+00:00",
+  "input_sha256": "3e961107bded88866898944bed56f7819c6a9c58476170357e056b95a274e35d",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

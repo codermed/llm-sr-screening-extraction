@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789655618-gpF8Ix4SF6wO3kHC7diz",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.014266,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 7546,
+    "completion_tokens": 1344,
+    "total_tokens": 8890,
+    "cost": 0.014266,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.014266,
+      "upstream_inference_prompt_cost": 0.007546,
+      "upstream_inference_completions_cost": 0.00672
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis\n\n## Initial Assessment\n\n**Is this a review article?** No. This is a research paper presenting an original methodological application and case study.\n\n---\n\n## Core Inclusion Criteria Evaluation (Non-Review Paper)\n\n### ✅ Criterion 1: Explicit national-scale spatial implementation\n- **Status: MET**\n- Paper explicitly states: \"using the country of Belgium as a case study\" and \"using the country of Belgium as a case study\"\n- Methodology section (2.1) confirms Belgium as the case study area\n- Entire country is the study domain\n\n### ✅ Criterion 2: Primary focus = LULC prediction/simulation\n- **Status: MET**\n- Primary objective clearly stated: \"explore the potential of GLOBIO's land use allocation model to downscale land use information to finer spatial resolutions of 100 m and 10 m\"\n- Central research question addresses downscaling coarse-grain LUH2 data to national-level LULC projections\n- Title explicitly references \"Downscaling Global Land-Use Scenario Data to the National Level\"\n\n### ✅ Criterion 3: ≥2 future scenarios with quantitative comparison\n- **Status: MET**\n- Three future scenarios implemented:\n  1. Sustainability (SSP1xRCP2.6)\n  2. Regional Rivalry (SSP3xRCP6.0)\n  3. Fossil-fuelled Development (SSP5xRCP8.5)\n- Quantitative comparisons provided in Tables 3-4 with scenario-specific results\n\n### ✅ Criterion 4: Spatial modeling with quantitative accuracy metrics\n- **Status: MET**\n- Multiple quantitative accuracy metrics reported:\n  - RSR (Relative Root Mean Square Error): 0.11–0.24 (ESA WorldCover), 0.28–0.33 (CORINE)\n  - Overall accuracy: 0.90–0.98\n  - Kappa coefficient: 0.90–0.97\n  - Validation against independent Copernicus Global Land Service dataset\n- Tables 2-6 provide detailed area statistics across LULC classes\n\n### ✅ Criterion 5: Outputs include mapped LULC projections\n- **Status: MET**\n- Downscaled LULC maps produced at 100 m and 10 m resolutions\n- Maps generated for present-day and three future scenarios\n- Figures 2-3 display reference maps; results section describes mapped outputs\n\n---\n\n## Exclusion Criteria Evaluation\n\n### ✅ Global-scale analysis without national-level disaggregation\n- **Status: PASSED (not excluded)**\n- Paper explicitly disaggregates global LUH2 data to national Belgium level\n- Not a global-scale study\n\n### ✅ Local/regional/global/transboundary scale focus\n- **Status: PASSED (not excluded)**\n- National-scale focus on Belgium (not local, regional, or transboundary)\n\n### ✅ No LULC prediction component\n- **Status: PASSED (not excluded)**\n- LULC prediction is the primary focus\n\n### ✅ Species-specific/ecological focus unrelated to LULC\n- **Status: PASSED (not excluded)**\n- Paper focuses on LULC prediction methodology, not species ecology\n- Biodiversity impacts mentioned as application context, not primary focus\n\n### ✅ Economic/urban models lacking spatially explicit LULC outputs\n- **Status: PASSED (not excluded)**\n- Produces explicit spatially-distributed LULC maps\n\n### ✅ Biomass/bioenergy/carbon studies without LULC change analysis\n- **Status: PASSED (not excluded)**\n- Explicitly analyzes LULC change across scenarios\n\n### ✅ Methodological papers without application to national-scale prediction\n- **Status: PASSED (not excluded)**\n- Applies methodology to national-scale Belgium case study\n\n### ✅ Purely qualitative/historical analysis only\n- **Status: PASSED (not excluded)**\n- Includes future projections with quantitative metrics\n\n### ✅ Remote sensing technical studies without predictive modeling\n- **Status: PASSED (not excluded)**\n- Remote sensing data (ESA WorldCover, CORINE) used as inputs to predictive modeling\n\n### ✅ Single-scenario \"business-as-usual\" projections\n- **Status: PASSED (not excluded)**\n- Three distinct future scenarios implemented\n\n---\n\n## Additional Full Text Verification\n\n- **Scale claims verified**: Methodology confirms 100 m and 10 m spatial resolutions; national Belgium implementation confirmed\n- **Quantitative metrics**: Comprehensive accuracy assessment reported (RSR, accuracy, Kappa)\n- **Spatial explicitness**: GLOBIO allocation model provides spatially explicit grid-cell allocation\n- **Geopolitical considerations**: Belgium is a recognized sovereign nation; no territorial disputes affecting assessment\n\n---\n\n## Final Categorization\n\n**Final categorization: OK**\n\n**Justification:** This research paper meets ALL core inclusion criteria for national-scale LULC prediction research. It presents an explicit national-scale implementation (Belgium) with LULC prediction as the primary research focus, implements three quantitatively comparable future scenarios (SSP1xRCP2.6, SSP3xRCP6.0, SSP5xRCP8.5), employs spatial modeling with comprehensive accuracy metrics (RSR, overall accuracy, Kappa), and produces mapped LULC projections at 100 m and 10 m resolutions. The paper passes all exclusion criteria. The methodological contribution (comparing reference land cover map impacts on downscaling outcomes) is substantial and directly addresses national-scale LULC prediction needs.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:33:34.092280+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.308,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655618-gpF8Ix4SF6wO3kHC7diz\",\"object\":\"chat.completion\",\"created\":1789655618,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis\\n\\n## Initial Assessment\\n\\n**Is this a review article?** No. This is a research paper presenting an original methodological application and case study.\\n\\n---\\n\\n## Core Inclusion Criteria Evaluation (Non-Review Paper)\\n\\n### ✅ Criterion 1: Explicit national-scale spatial implementation\\n- **Status: MET**\\n- Paper explicitly states: \\\"using the country of Belgium as a case study\\\" and \\\"using the country of Belgium as a case study\\\"\\n- Methodology section (2.1) confirms Belgium as the case study area\\n- Entire country is the study domain\\n\\n### ✅ Criterion 2: Primary focus = LULC prediction/simulation\\n- **Status: MET**\\n- Primary objective clearly stated: \\\"explore the potential of GLOBIO's land use allocation model to downscale land use information to finer spatial resolutions of 100 m and 10 m\\\"\\n- Central research question addresses downscaling coarse-grain LUH2 data to national-level LULC projections\\n- Title explicitly references \\\"Downscaling Global Land-Use Scenario Data to the National Level\\\"\\n\\n### ✅ Criterion 3: ≥2 future scenarios with quantitative comparison\\n- **Status: MET**\\n- Three future scenarios implemented:\\n  1. Sustainability (SSP1xRCP2.6)\\n  2. Regional Rivalry (SSP3xRCP6.0)\\n  3. Fossil-fuelled Development (SSP5xRCP8.5)\\n- Quantitative comparisons provided in Tables 3-4 with scenario-specific results\\n\\n### ✅ Criterion 4: Spatial modeling with quantitative accuracy metrics\\n- **Status: MET**\\n- Multiple quantitative accuracy metrics reported:\\n  - RSR (Relative Root Mean Square Error): 0.11–0.24 (ESA WorldCover), 0.28–0.33 (CORINE)\\n  - Overall accuracy: 0.90–0.98\\n  - Kappa coefficient: 0.90–0.97\\n  - Validation against independent Copernicus Global Land Service dataset\\n- Tables 2-6 provide detailed area statistics across LULC classes\\n\\n### ✅ Criterion 5: Outputs include mapped LULC projections\\n- **Status: MET**\\n- Downscaled LULC maps produced at 100 m and 10 m resolutions\\n- Maps generated for present-day and three future scenarios\\n- Figures 2-3 display reference maps; results section describes mapped outputs\\n\\n---\\n\\n## Exclusion Criteria Evaluation\\n\\n### ✅ Global-scale analysis without national-level disaggregation\\n- **Status: PASSED (not excluded)**\\n- Paper explicitly disaggregates global LUH2 data to national Belgium level\\n- Not a global-scale study\\n\\n### ✅ Local/regional/global/transboundary scale focus\\n- **Status: PASSED (not excluded)**\\n- National-scale focus on Belgium (not local, regional, or transboundary)\\n\\n### ✅ No LULC prediction component\\n- **Status: PASSED (not excluded)**\\n- LULC prediction is the primary focus\\n\\n### ✅ Species-specific/ecological focus unrelated to LULC\\n- **Status: PASSED (not excluded)**\\n- Paper focuses on LULC prediction methodology, not species ecology\\n- Biodiversity impacts mentioned as application context, not primary focus\\n\\n### ✅ Economic/urban models lacking spatially explicit LULC outputs\\n- **Status: PASSED (not excluded)**\\n- Produces explicit spatially-distributed LULC maps\\n\\n### ✅ Biomass/bioenergy/carbon studies without LULC change analysis\\n- **Status: PASSED (not excluded)**\\n- Explicitly analyzes LULC change across scenarios\\n\\n### ✅ Methodological papers without application to national-scale prediction\\n- **Status: PASSED (not excluded)**\\n- Applies methodology to national-scale Belgium case study\\n\\n### ✅ Purely qualitative/historical analysis only\\n- **Status: PASSED (not excluded)**\\n- Includes future projections with quantitative metrics\\n\\n### ✅ Remote sensing technical studies without predictive modeling\\n- **Status: PASSED (not excluded)**\\n- Remote sensing data (ESA WorldCover, CORINE) used as inputs to predictive modeling\\n\\n### ✅ Single-scenario \\\"business-as-usual\\\" projections\\n- **Status: PASSED (not excluded)**\\n- Three distinct future scenarios implemented\\n\\n---\\n\\n## Additional Full Text Verification\\n\\n- **Scale claims verified**: Methodology confirms 100 m and 10 m spatial resolutions; national Belgium implementation confirmed\\n- **Quantitative metrics**: Comprehensive accuracy assessment reported (RSR, accuracy, Kappa)\\n- **Spatial explicitness**: GLOBIO allocation model provides spatially explicit grid-cell allocation\\n- **Geopolitical considerations**: Belgium is a recognized sovereign nation; no territorial disputes affecting assessment\\n\\n---\\n\\n## Final Categorization\\n\\n**Final categorization: OK**\\n\\n**Justification:** This research paper meets ALL core inclusion criteria for national-scale LULC prediction research. It presents an explicit national-scale implementation (Belgium) with LULC prediction as the primary research focus, implements three quantitatively comparable future scenarios (SSP1xRCP2.6, SSP3xRCP6.0, SSP5xRCP8.5), employs spatial modeling with comprehensive accuracy metrics (RSR, overall accuracy, Kappa), and produces mapped LULC projections at 100 m and 10 m resolutions. The paper passes all exclusion criteria. The methodological contribution (comparing reference land cover map impacts on downscaling outcomes) is substantial and directly addresses national-scale LULC prediction needs.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":7546,\"completion_tokens\":1344,\"total_tokens\":8890,\"cost\":0.014266,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.014266,\"upstream_inference_prompt_cost\":0.007546,\"upstream_inference_completions_cost\":0.00672},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655618-gpF8Ix4SF6wO3kHC7diz",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 7546,
+        "completion_tokens": 1344,
+        "total_tokens": 8890,
+        "cost": 0.014266,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.014266,
+          "upstream_inference_prompt_cost": 0.007546,
+          "upstream_inference_completions_cost": 0.00672
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.309,
+  "call_id": "DS__z1_BHV8WIDW__claude__r3",
+  "fingerprint": "cca77febf462ad5ca8cb31fc7a59b7e9a8105d478eab7aa813d71492647360c5",
+  "paper_id": "z1_BHV8WIDW",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:33:46.400773+00:00",
+  "input_sha256": "49dd108688e4a180df4ad7e93ac29b8a42a0ef072a862f3fac17887ac862b082",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

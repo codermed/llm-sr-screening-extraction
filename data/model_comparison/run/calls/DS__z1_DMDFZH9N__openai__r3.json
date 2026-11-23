@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789655350-xVBQDd2Kuwwsdix5KlRT",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.001372,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 9762,
+    "completion_tokens": 217,
+    "total_tokens": 9979,
+    "cost": 0.001372,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 9600,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001372,
+      "upstream_inference_prompt_cost": 0.0010248,
+      "upstream_inference_completions_cost": 0.0003472
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This is a non-review research paper focused primarily on invasive species distribution modeling under climate change and land-use change scenarios. While it incorporates land-use change scenarios (SSP1, SSP2, SSP3) to filter suitable habitat for the pest Thrips palmi, the primary research objective is not on land-use land cover (LULC) future prediction per se, but on pest invasion risk mapping. The land-use change component is used as an input step rather than the central focus. Moreover, the paper does not explicitly describe a national-scale spatial implementation of LULC prediction as a primary aim; rather, it uses existing land-use change scenarios from Kim (2016) without detailed spatial accuracy metrics or quantitative assessment of LULC model performance. The study’s main output is species distribution and invasion risk maps integrating climate and land-use data, not standalone LULC projections or scenario comparisons. Therefore, it does not meet the core inclusion criteria for LULC prediction-focused research, leading to exclusion under the criteria specified.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:29:05.836069+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.01,
+      "raw_body": "\n         \n{\"id\":\"gen-1789655350-xVBQDd2Kuwwsdix5KlRT\",\"object\":\"chat.completion\",\"created\":1789655350,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This is a non-review research paper focused primarily on invasive species distribution modeling under climate change and land-use change scenarios. While it incorporates land-use change scenarios (SSP1, SSP2, SSP3) to filter suitable habitat for the pest Thrips palmi, the primary research objective is not on land-use land cover (LULC) future prediction per se, but on pest invasion risk mapping. The land-use change component is used as an input step rather than the central focus. Moreover, the paper does not explicitly describe a national-scale spatial implementation of LULC prediction as a primary aim; rather, it uses existing land-use change scenarios from Kim (2016) without detailed spatial accuracy metrics or quantitative assessment of LULC model performance. The study’s main output is species distribution and invasion risk maps integrating climate and land-use data, not standalone LULC projections or scenario comparisons. Therefore, it does not meet the core inclusion criteria for LULC prediction-focused research, leading to exclusion under the criteria specified.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":9762,\"completion_tokens\":217,\"total_tokens\":9979,\"cost\":0.001372,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":9600,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.001372,\"upstream_inference_prompt_cost\":0.0010248,\"upstream_inference_completions_cost\":0.0003472},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655350-xVBQDd2Kuwwsdix5KlRT",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 9762,
+        "completion_tokens": 217,
+        "total_tokens": 9979,
+        "cost": 0.001372,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 9600,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001372,
+          "upstream_inference_prompt_cost": 0.0010248,
+          "upstream_inference_completions_cost": 0.0003472
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.011,
+  "call_id": "DS__z1_DMDFZH9N__openai__r3",
+  "fingerprint": "2958ae07ceefb1c38fab4a172a323625193d0d67b14cdd8535a48b5ee3f494ac",
+  "paper_id": "z1_DMDFZH9N",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:29:08.846309+00:00",
+  "input_sha256": "44b27af5261eb4b62c7697e939b1e553016b75a1f0c7c4711bd81e489b488f89",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

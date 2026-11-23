@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789655372-mVM1UJjiVapjRLYxs2mc",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.01265238,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15326,
+    "completion_tokens": 179,
+    "total_tokens": 15505,
+    "cost": 0.01265238,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01265238,
+      "upstream_inference_prompt_cost": 0.01195428,
+      "upstream_inference_completions_cost": 0.0006981
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: POSSIBLE (Justification: The paper is a non-review research article that implements national-scale land-use change scenarios for Switzerland and produces mapped LULC projections under multiple future scenarios with quantitative comparisons. However, the primary research objective is not LULC prediction itself but rather assessing impacts of those LULC changes on open-land species habitats. LULC modeling serves as an input/intermediate step to evaluate ecological consequences, making LULC prediction a means to an end rather than the central focus. All inclusion criteria are technically met except “Primary focus = LULC prediction/simulation,” which fails; thus, it qualifies as 'POSSIBLE'. The study explicitly excludes global or local scale issues, uses spatially explicit national modeling, includes ≥2 scenarios beyond business-as-usual, and reports quantitative change metrics—so it does not meet any exclusion criteria.)",
+  "automated_status": "usable",
+  "parsed_label": "POSSIBLE",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:29:27.713769+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 5.177,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789655372-mVM1UJjiVapjRLYxs2mc\",\"object\":\"chat.completion\",\"created\":1789655372,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: POSSIBLE (Justification: The paper is a non-review research article that implements national-scale land-use change scenarios for Switzerland and produces mapped LULC projections under multiple future scenarios with quantitative comparisons. However, the primary research objective is not LULC prediction itself but rather assessing impacts of those LULC changes on open-land species habitats. LULC modeling serves as an input/intermediate step to evaluate ecological consequences, making LULC prediction a means to an end rather than the central focus. All inclusion criteria are technically met except “Primary focus = LULC prediction/simulation,” which fails; thus, it qualifies as 'POSSIBLE'. The study explicitly excludes global or local scale issues, uses spatially explicit national modeling, includes ≥2 scenarios beyond business-as-usual, and reports quantitative change metrics—so it does not meet any exclusion criteria.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15326,\"completion_tokens\":179,\"total_tokens\":15505,\"cost\":0.01265238,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.01265238,\"upstream_inference_prompt_cost\":0.01195428,\"upstream_inference_completions_cost\":0.0006981},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655372-mVM1UJjiVapjRLYxs2mc",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 15326,
+        "completion_tokens": 179,
+        "total_tokens": 15505,
+        "cost": 0.01265238,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01265238,
+          "upstream_inference_prompt_cost": 0.01195428,
+          "upstream_inference_completions_cost": 0.0006981
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 5.178,
+  "call_id": "DS__z1_M96X68LK__qwen__r3",
+  "fingerprint": "21d7b3a9297b06d18a6f0a688d6f245239694f8dc0092db5ed65bfda838f4c48",
+  "paper_id": "z1_M96X68LK",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:29:32.891187+00:00",
+  "input_sha256": "1baf40e9e9c3d655a6e099bf571433a85cb15ff231fefe2e3782f5a4db8a139f",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

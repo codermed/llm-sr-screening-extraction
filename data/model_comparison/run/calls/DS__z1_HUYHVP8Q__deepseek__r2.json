@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789654450-Ae35LiXMjrEJoMLSxYt3",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00329188,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12512,
+    "completion_tokens": 102,
+    "total_tokens": 12614,
+    "cost": 0.00329188,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00329188,
+      "upstream_inference_prompt_cost": 0.00325312,
+      "upstream_inference_completions_cost": 3.876e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper's primary focus is on GHG emissions and land use change impacts from dietary and agricultural productivity scenarios, not on LULC prediction. While it models future land use (cropland, pastureland), this is an intermediate step to assess GHG emissions, not the central research question. It does not implement or validate a spatial LULC prediction model with quantitative accuracy metrics. The core objective is evaluating sustainability and climate goals, not predicting LULC patterns.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:14:05.827120+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.066,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789654450-Ae35LiXMjrEJoMLSxYt3\",\"object\":\"chat.completion\",\"created\":1789654450,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper's primary focus is on GHG emissions and land use change impacts from dietary and agricultural productivity scenarios, not on LULC prediction. While it models future land use (cropland, pastureland), this is an intermediate step to assess GHG emissions, not the central research question. It does not implement or validate a spatial LULC prediction model with quantitative accuracy metrics. The core objective is evaluating sustainability and climate goals, not predicting LULC patterns.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12512,\"completion_tokens\":102,\"total_tokens\":12614,\"cost\":0.00329188,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00329188,\"upstream_inference_prompt_cost\":0.00325312,\"upstream_inference_completions_cost\":0.00003876},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654450-Ae35LiXMjrEJoMLSxYt3",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 12512,
+        "completion_tokens": 102,
+        "total_tokens": 12614,
+        "cost": 0.00329188,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00329188,
+          "upstream_inference_prompt_cost": 0.00325312,
+          "upstream_inference_completions_cost": 3.876e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.067,
+  "call_id": "DS__z1_HUYHVP8Q__deepseek__r2",
+  "fingerprint": "3a11284854f6708602bb3af402716b954f4ddcc8700fcb0cb0e4777a90e0fbde",
+  "paper_id": "z1_HUYHVP8Q",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:14:09.893032+00:00",
+  "input_sha256": "c090aa4d31bafec8b8b57528ca1265c36e69028d72585c31a374d3fec6a65b45",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

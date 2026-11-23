@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789653103-fW8dRCT6thGVIwDZnHUc",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.02461,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 19620,
+    "completion_tokens": 998,
+    "total_tokens": 20618,
+    "cost": 0.02461,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.02461,
+      "upstream_inference_prompt_cost": 0.01962,
+      "upstream_inference_completions_cost": 0.00499
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis\n\n## Initial Determination\nThis is a **NON-REVIEW PAPER** – it presents original research with empirical data collection, methodology, and results sections.\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA ASSESSMENT:\n\n1. **Explicit national-scale spatial implementation (entire country)?**\n   - ❌ FAILS: Study area is Prayagraj district in Uttar Pradesh, India. This is a **district-level (local/regional) study**, not national-scale. The paper explicitly states: \"The geographical extent of Prayagraj district is from latitude 24° 47′ 00″ N to 25° 44′ 45″ N and from longitude 81° 33′ 55″ E to 82° 21′ 20″ E\" with area of 5482 km².\n\n2. **Primary focus = LULC prediction/simulation?**\n   - ✅ PASSES: The paper's primary objectives explicitly include: \"The third objective is to predict and quantify the LULC scenario for the years 2035 and 2050.\" LULC prediction is a central research objective.\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ✅ PASSES: Two future scenarios modeled (2035 and 2050) with quantitative area comparisons provided in Table 12.\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ✅ PASSES: Overall accuracy >89% for all classifications (Table 4), kappa coefficients reported (>0.87), validation metrics provided (Kno=0.8030, Klocation=0.7785, etc. in Table 11), area-based error matrices with confidence intervals (Tables 5-6).\n\n5. **Outputs include mapped LULC projections?**\n   - ✅ PASSES: Predicted LULC maps for 2035 and 2050 shown in Figure 9, with soft prediction vulnerability maps in Figure 10.\n\n### SPECIFIC EXCLUSION CRITERIA ASSESSMENT:\n\n- ❌ **Global-scale analysis without national-level disaggregation?** – No, this is district-level\n- ✅ **Local/regional/global/transboundary scale focus?** – YES, this is explicitly LOCAL/REGIONAL (district-level)\n- ❌ **No LULC prediction component?** – No, LULC prediction is present\n- ❌ **Species-specific/ecological focus unrelated to LULC?** – No\n- ❌ **Economic/urban models lacking spatially explicit LULC outputs?** – No, spatial LULC maps are provided\n- ❌ **Biomass/bioenergy/carbon studies without LULC change analysis?** – No\n- ❌ **Methodological papers without application?** – No, applied to real study area\n- ❌ **Purely qualitative/historical analysis?** – No, includes future projections\n- ❌ **Remote sensing technical studies without predictive modeling?** – No, includes MLP-MC predictive modeling\n- ❌ **Single-scenario projections?** – No, two scenarios (2035, 2050)\n\n## Critical Finding\n\n**The paper FAILS the first core inclusion criterion**: It is a **district-level (regional) study**, not a national-scale implementation. The inclusion criteria explicitly require \"Explicit national-scale spatial implementation (entire country).\" This paper covers only Prayagraj district (~5,482 km²), which is a small portion of Uttar Pradesh state, which itself is one state within India.\n\n---\n\n## Final Categorization\n\n**EXCLUDED**\n\n**Justification:** While this paper successfully implements LULC prediction modeling with multiple scenarios, quantitative accuracy metrics, and spatial outputs, it fails the primary inclusion criterion requiring explicit national-scale spatial implementation. The study is explicitly district-level (Prayagraj district, Uttar Pradesh, India), which falls under the exclusion category of \"Local/regional scale focus.\" The paper does not meet the national-scale requirement specified in the core inclusion criteria, despite otherwise meeting all other technical and methodological standards for LULC prediction research.",
+  "automated_status": "invalid_output",
+  "parsed_label": "",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:51:38.548418+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.135,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653103-fW8dRCT6thGVIwDZnHUc\",\"object\":\"chat.completion\",\"created\":1789653103,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis\\n\\n## Initial Determination\\nThis is a **NON-REVIEW PAPER** – it presents original research with empirical data collection, methodology, and results sections.\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA ASSESSMENT:\\n\\n1. **Explicit national-scale spatial implementation (entire country)?**\\n   - ❌ FAILS: Study area is Prayagraj district in Uttar Pradesh, India. This is a **district-level (local/regional) study**, not national-scale. The paper explicitly states: \\\"The geographical extent of Prayagraj district is from latitude 24° 47′ 00″ N to 25° 44′ 45″ N and from longitude 81° 33′ 55″ E to 82° 21′ 20″ E\\\" with area of 5482 km².\\n\\n2. **Primary focus = LULC prediction/simulation?**\\n   - ✅ PASSES: The paper's primary objectives explicitly include: \\\"The third objective is to predict and quantify the LULC scenario for the years 2035 and 2050.\\\" LULC prediction is a central research objective.\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ✅ PASSES: Two future scenarios modeled (2035 and 2050) with quantitative area comparisons provided in Table 12.\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ✅ PASSES: Overall accuracy >89% for all classifications (Table 4), kappa coefficients reported (>0.87), validation metrics provided (Kno=0.8030, Klocation=0.7785, etc. in Table 11), area-based error matrices with confidence intervals (Tables 5-6).\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ✅ PASSES: Predicted LULC maps for 2035 and 2050 shown in Figure 9, with soft prediction vulnerability maps in Figure 10.\\n\\n### SPECIFIC EXCLUSION CRITERIA ASSESSMENT:\\n\\n- ❌ **Global-scale analysis without national-level disaggregation?** – No, this is district-level\\n- ✅ **Local/regional/global/transboundary scale focus?** – YES, this is explicitly LOCAL/REGIONAL (district-level)\\n- ❌ **No LULC prediction component?** – No, LULC prediction is present\\n- ❌ **Species-specific/ecological focus unrelated to LULC?** – No\\n- ❌ **Economic/urban models lacking spatially explicit LULC outputs?** – No, spatial LULC maps are provided\\n- ❌ **Biomass/bioenergy/carbon studies without LULC change analysis?** – No\\n- ❌ **Methodological papers without application?** – No, applied to real study area\\n- ❌ **Purely qualitative/historical analysis?** – No, includes future projections\\n- ❌ **Remote sensing technical studies without predictive modeling?** – No, includes MLP-MC predictive modeling\\n- ❌ **Single-scenario projections?** – No, two scenarios (2035, 2050)\\n\\n## Critical Finding\\n\\n**The paper FAILS the first core inclusion criterion**: It is a **district-level (regional) study**, not a national-scale implementation. The inclusion criteria explicitly require \\\"Explicit national-scale spatial implementation (entire country).\\\" This paper covers only Prayagraj district (~5,482 km²), which is a small portion of Uttar Pradesh state, which itself is one state within India.\\n\\n---\\n\\n## Final Categorization\\n\\n**EXCLUDED**\\n\\n**Justification:** While this paper successfully implements LULC prediction modeling with multiple scenarios, quantitative accuracy metrics, and spatial outputs, it fails the primary inclusion criterion requiring explicit national-scale spatial implementation. The study is explicitly district-level (Prayagraj district, Uttar Pradesh, India), which falls under the exclusion category of \\\"Local/regional scale focus.\\\" The paper does not meet the national-scale requirement specified in the core inclusion criteria, despite otherwise meeting all other technical and methodological standards for LULC prediction research.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":19620,\"completion_tokens\":998,\"total_tokens\":20618,\"cost\":0.02461,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.02461,\"upstream_inference_prompt_cost\":0.01962,\"upstream_inference_completions_cost\":0.00499},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653103-fW8dRCT6thGVIwDZnHUc",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 19620,
+        "completion_tokens": 998,
+        "total_tokens": 20618,
+        "cost": 0.02461,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.02461,
+          "upstream_inference_prompt_cost": 0.01962,
+          "upstream_inference_completions_cost": 0.00499
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.135,
+  "call_id": "DS__z1_F9ADP4YZ__claude__r1",
+  "fingerprint": "be9edc31889ae10d2306fa1da8d0f9a4ce67f7cdd05a570bb04f4d6c966d9d36",
+  "paper_id": "z1_F9ADP4YZ",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:51:50.683699+00:00",
+  "input_sha256": "52bd2eb9639d74990c0a25fef6775067d18ea501b2fc771809613ae232167f41",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

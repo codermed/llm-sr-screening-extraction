@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789655326-IU6hGRaWjqtlBHnAJW1X",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0034717,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 13151,
+    "completion_tokens": 138,
+    "total_tokens": 13289,
+    "cost": 0.0034717,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0034717,
+      "upstream_inference_prompt_cost": 0.00341926,
+      "upstream_inference_completions_cost": 5.244e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a research article, not a review. Its primary objective is to model the distribution of a critically endangered deer species (Siamese Eld's deer) in a transboundary conservation area, using land use and climate change scenarios as *inputs* to assess impacts on habitat suitability. The core research question is ecological/conservation-focused, not land use land cover (LULC) prediction itself. The LULC scenarios used were developed in a prior project phase; the paper does not implement or validate a national-scale LULC prediction model. The study area is a specific transboundary region, not an entire country.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:28:41.944623+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.666,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789655326-IU6hGRaWjqtlBHnAJW1X\",\"object\":\"chat.completion\",\"created\":1789655326,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a research article, not a review. Its primary objective is to model the distribution of a critically endangered deer species (Siamese Eld's deer) in a transboundary conservation area, using land use and climate change scenarios as *inputs* to assess impacts on habitat suitability. The core research question is ecological/conservation-focused, not land use land cover (LULC) prediction itself. The LULC scenarios used were developed in a prior project phase; the paper does not implement or validate a national-scale LULC prediction model. The study area is a specific transboundary region, not an entire country.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":13151,\"completion_tokens\":138,\"total_tokens\":13289,\"cost\":0.0034717,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0034717,\"upstream_inference_prompt_cost\":0.00341926,\"upstream_inference_completions_cost\":0.00005244},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655326-IU6hGRaWjqtlBHnAJW1X",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 13151,
+        "completion_tokens": 138,
+        "total_tokens": 13289,
+        "cost": 0.0034717,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0034717,
+          "upstream_inference_prompt_cost": 0.00341926,
+          "upstream_inference_completions_cost": 5.244e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.667,
+  "call_id": "DS__z1_62M9Z4AJ__deepseek__r3",
+  "fingerprint": "1b0aaff35dc9d4fdc2fd119a6662c0a8800f382d7ae194c7b70e958b137b1220",
+  "paper_id": "z1_62M9Z4AJ",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:28:46.610590+00:00",
+  "input_sha256": "b116f8e7014f23ab582bf7cfb6feb626427a4df147f546a041ef53b4504e6389",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

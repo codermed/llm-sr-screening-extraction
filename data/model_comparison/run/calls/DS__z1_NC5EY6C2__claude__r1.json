@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789652938-oM2nTzJsQam3FDrZgyF7",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.021519,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15074,
+    "completion_tokens": 1289,
+    "total_tokens": 16363,
+    "cost": 0.021519,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.021519,
+      "upstream_inference_prompt_cost": 0.015074,
+      "upstream_inference_completions_cost": 0.006445
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Forest Sector SSP Modeling for New Zealand\n\n## Initial Assessment\nThis is **NOT a review article**. It is a research paper presenting original modeling analysis of forest sector futures under Shared Socio-economic Pathways (SSPs).\n\n## Detailed Evaluation Against Criteria\n\n### CORE INCLUSION CRITERIA (Non-Review Research):\n\n1. **Explicit national-scale spatial implementation (entire country)?**\n   - ✓ YES - New Zealand is the primary study area with analysis at Territorial Authority (TA) level\n   - Paper states: \"Downscaling global SSP assumptions to New Zealand level\" and provides regional breakdown by TA\n\n2. **Primary focus = LULC prediction/simulation (central research question)?**\n   - ✗ **NO** - Primary focus is **forest sector analysis** (timber prices, roundwood production, carbon sequestration)\n   - LULC change is a **secondary output**, not the central research question\n   - Abstract emphasizes: \"changes to key sector outputs such timber prices, roundwood production, forest area, and carbon sequestration\"\n   - The paper is fundamentally about forest economics and carbon accounting, not LULC prediction\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ✓ YES - Five SSP scenarios (SSP1-SSP5) with quantitative comparisons\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ⚠ PARTIAL - Spatial modeling exists (regional TA-level outputs) but **no accuracy metrics** reported\n   - No validation against observed data, no accuracy assessment, no change rate comparisons to observed trends\n   - Outputs are projections only, not validated predictions\n\n5. **Outputs include mapped LULC projections?**\n   - ✗ **NO** - Figure 6 shows regional forest carbon changes but **no actual LULC maps**\n   - No spatial representation of land cover classes or transitions\n   - Only tabular and graphical outputs of forest area and carbon metrics\n\n### SPECIFIC EXCLUSION CRITERIA:\n\n- **Biomass/bioenergy/carbon studies without LULC change analysis?**\n  - ✓ APPLIES - While forest area changes are discussed, the primary analytical focus is carbon sequestration and forest economics\n  - LULC change (forest area expansion/contraction) is a byproduct of economic optimization, not the research objective\n\n- **Economic/urban models lacking spatially explicit LULC outputs?**\n  - ✓ APPLIES - Both GTM and NZFARM are economic partial equilibrium models\n  - NZFARM is explicitly described as \"a national economic land use model\" but outputs are non-spatial (aggregated by TA or national)\n  - No spatial maps of LULC classes or transitions produced\n\n- **Global-scale analysis without national-level disaggregation?**\n  - ✓ PARTIAL APPLIES - While NZ analysis exists, significant portion of paper (Section 3.1, Figures 3-7) focuses on global GTM results\n  - Global analysis is primary; NZ is downscaling application\n\n### CRITICAL FINDINGS:\n\n**Research Objective:** The paper's central question is: *How will the forest sector (prices, production, carbon) evolve under different SSPs?* This is a **sectoral economic question**, not a LULC prediction question.\n\n**LULC Role:** Forest area changes are **outputs of economic optimization** under different scenarios, not the primary modeling target. The models are designed to maximize economic returns subject to constraints—LULC change is incidental to this optimization.\n\n**Spatial Explicitness:** Despite regional breakdown by TA, the modeling approach is:\n- Non-spatial in GTM (17 global regions, not gridded)\n- Aggregated in NZFARM (TA-level summaries, not pixel/grid-level predictions)\n- No LULC maps produced\n- No spatial accuracy assessment\n\n**Quantitative Metrics:** Paper reports forest area changes in hectares and carbon in MtCO2e, but these are **scenario outputs**, not validated predictions with accuracy metrics.\n\n---\n\n## FINAL CATEGORIZATION\n\n**EXCLUDED**\n\n**Justification:** \nThis paper fails multiple core inclusion criteria for LULC prediction research:\n\n1. **Primary focus is NOT LULC prediction** - The central research question concerns forest sector economics and carbon sequestration under different socioeconomic pathways. LULC change (forest area expansion/contraction) is a secondary output of economic optimization, not the research objective.\n\n2. **No spatial LULC outputs** - Despite regional analysis, the paper produces no LULC maps, spatial representations of land cover classes, or gridded projections. Outputs are aggregated sectoral metrics (timber prices, production volumes, carbon stocks).\n\n3. **No spatial accuracy metrics** - While quantitative projections are provided, there are no validation methods, accuracy assessments, or comparison to observed LULC change rates. Outputs are unvalidated scenario projections.\n\n4. **Economic model without spatially explicit LULC outputs** - Both GTM and NZFARM are economic partial equilibrium models designed to optimize sectoral returns. They are not LULC prediction models.\n\n5. **Biomass/carbon focus without LULC change analysis** - The paper is fundamentally a carbon accounting and forest economics study, not a LULC change prediction study.\n\nThe paper makes a valuable contribution to forest sector scenario modeling but does not meet the criteria for national-scale LULC prediction research.",
+  "automated_status": "invalid_output",
+  "parsed_label": "",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:48:53.326926+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 14.213,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789652938-oM2nTzJsQam3FDrZgyF7\",\"object\":\"chat.completion\",\"created\":1789652938,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Forest Sector SSP Modeling for New Zealand\\n\\n## Initial Assessment\\nThis is **NOT a review article**. It is a research paper presenting original modeling analysis of forest sector futures under Shared Socio-economic Pathways (SSPs).\\n\\n## Detailed Evaluation Against Criteria\\n\\n### CORE INCLUSION CRITERIA (Non-Review Research):\\n\\n1. **Explicit national-scale spatial implementation (entire country)?**\\n   - ✓ YES - New Zealand is the primary study area with analysis at Territorial Authority (TA) level\\n   - Paper states: \\\"Downscaling global SSP assumptions to New Zealand level\\\" and provides regional breakdown by TA\\n\\n2. **Primary focus = LULC prediction/simulation (central research question)?**\\n   - ✗ **NO** - Primary focus is **forest sector analysis** (timber prices, roundwood production, carbon sequestration)\\n   - LULC change is a **secondary output**, not the central research question\\n   - Abstract emphasizes: \\\"changes to key sector outputs such timber prices, roundwood production, forest area, and carbon sequestration\\\"\\n   - The paper is fundamentally about forest economics and carbon accounting, not LULC prediction\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ✓ YES - Five SSP scenarios (SSP1-SSP5) with quantitative comparisons\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ⚠ PARTIAL - Spatial modeling exists (regional TA-level outputs) but **no accuracy metrics** reported\\n   - No validation against observed data, no accuracy assessment, no change rate comparisons to observed trends\\n   - Outputs are projections only, not validated predictions\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ✗ **NO** - Figure 6 shows regional forest carbon changes but **no actual LULC maps**\\n   - No spatial representation of land cover classes or transitions\\n   - Only tabular and graphical outputs of forest area and carbon metrics\\n\\n### SPECIFIC EXCLUSION CRITERIA:\\n\\n- **Biomass/bioenergy/carbon studies without LULC change analysis?**\\n  - ✓ APPLIES - While forest area changes are discussed, the primary analytical focus is carbon sequestration and forest economics\\n  - LULC change (forest area expansion/contraction) is a byproduct of economic optimization, not the research objective\\n\\n- **Economic/urban models lacking spatially explicit LULC outputs?**\\n  - ✓ APPLIES - Both GTM and NZFARM are economic partial equilibrium models\\n  - NZFARM is explicitly described as \\\"a national economic land use model\\\" but outputs are non-spatial (aggregated by TA or national)\\n  - No spatial maps of LULC classes or transitions produced\\n\\n- **Global-scale analysis without national-level disaggregation?**\\n  - ✓ PARTIAL APPLIES - While NZ analysis exists, significant portion of paper (Section 3.1, Figures 3-7) focuses on global GTM results\\n  - Global analysis is primary; NZ is downscaling application\\n\\n### CRITICAL FINDINGS:\\n\\n**Research Objective:** The paper's central question is: *How will the forest sector (prices, production, carbon) evolve under different SSPs?* This is a **sectoral economic question**, not a LULC prediction question.\\n\\n**LULC Role:** Forest area changes are **outputs of economic optimization** under different scenarios, not the primary modeling target. The models are designed to maximize economic returns subject to constraints—LULC change is incidental to this optimization.\\n\\n**Spatial Explicitness:** Despite regional breakdown by TA, the modeling approach is:\\n- Non-spatial in GTM (17 global regions, not gridded)\\n- Aggregated in NZFARM (TA-level summaries, not pixel/grid-level predictions)\\n- No LULC maps produced\\n- No spatial accuracy assessment\\n\\n**Quantitative Metrics:** Paper reports forest area changes in hectares and carbon in MtCO2e, but these are **scenario outputs**, not validated predictions with accuracy metrics.\\n\\n---\\n\\n## FINAL CATEGORIZATION\\n\\n**EXCLUDED**\\n\\n**Justification:** \\nThis paper fails multiple core inclusion criteria for LULC prediction research:\\n\\n1. **Primary focus is NOT LULC prediction** - The central research question concerns forest sector economics and carbon sequestration under different socioeconomic pathways. LULC change (forest area expansion/contraction) is a secondary output of economic optimization, not the research objective.\\n\\n2. **No spatial LULC outputs** - Despite regional analysis, the paper produces no LULC maps, spatial representations of land cover classes, or gridded projections. Outputs are aggregated sectoral metrics (timber prices, production volumes, carbon stocks).\\n\\n3. **No spatial accuracy metrics** - While quantitative projections are provided, there are no validation methods, accuracy assessments, or comparison to observed LULC change rates. Outputs are unvalidated scenario projections.\\n\\n4. **Economic model without spatially explicit LULC outputs** - Both GTM and NZFARM are economic partial equilibrium models designed to optimize sectoral returns. They are not LULC prediction models.\\n\\n5. **Biomass/carbon focus without LULC change analysis** - The paper is fundamentally a carbon accounting and forest economics study, not a LULC change prediction study.\\n\\nThe paper makes a valuable contribution to forest sector scenario modeling but does not meet the criteria for national-scale LULC prediction research.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15074,\"completion_tokens\":1289,\"total_tokens\":16363,\"cost\":0.021519,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.021519,\"upstream_inference_prompt_cost\":0.015074,\"upstream_inference_completions_cost\":0.006445},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652938-oM2nTzJsQam3FDrZgyF7",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 15074,
+        "completion_tokens": 1289,
+        "total_tokens": 16363,
+        "cost": 0.021519,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.021519,
+          "upstream_inference_prompt_cost": 0.015074,
+          "upstream_inference_completions_cost": 0.006445
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 14.214,
+  "call_id": "DS__z1_NC5EY6C2__claude__r1",
+  "fingerprint": "442315ed705267a562a19b7d81c02a05d01488a7813912c84ab554db50811d02",
+  "paper_id": "z1_NC5EY6C2",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:49:07.540198+00:00",
+  "input_sha256": "c815ac374878237ff1fb4375ba5ab601960bc271743cb0657cc77889a21776e8",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

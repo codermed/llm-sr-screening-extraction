@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789655778-5GVqXrAtI8uTQu1SbpIJ",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.019153,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 14428,
+    "completion_tokens": 945,
+    "total_tokens": 15373,
+    "cost": 0.019153,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.019153,
+      "upstream_inference_prompt_cost": 0.014428,
+      "upstream_inference_completions_cost": 0.004725
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Forest Cover Change Prediction in India\n\n## Initial Assessment\n\n**Is this a review article?** NO - This is a primary research paper presenting original predictive modeling of forest cover changes.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA (Non-Review Paper):\n\n1. **Explicit national-scale spatial implementation (entire country)** ✓\n   - Study covers all of India (31 states/UTs)\n   - Table 1 provides state-by-state forest cover data for entire nation\n   - Methodology states: \"Forest cover for the period 1880 was predicted for entire India\"\n\n2. **Primary focus = LULC prediction/simulation** ✓\n   - Central research question: \"simulate the forest cover changes in India using Land Change Modeler\"\n   - Primary objective explicitly stated in abstract and introduction\n   - Forest cover prediction is the main analytical output\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✗\n   - **CRITICAL FAILURE**: Only ONE scenario implemented\n   - Study uses \"business-as-usual (BAU)\" scenario exclusively\n   - No alternative scenarios (e.g., conservation, afforestation, policy interventions)\n   - Statement: \"We have simulated forest cover changes under the business-as-usual (BAU) for 1880 and 2025\"\n   - No quantitative comparison between multiple scenarios\n\n4. **Spatial modeling with quantitative accuracy metrics** ✓\n   - Multi-layer perceptron neural network employed\n   - Kappa statistics reported: 0.8279 (Northeast), 0.7065 (Andaman & Nicobar)\n   - Change rates quantified (Table 2, 3, 4)\n   - Cramer's V coefficients for driver variables (Tables 6, 7)\n\n5. **Outputs include mapped LULC projections** ✓\n   - Figures 3-6 show predicted forest cover maps\n   - Spatial distribution maps for 1880 and 2025\n   - Maps for Northeast India and Andaman & Nicobar Islands\n\n### SPECIFIC EXCLUSION CRITERIA:\n\n- Global-scale without national disaggregation? NO ✓\n- Local/regional focus? NO ✓\n- No LULC prediction? NO ✓\n- Species-specific focus? NO ✓\n- Economic/urban models without LULC outputs? NO ✓\n- Biomass/carbon without LULC analysis? NO (includes LULC analysis) ✓\n- Methodological paper without application? NO ✓\n- Purely qualitative/historical only? NO ✓\n- Remote sensing technical without prediction? NO ✓\n- **Single-scenario \"business-as-usual\" projections?** YES ✗ **EXCLUSION MET**\n- No spatial explicitness? NO ✓\n\n---\n\n## Critical Finding\n\nThe paper explicitly fails **Core Inclusion Criterion #3** (≥2 future scenarios with quantitative comparison) and meets **Specific Exclusion Criterion** (single-scenario BAU projections only).\n\nWhile the paper implements sophisticated spatial modeling at national scale with strong quantitative metrics, it provides only one future projection pathway (BAU 2025) without alternative scenarios for comparative analysis. The study reconstructs historical forest cover (1880, 1930, 1975, etc.) but projects only one future state (2025), which violates the multi-scenario requirement.\n\n---\n\n## Final Categorization\n\n**EXCLUDED**\n\n**Justification:** Although this paper demonstrates rigorous national-scale LULC prediction modeling with strong spatial implementation and quantitative accuracy metrics (Kappa >0.70), it fails the core inclusion criterion requiring ≥2 future scenarios with quantitative comparison. The study implements only a single business-as-usual (BAU) scenario for 2025 without alternative policy or conservation scenarios. This single-scenario approach, while valuable for baseline projections, does not meet the analytical framework requirement for comparative scenario analysis essential to LULC prediction research evaluation.",
+  "automated_status": "invalid_output",
+  "parsed_label": "",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:36:13.607116+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 10.034,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655778-5GVqXrAtI8uTQu1SbpIJ\",\"object\":\"chat.completion\",\"created\":1789655778,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Forest Cover Change Prediction in India\\n\\n## Initial Assessment\\n\\n**Is this a review article?** NO - This is a primary research paper presenting original predictive modeling of forest cover changes.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA (Non-Review Paper):\\n\\n1. **Explicit national-scale spatial implementation (entire country)** ✓\\n   - Study covers all of India (31 states/UTs)\\n   - Table 1 provides state-by-state forest cover data for entire nation\\n   - Methodology states: \\\"Forest cover for the period 1880 was predicted for entire India\\\"\\n\\n2. **Primary focus = LULC prediction/simulation** ✓\\n   - Central research question: \\\"simulate the forest cover changes in India using Land Change Modeler\\\"\\n   - Primary objective explicitly stated in abstract and introduction\\n   - Forest cover prediction is the main analytical output\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✗\\n   - **CRITICAL FAILURE**: Only ONE scenario implemented\\n   - Study uses \\\"business-as-usual (BAU)\\\" scenario exclusively\\n   - No alternative scenarios (e.g., conservation, afforestation, policy interventions)\\n   - Statement: \\\"We have simulated forest cover changes under the business-as-usual (BAU) for 1880 and 2025\\\"\\n   - No quantitative comparison between multiple scenarios\\n\\n4. **Spatial modeling with quantitative accuracy metrics** ✓\\n   - Multi-layer perceptron neural network employed\\n   - Kappa statistics reported: 0.8279 (Northeast), 0.7065 (Andaman & Nicobar)\\n   - Change rates quantified (Table 2, 3, 4)\\n   - Cramer's V coefficients for driver variables (Tables 6, 7)\\n\\n5. **Outputs include mapped LULC projections** ✓\\n   - Figures 3-6 show predicted forest cover maps\\n   - Spatial distribution maps for 1880 and 2025\\n   - Maps for Northeast India and Andaman & Nicobar Islands\\n\\n### SPECIFIC EXCLUSION CRITERIA:\\n\\n- Global-scale without national disaggregation? NO ✓\\n- Local/regional focus? NO ✓\\n- No LULC prediction? NO ✓\\n- Species-specific focus? NO ✓\\n- Economic/urban models without LULC outputs? NO ✓\\n- Biomass/carbon without LULC analysis? NO (includes LULC analysis) ✓\\n- Methodological paper without application? NO ✓\\n- Purely qualitative/historical only? NO ✓\\n- Remote sensing technical without prediction? NO ✓\\n- **Single-scenario \\\"business-as-usual\\\" projections?** YES ✗ **EXCLUSION MET**\\n- No spatial explicitness? NO ✓\\n\\n---\\n\\n## Critical Finding\\n\\nThe paper explicitly fails **Core Inclusion Criterion #3** (≥2 future scenarios with quantitative comparison) and meets **Specific Exclusion Criterion** (single-scenario BAU projections only).\\n\\nWhile the paper implements sophisticated spatial modeling at national scale with strong quantitative metrics, it provides only one future projection pathway (BAU 2025) without alternative scenarios for comparative analysis. The study reconstructs historical forest cover (1880, 1930, 1975, etc.) but projects only one future state (2025), which violates the multi-scenario requirement.\\n\\n---\\n\\n## Final Categorization\\n\\n**EXCLUDED**\\n\\n**Justification:** Although this paper demonstrates rigorous national-scale LULC prediction modeling with strong spatial implementation and quantitative accuracy metrics (Kappa >0.70), it fails the core inclusion criterion requiring ≥2 future scenarios with quantitative comparison. The study implements only a single business-as-usual (BAU) scenario for 2025 without alternative policy or conservation scenarios. This single-scenario approach, while valuable for baseline projections, does not meet the analytical framework requirement for comparative scenario analysis essential to LULC prediction research evaluation.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":14428,\"completion_tokens\":945,\"total_tokens\":15373,\"cost\":0.019153,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.019153,\"upstream_inference_prompt_cost\":0.014428,\"upstream_inference_completions_cost\":0.004725},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655778-5GVqXrAtI8uTQu1SbpIJ",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 14428,
+        "completion_tokens": 945,
+        "total_tokens": 15373,
+        "cost": 0.019153,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.019153,
+          "upstream_inference_prompt_cost": 0.014428,
+          "upstream_inference_completions_cost": 0.004725
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 10.035,
+  "call_id": "DS__z1_4VZ2CD2X__claude__r3",
+  "fingerprint": "f609f86b09565faeacde67f7c14fef2b2506471777f799a8b48a7cacddaa7280",
+  "paper_id": "z1_4VZ2CD2X",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:36:23.641372+00:00",
+  "input_sha256": "74f305578bb53e61d6488bfd782c4914aba2cf87164faeb1d46dbb7ffeb5d265",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

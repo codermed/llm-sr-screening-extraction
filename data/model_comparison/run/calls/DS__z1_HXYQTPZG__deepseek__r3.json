@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789655398-vu07HXWbv2LRRLGT0B75",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00110672,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 8141,
+    "completion_tokens": 101,
+    "total_tokens": 8242,
+    "cost": 0.00110672,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 8064,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00110672,
+      "upstream_inference_prompt_cost": 0.00106834,
+      "upstream_inference_completions_cost": 3.838e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: The paper presents a national-scale LULC prediction study for Bolivia, comparing six different deforestation allocation scenarios with quantitative accuracy metrics (PFOM, SFOM) and assessing their impacts on biodiversity. It meets all core inclusion criteria: explicit national-scale implementation for Bolivia, primary focus on evaluating and improving LULC prediction models for biodiversity assessment, implementation of multiple scenarios (six allocation methods), spatial modeling with quantitative error decomposition and accuracy metrics, and outputs include mapped deforestation simulations.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:29:53.077646+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.916,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789655398-vu07HXWbv2LRRLGT0B75\",\"object\":\"chat.completion\",\"created\":1789655398,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: The paper presents a national-scale LULC prediction study for Bolivia, comparing six different deforestation allocation scenarios with quantitative accuracy metrics (PFOM, SFOM) and assessing their impacts on biodiversity. It meets all core inclusion criteria: explicit national-scale implementation for Bolivia, primary focus on evaluating and improving LULC prediction models for biodiversity assessment, implementation of multiple scenarios (six allocation methods), spatial modeling with quantitative error decomposition and accuracy metrics, and outputs include mapped deforestation simulations.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":8141,\"completion_tokens\":101,\"total_tokens\":8242,\"cost\":0.00110672,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":8064,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00110672,\"upstream_inference_prompt_cost\":0.00106834,\"upstream_inference_completions_cost\":0.00003838},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655398-vu07HXWbv2LRRLGT0B75",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 8141,
+        "completion_tokens": 101,
+        "total_tokens": 8242,
+        "cost": 0.00110672,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 8064,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00110672,
+          "upstream_inference_prompt_cost": 0.00106834,
+          "upstream_inference_completions_cost": 3.838e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.917,
+  "call_id": "DS__z1_HXYQTPZG__deepseek__r3",
+  "fingerprint": "69cd3aca1d87ee0ba595e60255e5bc0d810811421763c6e8a6a4ce7fd3a9b0b2",
+  "paper_id": "z1_HXYQTPZG",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:29:56.994207+00:00",
+  "input_sha256": "eb8b94cc29c09ec3ab6a925249d85614cca1d2b4246120bf31fdf82f3f6913b2",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

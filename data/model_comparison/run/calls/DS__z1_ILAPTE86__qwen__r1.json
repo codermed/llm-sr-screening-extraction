@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789652675-35RstcbAw8D04odpbgid",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00356616,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 3852,
+    "completion_tokens": 144,
+    "total_tokens": 3996,
+    "cost": 0.00356616,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00356616,
+      "upstream_inference_prompt_cost": 0.00300456,
+      "upstream_inference_completions_cost": 0.0005616
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a systematic review focused on associations between climate variability, agricultural land use, and enteric zoonotic diseases in New Zealand. While it discusses agricultural intensification and environmental change, it does not review or address land use/land cover (LULC) future prediction modeling. The review synthesizes epidemiological evidence linking existing land use practices and climatic factors to disease incidence but does not engage with spatial LULC projections, scenarios, or predictive modeling. Therefore, it does not meet the criterion for 'REVIEW' as defined—i.e., it does not review literature on LULC future prediction—and is correctly categorized as 'EXCLUDED'.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:44:30.217973+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.05,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789652675-35RstcbAw8D04odpbgid\",\"object\":\"chat.completion\",\"created\":1789652675,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a systematic review focused on associations between climate variability, agricultural land use, and enteric zoonotic diseases in New Zealand. While it discusses agricultural intensification and environmental change, it does not review or address land use/land cover (LULC) future prediction modeling. The review synthesizes epidemiological evidence linking existing land use practices and climatic factors to disease incidence but does not engage with spatial LULC projections, scenarios, or predictive modeling. Therefore, it does not meet the criterion for 'REVIEW' as defined—i.e., it does not review literature on LULC future prediction—and is correctly categorized as 'EXCLUDED'.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":3852,\"completion_tokens\":144,\"total_tokens\":3996,\"cost\":0.00356616,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00356616,\"upstream_inference_prompt_cost\":0.00300456,\"upstream_inference_completions_cost\":0.0005616},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652675-35RstcbAw8D04odpbgid",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 3852,
+        "completion_tokens": 144,
+        "total_tokens": 3996,
+        "cost": 0.00356616,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00356616,
+          "upstream_inference_prompt_cost": 0.00300456,
+          "upstream_inference_completions_cost": 0.0005616
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.05,
+  "call_id": "DS__z1_ILAPTE86__qwen__r1",
+  "fingerprint": "5ef4dc577eb7c3ccfd71adea06187f46022194495141f9b7c72695d66a133c42",
+  "paper_id": "z1_ILAPTE86",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:44:34.268263+00:00",
+  "input_sha256": "41216916461f4449fae2881d1b0b97d75feddaa8c67c83f17a4ad795eb8df699",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

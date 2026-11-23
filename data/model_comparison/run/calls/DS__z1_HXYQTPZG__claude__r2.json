@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789654334-VBmNMeMQfNGjEfSksLC1",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.014199,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 9359,
+    "completion_tokens": 968,
+    "total_tokens": 10327,
+    "cost": 0.014199,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.014199,
+      "upstream_inference_prompt_cost": 0.009359,
+      "upstream_inference_completions_cost": 0.00484
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis\n\n## Initial Assessment: Review Status\nThis is a **NON-REVIEW RESEARCH ARTICLE**. It presents original research with empirical modeling and evaluation, not a synthesis of existing literature.\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA:\n\n1. **Explicit national-scale spatial implementation (entire country)** ✓\n   - Study area: \"forested areas within the country of Bolivia\" (entire nation)\n   - Methodology section explicitly states: \"The study region (Fig. 1) encompasses forested areas within the country of Bolivia\"\n\n2. **Primary focus = LULC prediction/simulation** ✓\n   - Central research question: \"evaluate land cover change scenarios in Bolivia...to inform LCC models for biodiversity assessments\"\n   - Six deforestation simulations created and compared\n   - Explicit land change modeling framework (5-step process detailed in Methods)\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\n   - Six scenarios created: national-level, department-level, province-level, municipality-level, carbon-level, and ecoregion-level\n   - Quantitative comparison across all scenarios (Table 3, Figures 5)\n\n4. **Spatial modeling with quantitative accuracy metrics** ✓\n   - Multiple metrics reported: PFOM (Pixel-level Figure of Merit), SFOM (Stratum Figure of Merit)\n   - Error decomposition: quantity errors, allocation errors, stratum allocation errors\n   - Jaccard Similarity Index (JSI), Mean Absolute Error (MAE), Mean Error (ME)\n   - All reported in Table 3 and throughout results\n\n5. **Outputs include mapped LULC projections** ✓\n   - Simulated land cover maps (T3s) generated for each scenario\n   - Reference deforestation maps used for comparison\n   - Spatial allocation of deforestation across scenarios explicitly mapped and discussed\n\n### SPECIFIC EXCLUSION CRITERIA:\n\n1. **Global-scale analysis without national-level disaggregation** ✗ (Not applicable - national scale)\n2. **Local/regional/global/transboundary scale focus** ✗ (National scale)\n3. **No LULC prediction component** ✗ (LULC prediction is core)\n4. **Species-specific/ecological focus unrelated to LULC** ✗ (Species assessment is secondary; primary focus is LULC modeling)\n5. **Economic/urban models lacking spatially explicit LULC outputs** ✗ (Spatial LULC outputs present)\n6. **Biomass/bioenergy/carbon studies without LULC change analysis** ✗ (One scenario uses carbon stocks, but LULC change is primary focus)\n7. **Methodological papers without application** ✗ (Applied to Bolivia case study)\n8. **Purely qualitative/historical analysis** ✗ (Quantitative future projections included)\n9. **Remote sensing technical studies** ✗ (Land change modeling, not RS methodology)\n10. **Single-scenario \"business-as-usual\" projections** ✗ (Six distinct scenarios compared)\n\n### ADDITIONAL VERIFICATION:\n\n- **Scale claims verified**: Methodology confirms national-scale implementation across Bolivia's administrative divisions\n- **Quantitative metrics reported**: Extensive metrics in Table 3 and equations 1-12\n- **Spatial explicitness**: Regional allocation models explicitly differentiate spatial patterns across six scenarios\n- **Primary focus confirmation**: Central research question addresses LULC prediction model evaluation for biodiversity assessment, not biodiversity per se\n\n---\n\n**Final categorization: OK**\n\n**Justification:** This paper meets ALL core inclusion criteria for national-scale LULC prediction research. It implements six quantitatively compared future deforestation scenarios across Bolivia using spatial land change modeling with multiple accuracy metrics (PFOM, SFOM, error decomposition, JSI). The primary objective is LULC prediction and simulation evaluation, with biodiversity assessment serving as the application context rather than the primary ecological focus. The paper generates mapped LULC projections and provides comprehensive spatial modeling outputs at national scale.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:12:09.643360+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 10.618,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789654334-VBmNMeMQfNGjEfSksLC1\",\"object\":\"chat.completion\",\"created\":1789654334,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis\\n\\n## Initial Assessment: Review Status\\nThis is a **NON-REVIEW RESEARCH ARTICLE**. It presents original research with empirical modeling and evaluation, not a synthesis of existing literature.\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA:\\n\\n1. **Explicit national-scale spatial implementation (entire country)** ✓\\n   - Study area: \\\"forested areas within the country of Bolivia\\\" (entire nation)\\n   - Methodology section explicitly states: \\\"The study region (Fig. 1) encompasses forested areas within the country of Bolivia\\\"\\n\\n2. **Primary focus = LULC prediction/simulation** ✓\\n   - Central research question: \\\"evaluate land cover change scenarios in Bolivia...to inform LCC models for biodiversity assessments\\\"\\n   - Six deforestation simulations created and compared\\n   - Explicit land change modeling framework (5-step process detailed in Methods)\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\\n   - Six scenarios created: national-level, department-level, province-level, municipality-level, carbon-level, and ecoregion-level\\n   - Quantitative comparison across all scenarios (Table 3, Figures 5)\\n\\n4. **Spatial modeling with quantitative accuracy metrics** ✓\\n   - Multiple metrics reported: PFOM (Pixel-level Figure of Merit), SFOM (Stratum Figure of Merit)\\n   - Error decomposition: quantity errors, allocation errors, stratum allocation errors\\n   - Jaccard Similarity Index (JSI), Mean Absolute Error (MAE), Mean Error (ME)\\n   - All reported in Table 3 and throughout results\\n\\n5. **Outputs include mapped LULC projections** ✓\\n   - Simulated land cover maps (T3s) generated for each scenario\\n   - Reference deforestation maps used for comparison\\n   - Spatial allocation of deforestation across scenarios explicitly mapped and discussed\\n\\n### SPECIFIC EXCLUSION CRITERIA:\\n\\n1. **Global-scale analysis without national-level disaggregation** ✗ (Not applicable - national scale)\\n2. **Local/regional/global/transboundary scale focus** ✗ (National scale)\\n3. **No LULC prediction component** ✗ (LULC prediction is core)\\n4. **Species-specific/ecological focus unrelated to LULC** ✗ (Species assessment is secondary; primary focus is LULC modeling)\\n5. **Economic/urban models lacking spatially explicit LULC outputs** ✗ (Spatial LULC outputs present)\\n6. **Biomass/bioenergy/carbon studies without LULC change analysis** ✗ (One scenario uses carbon stocks, but LULC change is primary focus)\\n7. **Methodological papers without application** ✗ (Applied to Bolivia case study)\\n8. **Purely qualitative/historical analysis** ✗ (Quantitative future projections included)\\n9. **Remote sensing technical studies** ✗ (Land change modeling, not RS methodology)\\n10. **Single-scenario \\\"business-as-usual\\\" projections** ✗ (Six distinct scenarios compared)\\n\\n### ADDITIONAL VERIFICATION:\\n\\n- **Scale claims verified**: Methodology confirms national-scale implementation across Bolivia's administrative divisions\\n- **Quantitative metrics reported**: Extensive metrics in Table 3 and equations 1-12\\n- **Spatial explicitness**: Regional allocation models explicitly differentiate spatial patterns across six scenarios\\n- **Primary focus confirmation**: Central research question addresses LULC prediction model evaluation for biodiversity assessment, not biodiversity per se\\n\\n---\\n\\n**Final categorization: OK**\\n\\n**Justification:** This paper meets ALL core inclusion criteria for national-scale LULC prediction research. It implements six quantitatively compared future deforestation scenarios across Bolivia using spatial land change modeling with multiple accuracy metrics (PFOM, SFOM, error decomposition, JSI). The primary objective is LULC prediction and simulation evaluation, with biodiversity assessment serving as the application context rather than the primary ecological focus. The paper generates mapped LULC projections and provides comprehensive spatial modeling outputs at national scale.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":9359,\"completion_tokens\":968,\"total_tokens\":10327,\"cost\":0.014199,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.014199,\"upstream_inference_prompt_cost\":0.009359,\"upstream_inference_completions_cost\":0.00484},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654334-VBmNMeMQfNGjEfSksLC1",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 9359,
+        "completion_tokens": 968,
+        "total_tokens": 10327,
+        "cost": 0.014199,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.014199,
+          "upstream_inference_prompt_cost": 0.009359,
+          "upstream_inference_completions_cost": 0.00484
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 10.618,
+  "call_id": "DS__z1_HXYQTPZG__claude__r2",
+  "fingerprint": "12fcd395bd6237e1a95a6e8c80cb11d03c5f4b1c390b62c73a91f72ff4c5e106",
+  "paper_id": "z1_HXYQTPZG",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:12:20.261039+00:00",
+  "input_sha256": "eb8b94cc29c09ec3ab6a925249d85614cca1d2b4246120bf31fdf82f3f6913b2",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

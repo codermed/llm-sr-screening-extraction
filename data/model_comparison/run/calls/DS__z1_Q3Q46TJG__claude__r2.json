@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789654589-3XfUZn5z4rLCItSHbYcB",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.020955,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15790,
+    "completion_tokens": 1033,
+    "total_tokens": 16823,
+    "cost": 0.020955,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.020955,
+      "upstream_inference_prompt_cost": 0.01579,
+      "upstream_inference_completions_cost": 0.005165
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: McGarigal et al. - Landscape Index of Ecological Integrity\n\n## Initial Determination\n**Is this a review article?** No. This is a research article describing the development and application of a specific methodological approach (Index of Ecological Integrity - IEI).\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA FOR NON-REVIEW PAPERS:\n\n1. **Explicit national-scale spatial implementation (entire country)?**\n   - ✗ FAILS: The study is explicitly regional in scope, covering \"the northeastern United States\" (13 northeastern states plus Washington DC: VA, WV, DE, MD, PA, NJ, NY, CT, RI, MA, NH, VT, ME). This is a multi-state regional implementation, NOT a national-scale study.\n\n2. **Primary focus = LULC prediction/simulation?**\n   - ✗ FAILS: The primary focus is on developing an **ecological integrity assessment methodology**, not on LULC prediction. The paper describes metrics for measuring ecological integrity based on biophysical settings and anthropogenic stressors.\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ✓ PASSES: The model application section (pages 1040-1041) demonstrates two scenarios: (a) urban growth without additional land protection, and (b) urban growth with strategic land protection, with quantitative comparison (8.5% difference in total ecological impact).\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ✗ FAILS: While the paper includes spatial modeling with quantitative outputs, it does NOT report traditional LULC prediction accuracy metrics (e.g., overall accuracy, kappa, producer's/user's accuracy). The quantitative metrics reported are ecological integrity indices, not LULC classification accuracy.\n\n5. **Outputs include mapped LULC projections?**\n   - ✗ FAILS: The outputs are mapped **ecological integrity indices** (IEI and ecoImpact), not LULC projections. The paper uses LULC projections from the SPRAWL model as INPUT to assess ecological impacts, but does not produce LULC predictions itself.\n\n---\n\n### SPECIFIC EXCLUSION CRITERIA:\n\n- **Local/regional/global/transboundary scale focus?** ✓ TRIGGERS EXCLUSION: The study is explicitly regional (northeastern US), not national-scale.\n- **No LULC prediction component?** ✓ TRIGGERS EXCLUSION: While LULC change scenarios are used as input (from the SPRAWL model), LULC prediction is NOT the primary focus of this paper.\n- **Species-specific/ecological focus unrelated to LULC?** ✓ TRIGGERS EXCLUSION: The paper is fundamentally focused on ecological integrity assessment methodology, not LULC prediction. The ecological focus is the primary objective.\n\n---\n\n## Summary of Assessment\n\n**Primary Objective:** Develop and demonstrate an ecosystem-based index of ecological integrity (IEI) for conservation planning assessment.\n\n**Role of LULC:** LULC projections from the SPRAWL model serve as INPUT to demonstrate the application of ecoImpact. The paper does not develop, validate, or focus on LULC prediction methodology.\n\n**Scale:** Regional (northeastern US), not national.\n\n**LULC Prediction Focus:** Incidental/secondary. LULC projections are used to illustrate how IEI can assess ecological consequences of landscape change scenarios, but developing or improving LULC prediction is not a research objective.\n\n---\n\n## Final Categorization: **EXCLUDED**\n\n**Justification:** \nThis paper fails multiple core inclusion criteria for national-scale LULC prediction research:\n1. **Scale is regional, not national** (13 northeastern US states, not entire country)\n2. **Primary focus is ecological integrity assessment methodology**, not LULC prediction or simulation\n3. **LULC prediction is not the central research question** - it is used as input from another model (SPRAWL) to demonstrate ecological impact assessment\n4. **No LULC prediction accuracy metrics reported** - the quantitative outputs are ecological indices, not LULC classification accuracy measures\n5. **Outputs are ecological integrity maps**, not LULC projections\n\nWhile the paper demonstrates sophisticated spatial modeling and includes landscape change scenarios, it is fundamentally an ecological assessment methodology paper, not an LULC prediction research paper.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:16:24.956866+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 11.142,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789654589-3XfUZn5z4rLCItSHbYcB\",\"object\":\"chat.completion\",\"created\":1789654589,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: McGarigal et al. - Landscape Index of Ecological Integrity\\n\\n## Initial Determination\\n**Is this a review article?** No. This is a research article describing the development and application of a specific methodological approach (Index of Ecological Integrity - IEI).\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA FOR NON-REVIEW PAPERS:\\n\\n1. **Explicit national-scale spatial implementation (entire country)?**\\n   - ✗ FAILS: The study is explicitly regional in scope, covering \\\"the northeastern United States\\\" (13 northeastern states plus Washington DC: VA, WV, DE, MD, PA, NJ, NY, CT, RI, MA, NH, VT, ME). This is a multi-state regional implementation, NOT a national-scale study.\\n\\n2. **Primary focus = LULC prediction/simulation?**\\n   - ✗ FAILS: The primary focus is on developing an **ecological integrity assessment methodology**, not on LULC prediction. The paper describes metrics for measuring ecological integrity based on biophysical settings and anthropogenic stressors.\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ✓ PASSES: The model application section (pages 1040-1041) demonstrates two scenarios: (a) urban growth without additional land protection, and (b) urban growth with strategic land protection, with quantitative comparison (8.5% difference in total ecological impact).\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ✗ FAILS: While the paper includes spatial modeling with quantitative outputs, it does NOT report traditional LULC prediction accuracy metrics (e.g., overall accuracy, kappa, producer's/user's accuracy). The quantitative metrics reported are ecological integrity indices, not LULC classification accuracy.\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ✗ FAILS: The outputs are mapped **ecological integrity indices** (IEI and ecoImpact), not LULC projections. The paper uses LULC projections from the SPRAWL model as INPUT to assess ecological impacts, but does not produce LULC predictions itself.\\n\\n---\\n\\n### SPECIFIC EXCLUSION CRITERIA:\\n\\n- **Local/regional/global/transboundary scale focus?** ✓ TRIGGERS EXCLUSION: The study is explicitly regional (northeastern US), not national-scale.\\n- **No LULC prediction component?** ✓ TRIGGERS EXCLUSION: While LULC change scenarios are used as input (from the SPRAWL model), LULC prediction is NOT the primary focus of this paper.\\n- **Species-specific/ecological focus unrelated to LULC?** ✓ TRIGGERS EXCLUSION: The paper is fundamentally focused on ecological integrity assessment methodology, not LULC prediction. The ecological focus is the primary objective.\\n\\n---\\n\\n## Summary of Assessment\\n\\n**Primary Objective:** Develop and demonstrate an ecosystem-based index of ecological integrity (IEI) for conservation planning assessment.\\n\\n**Role of LULC:** LULC projections from the SPRAWL model serve as INPUT to demonstrate the application of ecoImpact. The paper does not develop, validate, or focus on LULC prediction methodology.\\n\\n**Scale:** Regional (northeastern US), not national.\\n\\n**LULC Prediction Focus:** Incidental/secondary. LULC projections are used to illustrate how IEI can assess ecological consequences of landscape change scenarios, but developing or improving LULC prediction is not a research objective.\\n\\n---\\n\\n## Final Categorization: **EXCLUDED**\\n\\n**Justification:** \\nThis paper fails multiple core inclusion criteria for national-scale LULC prediction research:\\n1. **Scale is regional, not national** (13 northeastern US states, not entire country)\\n2. **Primary focus is ecological integrity assessment methodology**, not LULC prediction or simulation\\n3. **LULC prediction is not the central research question** - it is used as input from another model (SPRAWL) to demonstrate ecological impact assessment\\n4. **No LULC prediction accuracy metrics reported** - the quantitative outputs are ecological indices, not LULC classification accuracy measures\\n5. **Outputs are ecological integrity maps**, not LULC projections\\n\\nWhile the paper demonstrates sophisticated spatial modeling and includes landscape change scenarios, it is fundamentally an ecological assessment methodology paper, not an LULC prediction research paper.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15790,\"completion_tokens\":1033,\"total_tokens\":16823,\"cost\":0.020955,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.020955,\"upstream_inference_prompt_cost\":0.01579,\"upstream_inference_completions_cost\":0.005165},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654589-3XfUZn5z4rLCItSHbYcB",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 15790,
+        "completion_tokens": 1033,
+        "total_tokens": 16823,
+        "cost": 0.020955,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.020955,
+          "upstream_inference_prompt_cost": 0.01579,
+          "upstream_inference_completions_cost": 0.005165
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 11.143,
+  "call_id": "DS__z1_Q3Q46TJG__claude__r2",
+  "fingerprint": "2f34d1abf8cc96f7dc715b425eb7e656cdf6ee5b2f32202eb4c0c67b26a05d5d",
+  "paper_id": "z1_Q3Q46TJG",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:16:36.099200+00:00",
+  "input_sha256": "ba211db693f32e86e0b5f1b601159c782c6c959233fbc98c1951ad3d19f4262a",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789652919-3qQIHFxtHCQcfwzR0VFR",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.024083,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 19503,
+    "completion_tokens": 916,
+    "total_tokens": 20419,
+    "cost": 0.024083,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.024083,
+      "upstream_inference_prompt_cost": 0.019503,
+      "upstream_inference_completions_cost": 0.00458
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Tree Species Habitat Redistribution Under Climate Change\n\n## Initial Assessment\n\n**Is this a review article?** No. This is a primary research paper presenting original modeling results using the DISTRIB regression tree analysis model applied to 76 tree species.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA FOR NON-REVIEW PAPERS:\n\n1. **Explicit national-scale spatial implementation (entire country)?**\n   - ✗ FAILS: Study area is \"land east of the 100th meridian\" in the eastern US (2,124 counties), NOT the entire United States. Western US is explicitly excluded from analysis.\n\n2. **Primary focus = LULC prediction/simulation?**\n   - ✗ FAILS: Primary focus is **species habitat redistribution**, not land use/land cover change. The paper models tree species suitability based on climate and environmental variables, but does NOT predict LULC categories (e.g., forest type, agricultural land, urban areas, etc.).\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ✓ PASSES: Five climate change scenarios (GFDL, GISS, UKMO, Hadley, CCC) with quantitative comparisons.\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ✓ PASSES: Regression tree analysis with importance value (IV) metrics, area calculations, and latitudinal optimum shifts quantified in km.\n\n5. **Outputs include mapped LULC projections?**\n   - ✗ FAILS: Outputs are species habitat suitability maps and distributions, NOT LULC projections.\n\n---\n\n### SPECIFIC EXCLUSION CRITERIA:\n\n- **Species-specific/ecological focus (flora/fauna) unrelated to LULC:** ✓ APPLIES\n  - This paper is fundamentally about tree species biogeography and habitat suitability modeling under climate change scenarios. It does not address LULC change, land use dynamics, or landscape transformation.\n  \n- **No LULC prediction component:** ✓ APPLIES\n  - While the paper uses land use variables as inputs (percent forest, crops, grazing), it does NOT predict future LULC change. The land use data are static inputs to the species distribution model.\n\n---\n\n## Detailed Justification\n\nThe paper models how suitable habitat for 76 tree species in the eastern US will shift under climate change scenarios. The research question is: *\"How will tree species distributions change with climate?\"* This is a **species biogeography question**, not a LULC prediction question.\n\nKey distinctions:\n- **LULC prediction** = modeling changes in land cover classes (forest/non-forest, agricultural land, urban areas, etc.)\n- **This paper** = modeling changes in tree species composition within existing forest areas based on climate suitability\n\nThe paper explicitly states: \"Actual species redistributions, within the suitable habitat modeled here, will be controlled by migration rates through fragmented landscapes, as well as human manipulations\" — acknowledging that actual LULC outcomes depend on factors beyond their species suitability modeling.\n\n---\n\n## Final Categorization\n\n**EXCLUDED**\n\n**Justification:** This is a species biogeography and climate-driven habitat suitability modeling study, not a land use/land cover prediction study. While the paper addresses important ecological questions about tree species redistribution under climate change, it does NOT meet core inclusion criteria for LULC prediction research: (1) primary focus is species habitat, not LULC change; (2) outputs are species suitability maps, not LULC projections; (3) study area is regional (eastern US), not national-scale; and (4) the paper explicitly falls under the exclusion criterion of \"Species-specific/ecological focus (flora/fauna) unrelated to LULC.\" The paper uses land use as a static input variable but does not predict future LULC change.",
+  "automated_status": "invalid_output",
+  "parsed_label": "",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:48:34.899765+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 10.527,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789652919-3qQIHFxtHCQcfwzR0VFR\",\"object\":\"chat.completion\",\"created\":1789652919,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Tree Species Habitat Redistribution Under Climate Change\\n\\n## Initial Assessment\\n\\n**Is this a review article?** No. This is a primary research paper presenting original modeling results using the DISTRIB regression tree analysis model applied to 76 tree species.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA FOR NON-REVIEW PAPERS:\\n\\n1. **Explicit national-scale spatial implementation (entire country)?**\\n   - ✗ FAILS: Study area is \\\"land east of the 100th meridian\\\" in the eastern US (2,124 counties), NOT the entire United States. Western US is explicitly excluded from analysis.\\n\\n2. **Primary focus = LULC prediction/simulation?**\\n   - ✗ FAILS: Primary focus is **species habitat redistribution**, not land use/land cover change. The paper models tree species suitability based on climate and environmental variables, but does NOT predict LULC categories (e.g., forest type, agricultural land, urban areas, etc.).\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ✓ PASSES: Five climate change scenarios (GFDL, GISS, UKMO, Hadley, CCC) with quantitative comparisons.\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ✓ PASSES: Regression tree analysis with importance value (IV) metrics, area calculations, and latitudinal optimum shifts quantified in km.\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ✗ FAILS: Outputs are species habitat suitability maps and distributions, NOT LULC projections.\\n\\n---\\n\\n### SPECIFIC EXCLUSION CRITERIA:\\n\\n- **Species-specific/ecological focus (flora/fauna) unrelated to LULC:** ✓ APPLIES\\n  - This paper is fundamentally about tree species biogeography and habitat suitability modeling under climate change scenarios. It does not address LULC change, land use dynamics, or landscape transformation.\\n  \\n- **No LULC prediction component:** ✓ APPLIES\\n  - While the paper uses land use variables as inputs (percent forest, crops, grazing), it does NOT predict future LULC change. The land use data are static inputs to the species distribution model.\\n\\n---\\n\\n## Detailed Justification\\n\\nThe paper models how suitable habitat for 76 tree species in the eastern US will shift under climate change scenarios. The research question is: *\\\"How will tree species distributions change with climate?\\\"* This is a **species biogeography question**, not a LULC prediction question.\\n\\nKey distinctions:\\n- **LULC prediction** = modeling changes in land cover classes (forest/non-forest, agricultural land, urban areas, etc.)\\n- **This paper** = modeling changes in tree species composition within existing forest areas based on climate suitability\\n\\nThe paper explicitly states: \\\"Actual species redistributions, within the suitable habitat modeled here, will be controlled by migration rates through fragmented landscapes, as well as human manipulations\\\" — acknowledging that actual LULC outcomes depend on factors beyond their species suitability modeling.\\n\\n---\\n\\n## Final Categorization\\n\\n**EXCLUDED**\\n\\n**Justification:** This is a species biogeography and climate-driven habitat suitability modeling study, not a land use/land cover prediction study. While the paper addresses important ecological questions about tree species redistribution under climate change, it does NOT meet core inclusion criteria for LULC prediction research: (1) primary focus is species habitat, not LULC change; (2) outputs are species suitability maps, not LULC projections; (3) study area is regional (eastern US), not national-scale; and (4) the paper explicitly falls under the exclusion criterion of \\\"Species-specific/ecological focus (flora/fauna) unrelated to LULC.\\\" The paper uses land use as a static input variable but does not predict future LULC change.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":19503,\"completion_tokens\":916,\"total_tokens\":20419,\"cost\":0.024083,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.024083,\"upstream_inference_prompt_cost\":0.019503,\"upstream_inference_completions_cost\":0.00458},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652919-3qQIHFxtHCQcfwzR0VFR",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 19503,
+        "completion_tokens": 916,
+        "total_tokens": 20419,
+        "cost": 0.024083,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.024083,
+          "upstream_inference_prompt_cost": 0.019503,
+          "upstream_inference_completions_cost": 0.00458
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 10.527,
+  "call_id": "DS__z1_QR5UV8HK__claude__r1",
+  "fingerprint": "4fc9426bb3b050a2be63e79cc751259bcf9d9a3f4d62271ee93cd9cc2f857942",
+  "paper_id": "z1_QR5UV8HK",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:48:45.426666+00:00",
+  "input_sha256": "7f0bd85cf36e3fe5cf3e73f842ca0a4f4ce16948e540df88ec985f995e6e6275",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653112-pEnFtUmrhS3Vel3KKQ2v",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0070864,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 17044,
+    "completion_tokens": 168,
+    "total_tokens": 17212,
+    "cost": 0.0070864,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0070864,
+      "upstream_inference_prompt_cost": 0.0068176,
+      "upstream_inference_completions_cost": 0.0002688
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a non-review research article focused on potential redistribution of tree species habitat under climate change scenarios in the eastern US. It uses regression tree statistical modeling to predict species habitat suitability shifts. However, the primary focus is on species-specific ecological responses (flora distribution) rather than land use land cover (LULC) prediction or simulation. There is no LULC prediction component, no spatial modeling of land cover change, and no quantitative accuracy metrics for LULC mapping. The study area is national scale (eastern US counties), but the topic is ecological/species habitat modeling unrelated to LULC future prediction. Thus, it fails the core inclusion criterion of primary focus on LULC prediction and meets the exclusion criterion of species-specific ecological focus unrelated to LULC.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:51:47.575974+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.778,
+      "raw_body": "\n         \n{\"id\":\"gen-1789653112-pEnFtUmrhS3Vel3KKQ2v\",\"object\":\"chat.completion\",\"created\":1789653112,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a non-review research article focused on potential redistribution of tree species habitat under climate change scenarios in the eastern US. It uses regression tree statistical modeling to predict species habitat suitability shifts. However, the primary focus is on species-specific ecological responses (flora distribution) rather than land use land cover (LULC) prediction or simulation. There is no LULC prediction component, no spatial modeling of land cover change, and no quantitative accuracy metrics for LULC mapping. The study area is national scale (eastern US counties), but the topic is ecological/species habitat modeling unrelated to LULC future prediction. Thus, it fails the core inclusion criterion of primary focus on LULC prediction and meets the exclusion criterion of species-specific ecological focus unrelated to LULC.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":17044,\"completion_tokens\":168,\"total_tokens\":17212,\"cost\":0.0070864,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0070864,\"upstream_inference_prompt_cost\":0.0068176,\"upstream_inference_completions_cost\":0.0002688},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653112-pEnFtUmrhS3Vel3KKQ2v",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 17044,
+        "completion_tokens": 168,
+        "total_tokens": 17212,
+        "cost": 0.0070864,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0070864,
+          "upstream_inference_prompt_cost": 0.0068176,
+          "upstream_inference_completions_cost": 0.0002688
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.778,
+  "call_id": "DS__z1_QR5UV8HK__openai__r1",
+  "fingerprint": "99eb92270bffb08b0a4b51d73af7f7b0334a419c745de9ed5b58a7f02c9dd97b",
+  "paper_id": "z1_QR5UV8HK",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:51:50.353885+00:00",
+  "input_sha256": "7f0bd85cf36e3fe5cf3e73f842ca0a4f4ce16948e540df88ec985f995e6e6275",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

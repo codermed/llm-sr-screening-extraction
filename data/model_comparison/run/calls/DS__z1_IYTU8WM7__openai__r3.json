@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789655149-rwRnFDowAANoeSZrU3IM",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0010468,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 7813,
+    "completion_tokens": 141,
+    "total_tokens": 7954,
+    "cost": 0.0010468,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 7680,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010468,
+      "upstream_inference_prompt_cost": 0.0008212,
+      "upstream_inference_completions_cost": 0.0002256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This paper is not a review article but an original research study focused on estimating land availability and sustainable biomass production potential for energy in Sri Lanka. Although it involves land use data and scenarios for biomass plantation, it does not conduct spatially explicit national-scale LULC prediction or simulation with mapped outputs. The study uses national land use statistics and scenario assumptions but lacks spatial modeling, quantitative accuracy metrics, or mapped LULC projections. Its primary focus is on biomass production potential and land availability for bioenergy, not on future LULC prediction or simulation. Therefore, it fails the core inclusion criteria related to spatial LULC prediction modeling and is excluded.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:25:44.783797+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.085,
+      "raw_body": "\n         \n{\"id\":\"gen-1789655149-rwRnFDowAANoeSZrU3IM\",\"object\":\"chat.completion\",\"created\":1789655149,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This paper is not a review article but an original research study focused on estimating land availability and sustainable biomass production potential for energy in Sri Lanka. Although it involves land use data and scenarios for biomass plantation, it does not conduct spatially explicit national-scale LULC prediction or simulation with mapped outputs. The study uses national land use statistics and scenario assumptions but lacks spatial modeling, quantitative accuracy metrics, or mapped LULC projections. Its primary focus is on biomass production potential and land availability for bioenergy, not on future LULC prediction or simulation. Therefore, it fails the core inclusion criteria related to spatial LULC prediction modeling and is excluded.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":7813,\"completion_tokens\":141,\"total_tokens\":7954,\"cost\":0.0010468,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":7680,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0010468,\"upstream_inference_prompt_cost\":0.0008212,\"upstream_inference_completions_cost\":0.0002256},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655149-rwRnFDowAANoeSZrU3IM",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 7813,
+        "completion_tokens": 141,
+        "total_tokens": 7954,
+        "cost": 0.0010468,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 7680,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0010468,
+          "upstream_inference_prompt_cost": 0.0008212,
+          "upstream_inference_completions_cost": 0.0002256
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.086,
+  "call_id": "DS__z1_IYTU8WM7__openai__r3",
+  "fingerprint": "89c4fd93ea9e171f92da33dc57cda7770a15390ab3cd7bcc8b033b23909da8ac",
+  "paper_id": "z1_IYTU8WM7",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:25:47.868706+00:00",
+  "input_sha256": "2267f7fffbe0aaef86685b1284ab963fa71d3c741ea1835f680d70b34cb45a6b",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

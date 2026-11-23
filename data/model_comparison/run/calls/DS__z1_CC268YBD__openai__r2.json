@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654631-tQIqKUZ4qHJGVGRPVsaR",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0017276,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 14755,
+    "completion_tokens": 127,
+    "total_tokens": 14882,
+    "cost": 0.0017276,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 14592,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0017276,
+      "upstream_inference_prompt_cost": 0.0015244,
+      "upstream_inference_completions_cost": 0.0002032
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This paper is a review of fluvial flood modeling focusing on rainfall-runoff processes, rainfall modeling, hydraulic modeling, and land-use impacts on hydrology. It does not focus on land use/land cover (LULC) future prediction or simulation at a national scale, nor does it implement spatially explicit LULC future scenarios with quantitative comparisons. The land-use discussion is limited to general impacts on hydrology and flood modeling, without LULC prediction modeling or mapped projections. The paper is a review but not of LULC future prediction, thus excluded per criteria.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:17:06.261114+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.698,
+      "raw_body": "\n         \n{\"id\":\"gen-1789654631-tQIqKUZ4qHJGVGRPVsaR\",\"object\":\"chat.completion\",\"created\":1789654631,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This paper is a review of fluvial flood modeling focusing on rainfall-runoff processes, rainfall modeling, hydraulic modeling, and land-use impacts on hydrology. It does not focus on land use/land cover (LULC) future prediction or simulation at a national scale, nor does it implement spatially explicit LULC future scenarios with quantitative comparisons. The land-use discussion is limited to general impacts on hydrology and flood modeling, without LULC prediction modeling or mapped projections. The paper is a review but not of LULC future prediction, thus excluded per criteria.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":14755,\"completion_tokens\":127,\"total_tokens\":14882,\"cost\":0.0017276,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":14592,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0017276,\"upstream_inference_prompt_cost\":0.0015244,\"upstream_inference_completions_cost\":0.0002032},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654631-tQIqKUZ4qHJGVGRPVsaR",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 14755,
+        "completion_tokens": 127,
+        "total_tokens": 14882,
+        "cost": 0.0017276,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 14592,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0017276,
+          "upstream_inference_prompt_cost": 0.0015244,
+          "upstream_inference_completions_cost": 0.0002032
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.698,
+  "call_id": "DS__z1_CC268YBD__openai__r2",
+  "fingerprint": "2a58ec0c7b05e6a764947ce8a1a146b5d58003123d2619d01b69b132918fe1e8",
+  "paper_id": "z1_CC268YBD",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:17:08.958999+00:00",
+  "input_sha256": "8ebaee36111dd7a7feb9a13f6478a44a4248e57fa6fb5b2fea9c65b12de610e9",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

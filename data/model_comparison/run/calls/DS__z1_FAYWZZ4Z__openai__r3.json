@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789655339-6h6xNnT34Grjpe2u2Ifa",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.001688,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 13264,
+    "completion_tokens": 187,
+    "total_tokens": 13451,
+    "cost": 0.001688,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 13056,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001688,
+      "upstream_inference_prompt_cost": 0.0013888,
+      "upstream_inference_completions_cost": 0.0002992
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: OK (Justification: This is a research article focused on simulating future urban land expansion in China at the national scale. It uses an improved spatially explicit model (LUSD-urban) incorporating multiple future socioeconomic scenarios (localized SSPs), simulates urban land change spatially from 2020 to 2050, and quantitatively evaluates accuracy metrics (overall accuracy, Kappa, FoM). The outputs include mapped LULC projections of urban expansion and impacts on natural habitats. Multiple scenarios are compared quantitatively. The study explicitly implements spatial urban land prediction for the entire country of China with accuracy assessments and scenario comparisons, meeting all core inclusion criteria. It is not a review, excludes local/regional/global scale only focus (China national scale), includes spatially explicit LULC prediction, and uses multiple future scenarios with quantitative spatial outputs and accuracy metrics. Therefore, the paper is categorized as OK.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:28:54.614803+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.228,
+      "raw_body": "\n         \n{\"id\":\"gen-1789655339-6h6xNnT34Grjpe2u2Ifa\",\"object\":\"chat.completion\",\"created\":1789655339,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: This is a research article focused on simulating future urban land expansion in China at the national scale. It uses an improved spatially explicit model (LUSD-urban) incorporating multiple future socioeconomic scenarios (localized SSPs), simulates urban land change spatially from 2020 to 2050, and quantitatively evaluates accuracy metrics (overall accuracy, Kappa, FoM). The outputs include mapped LULC projections of urban expansion and impacts on natural habitats. Multiple scenarios are compared quantitatively. The study explicitly implements spatial urban land prediction for the entire country of China with accuracy assessments and scenario comparisons, meeting all core inclusion criteria. It is not a review, excludes local/regional/global scale only focus (China national scale), includes spatially explicit LULC prediction, and uses multiple future scenarios with quantitative spatial outputs and accuracy metrics. Therefore, the paper is categorized as OK.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":13264,\"completion_tokens\":187,\"total_tokens\":13451,\"cost\":0.001688,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":13056,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.001688,\"upstream_inference_prompt_cost\":0.0013888,\"upstream_inference_completions_cost\":0.0002992},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655339-6h6xNnT34Grjpe2u2Ifa",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 13264,
+        "completion_tokens": 187,
+        "total_tokens": 13451,
+        "cost": 0.001688,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 13056,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001688,
+          "upstream_inference_prompt_cost": 0.0013888,
+          "upstream_inference_completions_cost": 0.0002992
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.229,
+  "call_id": "DS__z1_FAYWZZ4Z__openai__r3",
+  "fingerprint": "c7bbfed516c7c8fbbe86734a57df4e4f128545ec60d32a4795131b423f77a7d4",
+  "paper_id": "z1_FAYWZZ4Z",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:28:57.843085+00:00",
+  "input_sha256": "d21921adc2bdf3e8fa7ed93bb436def843bde1ceb30e1347e2e03833ab2d9abd",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

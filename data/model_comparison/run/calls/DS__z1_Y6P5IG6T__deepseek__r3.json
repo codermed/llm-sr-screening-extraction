@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789655073-DJsKrlDIAxnWQtHTbzbc",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00163302,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 6161,
+    "completion_tokens": 82,
+    "total_tokens": 6243,
+    "cost": 0.00163302,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00163302,
+      "upstream_inference_prompt_cost": 0.00160186,
+      "upstream_inference_completions_cost": 3.116e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: REVIEW (Justification: This is a review article that synthesizes existing research on land-use modeling practices specifically for biofuel crops in the United States and the European Union. Its primary objective is to review and compare modeling approaches, objectives, and limitations related to biofuel-related land-use change (LUC) and availability, fulfilling the definition of a review focused on LULC future prediction.)",
+  "automated_status": "usable",
+  "parsed_label": "REVIEW",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:24:28.514465+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.7,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789655073-DJsKrlDIAxnWQtHTbzbc\",\"object\":\"chat.completion\",\"created\":1789655073,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: REVIEW (Justification: This is a review article that synthesizes existing research on land-use modeling practices specifically for biofuel crops in the United States and the European Union. Its primary objective is to review and compare modeling approaches, objectives, and limitations related to biofuel-related land-use change (LUC) and availability, fulfilling the definition of a review focused on LULC future prediction.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":6161,\"completion_tokens\":82,\"total_tokens\":6243,\"cost\":0.00163302,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00163302,\"upstream_inference_prompt_cost\":0.00160186,\"upstream_inference_completions_cost\":0.00003116},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655073-DJsKrlDIAxnWQtHTbzbc",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 6161,
+        "completion_tokens": 82,
+        "total_tokens": 6243,
+        "cost": 0.00163302,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00163302,
+          "upstream_inference_prompt_cost": 0.00160186,
+          "upstream_inference_completions_cost": 3.116e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.701,
+  "call_id": "DS__z1_Y6P5IG6T__deepseek__r3",
+  "fingerprint": "a2d0983aaddd1d32568a2aedc6af18f20d41f674870e96394c041446f929e691",
+  "paper_id": "z1_Y6P5IG6T",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:24:33.214796+00:00",
+  "input_sha256": "178a17bb8436f63f77aa2b970e932af31052b44c76eb5117344f0ff6596eed8a",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654816-OLYYrXsgtY5gBt0bjOai",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0013292,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10103,
+    "completion_tokens": 177,
+    "total_tokens": 10280,
+    "cost": 0.0013292,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 9984,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0013292,
+      "upstream_inference_prompt_cost": 0.001046,
+      "upstream_inference_completions_cost": 0.0002832
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This article is a review/synthesis and comparative analysis of multiple modeling studies focused on national and global greenhouse gas (GHG) emission reduction pledges and their implications for meeting the 2°C climate target. While it discusses land use, land-use change and forestry (LULUCF) accounting and its uncertainties, the paper is not focused on land use/land cover (LULC) future prediction or spatial modeling of LULC changes. It does not implement or evaluate spatially explicit national-scale LULC projections, nor does it provide mapped LULC outputs or quantitative accuracy metrics related to LULC. The primary focus is on GHG emission scenarios and accounting rules rather than on LULC prediction. Therefore, it fails the core inclusion criteria for LULC prediction studies and is classified as EXCLUDED.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:20:12.062021+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.315,
+      "raw_body": "\n         \n{\"id\":\"gen-1789654816-OLYYrXsgtY5gBt0bjOai\",\"object\":\"chat.completion\",\"created\":1789654816,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This article is a review/synthesis and comparative analysis of multiple modeling studies focused on national and global greenhouse gas (GHG) emission reduction pledges and their implications for meeting the 2°C climate target. While it discusses land use, land-use change and forestry (LULUCF) accounting and its uncertainties, the paper is not focused on land use/land cover (LULC) future prediction or spatial modeling of LULC changes. It does not implement or evaluate spatially explicit national-scale LULC projections, nor does it provide mapped LULC outputs or quantitative accuracy metrics related to LULC. The primary focus is on GHG emission scenarios and accounting rules rather than on LULC prediction. Therefore, it fails the core inclusion criteria for LULC prediction studies and is classified as EXCLUDED.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10103,\"completion_tokens\":177,\"total_tokens\":10280,\"cost\":0.0013292,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":9984,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0013292,\"upstream_inference_prompt_cost\":0.001046,\"upstream_inference_completions_cost\":0.0002832},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654816-OLYYrXsgtY5gBt0bjOai",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 10103,
+        "completion_tokens": 177,
+        "total_tokens": 10280,
+        "cost": 0.0013292,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 9984,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0013292,
+          "upstream_inference_prompt_cost": 0.001046,
+          "upstream_inference_completions_cost": 0.0002832
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.316,
+  "call_id": "DS__z1_YPBFGDU6__openai__r3",
+  "fingerprint": "1712fc7ba800ec1c8bb671394f41853da55329c3837f6abfb04cbbafbc51de3d",
+  "paper_id": "z1_YPBFGDU6",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:20:15.377650+00:00",
+  "input_sha256": "478dabecbd52c5fcd768fecd9f5fafc8ff8e880153d5dd8c5af63568fd175d4e",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

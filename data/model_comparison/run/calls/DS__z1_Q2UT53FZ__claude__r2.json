@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789654055-tO8XPX2o4HaLiERfhHJd",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.022796,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 17391,
+    "completion_tokens": 1081,
+    "total_tokens": 18472,
+    "cost": 0.022796,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.022796,
+      "upstream_inference_prompt_cost": 0.017391,
+      "upstream_inference_completions_cost": 0.005405
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land-Use Flux Harmonization Paper\n\n## Initial Assessment\n\n**Is this a review article?**\nNo. This is a research paper presenting original analysis comparing land-use CO₂ flux estimates between global models and national inventories for 2000-2020.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA FOR NON-REVIEW PAPERS:\n\n1. **Explicit national-scale spatial implementation (entire country)?**\n   - ❌ FAILS: The paper analyzes global-level aggregates and regional comparisons. While it disaggregates results \"by regions and countries,\" the primary implementation is at the global scale. Country-level results are presented as comparisons to global models, not as spatially explicit national-scale LULC predictions.\n\n2. **Primary focus = LULC prediction/simulation (central research question)?**\n   - ❌ FAILS: The primary objective is to **harmonize and reconcile** existing estimates of land-use CO₂ fluxes between two different methodological approaches (bookkeeping models vs. national inventories). The paper states: \"This study provides a blueprint for harmonising the estimations of anthropogenic land-use ﬂuxes.\" This is a reconciliation/comparison study, not a predictive modeling study.\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ❌ FAILS: No future scenarios are modeled. The analysis covers only the historical period 2000-2020. No forward projections or scenario comparisons are presented.\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ❌ FAILS: While the paper reports CO₂ flux values in GtCO₂ yr⁻¹, it does not develop new spatial LULC models or provide accuracy metrics for LULC predictions (e.g., overall accuracy, kappa, change detection rates).\n\n5. **Outputs include mapped LULC projections?**\n   - ❌ FAILS: No LULC projection maps are produced. The paper uses existing forest maps (Hansen et al., 2013; Potapov et al., 2017) as static references, not as outputs of predictive modeling.\n\n### SPECIFIC EXCLUSION CRITERIA:\n\n- ✓ **Global-scale analysis without national-level disaggregation**: The paper is fundamentally a global-scale analysis. While results are disaggregated by country for comparison purposes, the modeling framework and primary results are global.\n- ✓ **No LULC prediction component**: Confirmed. The paper reconciles historical estimates; it does not predict future LULC change.\n- ✓ **Carbon studies without LULC change analysis**: While the paper addresses land-use fluxes, it focuses on harmonizing CO₂ emission estimates, not on predicting or modeling LULC change itself.\n- ✓ **Purely historical analysis only (no future projections)**: Confirmed. Analysis covers 2000-2020 only.\n\n---\n\n## Primary Focus Assessment\n\n**What is the paper actually about?**\n\nThis paper's primary objective is to:\n1. Quantify discrepancies between global bookkeeping models (BMs) and national greenhouse gas inventories (NGHGIs) in estimating anthropogenic land-use CO₂ fluxes\n2. Explain these discrepancies through conceptual differences in how managed forests and indirect human-induced effects are defined\n3. Propose a harmonization approach by adding DGVM-estimated environmental change sinks to BM estimates\n4. Provide detailed regional and country-level comparisons for the historical period 2000-2020\n\n**This is NOT a LULC prediction paper.** It is a methodological reconciliation and harmonization study of existing estimates.\n\n---\n\n## Final Categorization\n\n**Final categorization: EXCLUDED**\n\n**Justification:** \nThis paper fails multiple core inclusion criteria for LULC prediction research:\n1. It is a global-scale analysis without national-scale spatial LULC modeling implementation\n2. The primary focus is harmonizing/reconciling existing CO₂ flux estimates, not predicting future LULC change\n3. No future scenarios or projections are modeled\n4. No new spatial LULC predictions or projection maps are produced\n5. The analysis is entirely historical (2000-2020) with no forward-looking component\n6. While the paper addresses land-use fluxes, it does not model or predict LULC change itself\n\nThe paper is a valuable methodological contribution to reconciling global carbon budget estimates but does not meet the criteria for a national-scale LULC prediction study.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:07:30.282200+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 11.201,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789654055-tO8XPX2o4HaLiERfhHJd\",\"object\":\"chat.completion\",\"created\":1789654055,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land-Use Flux Harmonization Paper\\n\\n## Initial Assessment\\n\\n**Is this a review article?**\\nNo. This is a research paper presenting original analysis comparing land-use CO₂ flux estimates between global models and national inventories for 2000-2020.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA FOR NON-REVIEW PAPERS:\\n\\n1. **Explicit national-scale spatial implementation (entire country)?**\\n   - ❌ FAILS: The paper analyzes global-level aggregates and regional comparisons. While it disaggregates results \\\"by regions and countries,\\\" the primary implementation is at the global scale. Country-level results are presented as comparisons to global models, not as spatially explicit national-scale LULC predictions.\\n\\n2. **Primary focus = LULC prediction/simulation (central research question)?**\\n   - ❌ FAILS: The primary objective is to **harmonize and reconcile** existing estimates of land-use CO₂ fluxes between two different methodological approaches (bookkeeping models vs. national inventories). The paper states: \\\"This study provides a blueprint for harmonising the estimations of anthropogenic land-use ﬂuxes.\\\" This is a reconciliation/comparison study, not a predictive modeling study.\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ❌ FAILS: No future scenarios are modeled. The analysis covers only the historical period 2000-2020. No forward projections or scenario comparisons are presented.\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ❌ FAILS: While the paper reports CO₂ flux values in GtCO₂ yr⁻¹, it does not develop new spatial LULC models or provide accuracy metrics for LULC predictions (e.g., overall accuracy, kappa, change detection rates).\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ❌ FAILS: No LULC projection maps are produced. The paper uses existing forest maps (Hansen et al., 2013; Potapov et al., 2017) as static references, not as outputs of predictive modeling.\\n\\n### SPECIFIC EXCLUSION CRITERIA:\\n\\n- ✓ **Global-scale analysis without national-level disaggregation**: The paper is fundamentally a global-scale analysis. While results are disaggregated by country for comparison purposes, the modeling framework and primary results are global.\\n- ✓ **No LULC prediction component**: Confirmed. The paper reconciles historical estimates; it does not predict future LULC change.\\n- ✓ **Carbon studies without LULC change analysis**: While the paper addresses land-use fluxes, it focuses on harmonizing CO₂ emission estimates, not on predicting or modeling LULC change itself.\\n- ✓ **Purely historical analysis only (no future projections)**: Confirmed. Analysis covers 2000-2020 only.\\n\\n---\\n\\n## Primary Focus Assessment\\n\\n**What is the paper actually about?**\\n\\nThis paper's primary objective is to:\\n1. Quantify discrepancies between global bookkeeping models (BMs) and national greenhouse gas inventories (NGHGIs) in estimating anthropogenic land-use CO₂ fluxes\\n2. Explain these discrepancies through conceptual differences in how managed forests and indirect human-induced effects are defined\\n3. Propose a harmonization approach by adding DGVM-estimated environmental change sinks to BM estimates\\n4. Provide detailed regional and country-level comparisons for the historical period 2000-2020\\n\\n**This is NOT a LULC prediction paper.** It is a methodological reconciliation and harmonization study of existing estimates.\\n\\n---\\n\\n## Final Categorization\\n\\n**Final categorization: EXCLUDED**\\n\\n**Justification:** \\nThis paper fails multiple core inclusion criteria for LULC prediction research:\\n1. It is a global-scale analysis without national-scale spatial LULC modeling implementation\\n2. The primary focus is harmonizing/reconciling existing CO₂ flux estimates, not predicting future LULC change\\n3. No future scenarios or projections are modeled\\n4. No new spatial LULC predictions or projection maps are produced\\n5. The analysis is entirely historical (2000-2020) with no forward-looking component\\n6. While the paper addresses land-use fluxes, it does not model or predict LULC change itself\\n\\nThe paper is a valuable methodological contribution to reconciling global carbon budget estimates but does not meet the criteria for a national-scale LULC prediction study.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":17391,\"completion_tokens\":1081,\"total_tokens\":18472,\"cost\":0.022796,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.022796,\"upstream_inference_prompt_cost\":0.017391,\"upstream_inference_completions_cost\":0.005405},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654055-tO8XPX2o4HaLiERfhHJd",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 17391,
+        "completion_tokens": 1081,
+        "total_tokens": 18472,
+        "cost": 0.022796,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.022796,
+          "upstream_inference_prompt_cost": 0.017391,
+          "upstream_inference_completions_cost": 0.005405
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 11.202,
+  "call_id": "DS__z1_Q2UT53FZ__claude__r2",
+  "fingerprint": "5cba8ec5839d6c4a6fe95b0ffdedc0f6b4b411abfdb22d51ea118f076446c2b0",
+  "paper_id": "z1_Q2UT53FZ",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:07:41.483535+00:00",
+  "input_sha256": "23d64cf40079a5f52d4f0282e02883de77dbd090159903cbfb0b3762ce113b3e",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

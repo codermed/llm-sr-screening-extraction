@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789654258-uR3QopfIkS5AjIyi1FPW",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.010465,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 6260,
+    "completion_tokens": 841,
+    "total_tokens": 7101,
+    "cost": 0.010465,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.010465,
+      "upstream_inference_prompt_cost": 0.00626,
+      "upstream_inference_completions_cost": 0.004205
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Fernandez & Daigneault (2020)\n\n## Initial Classification\n**This is NOT a review article.** The paper is an original research study presenting primary modeling results and policy analysis.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA (Non-Review Papers):\n\n1. **Explicit national-scale spatial implementation (entire country):** \n   - ✓ YES - Paper explicitly states \"The policy options are simulated at a national level and modelled at the catchment-scale for all of NZ\" (Methods section)\n\n2. **Primary focus = LULC prediction/simulation (central research question):**\n   - ✗ NO - Primary focus is **policy evaluation and decision-making**, not LULC prediction. The paper states: \"the purpose of this paper is twofold: First, to utilize an economic land use model to assess the market and environmental outcomes from 21 distinct policies...Second, to use a quantitative framework to construct and evaluate the multidimensional policy decision space.\"\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison:**\n   - ✓ YES - 21 distinct policy scenarios modeled with quantitative outcomes (Table 1)\n\n4. **Spatial modeling with quantitative accuracy metrics:**\n   - ✗ PARTIAL/NO - Model produces outputs (land cover changes, GHG mitigation, contaminant reductions) but **does not report spatial accuracy metrics** (e.g., kappa, overall accuracy, change detection validation). Outputs are catchment-aggregated, not mapped LULC projections.\n\n5. **Outputs include mapped LULC projections:**\n   - ✗ NO - No mapped LULC outputs are presented. Results are reported as aggregated metrics (cost, MtCO2e, percentage changes in contaminants). Supplementary tables show annualized costs and effectiveness rates, not spatial LULC maps.\n\n---\n\n### SPECIFIC EXCLUSION CRITERIA:\n\n- **Economic/urban models lacking spatially explicit LULC outputs:** ✓ APPLIES - This is fundamentally an agri-environmental economic model designed for policy cost-benefit analysis, not LULC prediction. While it tracks \"land cover\" changes, it does not produce spatially explicit maps or predict future LULC distributions.\n\n- **No LULC prediction component (as primary objective):** ✓ APPLIES - LULC modeling is instrumental to the policy analysis, not the primary research objective.\n\n---\n\n## Summary Assessment\n\n**Fails CORE INCLUSION CRITERIA:**\n- Primary focus is policy evaluation and decision-making under uncertainty, not LULC prediction\n- No mapped LULC projections provided\n- No spatial accuracy metrics reported\n- LULC changes are outputs of economic optimization, not the research objective\n\n**Meets EXCLUSION CRITERIA:**\n- Economic model lacking spatially explicit LULC outputs\n- LULC prediction is incidental to policy analysis framework\n\n---\n\n## Final Categorization: **EXCLUDED**\n\n**Justification:** While this paper uses a national-scale land use model that simulates land cover changes across multiple policy scenarios in New Zealand, its primary research objective is **policy evaluation and decision-making**, not LULC prediction. The model produces aggregated economic and environmental metrics rather than spatially explicit LULC projections with validation metrics. LULC modeling serves as an instrumental tool within an economic policy framework, not as the central research focus. The paper therefore fails the core inclusion criterion requiring primary focus on LULC prediction/simulation and meets the exclusion criterion for economic models lacking spatially explicit LULC outputs.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:10:53.673747+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 9.949,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789654258-uR3QopfIkS5AjIyi1FPW\",\"object\":\"chat.completion\",\"created\":1789654258,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Fernandez & Daigneault (2020)\\n\\n## Initial Classification\\n**This is NOT a review article.** The paper is an original research study presenting primary modeling results and policy analysis.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA (Non-Review Papers):\\n\\n1. **Explicit national-scale spatial implementation (entire country):** \\n   - ✓ YES - Paper explicitly states \\\"The policy options are simulated at a national level and modelled at the catchment-scale for all of NZ\\\" (Methods section)\\n\\n2. **Primary focus = LULC prediction/simulation (central research question):**\\n   - ✗ NO - Primary focus is **policy evaluation and decision-making**, not LULC prediction. The paper states: \\\"the purpose of this paper is twofold: First, to utilize an economic land use model to assess the market and environmental outcomes from 21 distinct policies...Second, to use a quantitative framework to construct and evaluate the multidimensional policy decision space.\\\"\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison:**\\n   - ✓ YES - 21 distinct policy scenarios modeled with quantitative outcomes (Table 1)\\n\\n4. **Spatial modeling with quantitative accuracy metrics:**\\n   - ✗ PARTIAL/NO - Model produces outputs (land cover changes, GHG mitigation, contaminant reductions) but **does not report spatial accuracy metrics** (e.g., kappa, overall accuracy, change detection validation). Outputs are catchment-aggregated, not mapped LULC projections.\\n\\n5. **Outputs include mapped LULC projections:**\\n   - ✗ NO - No mapped LULC outputs are presented. Results are reported as aggregated metrics (cost, MtCO2e, percentage changes in contaminants). Supplementary tables show annualized costs and effectiveness rates, not spatial LULC maps.\\n\\n---\\n\\n### SPECIFIC EXCLUSION CRITERIA:\\n\\n- **Economic/urban models lacking spatially explicit LULC outputs:** ✓ APPLIES - This is fundamentally an agri-environmental economic model designed for policy cost-benefit analysis, not LULC prediction. While it tracks \\\"land cover\\\" changes, it does not produce spatially explicit maps or predict future LULC distributions.\\n\\n- **No LULC prediction component (as primary objective):** ✓ APPLIES - LULC modeling is instrumental to the policy analysis, not the primary research objective.\\n\\n---\\n\\n## Summary Assessment\\n\\n**Fails CORE INCLUSION CRITERIA:**\\n- Primary focus is policy evaluation and decision-making under uncertainty, not LULC prediction\\n- No mapped LULC projections provided\\n- No spatial accuracy metrics reported\\n- LULC changes are outputs of economic optimization, not the research objective\\n\\n**Meets EXCLUSION CRITERIA:**\\n- Economic model lacking spatially explicit LULC outputs\\n- LULC prediction is incidental to policy analysis framework\\n\\n---\\n\\n## Final Categorization: **EXCLUDED**\\n\\n**Justification:** While this paper uses a national-scale land use model that simulates land cover changes across multiple policy scenarios in New Zealand, its primary research objective is **policy evaluation and decision-making**, not LULC prediction. The model produces aggregated economic and environmental metrics rather than spatially explicit LULC projections with validation metrics. LULC modeling serves as an instrumental tool within an economic policy framework, not as the central research focus. The paper therefore fails the core inclusion criterion requiring primary focus on LULC prediction/simulation and meets the exclusion criterion for economic models lacking spatially explicit LULC outputs.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":6260,\"completion_tokens\":841,\"total_tokens\":7101,\"cost\":0.010465,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.010465,\"upstream_inference_prompt_cost\":0.00626,\"upstream_inference_completions_cost\":0.004205},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654258-uR3QopfIkS5AjIyi1FPW",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 6260,
+        "completion_tokens": 841,
+        "total_tokens": 7101,
+        "cost": 0.010465,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.010465,
+          "upstream_inference_prompt_cost": 0.00626,
+          "upstream_inference_completions_cost": 0.004205
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 9.95,
+  "call_id": "DS__z1_EUHBZK5D__claude__r2",
+  "fingerprint": "054adfe0634e8915e8ee470c9edc2e75401c06888758fee3774acd7af69bd37b",
+  "paper_id": "z1_EUHBZK5D",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:11:03.623343+00:00",
+  "input_sha256": "9b453f6588b60ed7ac0f5651b8a9904cc8851cdb55e0037b1ef704eff19a537a",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

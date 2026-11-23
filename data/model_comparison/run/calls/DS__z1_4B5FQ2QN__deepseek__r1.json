@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653125-u4pwri3XW3vL3ttDT8ZA",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0036623,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 13906,
+    "completion_tokens": 123,
+    "total_tokens": 14029,
+    "cost": 0.0036623,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0036623,
+      "upstream_inference_prompt_cost": 0.00361556,
+      "upstream_inference_completions_cost": 4.674e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper's primary focus is on analyzing historical and projected land use changes for a specific region (the Qinghai-Tibet Plateau), not on a national-scale implementation for an entire country. The study area is a transnational biogeographic region, and the analysis, while using national data, is confined to this plateau area, which spans parts of six Chinese provinces but does not constitute a comprehensive national-scale study of China. It meets several methodological criteria for LULC prediction but fails the core inclusion criterion of \"explicit national-scale spatial implementation (entire country).\")",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:52:00.896864+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.393,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789653125-u4pwri3XW3vL3ttDT8ZA\",\"object\":\"chat.completion\",\"created\":1789653125,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper's primary focus is on analyzing historical and projected land use changes for a specific region (the Qinghai-Tibet Plateau), not on a national-scale implementation for an entire country. The study area is a transnational biogeographic region, and the analysis, while using national data, is confined to this plateau area, which spans parts of six Chinese provinces but does not constitute a comprehensive national-scale study of China. It meets several methodological criteria for LULC prediction but fails the core inclusion criterion of \\\"explicit national-scale spatial implementation (entire country).\\\")\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":13906,\"completion_tokens\":123,\"total_tokens\":14029,\"cost\":0.0036623,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0036623,\"upstream_inference_prompt_cost\":0.00361556,\"upstream_inference_completions_cost\":0.00004674},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653125-u4pwri3XW3vL3ttDT8ZA",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 13906,
+        "completion_tokens": 123,
+        "total_tokens": 14029,
+        "cost": 0.0036623,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0036623,
+          "upstream_inference_prompt_cost": 0.00361556,
+          "upstream_inference_completions_cost": 4.674e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.393,
+  "call_id": "DS__z1_4B5FQ2QN__deepseek__r1",
+  "fingerprint": "5e891b5eb5ff34372ad2877438cf1e188e3dfde60ef09bb65581ab1b2f6f870c",
+  "paper_id": "z1_4B5FQ2QN",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:52:05.290004+00:00",
+  "input_sha256": "3ccf3b9deb4dd214f56b55b4086355ade9b680be403bafdbe8304d72134728f6",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789653070-u4hFDa1q9YsPReVRumK1",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.02248,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 16205,
+    "completion_tokens": 1255,
+    "total_tokens": 17460,
+    "cost": 0.02248,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.02248,
+      "upstream_inference_prompt_cost": 0.016205,
+      "upstream_inference_completions_cost": 0.006275
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land Use Allocation Uncertainty in Europe\n\n## Initial Assessment\n\n**Is this a review article?** NO - This is a research paper presenting original modeling and analysis.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA (Research Papers):\n\n1. **Explicit national-scale spatial implementation (entire country)?**\n   - ✓ YES - Study covers EU27 (all EU member states) at 1×1 km spatial resolution\n   - Text: \"simulations result in land use maps with 1 × 1 km resolution for the entire European Union (EU27)\"\n\n2. **Primary focus = LULC prediction/simulation (central research question)?**\n   - ✓ YES - Central objective is assessing spatial uncertainties in future agricultural land allocation\n   - Text: \"assess uncertainty of changes in future spatial allocation of agricultural land in Europe\"\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ✓ YES - Two contrasting scenarios implemented: Marketeer and Musketeer\n   - Text: \"Two contrasting scenarios are used to capture some of the uncertainty\"\n   - Quantitative comparisons provided throughout (Figures 5-8, Tables 1-2)\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ✓ YES - Quantitative metrics reported including:\n     - Probability maps (p > 0.95, p < 0.05 thresholds)\n     - Percentage changes in agricultural area by country\n     - Confidence intervals (90% CI presented in Figure 4)\n     - Growth rates and standard deviations\n\n5. **Outputs include mapped LULC projections?**\n   - ✓ YES - Multiple mapped outputs provided:\n     - Figures 5-6: Probability of arable and grassland occurrence in 2030\n     - Figures 7-8: Agricultural abandonment and expansion maps\n     - Figure 9: Detailed spatial patterns at 1×1 km resolution\n\n### EXCLUSION CRITERIA CHECK:\n\n1. **Global-scale analysis without national-level disaggregation?**\n   - ✗ NO - While LEITAP is global, analysis disaggregates to individual EU countries and 1×1 km pixels\n\n2. **Local/regional/global/transboundary scale focus (not national)?**\n   - ✗ NO - Primary focus is national-scale (EU27) with regional disaggregation\n\n3. **No LULC prediction component?**\n   - ✗ NO - LULC prediction is the core component\n\n4. **Species-specific/ecological focus unrelated to LULC?**\n   - ✗ NO - Focus is land use allocation, not species ecology\n\n5. **Economic/urban models lacking spatially explicit LULC outputs?**\n   - ✗ NO - Economic model (LEITAP) is coupled to spatial model (Dyna-CLUE) producing explicit LULC maps\n\n6. **Methodological paper without application?**\n   - ✗ NO - Methodology is applied to concrete case study (EU agricultural land 2000-2030)\n\n7. **Purely qualitative/historical only?**\n   - ✗ NO - Includes quantitative future projections (2030)\n\n8. **Remote sensing technical study without predictive modeling?**\n   - ✗ NO - Uses remote sensing data as input but focuses on predictive modeling\n\n9. **Single-scenario \"business-as-usual\" projection?**\n   - ✗ NO - Two contrasting scenarios with uncertainty analysis\n\n---\n\n## Additional Verification Checks\n\n**Scale verification in methodology:** \n- Confirmed as EU27 national-scale with sub-national disaggregation\n- Spatial resolution: 1×1 km (4.3 million pixels)\n- Administrative regions: 661 units\n- All verified in Section 2 and results\n\n**Quantitative metrics reported:**\n- ✓ Probability distributions (bivariate normal)\n- ✓ Confidence intervals (90% CI)\n- ✓ Growth rates and standard deviations\n- ✓ Percentage changes by country\n- ✓ Sensitivity analysis results\n\n**Spatial explicitness:**\n- ✓ Coupled modeling framework (LEITAP + Dyna-CLUE)\n- ✓ Downscaling from national to pixel level\n- ✓ Multiple map outputs at different resolutions\n\n---\n\n## Final Categorization\n\n**Final categorization: OK**\n\n**Justification:** This paper fully meets all core inclusion criteria for national-scale LULC prediction research. It presents:\n1. Explicit spatial implementation across entire EU27 at 1×1 km resolution\n2. Primary focus on LULC prediction (agricultural land allocation 2000-2030)\n3. Two contrasting scenarios (Marketeer/Musketeer) with quantitative comparison\n4. Spatial modeling with multiple quantitative metrics (probabilities, confidence intervals, growth rates)\n5. Mapped LULC projections showing future agricultural land distribution and transitions\n6. Rigorous uncertainty analysis translating macro-level assumptions to spatial patterns\n\nThe paper does not meet any exclusion criteria. It represents a methodologically sound application of coupled economic-spatial modeling to national-scale LULC prediction with explicit uncertainty quantification.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:51:05.486005+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.239,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653070-u4hFDa1q9YsPReVRumK1\",\"object\":\"chat.completion\",\"created\":1789653070,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land Use Allocation Uncertainty in Europe\\n\\n## Initial Assessment\\n\\n**Is this a review article?** NO - This is a research paper presenting original modeling and analysis.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA (Research Papers):\\n\\n1. **Explicit national-scale spatial implementation (entire country)?**\\n   - ✓ YES - Study covers EU27 (all EU member states) at 1×1 km spatial resolution\\n   - Text: \\\"simulations result in land use maps with 1 × 1 km resolution for the entire European Union (EU27)\\\"\\n\\n2. **Primary focus = LULC prediction/simulation (central research question)?**\\n   - ✓ YES - Central objective is assessing spatial uncertainties in future agricultural land allocation\\n   - Text: \\\"assess uncertainty of changes in future spatial allocation of agricultural land in Europe\\\"\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ✓ YES - Two contrasting scenarios implemented: Marketeer and Musketeer\\n   - Text: \\\"Two contrasting scenarios are used to capture some of the uncertainty\\\"\\n   - Quantitative comparisons provided throughout (Figures 5-8, Tables 1-2)\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ✓ YES - Quantitative metrics reported including:\\n     - Probability maps (p > 0.95, p < 0.05 thresholds)\\n     - Percentage changes in agricultural area by country\\n     - Confidence intervals (90% CI presented in Figure 4)\\n     - Growth rates and standard deviations\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ✓ YES - Multiple mapped outputs provided:\\n     - Figures 5-6: Probability of arable and grassland occurrence in 2030\\n     - Figures 7-8: Agricultural abandonment and expansion maps\\n     - Figure 9: Detailed spatial patterns at 1×1 km resolution\\n\\n### EXCLUSION CRITERIA CHECK:\\n\\n1. **Global-scale analysis without national-level disaggregation?**\\n   - ✗ NO - While LEITAP is global, analysis disaggregates to individual EU countries and 1×1 km pixels\\n\\n2. **Local/regional/global/transboundary scale focus (not national)?**\\n   - ✗ NO - Primary focus is national-scale (EU27) with regional disaggregation\\n\\n3. **No LULC prediction component?**\\n   - ✗ NO - LULC prediction is the core component\\n\\n4. **Species-specific/ecological focus unrelated to LULC?**\\n   - ✗ NO - Focus is land use allocation, not species ecology\\n\\n5. **Economic/urban models lacking spatially explicit LULC outputs?**\\n   - ✗ NO - Economic model (LEITAP) is coupled to spatial model (Dyna-CLUE) producing explicit LULC maps\\n\\n6. **Methodological paper without application?**\\n   - ✗ NO - Methodology is applied to concrete case study (EU agricultural land 2000-2030)\\n\\n7. **Purely qualitative/historical only?**\\n   - ✗ NO - Includes quantitative future projections (2030)\\n\\n8. **Remote sensing technical study without predictive modeling?**\\n   - ✗ NO - Uses remote sensing data as input but focuses on predictive modeling\\n\\n9. **Single-scenario \\\"business-as-usual\\\" projection?**\\n   - ✗ NO - Two contrasting scenarios with uncertainty analysis\\n\\n---\\n\\n## Additional Verification Checks\\n\\n**Scale verification in methodology:** \\n- Confirmed as EU27 national-scale with sub-national disaggregation\\n- Spatial resolution: 1×1 km (4.3 million pixels)\\n- Administrative regions: 661 units\\n- All verified in Section 2 and results\\n\\n**Quantitative metrics reported:**\\n- ✓ Probability distributions (bivariate normal)\\n- ✓ Confidence intervals (90% CI)\\n- ✓ Growth rates and standard deviations\\n- ✓ Percentage changes by country\\n- ✓ Sensitivity analysis results\\n\\n**Spatial explicitness:**\\n- ✓ Coupled modeling framework (LEITAP + Dyna-CLUE)\\n- ✓ Downscaling from national to pixel level\\n- ✓ Multiple map outputs at different resolutions\\n\\n---\\n\\n## Final Categorization\\n\\n**Final categorization: OK**\\n\\n**Justification:** This paper fully meets all core inclusion criteria for national-scale LULC prediction research. It presents:\\n1. Explicit spatial implementation across entire EU27 at 1×1 km resolution\\n2. Primary focus on LULC prediction (agricultural land allocation 2000-2030)\\n3. Two contrasting scenarios (Marketeer/Musketeer) with quantitative comparison\\n4. Spatial modeling with multiple quantitative metrics (probabilities, confidence intervals, growth rates)\\n5. Mapped LULC projections showing future agricultural land distribution and transitions\\n6. Rigorous uncertainty analysis translating macro-level assumptions to spatial patterns\\n\\nThe paper does not meet any exclusion criteria. It represents a methodologically sound application of coupled economic-spatial modeling to national-scale LULC prediction with explicit uncertainty quantification.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":16205,\"completion_tokens\":1255,\"total_tokens\":17460,\"cost\":0.02248,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.02248,\"upstream_inference_prompt_cost\":0.016205,\"upstream_inference_completions_cost\":0.006275},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653070-u4hFDa1q9YsPReVRumK1",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 16205,
+        "completion_tokens": 1255,
+        "total_tokens": 17460,
+        "cost": 0.02248,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.02248,
+          "upstream_inference_prompt_cost": 0.016205,
+          "upstream_inference_completions_cost": 0.006275
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.239,
+  "call_id": "DS__z1_5QVAGURU__claude__r1",
+  "fingerprint": "f5fa23b8010a999b00f8b368da5928ec7eb78ef5e208ae5ebb578a74c10b8267",
+  "paper_id": "z1_5QVAGURU",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:51:17.724644+00:00",
+  "input_sha256": "d6af530200b28aae37d761b818343f43380bb68cfe2935bf9de501d5e0c139aa",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

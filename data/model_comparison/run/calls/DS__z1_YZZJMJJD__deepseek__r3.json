@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789655461-mhfAVJ3HQSRNa6rMFBde",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00490416,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 18697,
+    "completion_tokens": 113,
+    "total_tokens": 18810,
+    "cost": 0.00490416,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00490416,
+      "upstream_inference_prompt_cost": 0.00486122,
+      "upstream_inference_completions_cost": 4.294e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper's primary focus is species conservation modeling (gibbons) using ecological niche models driven by climate and land-cover data. While it uses future land-cover scenarios (A2, B1) as inputs, it does not generate or validate these LULC predictions itself. The core research objective is not LULC prediction but assessing species range shifts and conservation priorities. The implementation scale is species-specific ranges across Southeast Asia, not a systematic national-scale LULC prediction for an entire country.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:30:56.666771+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 9.563,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789655461-mhfAVJ3HQSRNa6rMFBde\",\"object\":\"chat.completion\",\"created\":1789655461,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper's primary focus is species conservation modeling (gibbons) using ecological niche models driven by climate and land-cover data. While it uses future land-cover scenarios (A2, B1) as inputs, it does not generate or validate these LULC predictions itself. The core research objective is not LULC prediction but assessing species range shifts and conservation priorities. The implementation scale is species-specific ranges across Southeast Asia, not a systematic national-scale LULC prediction for an entire country.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":18697,\"completion_tokens\":113,\"total_tokens\":18810,\"cost\":0.00490416,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00490416,\"upstream_inference_prompt_cost\":0.00486122,\"upstream_inference_completions_cost\":0.00004294},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655461-mhfAVJ3HQSRNa6rMFBde",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 18697,
+        "completion_tokens": 113,
+        "total_tokens": 18810,
+        "cost": 0.00490416,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00490416,
+          "upstream_inference_prompt_cost": 0.00486122,
+          "upstream_inference_completions_cost": 4.294e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 9.564,
+  "call_id": "DS__z1_YZZJMJJD__deepseek__r3",
+  "fingerprint": "7dea5524556698e0fa8cfa44a40848cff6a9b84f6986ee0df5a3f1fd0904fea8",
+  "paper_id": "z1_YZZJMJJD",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:31:06.229924+00:00",
+  "input_sha256": "a09a5f462e10797c4a980c4cdaf2bf9e5f4a857502861dc396b874eb405a69fa",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

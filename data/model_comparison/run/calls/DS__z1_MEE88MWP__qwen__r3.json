@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789655734-xS3FRQu4N6ukdGmgrd2C",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.01399476,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 16922,
+    "completion_tokens": 204,
+    "total_tokens": 17126,
+    "cost": 0.01399476,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01399476,
+      "upstream_inference_prompt_cost": 0.01319916,
+      "upstream_inference_completions_cost": 0.0007956
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: The paper is a non-review research article that explicitly implements national-scale spatial modeling for the entire island of Taiwan (35,808 km²), which the authors treat as their national study area. The primary objective is LULC prediction/simulation from 1990–2020 with projections to 2030 and 2050. It evaluates four distinct future scenarios (2-, 3-, 5-, and 6-variable combinations) with quantitative comparisons of land class changes (e.g., built-up area increasing by 223% under 6-variable scenario). The methodology uses SVM-Markov chain modeling with reported accuracy metrics (Overall Accuracy = 0.87, Kappa = 0.74 for 2020 validation). Mapped LULC projections are provided for all scenarios (Fig. 7). The study meets all core inclusion criteria and none of the exclusion criteria.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:35:29.831728+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 6.321,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789655734-xS3FRQu4N6ukdGmgrd2C\",\"object\":\"chat.completion\",\"created\":1789655734,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: The paper is a non-review research article that explicitly implements national-scale spatial modeling for the entire island of Taiwan (35,808 km²), which the authors treat as their national study area. The primary objective is LULC prediction/simulation from 1990–2020 with projections to 2030 and 2050. It evaluates four distinct future scenarios (2-, 3-, 5-, and 6-variable combinations) with quantitative comparisons of land class changes (e.g., built-up area increasing by 223% under 6-variable scenario). The methodology uses SVM-Markov chain modeling with reported accuracy metrics (Overall Accuracy = 0.87, Kappa = 0.74 for 2020 validation). Mapped LULC projections are provided for all scenarios (Fig. 7). The study meets all core inclusion criteria and none of the exclusion criteria.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":16922,\"completion_tokens\":204,\"total_tokens\":17126,\"cost\":0.01399476,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.01399476,\"upstream_inference_prompt_cost\":0.01319916,\"upstream_inference_completions_cost\":0.0007956},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655734-xS3FRQu4N6ukdGmgrd2C",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 16922,
+        "completion_tokens": 204,
+        "total_tokens": 17126,
+        "cost": 0.01399476,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01399476,
+          "upstream_inference_prompt_cost": 0.01319916,
+          "upstream_inference_completions_cost": 0.0007956
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 6.321,
+  "call_id": "DS__z1_MEE88MWP__qwen__r3",
+  "fingerprint": "2e4455e4e9c766543a0758d544e4b8b02be786d5da1adb6631b3608909ff7f29",
+  "paper_id": "z1_MEE88MWP",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:35:36.152756+00:00",
+  "input_sha256": "7ba93337d4ee8fc18059d82d643e2f5bf44b90fe58928ccef8602d55c1d6bf96",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

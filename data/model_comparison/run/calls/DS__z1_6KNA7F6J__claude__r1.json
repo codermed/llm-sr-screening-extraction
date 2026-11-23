@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789653453-RMdXyZ6W0A0ZCSrvljct",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.018573,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12903,
+    "completion_tokens": 1134,
+    "total_tokens": 14037,
+    "cost": 0.018573,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.018573,
+      "upstream_inference_prompt_cost": 0.012903,
+      "upstream_inference_completions_cost": 0.00567
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Optimal Zoning of Forested Land\n\n## Initial Classification\nThis is a **NON-REVIEW PAPER** (empirical research article using optimization modeling).\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA CHECK:\n\n1. **Explicit national-scale spatial implementation?**\n   - ❌ FAILS: The paper explicitly states \"we construct a simple stylized forest management unit\" (p. 94). This is a hypothetical, generic model landscape, NOT a national-scale implementation.\n   - The study area is described as \"a stylized representation of a mill site and the surrounding public and private land\" with 2 million hectares (p. 96).\n   - No actual geographic location or national territory is mapped.\n\n2. **Primary focus = LULC prediction/simulation?**\n   - ⚠️ PARTIAL: The paper does model land use allocation (zoning) across multiple management intensities (natural, native plantation, exotic plantation, agriculture, protected).\n   - However, the primary objective is **forest management optimization** and **economic policy analysis**, not LULC prediction.\n   - The research question is: \"how alternative policy scenarios affect the net present value of the optimal forest management plan\" (p. 92).\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ✅ YES: Seven policy scenarios (VNF, DNF, DNB, DPB, DBB, DBF, DBU) are modeled and compared quantitatively (Table 4, Figure 6).\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ⚠️ PARTIAL: Spatial modeling exists (haul zones, TPR classes, ownership), but NO validation metrics (accuracy, validation against observed data, error rates).\n   - Results show allocation patterns (Table 4, Figure 6) but no accuracy assessment.\n\n5. **Outputs include mapped LULC projections?**\n   - ✅ YES: Figure 6 shows spatial allocation of management intensities by haul zone and productivity rating.\n\n### EXCLUSION CRITERIA CHECK:\n\n1. **Local/regional/global scale focus (without national disaggregation)?**\n   - ✅ TRIGGERS EXCLUSION: The study is explicitly a **stylized, hypothetical model** without national-scale implementation. This is regional/local-scale analysis at best (a single mill site).\n\n2. **Economic/urban models lacking spatially explicit LULC outputs?**\n   - ⚠️ BORDERLINE: This is fundamentally an **economic optimization model** (linear programming) for forest management. While it has spatial outputs, the primary contribution is economic policy analysis, not LULC prediction.\n\n3. **No LULC prediction component?**\n   - ❌ Does NOT trigger: LULC allocation is modeled.\n\n4. **Methodological papers without application to national-scale prediction?**\n   - ✅ TRIGGERS EXCLUSION: This reads as a methodological/applied optimization paper using a stylized case study, not a national-scale LULC prediction application.\n\n---\n\n## Primary Focus Assessment\n\n**Research Question:** How do alternative forest policy scenarios affect optimal land zoning, NPV, and timber output?\n\n**Primary Contribution:** \n- Forest management policy optimization\n- Economic analysis of zoning systems (triad approach)\n- NOT LULC change prediction or simulation\n\n**LULC Role:** \n- Land use allocation is an OUTPUT of the optimization model\n- LULC is not the primary focus; it's a consequence of profit-maximizing decisions under different policy constraints\n- This is an **economic model using LULC as a decision variable**, not a predictive LULC model\n\n---\n\n## Final Categorization\n\n**Final categorization: EXCLUDED**\n\n**Justification:**\n1. **Fails national-scale criterion**: Study explicitly uses a \"stylized representation\" (hypothetical landscape) rather than implementing the model across an entire national territory. This is a regional/local-scale analysis.\n\n2. **Primary focus is NOT LULC prediction**: The research is fundamentally about **forest management optimization and economic policy analysis**. LULC zoning is an output of profit maximization, not the primary research objective.\n\n3. **No validation/accuracy metrics**: No accuracy assessment, validation against observed data, or quantitative LULC prediction metrics are provided.\n\n4. **Methodological application paper**: This is a methodological contribution demonstrating how linear programming can optimize forest zoning under different policies—not an applied LULC prediction study.\n\n5. **Single case study approach**: The authors deliberately chose a stylized case to \"consider the impact of different policies in a more general manner\" rather than implementing the model on actual national forest data.\n\nThe paper makes valuable contributions to forest management policy, but it does not meet the core criteria for LULC prediction research at national scale.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:57:28.514285+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 13.33,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653453-RMdXyZ6W0A0ZCSrvljct\",\"object\":\"chat.completion\",\"created\":1789653453,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Optimal Zoning of Forested Land\\n\\n## Initial Classification\\nThis is a **NON-REVIEW PAPER** (empirical research article using optimization modeling).\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA CHECK:\\n\\n1. **Explicit national-scale spatial implementation?**\\n   - ❌ FAILS: The paper explicitly states \\\"we construct a simple stylized forest management unit\\\" (p. 94). This is a hypothetical, generic model landscape, NOT a national-scale implementation.\\n   - The study area is described as \\\"a stylized representation of a mill site and the surrounding public and private land\\\" with 2 million hectares (p. 96).\\n   - No actual geographic location or national territory is mapped.\\n\\n2. **Primary focus = LULC prediction/simulation?**\\n   - ⚠️ PARTIAL: The paper does model land use allocation (zoning) across multiple management intensities (natural, native plantation, exotic plantation, agriculture, protected).\\n   - However, the primary objective is **forest management optimization** and **economic policy analysis**, not LULC prediction.\\n   - The research question is: \\\"how alternative policy scenarios affect the net present value of the optimal forest management plan\\\" (p. 92).\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ✅ YES: Seven policy scenarios (VNF, DNF, DNB, DPB, DBB, DBF, DBU) are modeled and compared quantitatively (Table 4, Figure 6).\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ⚠️ PARTIAL: Spatial modeling exists (haul zones, TPR classes, ownership), but NO validation metrics (accuracy, validation against observed data, error rates).\\n   - Results show allocation patterns (Table 4, Figure 6) but no accuracy assessment.\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ✅ YES: Figure 6 shows spatial allocation of management intensities by haul zone and productivity rating.\\n\\n### EXCLUSION CRITERIA CHECK:\\n\\n1. **Local/regional/global scale focus (without national disaggregation)?**\\n   - ✅ TRIGGERS EXCLUSION: The study is explicitly a **stylized, hypothetical model** without national-scale implementation. This is regional/local-scale analysis at best (a single mill site).\\n\\n2. **Economic/urban models lacking spatially explicit LULC outputs?**\\n   - ⚠️ BORDERLINE: This is fundamentally an **economic optimization model** (linear programming) for forest management. While it has spatial outputs, the primary contribution is economic policy analysis, not LULC prediction.\\n\\n3. **No LULC prediction component?**\\n   - ❌ Does NOT trigger: LULC allocation is modeled.\\n\\n4. **Methodological papers without application to national-scale prediction?**\\n   - ✅ TRIGGERS EXCLUSION: This reads as a methodological/applied optimization paper using a stylized case study, not a national-scale LULC prediction application.\\n\\n---\\n\\n## Primary Focus Assessment\\n\\n**Research Question:** How do alternative forest policy scenarios affect optimal land zoning, NPV, and timber output?\\n\\n**Primary Contribution:** \\n- Forest management policy optimization\\n- Economic analysis of zoning systems (triad approach)\\n- NOT LULC change prediction or simulation\\n\\n**LULC Role:** \\n- Land use allocation is an OUTPUT of the optimization model\\n- LULC is not the primary focus; it's a consequence of profit-maximizing decisions under different policy constraints\\n- This is an **economic model using LULC as a decision variable**, not a predictive LULC model\\n\\n---\\n\\n## Final Categorization\\n\\n**Final categorization: EXCLUDED**\\n\\n**Justification:**\\n1. **Fails national-scale criterion**: Study explicitly uses a \\\"stylized representation\\\" (hypothetical landscape) rather than implementing the model across an entire national territory. This is a regional/local-scale analysis.\\n\\n2. **Primary focus is NOT LULC prediction**: The research is fundamentally about **forest management optimization and economic policy analysis**. LULC zoning is an output of profit maximization, not the primary research objective.\\n\\n3. **No validation/accuracy metrics**: No accuracy assessment, validation against observed data, or quantitative LULC prediction metrics are provided.\\n\\n4. **Methodological application paper**: This is a methodological contribution demonstrating how linear programming can optimize forest zoning under different policies—not an applied LULC prediction study.\\n\\n5. **Single case study approach**: The authors deliberately chose a stylized case to \\\"consider the impact of different policies in a more general manner\\\" rather than implementing the model on actual national forest data.\\n\\nThe paper makes valuable contributions to forest management policy, but it does not meet the core criteria for LULC prediction research at national scale.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12903,\"completion_tokens\":1134,\"total_tokens\":14037,\"cost\":0.018573,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.018573,\"upstream_inference_prompt_cost\":0.012903,\"upstream_inference_completions_cost\":0.00567},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653453-RMdXyZ6W0A0ZCSrvljct",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 12903,
+        "completion_tokens": 1134,
+        "total_tokens": 14037,
+        "cost": 0.018573,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.018573,
+          "upstream_inference_prompt_cost": 0.012903,
+          "upstream_inference_completions_cost": 0.00567
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 13.33,
+  "call_id": "DS__z1_6KNA7F6J__claude__r1",
+  "fingerprint": "d684a00df8fdca3fb1c64febebd146f7d1e8763913e8fc178ed92f2f8ea2d7d2",
+  "paper_id": "z1_6KNA7F6J",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:57:41.844063+00:00",
+  "input_sha256": "2d54464c7167ebe2a193299a547089e113c7097ae1e0f9ceeb375c1901e46ec5",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

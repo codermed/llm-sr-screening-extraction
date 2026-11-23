@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653995-7xjxQ9os6YpoQXUgyWIM",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0011552,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 8716,
+    "completion_tokens": 151,
+    "total_tokens": 8867,
+    "cost": 0.0011552,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 8576,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0011552,
+      "upstream_inference_prompt_cost": 0.0009136,
+      "upstream_inference_completions_cost": 0.0002416
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: OK (Justification: The paper is a research article, not a review. It explicitly focuses on spatially-explicit modeling of deforestation (a land use land cover change) across the entire country of Colombia, thus national-scale implementation is met. It uses the Dinamica EGO platform to model historical deforestation and produce future projections with at least two scenarios—Business as Usual and Governance—thus fulfilling the ≥2 future scenarios criterion with quantitative comparison. The study provides spatially explicit maps of forest cover loss and predictions, including quantitative accuracy metrics and change rates. The primary objective is LULC prediction/simulation of deforestation. Therefore, all core inclusion criteria are met, and none of the exclusion criteria apply.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:06:30.678820+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.053,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789653995-7xjxQ9os6YpoQXUgyWIM\",\"object\":\"chat.completion\",\"created\":1789653995,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: The paper is a research article, not a review. It explicitly focuses on spatially-explicit modeling of deforestation (a land use land cover change) across the entire country of Colombia, thus national-scale implementation is met. It uses the Dinamica EGO platform to model historical deforestation and produce future projections with at least two scenarios—Business as Usual and Governance—thus fulfilling the ≥2 future scenarios criterion with quantitative comparison. The study provides spatially explicit maps of forest cover loss and predictions, including quantitative accuracy metrics and change rates. The primary objective is LULC prediction/simulation of deforestation. Therefore, all core inclusion criteria are met, and none of the exclusion criteria apply.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":8716,\"completion_tokens\":151,\"total_tokens\":8867,\"cost\":0.0011552,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":8576,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0011552,\"upstream_inference_prompt_cost\":0.0009136,\"upstream_inference_completions_cost\":0.0002416},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653995-7xjxQ9os6YpoQXUgyWIM",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 8716,
+        "completion_tokens": 151,
+        "total_tokens": 8867,
+        "cost": 0.0011552,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 8576,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0011552,
+          "upstream_inference_prompt_cost": 0.0009136,
+          "upstream_inference_completions_cost": 0.0002416
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.053,
+  "call_id": "DS__z1_NLEMV7CY__openai__r2",
+  "fingerprint": "ec70989d769d027e9c05afefaec1aa43eefad7c3c0894f2a1b615e567387afb3",
+  "paper_id": "z1_NLEMV7CY",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:06:34.731655+00:00",
+  "input_sha256": "1b82b06f380446d02b7982ab01598493506f41e3e9ac489b97794759aaa5d8da",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

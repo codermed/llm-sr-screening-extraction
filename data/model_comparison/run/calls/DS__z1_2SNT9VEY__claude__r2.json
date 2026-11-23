@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789653880-ppDHHICvOSRexwnZXjRX",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.016246,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 11111,
+    "completion_tokens": 1027,
+    "total_tokens": 12138,
+    "cost": 0.016246,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.016246,
+      "upstream_inference_prompt_cost": 0.011111,
+      "upstream_inference_completions_cost": 0.005135
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Climate Change and Future Distributions of Aquatic Macrophytes\n\n## Step 1: Determine if Review Article\n**Result: NO** - This is an original research article (explicitly labeled \"ORIGINAL ARTICLE\"), not a review. It presents empirical modeling of emergent aquatic macrophyte distributions using primary data and novel climate scenarios.\n\n---\n\n## Step 2: Apply Non-Review Evaluation Against Inclusion/Exclusion Criteria\n\n### Core Inclusion Criteria Assessment:\n\n**1. Explicit national-scale spatial implementation (entire country)**\n- ✓ YES: Study covers all 848 catchments across Finland (305,000 km² land area)\n- Stated: \"all catchments in Finland (848 in total)\"\n- Figure 1 shows national coverage\n\n**2. Primary focus = LULC prediction/simulation**\n- ✗ NO: Primary focus is **species distribution modeling** (emergent aquatic macrophytes), NOT land use/land cover change prediction\n- The paper models vegetation occurrence and percentage cover of a specific plant functional type\n- LULC data (CORINE classification) is used as INPUT to describe current vegetation state, not as the prediction target\n- Central research question: \"uncover future changes in boreal emergent aquatic macrophyte zones\" - this is ecological/vegetation distribution modeling, not LULC prediction\n\n**3. Implementation of ≥2 future scenarios with quantitative comparison**\n- ✓ YES: Four climate scenarios (A1, A2, B1, B2) for 2051-80 period\n- Table 3 provides quantitative comparisons with statistical significance testing (paired t-tests)\n\n**4. Spatial modeling with quantitative accuracy metrics**\n- ✓ YES: GAM models with multiple accuracy metrics reported (AUC, explained deviance, correlation, sensitivity, specificity)\n- Table 4 provides comprehensive validation metrics\n\n**5. Outputs include mapped LULC projections**\n- ✗ PARTIAL/NO: Figure 2 shows predicted vegetation cover maps, but these represent species distribution projections, not LULC class predictions\n- Maps show percentage cover of emergent macrophytes, not LULC categories or transitions\n\n### Specific Exclusion Criteria Assessment:\n\n**Species-specific/ecological focus (flora/fauna) unrelated to LULC**\n- ✓ MEETS EXCLUSION: The paper is explicitly focused on modeling distributions of specific plant species (Phragmites australis, Typha latifolia, Equisetum fluviatile, etc.)\n- Stated objective: \"modeling the occurrence and percentage cover of emergent aquatic vegetation\"\n- This is vegetation ecology/biogeography, not LULC change prediction\n- While CORINE LULC data are used as input, the predictive modeling targets species distribution, not LULC transitions or class changes\n\n---\n\n## Step 3: Clarification of LULC vs. Vegetation Distribution Modeling\n\n**Critical Distinction:**\n- **LULC Prediction**: Models changes in classified land cover categories (e.g., forest→grassland, urban expansion, wetland loss)\n- **Vegetation Distribution**: Models occurrence/abundance of specific plant species or functional types within existing LULC classes\n- **This paper**: Models future distribution of emergent macrophytes (a vegetation type within aquatic LULC classes), not LULC class transitions\n\nThe paper uses CORINE LULC classification as a data source but does not predict LULC changes. The prediction target is species distribution within the aquatic-terrestrial ecotone.\n\n---\n\n## Final Categorization: **EXCLUDED**\n\n**Justification:** \nThis is a high-quality empirical research paper with national-scale implementation, multiple climate scenarios, and rigorous modeling methodology. However, it fails the core inclusion criterion that the **primary focus must be LULC prediction/simulation**. Instead, the paper's primary objective is **species distribution modeling** (emergent aquatic macrophytes) under future climate scenarios. While the study uses LULC data (CORINE) as input and operates at national scale in Finland, it explicitly meets the exclusion criterion of \"Species-specific/ecological focus (flora/fauna) unrelated to LULC.\" The predictive outputs are vegetation distribution maps for a specific plant functional type, not LULC class transitions or land cover change projections. This is biogeographic/ecological modeling rather than LULC change prediction.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:04:35.545110+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 11.506,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653880-ppDHHICvOSRexwnZXjRX\",\"object\":\"chat.completion\",\"created\":1789653880,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Climate Change and Future Distributions of Aquatic Macrophytes\\n\\n## Step 1: Determine if Review Article\\n**Result: NO** - This is an original research article (explicitly labeled \\\"ORIGINAL ARTICLE\\\"), not a review. It presents empirical modeling of emergent aquatic macrophyte distributions using primary data and novel climate scenarios.\\n\\n---\\n\\n## Step 2: Apply Non-Review Evaluation Against Inclusion/Exclusion Criteria\\n\\n### Core Inclusion Criteria Assessment:\\n\\n**1. Explicit national-scale spatial implementation (entire country)**\\n- ✓ YES: Study covers all 848 catchments across Finland (305,000 km² land area)\\n- Stated: \\\"all catchments in Finland (848 in total)\\\"\\n- Figure 1 shows national coverage\\n\\n**2. Primary focus = LULC prediction/simulation**\\n- ✗ NO: Primary focus is **species distribution modeling** (emergent aquatic macrophytes), NOT land use/land cover change prediction\\n- The paper models vegetation occurrence and percentage cover of a specific plant functional type\\n- LULC data (CORINE classification) is used as INPUT to describe current vegetation state, not as the prediction target\\n- Central research question: \\\"uncover future changes in boreal emergent aquatic macrophyte zones\\\" - this is ecological/vegetation distribution modeling, not LULC prediction\\n\\n**3. Implementation of ≥2 future scenarios with quantitative comparison**\\n- ✓ YES: Four climate scenarios (A1, A2, B1, B2) for 2051-80 period\\n- Table 3 provides quantitative comparisons with statistical significance testing (paired t-tests)\\n\\n**4. Spatial modeling with quantitative accuracy metrics**\\n- ✓ YES: GAM models with multiple accuracy metrics reported (AUC, explained deviance, correlation, sensitivity, specificity)\\n- Table 4 provides comprehensive validation metrics\\n\\n**5. Outputs include mapped LULC projections**\\n- ✗ PARTIAL/NO: Figure 2 shows predicted vegetation cover maps, but these represent species distribution projections, not LULC class predictions\\n- Maps show percentage cover of emergent macrophytes, not LULC categories or transitions\\n\\n### Specific Exclusion Criteria Assessment:\\n\\n**Species-specific/ecological focus (flora/fauna) unrelated to LULC**\\n- ✓ MEETS EXCLUSION: The paper is explicitly focused on modeling distributions of specific plant species (Phragmites australis, Typha latifolia, Equisetum fluviatile, etc.)\\n- Stated objective: \\\"modeling the occurrence and percentage cover of emergent aquatic vegetation\\\"\\n- This is vegetation ecology/biogeography, not LULC change prediction\\n- While CORINE LULC data are used as input, the predictive modeling targets species distribution, not LULC transitions or class changes\\n\\n---\\n\\n## Step 3: Clarification of LULC vs. Vegetation Distribution Modeling\\n\\n**Critical Distinction:**\\n- **LULC Prediction**: Models changes in classified land cover categories (e.g., forest→grassland, urban expansion, wetland loss)\\n- **Vegetation Distribution**: Models occurrence/abundance of specific plant species or functional types within existing LULC classes\\n- **This paper**: Models future distribution of emergent macrophytes (a vegetation type within aquatic LULC classes), not LULC class transitions\\n\\nThe paper uses CORINE LULC classification as a data source but does not predict LULC changes. The prediction target is species distribution within the aquatic-terrestrial ecotone.\\n\\n---\\n\\n## Final Categorization: **EXCLUDED**\\n\\n**Justification:** \\nThis is a high-quality empirical research paper with national-scale implementation, multiple climate scenarios, and rigorous modeling methodology. However, it fails the core inclusion criterion that the **primary focus must be LULC prediction/simulation**. Instead, the paper's primary objective is **species distribution modeling** (emergent aquatic macrophytes) under future climate scenarios. While the study uses LULC data (CORINE) as input and operates at national scale in Finland, it explicitly meets the exclusion criterion of \\\"Species-specific/ecological focus (flora/fauna) unrelated to LULC.\\\" The predictive outputs are vegetation distribution maps for a specific plant functional type, not LULC class transitions or land cover change projections. This is biogeographic/ecological modeling rather than LULC change prediction.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":11111,\"completion_tokens\":1027,\"total_tokens\":12138,\"cost\":0.016246,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.016246,\"upstream_inference_prompt_cost\":0.011111,\"upstream_inference_completions_cost\":0.005135},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653880-ppDHHICvOSRexwnZXjRX",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 11111,
+        "completion_tokens": 1027,
+        "total_tokens": 12138,
+        "cost": 0.016246,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.016246,
+          "upstream_inference_prompt_cost": 0.011111,
+          "upstream_inference_completions_cost": 0.005135
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 11.506,
+  "call_id": "DS__z1_2SNT9VEY__claude__r2",
+  "fingerprint": "ebd5d0cb6927a5a8149dc9be75671ff684e64e966b9081025e5182a1c88ca846",
+  "paper_id": "z1_2SNT9VEY",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:04:47.051313+00:00",
+  "input_sha256": "fc009e4939d8f197a4a46d822a54606ac143ac0e91bbd10247977a5c43c5dbf6",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

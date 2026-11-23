@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653711-cOZTPA48FedalMAksN4S",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0018016,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 14864,
+    "completion_tokens": 170,
+    "total_tokens": 15034,
+    "cost": 0.0018016,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 14720,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0018016,
+      "upstream_inference_prompt_cost": 0.0015296,
+      "upstream_inference_completions_cost": 0.000272
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a comprehensive systematic review of system dynamics applications across various domains including business, environment, health, agriculture, and social issues. Although it covers a broad range of topics including land use and agriculture, it does not focus specifically on national-scale spatially explicit land use/land cover (LULC) future prediction with quantitative mapped outputs. The review synthesizes system dynamics applications generally and does not meet core inclusion criteria such as national-scale spatial implementation, multiple future scenarios with quantitative spatial outputs, or accuracy metrics for LULC predictions. It also includes many other domains beyond LULC, and no evidence indicates it conducts or synthesizes national-scale spatially explicit LULC future prediction modeling. Therefore, it fails the core inclusion criteria for this review focused on LULC prediction studies.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:01:46.930452+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 5.344,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789653711-cOZTPA48FedalMAksN4S\",\"object\":\"chat.completion\",\"created\":1789653711,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a comprehensive systematic review of system dynamics applications across various domains including business, environment, health, agriculture, and social issues. Although it covers a broad range of topics including land use and agriculture, it does not focus specifically on national-scale spatially explicit land use/land cover (LULC) future prediction with quantitative mapped outputs. The review synthesizes system dynamics applications generally and does not meet core inclusion criteria such as national-scale spatial implementation, multiple future scenarios with quantitative spatial outputs, or accuracy metrics for LULC predictions. It also includes many other domains beyond LULC, and no evidence indicates it conducts or synthesizes national-scale spatially explicit LULC future prediction modeling. Therefore, it fails the core inclusion criteria for this review focused on LULC prediction studies.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":14864,\"completion_tokens\":170,\"total_tokens\":15034,\"cost\":0.0018016,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":14720,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0018016,\"upstream_inference_prompt_cost\":0.0015296,\"upstream_inference_completions_cost\":0.000272},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653711-cOZTPA48FedalMAksN4S",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 14864,
+        "completion_tokens": 170,
+        "total_tokens": 15034,
+        "cost": 0.0018016,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 14720,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0018016,
+          "upstream_inference_prompt_cost": 0.0015296,
+          "upstream_inference_completions_cost": 0.000272
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 5.344,
+  "call_id": "DS__z1_V27CY8JQ__openai__r2",
+  "fingerprint": "0bd00fc41e1b5fa7e111c5e021d7ec4084234dfb1c38101d6a9eb01850066451",
+  "paper_id": "z1_V27CY8JQ",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:01:52.274104+00:00",
+  "input_sha256": "d5b0a0aa575b3c71d67a847f06469aa7ab5364a39dcb4eb06ef85fee06d64e45",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

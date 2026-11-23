@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653094-KcFMABIrIWbyc6thh1QQ",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0059756,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 14507,
+    "completion_tokens": 108,
+    "total_tokens": 14615,
+    "cost": 0.0059756,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0059756,
+      "upstream_inference_prompt_cost": 0.0058028,
+      "upstream_inference_completions_cost": 0.0001728
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a review of long-term energy models focusing on principles, characteristics, and limitations of various energy and climate models. It does not focus on land use land cover (LULC) future prediction, nor does it include spatially explicit national-scale LULC modeling or quantitative LULC projections. The paper discusses energy system and integrated assessment models broadly, with only passing mention of land use as a modeling gap, without any implementation or quantitative spatial prediction of LULC.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:51:29.733711+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.786,
+      "raw_body": "\n         \n{\"id\":\"gen-1789653094-KcFMABIrIWbyc6thh1QQ\",\"object\":\"chat.completion\",\"created\":1789653094,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a review of long-term energy models focusing on principles, characteristics, and limitations of various energy and climate models. It does not focus on land use land cover (LULC) future prediction, nor does it include spatially explicit national-scale LULC modeling or quantitative LULC projections. The paper discusses energy system and integrated assessment models broadly, with only passing mention of land use as a modeling gap, without any implementation or quantitative spatial prediction of LULC.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":14507,\"completion_tokens\":108,\"total_tokens\":14615,\"cost\":0.0059756,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0059756,\"upstream_inference_prompt_cost\":0.0058028,\"upstream_inference_completions_cost\":0.0001728},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653094-KcFMABIrIWbyc6thh1QQ",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 14507,
+        "completion_tokens": 108,
+        "total_tokens": 14615,
+        "cost": 0.0059756,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0059756,
+          "upstream_inference_prompt_cost": 0.0058028,
+          "upstream_inference_completions_cost": 0.0001728
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.786,
+  "call_id": "DS__z1_DI2CYCEZ__openai__r1",
+  "fingerprint": "96576824611a8a31f52e9b84a7fd69b13f90d647a25feeee3558af2d860ff243",
+  "paper_id": "z1_DI2CYCEZ",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:51:32.519783+00:00",
+  "input_sha256": "18e2023decd569715f1e03078fa7a9c96235dddbf8c59db9e09e573eb6f32df7",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789654293-uj9OtT6QmYI0ztZX6EyP",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00932178,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 11066,
+    "completion_tokens": 177,
+    "total_tokens": 11243,
+    "cost": 0.00932178,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00932178,
+      "upstream_inference_prompt_cost": 0.00863148,
+      "upstream_inference_completions_cost": 0.0006903
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: The paper presents a national-scale GIS-based land use simulation model—Land Use Scanner—applied to the entire Netherlands. Its primary objective is to predict future land use, with special focus on residential construction, under three distinct quantitative future scenarios (Divided Europe, European Coordination, Global Competition). The modeling approach is spatially explicit, grid-based (500m resolution), and produces mapped land use projections for 2020. It includes integrated land use categories (urban, agriculture, nature, water) and quantitatively compares scenario outcomes in terms of land demand, allocation, and environmental impacts. The study meets all core inclusion criteria: national-scale implementation, primary focus on LULC prediction, ≥2 future scenarios with quantitative comparison, spatially explicit modeling, and mapped outputs. It does not trigger any exclusion criteria.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:11:28.927046+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 6.69,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789654293-uj9OtT6QmYI0ztZX6EyP\",\"object\":\"chat.completion\",\"created\":1789654293,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: The paper presents a national-scale GIS-based land use simulation model—Land Use Scanner—applied to the entire Netherlands. Its primary objective is to predict future land use, with special focus on residential construction, under three distinct quantitative future scenarios (Divided Europe, European Coordination, Global Competition). The modeling approach is spatially explicit, grid-based (500m resolution), and produces mapped land use projections for 2020. It includes integrated land use categories (urban, agriculture, nature, water) and quantitatively compares scenario outcomes in terms of land demand, allocation, and environmental impacts. The study meets all core inclusion criteria: national-scale implementation, primary focus on LULC prediction, ≥2 future scenarios with quantitative comparison, spatially explicit modeling, and mapped outputs. It does not trigger any exclusion criteria.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":11066,\"completion_tokens\":177,\"total_tokens\":11243,\"cost\":0.00932178,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00932178,\"upstream_inference_prompt_cost\":0.00863148,\"upstream_inference_completions_cost\":0.0006903},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654293-uj9OtT6QmYI0ztZX6EyP",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 11066,
+        "completion_tokens": 177,
+        "total_tokens": 11243,
+        "cost": 0.00932178,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00932178,
+          "upstream_inference_prompt_cost": 0.00863148,
+          "upstream_inference_completions_cost": 0.0006903
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 6.691,
+  "call_id": "DS__z1_SNP2EY2D__qwen__r2",
+  "fingerprint": "a0dcd1614dcf3715e2ff72b8612ea83895d220100de003b8cf7368bb6108baf5",
+  "paper_id": "z1_SNP2EY2D",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:11:35.617305+00:00",
+  "input_sha256": "45e731a346c69eaf9c909cc06b3612658df1d62a3017e246ec66feacd32522f1",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

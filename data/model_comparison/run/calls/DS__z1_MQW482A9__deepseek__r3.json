@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789655271-23bA8KbXu7s6ixEHfEna",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00285922,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10028,
+    "completion_tokens": 663,
+    "total_tokens": 10691,
+    "cost": 0.00285922,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00285922,
+      "upstream_inference_prompt_cost": 0.00260728,
+      "upstream_inference_completions_cost": 0.00025194
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: The paper implements a national-scale LULC prediction for China using the Dyna-CLUE model, compares two future scenarios (2000s trend and planning) with quantitative metrics, and produces spatially explicit maps. It includes validation with quantity/allocation disagreement metrics and focuses on LULC prediction as a core step to assess impacts on ecosystem services.)\n\n**Detailed Justification:**\n\n1.  **Non-Review Paper:** This is a primary research article presenting original modeling and analysis.\n2.  **Passes All Core Inclusion Criteria:**\n    *   **National-scale spatial implementation:** The study explicitly covers the entire territory of China (\"across China,\" \"whole China\").\n    *   **Primary focus on LULC prediction/simulation:** While the ultimate goal is to assess impacts on ecosystem services, the core methodological contribution and a major part of the paper is dedicated to spatially explicit LULC prediction using the Dyna-CLUE model.\n    *   **Implementation of ≥2 future scenarios:** The paper projects land use from 2010 to 2020 under two distinct scenarios: the \"2000s trend scenario\" and the \"planning scenario,\" and compares their outcomes.\n    *   **Spatial modeling with quantitative accuracy metrics:** The Dyna-CLUE model's performance is validated using \"quantity disagreement\" (0.02) and \"allocation disagreement\" (0.16) metrics. ROC values for land use type suitability are also reported.\n    *   **Outputs include mapped LULC projections:** Figures (e.g., Fig. 1) show spatial patterns of land use in 2010 and projected changes for 2020 under both scenarios.\n3.  **Passes All Exclusion Criteria (Fails None):**\n    *   The scale is explicitly national (China), not global, local, or regional.\n    *   LULC prediction is a central component, not absent.\n    *   The focus is on land use change and its valuation, not on specific species or narrow ecological processes.\n    *   It is not purely an economic/urban model without spatial LULC outputs.\n    *   While biomass data is used, it is an input to adjust ecosystem service values based on *predicted* LULC; the study is not solely about biomass/carbon.\n    *   It is an applied paper, not a purely methodological one.\n    *   It includes future projections, not just historical/qualitative analysis.\n    *   It uses remote sensing data but goes beyond classification to predictive modeling.\n    *   It implements two scenarios, not a single \"business-as-usual\" projection.\n4.  **Primary Focus Determination:** The paper's primary objective is to explore the potential impacts of land use change on ecosystem service values. However, a fundamental and detailed step to achieve this is the **prediction of future LULC patterns**. Given that the LULC prediction is implemented (not just cited from others), is spatially explicit, covers the entire nation, uses a formal model with validation, and compares two scenarios, it meets the threshold for the 'OK' category. The LULC prediction is not incidental; it is a core, substantive part of the research.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:27:46.628847+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 14.411,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655271-23bA8KbXu7s6ixEHfEna\",\"object\":\"chat.completion\",\"created\":1789655271,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: The paper implements a national-scale LULC prediction for China using the Dyna-CLUE model, compares two future scenarios (2000s trend and planning) with quantitative metrics, and produces spatially explicit maps. It includes validation with quantity/allocation disagreement metrics and focuses on LULC prediction as a core step to assess impacts on ecosystem services.)\\n\\n**Detailed Justification:**\\n\\n1.  **Non-Review Paper:** This is a primary research article presenting original modeling and analysis.\\n2.  **Passes All Core Inclusion Criteria:**\\n    *   **National-scale spatial implementation:** The study explicitly covers the entire territory of China (\\\"across China,\\\" \\\"whole China\\\").\\n    *   **Primary focus on LULC prediction/simulation:** While the ultimate goal is to assess impacts on ecosystem services, the core methodological contribution and a major part of the paper is dedicated to spatially explicit LULC prediction using the Dyna-CLUE model.\\n    *   **Implementation of ≥2 future scenarios:** The paper projects land use from 2010 to 2020 under two distinct scenarios: the \\\"2000s trend scenario\\\" and the \\\"planning scenario,\\\" and compares their outcomes.\\n    *   **Spatial modeling with quantitative accuracy metrics:** The Dyna-CLUE model's performance is validated using \\\"quantity disagreement\\\" (0.02) and \\\"allocation disagreement\\\" (0.16) metrics. ROC values for land use type suitability are also reported.\\n    *   **Outputs include mapped LULC projections:** Figures (e.g., Fig. 1) show spatial patterns of land use in 2010 and projected changes for 2020 under both scenarios.\\n3.  **Passes All Exclusion Criteria (Fails None):**\\n    *   The scale is explicitly national (China), not global, local, or regional.\\n    *   LULC prediction is a central component, not absent.\\n    *   The focus is on land use change and its valuation, not on specific species or narrow ecological processes.\\n    *   It is not purely an economic/urban model without spatial LULC outputs.\\n    *   While biomass data is used, it is an input to adjust ecosystem service values based on *predicted* LULC; the study is not solely about biomass/carbon.\\n    *   It is an applied paper, not a purely methodological one.\\n    *   It includes future projections, not just historical/qualitative analysis.\\n    *   It uses remote sensing data but goes beyond classification to predictive modeling.\\n    *   It implements two scenarios, not a single \\\"business-as-usual\\\" projection.\\n4.  **Primary Focus Determination:** The paper's primary objective is to explore the potential impacts of land use change on ecosystem service values. However, a fundamental and detailed step to achieve this is the **prediction of future LULC patterns**. Given that the LULC prediction is implemented (not just cited from others), is spatially explicit, covers the entire nation, uses a formal model with validation, and compares two scenarios, it meets the threshold for the 'OK' category. The LULC prediction is not incidental; it is a core, substantive part of the research.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10028,\"completion_tokens\":663,\"total_tokens\":10691,\"cost\":0.00285922,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00285922,\"upstream_inference_prompt_cost\":0.00260728,\"upstream_inference_completions_cost\":0.00025194},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655271-23bA8KbXu7s6ixEHfEna",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 10028,
+        "completion_tokens": 663,
+        "total_tokens": 10691,
+        "cost": 0.00285922,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00285922,
+          "upstream_inference_prompt_cost": 0.00260728,
+          "upstream_inference_completions_cost": 0.00025194
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 14.411,
+  "call_id": "DS__z1_MQW482A9__deepseek__r3",
+  "fingerprint": "9f7defd9c0c3529483f36e0cd906d7640bce25b219668ab247ca8e897b725e52",
+  "paper_id": "z1_MQW482A9",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:28:01.039555+00:00",
+  "input_sha256": "abeaa8767150c5d33e0441ab7c9f302f700937d85d8c39c7abd8adda8fd8ed7e",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

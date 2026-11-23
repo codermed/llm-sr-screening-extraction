@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789652838-JhnkECBZmEQq1hZMomcf",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00275194,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10352,
+    "completion_tokens": 159,
+    "total_tokens": 10511,
+    "cost": 0.00275194,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00275194,
+      "upstream_inference_prompt_cost": 0.00269152,
+      "upstream_inference_completions_cost": 6.042e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a non-review research article focused on predicting the future distribution of a specific ecosystem (rupestrian grasslands) under climate change scenarios. It does not model or simulate Land Use Land Cover (LULC) change as its primary objective. Instead, it uses climate suitability modeling (MaxEnt) to project the potential contraction of an ecosystem's climatic envelope. While it discusses land-use threats (e.g., mining, agriculture), these are used as overlapping pressure layers in a post-hoc analysis, not as dynamically predicted LULC classes. The core modeling is species/distribution modeling, not LULC prediction. Therefore, it fails the core inclusion criterion: \"Primary focus = LULC prediction/simulation (central research question)\".)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:47:13.178217+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 8.203,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789652838-JhnkECBZmEQq1hZMomcf\",\"object\":\"chat.completion\",\"created\":1789652838,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a non-review research article focused on predicting the future distribution of a specific ecosystem (rupestrian grasslands) under climate change scenarios. It does not model or simulate Land Use Land Cover (LULC) change as its primary objective. Instead, it uses climate suitability modeling (MaxEnt) to project the potential contraction of an ecosystem's climatic envelope. While it discusses land-use threats (e.g., mining, agriculture), these are used as overlapping pressure layers in a post-hoc analysis, not as dynamically predicted LULC classes. The core modeling is species/distribution modeling, not LULC prediction. Therefore, it fails the core inclusion criterion: \\\"Primary focus = LULC prediction/simulation (central research question)\\\".)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10352,\"completion_tokens\":159,\"total_tokens\":10511,\"cost\":0.00275194,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00275194,\"upstream_inference_prompt_cost\":0.00269152,\"upstream_inference_completions_cost\":0.00006042},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652838-JhnkECBZmEQq1hZMomcf",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 10352,
+        "completion_tokens": 159,
+        "total_tokens": 10511,
+        "cost": 0.00275194,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00275194,
+          "upstream_inference_prompt_cost": 0.00269152,
+          "upstream_inference_completions_cost": 6.042e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 8.203,
+  "call_id": "DS__z1_QDXNJB9I__deepseek__r1",
+  "fingerprint": "256f5399da031bdcd4e43e0eb53a5b73ea8b9be6e0fcfac78ab9606cd4343b8e",
+  "paper_id": "z1_QDXNJB9I",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:47:21.381471+00:00",
+  "input_sha256": "a4e75cce971ba693ac1f55068476354fe32e64b9741d66c7da2d8f0d5a665595",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653928-yS4c1sQ2cEhp7hTCueNw",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0016604,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 13275,
+    "completion_tokens": 167,
+    "total_tokens": 13442,
+    "cost": 0.0016604,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 13056,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0016604,
+      "upstream_inference_prompt_cost": 0.0013932,
+      "upstream_inference_completions_cost": 0.0002672
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: The study focuses on species distribution modeling of Siamese Eld’s deer habitat in a transboundary conservation area across Thailand, Cambodia, and Lao PDR. It does involve land use and climate change scenarios, but the primary focus is ecological/species distribution modeling rather than land use land cover (LULC) future prediction. The scale is transboundary (regional), not national-scale spatial implementation. Although multiple land use scenarios are used, LULC prediction is not the central research question; it serves as input to species distribution models. The paper does not implement spatially explicit national-scale LULC prediction with quantitative accuracy metrics focused on LULC itself. Thus, it fails core inclusion criteria and is excluded based on having a species-specific ecological focus unrelated to LULC prediction.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:05:23.419223+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.914,
+      "raw_body": "\n         \n{\"id\":\"gen-1789653928-yS4c1sQ2cEhp7hTCueNw\",\"object\":\"chat.completion\",\"created\":1789653928,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The study focuses on species distribution modeling of Siamese Eld’s deer habitat in a transboundary conservation area across Thailand, Cambodia, and Lao PDR. It does involve land use and climate change scenarios, but the primary focus is ecological/species distribution modeling rather than land use land cover (LULC) future prediction. The scale is transboundary (regional), not national-scale spatial implementation. Although multiple land use scenarios are used, LULC prediction is not the central research question; it serves as input to species distribution models. The paper does not implement spatially explicit national-scale LULC prediction with quantitative accuracy metrics focused on LULC itself. Thus, it fails core inclusion criteria and is excluded based on having a species-specific ecological focus unrelated to LULC prediction.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":13275,\"completion_tokens\":167,\"total_tokens\":13442,\"cost\":0.0016604,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":13056,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0016604,\"upstream_inference_prompt_cost\":0.0013932,\"upstream_inference_completions_cost\":0.0002672},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653928-yS4c1sQ2cEhp7hTCueNw",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 13275,
+        "completion_tokens": 167,
+        "total_tokens": 13442,
+        "cost": 0.0016604,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 13056,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0016604,
+          "upstream_inference_prompt_cost": 0.0013932,
+          "upstream_inference_completions_cost": 0.0002672
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.914,
+  "call_id": "DS__z1_62M9Z4AJ__openai__r2",
+  "fingerprint": "fc461eff44b4b86eb87a88d3616ee994da183d92d1e91a22deb96b8793eda96e",
+  "paper_id": "z1_62M9Z4AJ",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:05:26.332916+00:00",
+  "input_sha256": "b116f8e7014f23ab582bf7cfb6feb626427a4df147f546a041ef53b4504e6389",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

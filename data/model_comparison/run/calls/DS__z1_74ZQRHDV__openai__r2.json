@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654481-S9R0xmP8g7rfsmoErW2E",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0014304,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 11660,
+    "completion_tokens": 139,
+    "total_tokens": 11799,
+    "cost": 0.0014304,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 11520,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0014304,
+      "upstream_inference_prompt_cost": 0.001208,
+      "upstream_inference_completions_cost": 0.0002224
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: Although the paper presents spatially explicit modeling of land use changes in the Midwestern United States with multiple scenarios and spatial aggregations, it does not provide mapped LULC projections or quantitative accuracy metrics such as accuracy or change rates. The modeling is conducted within an integrated assessment model framework focusing on assessing spatial scale effects on land use modeling rather than on producing explicit, validated future LULC maps. Moreover, the focus is on comparing aggregation levels and policy scenarios rather than detailed spatial prediction and validation of land cover change. Therefore, it does not meet core inclusion criteria requiring mapped LULC projections and quantitative accuracy metrics for national-scale spatial implementation.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:14:36.838979+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.574,
+      "raw_body": "\n         \n{\"id\":\"gen-1789654481-S9R0xmP8g7rfsmoErW2E\",\"object\":\"chat.completion\",\"created\":1789654481,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: Although the paper presents spatially explicit modeling of land use changes in the Midwestern United States with multiple scenarios and spatial aggregations, it does not provide mapped LULC projections or quantitative accuracy metrics such as accuracy or change rates. The modeling is conducted within an integrated assessment model framework focusing on assessing spatial scale effects on land use modeling rather than on producing explicit, validated future LULC maps. Moreover, the focus is on comparing aggregation levels and policy scenarios rather than detailed spatial prediction and validation of land cover change. Therefore, it does not meet core inclusion criteria requiring mapped LULC projections and quantitative accuracy metrics for national-scale spatial implementation.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":11660,\"completion_tokens\":139,\"total_tokens\":11799,\"cost\":0.0014304,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":11520,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0014304,\"upstream_inference_prompt_cost\":0.001208,\"upstream_inference_completions_cost\":0.0002224},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654481-S9R0xmP8g7rfsmoErW2E",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 11660,
+        "completion_tokens": 139,
+        "total_tokens": 11799,
+        "cost": 0.0014304,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 11520,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0014304,
+          "upstream_inference_prompt_cost": 0.001208,
+          "upstream_inference_completions_cost": 0.0002224
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.575,
+  "call_id": "DS__z1_74ZQRHDV__openai__r2",
+  "fingerprint": "81549c1404e9784e8bf579863c30ed9165147b8005f28ca56c4c0215638fd1d3",
+  "paper_id": "z1_74ZQRHDV",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:14:39.412852+00:00",
+  "input_sha256": "9444e7a06ed4ed781dca0afe84683f048e5cb8797d2fb471325cfbbb2068ed6d",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789654184-6cmJ6ewj4lrGnWiTGbXN",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00262698,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 9772,
+    "completion_tokens": 227,
+    "total_tokens": 9999,
+    "cost": 0.00262698,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00262698,
+      "upstream_inference_prompt_cost": 0.00254072,
+      "upstream_inference_completions_cost": 8.626e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "**Final categorization: EXCLUDED**  \n\n**Justification:**  \n- **Non-review paper** – This is a research article applying species distribution modeling (MaxEnt) to predict the distribution of camel ticks (*Hyalomma dromedarii*).  \n- **Fails inclusion criteria** – The primary focus is **not** LULC prediction/simulation. LULC is included only as **one of several environmental variables** (53.1% contribution) in the tick habitat model.  \n- **LULC prediction is not implemented** – The study uses existing LULC data (2020) as a static input variable. It does **not** project, simulate, or map future LULC changes.  \n- **No national-scale LULC prediction outputs** – While the study area covers Saudi Arabia and the UAE, the mapped outputs are tick habitat suitability maps, **not** LULC projections.  \n- **Exclusion criteria met** – The paper has a **species-specific/ecological focus** (tick distribution) unrelated to LULC prediction as a core research objective.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:09:39.109573+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 6.261,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789654184-6cmJ6ewj4lrGnWiTGbXN\",\"object\":\"chat.completion\",\"created\":1789654184,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"**Final categorization: EXCLUDED**  \\n\\n**Justification:**  \\n- **Non-review paper** – This is a research article applying species distribution modeling (MaxEnt) to predict the distribution of camel ticks (*Hyalomma dromedarii*).  \\n- **Fails inclusion criteria** – The primary focus is **not** LULC prediction/simulation. LULC is included only as **one of several environmental variables** (53.1% contribution) in the tick habitat model.  \\n- **LULC prediction is not implemented** – The study uses existing LULC data (2020) as a static input variable. It does **not** project, simulate, or map future LULC changes.  \\n- **No national-scale LULC prediction outputs** – While the study area covers Saudi Arabia and the UAE, the mapped outputs are tick habitat suitability maps, **not** LULC projections.  \\n- **Exclusion criteria met** – The paper has a **species-specific/ecological focus** (tick distribution) unrelated to LULC prediction as a core research objective.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":9772,\"completion_tokens\":227,\"total_tokens\":9999,\"cost\":0.00262698,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00262698,\"upstream_inference_prompt_cost\":0.00254072,\"upstream_inference_completions_cost\":0.00008626},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654184-6cmJ6ewj4lrGnWiTGbXN",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 9772,
+        "completion_tokens": 227,
+        "total_tokens": 9999,
+        "cost": 0.00262698,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00262698,
+          "upstream_inference_prompt_cost": 0.00254072,
+          "upstream_inference_completions_cost": 8.626e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 6.261,
+  "call_id": "DS__z1_IKQLZ9GD__deepseek__r2",
+  "fingerprint": "b78541ba2db9d083e6553709f3e997c08d9db0ca1f657a428151acff3e0fb05b",
+  "paper_id": "z1_IKQLZ9GD",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:09:45.370579+00:00",
+  "input_sha256": "ef4cbd4706bb82250cc5a2a903fb0e518c24f7512bdf80c5ee11489f7ac2e501",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

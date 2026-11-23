@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789655298-LWz55ikxPuAAsFq2QIQe",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.026596,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 21186,
+    "completion_tokens": 1082,
+    "total_tokens": 22268,
+    "cost": 0.026596,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.026596,
+      "upstream_inference_prompt_cost": 0.021186,
+      "upstream_inference_completions_cost": 0.00541
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Gibbon Conservation and Climate/Land-Cover Change\n\n## Initial Assessment\n\n**Is this a review article?** No. This is a primary research paper presenting original ecological niche modeling and spatial conservation prioritization analyses.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA (Non-Review Papers):\n\n1. **Explicit national-scale spatial implementation (entire country)?**\n   - ❌ **FAILS** - Study area is regional/transnational (89-120°E; -11-30°N) covering Southeast Asia across 10 countries (Indonesia, Myanmar, India, China, Vietnam, Laos, Cambodia, Thailand, Malaysia, Brunei). No single country analyzed comprehensively.\n\n2. **Primary focus = LULC prediction/simulation?**\n   - ❌ **FAILS** - Primary focus is **species conservation** and **gibbon range shifts**. LULC change is used as an input variable, not the research objective.\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ✓ **PASSES** - Multiple scenarios tested: climate-change-only, climate-change + A2 (pessimistic), climate-change + B1 (optimistic). Quantitative comparisons provided (Table 1, statistical tests).\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ✓ **PASSES** - Ecological niche modeling with TSS and ROC metrics reported (mean TSS = 0.87 ± 0.08).\n\n5. **Outputs include mapped LULC projections?**\n   - ❌ **FAILS** - LULC data are **inputs** (from GeoSOS-FLUS database), not primary outputs. Outputs are species range maps and conservation priority areas, not LULC projections.\n\n### SPECIFIC EXCLUSION CRITERIA:\n\n1. **Global-scale analysis without national-level disaggregation?**\n   - ✓ **TRIGGERED** - Transnational/regional scale (10 countries), not national-scale implementation.\n\n2. **Local/regional/global/transboundary scale focus?**\n   - ✓ **TRIGGERED** - Explicitly transboundary (Southeast Asia region across multiple countries).\n\n3. **Species-specific/ecological focus unrelated to LULC?**\n   - ✓ **TRIGGERED** - Core research question concerns gibbon conservation status and range shifts under climate/land-cover scenarios. LULC is contextual input, not the focus.\n\n4. **No LULC prediction component?**\n   - ✗ Not triggered (LULC scenarios are included, though not predicted).\n\n---\n\n## Role of LULC in This Paper\n\n**LULC function:** Input variable\n- LULC data sourced from GeoSOS-FLUS (pre-existing projections for 2050s under A2 and B1 scenarios)\n- Used to constrain ecological niche models\n- Sensitivity analysis compares species responses to different land-cover scenarios\n- **Not generated/predicted by authors**\n\n**Primary research outputs:**\n- Gibbon species potential range maps\n- Priority conservation areas (PCAs)\n- Country-level conservation responsibility assessment\n- Protected area coverage analysis\n\n---\n\n## Final Categorization\n\n**Final categorization: EXCLUDED**\n\n**Justification:** \nThis paper meets **EXCLUSION CRITERIA** on multiple grounds:\n\n1. **Scale mismatch**: Transnational/regional focus across 10 Southeast Asian countries, not national-scale implementation of LULC prediction.\n\n2. **Primary focus is NOT LULC prediction**: The research objective is species conservation planning for gibbons. LULC change scenarios are used as contextual inputs to understand how land-cover management (A2 vs. B1) affects gibbon ranges, but LULC prediction/projection is not the central research question.\n\n3. **LULC data are inputs, not outputs**: The paper uses pre-existing LULC projections from GeoSOS-FLUS database rather than generating or predicting LULC changes themselves.\n\n4. **Species-ecological focus**: The paper is fundamentally about primate conservation status, range shifts, and protected area effectiveness—not about land-use/land-cover change prediction or simulation.\n\nWhile the paper demonstrates sophisticated spatial modeling and includes LULC scenarios, it does not meet the core requirement that LULC prediction be the **primary focus** with **national-scale implementation**. This is an ecological conservation application that incorporates LULC data, not an LULC prediction study.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:28:13.198142+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 11.831,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655298-LWz55ikxPuAAsFq2QIQe\",\"object\":\"chat.completion\",\"created\":1789655298,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Gibbon Conservation and Climate/Land-Cover Change\\n\\n## Initial Assessment\\n\\n**Is this a review article?** No. This is a primary research paper presenting original ecological niche modeling and spatial conservation prioritization analyses.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA (Non-Review Papers):\\n\\n1. **Explicit national-scale spatial implementation (entire country)?**\\n   - ❌ **FAILS** - Study area is regional/transnational (89-120°E; -11-30°N) covering Southeast Asia across 10 countries (Indonesia, Myanmar, India, China, Vietnam, Laos, Cambodia, Thailand, Malaysia, Brunei). No single country analyzed comprehensively.\\n\\n2. **Primary focus = LULC prediction/simulation?**\\n   - ❌ **FAILS** - Primary focus is **species conservation** and **gibbon range shifts**. LULC change is used as an input variable, not the research objective.\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ✓ **PASSES** - Multiple scenarios tested: climate-change-only, climate-change + A2 (pessimistic), climate-change + B1 (optimistic). Quantitative comparisons provided (Table 1, statistical tests).\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ✓ **PASSES** - Ecological niche modeling with TSS and ROC metrics reported (mean TSS = 0.87 ± 0.08).\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ❌ **FAILS** - LULC data are **inputs** (from GeoSOS-FLUS database), not primary outputs. Outputs are species range maps and conservation priority areas, not LULC projections.\\n\\n### SPECIFIC EXCLUSION CRITERIA:\\n\\n1. **Global-scale analysis without national-level disaggregation?**\\n   - ✓ **TRIGGERED** - Transnational/regional scale (10 countries), not national-scale implementation.\\n\\n2. **Local/regional/global/transboundary scale focus?**\\n   - ✓ **TRIGGERED** - Explicitly transboundary (Southeast Asia region across multiple countries).\\n\\n3. **Species-specific/ecological focus unrelated to LULC?**\\n   - ✓ **TRIGGERED** - Core research question concerns gibbon conservation status and range shifts under climate/land-cover scenarios. LULC is contextual input, not the focus.\\n\\n4. **No LULC prediction component?**\\n   - ✗ Not triggered (LULC scenarios are included, though not predicted).\\n\\n---\\n\\n## Role of LULC in This Paper\\n\\n**LULC function:** Input variable\\n- LULC data sourced from GeoSOS-FLUS (pre-existing projections for 2050s under A2 and B1 scenarios)\\n- Used to constrain ecological niche models\\n- Sensitivity analysis compares species responses to different land-cover scenarios\\n- **Not generated/predicted by authors**\\n\\n**Primary research outputs:**\\n- Gibbon species potential range maps\\n- Priority conservation areas (PCAs)\\n- Country-level conservation responsibility assessment\\n- Protected area coverage analysis\\n\\n---\\n\\n## Final Categorization\\n\\n**Final categorization: EXCLUDED**\\n\\n**Justification:** \\nThis paper meets **EXCLUSION CRITERIA** on multiple grounds:\\n\\n1. **Scale mismatch**: Transnational/regional focus across 10 Southeast Asian countries, not national-scale implementation of LULC prediction.\\n\\n2. **Primary focus is NOT LULC prediction**: The research objective is species conservation planning for gibbons. LULC change scenarios are used as contextual inputs to understand how land-cover management (A2 vs. B1) affects gibbon ranges, but LULC prediction/projection is not the central research question.\\n\\n3. **LULC data are inputs, not outputs**: The paper uses pre-existing LULC projections from GeoSOS-FLUS database rather than generating or predicting LULC changes themselves.\\n\\n4. **Species-ecological focus**: The paper is fundamentally about primate conservation status, range shifts, and protected area effectiveness—not about land-use/land-cover change prediction or simulation.\\n\\nWhile the paper demonstrates sophisticated spatial modeling and includes LULC scenarios, it does not meet the core requirement that LULC prediction be the **primary focus** with **national-scale implementation**. This is an ecological conservation application that incorporates LULC data, not an LULC prediction study.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":21186,\"completion_tokens\":1082,\"total_tokens\":22268,\"cost\":0.026596,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.026596,\"upstream_inference_prompt_cost\":0.021186,\"upstream_inference_completions_cost\":0.00541},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655298-LWz55ikxPuAAsFq2QIQe",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 21186,
+        "completion_tokens": 1082,
+        "total_tokens": 22268,
+        "cost": 0.026596,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.026596,
+          "upstream_inference_prompt_cost": 0.021186,
+          "upstream_inference_completions_cost": 0.00541
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 11.832,
+  "call_id": "DS__z1_YZZJMJJD__claude__r3",
+  "fingerprint": "4673ab695d983b4af1e82cc30705954e117d8a9568a54408b3168fbb951b257b",
+  "paper_id": "z1_YZZJMJJD",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:28:25.029577+00:00",
+  "input_sha256": "a09a5f462e10797c4a980c4cdaf2bf9e5f4a857502861dc396b874eb405a69fa",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

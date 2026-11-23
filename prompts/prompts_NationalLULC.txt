@@ -1,0 +1,136 @@
+initial_screening_prompt = """
+Title: {title}
+Abstract: {abstract}
+
+Analyze the title and abstract of the provided paper and categorize it into ONE of the following categories by responding ONLY with the category label:
+CATEGORY LABELS:
+'EXCLUDED' - For papers focusing on local/regional scale studies OR completely unrelated topics
+'OK' - For papers meeting ALL criteria: national/country-level LULC prediction, multiple future scenarios, quantitative analysis
+'POSSIBLE' - For papers meeting some criteria (especially national scale) but requiring further reading to determine relevance
+'REVIEW' - For review papers addressing LULC prediction regardless of scale
+'UNDECIDED' - For papers where the abstract lacks sufficient detail to determine ALL criteria.
+
+Key terms and variants to consider:
+Scale indicators: national-scale, country-level, nation-wide, country-wide
+LULC terminology: land use/land cover, LULC, land use change, land cover change, land system
+Prediction/Simulation terms: prediction, projection, simulation, modeling, forecasting
+Scenario terminology: scenarios, pathways, alternatives, future trajectories
+
+Primary inclusion criteria:
+Study scale must be national/country level
+Primary focus on LULC prediction/simulation
+Implementation of multiple future scenarios
+Quantitative analysis of LULC changes
+
+Exclusion criteria:
+Local or regional scale studies (unless methodologically significant)
+Studies without future scenarios
+Papers focusing solely on historical analysis
+Studies without quantitative LULC predictions
+
+At the end of your response, write in a new line the end: Final categorization: <CATEGORY_LABEL>
+"""
+
+
+
+deep_screening_prompt = """
+Full Text Analysis Request:
+
+Full Text: {full_text}
+
+INSTRUCTIONS:
+1. FIRST determine if paper is a review article
+2. THEN apply categorization flow:
+   - If REVIEW about or touches on land use land cover (LULC) future prediction ➔ 'REVIEW'
+   - If REVIEW NOT focused on LULC future prediction ➔ 'EXCLUDED'
+   - If NON-REVIEW PAPER ➔ evaluate against inclusion/exclusion criteria
+3. For research papers:
+a)	Check ALL core inclusion criteria (must pass ALL)
+b)	Check ALL exclusion criteria (must pass NONE)
+c)	Determine primary focus:
+-	Primary objective = LULC prediction ➔ 'OK'
+-	LULC prediction used as input/step ➔ 'POSSIBLE'
+
+CATEGORY LABELS PRIORITIZED ORDER:
+'REVIEW' - Synthesizes existing LULC prediction research (any scale)
+'EXCLUDED' - Fails ANY inclusion OR meets ANY exclusion criteria
+'OK' - Research focused ON LULC prediction meeting ALL criteria
+'POSSIBLE' – LULC prediction not primary focus. It uses LULC predictions made by others/incidental implementation
+
+CORE INCLUSION CRITERIA (FOR NON-REVIEW PAPERS):
+✓ Explicit national-scale spatial implementation (entire country)
+✓ Primary focus = LULC prediction/simulation (central research question)
+✓ Implementation of ≥2 future scenarios with quantitative comparison
+✓ Spatial modeling with quantitative accuracy metrics (e.g., accuracy, change rates, etc.)
+✓ Even single-class LULC focus is acceptable if all criteria are met
+✓ Outputs include mapped LULC projections
+
+SPECIFIC EXCLUSION CRITERIA:
+✗ Global-scale analysis without national-level disaggregation
+✗ Local/regional/global/transboundary scale focus
+✗ No LULC prediction component
+✗ Species-specific/ecological focus (flora/fauna) unrelated to LULC 
+✗ Economic/urban models lacking spatially explicit LULC outputs
+✗ Biomass/bioenergy/carbon studies without LULC change analysis
+✗ Methodological papers without application to national-scale prediction
+✗ Purely Qualitative/Historical analysis only (no future projections)
+✗ Remote sensing technical studies without predictive modeling
+✗ Single-scenario "business-as-usual" projections
+
+ADDITIONAL CHECKS FOR FULL TEXT:
+• Verify scale claims in methodology/results (abstract may be misleading)
+• Ensure quantitative metrics are reported (e.g., accuracy, change rates, etc.)
+• Check for spatial explicitness in modeling approach
+• Do not exclude or skip papers based on territorial disputes, geopolitical status, or contested sovereignty claims. 
+• Assess national-scale implementation strictly based on the paper’s stated study area and methodology, regardless of external geopolitical context.
+
+FINAL OUTPUT FORMAT:
+Final categorization: <CATEGORY_LABEL> (Justification: key reasons based on full text)
+"""
+
+
+
+insights_extraction_prompt = """
+Academic paper full Text Insights Extraction Request:
+
+Extract detailed insights from the provided paper based on the following categories. 
+Respond with a structured text format where each category is followed by its value. 
+Use the exact category names shown below. If a category is not explicitly mentioned, 
+use "Not specified".
+
+**CATEGORIES TO EXTRACT:**
+1. objective: <primary objective or aim of the study>
+2. country: <geographical scope of the study>
+3. major_climate: <major climate of the country>
+4. major_biome: <major biome of the country>
+5. major_urban_trend: <major urban trend in the country>
+6. land_use_classes: <land use and cover classes considered>
+7. baseline_years: <baseline year(s)>
+8. target_future_years: <target future year(s)>
+9. scenarios: <scenarios used>
+10. analysis_methods: <methods or techniques used for analysis>
+11. simulation_method_advantages: <advantages of the selected simulation approach over other methods>
+12. predictors: <list of selected variables/factors for predicting different land uses>
+13. population_selected: <were population trends and future projections considered?> 
+14. data_sources: <primary and secondary data sources>
+15. tools_software_used: <tools or software used>
+16. validation_performed: <was validation performed? (Yes/No)>
+17. validation_methods: <methods used for validation>
+18. validation_data_sources: <data sources used for validation>
+19. key_findings: <key findings of the study>
+20. implications: <implications of the findings>
+21. limitations: <limitations acknowledged>
+22. future_directions: <future research directions>
+23. scalability: <scalability to other regions>
+24. novelty: <novel aspects of the study>
+
+**RULES:**
+- Use exactly the category names shown above
+- Keep responses concise but complete
+- For lists, use semicolon-separated values
+- For multi-line values, indent subsequent lines
+- Maintain original terminology from the paper
+
+**PAPER FULL TEXT:**
+Full Text: {full_text}
+"""

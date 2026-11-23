@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789654952-wFVdHQuOEb8cKF3BhnBM",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.013392,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 8927,
+    "completion_tokens": 893,
+    "total_tokens": 9820,
+    "cost": 0.013392,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.013392,
+      "upstream_inference_prompt_cost": 0.008927,
+      "upstream_inference_completions_cost": 0.004465
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis\n\n## Initial Assessment: Review vs. Research Paper\nThis is a **RESEARCH PAPER** (not a review). It presents original species distribution modeling with empirical analysis of woolly monkey distribution under climate and deforestation scenarios.\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA ASSESSMENT:\n\n**1. Explicit national-scale spatial implementation (entire country)?**\n- ✗ **FAILS**: Study area is limited to the potential distribution range of *Lagothrix lagothricha* in Colombia (~413,000 km²), NOT the entire Colombian territory. This is a **regional/species-range scale** analysis, not national-scale implementation.\n\n**2. Primary focus = LULC prediction/simulation?**\n- ✗ **FAILS**: Primary focus is **species distribution modeling** under climate and deforestation scenarios. LULC (deforestation) is used as an INPUT variable to constrain the species distribution model, not the primary research objective. The paper's central questions concern woolly monkey range shifts and Protected Area effectiveness, not LULC prediction itself.\n\n**3. Implementation of ≥2 future scenarios with quantitative comparison?**\n- ✓ **PASSES**: Two RCPs (4.5, 8.5), three GCMs, and one deforestation projection with quantitative comparisons (Table 2, Table 3).\n\n**4. Spatial modeling with quantitative accuracy metrics?**\n- ✗ **FAILS**: While spatial modeling is performed, no accuracy metrics are reported for the species distribution model (no AUC, TSS, Kappa, or validation statistics provided in methods/results).\n\n**5. Outputs include mapped LULC projections?**\n- ✗ **FAILS**: Outputs are species distribution maps (Figures 3, 4) and Protected Area coverage, NOT LULC projections. The deforestation layer is a pre-existing projection used as input, not an output of this study.\n\n### SPECIFIC EXCLUSION CRITERIA ASSESSMENT:\n\n**Species-specific/ecological focus unrelated to LULC?**\n- ✓ **TRIGGERS EXCLUSION**: The paper is explicitly focused on a single species (woolly monkey) as an \"umbrella species\" for conservation planning. The ecological role of the species (seed dispersal), its habitat requirements, and conservation implications are the primary focus. LULC change (deforestation) is a secondary consideration used to constrain species habitat.\n\n**No LULC prediction component?**\n- ✗ Does NOT trigger: Deforestation is included, though not as the primary focus.\n\n**Methodological papers without application?**\n- ✗ Does NOT trigger: Has application, but to species conservation, not LULC prediction.\n\n---\n\n## Final Categorization: **EXCLUDED**\n\n**Justification:** \n1. **Primary focus mismatch**: This is a species distribution modeling study for conservation planning, not a land-use/land-cover prediction study. While deforestation projections are incorporated as an input layer, LULC prediction is not the central research objective.\n\n2. **Scale limitation**: Analysis is restricted to the species' potential distribution range (~413,000 km²), not national-scale implementation across Colombia's entire territory.\n\n3. **Exclusion criterion triggered**: The paper explicitly focuses on species-specific ecological outcomes (woolly monkey distribution, seed dispersal function, Protected Area effectiveness for biodiversity conservation) rather than LULC change prediction as a primary objective.\n\n4. **Missing LULC prediction outputs**: The paper produces species distribution maps and PA coverage analysis, not LULC projections or change predictions.\n\n5. **LULC as input, not focus**: Deforestation is used as a constraint variable in the SDM framework, but the paper does not develop, validate, or present LULC predictions as its research contribution.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:22:28.083000+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.702,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789654952-wFVdHQuOEb8cKF3BhnBM\",\"object\":\"chat.completion\",\"created\":1789654952,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis\\n\\n## Initial Assessment: Review vs. Research Paper\\nThis is a **RESEARCH PAPER** (not a review). It presents original species distribution modeling with empirical analysis of woolly monkey distribution under climate and deforestation scenarios.\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA ASSESSMENT:\\n\\n**1. Explicit national-scale spatial implementation (entire country)?**\\n- ✗ **FAILS**: Study area is limited to the potential distribution range of *Lagothrix lagothricha* in Colombia (~413,000 km²), NOT the entire Colombian territory. This is a **regional/species-range scale** analysis, not national-scale implementation.\\n\\n**2. Primary focus = LULC prediction/simulation?**\\n- ✗ **FAILS**: Primary focus is **species distribution modeling** under climate and deforestation scenarios. LULC (deforestation) is used as an INPUT variable to constrain the species distribution model, not the primary research objective. The paper's central questions concern woolly monkey range shifts and Protected Area effectiveness, not LULC prediction itself.\\n\\n**3. Implementation of ≥2 future scenarios with quantitative comparison?**\\n- ✓ **PASSES**: Two RCPs (4.5, 8.5), three GCMs, and one deforestation projection with quantitative comparisons (Table 2, Table 3).\\n\\n**4. Spatial modeling with quantitative accuracy metrics?**\\n- ✗ **FAILS**: While spatial modeling is performed, no accuracy metrics are reported for the species distribution model (no AUC, TSS, Kappa, or validation statistics provided in methods/results).\\n\\n**5. Outputs include mapped LULC projections?**\\n- ✗ **FAILS**: Outputs are species distribution maps (Figures 3, 4) and Protected Area coverage, NOT LULC projections. The deforestation layer is a pre-existing projection used as input, not an output of this study.\\n\\n### SPECIFIC EXCLUSION CRITERIA ASSESSMENT:\\n\\n**Species-specific/ecological focus unrelated to LULC?**\\n- ✓ **TRIGGERS EXCLUSION**: The paper is explicitly focused on a single species (woolly monkey) as an \\\"umbrella species\\\" for conservation planning. The ecological role of the species (seed dispersal), its habitat requirements, and conservation implications are the primary focus. LULC change (deforestation) is a secondary consideration used to constrain species habitat.\\n\\n**No LULC prediction component?**\\n- ✗ Does NOT trigger: Deforestation is included, though not as the primary focus.\\n\\n**Methodological papers without application?**\\n- ✗ Does NOT trigger: Has application, but to species conservation, not LULC prediction.\\n\\n---\\n\\n## Final Categorization: **EXCLUDED**\\n\\n**Justification:** \\n1. **Primary focus mismatch**: This is a species distribution modeling study for conservation planning, not a land-use/land-cover prediction study. While deforestation projections are incorporated as an input layer, LULC prediction is not the central research objective.\\n\\n2. **Scale limitation**: Analysis is restricted to the species' potential distribution range (~413,000 km²), not national-scale implementation across Colombia's entire territory.\\n\\n3. **Exclusion criterion triggered**: The paper explicitly focuses on species-specific ecological outcomes (woolly monkey distribution, seed dispersal function, Protected Area effectiveness for biodiversity conservation) rather than LULC change prediction as a primary objective.\\n\\n4. **Missing LULC prediction outputs**: The paper produces species distribution maps and PA coverage analysis, not LULC projections or change predictions.\\n\\n5. **LULC as input, not focus**: Deforestation is used as a constraint variable in the SDM framework, but the paper does not develop, validate, or present LULC predictions as its research contribution.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":8927,\"completion_tokens\":893,\"total_tokens\":9820,\"cost\":0.013392,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.013392,\"upstream_inference_prompt_cost\":0.008927,\"upstream_inference_completions_cost\":0.004465},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654952-wFVdHQuOEb8cKF3BhnBM",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 8927,
+        "completion_tokens": 893,
+        "total_tokens": 9820,
+        "cost": 0.013392,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.013392,
+          "upstream_inference_prompt_cost": 0.008927,
+          "upstream_inference_completions_cost": 0.004465
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.702,
+  "call_id": "DS__z1_6QA3T2N7__claude__r2",
+  "fingerprint": "e6ad3be8efe71020ef2980deca626c615f0d7ac1d7b4416e72f0d82626e4e763",
+  "paper_id": "z1_6QA3T2N7",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:22:40.784949+00:00",
+  "input_sha256": "9d8b947ffe7d1bb6c7ce59f3d8938e5b6621a407b5c0ed208853c1658a7196bd",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

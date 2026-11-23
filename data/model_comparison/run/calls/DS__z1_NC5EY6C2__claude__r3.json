@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789655715-8v2h86OYQCmQv3zezI9N",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.022074,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15074,
+    "completion_tokens": 1400,
+    "total_tokens": 16474,
+    "cost": 0.022074,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.022074,
+      "upstream_inference_prompt_cost": 0.015074,
+      "upstream_inference_completions_cost": 0.007
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Forest Sector SSP Modeling Paper\n\n## Initial Determination\nThis is a **NON-REVIEW PAPER** – it presents original research applying shared socio-economic pathways (SSPs) to forest sector modeling.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA CHECK:\n\n1. **Explicit national-scale spatial implementation (entire country)?**\n   - ✓ YES – New Zealand is the primary study area with national-level analysis\n   - Results presented at Territorial Authority (TA) level (Figure 6)\n   - NZFARM is explicitly a \"national economic land use model\"\n\n2. **Primary focus = LULC prediction/simulation?**\n   - ⚠ PARTIAL – The paper addresses forest sector dynamics (timber production, forest area, carbon sequestration) but NOT comprehensive LULC prediction\n   - Focus is on **forest-specific outcomes** (plantation forest area, roundwood production, timber exports, carbon sequestration)\n   - Does not predict transitions between all major LULC classes (e.g., grassland→cropland, urban expansion, wetland changes)\n   - NZFARM tracks \"land cover\" but primarily models forest vs. pasture/cropland dichotomy for economic optimization, not comprehensive LULC mapping\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ✓ YES – Five SSP scenarios (SSP1-SSP5) with quantitative outputs\n   - Tables 1-3 provide quantitative comparisons across scenarios\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ⚠ PARTIAL – Spatial modeling present (regional/TA-level outputs) but NO accuracy metrics reported\n   - No validation against observed data\n   - No accuracy assessment, error bounds, or uncertainty quantification\n   - Reports change rates (e.g., \"0.8%/yr\") but these are projections, not accuracy measures\n\n5. **Outputs include mapped LULC projections?**\n   - ⚠ PARTIAL – Figure 6 shows regional forest carbon changes by TA\n   - No actual LULC maps provided\n   - Regional summaries only, not spatially explicit maps\n\n---\n\n### EXCLUSION CRITERIA CHECK:\n\n1. **Global-scale analysis without national-level disaggregation?**\n   - ✗ PASSES – Paper includes national-level (NZ) disaggregation from global GTM model\n\n2. **Local/regional/global/transboundary scale focus?**\n   - ✗ PASSES – Primary focus is national scale (New Zealand)\n\n3. **No LULC prediction component?**\n   - ✗ PASSES – LULC prediction is present (forest area changes, land use transitions)\n\n4. **Species-specific/ecological focus unrelated to LULC?**\n   - ✗ PASSES – Not primarily species-focused\n\n5. **Economic/urban models lacking spatially explicit LULC outputs?**\n   - ⚠ **POTENTIAL ISSUE** – NZFARM is fundamentally an economic land use optimization model\n   - Outputs are economic returns and environmental metrics, not explicit LULC maps\n   - Spatial explicitness is regional aggregation (TA level), not pixel/grid-based LULC mapping\n\n6. **Biomass/bioenergy/carbon studies without LULC change analysis?**\n   - ✗ PASSES – LULC change analysis is included (forest area changes, land conversions)\n\n7. **Methodological papers without application?**\n   - ✗ PASSES – Applied to NZ case study\n\n8. **Purely qualitative/historical analysis only?**\n   - ✗ PASSES – Quantitative future projections provided\n\n9. **Remote sensing technical studies?**\n   - ✗ PASSES – Not a remote sensing study\n\n10. **Single-scenario projections?**\n    - ✗ PASSES – Five scenarios analyzed\n\n---\n\n## Critical Assessment\n\n**Primary Research Question:** How will New Zealand's forest sector evolve under different socio-economic pathways through 2100?\n\n**LULC Prediction Role:**\n- **NOT the primary focus** – Forest sector dynamics (timber production, prices, carbon sequestration) are the primary outputs\n- **LULC change is instrumental** – Forest area changes are a means to model economic and environmental outcomes, not the end goal\n- The paper uses LULC predictions (forest area, land use transitions) as **inputs/intermediate steps** to estimate sector-level impacts\n\n**Spatial Explicitness Issues:**\n- No mapped LULC projections at fine resolution\n- Regional aggregation only (TA level)\n- No accuracy assessment or validation\n- Economic optimization model, not explicit LULC classification model\n\n**Missing Core LULC Elements:**\n- No comprehensive LULC classification scheme (only forest/non-forest dichotomy)\n- No spatial accuracy metrics\n- No comparison of predicted vs. observed LULC patterns\n- Outputs are sector-level statistics, not LULC maps\n\n---\n\n## Final Categorization\n\n**POSSIBLE**\n\n**Justification:** \nThis paper implements LULC prediction (forest area changes, land use transitions between forestry and pasture/cropland) at the national scale of New Zealand with multiple quantitative scenarios. However, LULC prediction is NOT the primary research focus—the primary objective is to assess forest sector dynamics (timber production, carbon sequestration, economic returns) under alternative socio-economic pathways. LULC change is used as an instrumental component to model these sector outcomes, rather than being the central research question. Additionally, the paper lacks explicit mapped LULC projections and spatial accuracy metrics typical of LULC prediction studies. The modeling approach is fundamentally economic optimization rather than LULC classification/mapping. Therefore, it meets criteria for \"POSSIBLE\" rather than \"OK\"—LULC prediction is implemented but not the primary focus.",
+  "automated_status": "invalid_output",
+  "parsed_label": "",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:35:10.109210+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 14.655,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655715-8v2h86OYQCmQv3zezI9N\",\"object\":\"chat.completion\",\"created\":1789655715,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Forest Sector SSP Modeling Paper\\n\\n## Initial Determination\\nThis is a **NON-REVIEW PAPER** – it presents original research applying shared socio-economic pathways (SSPs) to forest sector modeling.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA CHECK:\\n\\n1. **Explicit national-scale spatial implementation (entire country)?**\\n   - ✓ YES – New Zealand is the primary study area with national-level analysis\\n   - Results presented at Territorial Authority (TA) level (Figure 6)\\n   - NZFARM is explicitly a \\\"national economic land use model\\\"\\n\\n2. **Primary focus = LULC prediction/simulation?**\\n   - ⚠ PARTIAL – The paper addresses forest sector dynamics (timber production, forest area, carbon sequestration) but NOT comprehensive LULC prediction\\n   - Focus is on **forest-specific outcomes** (plantation forest area, roundwood production, timber exports, carbon sequestration)\\n   - Does not predict transitions between all major LULC classes (e.g., grassland→cropland, urban expansion, wetland changes)\\n   - NZFARM tracks \\\"land cover\\\" but primarily models forest vs. pasture/cropland dichotomy for economic optimization, not comprehensive LULC mapping\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ✓ YES – Five SSP scenarios (SSP1-SSP5) with quantitative outputs\\n   - Tables 1-3 provide quantitative comparisons across scenarios\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ⚠ PARTIAL – Spatial modeling present (regional/TA-level outputs) but NO accuracy metrics reported\\n   - No validation against observed data\\n   - No accuracy assessment, error bounds, or uncertainty quantification\\n   - Reports change rates (e.g., \\\"0.8%/yr\\\") but these are projections, not accuracy measures\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ⚠ PARTIAL – Figure 6 shows regional forest carbon changes by TA\\n   - No actual LULC maps provided\\n   - Regional summaries only, not spatially explicit maps\\n\\n---\\n\\n### EXCLUSION CRITERIA CHECK:\\n\\n1. **Global-scale analysis without national-level disaggregation?**\\n   - ✗ PASSES – Paper includes national-level (NZ) disaggregation from global GTM model\\n\\n2. **Local/regional/global/transboundary scale focus?**\\n   - ✗ PASSES – Primary focus is national scale (New Zealand)\\n\\n3. **No LULC prediction component?**\\n   - ✗ PASSES – LULC prediction is present (forest area changes, land use transitions)\\n\\n4. **Species-specific/ecological focus unrelated to LULC?**\\n   - ✗ PASSES – Not primarily species-focused\\n\\n5. **Economic/urban models lacking spatially explicit LULC outputs?**\\n   - ⚠ **POTENTIAL ISSUE** – NZFARM is fundamentally an economic land use optimization model\\n   - Outputs are economic returns and environmental metrics, not explicit LULC maps\\n   - Spatial explicitness is regional aggregation (TA level), not pixel/grid-based LULC mapping\\n\\n6. **Biomass/bioenergy/carbon studies without LULC change analysis?**\\n   - ✗ PASSES – LULC change analysis is included (forest area changes, land conversions)\\n\\n7. **Methodological papers without application?**\\n   - ✗ PASSES – Applied to NZ case study\\n\\n8. **Purely qualitative/historical analysis only?**\\n   - ✗ PASSES – Quantitative future projections provided\\n\\n9. **Remote sensing technical studies?**\\n   - ✗ PASSES – Not a remote sensing study\\n\\n10. **Single-scenario projections?**\\n    - ✗ PASSES – Five scenarios analyzed\\n\\n---\\n\\n## Critical Assessment\\n\\n**Primary Research Question:** How will New Zealand's forest sector evolve under different socio-economic pathways through 2100?\\n\\n**LULC Prediction Role:**\\n- **NOT the primary focus** – Forest sector dynamics (timber production, prices, carbon sequestration) are the primary outputs\\n- **LULC change is instrumental** – Forest area changes are a means to model economic and environmental outcomes, not the end goal\\n- The paper uses LULC predictions (forest area, land use transitions) as **inputs/intermediate steps** to estimate sector-level impacts\\n\\n**Spatial Explicitness Issues:**\\n- No mapped LULC projections at fine resolution\\n- Regional aggregation only (TA level)\\n- No accuracy assessment or validation\\n- Economic optimization model, not explicit LULC classification model\\n\\n**Missing Core LULC Elements:**\\n- No comprehensive LULC classification scheme (only forest/non-forest dichotomy)\\n- No spatial accuracy metrics\\n- No comparison of predicted vs. observed LULC patterns\\n- Outputs are sector-level statistics, not LULC maps\\n\\n---\\n\\n## Final Categorization\\n\\n**POSSIBLE**\\n\\n**Justification:** \\nThis paper implements LULC prediction (forest area changes, land use transitions between forestry and pasture/cropland) at the national scale of New Zealand with multiple quantitative scenarios. However, LULC prediction is NOT the primary research focus—the primary objective is to assess forest sector dynamics (timber production, carbon sequestration, economic returns) under alternative socio-economic pathways. LULC change is used as an instrumental component to model these sector outcomes, rather than being the central research question. Additionally, the paper lacks explicit mapped LULC projections and spatial accuracy metrics typical of LULC prediction studies. The modeling approach is fundamentally economic optimization rather than LULC classification/mapping. Therefore, it meets criteria for \\\"POSSIBLE\\\" rather than \\\"OK\\\"—LULC prediction is implemented but not the primary focus.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15074,\"completion_tokens\":1400,\"total_tokens\":16474,\"cost\":0.022074,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.022074,\"upstream_inference_prompt_cost\":0.015074,\"upstream_inference_completions_cost\":0.007},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655715-8v2h86OYQCmQv3zezI9N",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 15074,
+        "completion_tokens": 1400,
+        "total_tokens": 16474,
+        "cost": 0.022074,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.022074,
+          "upstream_inference_prompt_cost": 0.015074,
+          "upstream_inference_completions_cost": 0.007
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 14.656,
+  "call_id": "DS__z1_NC5EY6C2__claude__r3",
+  "fingerprint": "f1c03e78e8bcc385b1b57b66a7bdd331fc433ec96a27f1096e68aeab23a1f68a",
+  "paper_id": "z1_NC5EY6C2",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:35:24.765237+00:00",
+  "input_sha256": "c815ac374878237ff1fb4375ba5ab601960bc271743cb0657cc77889a21776e8",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

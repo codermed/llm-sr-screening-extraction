@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789655389-60kb8C1OJyyKJADEkrEC",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0043084,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10115,
+    "completion_tokens": 164,
+    "total_tokens": 10279,
+    "cost": 0.0043084,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0043084,
+      "upstream_inference_prompt_cost": 0.004046,
+      "upstream_inference_completions_cost": 0.0002624
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: OK (Justification: This is a research article presenting new land-use change scenarios specifically for Brazil, with a national-scale spatial implementation covering the entire country. The study’s primary focus is on LULC prediction and simulation, using spatially explicit modeling via the LuccME framework combined with climate input from INLAND. It implements three distinct future scenarios (SSP1/RCP1.9, SSP2/RCP4.5, SSP3/RCP7.0) with quantitative comparison of land use changes through 2050. Quantitative accuracy metrics for model validation are reported (e.g., spatial adjustment indices). The outputs include mapped LULC projections at 10 km × 10 km resolution across Brazil. The paper meets all core inclusion criteria and none of the exclusion criteria.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:29:44.977203+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.236,
+      "raw_body": "\n         \n{\"id\":\"gen-1789655389-60kb8C1OJyyKJADEkrEC\",\"object\":\"chat.completion\",\"created\":1789655389,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: This is a research article presenting new land-use change scenarios specifically for Brazil, with a national-scale spatial implementation covering the entire country. The study’s primary focus is on LULC prediction and simulation, using spatially explicit modeling via the LuccME framework combined with climate input from INLAND. It implements three distinct future scenarios (SSP1/RCP1.9, SSP2/RCP4.5, SSP3/RCP7.0) with quantitative comparison of land use changes through 2050. Quantitative accuracy metrics for model validation are reported (e.g., spatial adjustment indices). The outputs include mapped LULC projections at 10 km × 10 km resolution across Brazil. The paper meets all core inclusion criteria and none of the exclusion criteria.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10115,\"completion_tokens\":164,\"total_tokens\":10279,\"cost\":0.0043084,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0043084,\"upstream_inference_prompt_cost\":0.004046,\"upstream_inference_completions_cost\":0.0002624},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655389-60kb8C1OJyyKJADEkrEC",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 10115,
+        "completion_tokens": 164,
+        "total_tokens": 10279,
+        "cost": 0.0043084,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0043084,
+          "upstream_inference_prompt_cost": 0.004046,
+          "upstream_inference_completions_cost": 0.0002624
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.237,
+  "call_id": "DS__z1_6L57TUK8__openai__r3",
+  "fingerprint": "b83dc6b45561ea8f3f6d977c99ca3c39b2a122d83f161e15dcc573832dbcb981",
+  "paper_id": "z1_6L57TUK8",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:29:48.213461+00:00",
+  "input_sha256": "65181bb7b5d3f98ed52039cf201c8a1eb909ba482d812c6f111f1103f588bbf0",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

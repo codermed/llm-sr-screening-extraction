@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789655729-KBjh8RajwAHp2oFoji9Y",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0072618,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 8620,
+    "completion_tokens": 138,
+    "total_tokens": 8758,
+    "cost": 0.0072618,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0072618,
+      "upstream_inference_prompt_cost": 0.0067236,
+      "upstream_inference_completions_cost": 0.0005382
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: POSSIBLE (Justification: The paper is a non-review research article that estimates land availability for biomass production in Sri Lanka under multiple future scenarios. It uses projected land use data from the Forestry Sector Master Plan (FSMP) but does not itself perform LULC prediction or spatial modeling; instead, it adopts externally derived land use projections as inputs. While it implements multiple scenarios and quantifies available land area for bioenergy plantations nationally, it lacks original LULC change modeling, spatially explicit projections, or accuracy metrics. The study’s primary focus is on biomass production potential and energy planning, not on predicting or simulating land use/land cover change.)",
+  "automated_status": "usable",
+  "parsed_label": "POSSIBLE",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:35:24.783076+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.354,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789655729-KBjh8RajwAHp2oFoji9Y\",\"object\":\"chat.completion\",\"created\":1789655729,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: POSSIBLE (Justification: The paper is a non-review research article that estimates land availability for biomass production in Sri Lanka under multiple future scenarios. It uses projected land use data from the Forestry Sector Master Plan (FSMP) but does not itself perform LULC prediction or spatial modeling; instead, it adopts externally derived land use projections as inputs. While it implements multiple scenarios and quantifies available land area for bioenergy plantations nationally, it lacks original LULC change modeling, spatially explicit projections, or accuracy metrics. The study’s primary focus is on biomass production potential and energy planning, not on predicting or simulating land use/land cover change.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":8620,\"completion_tokens\":138,\"total_tokens\":8758,\"cost\":0.0072618,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0072618,\"upstream_inference_prompt_cost\":0.0067236,\"upstream_inference_completions_cost\":0.0005382},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655729-KBjh8RajwAHp2oFoji9Y",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 8620,
+        "completion_tokens": 138,
+        "total_tokens": 8758,
+        "cost": 0.0072618,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0072618,
+          "upstream_inference_prompt_cost": 0.0067236,
+          "upstream_inference_completions_cost": 0.0005382
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.354,
+  "call_id": "DS__z1_IYTU8WM7__qwen__r3",
+  "fingerprint": "40f3997d389ee16c2373c2cd2477a349e1fa9f68ee64a14c9aa7f195c8a9dc01",
+  "paper_id": "z1_IYTU8WM7",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:35:29.136798+00:00",
+  "input_sha256": "2267f7fffbe0aaef86685b1284ab963fa71d3c741ea1835f680d70b34cb45a6b",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

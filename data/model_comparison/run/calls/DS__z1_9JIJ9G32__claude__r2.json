@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789654182-WPTlADThktg8xTMK0PFE",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.022789,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 18034,
+    "completion_tokens": 951,
+    "total_tokens": 18985,
+    "cost": 0.022789,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.022789,
+      "upstream_inference_prompt_cost": 0.018034,
+      "upstream_inference_completions_cost": 0.004755
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Analysis of Full Text\n\n## Step 1: Determine if Review Article\nThis is a **NON-REVIEW RESEARCH PAPER**. It presents original empirical research with methods, results, and discussion of new analyses rather than synthesizing existing literature.\n\n## Step 2: Evaluate Against Inclusion/Exclusion Criteria for Research Papers\n\n### Primary Research Focus\nThe paper's central objective is to **improve estimates of soil organic carbon (SOC) stocks and their long-term temporal changes in agricultural soils in Ireland** (stated in title and abstract). While the paper uses land use data and identifies land use changes, the primary focus is **NOT on land use/land cover (LULC) prediction or simulation**.\n\n### Core Inclusion Criteria Assessment:\n\n1. **Explicit national-scale spatial implementation (entire country)**: ✓ YES\n   - Study covers Ireland at national scale using LPIS, NSDB, and GIS overlay\n\n2. **Primary focus = LULC prediction/simulation (central research question)**: ✗ **NO**\n   - Primary focus is SOC density/stock quantification and temporal changes\n   - LULC analysis is instrumental/supportive (used to categorize areas for SOC estimation)\n   - Research question centers on \"improved SOC assessments,\" not LULC prediction\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison**: ✗ **NO**\n   - Paper uses historical LULC data (2000-2014) and back-calculates to 1990, projects to 2014\n   - No alternative future LULC scenarios are modeled or compared\n   - Temporal analysis is based on observed/measured data, not predictive scenarios\n\n4. **Spatial modeling with quantitative accuracy metrics**: ✓ PARTIAL\n   - Quantitative metrics reported (R², CV, MSE, RMSE)\n   - However, these measure model performance for SOC estimation, not LULC prediction accuracy\n\n5. **Outputs include mapped LULC projections**: ✗ **NO**\n   - Outputs are SOC density/stock maps and estimates, not LULC projections\n   - LULC is used as a categorization variable, not a predictive output\n\n### Exclusion Criteria Assessment:\n\n- **Biomass/bioenergy/carbon studies without LULC change analysis**: ✓ **APPLIES**\n  - This is fundamentally a carbon/SOC quantification study\n  - While it uses LULC data, it lacks LULC change prediction as a primary component\n  - LULC changes are identified from historical data but not projected/predicted\n\n- **No LULC prediction component**: ✓ **APPLIES**\n  - The paper does not predict future LULC distributions\n  - It uses observed LULC from 2000-2014 as input data for SOC calculations\n\n---\n\n# Final Categorization: **EXCLUDED**\n\n**Justification**: \nThis paper is excluded because it fails multiple core inclusion criteria for LULC prediction research:\n\n1. **Primary focus is NOT LULC prediction**: The central research question concerns improving SOC stock estimates and understanding their temporal changes, not predicting or simulating future land use/land cover distributions.\n\n2. **No future LULC scenarios**: The paper analyzes historical LULC changes (2000-2014) and back-calculates to 1990, but does not implement or compare alternative future LULC scenarios—a requirement for predictive modeling research.\n\n3. **LULC is instrumental, not primary**: Land use data serves as a categorization variable for disaggregating SOC estimates across different agricultural systems, not as the subject of prediction.\n\n4. **No LULC projection outputs**: The outputs are SOC density/stock estimates and changes, not mapped LULC projections or predictions.\n\n5. **Carbon/SOC focus without LULC change analysis**: While the paper uses LULC data, it is fundamentally a carbon quantification study that falls under the exclusion criterion for biomass/carbon studies lacking LULC change prediction as a primary component.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:09:37.995976+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 10.369,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789654182-WPTlADThktg8xTMK0PFE\",\"object\":\"chat.completion\",\"created\":1789654182,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Analysis of Full Text\\n\\n## Step 1: Determine if Review Article\\nThis is a **NON-REVIEW RESEARCH PAPER**. It presents original empirical research with methods, results, and discussion of new analyses rather than synthesizing existing literature.\\n\\n## Step 2: Evaluate Against Inclusion/Exclusion Criteria for Research Papers\\n\\n### Primary Research Focus\\nThe paper's central objective is to **improve estimates of soil organic carbon (SOC) stocks and their long-term temporal changes in agricultural soils in Ireland** (stated in title and abstract). While the paper uses land use data and identifies land use changes, the primary focus is **NOT on land use/land cover (LULC) prediction or simulation**.\\n\\n### Core Inclusion Criteria Assessment:\\n\\n1. **Explicit national-scale spatial implementation (entire country)**: ✓ YES\\n   - Study covers Ireland at national scale using LPIS, NSDB, and GIS overlay\\n\\n2. **Primary focus = LULC prediction/simulation (central research question)**: ✗ **NO**\\n   - Primary focus is SOC density/stock quantification and temporal changes\\n   - LULC analysis is instrumental/supportive (used to categorize areas for SOC estimation)\\n   - Research question centers on \\\"improved SOC assessments,\\\" not LULC prediction\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison**: ✗ **NO**\\n   - Paper uses historical LULC data (2000-2014) and back-calculates to 1990, projects to 2014\\n   - No alternative future LULC scenarios are modeled or compared\\n   - Temporal analysis is based on observed/measured data, not predictive scenarios\\n\\n4. **Spatial modeling with quantitative accuracy metrics**: ✓ PARTIAL\\n   - Quantitative metrics reported (R², CV, MSE, RMSE)\\n   - However, these measure model performance for SOC estimation, not LULC prediction accuracy\\n\\n5. **Outputs include mapped LULC projections**: ✗ **NO**\\n   - Outputs are SOC density/stock maps and estimates, not LULC projections\\n   - LULC is used as a categorization variable, not a predictive output\\n\\n### Exclusion Criteria Assessment:\\n\\n- **Biomass/bioenergy/carbon studies without LULC change analysis**: ✓ **APPLIES**\\n  - This is fundamentally a carbon/SOC quantification study\\n  - While it uses LULC data, it lacks LULC change prediction as a primary component\\n  - LULC changes are identified from historical data but not projected/predicted\\n\\n- **No LULC prediction component**: ✓ **APPLIES**\\n  - The paper does not predict future LULC distributions\\n  - It uses observed LULC from 2000-2014 as input data for SOC calculations\\n\\n---\\n\\n# Final Categorization: **EXCLUDED**\\n\\n**Justification**: \\nThis paper is excluded because it fails multiple core inclusion criteria for LULC prediction research:\\n\\n1. **Primary focus is NOT LULC prediction**: The central research question concerns improving SOC stock estimates and understanding their temporal changes, not predicting or simulating future land use/land cover distributions.\\n\\n2. **No future LULC scenarios**: The paper analyzes historical LULC changes (2000-2014) and back-calculates to 1990, but does not implement or compare alternative future LULC scenarios—a requirement for predictive modeling research.\\n\\n3. **LULC is instrumental, not primary**: Land use data serves as a categorization variable for disaggregating SOC estimates across different agricultural systems, not as the subject of prediction.\\n\\n4. **No LULC projection outputs**: The outputs are SOC density/stock estimates and changes, not mapped LULC projections or predictions.\\n\\n5. **Carbon/SOC focus without LULC change analysis**: While the paper uses LULC data, it is fundamentally a carbon quantification study that falls under the exclusion criterion for biomass/carbon studies lacking LULC change prediction as a primary component.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":18034,\"completion_tokens\":951,\"total_tokens\":18985,\"cost\":0.022789,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.022789,\"upstream_inference_prompt_cost\":0.018034,\"upstream_inference_completions_cost\":0.004755},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654182-WPTlADThktg8xTMK0PFE",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 18034,
+        "completion_tokens": 951,
+        "total_tokens": 18985,
+        "cost": 0.022789,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.022789,
+          "upstream_inference_prompt_cost": 0.018034,
+          "upstream_inference_completions_cost": 0.004755
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 10.369,
+  "call_id": "DS__z1_9JIJ9G32__claude__r2",
+  "fingerprint": "b44dfc2dc25d2b2f6e294b5dc1d6ab71a84404c75e30e59c8d6d126c5f7f35c3",
+  "paper_id": "z1_9JIJ9G32",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:09:48.364834+00:00",
+  "input_sha256": "70de6962f672a5fd10e268e99299ab6580984901c432198ce2dec398175c73e0",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

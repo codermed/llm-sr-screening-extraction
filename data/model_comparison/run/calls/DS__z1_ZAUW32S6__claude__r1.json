@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789653293-kH6qtygkZQQ53hAmAHCW",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.010116,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 5551,
+    "completion_tokens": 913,
+    "total_tokens": 6464,
+    "cost": 0.010116,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.010116,
+      "upstream_inference_prompt_cost": 0.005551,
+      "upstream_inference_completions_cost": 0.004565
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis\n\n## Step 1: Determine if Review Article\n**Result: NO** - This is a research paper presenting original empirical analysis of land-use scenarios with methodology, results, and validation components.\n\n## Step 2: Apply Categorization Flow for Non-Review Paper\n\n### Core Inclusion Criteria Check:\n\n1. **Explicit national-scale spatial implementation (entire country)** ✓\n   - Study explicitly covers Japan at national scale: \"national-scale land-use scenarios\" and \"national scale GIS-based vegetation maps\"\n   - Study area: 472,580 km² (1,890,318 cells at 500m resolution)\n\n2. **Primary focus = LULC prediction/simulation (central research question)** ✓\n   - Central research objective: \"developed land-use maps...to calibrate a land-change model...simulate changes...and validate the simulation\"\n   - Primary aim: assess land-use scenarios using intensity analysis and figure of merit components\n   - Addresses: \"validation of land-use scenarios remains a challenge\"\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\n   - Five scenarios developed: Natural Capital-based Compact (NC), Natural Capital-based Dispersed (ND), Produced Capital-based Compact (PC), Produced Capital-based Dispersed (PD), and Business-as-Usual (BaU)\n   - Quantitative comparison conducted: \"assessed the scenarios by comparing the reference change during a calibration interval, the simulation change, and the reference change during a validation interval\"\n\n4. **Spatial modeling with quantitative accuracy metrics** ✓\n   - Land Change Modeler used with explicit spatial modeling (multi-layer perceptron neural network)\n   - Quantitative metrics reported: Figure of Merit (FOM = 1.56%), intensity analysis, hits/misses/false alarms\n   - Validation methodology explicitly described with numerical results\n\n5. **Outputs include mapped LULC projections** ✓\n   - LULC maps developed for three time points (1987, 1998, 2014)\n   - 10 LULC categories mapped spatially\n   - Projections through 2050 generated for each scenario\n\n### Exclusion Criteria Check:\n\n- ❌ Global-scale analysis without national disaggregation: NO (explicitly national Japan)\n- ❌ Local/regional/global/transboundary focus: NO (national scale)\n- ❌ No LULC prediction component: NO (core component)\n- ❌ Species-specific/ecological focus unrelated to LULC: NO (LULC-focused)\n- ❌ Economic/urban models lacking spatial LULC outputs: NO (explicit spatial LULC outputs)\n- ❌ Methodological paper without national-scale application: NO (applied to national scale)\n- ❌ Purely qualitative/historical only: NO (future projections to 2050)\n- ❌ Remote sensing technical study without predictive modeling: NO (includes predictive modeling)\n- ❌ Single-scenario business-as-usual only: NO (5 scenarios with BaU as reference)\n\nAll exclusion criteria are passed (none triggered).\n\n---\n\n## Final Categorization: **OK**\n\n**Justification:** This paper meets ALL core inclusion criteria for national-scale LULC prediction research. It implements explicit spatial modeling at national scale (Japan) with 10 LULC categories, develops and compares 5 future scenarios (including multiple policy-driven scenarios beyond business-as-usual), employs quantitative accuracy metrics (FOM, intensity analysis, figure of merit components), and produces mapped LULC projections through 2050. The primary research objective is validating and improving national-scale land-use scenario predictions. No exclusion criteria are triggered. The paper is a rigorous empirical study of LULC prediction with methodological innovation in scenario validation.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:54:48.595856+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 9.19,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789653293-kH6qtygkZQQ53hAmAHCW\",\"object\":\"chat.completion\",\"created\":1789653293,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis\\n\\n## Step 1: Determine if Review Article\\n**Result: NO** - This is a research paper presenting original empirical analysis of land-use scenarios with methodology, results, and validation components.\\n\\n## Step 2: Apply Categorization Flow for Non-Review Paper\\n\\n### Core Inclusion Criteria Check:\\n\\n1. **Explicit national-scale spatial implementation (entire country)** ✓\\n   - Study explicitly covers Japan at national scale: \\\"national-scale land-use scenarios\\\" and \\\"national scale GIS-based vegetation maps\\\"\\n   - Study area: 472,580 km² (1,890,318 cells at 500m resolution)\\n\\n2. **Primary focus = LULC prediction/simulation (central research question)** ✓\\n   - Central research objective: \\\"developed land-use maps...to calibrate a land-change model...simulate changes...and validate the simulation\\\"\\n   - Primary aim: assess land-use scenarios using intensity analysis and figure of merit components\\n   - Addresses: \\\"validation of land-use scenarios remains a challenge\\\"\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\\n   - Five scenarios developed: Natural Capital-based Compact (NC), Natural Capital-based Dispersed (ND), Produced Capital-based Compact (PC), Produced Capital-based Dispersed (PD), and Business-as-Usual (BaU)\\n   - Quantitative comparison conducted: \\\"assessed the scenarios by comparing the reference change during a calibration interval, the simulation change, and the reference change during a validation interval\\\"\\n\\n4. **Spatial modeling with quantitative accuracy metrics** ✓\\n   - Land Change Modeler used with explicit spatial modeling (multi-layer perceptron neural network)\\n   - Quantitative metrics reported: Figure of Merit (FOM = 1.56%), intensity analysis, hits/misses/false alarms\\n   - Validation methodology explicitly described with numerical results\\n\\n5. **Outputs include mapped LULC projections** ✓\\n   - LULC maps developed for three time points (1987, 1998, 2014)\\n   - 10 LULC categories mapped spatially\\n   - Projections through 2050 generated for each scenario\\n\\n### Exclusion Criteria Check:\\n\\n- ❌ Global-scale analysis without national disaggregation: NO (explicitly national Japan)\\n- ❌ Local/regional/global/transboundary focus: NO (national scale)\\n- ❌ No LULC prediction component: NO (core component)\\n- ❌ Species-specific/ecological focus unrelated to LULC: NO (LULC-focused)\\n- ❌ Economic/urban models lacking spatial LULC outputs: NO (explicit spatial LULC outputs)\\n- ❌ Methodological paper without national-scale application: NO (applied to national scale)\\n- ❌ Purely qualitative/historical only: NO (future projections to 2050)\\n- ❌ Remote sensing technical study without predictive modeling: NO (includes predictive modeling)\\n- ❌ Single-scenario business-as-usual only: NO (5 scenarios with BaU as reference)\\n\\nAll exclusion criteria are passed (none triggered).\\n\\n---\\n\\n## Final Categorization: **OK**\\n\\n**Justification:** This paper meets ALL core inclusion criteria for national-scale LULC prediction research. It implements explicit spatial modeling at national scale (Japan) with 10 LULC categories, develops and compares 5 future scenarios (including multiple policy-driven scenarios beyond business-as-usual), employs quantitative accuracy metrics (FOM, intensity analysis, figure of merit components), and produces mapped LULC projections through 2050. The primary research objective is validating and improving national-scale land-use scenario predictions. No exclusion criteria are triggered. The paper is a rigorous empirical study of LULC prediction with methodological innovation in scenario validation.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":5551,\"completion_tokens\":913,\"total_tokens\":6464,\"cost\":0.010116,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.010116,\"upstream_inference_prompt_cost\":0.005551,\"upstream_inference_completions_cost\":0.004565},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653293-kH6qtygkZQQ53hAmAHCW",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 5551,
+        "completion_tokens": 913,
+        "total_tokens": 6464,
+        "cost": 0.010116,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.010116,
+          "upstream_inference_prompt_cost": 0.005551,
+          "upstream_inference_completions_cost": 0.004565
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 9.191,
+  "call_id": "DS__z1_ZAUW32S6__claude__r1",
+  "fingerprint": "f6a2076fdd437dc4b4a9efa82edf702836df2484c887c065ec53b87b4cc59fd3",
+  "paper_id": "z1_ZAUW32S6",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:54:57.786374+00:00",
+  "input_sha256": "c58768c3f6a5e05307df9cce96c224d7366895ced83bc17ce0bc993fb53f7236",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

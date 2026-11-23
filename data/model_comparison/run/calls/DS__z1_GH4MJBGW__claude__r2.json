@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789654510-VOv2SUIMvHmbRnAkBELG",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.021236,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15931,
+    "completion_tokens": 1061,
+    "total_tokens": 16992,
+    "cost": 0.021236,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.021236,
+      "upstream_inference_prompt_cost": 0.015931,
+      "upstream_inference_completions_cost": 0.005305
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: CLEWS Mauritius Energy System Paper\n\n## Step 1: Determine if Review Article\nThis is **NOT a review article**. It is a research paper presenting original modeling work and case study analysis of Mauritius' energy system using integrated CLEWS (Climate, Land-use, Energy, Water Systems) modeling.\n\n## Step 2: Apply Non-Review Research Evaluation\n\n### Check CORE INCLUSION CRITERIA:\n\n**Criterion 1: Explicit national-scale spatial implementation (entire country)**\n- ✓ YES - Study focuses on Mauritius as a complete national case study (main island, 186,500 ha)\n- Methodology explicitly states: \"As a small island, it also has conveniently defined system boundaries\"\n\n**Criterion 2: Primary focus = LULC prediction/simulation**\n- ✗ NO - The paper's primary focus is **energy system modeling and policy analysis**, NOT land-use/land-cover prediction\n- LULC is addressed through the land-use model (AEZ - Agro-Ecological Zones) but only as an input to support energy scenarios\n- Core research questions focus on ethanol production feasibility, energy security, and greenhouse gas emissions\n- The abstract states: \"This paper presents the added value of an integrated analytical assessment approach...primarily from an **energy sector perspective**\"\n\n**Criterion 3: Implementation of ≥2 future scenarios with quantitative comparison**\n- ✓ YES - Multiple scenarios assessed (BAU, 1GEN, 2GEN, with/without climate change, plus 2NC+CC)\n- Quantitative comparisons provided throughout results section\n\n**Criterion 4: Spatial modeling with quantitative accuracy metrics**\n- ✗ PARTIAL/NO - While spatial modeling is used (AEZ at 250m×250m resolution, WEAP with 60 catchment areas), the paper does NOT report LULC accuracy metrics, validation statistics, or change rate quantifications for land-use predictions\n- Accuracy metrics are reported for energy system outputs (GWh, emissions), not LULC outputs\n\n**Criterion 5: Outputs include mapped LULC projections**\n- ✗ NO - No LULC maps are presented in the paper\n- Results focus on energy generation mixes, electricity demand, costs, and emissions\n- Land-use model outputs are used as intermediate inputs to energy calculations, not as primary outputs\n\n### Check EXCLUSION CRITERIA:\n\n**Exclusion: Biomass/bioenergy/carbon studies without LULC change analysis**\n- ✓ TRIGGERS EXCLUSION - This paper is fundamentally a bioenergy/ethanol production study examining whether sugar cane should be converted to ethanol production\n- While LULC modeling is used (AEZ model), the paper does NOT analyze or report LULC changes\n- The focus is on energy implications, not on predicting or analyzing changes in land-use patterns\n- Agricultural land-use is treated as a fixed input constraint, not as a predicted outcome\n\n**Exclusion: Economic/urban models lacking spatially explicit LULC outputs**\n- ✓ TRIGGERS EXCLUSION - The paper is fundamentally an economic energy model with cost-benefit analysis\n- LULC is modeled but not outputted or analyzed as a primary result\n\n---\n\n## FINAL CATEGORIZATION: **EXCLUDED**\n\n**Justification:** \n\nWhile this paper implements integrated modeling including a land-use component (AEZ model) at national scale with multiple scenarios, it **fails multiple core inclusion criteria** for LULC prediction research:\n\n1. **Primary focus is NOT LULC prediction**: The paper's central research question concerns energy system feasibility and policy optimization for ethanol production, not land-use/land-cover prediction or change analysis.\n\n2. **No LULC outputs or accuracy metrics**: The paper reports no LULC projections, maps, change rates, or validation metrics. Land-use model outputs are used as intermediate inputs to energy calculations only.\n\n3. **Meets exclusion criteria**: This is fundamentally a **bioenergy/economic energy modeling study** that uses LULC modeling as a supporting tool, not as the primary research focus. The paper explicitly states it approaches the CLEWS nexus \"primarily from an energy sector perspective.\"\n\n4. **LULC treated as fixed/constrained input**: Agricultural land-use patterns are held constant or treated as policy constraints (e.g., \"sugar cane production is maintained at historical levels\"), not predicted or analyzed for change.\n\nThe paper makes valuable contributions to integrated resource modeling but does not meet the threshold for national-scale LULC prediction research.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:15:06.068397+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 13.759,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789654510-VOv2SUIMvHmbRnAkBELG\",\"object\":\"chat.completion\",\"created\":1789654510,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: CLEWS Mauritius Energy System Paper\\n\\n## Step 1: Determine if Review Article\\nThis is **NOT a review article**. It is a research paper presenting original modeling work and case study analysis of Mauritius' energy system using integrated CLEWS (Climate, Land-use, Energy, Water Systems) modeling.\\n\\n## Step 2: Apply Non-Review Research Evaluation\\n\\n### Check CORE INCLUSION CRITERIA:\\n\\n**Criterion 1: Explicit national-scale spatial implementation (entire country)**\\n- ✓ YES - Study focuses on Mauritius as a complete national case study (main island, 186,500 ha)\\n- Methodology explicitly states: \\\"As a small island, it also has conveniently defined system boundaries\\\"\\n\\n**Criterion 2: Primary focus = LULC prediction/simulation**\\n- ✗ NO - The paper's primary focus is **energy system modeling and policy analysis**, NOT land-use/land-cover prediction\\n- LULC is addressed through the land-use model (AEZ - Agro-Ecological Zones) but only as an input to support energy scenarios\\n- Core research questions focus on ethanol production feasibility, energy security, and greenhouse gas emissions\\n- The abstract states: \\\"This paper presents the added value of an integrated analytical assessment approach...primarily from an **energy sector perspective**\\\"\\n\\n**Criterion 3: Implementation of ≥2 future scenarios with quantitative comparison**\\n- ✓ YES - Multiple scenarios assessed (BAU, 1GEN, 2GEN, with/without climate change, plus 2NC+CC)\\n- Quantitative comparisons provided throughout results section\\n\\n**Criterion 4: Spatial modeling with quantitative accuracy metrics**\\n- ✗ PARTIAL/NO - While spatial modeling is used (AEZ at 250m×250m resolution, WEAP with 60 catchment areas), the paper does NOT report LULC accuracy metrics, validation statistics, or change rate quantifications for land-use predictions\\n- Accuracy metrics are reported for energy system outputs (GWh, emissions), not LULC outputs\\n\\n**Criterion 5: Outputs include mapped LULC projections**\\n- ✗ NO - No LULC maps are presented in the paper\\n- Results focus on energy generation mixes, electricity demand, costs, and emissions\\n- Land-use model outputs are used as intermediate inputs to energy calculations, not as primary outputs\\n\\n### Check EXCLUSION CRITERIA:\\n\\n**Exclusion: Biomass/bioenergy/carbon studies without LULC change analysis**\\n- ✓ TRIGGERS EXCLUSION - This paper is fundamentally a bioenergy/ethanol production study examining whether sugar cane should be converted to ethanol production\\n- While LULC modeling is used (AEZ model), the paper does NOT analyze or report LULC changes\\n- The focus is on energy implications, not on predicting or analyzing changes in land-use patterns\\n- Agricultural land-use is treated as a fixed input constraint, not as a predicted outcome\\n\\n**Exclusion: Economic/urban models lacking spatially explicit LULC outputs**\\n- ✓ TRIGGERS EXCLUSION - The paper is fundamentally an economic energy model with cost-benefit analysis\\n- LULC is modeled but not outputted or analyzed as a primary result\\n\\n---\\n\\n## FINAL CATEGORIZATION: **EXCLUDED**\\n\\n**Justification:** \\n\\nWhile this paper implements integrated modeling including a land-use component (AEZ model) at national scale with multiple scenarios, it **fails multiple core inclusion criteria** for LULC prediction research:\\n\\n1. **Primary focus is NOT LULC prediction**: The paper's central research question concerns energy system feasibility and policy optimization for ethanol production, not land-use/land-cover prediction or change analysis.\\n\\n2. **No LULC outputs or accuracy metrics**: The paper reports no LULC projections, maps, change rates, or validation metrics. Land-use model outputs are used as intermediate inputs to energy calculations only.\\n\\n3. **Meets exclusion criteria**: This is fundamentally a **bioenergy/economic energy modeling study** that uses LULC modeling as a supporting tool, not as the primary research focus. The paper explicitly states it approaches the CLEWS nexus \\\"primarily from an energy sector perspective.\\\"\\n\\n4. **LULC treated as fixed/constrained input**: Agricultural land-use patterns are held constant or treated as policy constraints (e.g., \\\"sugar cane production is maintained at historical levels\\\"), not predicted or analyzed for change.\\n\\nThe paper makes valuable contributions to integrated resource modeling but does not meet the threshold for national-scale LULC prediction research.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15931,\"completion_tokens\":1061,\"total_tokens\":16992,\"cost\":0.021236,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.021236,\"upstream_inference_prompt_cost\":0.015931,\"upstream_inference_completions_cost\":0.005305},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654510-VOv2SUIMvHmbRnAkBELG",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 15931,
+        "completion_tokens": 1061,
+        "total_tokens": 16992,
+        "cost": 0.021236,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.021236,
+          "upstream_inference_prompt_cost": 0.015931,
+          "upstream_inference_completions_cost": 0.005305
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 13.76,
+  "call_id": "DS__z1_GH4MJBGW__claude__r2",
+  "fingerprint": "32894b15e34ab27a3945a7146247a877e58baa1f76b8e4e060338865a9fd4ad8",
+  "paper_id": "z1_GH4MJBGW",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:15:19.827696+00:00",
+  "input_sha256": "9c51d2f4aed05dbf1796358bfb112777a592ec001ae47b2299270681ca23203b",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

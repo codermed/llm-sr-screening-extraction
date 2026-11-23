@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653361-gn8oqLdwnOtZaI41FgiQ",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00360112,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 13678,
+    "completion_tokens": 118,
+    "total_tokens": 13796,
+    "cost": 0.00360112,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00360112,
+      "upstream_inference_prompt_cost": 0.00355628,
+      "upstream_inference_completions_cost": 4.484e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper's primary focus is not LULC prediction. It uses LULC predictions from an integrated model (MAGNET-CGE + PLUC allocation) as an *input* to assess the greenhouse gas emissions and mitigation effects of biofuel-induced land use change. While it includes scenario analysis and spatial allocation, the central research question is evaluating the impacts and mitigation of LULC, not the development or validation of the LULC prediction methodology itself. The LULC modeling is a step within a larger impact assessment framework.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:55:56.262614+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.449,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789653361-gn8oqLdwnOtZaI41FgiQ\",\"object\":\"chat.completion\",\"created\":1789653361,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper's primary focus is not LULC prediction. It uses LULC predictions from an integrated model (MAGNET-CGE + PLUC allocation) as an *input* to assess the greenhouse gas emissions and mitigation effects of biofuel-induced land use change. While it includes scenario analysis and spatial allocation, the central research question is evaluating the impacts and mitigation of LULC, not the development or validation of the LULC prediction methodology itself. The LULC modeling is a step within a larger impact assessment framework.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":13678,\"completion_tokens\":118,\"total_tokens\":13796,\"cost\":0.00360112,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00360112,\"upstream_inference_prompt_cost\":0.00355628,\"upstream_inference_completions_cost\":0.00004484},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653361-gn8oqLdwnOtZaI41FgiQ",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 13678,
+        "completion_tokens": 118,
+        "total_tokens": 13796,
+        "cost": 0.00360112,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00360112,
+          "upstream_inference_prompt_cost": 0.00355628,
+          "upstream_inference_completions_cost": 4.484e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.45,
+  "call_id": "DS__z1_EHHJ7PNR__deepseek__r1",
+  "fingerprint": "f7855114e3a6268f5c594a82eb6b0bcf9b44ac6e38876014873c0e0534c6558f",
+  "paper_id": "z1_EHHJ7PNR",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:56:00.711878+00:00",
+  "input_sha256": "fbd50ed89bf7536f51a9e63debcb29a399af38205e9ab88ac40a315ca2d8cf9f",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

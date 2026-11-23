@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789652973-Ym6SythHyMFuAUN48gPz",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00238882,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 9046,
+    "completion_tokens": 97,
+    "total_tokens": 9143,
+    "cost": 0.00238882,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00238882,
+      "upstream_inference_prompt_cost": 0.00235196,
+      "upstream_inference_completions_cost": 3.686e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "**Final categorization: REVIEW** (Justification: This is a review article that synthesizes existing research on how land-use modeling tools can inform bioenergy policies. Its central theme is evaluating and improving land-use change (LUC) models—including those used for prediction—to assess the impacts of bioenergy expansion. It discusses direct and indirect LUC (iLUC), reviews modeling approaches and data sources, and explicitly addresses the role of models in future scenario analysis for policy decisions.)",
+  "automated_status": "usable",
+  "parsed_label": "REVIEW",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:49:28.648844+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.783,
+      "raw_body": "\n         \n{\"id\":\"gen-1789652973-Ym6SythHyMFuAUN48gPz\",\"object\":\"chat.completion\",\"created\":1789652973,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"**Final categorization: REVIEW** (Justification: This is a review article that synthesizes existing research on how land-use modeling tools can inform bioenergy policies. Its central theme is evaluating and improving land-use change (LUC) models—including those used for prediction—to assess the impacts of bioenergy expansion. It discusses direct and indirect LUC (iLUC), reviews modeling approaches and data sources, and explicitly addresses the role of models in future scenario analysis for policy decisions.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":9046,\"completion_tokens\":97,\"total_tokens\":9143,\"cost\":0.00238882,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00238882,\"upstream_inference_prompt_cost\":0.00235196,\"upstream_inference_completions_cost\":0.00003686},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652973-Ym6SythHyMFuAUN48gPz",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 9046,
+        "completion_tokens": 97,
+        "total_tokens": 9143,
+        "cost": 0.00238882,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00238882,
+          "upstream_inference_prompt_cost": 0.00235196,
+          "upstream_inference_completions_cost": 3.686e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.783,
+  "call_id": "DS__z1_4YG9HWEA__deepseek__r1",
+  "fingerprint": "972b852ed098b427e6b26b9d5bf980b7f6b0bfa55959ae325c8ec74d09837edd",
+  "paper_id": "z1_4YG9HWEA",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:49:32.431979+00:00",
+  "input_sha256": "80be2ecddfbb77ffcfe5af7424a09301680f77776b42c2922fe0c806ee442a0d",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

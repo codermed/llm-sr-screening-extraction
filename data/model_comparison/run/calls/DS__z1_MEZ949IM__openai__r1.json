@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653041-PFE9LrkG6Tq5dZJFkusQ",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0058896,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 14244,
+    "completion_tokens": 120,
+    "total_tokens": 14364,
+    "cost": 0.0058896,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0058896,
+      "upstream_inference_prompt_cost": 0.0056976,
+      "upstream_inference_completions_cost": 0.000192
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This paper is a review article on the global warming debate focusing on climate science, atmospheric greenhouse gases, temperature variations, solar influences, sea-level changes, and extreme weather events. It does not address land use land cover (LULC) change or future LULC prediction. There is no national-scale spatial implementation, no spatial modeling of LULC, no future scenarios of LULC, nor any quantitative LULC projections. The focus is on climate and atmospheric science, making it outside the scope of LULC prediction research.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:50:36.449008+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.757,
+      "raw_body": "\n         \n{\"id\":\"gen-1789653041-PFE9LrkG6Tq5dZJFkusQ\",\"object\":\"chat.completion\",\"created\":1789653041,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This paper is a review article on the global warming debate focusing on climate science, atmospheric greenhouse gases, temperature variations, solar influences, sea-level changes, and extreme weather events. It does not address land use land cover (LULC) change or future LULC prediction. There is no national-scale spatial implementation, no spatial modeling of LULC, no future scenarios of LULC, nor any quantitative LULC projections. The focus is on climate and atmospheric science, making it outside the scope of LULC prediction research.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":14244,\"completion_tokens\":120,\"total_tokens\":14364,\"cost\":0.0058896,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0058896,\"upstream_inference_prompt_cost\":0.0056976,\"upstream_inference_completions_cost\":0.000192},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653041-PFE9LrkG6Tq5dZJFkusQ",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 14244,
+        "completion_tokens": 120,
+        "total_tokens": 14364,
+        "cost": 0.0058896,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0058896,
+          "upstream_inference_prompt_cost": 0.0056976,
+          "upstream_inference_completions_cost": 0.000192
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.757,
+  "call_id": "DS__z1_MEZ949IM__openai__r1",
+  "fingerprint": "62649dcf67acc1298e31c09d780473ef0d6938c66582b0c7194c465277359c6d",
+  "paper_id": "z1_MEZ949IM",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:50:39.205776+00:00",
+  "input_sha256": "ccbde92c5a319c75eddee4c8d865258be55acb567ad23908c514a4665bbbff33",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

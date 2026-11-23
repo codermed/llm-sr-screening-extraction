@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789653640-P87X94mImlC73Cixmr8b",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.023804,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 18639,
+    "completion_tokens": 1033,
+    "total_tokens": 19672,
+    "cost": 0.023804,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.023804,
+      "upstream_inference_prompt_cost": 0.018639,
+      "upstream_inference_completions_cost": 0.005165
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis\n\n## Review Status\nThis is a **NON-REVIEW PAPER** (research article with original modeling).\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA:\n\n1. **Explicit national-scale spatial implementation (entire country)** ✓\n   - Study explicitly focuses on \"conterminous United States\" (stated throughout)\n   - 0.5° × 0.5° spatial resolution grid across entire study area\n   - Methods section confirms national-scale implementation\n\n2. **Primary focus = LULC prediction/simulation** ✗\n   - **PRIMARY FOCUS**: Carbon sink dynamics under climate change, elevated CO₂, and LULCC\n   - LULCC is ONE of THREE factors examined (climate, CO₂, LULCC)\n   - Research questions: \"whether the United States will remain a carbon sink\" and \"what are the relative roles of climate, CO₂, and land-use change\"\n   - LULCC is an INPUT from external datasets (LUH2), not the primary modeling output\n   - Carbon fluxes (NEP, NCE) are the primary outputs, not LULC predictions\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\n   - SSP245 and SSP370 scenarios implemented\n   - Quantitative comparisons provided (Tables 3, 4, 5)\n\n4. **Spatial modeling with quantitative accuracy metrics** ✗\n   - No accuracy metrics reported for LULC predictions\n   - No validation of LULC projections against observed data\n   - LULCC data sourced from LUH2 dataset (external)\n\n5. **Outputs include mapped LULC projections** ✗\n   - Maps show carbon fluxes and stocks (Figures 2, 3, S3-S9)\n   - Maps show DIFFERENCES in carbon between scenarios\n   - **No LULC maps are presented** - only carbon/water dynamics maps\n   - LULCC is shown only as area changes (Figure 7) and spatial differences (Figure 8), not as predictive LULC maps\n\n---\n\n### SPECIFIC EXCLUSION CRITERIA:\n\n- **Biomass/bioenergy/carbon studies without LULC change analysis**: PARTIALLY APPLIES\n  - Paper is fundamentally a carbon cycle study\n  - LULCC is analyzed but as an INPUT driver, not as the primary prediction focus\n  - The study uses pre-existing LULCC scenarios from LUH2; does not predict LULCC itself\n\n---\n\n## Primary Focus Assessment\n\n**LULC Prediction Role**: LULCC is used as an **input/driver** in the analysis, not as the primary modeling output.\n\n- The paper applies externally-derived LULCC scenarios (LUH2) to examine how they affect carbon dynamics\n- The research question centers on carbon sink behavior, not on predicting future land use\n- LULCC predictions come from LUH2 dataset; TEM-Hydro model predicts carbon/nitrogen/water cycles given LULCC inputs\n\n---\n\n## Final Categorization\n\n**EXCLUDED** \n\n**Justification**: \nThis paper fails multiple core inclusion criteria for LULC prediction research:\n\n1. **LULC is an input, not the primary focus**: The study's central research questions concern carbon sink dynamics under climate change and CO₂ fertilization effects. LULCC is one of three factors examined, sourced from external LUH2 datasets rather than predicted by the model.\n\n2. **No LULC prediction outputs**: The paper produces no mapped LULC projections. Maps display carbon fluxes, vegetation carbon, and water dynamics—not land use/land cover predictions. Figure 7-8 show area changes and differences in carbon from LULCC, not LULC predictions.\n\n3. **No accuracy metrics for LULC**: No validation, accuracy assessment, or quantitative metrics are reported for LULC projections (because none are produced).\n\n4. **Biomass/carbon focus without LULC as primary output**: This is fundamentally a biogeochemical carbon cycle modeling study that incorporates LULCC as a boundary condition, not a land use prediction study.\n\nThe paper is well-designed and scientifically rigorous for its intended purpose (carbon sink assessment), but it does not meet the criteria for inclusion in a LULC prediction research synthesis.",
+  "automated_status": "invalid_output",
+  "parsed_label": "",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:00:35.528822+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.672,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653640-P87X94mImlC73Cixmr8b\",\"object\":\"chat.completion\",\"created\":1789653640,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis\\n\\n## Review Status\\nThis is a **NON-REVIEW PAPER** (research article with original modeling).\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA:\\n\\n1. **Explicit national-scale spatial implementation (entire country)** ✓\\n   - Study explicitly focuses on \\\"conterminous United States\\\" (stated throughout)\\n   - 0.5° × 0.5° spatial resolution grid across entire study area\\n   - Methods section confirms national-scale implementation\\n\\n2. **Primary focus = LULC prediction/simulation** ✗\\n   - **PRIMARY FOCUS**: Carbon sink dynamics under climate change, elevated CO₂, and LULCC\\n   - LULCC is ONE of THREE factors examined (climate, CO₂, LULCC)\\n   - Research questions: \\\"whether the United States will remain a carbon sink\\\" and \\\"what are the relative roles of climate, CO₂, and land-use change\\\"\\n   - LULCC is an INPUT from external datasets (LUH2), not the primary modeling output\\n   - Carbon fluxes (NEP, NCE) are the primary outputs, not LULC predictions\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\\n   - SSP245 and SSP370 scenarios implemented\\n   - Quantitative comparisons provided (Tables 3, 4, 5)\\n\\n4. **Spatial modeling with quantitative accuracy metrics** ✗\\n   - No accuracy metrics reported for LULC predictions\\n   - No validation of LULC projections against observed data\\n   - LULCC data sourced from LUH2 dataset (external)\\n\\n5. **Outputs include mapped LULC projections** ✗\\n   - Maps show carbon fluxes and stocks (Figures 2, 3, S3-S9)\\n   - Maps show DIFFERENCES in carbon between scenarios\\n   - **No LULC maps are presented** - only carbon/water dynamics maps\\n   - LULCC is shown only as area changes (Figure 7) and spatial differences (Figure 8), not as predictive LULC maps\\n\\n---\\n\\n### SPECIFIC EXCLUSION CRITERIA:\\n\\n- **Biomass/bioenergy/carbon studies without LULC change analysis**: PARTIALLY APPLIES\\n  - Paper is fundamentally a carbon cycle study\\n  - LULCC is analyzed but as an INPUT driver, not as the primary prediction focus\\n  - The study uses pre-existing LULCC scenarios from LUH2; does not predict LULCC itself\\n\\n---\\n\\n## Primary Focus Assessment\\n\\n**LULC Prediction Role**: LULCC is used as an **input/driver** in the analysis, not as the primary modeling output.\\n\\n- The paper applies externally-derived LULCC scenarios (LUH2) to examine how they affect carbon dynamics\\n- The research question centers on carbon sink behavior, not on predicting future land use\\n- LULCC predictions come from LUH2 dataset; TEM-Hydro model predicts carbon/nitrogen/water cycles given LULCC inputs\\n\\n---\\n\\n## Final Categorization\\n\\n**EXCLUDED** \\n\\n**Justification**: \\nThis paper fails multiple core inclusion criteria for LULC prediction research:\\n\\n1. **LULC is an input, not the primary focus**: The study's central research questions concern carbon sink dynamics under climate change and CO₂ fertilization effects. LULCC is one of three factors examined, sourced from external LUH2 datasets rather than predicted by the model.\\n\\n2. **No LULC prediction outputs**: The paper produces no mapped LULC projections. Maps display carbon fluxes, vegetation carbon, and water dynamics—not land use/land cover predictions. Figure 7-8 show area changes and differences in carbon from LULCC, not LULC predictions.\\n\\n3. **No accuracy metrics for LULC**: No validation, accuracy assessment, or quantitative metrics are reported for LULC projections (because none are produced).\\n\\n4. **Biomass/carbon focus without LULC as primary output**: This is fundamentally a biogeochemical carbon cycle modeling study that incorporates LULCC as a boundary condition, not a land use prediction study.\\n\\nThe paper is well-designed and scientifically rigorous for its intended purpose (carbon sink assessment), but it does not meet the criteria for inclusion in a LULC prediction research synthesis.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":18639,\"completion_tokens\":1033,\"total_tokens\":19672,\"cost\":0.023804,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.023804,\"upstream_inference_prompt_cost\":0.018639,\"upstream_inference_completions_cost\":0.005165},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653640-P87X94mImlC73Cixmr8b",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 18639,
+        "completion_tokens": 1033,
+        "total_tokens": 19672,
+        "cost": 0.023804,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.023804,
+          "upstream_inference_prompt_cost": 0.018639,
+          "upstream_inference_completions_cost": 0.005165
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.673,
+  "call_id": "DS__z1_CDQYX4ZZ__claude__r1",
+  "fingerprint": "7b483d2c79a1ad7836d863d6284b661b64282217ac3419c0ce7a0c714680443d",
+  "paper_id": "z1_CDQYX4ZZ",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T14:00:48.201432+00:00",
+  "input_sha256": "93dc2b1c01e72483c3f342abaf8448e09c9e7e6aa4e62ee0d821f4f240d0cf9f",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

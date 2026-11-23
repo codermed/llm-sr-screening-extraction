@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653319-NMnMIgsvokirSiTeuok9",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0062996,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15181,
+    "completion_tokens": 142,
+    "total_tokens": 15323,
+    "cost": 0.0062996,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0062996,
+      "upstream_inference_prompt_cost": 0.0060724,
+      "upstream_inference_completions_cost": 0.0002272
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: OK (Justification: This paper presents the CRAFTY-Sweden agent-based land-use model applied at national scale across Sweden, explicitly modeling future land-use change and ecosystem service provision in the forestry sector under multiple future socio-economic and climate scenarios from 2010 to 2100. It includes spatially explicit quantitative modeling at 1 km² resolution, simulates multiple scenarios (SSPs and RCPs), and provides mapped LULC projections with quantitative analysis of land-use and land owner type changes. The primary research focus is on predicting future land-use change and associated ecosystem service provision at the national scale, meeting all core inclusion criteria. It is not a review paper.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:55:14.831026+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.53,
+      "raw_body": "\n         \n{\"id\":\"gen-1789653319-NMnMIgsvokirSiTeuok9\",\"object\":\"chat.completion\",\"created\":1789653319,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: This paper presents the CRAFTY-Sweden agent-based land-use model applied at national scale across Sweden, explicitly modeling future land-use change and ecosystem service provision in the forestry sector under multiple future socio-economic and climate scenarios from 2010 to 2100. It includes spatially explicit quantitative modeling at 1 km² resolution, simulates multiple scenarios (SSPs and RCPs), and provides mapped LULC projections with quantitative analysis of land-use and land owner type changes. The primary research focus is on predicting future land-use change and associated ecosystem service provision at the national scale, meeting all core inclusion criteria. It is not a review paper.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15181,\"completion_tokens\":142,\"total_tokens\":15323,\"cost\":0.0062996,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0062996,\"upstream_inference_prompt_cost\":0.0060724,\"upstream_inference_completions_cost\":0.0002272},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653319-NMnMIgsvokirSiTeuok9",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 15181,
+        "completion_tokens": 142,
+        "total_tokens": 15323,
+        "cost": 0.0062996,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0062996,
+          "upstream_inference_prompt_cost": 0.0060724,
+          "upstream_inference_completions_cost": 0.0002272
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.531,
+  "call_id": "DS__z1_SDL4PAM5__openai__r1",
+  "fingerprint": "44dc1fa225bf6fe24772eb651496ec5ef143d3be7f906b9df4377009d1b3faaf",
+  "paper_id": "z1_SDL4PAM5",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:55:18.361528+00:00",
+  "input_sha256": "096cea9fe51615bd51a489b3e2947f8aaa44031e08659e6e9c35898f94e6301a",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

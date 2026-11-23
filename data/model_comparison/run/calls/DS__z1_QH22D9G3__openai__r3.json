@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654916-iGg6rSYkohtHqIASxeH1",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0007972,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 5397,
+    "completion_tokens": 133,
+    "total_tokens": 5530,
+    "cost": 0.0007972,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 5248,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007972,
+      "upstream_inference_prompt_cost": 0.0005844,
+      "upstream_inference_completions_cost": 0.0002128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This is a review article broadly addressing biodiversity loss, its drivers, and possible conservation strategies. It does not focus on land use land cover (LULC) future prediction, nor does it present national-scale spatial implementation of LULC modeling, quantitative LULC projections, or scenario-based spatial modeling with accuracy metrics. The paper discusses global biodiversity trends and threats in qualitative and conceptual terms without providing spatially explicit LULC predictions or mapped outputs. Therefore, it fails the inclusion criteria for LULC prediction-focused research and, as a review not focused on LULC future prediction, it is excluded.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:21:51.187306+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.017,
+      "raw_body": "\n         \n{\"id\":\"gen-1789654916-iGg6rSYkohtHqIASxeH1\",\"object\":\"chat.completion\",\"created\":1789654916,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This is a review article broadly addressing biodiversity loss, its drivers, and possible conservation strategies. It does not focus on land use land cover (LULC) future prediction, nor does it present national-scale spatial implementation of LULC modeling, quantitative LULC projections, or scenario-based spatial modeling with accuracy metrics. The paper discusses global biodiversity trends and threats in qualitative and conceptual terms without providing spatially explicit LULC predictions or mapped outputs. Therefore, it fails the inclusion criteria for LULC prediction-focused research and, as a review not focused on LULC future prediction, it is excluded.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":5397,\"completion_tokens\":133,\"total_tokens\":5530,\"cost\":0.0007972,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":5248,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0007972,\"upstream_inference_prompt_cost\":0.0005844,\"upstream_inference_completions_cost\":0.0002128},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654916-iGg6rSYkohtHqIASxeH1",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 5397,
+        "completion_tokens": 133,
+        "total_tokens": 5530,
+        "cost": 0.0007972,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 5248,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0007972,
+          "upstream_inference_prompt_cost": 0.0005844,
+          "upstream_inference_completions_cost": 0.0002128
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.018,
+  "call_id": "DS__z1_QH22D9G3__openai__r3",
+  "fingerprint": "336b0a949033bc3f1c56ddec7762ac42641d03ac61411d791ee823cac4f1260f",
+  "paper_id": "z1_QH22D9G3",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:21:54.204872+00:00",
+  "input_sha256": "3f0943be2341b78d1a38d36e3513b6f5f2807c90f2344d190229c108f8c43d49",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

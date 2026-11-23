@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653512-JeSmy60aIdRq3WS2NE0D",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00294464,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10567,
+    "completion_tokens": 519,
+    "total_tokens": 11086,
+    "cost": 0.00294464,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00294464,
+      "upstream_inference_prompt_cost": 0.00274742,
+      "upstream_inference_completions_cost": 0.00019722
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: National-scale LULC prediction for Mexico, implements two future scenarios with quantitative comparison, uses spatial modeling with validation metrics, and has LULC prediction as its primary objective.)\n\n**Analysis:**\n\n1.  **Review Article Check:** This is a research article, not a review. It presents original modeling work, results, and validation.\n\n2.  **Inclusion/Exclusion Criteria Evaluation (Non-Review Paper):**\n    *   **Core Inclusion Criteria (ALL MET):**\n        *   **National-scale spatial implementation:** The study explicitly covers the entire country of Mexico (\"at the national level for Mexico\"), using a harmonized grid for the total national extent.\n        *   **Primary focus = LULC prediction:** The central aim is \"to determine the hotspots of LUCC under different socioeconomic and climate change scenarios.\" Modeling future LULC is the paper's core research question.\n        *   **≥2 future scenarios with quantitative comparison:** The paper implements and compares a Business-As-Usual (BAU) scenario and a pessimistic scenario (A2) for three future time periods (2020, 2050, 2080). It provides quantitative comparisons of land cover percentages and change rates between them.\n        *   **Spatial modeling with quantitative accuracy metrics:** The methodology is based on spatial modeling using Weights of Evidence and Markov chains. It includes a dedicated \"Model validation and uncertainty estimations\" section reporting quantitative metrics (reciprocal similarity, figure of merit, agreement/disagreement in allocation and quantity).\n        *   **Outputs include mapped LULC projections:** Figure 2 explicitly shows \"LUCC maps in 2007 and 2020, 2050 and 2080 under pessimistic or BAU scenarios.\"\n\n    *   **Exclusion Criteria (NONE MET):**\n        *   The scale is national, not global/local/regional.\n        *   LULC prediction is the central component.\n        *   It is not species-specific or purely economic/urban.\n        *   It is not a methodological paper without application; the methodology is applied to the national case.\n        *   It includes future projections and is not purely historical.\n        *   It uses remote sensing data but for predictive modeling, not just classification.\n        *   It implements two distinct scenarios, not a single BAU projection.\n\n3.  **Primary Focus Determination:** The paper's primary objective is LULC prediction and hotspot identification under different scenarios. Therefore, it is categorized as **'OK'**.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:58:27.705593+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 18.481,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653512-JeSmy60aIdRq3WS2NE0D\",\"object\":\"chat.completion\",\"created\":1789653512,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: National-scale LULC prediction for Mexico, implements two future scenarios with quantitative comparison, uses spatial modeling with validation metrics, and has LULC prediction as its primary objective.)\\n\\n**Analysis:**\\n\\n1.  **Review Article Check:** This is a research article, not a review. It presents original modeling work, results, and validation.\\n\\n2.  **Inclusion/Exclusion Criteria Evaluation (Non-Review Paper):**\\n    *   **Core Inclusion Criteria (ALL MET):**\\n        *   **National-scale spatial implementation:** The study explicitly covers the entire country of Mexico (\\\"at the national level for Mexico\\\"), using a harmonized grid for the total national extent.\\n        *   **Primary focus = LULC prediction:** The central aim is \\\"to determine the hotspots of LUCC under different socioeconomic and climate change scenarios.\\\" Modeling future LULC is the paper's core research question.\\n        *   **≥2 future scenarios with quantitative comparison:** The paper implements and compares a Business-As-Usual (BAU) scenario and a pessimistic scenario (A2) for three future time periods (2020, 2050, 2080). It provides quantitative comparisons of land cover percentages and change rates between them.\\n        *   **Spatial modeling with quantitative accuracy metrics:** The methodology is based on spatial modeling using Weights of Evidence and Markov chains. It includes a dedicated \\\"Model validation and uncertainty estimations\\\" section reporting quantitative metrics (reciprocal similarity, figure of merit, agreement/disagreement in allocation and quantity).\\n        *   **Outputs include mapped LULC projections:** Figure 2 explicitly shows \\\"LUCC maps in 2007 and 2020, 2050 and 2080 under pessimistic or BAU scenarios.\\\"\\n\\n    *   **Exclusion Criteria (NONE MET):**\\n        *   The scale is national, not global/local/regional.\\n        *   LULC prediction is the central component.\\n        *   It is not species-specific or purely economic/urban.\\n        *   It is not a methodological paper without application; the methodology is applied to the national case.\\n        *   It includes future projections and is not purely historical.\\n        *   It uses remote sensing data but for predictive modeling, not just classification.\\n        *   It implements two distinct scenarios, not a single BAU projection.\\n\\n3.  **Primary Focus Determination:** The paper's primary objective is LULC prediction and hotspot identification under different scenarios. Therefore, it is categorized as **'OK'**.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10567,\"completion_tokens\":519,\"total_tokens\":11086,\"cost\":0.00294464,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00294464,\"upstream_inference_prompt_cost\":0.00274742,\"upstream_inference_completions_cost\":0.00019722},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653512-JeSmy60aIdRq3WS2NE0D",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 10567,
+        "completion_tokens": 519,
+        "total_tokens": 11086,
+        "cost": 0.00294464,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00294464,
+          "upstream_inference_prompt_cost": 0.00274742,
+          "upstream_inference_completions_cost": 0.00019722
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 18.483,
+  "call_id": "DS__z1_52U7H3GL__deepseek__r1",
+  "fingerprint": "e9af0adbe3143d88e7ce507e2e4678f18fd1e00eee08a3c66ad2cab720674cf0",
+  "paper_id": "z1_52U7H3GL",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:58:46.187253+00:00",
+  "input_sha256": "ce40f429364b5d87de9195fad1cadd5c68d7919517a638b4ad1b5f3f5dcf5456",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

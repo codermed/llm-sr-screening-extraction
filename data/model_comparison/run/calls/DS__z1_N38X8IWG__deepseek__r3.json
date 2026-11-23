@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789655455-ursQ7gWd0FW8A4jkzVrR",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00179554,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 13267,
+    "completion_tokens": 158,
+    "total_tokens": 13425,
+    "cost": 0.00179554,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 13184,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00179554,
+      "upstream_inference_prompt_cost": 0.0017355,
+      "upstream_inference_completions_cost": 6.004e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a non-review article that describes the development and parameterization of the LULAS model. While it implements multiple future scenarios (e.g., A1B) and is applied to the conterminous U.S. (national-scale), its primary focus is on presenting the model's *methods and input parameters*, not on generating or validating new LULC predictions. The \"Results\" section is dedicated to model verification and sensitivity analysis of input parameters, not to presenting or assessing the accuracy of LULC prediction outputs. It lacks quantitative accuracy metrics for LULC predictions (e.g., kappa, figure of merit). Therefore, it fails the core inclusion criterion: \"Spatial modeling with quantitative accuracy metrics.\")",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:30:50.665000+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 5.056,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789655455-ursQ7gWd0FW8A4jkzVrR\",\"object\":\"chat.completion\",\"created\":1789655455,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a non-review article that describes the development and parameterization of the LULAS model. While it implements multiple future scenarios (e.g., A1B) and is applied to the conterminous U.S. (national-scale), its primary focus is on presenting the model's *methods and input parameters*, not on generating or validating new LULC predictions. The \\\"Results\\\" section is dedicated to model verification and sensitivity analysis of input parameters, not to presenting or assessing the accuracy of LULC prediction outputs. It lacks quantitative accuracy metrics for LULC predictions (e.g., kappa, figure of merit). Therefore, it fails the core inclusion criterion: \\\"Spatial modeling with quantitative accuracy metrics.\\\")\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":13267,\"completion_tokens\":158,\"total_tokens\":13425,\"cost\":0.00179554,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":13184,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00179554,\"upstream_inference_prompt_cost\":0.0017355,\"upstream_inference_completions_cost\":0.00006004},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655455-ursQ7gWd0FW8A4jkzVrR",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 13267,
+        "completion_tokens": 158,
+        "total_tokens": 13425,
+        "cost": 0.00179554,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 13184,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00179554,
+          "upstream_inference_prompt_cost": 0.0017355,
+          "upstream_inference_completions_cost": 6.004e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 5.056,
+  "call_id": "DS__z1_N38X8IWG__deepseek__r3",
+  "fingerprint": "12b882a925b44633d92706097a85a6fef0309782b814e718c3af1ec8df537169",
+  "paper_id": "z1_N38X8IWG",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:30:55.721143+00:00",
+  "input_sha256": "865c6b6d7e7b15ee5c73086aeb4e90426119d9b63ec4f0aa4fb42788516550ae",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

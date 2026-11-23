@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789655630-fVWW6NKKJM4zMewXaiad",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.019482,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15522,
+    "completion_tokens": 792,
+    "total_tokens": 16314,
+    "cost": 0.019482,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.019482,
+      "upstream_inference_prompt_cost": 0.015522,
+      "upstream_inference_completions_cost": 0.00396
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Butler et al. (2010)\n\n## Initial Assessment\n\n**Is this a review article?**\nNo. This is a primary research paper presenting original empirical analysis and modeling framework development.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### Core Inclusion Criteria Assessment (Non-Review Paper):\n\n1. **Explicit national-scale spatial implementation (entire country)?**\n   - ❌ FAILS: The paper operates at **pan-European scale** across 20 countries aggregated into 4 regions (North, West, East, South). Analysis is regional/continental, not national-scale implementation.\n\n2. **Primary focus = LULC prediction/simulation?**\n   - ❌ FAILS: Primary focus is **farmland bird population dynamics** and biodiversity risk assessment. The paper uses land-use change as a driver variable, but LULC prediction is NOT the central research question.\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ✅ PASSES: Four scenarios are modeled (Scenarios 1-4) with quantitative EFBI predictions for 2020.\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ⚠️ PARTIAL: The framework is validated against observed population trends (R² = 0.26 for BASIC framework), but this is validation of the **ecological model**, not LULC prediction accuracy metrics.\n\n5. **Outputs include mapped LULC projections?**\n   - ❌ FAILS: No mapped LULC projections are produced. Outputs are bird population indices (EFBI) and risk scores by country, not spatial LULC maps or predictions.\n\n### Specific Exclusion Criteria Assessment:\n\n- ✅ **Species-specific/ecological focus unrelated to LULC**: This criterion is MET. The paper's primary focus is **farmland bird population trends and conservation**, using land-use change as an explanatory variable rather than predicting LULC itself.\n\n- ✅ **Global/transboundary scale without national disaggregation**: While not global, the analysis is **pan-European regional aggregation** rather than national-scale implementation.\n\n- ✅ **No LULC prediction component**: While land-use change scenarios are considered, the paper does NOT predict future LULC states; it assumes land-use scenarios and predicts bird population responses.\n\n---\n\n## Summary\n\nThis paper develops a **trait-based risk assessment framework to predict farmland bird population responses to agricultural land-use changes**. While it incorporates land-use change scenarios, its primary objective is **biodiversity conservation and bird population forecasting**, not LULC prediction. The paper uses assumed LULC changes (e.g., set-aside loss, intensification rates) as inputs to predict ecological outcomes, rather than generating LULC predictions themselves.\n\n**Final categorization: EXCLUDED**\n\n**Justification:** \n1. Primary focus is species-specific ecological modeling (farmland bird populations), not LULC prediction\n2. No spatial LULC projections or maps produced\n3. Operates at pan-European regional scale, not national-scale implementation\n4. Land-use change is treated as input/driver variable, not the primary modeling target\n5. Fails core inclusion criteria #1, #2, and #5 (national scale, primary LULC focus, mapped LULC outputs)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:33:46.082986+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 10.352,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655630-fVWW6NKKJM4zMewXaiad\",\"object\":\"chat.completion\",\"created\":1789655630,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Butler et al. (2010)\\n\\n## Initial Assessment\\n\\n**Is this a review article?**\\nNo. This is a primary research paper presenting original empirical analysis and modeling framework development.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### Core Inclusion Criteria Assessment (Non-Review Paper):\\n\\n1. **Explicit national-scale spatial implementation (entire country)?**\\n   - ❌ FAILS: The paper operates at **pan-European scale** across 20 countries aggregated into 4 regions (North, West, East, South). Analysis is regional/continental, not national-scale implementation.\\n\\n2. **Primary focus = LULC prediction/simulation?**\\n   - ❌ FAILS: Primary focus is **farmland bird population dynamics** and biodiversity risk assessment. The paper uses land-use change as a driver variable, but LULC prediction is NOT the central research question.\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ✅ PASSES: Four scenarios are modeled (Scenarios 1-4) with quantitative EFBI predictions for 2020.\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ⚠️ PARTIAL: The framework is validated against observed population trends (R² = 0.26 for BASIC framework), but this is validation of the **ecological model**, not LULC prediction accuracy metrics.\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ❌ FAILS: No mapped LULC projections are produced. Outputs are bird population indices (EFBI) and risk scores by country, not spatial LULC maps or predictions.\\n\\n### Specific Exclusion Criteria Assessment:\\n\\n- ✅ **Species-specific/ecological focus unrelated to LULC**: This criterion is MET. The paper's primary focus is **farmland bird population trends and conservation**, using land-use change as an explanatory variable rather than predicting LULC itself.\\n\\n- ✅ **Global/transboundary scale without national disaggregation**: While not global, the analysis is **pan-European regional aggregation** rather than national-scale implementation.\\n\\n- ✅ **No LULC prediction component**: While land-use change scenarios are considered, the paper does NOT predict future LULC states; it assumes land-use scenarios and predicts bird population responses.\\n\\n---\\n\\n## Summary\\n\\nThis paper develops a **trait-based risk assessment framework to predict farmland bird population responses to agricultural land-use changes**. While it incorporates land-use change scenarios, its primary objective is **biodiversity conservation and bird population forecasting**, not LULC prediction. The paper uses assumed LULC changes (e.g., set-aside loss, intensification rates) as inputs to predict ecological outcomes, rather than generating LULC predictions themselves.\\n\\n**Final categorization: EXCLUDED**\\n\\n**Justification:** \\n1. Primary focus is species-specific ecological modeling (farmland bird populations), not LULC prediction\\n2. No spatial LULC projections or maps produced\\n3. Operates at pan-European regional scale, not national-scale implementation\\n4. Land-use change is treated as input/driver variable, not the primary modeling target\\n5. Fails core inclusion criteria #1, #2, and #5 (national scale, primary LULC focus, mapped LULC outputs)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15522,\"completion_tokens\":792,\"total_tokens\":16314,\"cost\":0.019482,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.019482,\"upstream_inference_prompt_cost\":0.015522,\"upstream_inference_completions_cost\":0.00396},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655630-fVWW6NKKJM4zMewXaiad",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 15522,
+        "completion_tokens": 792,
+        "total_tokens": 16314,
+        "cost": 0.019482,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.019482,
+          "upstream_inference_prompt_cost": 0.015522,
+          "upstream_inference_completions_cost": 0.00396
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 10.353,
+  "call_id": "DS__z1_KDK8WS46__claude__r3",
+  "fingerprint": "3d8ea13386af257a96ae873c7fade10add1340275924ef5ff6b05e55fafa2f13",
+  "paper_id": "z1_KDK8WS46",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:33:56.435252+00:00",
+  "input_sha256": "2a692c9f363ca6ab4066d460cb9b5cbae71d2c6155afe98586edbc8d69fb11e2",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

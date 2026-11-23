@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789655325-LFICNKMngjJE9rL723gj",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.021484,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15254,
+    "completion_tokens": 1246,
+    "total_tokens": 16500,
+    "cost": 0.021484,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.021484,
+      "upstream_inference_prompt_cost": 0.015254,
+      "upstream_inference_completions_cost": 0.00623
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Siamese Eld's Deer Distribution Modeling\n\n## Step 1: Determine if Review Article\n**Result: NO** - This is an original research paper (stated: \"ORIGINAL RESEARCH published: 29 May 2018\"), not a review article.\n\n---\n\n## Step 2: Evaluate Against Inclusion/Exclusion Criteria for Non-Review Papers\n\n### CORE INCLUSION CRITERIA ASSESSMENT:\n\n**1. Explicit national-scale spatial implementation (entire country)?**\n- **FAIL** - Study area is the Emerald Triangle Protected Forests Complex (ETFC), a **transboundary conservation area** spanning parts of Thailand, Cambodia, and Lao PDR\n- Total study area: 25,056 km² (not entire countries)\n- Explicitly stated: \"transboundary forest landscapes\" and \"tri-national borders\"\n- This is explicitly **regional/transboundary scale**, not national-scale\n\n**2. Primary focus = LULC prediction/simulation?**\n- **PARTIAL** - Paper uses LULC scenarios as input, but primary focus is **species distribution modeling** for Siamese Eld's deer\n- Research question centers on: \"predict Siamese Eld's deer distribution and determine potential shifts\"\n- LULC is a supporting variable, not the primary prediction target\n\n**3. Implementation of ≥2 future scenarios with quantitative comparison?**\n- **YES** - Four land use scenarios defined for 2030 (Scenarios 1-4) plus climate change scenarios\n- Quantitative comparisons provided in Table 3\n\n**4. Spatial modeling with quantitative accuracy metrics?**\n- **YES** - Logistic regression and Maxent models with AUC values, contingency tables, overall accuracy (90% for selected model)\n\n**5. Outputs include mapped LULC projections?**\n- **PARTIAL** - Paper includes LULC scenario maps (Figure 2) but these are **inputs** from prior work (Trisurat et al., 2014a), not primary outputs\n- Primary outputs are species distribution maps (Figures 4, 5, 6)\n\n---\n\n### SPECIFIC EXCLUSION CRITERIA ASSESSMENT:\n\n**Global-scale analysis without national-level disaggregation?**\n- Not applicable (regional scale, not global)\n\n**Local/regional/global/transboundary scale focus?**\n- **MATCH** - Explicitly transboundary scale: \"transboundary conservation area in Thailand, Cambodia, and Lao PDR\"\n- This is a specific exclusion criterion\n\n**No LULC prediction component?**\n- Not applicable (LULC scenarios are present)\n\n**Species-specific/ecological focus (flora/fauna) unrelated to LULC?**\n- **MATCH** - Primary focus is **species distribution modeling** for Siamese Eld's deer\n- LULC and climate are environmental variables in the species distribution model\n- The research question is fundamentally about wildlife habitat, not LULC change prediction\n- This is a specific exclusion criterion\n\n**Economic/urban models lacking spatially explicit LULC outputs?**\n- Not applicable\n\n**Biomass/bioenergy/carbon studies without LULC change analysis?**\n- Not applicable\n\n**Methodological papers without application?**\n- Not applicable (applied study)\n\n**Purely Qualitative/Historical analysis only?**\n- Not applicable (quantitative modeling present)\n\n**Remote sensing technical studies without predictive modeling?**\n- Not applicable (includes predictive modeling)\n\n**Single-scenario \"business-as-usual\" projections?**\n- Not applicable (multiple scenarios tested)\n\n---\n\n## Step 3: Determine Primary Focus\n\nThe paper's **primary objective** is to:\n- Predict species (Siamese Eld's deer) distribution under different scenarios\n- Determine habitat suitability shifts\n- Use LULC and climate as **input variables** in species distribution models\n\n**LULC prediction is NOT the primary focus** - it is used as an input/supporting variable in a species distribution modeling framework. The paper explicitly states: \"The objectives of this article were to predict Siamese Eld's deer distribution and to determine potential shifts in its suitable habitat as the results of different land use and climate change scenarios.\"\n\n---\n\n## FINAL CATEGORIZATION\n\n**Final categorization: EXCLUDED**\n\n**Justification:**\n1. **Scale mismatch**: Paper focuses on transboundary/regional scale (ETFC across three countries), explicitly excluding national-scale implementation as a primary criterion\n2. **Primary focus mismatch**: The core research objective is **species distribution modeling**, not LULC prediction. LULC scenarios are input variables, not primary prediction targets\n3. **Species-ecological focus**: This is fundamentally a wildlife habitat/species distribution study where LULC and climate are environmental covariates\n4. **LULC not primary output**: The predicted LULC maps (Figure 2) are derived from prior work (Trisurat et al., 2014a); the primary outputs are species distribution maps\n5. **Fails multiple exclusion criteria**: Meets both \"transboundary scale focus\" and \"species-specific ecological focus unrelated to LULC\" exclusion criteria\n\nThis paper is valuable for transboundary biodiversity conservation but does not meet the inclusion criteria for a study focused on national-scale LULC prediction.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:28:40.673776+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.336,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655325-LFICNKMngjJE9rL723gj\",\"object\":\"chat.completion\",\"created\":1789655325,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Siamese Eld's Deer Distribution Modeling\\n\\n## Step 1: Determine if Review Article\\n**Result: NO** - This is an original research paper (stated: \\\"ORIGINAL RESEARCH published: 29 May 2018\\\"), not a review article.\\n\\n---\\n\\n## Step 2: Evaluate Against Inclusion/Exclusion Criteria for Non-Review Papers\\n\\n### CORE INCLUSION CRITERIA ASSESSMENT:\\n\\n**1. Explicit national-scale spatial implementation (entire country)?**\\n- **FAIL** - Study area is the Emerald Triangle Protected Forests Complex (ETFC), a **transboundary conservation area** spanning parts of Thailand, Cambodia, and Lao PDR\\n- Total study area: 25,056 km² (not entire countries)\\n- Explicitly stated: \\\"transboundary forest landscapes\\\" and \\\"tri-national borders\\\"\\n- This is explicitly **regional/transboundary scale**, not national-scale\\n\\n**2. Primary focus = LULC prediction/simulation?**\\n- **PARTIAL** - Paper uses LULC scenarios as input, but primary focus is **species distribution modeling** for Siamese Eld's deer\\n- Research question centers on: \\\"predict Siamese Eld's deer distribution and determine potential shifts\\\"\\n- LULC is a supporting variable, not the primary prediction target\\n\\n**3. Implementation of ≥2 future scenarios with quantitative comparison?**\\n- **YES** - Four land use scenarios defined for 2030 (Scenarios 1-4) plus climate change scenarios\\n- Quantitative comparisons provided in Table 3\\n\\n**4. Spatial modeling with quantitative accuracy metrics?**\\n- **YES** - Logistic regression and Maxent models with AUC values, contingency tables, overall accuracy (90% for selected model)\\n\\n**5. Outputs include mapped LULC projections?**\\n- **PARTIAL** - Paper includes LULC scenario maps (Figure 2) but these are **inputs** from prior work (Trisurat et al., 2014a), not primary outputs\\n- Primary outputs are species distribution maps (Figures 4, 5, 6)\\n\\n---\\n\\n### SPECIFIC EXCLUSION CRITERIA ASSESSMENT:\\n\\n**Global-scale analysis without national-level disaggregation?**\\n- Not applicable (regional scale, not global)\\n\\n**Local/regional/global/transboundary scale focus?**\\n- **MATCH** - Explicitly transboundary scale: \\\"transboundary conservation area in Thailand, Cambodia, and Lao PDR\\\"\\n- This is a specific exclusion criterion\\n\\n**No LULC prediction component?**\\n- Not applicable (LULC scenarios are present)\\n\\n**Species-specific/ecological focus (flora/fauna) unrelated to LULC?**\\n- **MATCH** - Primary focus is **species distribution modeling** for Siamese Eld's deer\\n- LULC and climate are environmental variables in the species distribution model\\n- The research question is fundamentally about wildlife habitat, not LULC change prediction\\n- This is a specific exclusion criterion\\n\\n**Economic/urban models lacking spatially explicit LULC outputs?**\\n- Not applicable\\n\\n**Biomass/bioenergy/carbon studies without LULC change analysis?**\\n- Not applicable\\n\\n**Methodological papers without application?**\\n- Not applicable (applied study)\\n\\n**Purely Qualitative/Historical analysis only?**\\n- Not applicable (quantitative modeling present)\\n\\n**Remote sensing technical studies without predictive modeling?**\\n- Not applicable (includes predictive modeling)\\n\\n**Single-scenario \\\"business-as-usual\\\" projections?**\\n- Not applicable (multiple scenarios tested)\\n\\n---\\n\\n## Step 3: Determine Primary Focus\\n\\nThe paper's **primary objective** is to:\\n- Predict species (Siamese Eld's deer) distribution under different scenarios\\n- Determine habitat suitability shifts\\n- Use LULC and climate as **input variables** in species distribution models\\n\\n**LULC prediction is NOT the primary focus** - it is used as an input/supporting variable in a species distribution modeling framework. The paper explicitly states: \\\"The objectives of this article were to predict Siamese Eld's deer distribution and to determine potential shifts in its suitable habitat as the results of different land use and climate change scenarios.\\\"\\n\\n---\\n\\n## FINAL CATEGORIZATION\\n\\n**Final categorization: EXCLUDED**\\n\\n**Justification:**\\n1. **Scale mismatch**: Paper focuses on transboundary/regional scale (ETFC across three countries), explicitly excluding national-scale implementation as a primary criterion\\n2. **Primary focus mismatch**: The core research objective is **species distribution modeling**, not LULC prediction. LULC scenarios are input variables, not primary prediction targets\\n3. **Species-ecological focus**: This is fundamentally a wildlife habitat/species distribution study where LULC and climate are environmental covariates\\n4. **LULC not primary output**: The predicted LULC maps (Figure 2) are derived from prior work (Trisurat et al., 2014a); the primary outputs are species distribution maps\\n5. **Fails multiple exclusion criteria**: Meets both \\\"transboundary scale focus\\\" and \\\"species-specific ecological focus unrelated to LULC\\\" exclusion criteria\\n\\nThis paper is valuable for transboundary biodiversity conservation but does not meet the inclusion criteria for a study focused on national-scale LULC prediction.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15254,\"completion_tokens\":1246,\"total_tokens\":16500,\"cost\":0.021484,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.021484,\"upstream_inference_prompt_cost\":0.015254,\"upstream_inference_completions_cost\":0.00623},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655325-LFICNKMngjJE9rL723gj",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 15254,
+        "completion_tokens": 1246,
+        "total_tokens": 16500,
+        "cost": 0.021484,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.021484,
+          "upstream_inference_prompt_cost": 0.015254,
+          "upstream_inference_completions_cost": 0.00623
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.337,
+  "call_id": "DS__z1_62M9Z4AJ__claude__r3",
+  "fingerprint": "65e0fb886d61821b865dc383b5e4880ecf1f55ff33f1d5cfec0ba7c004c59a6d",
+  "paper_id": "z1_62M9Z4AJ",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:28:53.010155+00:00",
+  "input_sha256": "b116f8e7014f23ab582bf7cfb6feb626427a4df147f546a041ef53b4504e6389",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

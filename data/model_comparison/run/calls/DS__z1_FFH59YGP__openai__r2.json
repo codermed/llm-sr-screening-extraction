@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654410-cIH7jrO5cqeUesqMqyJd",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0019768,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 16418,
+    "completion_tokens": 179,
+    "total_tokens": 16597,
+    "cost": 0.0019768,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 16256,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0019768,
+      "upstream_inference_prompt_cost": 0.0016904,
+      "upstream_inference_completions_cost": 0.0002864
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: OK (Justification: This is a non-review research paper focused on national-scale LULC prediction and ecosystem service valuation for Afghanistan. It explicitly implements spatial LULC modeling for the entire country using high-resolution Globland30 data for 2000, 2010, and 2020 as baseline, and simulates future LULC for 2030 under three distinct scenarios (Business-As-Usual, Rapid Economic Development, Environmental Protection). The study uses a spatially explicit Dynamic Land System (DLS) model coupled with linear programming to allocate land use changes, with quantitative accuracy metrics reported (overall accuracy 89%, Kappa 0.78). The paper includes mapped LULC projections, scenario comparisons, and quantitative assessments of LULC change and ecosystem service value changes. It meets all core inclusion criteria and does not meet any exclusion criteria.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:13:25.482452+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.065,
+      "raw_body": "\n         \n{\"id\":\"gen-1789654410-cIH7jrO5cqeUesqMqyJd\",\"object\":\"chat.completion\",\"created\":1789654410,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: This is a non-review research paper focused on national-scale LULC prediction and ecosystem service valuation for Afghanistan. It explicitly implements spatial LULC modeling for the entire country using high-resolution Globland30 data for 2000, 2010, and 2020 as baseline, and simulates future LULC for 2030 under three distinct scenarios (Business-As-Usual, Rapid Economic Development, Environmental Protection). The study uses a spatially explicit Dynamic Land System (DLS) model coupled with linear programming to allocate land use changes, with quantitative accuracy metrics reported (overall accuracy 89%, Kappa 0.78). The paper includes mapped LULC projections, scenario comparisons, and quantitative assessments of LULC change and ecosystem service value changes. It meets all core inclusion criteria and does not meet any exclusion criteria.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":16418,\"completion_tokens\":179,\"total_tokens\":16597,\"cost\":0.0019768,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":16256,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0019768,\"upstream_inference_prompt_cost\":0.0016904,\"upstream_inference_completions_cost\":0.0002864},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654410-cIH7jrO5cqeUesqMqyJd",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 16418,
+        "completion_tokens": 179,
+        "total_tokens": 16597,
+        "cost": 0.0019768,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 16256,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0019768,
+          "upstream_inference_prompt_cost": 0.0016904,
+          "upstream_inference_completions_cost": 0.0002864
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.065,
+  "call_id": "DS__z1_FFH59YGP__openai__r2",
+  "fingerprint": "19b11df5aa764eb922e3cda3bb7ef6ebf10fabea1698ff8ce7c5764488a65337",
+  "paper_id": "z1_FFH59YGP",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:13:28.547099+00:00",
+  "input_sha256": "99ed07a830354535e9eb0481465e6298a7742a9234011807a1244ddf5d78824a",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

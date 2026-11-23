@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789652651-4GcwPc6myPWtjF2zdKQD",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.004368,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10268,
+    "completion_tokens": 163,
+    "total_tokens": 10431,
+    "cost": 0.004368,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004368,
+      "upstream_inference_prompt_cost": 0.0041072,
+      "upstream_inference_completions_cost": 0.0002608
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This is not a review article; it is a research paper focused on biodiversity conservation and climate change impacts on Brazilian rupestrian grasslands. While it includes spatial modeling of future suitability under climate change scenarios, it does not explicitly model or predict land use land cover (LULC) changes at the national scale as a primary focus. The land use analysis is limited to overlap assessments with current land uses and mining impact buffers without spatially explicit LULC future predictions or scenario-based LULC simulations with quantitative accuracy metrics. The primary focus is ecological and conservation-oriented rather than LULC prediction. Therefore, it fails core inclusion criteria related to LULC prediction as the central research question and does not implement spatially explicit, scenario-based LULC projections.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:44:06.955706+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.282,
+      "raw_body": "\n         \n{\"id\":\"gen-1789652651-4GcwPc6myPWtjF2zdKQD\",\"object\":\"chat.completion\",\"created\":1789652651,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This is not a review article; it is a research paper focused on biodiversity conservation and climate change impacts on Brazilian rupestrian grasslands. While it includes spatial modeling of future suitability under climate change scenarios, it does not explicitly model or predict land use land cover (LULC) changes at the national scale as a primary focus. The land use analysis is limited to overlap assessments with current land uses and mining impact buffers without spatially explicit LULC future predictions or scenario-based LULC simulations with quantitative accuracy metrics. The primary focus is ecological and conservation-oriented rather than LULC prediction. Therefore, it fails core inclusion criteria related to LULC prediction as the central research question and does not implement spatially explicit, scenario-based LULC projections.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10268,\"completion_tokens\":163,\"total_tokens\":10431,\"cost\":0.004368,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.004368,\"upstream_inference_prompt_cost\":0.0041072,\"upstream_inference_completions_cost\":0.0002608},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652651-4GcwPc6myPWtjF2zdKQD",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 10268,
+        "completion_tokens": 163,
+        "total_tokens": 10431,
+        "cost": 0.004368,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.004368,
+          "upstream_inference_prompt_cost": 0.0041072,
+          "upstream_inference_completions_cost": 0.0002608
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.283,
+  "call_id": "DS__z1_QDXNJB9I__openai__r1",
+  "fingerprint": "4eb4af0f359d4797b42bbbf34a45ba03492b8cd816b33afd7cc623612e1e946d",
+  "paper_id": "z1_QDXNJB9I",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:44:10.238002+00:00",
+  "input_sha256": "a4e75cce971ba693ac1f55068476354fe32e64b9741d66c7da2d8f0d5a665595",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

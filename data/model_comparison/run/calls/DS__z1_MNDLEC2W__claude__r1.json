@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789653493-JNR7uXav727EcXDBcGWc",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.01499,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10750,
+    "completion_tokens": 848,
+    "total_tokens": 11598,
+    "cost": 0.01499,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01499,
+      "upstream_inference_prompt_cost": 0.01075,
+      "upstream_inference_completions_cost": 0.00424
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Mondini et al. (2012)\n\n## Initial Classification\n**This is a NON-REVIEW PAPER** - It presents original research with spatially explicit modeling and simulations.\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA ASSESSMENT:\n\n1. **Explicit national-scale spatial implementation (entire country)?**\n   - ✓ YES - Study covers entire Italy (longitude 6.750°E to 18.417°E, latitude 36.750°N to 46.917°N)\n   - 1,314 Soil Map Unit (SMU) polygons for Italy analyzed\n   - Spatially explicit GIS-based implementation\n\n2. **Primary focus = LULC prediction/simulation?**\n   - ✗ NO - Primary focus is **soil organic carbon (SOC) dynamics**, not land use/land cover prediction\n   - Land use is treated as a static input variable, not as a prediction output\n   - The paper examines SOC changes under different climate scenarios and management practices\n   - Land use classes are derived from existing Corine Land Cover data (fixed input)\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ✓ YES - 12 climate scenarios (3 GCMs × 4 SRES emissions scenarios) + 2 management scenarios\n   - Quantitative comparisons provided (Mt C, t ha⁻¹, percentage changes)\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ✓ PARTIAL - Spatial modeling present with quantitative outputs (SOC changes, maps)\n   - No validation/accuracy metrics reported (typical for SOC modeling studies)\n\n5. **Outputs include mapped LULC projections?**\n   - ✗ NO - Maps show SOC changes (Figures 3-4), not LULC projections\n   - Land use remains constant throughout simulations\n\n### SPECIFIC EXCLUSION CRITERIA ASSESSMENT:\n\n- **Biomass/bioenergy/carbon studies without LULC change analysis?**\n  - ✓ MATCH - This is a carbon sequestration study focused on SOC dynamics\n  - No LULC change analysis or prediction component\n  - LULC serves only as a static categorization variable\n\n- **No LULC prediction component?**\n  - ✓ MATCH - Explicitly stated: \"keeping land use constant\" (Section 3.2)\n  - Land use is input data, not a modeling output\n\n## Primary Focus Determination\n\n**Primary objective:** Modeling soil organic carbon (SOC) dynamics under climate change and compost amendment scenarios at national scale in Italy.\n\n**LULC role:** Input variable only - land use classes are held constant; the study does not predict or simulate LULC changes.\n\n---\n\n## Final Categorization: **EXCLUDED**\n\n**Justification:** \n\nThis paper fails the core inclusion criterion that the primary focus must be LULC prediction/simulation. While it implements spatially explicit national-scale modeling with multiple scenarios and quantitative outputs, the research is fundamentally focused on **soil organic carbon dynamics**, not land use/land cover prediction or change. Land use is explicitly held constant throughout the simulations and serves only as a categorical input variable for differentiating soil management practices. The paper explicitly states \"keeping land use constant\" when analyzing SOC changes. Additionally, it meets the specific exclusion criterion for \"Biomass/bioenergy/carbon studies without LULC change analysis\" - this is a carbon sequestration study without any LULC prediction component. The mapped outputs show SOC changes, not LULC projections.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:58:08.009475+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 9.727,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789653493-JNR7uXav727EcXDBcGWc\",\"object\":\"chat.completion\",\"created\":1789653493,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Mondini et al. (2012)\\n\\n## Initial Classification\\n**This is a NON-REVIEW PAPER** - It presents original research with spatially explicit modeling and simulations.\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA ASSESSMENT:\\n\\n1. **Explicit national-scale spatial implementation (entire country)?**\\n   - ✓ YES - Study covers entire Italy (longitude 6.750°E to 18.417°E, latitude 36.750°N to 46.917°N)\\n   - 1,314 Soil Map Unit (SMU) polygons for Italy analyzed\\n   - Spatially explicit GIS-based implementation\\n\\n2. **Primary focus = LULC prediction/simulation?**\\n   - ✗ NO - Primary focus is **soil organic carbon (SOC) dynamics**, not land use/land cover prediction\\n   - Land use is treated as a static input variable, not as a prediction output\\n   - The paper examines SOC changes under different climate scenarios and management practices\\n   - Land use classes are derived from existing Corine Land Cover data (fixed input)\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ✓ YES - 12 climate scenarios (3 GCMs × 4 SRES emissions scenarios) + 2 management scenarios\\n   - Quantitative comparisons provided (Mt C, t ha⁻¹, percentage changes)\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ✓ PARTIAL - Spatial modeling present with quantitative outputs (SOC changes, maps)\\n   - No validation/accuracy metrics reported (typical for SOC modeling studies)\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ✗ NO - Maps show SOC changes (Figures 3-4), not LULC projections\\n   - Land use remains constant throughout simulations\\n\\n### SPECIFIC EXCLUSION CRITERIA ASSESSMENT:\\n\\n- **Biomass/bioenergy/carbon studies without LULC change analysis?**\\n  - ✓ MATCH - This is a carbon sequestration study focused on SOC dynamics\\n  - No LULC change analysis or prediction component\\n  - LULC serves only as a static categorization variable\\n\\n- **No LULC prediction component?**\\n  - ✓ MATCH - Explicitly stated: \\\"keeping land use constant\\\" (Section 3.2)\\n  - Land use is input data, not a modeling output\\n\\n## Primary Focus Determination\\n\\n**Primary objective:** Modeling soil organic carbon (SOC) dynamics under climate change and compost amendment scenarios at national scale in Italy.\\n\\n**LULC role:** Input variable only - land use classes are held constant; the study does not predict or simulate LULC changes.\\n\\n---\\n\\n## Final Categorization: **EXCLUDED**\\n\\n**Justification:** \\n\\nThis paper fails the core inclusion criterion that the primary focus must be LULC prediction/simulation. While it implements spatially explicit national-scale modeling with multiple scenarios and quantitative outputs, the research is fundamentally focused on **soil organic carbon dynamics**, not land use/land cover prediction or change. Land use is explicitly held constant throughout the simulations and serves only as a categorical input variable for differentiating soil management practices. The paper explicitly states \\\"keeping land use constant\\\" when analyzing SOC changes. Additionally, it meets the specific exclusion criterion for \\\"Biomass/bioenergy/carbon studies without LULC change analysis\\\" - this is a carbon sequestration study without any LULC prediction component. The mapped outputs show SOC changes, not LULC projections.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10750,\"completion_tokens\":848,\"total_tokens\":11598,\"cost\":0.01499,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.01499,\"upstream_inference_prompt_cost\":0.01075,\"upstream_inference_completions_cost\":0.00424},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653493-JNR7uXav727EcXDBcGWc",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 10750,
+        "completion_tokens": 848,
+        "total_tokens": 11598,
+        "cost": 0.01499,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01499,
+          "upstream_inference_prompt_cost": 0.01075,
+          "upstream_inference_completions_cost": 0.00424
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 9.728,
+  "call_id": "DS__z1_MNDLEC2W__claude__r1",
+  "fingerprint": "1f2004991043f1c9eb33db8d5c9062ac10efe3558c932cbf3a0363459c9a8732",
+  "paper_id": "z1_MNDLEC2W",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:58:17.736568+00:00",
+  "input_sha256": "ec376081d608569def67f5f7ae8c6e58904922bd96581f2505e9d73ce06ea8de",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

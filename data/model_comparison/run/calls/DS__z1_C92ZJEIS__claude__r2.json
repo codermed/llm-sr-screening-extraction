@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789654225-g88Aspmc2RSOArb24DFE",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.009856,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 5991,
+    "completion_tokens": 773,
+    "total_tokens": 6764,
+    "cost": 0.009856,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.009856,
+      "upstream_inference_prompt_cost": 0.005991,
+      "upstream_inference_completions_cost": 0.003865
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Agricultural Intensity Allocation in France\n\n## Initial Classification\n**Is this a review article?** No. This is an original research article presenting a multi-criteria optimization model with empirical simulations.\n\n---\n\n## Non-Review Paper Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA ASSESSMENT:\n\n1. **Explicit national-scale spatial implementation (entire country)**\n   - ✓ PASS: Study explicitly covers France at national scale with 590 of 780 French Small Agricultural Regions (SARs)\n   - Methodology: \"at the scale of France and at the resolution of small agricultural regions\"\n\n2. **Primary focus = LULC prediction/simulation (central research question)**\n   - ✗ FAIL: Primary focus is **agricultural intensity allocation optimization**, NOT land use/land cover prediction\n   - The research question addresses: \"whether the optimization of allocation of intensity could improve food production and biodiversity outcomes\"\n   - Decision variable is intensity levels, not LULC types or transitions\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison**\n   - ✓ PASS: Three scenarios implemented (intensification, extensification, reallocation) with quantitative optimization results\n\n4. **Spatial modeling with quantitative accuracy metrics**\n   - ✓ PASS: Uses GAM statistical models with confidence intervals; optimization produces efficiency frontiers with measurable performance metrics\n\n5. **Outputs include mapped LULC projections**\n   - ✗ FAIL: Outputs are intensity allocations and efficiency frontiers, NOT mapped LULC projections or land cover change predictions\n\n### EXCLUSION CRITERIA CHECK:\n\n- **Species-specific/ecological focus unrelated to LULC**: ✓ TRIGGERED\n  - Paper focuses on farmland bird community composition as biodiversity metric\n  - Agricultural intensity is treated as management variable, not LULC change\n  - No land use/land cover type transitions or conversions modeled\n\n- **No LULC prediction component**: ✓ TRIGGERED\n  - The paper does not predict changes in LULC classes or transitions\n  - It optimizes intensity within existing land use patterns\n  - No remote sensing, classification, or LULC mapping involved\n\n---\n\n## Critical Distinction\nThis paper addresses **agricultural management intensity** (input costs per hectare) within **existing land use patterns** (cropland vs. grassland remain constant). It does NOT model:\n- Land use transitions (e.g., cropland → grassland)\n- Land cover type changes\n- LULC classification or mapping\n- Spatial LULC projections\n\nThe optimization is of an **agricultural practice variable** (intensity), not LULC allocation.\n\n---\n\n## Final Categorization: **EXCLUDED**\n\n**Justification:** While this paper meets some criteria (national-scale implementation, multiple scenarios, spatial modeling), it **fails the primary inclusion criterion** of having LULC prediction/simulation as its central focus. The research explicitly targets agricultural intensity allocation optimization for food production and biodiversity outcomes, not land use/land cover prediction or change modeling. Additionally, it meets **multiple exclusion criteria**: no LULC prediction component, species-specific ecological focus (farmland birds), and outputs are intensity allocations rather than mapped LULC projections. This is fundamentally an agricultural management optimization study, not an LULC prediction study.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:10:20.941374+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 9.894,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789654225-g88Aspmc2RSOArb24DFE\",\"object\":\"chat.completion\",\"created\":1789654225,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Agricultural Intensity Allocation in France\\n\\n## Initial Classification\\n**Is this a review article?** No. This is an original research article presenting a multi-criteria optimization model with empirical simulations.\\n\\n---\\n\\n## Non-Review Paper Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA ASSESSMENT:\\n\\n1. **Explicit national-scale spatial implementation (entire country)**\\n   - ✓ PASS: Study explicitly covers France at national scale with 590 of 780 French Small Agricultural Regions (SARs)\\n   - Methodology: \\\"at the scale of France and at the resolution of small agricultural regions\\\"\\n\\n2. **Primary focus = LULC prediction/simulation (central research question)**\\n   - ✗ FAIL: Primary focus is **agricultural intensity allocation optimization**, NOT land use/land cover prediction\\n   - The research question addresses: \\\"whether the optimization of allocation of intensity could improve food production and biodiversity outcomes\\\"\\n   - Decision variable is intensity levels, not LULC types or transitions\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison**\\n   - ✓ PASS: Three scenarios implemented (intensification, extensification, reallocation) with quantitative optimization results\\n\\n4. **Spatial modeling with quantitative accuracy metrics**\\n   - ✓ PASS: Uses GAM statistical models with confidence intervals; optimization produces efficiency frontiers with measurable performance metrics\\n\\n5. **Outputs include mapped LULC projections**\\n   - ✗ FAIL: Outputs are intensity allocations and efficiency frontiers, NOT mapped LULC projections or land cover change predictions\\n\\n### EXCLUSION CRITERIA CHECK:\\n\\n- **Species-specific/ecological focus unrelated to LULC**: ✓ TRIGGERED\\n  - Paper focuses on farmland bird community composition as biodiversity metric\\n  - Agricultural intensity is treated as management variable, not LULC change\\n  - No land use/land cover type transitions or conversions modeled\\n\\n- **No LULC prediction component**: ✓ TRIGGERED\\n  - The paper does not predict changes in LULC classes or transitions\\n  - It optimizes intensity within existing land use patterns\\n  - No remote sensing, classification, or LULC mapping involved\\n\\n---\\n\\n## Critical Distinction\\nThis paper addresses **agricultural management intensity** (input costs per hectare) within **existing land use patterns** (cropland vs. grassland remain constant). It does NOT model:\\n- Land use transitions (e.g., cropland → grassland)\\n- Land cover type changes\\n- LULC classification or mapping\\n- Spatial LULC projections\\n\\nThe optimization is of an **agricultural practice variable** (intensity), not LULC allocation.\\n\\n---\\n\\n## Final Categorization: **EXCLUDED**\\n\\n**Justification:** While this paper meets some criteria (national-scale implementation, multiple scenarios, spatial modeling), it **fails the primary inclusion criterion** of having LULC prediction/simulation as its central focus. The research explicitly targets agricultural intensity allocation optimization for food production and biodiversity outcomes, not land use/land cover prediction or change modeling. Additionally, it meets **multiple exclusion criteria**: no LULC prediction component, species-specific ecological focus (farmland birds), and outputs are intensity allocations rather than mapped LULC projections. This is fundamentally an agricultural management optimization study, not an LULC prediction study.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":5991,\"completion_tokens\":773,\"total_tokens\":6764,\"cost\":0.009856,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.009856,\"upstream_inference_prompt_cost\":0.005991,\"upstream_inference_completions_cost\":0.003865},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654225-g88Aspmc2RSOArb24DFE",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 5991,
+        "completion_tokens": 773,
+        "total_tokens": 6764,
+        "cost": 0.009856,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.009856,
+          "upstream_inference_prompt_cost": 0.005991,
+          "upstream_inference_completions_cost": 0.003865
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 9.894,
+  "call_id": "DS__z1_C92ZJEIS__claude__r2",
+  "fingerprint": "a79f5928f3e518b4fa34e486252aacff827ab6969fdc5381eeb62e45a455457f",
+  "paper_id": "z1_C92ZJEIS",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:10:30.835378+00:00",
+  "input_sha256": "23dc3cd226443edc63923ee3e569c4933474eed09fe6337ff63eb17bb6f7ac53",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

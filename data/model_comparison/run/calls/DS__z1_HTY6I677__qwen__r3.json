@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789655575-8B4N45NRWTTTMheHrRYF",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00574938,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 6616,
+    "completion_tokens": 151,
+    "total_tokens": 6767,
+    "cost": 0.00574938,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00574938,
+      "upstream_inference_prompt_cost": 0.00516048,
+      "upstream_inference_completions_cost": 0.0005889
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a non-review research article that focuses on estimating greenhouse gas emissions from land use change under different oil palm expansion scenarios in Pará, Brazil—a single state, not the entire country. Thus, it fails the core inclusion criterion of explicit national-scale spatial implementation. Additionally, while it uses land use change projections via the UPLAN model under three enforcement scenarios, the primary objective is carbon emission estimation, not LULC prediction itself. The LULC change is an intermediate step to calculate emissions, making it incidental rather than central. Furthermore, the study area is subnational (Pará only), violating the national-scale requirement, and no quantitative accuracy metrics for the LULC modeling are reported.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:32:51.034784+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.335,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789655575-8B4N45NRWTTTMheHrRYF\",\"object\":\"chat.completion\",\"created\":1789655575,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a non-review research article that focuses on estimating greenhouse gas emissions from land use change under different oil palm expansion scenarios in Pará, Brazil—a single state, not the entire country. Thus, it fails the core inclusion criterion of explicit national-scale spatial implementation. Additionally, while it uses land use change projections via the UPLAN model under three enforcement scenarios, the primary objective is carbon emission estimation, not LULC prediction itself. The LULC change is an intermediate step to calculate emissions, making it incidental rather than central. Furthermore, the study area is subnational (Pará only), violating the national-scale requirement, and no quantitative accuracy metrics for the LULC modeling are reported.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":6616,\"completion_tokens\":151,\"total_tokens\":6767,\"cost\":0.00574938,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00574938,\"upstream_inference_prompt_cost\":0.00516048,\"upstream_inference_completions_cost\":0.0005889},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655575-8B4N45NRWTTTMheHrRYF",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 6616,
+        "completion_tokens": 151,
+        "total_tokens": 6767,
+        "cost": 0.00574938,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00574938,
+          "upstream_inference_prompt_cost": 0.00516048,
+          "upstream_inference_completions_cost": 0.0005889
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.336,
+  "call_id": "DS__z1_HTY6I677__qwen__r3",
+  "fingerprint": "e013961156dd0efb66c4e39b5a459798a4ef549a89445df05f8c7a7ef6f34ce4",
+  "paper_id": "z1_HTY6I677",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:32:55.370087+00:00",
+  "input_sha256": "5df5bb01123962e1729bfcc527172501d8194f72da5c9a7401009bdbb7302728",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789654248-9xHFNpkWQJuPp7JRfZf5",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00828516,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 9917,
+    "completion_tokens": 141,
+    "total_tokens": 10058,
+    "cost": 0.00828516,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00828516,
+      "upstream_inference_prompt_cost": 0.00773526,
+      "upstream_inference_completions_cost": 0.0005499
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a non-review research article focused on modeling the future habitat distribution of the Himalayan Musk Deer under climate change scenarios using MaxEnt. While it uses land cover as one of several environmental predictor variables, its primary objective is species distribution modeling, not land use/land cover (LULC) prediction. The study does not predict or simulate future LULC changes; instead, it assumes static land cover or uses current land cover as input. Therefore, it fails the core inclusion criterion that the primary focus must be LULC prediction. Additionally, it meets the exclusion criterion of being a species-specific ecological study unrelated to LULC prediction.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:10:43.839358+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.214,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789654248-9xHFNpkWQJuPp7JRfZf5\",\"object\":\"chat.completion\",\"created\":1789654248,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a non-review research article focused on modeling the future habitat distribution of the Himalayan Musk Deer under climate change scenarios using MaxEnt. While it uses land cover as one of several environmental predictor variables, its primary objective is species distribution modeling, not land use/land cover (LULC) prediction. The study does not predict or simulate future LULC changes; instead, it assumes static land cover or uses current land cover as input. Therefore, it fails the core inclusion criterion that the primary focus must be LULC prediction. Additionally, it meets the exclusion criterion of being a species-specific ecological study unrelated to LULC prediction.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":9917,\"completion_tokens\":141,\"total_tokens\":10058,\"cost\":0.00828516,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00828516,\"upstream_inference_prompt_cost\":0.00773526,\"upstream_inference_completions_cost\":0.0005499},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654248-9xHFNpkWQJuPp7JRfZf5",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 9917,
+        "completion_tokens": 141,
+        "total_tokens": 10058,
+        "cost": 0.00828516,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00828516,
+          "upstream_inference_prompt_cost": 0.00773526,
+          "upstream_inference_completions_cost": 0.0005499
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.215,
+  "call_id": "DS__z1_MVYW6T8U__qwen__r2",
+  "fingerprint": "2e54d42365ce36f2ea3858a44e9d44f1c1ad26d2186f5c65bccec489b2cd4537",
+  "paper_id": "z1_MVYW6T8U",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:10:48.053426+00:00",
+  "input_sha256": "e389205a975b796ef618687e834d9675169238f42068f5f8e192aa3e89062be6",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

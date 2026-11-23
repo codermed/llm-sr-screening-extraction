@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789655373-hlZ6uIHdXIbCihMhKdGw",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.001256,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 9748,
+    "completion_tokens": 148,
+    "total_tokens": 9896,
+    "cost": 0.001256,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 9600,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001256,
+      "upstream_inference_prompt_cost": 0.0010192,
+      "upstream_inference_completions_cost": 0.0002368
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This paper is a consequential life cycle assessment (CLCA) of dairy farming system conversion in France focusing on environmental impacts including land use and land use change (LULUC). However, it does not perform explicit national-scale spatial LULC prediction or simulation with mapped projections, quantitative accuracy metrics, or multiple future spatial scenarios. Instead, it relies on economic models (GTAP and LEITAP) to estimate indirect land use change impacts as part of an environmental impact assessment. The primary focus is on environmental consequences of dairy system change rather than LULC prediction modeling. Therefore, it fails core inclusion criteria requiring national-scale spatial LULC prediction with quantitative and spatially explicit outputs.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:29:28.163390+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.49,
+      "raw_body": "\n         \n{\"id\":\"gen-1789655373-hlZ6uIHdXIbCihMhKdGw\",\"object\":\"chat.completion\",\"created\":1789655373,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This paper is a consequential life cycle assessment (CLCA) of dairy farming system conversion in France focusing on environmental impacts including land use and land use change (LULUC). However, it does not perform explicit national-scale spatial LULC prediction or simulation with mapped projections, quantitative accuracy metrics, or multiple future spatial scenarios. Instead, it relies on economic models (GTAP and LEITAP) to estimate indirect land use change impacts as part of an environmental impact assessment. The primary focus is on environmental consequences of dairy system change rather than LULC prediction modeling. Therefore, it fails core inclusion criteria requiring national-scale spatial LULC prediction with quantitative and spatially explicit outputs.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":9748,\"completion_tokens\":148,\"total_tokens\":9896,\"cost\":0.001256,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":9600,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.001256,\"upstream_inference_prompt_cost\":0.0010192,\"upstream_inference_completions_cost\":0.0002368},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655373-hlZ6uIHdXIbCihMhKdGw",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 9748,
+        "completion_tokens": 148,
+        "total_tokens": 9896,
+        "cost": 0.001256,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 9600,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001256,
+          "upstream_inference_prompt_cost": 0.0010192,
+          "upstream_inference_completions_cost": 0.0002368
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.49,
+  "call_id": "DS__z1_FXRVVP9G__openai__r3",
+  "fingerprint": "ddf0fcd107b30ebbc2f9aff70b17d2df2b6e2d61ca49b1b21f8232b473ef8844",
+  "paper_id": "z1_FXRVVP9G",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:29:31.653487+00:00",
+  "input_sha256": "324941c435c7b10b7a13d14e07ed36077f3e816f95accaa9cc31dd1fc0085951",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

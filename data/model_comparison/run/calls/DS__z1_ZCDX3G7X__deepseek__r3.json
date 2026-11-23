@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789655355-Yp1PlQ1ReZoaIUy8Q3kF",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00159848,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 5293,
+    "completion_tokens": 585,
+    "total_tokens": 5878,
+    "cost": 0.00159848,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00159848,
+      "upstream_inference_prompt_cost": 0.00137618,
+      "upstream_inference_completions_cost": 0.0002223
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: Non-review paper with explicit national-scale spatial modeling of future agricultural land use in the Netherlands for 2030 under two contrasting scenarios, using the quantitative Land Use Scanner model to produce mapped projections and discuss change patterns.)\n\n**Analysis:**\n\n1.  **Review Article Check:** This is **not** a review article. It is an original research paper presenting a specific modeling application and scenario analysis.\n\n2.  **Core Inclusion Criteria Evaluation (All PASS):**\n    *   ✅ **Explicit national-scale spatial implementation:** The study area is explicitly the entire Netherlands. The methodology states the model divides \"the Netherlands into cells of 500 × 500 metres\" and results are discussed for the country and specific regions within it.\n    *   ✅ **Primary focus = LULC prediction/simulation:** The central research question is \"how expected further changes in agriculture will affect agricultural land use.\" The paper's objective is to simulate future land use (specifically agricultural change) using a model to provide \"an initial answer to the possible future of agricultural land.\"\n    *   ✅ **Implementation of ≥2 future scenarios:** The paper develops and implements two distinct socio-economic scenarios (\"Global Economy\" and \"Regional Community\") with quantified assumptions and land demand projections (see Table 1, Figure 1).\n    *   ✅ **Spatial modeling with quantitative metrics:** It uses the \"Land Use Scanner\" model, a spatial allocation model based on suitability and a logit equation simulating a bidding process. Quantitative national-level demand changes are provided (Figure 1), and the model's logic is described.\n    *   ✅ **Outputs include mapped LULC projections:** Figure 2 presents maps of \"current and projected land use\" for both scenarios for a key region, and the results section describes the spatial patterns of change.\n\n3.  **Exclusion Criteria Evaluation (None Met):**\n    *   ❌ Not global/local/regional/transboundary (it's national).\n    *   ❌ LULC prediction is the core component.\n    *   ❌ No species-specific/ecological focus.\n    *   ❌ Not an economic/urban model without spatial LULC outputs (it is an integrated land-use model).\n    *   ❌ Not a biomass/bioenergy/carbon study.\n    *   ❌ Not a purely methodological paper; it's an application.\n    *   ❌ Not purely qualitative/historical; it projects to 2030.\n    *   ❌ Not a remote sensing technical study.\n    *   ❌ Not a single-scenario projection.\n\n4.  **Primary Focus Determination:** The paper's primary objective is the simulation and prediction of future LULC (specifically agricultural land use and its conversion to other uses) under different policy and socio-economic futures. Therefore, it is categorized as **'OK'**.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:29:10.499379+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 17.647,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655355-Yp1PlQ1ReZoaIUy8Q3kF\",\"object\":\"chat.completion\",\"created\":1789655355,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: Non-review paper with explicit national-scale spatial modeling of future agricultural land use in the Netherlands for 2030 under two contrasting scenarios, using the quantitative Land Use Scanner model to produce mapped projections and discuss change patterns.)\\n\\n**Analysis:**\\n\\n1.  **Review Article Check:** This is **not** a review article. It is an original research paper presenting a specific modeling application and scenario analysis.\\n\\n2.  **Core Inclusion Criteria Evaluation (All PASS):**\\n    *   ✅ **Explicit national-scale spatial implementation:** The study area is explicitly the entire Netherlands. The methodology states the model divides \\\"the Netherlands into cells of 500 × 500 metres\\\" and results are discussed for the country and specific regions within it.\\n    *   ✅ **Primary focus = LULC prediction/simulation:** The central research question is \\\"how expected further changes in agriculture will affect agricultural land use.\\\" The paper's objective is to simulate future land use (specifically agricultural change) using a model to provide \\\"an initial answer to the possible future of agricultural land.\\\"\\n    *   ✅ **Implementation of ≥2 future scenarios:** The paper develops and implements two distinct socio-economic scenarios (\\\"Global Economy\\\" and \\\"Regional Community\\\") with quantified assumptions and land demand projections (see Table 1, Figure 1).\\n    *   ✅ **Spatial modeling with quantitative metrics:** It uses the \\\"Land Use Scanner\\\" model, a spatial allocation model based on suitability and a logit equation simulating a bidding process. Quantitative national-level demand changes are provided (Figure 1), and the model's logic is described.\\n    *   ✅ **Outputs include mapped LULC projections:** Figure 2 presents maps of \\\"current and projected land use\\\" for both scenarios for a key region, and the results section describes the spatial patterns of change.\\n\\n3.  **Exclusion Criteria Evaluation (None Met):**\\n    *   ❌ Not global/local/regional/transboundary (it's national).\\n    *   ❌ LULC prediction is the core component.\\n    *   ❌ No species-specific/ecological focus.\\n    *   ❌ Not an economic/urban model without spatial LULC outputs (it is an integrated land-use model).\\n    *   ❌ Not a biomass/bioenergy/carbon study.\\n    *   ❌ Not a purely methodological paper; it's an application.\\n    *   ❌ Not purely qualitative/historical; it projects to 2030.\\n    *   ❌ Not a remote sensing technical study.\\n    *   ❌ Not a single-scenario projection.\\n\\n4.  **Primary Focus Determination:** The paper's primary objective is the simulation and prediction of future LULC (specifically agricultural land use and its conversion to other uses) under different policy and socio-economic futures. Therefore, it is categorized as **'OK'**.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":5293,\"completion_tokens\":585,\"total_tokens\":5878,\"cost\":0.00159848,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00159848,\"upstream_inference_prompt_cost\":0.00137618,\"upstream_inference_completions_cost\":0.0002223},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655355-Yp1PlQ1ReZoaIUy8Q3kF",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 5293,
+        "completion_tokens": 585,
+        "total_tokens": 5878,
+        "cost": 0.00159848,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00159848,
+          "upstream_inference_prompt_cost": 0.00137618,
+          "upstream_inference_completions_cost": 0.0002223
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 17.648,
+  "call_id": "DS__z1_ZCDX3G7X__deepseek__r3",
+  "fingerprint": "86d012de1835ce663f354d61a03b68c9e710c1cca80c4d121281103bffa1bab3",
+  "paper_id": "z1_ZCDX3G7X",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:29:28.146996+00:00",
+  "input_sha256": "3c38b8903a1fa4e3ed1c6e8948ade44baa7a5bbbf57aee7790be140407d44e48",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

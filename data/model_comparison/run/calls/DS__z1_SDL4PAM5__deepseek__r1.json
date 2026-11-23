@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789652991-3fn3ZZbZuUeU6gdcwBLD",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00396416,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15086,
+    "completion_tokens": 110,
+    "total_tokens": 15196,
+    "cost": 0.00396416,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00396416,
+      "upstream_inference_prompt_cost": 0.00392236,
+      "upstream_inference_completions_cost": 4.18e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: POSSIBLE (Justification: The paper implements a national-scale land-use model (CRAFTY-Sweden) to simulate future ecosystem service provision under multiple scenarios. While LULC prediction is a core component of the model and the analysis includes quantitative spatial outputs and scenario comparisons, the paper's primary objective is to assess the effects of owner decision-making, climate change, and societal demands on ecosystem service provision, not LULC prediction per se. LULC change is a key intermediate output used to analyze impacts on services.)",
+  "automated_status": "usable",
+  "parsed_label": "POSSIBLE",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:49:46.508549+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.351,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789652991-3fn3ZZbZuUeU6gdcwBLD\",\"object\":\"chat.completion\",\"created\":1789652991,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: POSSIBLE (Justification: The paper implements a national-scale land-use model (CRAFTY-Sweden) to simulate future ecosystem service provision under multiple scenarios. While LULC prediction is a core component of the model and the analysis includes quantitative spatial outputs and scenario comparisons, the paper's primary objective is to assess the effects of owner decision-making, climate change, and societal demands on ecosystem service provision, not LULC prediction per se. LULC change is a key intermediate output used to analyze impacts on services.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15086,\"completion_tokens\":110,\"total_tokens\":15196,\"cost\":0.00396416,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00396416,\"upstream_inference_prompt_cost\":0.00392236,\"upstream_inference_completions_cost\":0.0000418},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652991-3fn3ZZbZuUeU6gdcwBLD",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 15086,
+        "completion_tokens": 110,
+        "total_tokens": 15196,
+        "cost": 0.00396416,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00396416,
+          "upstream_inference_prompt_cost": 0.00392236,
+          "upstream_inference_completions_cost": 4.18e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.352,
+  "call_id": "DS__z1_SDL4PAM5__deepseek__r1",
+  "fingerprint": "0d379de2ee4d5296a46a844283d3a6f0b843f63a4fa31425b5c66d063b35d63c",
+  "paper_id": "z1_SDL4PAM5",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:49:50.859900+00:00",
+  "input_sha256": "096cea9fe51615bd51a489b3e2947f8aaa44031e08659e6e9c35898f94e6301a",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

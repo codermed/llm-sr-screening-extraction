@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789653035-noZvh64NLGZ3JcRiqZ5k",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.017008,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10903,
+    "completion_tokens": 1221,
+    "total_tokens": 12124,
+    "cost": 0.017008,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.017008,
+      "upstream_inference_prompt_cost": 0.010903,
+      "upstream_inference_completions_cost": 0.006105
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land Use Change and Ecosystem Services in China\n\n## Paper Type Determination\nThis is a **NON-REVIEW PAPER** (empirical research study with original modeling and analysis).\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA ASSESSMENT:\n\n**1. Explicit national-scale spatial implementation (entire country)**\n- ✅ **PASS**: Study covers entire China (9,600,000 km²), 34 provinces, explicitly stated: \"territory of China is situated approximately between 18°N and 54°N, and 73°E and 135°E\"\n- Spatial resolution: 2 × 2 km grid cells\n\n**2. Primary focus = LULC prediction/simulation (central research question)**\n- ✅ **PASS**: Primary stated objectives include: \"(1) predict spatially explicit land use changes across China using Dyna-CLUE model\" and \"(3) simulate how ESVs change under different land use scenarios\"\n- LULC prediction is the central component, not secondary\n\n**3. Implementation of ≥2 future scenarios with quantitative comparison**\n- ✅ **PASS**: Two distinct scenarios developed and compared:\n  - 2000s trend scenario (extrapolation of 2000-2010 trends)\n  - Planning scenario (based on government policy objectives)\n- Quantitative comparison provided (Table 2, Table 5, Figures 1, 3, 4)\n\n**4. Spatial modeling with quantitative accuracy metrics**\n- ✅ **PASS**: \n  - Dyna-CLUE model employed with validation metrics: quantity disagreement = 0.02, allocation disagreement = 0.16\n  - ROC values reported for model performance (built-up land: 0.976, cropland: 0.916, water area: 0.913, forest: 0.817, grassland: 0.810)\n  - Quantitative change rates provided (e.g., cropland decrease: 19,956 km² and 13,135 km² across scenarios)\n\n**5. Outputs include mapped LULC projections**\n- ✅ **PASS**: Figure 1 displays spatial patterns of land use for 2010 and changes 2010-2020 for all major land use types (cropland, woodland, grassland, water area)\n\n---\n\n### EXCLUSION CRITERIA ASSESSMENT:\n\n**Global-scale analysis without national-level disaggregation**\n- ✅ **PASS**: National-scale China study, not global\n\n**Local/regional/global/transboundary scale focus**\n- ✅ **PASS**: Explicit national scale (entire China)\n\n**No LULC prediction component**\n- ✅ **PASS**: LULC prediction is primary focus\n\n**Species-specific/ecological focus unrelated to LULC**\n- ✅ **PASS**: While ecosystem services are analyzed, they are explicitly linked to LULC change analysis\n\n**Economic/urban models lacking spatially explicit LULC outputs**\n- ✅ **PASS**: Spatially explicit LULC outputs provided with mapped projections\n\n**Biomass/bioenergy/carbon studies without LULC change analysis**\n- ✅ **PASS**: Biomass used as adjustment factor for ESV coefficients within LULC change analysis framework\n\n**Methodological papers without application to national-scale prediction**\n- ✅ **PASS**: Applied methodology with national-scale results\n\n**Purely qualitative/historical analysis only**\n- ✅ **PASS**: Includes future projections (2010-2020)\n\n**Remote sensing technical studies without predictive modeling**\n- ✅ **PASS**: Remote sensing data used as input; primary focus is predictive modeling\n\n**Single-scenario \"business-as-usual\" projections**\n- ✅ **PASS**: Two contrasting scenarios implemented and compared\n\n---\n\n## Primary Focus Determination\n\nThe paper's central research question explicitly addresses LULC prediction: *\"explore the likely effects of land use change on ESV in China\"* with specific objectives to *\"predict spatially explicit land use changes across China\"* and *\"simulate how ESVs change under different land use scenarios.\"*\n\nWhile ecosystem service valuation is analyzed, it is **dependent on and secondary to** the LULC prediction outputs. The LULC prediction is the primary methodological and analytical focus.\n\n---\n\n## Final Categorization\n\n**Final categorization: OK**\n\n**Justification**: This paper meets ALL core inclusion criteria for national-scale LULC prediction research:\n- Explicit national-scale spatial implementation across entire China with 2×2 km resolution\n- Primary focus on LULC prediction using Dyna-CLUE dynamic spatial modeling\n- Two quantitatively compared future scenarios (2000s trend vs. planning scenario)\n- Robust spatial modeling with reported accuracy metrics (quantity/allocation disagreement, ROC values)\n- Mapped LULC projections provided for all major land use classes\n- Passes all exclusion criteria with no disqualifying factors\n\nThe paper represents applied national-scale LULC prediction research with appropriate methodology and transparent reporting of results and uncertainties.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:50:30.663081+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 13.905,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653035-noZvh64NLGZ3JcRiqZ5k\",\"object\":\"chat.completion\",\"created\":1789653035,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land Use Change and Ecosystem Services in China\\n\\n## Paper Type Determination\\nThis is a **NON-REVIEW PAPER** (empirical research study with original modeling and analysis).\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA ASSESSMENT:\\n\\n**1. Explicit national-scale spatial implementation (entire country)**\\n- ✅ **PASS**: Study covers entire China (9,600,000 km²), 34 provinces, explicitly stated: \\\"territory of China is situated approximately between 18°N and 54°N, and 73°E and 135°E\\\"\\n- Spatial resolution: 2 × 2 km grid cells\\n\\n**2. Primary focus = LULC prediction/simulation (central research question)**\\n- ✅ **PASS**: Primary stated objectives include: \\\"(1) predict spatially explicit land use changes across China using Dyna-CLUE model\\\" and \\\"(3) simulate how ESVs change under different land use scenarios\\\"\\n- LULC prediction is the central component, not secondary\\n\\n**3. Implementation of ≥2 future scenarios with quantitative comparison**\\n- ✅ **PASS**: Two distinct scenarios developed and compared:\\n  - 2000s trend scenario (extrapolation of 2000-2010 trends)\\n  - Planning scenario (based on government policy objectives)\\n- Quantitative comparison provided (Table 2, Table 5, Figures 1, 3, 4)\\n\\n**4. Spatial modeling with quantitative accuracy metrics**\\n- ✅ **PASS**: \\n  - Dyna-CLUE model employed with validation metrics: quantity disagreement = 0.02, allocation disagreement = 0.16\\n  - ROC values reported for model performance (built-up land: 0.976, cropland: 0.916, water area: 0.913, forest: 0.817, grassland: 0.810)\\n  - Quantitative change rates provided (e.g., cropland decrease: 19,956 km² and 13,135 km² across scenarios)\\n\\n**5. Outputs include mapped LULC projections**\\n- ✅ **PASS**: Figure 1 displays spatial patterns of land use for 2010 and changes 2010-2020 for all major land use types (cropland, woodland, grassland, water area)\\n\\n---\\n\\n### EXCLUSION CRITERIA ASSESSMENT:\\n\\n**Global-scale analysis without national-level disaggregation**\\n- ✅ **PASS**: National-scale China study, not global\\n\\n**Local/regional/global/transboundary scale focus**\\n- ✅ **PASS**: Explicit national scale (entire China)\\n\\n**No LULC prediction component**\\n- ✅ **PASS**: LULC prediction is primary focus\\n\\n**Species-specific/ecological focus unrelated to LULC**\\n- ✅ **PASS**: While ecosystem services are analyzed, they are explicitly linked to LULC change analysis\\n\\n**Economic/urban models lacking spatially explicit LULC outputs**\\n- ✅ **PASS**: Spatially explicit LULC outputs provided with mapped projections\\n\\n**Biomass/bioenergy/carbon studies without LULC change analysis**\\n- ✅ **PASS**: Biomass used as adjustment factor for ESV coefficients within LULC change analysis framework\\n\\n**Methodological papers without application to national-scale prediction**\\n- ✅ **PASS**: Applied methodology with national-scale results\\n\\n**Purely qualitative/historical analysis only**\\n- ✅ **PASS**: Includes future projections (2010-2020)\\n\\n**Remote sensing technical studies without predictive modeling**\\n- ✅ **PASS**: Remote sensing data used as input; primary focus is predictive modeling\\n\\n**Single-scenario \\\"business-as-usual\\\" projections**\\n- ✅ **PASS**: Two contrasting scenarios implemented and compared\\n\\n---\\n\\n## Primary Focus Determination\\n\\nThe paper's central research question explicitly addresses LULC prediction: *\\\"explore the likely effects of land use change on ESV in China\\\"* with specific objectives to *\\\"predict spatially explicit land use changes across China\\\"* and *\\\"simulate how ESVs change under different land use scenarios.\\\"*\\n\\nWhile ecosystem service valuation is analyzed, it is **dependent on and secondary to** the LULC prediction outputs. The LULC prediction is the primary methodological and analytical focus.\\n\\n---\\n\\n## Final Categorization\\n\\n**Final categorization: OK**\\n\\n**Justification**: This paper meets ALL core inclusion criteria for national-scale LULC prediction research:\\n- Explicit national-scale spatial implementation across entire China with 2×2 km resolution\\n- Primary focus on LULC prediction using Dyna-CLUE dynamic spatial modeling\\n- Two quantitatively compared future scenarios (2000s trend vs. planning scenario)\\n- Robust spatial modeling with reported accuracy metrics (quantity/allocation disagreement, ROC values)\\n- Mapped LULC projections provided for all major land use classes\\n- Passes all exclusion criteria with no disqualifying factors\\n\\nThe paper represents applied national-scale LULC prediction research with appropriate methodology and transparent reporting of results and uncertainties.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10903,\"completion_tokens\":1221,\"total_tokens\":12124,\"cost\":0.017008,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.017008,\"upstream_inference_prompt_cost\":0.010903,\"upstream_inference_completions_cost\":0.006105},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653035-noZvh64NLGZ3JcRiqZ5k",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 10903,
+        "completion_tokens": 1221,
+        "total_tokens": 12124,
+        "cost": 0.017008,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.017008,
+          "upstream_inference_prompt_cost": 0.010903,
+          "upstream_inference_completions_cost": 0.006105
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 13.905,
+  "call_id": "DS__z1_MQW482A9__claude__r1",
+  "fingerprint": "57d61411b38effe34afe20a305e80faa3c87ef7bc34f98e437fa8205e54d96ef",
+  "paper_id": "z1_MQW482A9",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:50:44.568176+00:00",
+  "input_sha256": "abeaa8767150c5d33e0441ab7c9f302f700937d85d8c39c7abd8adda8fd8ed7e",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

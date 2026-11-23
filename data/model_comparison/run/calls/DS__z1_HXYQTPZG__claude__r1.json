@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789653082-2Tteg8TycrHeRnqg5nRo",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.014704,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 9359,
+    "completion_tokens": 1069,
+    "total_tokens": 10428,
+    "cost": 0.014704,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.014704,
+      "upstream_inference_prompt_cost": 0.009359,
+      "upstream_inference_completions_cost": 0.005345
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis\n\n## Initial Assessment\n\n**Is this a review article?**\nNo. This is a research article presenting original empirical research with methods, results, and discussion of land cover change modeling in Bolivia.\n\n---\n\n## Non-Review Paper Evaluation\n\n### Core Inclusion Criteria Assessment:\n\n**1. Explicit national-scale spatial implementation (entire country)?**\n✓ YES - Study explicitly covers forested areas within Bolivia as a whole country. Methods state \"The study region encompasses forested areas within the country of Bolivia\" and data covers the entire nation subdivided into administrative levels (departments, provinces, municipalities).\n\n**2. Primary focus = LULC prediction/simulation (central research question)?**\n✓ YES - The primary objective explicitly states: \"Our objective is to evaluate land cover change scenarios in Bolivia...to inform LCC models for biodiversity assessments.\" The paper develops and compares six deforestation simulations.\n\n**3. Implementation of ≥2 future scenarios with quantitative comparison?**\n✓ YES - Six deforestation simulations created: national-level, department-level, province-level, municipality-level, carbon-level, and ecoregion-level allocations. All are quantitatively compared using multiple metrics (PFOM, SFOM, quantity errors, allocation errors, biodiversity metrics).\n\n**4. Spatial modeling with quantitative accuracy metrics?**\n✓ YES - Extensive quantitative metrics reported: Pixel-level Figure of Merit (PFOM), Stratum Figure of Merit (SFOM), quantity errors (under/over prediction), allocation errors (stratum and pixel-level), Jaccard Similarity Index (JSI), Mean Absolute Error (MAE), Mean Error (ME). Results table (Table 3) presents comprehensive quantitative comparisons.\n\n**5. Outputs include mapped LULC projections?**\n✓ YES - Simulated land cover maps (T3s) generated for each scenario compared to reference land cover (T3r). Spatial allocation of deforestation differs across simulations and is evaluated spatially.\n\n### Exclusion Criteria Assessment:\n\n**Global-scale without national disaggregation?**\n✗ NO - Study is explicitly national-scale (Bolivia only).\n\n**Local/regional/global/transboundary focus?**\n✗ NO - National-scale focus.\n\n**No LULC prediction component?**\n✗ NO - LULC prediction is the core component.\n\n**Species-specific/ecological focus unrelated to LULC?**\n⚠ PARTIAL - While biodiversity assessment is included, it is secondary to the LULC modeling objective. The paper states: \"For conservation applications, it is crucial to assess land change simulations at the grain relevant for the assessment of biodiversity impacts.\" Biodiversity is evaluated AS AN APPLICATION of LULC predictions, not as the primary research focus. The core research question concerns model evaluation methodology for LULC change, with biodiversity impacts as the application context.\n\n**Economic/urban models lacking spatially explicit LULC outputs?**\n✗ NO - Spatially explicit LULC outputs are central.\n\n**Biomass/bioenergy/carbon without LULC change analysis?**\n✗ NO - One scenario uses carbon stocks as allocation basis, but LULC change is the primary focus.\n\n**Methodological paper without national-scale application?**\n✗ NO - Methodology is applied to national-scale Bolivia case study.\n\n**Purely qualitative/historical only?**\n✗ NO - Future projections and quantitative modeling present.\n\n**Remote sensing technical study without predictive modeling?**\n✗ NO - Includes predictive modeling.\n\n**Single-scenario \"business-as-usual\" only?**\n✗ NO - Six distinct scenarios compared.\n\n---\n\n## Final Categorization\n\n**Final categorization: OK**\n\n**Justification:** \nThis paper meets ALL core inclusion criteria for national-scale LULC prediction research:\n- Explicit national implementation (Bolivia)\n- Primary focus on LULC prediction/simulation (deforestation modeling with six scenarios)\n- Multiple future scenarios (6 variants) with quantitative comparison\n- Comprehensive spatial modeling with extensive quantitative accuracy metrics (PFOM, SFOM, quantity/allocation errors, JSI, MAE, ME)\n- Mapped LULC projections for all scenarios\n\nWhile biodiversity assessment is included, it serves as the application context for evaluating LULC model performance—the paper's central research question concerns how to evaluate land change models appropriately for their intended purpose. The LULC prediction component is primary and fully developed, making this a legitimate national-scale LULC prediction research paper.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:51:17.739931+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 11.978,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653082-2Tteg8TycrHeRnqg5nRo\",\"object\":\"chat.completion\",\"created\":1789653082,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis\\n\\n## Initial Assessment\\n\\n**Is this a review article?**\\nNo. This is a research article presenting original empirical research with methods, results, and discussion of land cover change modeling in Bolivia.\\n\\n---\\n\\n## Non-Review Paper Evaluation\\n\\n### Core Inclusion Criteria Assessment:\\n\\n**1. Explicit national-scale spatial implementation (entire country)?**\\n✓ YES - Study explicitly covers forested areas within Bolivia as a whole country. Methods state \\\"The study region encompasses forested areas within the country of Bolivia\\\" and data covers the entire nation subdivided into administrative levels (departments, provinces, municipalities).\\n\\n**2. Primary focus = LULC prediction/simulation (central research question)?**\\n✓ YES - The primary objective explicitly states: \\\"Our objective is to evaluate land cover change scenarios in Bolivia...to inform LCC models for biodiversity assessments.\\\" The paper develops and compares six deforestation simulations.\\n\\n**3. Implementation of ≥2 future scenarios with quantitative comparison?**\\n✓ YES - Six deforestation simulations created: national-level, department-level, province-level, municipality-level, carbon-level, and ecoregion-level allocations. All are quantitatively compared using multiple metrics (PFOM, SFOM, quantity errors, allocation errors, biodiversity metrics).\\n\\n**4. Spatial modeling with quantitative accuracy metrics?**\\n✓ YES - Extensive quantitative metrics reported: Pixel-level Figure of Merit (PFOM), Stratum Figure of Merit (SFOM), quantity errors (under/over prediction), allocation errors (stratum and pixel-level), Jaccard Similarity Index (JSI), Mean Absolute Error (MAE), Mean Error (ME). Results table (Table 3) presents comprehensive quantitative comparisons.\\n\\n**5. Outputs include mapped LULC projections?**\\n✓ YES - Simulated land cover maps (T3s) generated for each scenario compared to reference land cover (T3r). Spatial allocation of deforestation differs across simulations and is evaluated spatially.\\n\\n### Exclusion Criteria Assessment:\\n\\n**Global-scale without national disaggregation?**\\n✗ NO - Study is explicitly national-scale (Bolivia only).\\n\\n**Local/regional/global/transboundary focus?**\\n✗ NO - National-scale focus.\\n\\n**No LULC prediction component?**\\n✗ NO - LULC prediction is the core component.\\n\\n**Species-specific/ecological focus unrelated to LULC?**\\n⚠ PARTIAL - While biodiversity assessment is included, it is secondary to the LULC modeling objective. The paper states: \\\"For conservation applications, it is crucial to assess land change simulations at the grain relevant for the assessment of biodiversity impacts.\\\" Biodiversity is evaluated AS AN APPLICATION of LULC predictions, not as the primary research focus. The core research question concerns model evaluation methodology for LULC change, with biodiversity impacts as the application context.\\n\\n**Economic/urban models lacking spatially explicit LULC outputs?**\\n✗ NO - Spatially explicit LULC outputs are central.\\n\\n**Biomass/bioenergy/carbon without LULC change analysis?**\\n✗ NO - One scenario uses carbon stocks as allocation basis, but LULC change is the primary focus.\\n\\n**Methodological paper without national-scale application?**\\n✗ NO - Methodology is applied to national-scale Bolivia case study.\\n\\n**Purely qualitative/historical only?**\\n✗ NO - Future projections and quantitative modeling present.\\n\\n**Remote sensing technical study without predictive modeling?**\\n✗ NO - Includes predictive modeling.\\n\\n**Single-scenario \\\"business-as-usual\\\" only?**\\n✗ NO - Six distinct scenarios compared.\\n\\n---\\n\\n## Final Categorization\\n\\n**Final categorization: OK**\\n\\n**Justification:** \\nThis paper meets ALL core inclusion criteria for national-scale LULC prediction research:\\n- Explicit national implementation (Bolivia)\\n- Primary focus on LULC prediction/simulation (deforestation modeling with six scenarios)\\n- Multiple future scenarios (6 variants) with quantitative comparison\\n- Comprehensive spatial modeling with extensive quantitative accuracy metrics (PFOM, SFOM, quantity/allocation errors, JSI, MAE, ME)\\n- Mapped LULC projections for all scenarios\\n\\nWhile biodiversity assessment is included, it serves as the application context for evaluating LULC model performance—the paper's central research question concerns how to evaluate land change models appropriately for their intended purpose. The LULC prediction component is primary and fully developed, making this a legitimate national-scale LULC prediction research paper.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":9359,\"completion_tokens\":1069,\"total_tokens\":10428,\"cost\":0.014704,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.014704,\"upstream_inference_prompt_cost\":0.009359,\"upstream_inference_completions_cost\":0.005345},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653082-2Tteg8TycrHeRnqg5nRo",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 9359,
+        "completion_tokens": 1069,
+        "total_tokens": 10428,
+        "cost": 0.014704,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.014704,
+          "upstream_inference_prompt_cost": 0.009359,
+          "upstream_inference_completions_cost": 0.005345
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 11.978,
+  "call_id": "DS__z1_HXYQTPZG__claude__r1",
+  "fingerprint": "91b3230b6d7cd403bea5caa2ceb4efa7cc51a49bc02f8273cb004b6d4de47cec",
+  "paper_id": "z1_HXYQTPZG",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:51:29.717962+00:00",
+  "input_sha256": "eb8b94cc29c09ec3ab6a925249d85614cca1d2b4246120bf31fdf82f3f6913b2",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

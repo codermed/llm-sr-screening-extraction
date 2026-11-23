@@ -1,0 +1,131 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789654974-hbszwmManVJ8SWRrTD2o",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00439088,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15425,
+    "completion_tokens": 1001,
+    "total_tokens": 16426,
+    "cost": 0.00439088,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00439088,
+      "upstream_inference_prompt_cost": 0.0040105,
+      "upstream_inference_completions_cost": 0.00038038
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "objective: To examine decadal Land Use Land Cover (LULC) changes from 1990–2020 and simulate LULC for 2030 and 2050 under different scenarios for Taiwan, incorporating demographic factors.\ncountry: Taiwan\nland_use_classes: Barren; Uncultivated; Shallow water; Deep water; Built-up; Forest; Cultivated\nbaseline_years: 1990; 2000; 2010; 2020\ntarget_future_years: 2030; 2050\nscenarios: 2-variables (Elevation, Distance to roads); 3-variables (Elevation, Distance to roads, Distance to rivers); 5-variables (Aspect, elevation, hillshade, Distance to rivers, slope); 6-variables (Aspect, elevation, hillshade, Distance to rivers, Distance to roads, slope)\nanalysis_methods: Maximum likelihood classifier (supervised classification) for LULC classification; Support Vector Machine led Markov-chain method for LULC simulation; Accuracy assessment using confusion matrix, Overall Accuracy, Kappa coefficient, Producer's Accuracy, User's Accuracy, Root-Mean-Square-Error (RMSE)\nsimulation_method_advantages: The integration of Support Vector Machine (SVM) classification with Markov-chain modeling enables precise LULC classification and dynamic land-cover predictions; SVM provides higher classification accuracy than ANN & maximum-likelihood classifiers; The hybrid approach leverages both precise classification of LULC classes and probabilistic future predictions, improving accuracy in complex urban landscapes.\npredictors: Aspect; Elevation; Hillshade; Distance to river; Distance to road; Slope\npopulation_selected: Yes\ndata_sources: Landsat series satellite images (Landsat 5, 7, 8 Surface Reflectance Tier 1); SRTM-Digital Elevation Model (30 m) for aspect, elevation, hillshade, slope; Open Street Maps & Google Earth for roads; Google Earth Engine for satellite image collection and processing\ntools_software_used: Google Earth Engine; GIS software (not explicitly named)\nvalidation_performed: Yes\nvalidation_methods: Confusion matrix method using ground control points (GCPs); Calculation of Overall Accuracy, Kappa coefficient, Producer's Accuracy, User's Accuracy\nvalidation_data_sources: 655 ground control points (GCPs) as reference for historical LULC validation; 300 GCPs for predicted LULC 2020 validation\nkey_findings: Built-up area increased by 140% from 1990 to 2020; Under the 6-variables scenario, built-up area is simulated to increase by 223% from 1990 by 2050; Barren area decreased by 49.17% from 1990 to 2020; Water Deep area decreased by nearly 49% from 1990 to 2020; Forest area expanded by 2.19% from 1990 to 2020; Cultivated lands increased by 15.27% from 1990 to 2020; The 3-variables scenario (Elevation, Distance to roads, Distance to rivers) is considered the best for simulation, providing results almost identical to the 6-variables scenario with fewer variables; The simulated LULC for 2020 validation recorded an overall accuracy of 0.87 and kappa index of 0.74.\nimplications: The combination of Taiwan’s negative population growth rate and the simultaneous increase in impervious surfaces creates a significant topic for discussion; Findings provide crucial information for decision and policy makers regarding expected urban expansion direction and public infrastructure needs; Supports development of sustainable land-use strategies and understanding of urbanization's ecological impact.\nlimitations: Satellite images before 1990 were not considered due to high cloud coverage; The Markov model assumes transition probabilities remain constant over time (stationarity), which may not hold in areas experiencing rapid shifts; Transition probabilities are static, which can overlook non-linear dynamics of LULC change; Model assumes each cell’s transition probability is independent of its neighbors, potentially overlooking spatial dependencies.\nfuture_directions: Not specified\nscalability: The national-scale approach is essential for countries with diverse land uses and complex socio-ecological contexts, offering a model for future studies in similar regions; The methodology is applicable to other rapidly urbanizing, mid-sized economies facing land-use and environmental challenges.\nnovelty: First study to conduct LULC classification and simulation (1990–2050) for the complete Taiwan territory; Incorporates Taiwan’s demographic shifts, such as negative population growth, in modeling future LULC; One of the first to apply the integrated SVM-Markov approach at a national scale for Taiwan; A long-term, large-scale spatio-temporal study considering demographic factors as no previous study has done for Taiwan.",
+  "automated_status": "usable",
+  "parsed_label": "",
+  "extracted_fields": {
+    "objective": "To examine decadal Land Use Land Cover (LULC) changes from 1990–2020 and simulate LULC for 2030 and 2050 under different scenarios for Taiwan, incorporating demographic factors.",
+    "country": "Taiwan",
+    "land_use_classes": "Barren; Uncultivated; Shallow water; Deep water; Built-up; Forest; Cultivated",
+    "baseline_years": "1990; 2000; 2010; 2020",
+    "target_future_years": "2030; 2050",
+    "scenarios": "2-variables (Elevation, Distance to roads); 3-variables (Elevation, Distance to roads, Distance to rivers); 5-variables (Aspect, elevation, hillshade, Distance to rivers, slope); 6-variables (Aspect, elevation, hillshade, Distance to rivers, Distance to roads, slope)",
+    "analysis_methods": "Maximum likelihood classifier (supervised classification) for LULC classification; Support Vector Machine led Markov-chain method for LULC simulation; Accuracy assessment using confusion matrix, Overall Accuracy, Kappa coefficient, Producer's Accuracy, User's Accuracy, Root-Mean-Square-Error (RMSE)",
+    "simulation_method_advantages": "The integration of Support Vector Machine (SVM) classification with Markov-chain modeling enables precise LULC classification and dynamic land-cover predictions; SVM provides higher classification accuracy than ANN & maximum-likelihood classifiers; The hybrid approach leverages both precise classification of LULC classes and probabilistic future predictions, improving accuracy in complex urban landscapes.",
+    "predictors": "Aspect; Elevation; Hillshade; Distance to river; Distance to road; Slope",
+    "population_selected": "Yes",
+    "data_sources": "Landsat series satellite images (Landsat 5, 7, 8 Surface Reflectance Tier 1); SRTM-Digital Elevation Model (30 m) for aspect, elevation, hillshade, slope; Open Street Maps & Google Earth for roads; Google Earth Engine for satellite image collection and processing",
+    "tools_software_used": "Google Earth Engine; GIS software (not explicitly named)",
+    "validation_performed": "Yes",
+    "validation_methods": "Confusion matrix method using ground control points (GCPs); Calculation of Overall Accuracy, Kappa coefficient, Producer's Accuracy, User's Accuracy",
+    "validation_data_sources": "655 ground control points (GCPs) as reference for historical LULC validation; 300 GCPs for predicted LULC 2020 validation",
+    "key_findings": "Built-up area increased by 140% from 1990 to 2020; Under the 6-variables scenario, built-up area is simulated to increase by 223% from 1990 by 2050; Barren area decreased by 49.17% from 1990 to 2020; Water Deep area decreased by nearly 49% from 1990 to 2020; Forest area expanded by 2.19% from 1990 to 2020; Cultivated lands increased by 15.27% from 1990 to 2020; The 3-variables scenario (Elevation, Distance to roads, Distance to rivers) is considered the best for simulation, providing results almost identical to the 6-variables scenario with fewer variables; The simulated LULC for 2020 validation recorded an overall accuracy of 0.87 and kappa index of 0.74.",
+    "implications": "The combination of Taiwan’s negative population growth rate and the simultaneous increase in impervious surfaces creates a significant topic for discussion; Findings provide crucial information for decision and policy makers regarding expected urban expansion direction and public infrastructure needs; Supports development of sustainable land-use strategies and understanding of urbanization's ecological impact.",
+    "limitations": "Satellite images before 1990 were not considered due to high cloud coverage; The Markov model assumes transition probabilities remain constant over time (stationarity), which may not hold in areas experiencing rapid shifts; Transition probabilities are static, which can overlook non-linear dynamics of LULC change; Model assumes each cell’s transition probability is independent of its neighbors, potentially overlooking spatial dependencies.",
+    "future_directions": "Not specified",
+    "scalability": "The national-scale approach is essential for countries with diverse land uses and complex socio-ecological contexts, offering a model for future studies in similar regions; The methodology is applicable to other rapidly urbanizing, mid-sized economies facing land-use and environmental challenges.",
+    "novelty": "First study to conduct LULC classification and simulation (1990–2050) for the complete Taiwan territory; Incorporates Taiwan’s demographic shifts, such as negative population growth, in modeling future LULC; One of the first to apply the integrated SVM-Markov approach at a national scale for Taiwan; A long-term, large-scale spatio-temporal study considering demographic factors as no previous study has done for Taiwan."
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:22:49.638246+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 28.497,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789654974-hbszwmManVJ8SWRrTD2o\",\"object\":\"chat.completion\",\"created\":1789654974,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"objective: To examine decadal Land Use Land Cover (LULC) changes from 1990–2020 and simulate LULC for 2030 and 2050 under different scenarios for Taiwan, incorporating demographic factors.\\ncountry: Taiwan\\nland_use_classes: Barren; Uncultivated; Shallow water; Deep water; Built-up; Forest; Cultivated\\nbaseline_years: 1990; 2000; 2010; 2020\\ntarget_future_years: 2030; 2050\\nscenarios: 2-variables (Elevation, Distance to roads); 3-variables (Elevation, Distance to roads, Distance to rivers); 5-variables (Aspect, elevation, hillshade, Distance to rivers, slope); 6-variables (Aspect, elevation, hillshade, Distance to rivers, Distance to roads, slope)\\nanalysis_methods: Maximum likelihood classifier (supervised classification) for LULC classification; Support Vector Machine led Markov-chain method for LULC simulation; Accuracy assessment using confusion matrix, Overall Accuracy, Kappa coefficient, Producer's Accuracy, User's Accuracy, Root-Mean-Square-Error (RMSE)\\nsimulation_method_advantages: The integration of Support Vector Machine (SVM) classification with Markov-chain modeling enables precise LULC classification and dynamic land-cover predictions; SVM provides higher classification accuracy than ANN & maximum-likelihood classifiers; The hybrid approach leverages both precise classification of LULC classes and probabilistic future predictions, improving accuracy in complex urban landscapes.\\npredictors: Aspect; Elevation; Hillshade; Distance to river; Distance to road; Slope\\npopulation_selected: Yes\\ndata_sources: Landsat series satellite images (Landsat 5, 7, 8 Surface Reflectance Tier 1); SRTM-Digital Elevation Model (30 m) for aspect, elevation, hillshade, slope; Open Street Maps & Google Earth for roads; Google Earth Engine for satellite image collection and processing\\ntools_software_used: Google Earth Engine; GIS software (not explicitly named)\\nvalidation_performed: Yes\\nvalidation_methods: Confusion matrix method using ground control points (GCPs); Calculation of Overall Accuracy, Kappa coefficient, Producer's Accuracy, User's Accuracy\\nvalidation_data_sources: 655 ground control points (GCPs) as reference for historical LULC validation; 300 GCPs for predicted LULC 2020 validation\\nkey_findings: Built-up area increased by 140% from 1990 to 2020; Under the 6-variables scenario, built-up area is simulated to increase by 223% from 1990 by 2050; Barren area decreased by 49.17% from 1990 to 2020; Water Deep area decreased by nearly 49% from 1990 to 2020; Forest area expanded by 2.19% from 1990 to 2020; Cultivated lands increased by 15.27% from 1990 to 2020; The 3-variables scenario (Elevation, Distance to roads, Distance to rivers) is considered the best for simulation, providing results almost identical to the 6-variables scenario with fewer variables; The simulated LULC for 2020 validation recorded an overall accuracy of 0.87 and kappa index of 0.74.\\nimplications: The combination of Taiwan’s negative population growth rate and the simultaneous increase in impervious surfaces creates a significant topic for discussion; Findings provide crucial information for decision and policy makers regarding expected urban expansion direction and public infrastructure needs; Supports development of sustainable land-use strategies and understanding of urbanization's ecological impact.\\nlimitations: Satellite images before 1990 were not considered due to high cloud coverage; The Markov model assumes transition probabilities remain constant over time (stationarity), which may not hold in areas experiencing rapid shifts; Transition probabilities are static, which can overlook non-linear dynamics of LULC change; Model assumes each cell’s transition probability is independent of its neighbors, potentially overlooking spatial dependencies.\\nfuture_directions: Not specified\\nscalability: The national-scale approach is essential for countries with diverse land uses and complex socio-ecological contexts, offering a model for future studies in similar regions; The methodology is applicable to other rapidly urbanizing, mid-sized economies facing land-use and environmental challenges.\\nnovelty: First study to conduct LULC classification and simulation (1990–2050) for the complete Taiwan territory; Incorporates Taiwan’s demographic shifts, such as negative population growth, in modeling future LULC; One of the first to apply the integrated SVM-Markov approach at a national scale for Taiwan; A long-term, large-scale spatio-temporal study considering demographic factors as no previous study has done for Taiwan.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15425,\"completion_tokens\":1001,\"total_tokens\":16426,\"cost\":0.00439088,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00439088,\"upstream_inference_prompt_cost\":0.0040105,\"upstream_inference_completions_cost\":0.00038038},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654974-hbszwmManVJ8SWRrTD2o",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 15425,
+        "completion_tokens": 1001,
+        "total_tokens": 16426,
+        "cost": 0.00439088,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00439088,
+          "upstream_inference_prompt_cost": 0.0040105,
+          "upstream_inference_completions_cost": 0.00038038
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 28.497,
+  "call_id": "IE__z1_MEE88MWP__deepseek__r3",
+  "fingerprint": "605944fd1d050497c511531a838c7e5d5572f26598ef04cb3f0476d006671b62",
+  "paper_id": "z1_MEE88MWP",
+  "task": "IE",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:23:18.135222+00:00",
+  "input_sha256": "7ba93337d4ee8fc18059d82d643e2f5bf44b90fe58928ccef8602d55c1d6bf96",
+  "prompt_sha256": "14297bb013796d591ac8b688327218aaaac5b0ba0dfe15ed2d7ceb682fe32d8b",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

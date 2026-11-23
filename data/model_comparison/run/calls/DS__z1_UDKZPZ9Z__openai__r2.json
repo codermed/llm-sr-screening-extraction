@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654342-AD2hDfaY1S2RbYisOphg",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.001276,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 9498,
+    "completion_tokens": 175,
+    "total_tokens": 9673,
+    "cost": 0.001276,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 9344,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001276,
+      "upstream_inference_prompt_cost": 0.000996,
+      "upstream_inference_completions_cost": 0.00028
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This is a non-review empirical research paper focused on modeling pollinator community response to bioenergy crop scenarios. Although it includes spatial modeling of land cover changes under two bioenergy scenarios, the study area is limited to Michigan (a sub-national region) and does not implement an explicit national-scale spatial model covering an entire country. The paper does not meet the core inclusion criterion of explicit national-scale spatial implementation. Furthermore, the primary focus is on pollinator ecological responses rather than LULC prediction as a central research question. There is no quantitative accuracy assessment of LULC predictions since land cover changes are scenario-based conversions on marginal lands rather than derived from a calibrated LULC change model. Therefore, it fails the inclusion criteria related to scale, primary focus, and spatial modeling requirements for national-scale LULC prediction studies.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:12:17.596530+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.922,
+      "raw_body": "\n         \n{\"id\":\"gen-1789654342-AD2hDfaY1S2RbYisOphg\",\"object\":\"chat.completion\",\"created\":1789654342,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This is a non-review empirical research paper focused on modeling pollinator community response to bioenergy crop scenarios. Although it includes spatial modeling of land cover changes under two bioenergy scenarios, the study area is limited to Michigan (a sub-national region) and does not implement an explicit national-scale spatial model covering an entire country. The paper does not meet the core inclusion criterion of explicit national-scale spatial implementation. Furthermore, the primary focus is on pollinator ecological responses rather than LULC prediction as a central research question. There is no quantitative accuracy assessment of LULC predictions since land cover changes are scenario-based conversions on marginal lands rather than derived from a calibrated LULC change model. Therefore, it fails the inclusion criteria related to scale, primary focus, and spatial modeling requirements for national-scale LULC prediction studies.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":9498,\"completion_tokens\":175,\"total_tokens\":9673,\"cost\":0.001276,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":9344,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.001276,\"upstream_inference_prompt_cost\":0.000996,\"upstream_inference_completions_cost\":0.00028},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654342-AD2hDfaY1S2RbYisOphg",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 9498,
+        "completion_tokens": 175,
+        "total_tokens": 9673,
+        "cost": 0.001276,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 9344,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001276,
+          "upstream_inference_prompt_cost": 0.000996,
+          "upstream_inference_completions_cost": 0.00028
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.923,
+  "call_id": "DS__z1_UDKZPZ9Z__openai__r2",
+  "fingerprint": "d9c7de1adb9bfb6aa7060dc305325e25a35031f3f220f5560798569f26ed2544",
+  "paper_id": "z1_UDKZPZ9Z",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:12:20.518959+00:00",
+  "input_sha256": "1a04e9cb396d1f12d8418c9d175cf4fe9a63f6cfce5da2749f62bce83763c807",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

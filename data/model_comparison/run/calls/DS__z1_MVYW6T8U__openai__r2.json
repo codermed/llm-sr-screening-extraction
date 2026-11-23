@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653741-maDqk6rIo18ARn7LxMot",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0011516,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 8999,
+    "completion_tokens": 126,
+    "total_tokens": 9125,
+    "cost": 0.0011516,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 8832,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0011516,
+      "upstream_inference_prompt_cost": 0.00095,
+      "upstream_inference_completions_cost": 0.0002016
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a species distribution modeling study focused on the Himalayan Musk Deer habitat under future climate scenarios in Nepal. It does not address land use land cover (LULC) prediction or simulation, nor does it include LULC outputs or mapping. The focus is ecological/species-specific rather than on LULC. Although it uses climate scenarios, there is no spatially explicit LULC prediction or quantitative LULC change analysis at the national scale. Thus, it fails the core inclusion criteria and meets exclusion criteria for species-specific ecological focus unrelated to LULC.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:02:16.271655+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.384,
+      "raw_body": "\n         \n{\"id\":\"gen-1789653741-maDqk6rIo18ARn7LxMot\",\"object\":\"chat.completion\",\"created\":1789653741,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a species distribution modeling study focused on the Himalayan Musk Deer habitat under future climate scenarios in Nepal. It does not address land use land cover (LULC) prediction or simulation, nor does it include LULC outputs or mapping. The focus is ecological/species-specific rather than on LULC. Although it uses climate scenarios, there is no spatially explicit LULC prediction or quantitative LULC change analysis at the national scale. Thus, it fails the core inclusion criteria and meets exclusion criteria for species-specific ecological focus unrelated to LULC.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":8999,\"completion_tokens\":126,\"total_tokens\":9125,\"cost\":0.0011516,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":8832,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0011516,\"upstream_inference_prompt_cost\":0.00095,\"upstream_inference_completions_cost\":0.0002016},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653741-maDqk6rIo18ARn7LxMot",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 8999,
+        "completion_tokens": 126,
+        "total_tokens": 9125,
+        "cost": 0.0011516,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 8832,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0011516,
+          "upstream_inference_prompt_cost": 0.00095,
+          "upstream_inference_completions_cost": 0.0002016
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.384,
+  "call_id": "DS__z1_MVYW6T8U__openai__r2",
+  "fingerprint": "f4811b7653ce0ef9941a880b3fa98153e72dce7306dbdd78955d14cb8027b6a0",
+  "paper_id": "z1_MVYW6T8U",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:02:19.655953+00:00",
+  "input_sha256": "e389205a975b796ef618687e834d9675169238f42068f5f8e192aa3e89062be6",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

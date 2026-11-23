@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789655435-YkDGncVQuMEIcqSLdQG6",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.025117,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 20372,
+    "completion_tokens": 949,
+    "total_tokens": 21321,
+    "cost": 0.025117,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.025117,
+      "upstream_inference_prompt_cost": 0.020372,
+      "upstream_inference_completions_cost": 0.004745
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Abedin et al. (2024)\n\n## Initial Assessment: Review Status\nThis is a **NON-REVIEW PAPER** – it is an original research article presenting empirical species distribution modeling results.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA (Non-Review Papers):\n\n1. **Explicit national-scale spatial implementation (entire country)** ❌\n   - Study area: \"patchy\" distribution across Nepal, Bhutan, Bangladesh, and India (188,316 km²)\n   - This is **transboundary/regional scale**, NOT national-scale\n   - Covers portions of 4 countries, not entire nations\n\n2. **Primary focus = LULC prediction/simulation** ❌\n   - Primary focus: **Species distribution modeling for endangered hispid hare (Caprolagus hispidus)**\n   - Central research question: habitat suitability and distribution patterns of a specific species\n   - LULC is used as an *input variable* (shrubland, herbaceous wetland, built-up/urban distances), not the primary prediction target\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\n   - Three SSP scenarios (ssp126, ssp245, ssp585) for two time periods (2041–2060, 2061–2080)\n   - Quantitative comparisons provided (percentage changes in habitat)\n\n4. **Spatial modeling with quantitative accuracy metrics** ✓\n   - MaxEnt species distribution model with AUC = 0.974 (excellent performance)\n   - TSS score = 0.8641\n   - Quantified suitable habitat: 11,374 km² (6.03% of range)\n\n5. **Outputs include mapped LULC projections** ❌\n   - Outputs are **species habitat suitability maps**, not LULC projections\n   - Maps show where the species can occur, not LULC class distributions or transitions\n\n---\n\n### SPECIFIC EXCLUSION CRITERIA:\n\n- **Local/regional/global/transboundary scale focus** ✓ **TRIGGERED**\n  - Explicitly transboundary (Nepal, India, Bhutan, Bangladesh)\n  - Not national-scale implementation\n\n- **Species-specific/ecological focus (flora/fauna) unrelated to LULC** ✓ **TRIGGERED**\n  - Paper is fundamentally about endangered species conservation\n  - LULC variables are environmental predictors, not the modeling target\n  - No LULC change prediction or classification mapping\n\n- **No LULC prediction component** ✓ **TRIGGERED**\n  - Paper does not predict LULC classes, transitions, or change\n  - It predicts species habitat suitability using LULC as input data\n\n---\n\n## Summary of Findings\n\n**Primary Research Objective:** Species distribution modeling for an endangered mammal species\n\n**LULC Role:** Input variable (Euclidean distance to shrublands, herbaceous wetlands, built-up areas) used to improve species habitat predictions\n\n**Scale:** Transboundary (4 countries) rather than national-scale\n\n**Outputs:** Species habitat suitability maps, not LULC change maps\n\n---\n\n## Final Categorization: **EXCLUDED**\n\n**Justification:** \nThis paper fails multiple core inclusion criteria and triggers multiple exclusion criteria. While it employs sophisticated spatial modeling with multiple future climate scenarios and incorporates LULC variables, it is fundamentally a **species distribution modeling study**, not an LULC prediction study. The primary research objective is to assess habitat suitability for an endangered hare species in response to climate change. LULC data serves as an environmental predictor variable rather than the modeling target. Additionally, the study operates at a **transboundary/regional scale** across four countries rather than implementing national-scale LULC prediction. The outputs are species habitat suitability maps, not LULC classification or change projections. This paper is outside the scope of a national-scale LULC prediction research synthesis.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:30:30.248709+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 10.306,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655435-YkDGncVQuMEIcqSLdQG6\",\"object\":\"chat.completion\",\"created\":1789655435,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Abedin et al. (2024)\\n\\n## Initial Assessment: Review Status\\nThis is a **NON-REVIEW PAPER** – it is an original research article presenting empirical species distribution modeling results.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA (Non-Review Papers):\\n\\n1. **Explicit national-scale spatial implementation (entire country)** ❌\\n   - Study area: \\\"patchy\\\" distribution across Nepal, Bhutan, Bangladesh, and India (188,316 km²)\\n   - This is **transboundary/regional scale**, NOT national-scale\\n   - Covers portions of 4 countries, not entire nations\\n\\n2. **Primary focus = LULC prediction/simulation** ❌\\n   - Primary focus: **Species distribution modeling for endangered hispid hare (Caprolagus hispidus)**\\n   - Central research question: habitat suitability and distribution patterns of a specific species\\n   - LULC is used as an *input variable* (shrubland, herbaceous wetland, built-up/urban distances), not the primary prediction target\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\\n   - Three SSP scenarios (ssp126, ssp245, ssp585) for two time periods (2041–2060, 2061–2080)\\n   - Quantitative comparisons provided (percentage changes in habitat)\\n\\n4. **Spatial modeling with quantitative accuracy metrics** ✓\\n   - MaxEnt species distribution model with AUC = 0.974 (excellent performance)\\n   - TSS score = 0.8641\\n   - Quantified suitable habitat: 11,374 km² (6.03% of range)\\n\\n5. **Outputs include mapped LULC projections** ❌\\n   - Outputs are **species habitat suitability maps**, not LULC projections\\n   - Maps show where the species can occur, not LULC class distributions or transitions\\n\\n---\\n\\n### SPECIFIC EXCLUSION CRITERIA:\\n\\n- **Local/regional/global/transboundary scale focus** ✓ **TRIGGERED**\\n  - Explicitly transboundary (Nepal, India, Bhutan, Bangladesh)\\n  - Not national-scale implementation\\n\\n- **Species-specific/ecological focus (flora/fauna) unrelated to LULC** ✓ **TRIGGERED**\\n  - Paper is fundamentally about endangered species conservation\\n  - LULC variables are environmental predictors, not the modeling target\\n  - No LULC change prediction or classification mapping\\n\\n- **No LULC prediction component** ✓ **TRIGGERED**\\n  - Paper does not predict LULC classes, transitions, or change\\n  - It predicts species habitat suitability using LULC as input data\\n\\n---\\n\\n## Summary of Findings\\n\\n**Primary Research Objective:** Species distribution modeling for an endangered mammal species\\n\\n**LULC Role:** Input variable (Euclidean distance to shrublands, herbaceous wetlands, built-up areas) used to improve species habitat predictions\\n\\n**Scale:** Transboundary (4 countries) rather than national-scale\\n\\n**Outputs:** Species habitat suitability maps, not LULC change maps\\n\\n---\\n\\n## Final Categorization: **EXCLUDED**\\n\\n**Justification:** \\nThis paper fails multiple core inclusion criteria and triggers multiple exclusion criteria. While it employs sophisticated spatial modeling with multiple future climate scenarios and incorporates LULC variables, it is fundamentally a **species distribution modeling study**, not an LULC prediction study. The primary research objective is to assess habitat suitability for an endangered hare species in response to climate change. LULC data serves as an environmental predictor variable rather than the modeling target. Additionally, the study operates at a **transboundary/regional scale** across four countries rather than implementing national-scale LULC prediction. The outputs are species habitat suitability maps, not LULC classification or change projections. This paper is outside the scope of a national-scale LULC prediction research synthesis.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":20372,\"completion_tokens\":949,\"total_tokens\":21321,\"cost\":0.025117,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.025117,\"upstream_inference_prompt_cost\":0.020372,\"upstream_inference_completions_cost\":0.004745},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655435-YkDGncVQuMEIcqSLdQG6",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 20372,
+        "completion_tokens": 949,
+        "total_tokens": 21321,
+        "cost": 0.025117,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.025117,
+          "upstream_inference_prompt_cost": 0.020372,
+          "upstream_inference_completions_cost": 0.004745
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 10.307,
+  "call_id": "DS__z1_KJ77IG9S__claude__r3",
+  "fingerprint": "db64844f0749f14ff89e7da5b085fbdc869005e232fbf4acda21668632d51884",
+  "paper_id": "z1_KJ77IG9S",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:30:40.554851+00:00",
+  "input_sha256": "9e183a4f3a05d909645f884fba508b0ebda1d211ae00b53d5c37a2d8a3f1c161",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

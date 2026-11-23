@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789654162-lBemQF0B4yTnfgkMbQo9",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00339934,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12861,
+    "completion_tokens": 146,
+    "total_tokens": 13007,
+    "cost": 0.00339934,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00339934,
+      "upstream_inference_prompt_cost": 0.00334386,
+      "upstream_inference_completions_cost": 5.548e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper's primary focus is species distribution modeling (SDM) for oak trees under climate change scenarios. While it incorporates land use/land cover (LULC) data as a *secondary input variable* to assess habitat fragmentation, the core research objective is not LULC prediction or simulation. The LULC data is sourced from an external dataset and used statically to modify habitat suitability scores; the paper does not implement its own LULC prediction model, compare multiple LULC future scenarios, or provide quantitative accuracy metrics for LULC change. The national-scale implementation and multi-scenario analysis pertain to climate and species distribution, not to LULC prediction.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:09:17.344256+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.85,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789654162-lBemQF0B4yTnfgkMbQo9\",\"object\":\"chat.completion\",\"created\":1789654162,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper's primary focus is species distribution modeling (SDM) for oak trees under climate change scenarios. While it incorporates land use/land cover (LULC) data as a *secondary input variable* to assess habitat fragmentation, the core research objective is not LULC prediction or simulation. The LULC data is sourced from an external dataset and used statically to modify habitat suitability scores; the paper does not implement its own LULC prediction model, compare multiple LULC future scenarios, or provide quantitative accuracy metrics for LULC change. The national-scale implementation and multi-scenario analysis pertain to climate and species distribution, not to LULC prediction.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12861,\"completion_tokens\":146,\"total_tokens\":13007,\"cost\":0.00339934,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00339934,\"upstream_inference_prompt_cost\":0.00334386,\"upstream_inference_completions_cost\":0.00005548},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654162-lBemQF0B4yTnfgkMbQo9",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 12861,
+        "completion_tokens": 146,
+        "total_tokens": 13007,
+        "cost": 0.00339934,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00339934,
+          "upstream_inference_prompt_cost": 0.00334386,
+          "upstream_inference_completions_cost": 5.548e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.851,
+  "call_id": "DS__z1_T6D52VIR__deepseek__r2",
+  "fingerprint": "81c61142f9540bdecd791d555c2edab0f8f3bfe0bc93dbe14a1f327f849b6422",
+  "paper_id": "z1_T6D52VIR",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:09:22.194700+00:00",
+  "input_sha256": "3e961107bded88866898944bed56f7819c6a9c58476170357e056b95a274e35d",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654774-a78P40P4LpM0aZ884J0G",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.006974,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 16687,
+    "completion_tokens": 187,
+    "total_tokens": 16874,
+    "cost": 0.006974,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006974,
+      "upstream_inference_prompt_cost": 0.0066748,
+      "upstream_inference_completions_cost": 0.0002992
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This is an original research paper focused on the mitigation potential and environmental impacts of bioenergy with carbon capture and storage (BECCS) in Great Britain, specifically analyzing biomass production, energy system scenarios (centralized vs distributed), and associated GHG emissions. While it includes land-use change (LUC) analysis related to bioenergy crop production, it does not have a primary focus on land use land cover (LULC) prediction or simulation as a central research question. The study does not implement multiple future LULC scenarios with quantitative spatial modeling and accuracy metrics; rather, it assesses plausible land availability and environmental impacts under assumed bioenergy pathways. Additionally, the paper’s spatial analysis is limited to biomass catchment areas rather than comprehensive national-scale spatial LULC prediction. Therefore, it does not meet the core inclusion criteria for LULC prediction-focused research and is excluded.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:19:29.618899+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.23,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789654774-a78P40P4LpM0aZ884J0G\",\"object\":\"chat.completion\",\"created\":1789654774,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This is an original research paper focused on the mitigation potential and environmental impacts of bioenergy with carbon capture and storage (BECCS) in Great Britain, specifically analyzing biomass production, energy system scenarios (centralized vs distributed), and associated GHG emissions. While it includes land-use change (LUC) analysis related to bioenergy crop production, it does not have a primary focus on land use land cover (LULC) prediction or simulation as a central research question. The study does not implement multiple future LULC scenarios with quantitative spatial modeling and accuracy metrics; rather, it assesses plausible land availability and environmental impacts under assumed bioenergy pathways. Additionally, the paper’s spatial analysis is limited to biomass catchment areas rather than comprehensive national-scale spatial LULC prediction. Therefore, it does not meet the core inclusion criteria for LULC prediction-focused research and is excluded.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":16687,\"completion_tokens\":187,\"total_tokens\":16874,\"cost\":0.006974,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.006974,\"upstream_inference_prompt_cost\":0.0066748,\"upstream_inference_completions_cost\":0.0002992},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654774-a78P40P4LpM0aZ884J0G",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 16687,
+        "completion_tokens": 187,
+        "total_tokens": 16874,
+        "cost": 0.006974,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.006974,
+          "upstream_inference_prompt_cost": 0.0066748,
+          "upstream_inference_completions_cost": 0.0002992
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.231,
+  "call_id": "DS__z1_KCD6YT66__openai__r2",
+  "fingerprint": "d36a51f5acf4e33e4bdd7f551c74d7cde8f83d1f35245f99a0e451e72e59c399",
+  "paper_id": "z1_KCD6YT66",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:19:33.849613+00:00",
+  "input_sha256": "0ad1182688f7bd119e432767d427241cfc2318f465d78e27c5d244b364014d59",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

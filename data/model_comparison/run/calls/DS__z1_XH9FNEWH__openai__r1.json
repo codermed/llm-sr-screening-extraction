@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653074-VER1xJ4uxbA77R0GpUM2",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0066408,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15926,
+    "completion_tokens": 169,
+    "total_tokens": 16095,
+    "cost": 0.0066408,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0066408,
+      "upstream_inference_prompt_cost": 0.0063704,
+      "upstream_inference_completions_cost": 0.0002704
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: OK (Justification: This is a research paper focused on national-scale (Australia) spatial implementation of land use change modeling, with explicit spatial modeling at ~1.1 km grid resolution across the entire Australian intensive agricultural zone. The primary objective is to predict and simulate future land use changes and agricultural production to 2050 under multiple (72) future scenarios combining global outlooks, productivity rates, adoption hurdles, and capacity constraints. The paper provides quantitative outputs of land use changes, mapped spatial patterns, and quantitative analysis of production, output rates, and economic returns. It includes scenario-based quantitative comparison, spatially explicit modeling, and accuracy/sensitivity analyses. It does not focus on global-scale only, nor is it a review or purely methodological study. Therefore, it meets all inclusion criteria and none of the exclusion criteria.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:51:10.069302+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.85,
+      "raw_body": "\n         \n{\"id\":\"gen-1789653074-VER1xJ4uxbA77R0GpUM2\",\"object\":\"chat.completion\",\"created\":1789653074,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: This is a research paper focused on national-scale (Australia) spatial implementation of land use change modeling, with explicit spatial modeling at ~1.1 km grid resolution across the entire Australian intensive agricultural zone. The primary objective is to predict and simulate future land use changes and agricultural production to 2050 under multiple (72) future scenarios combining global outlooks, productivity rates, adoption hurdles, and capacity constraints. The paper provides quantitative outputs of land use changes, mapped spatial patterns, and quantitative analysis of production, output rates, and economic returns. It includes scenario-based quantitative comparison, spatially explicit modeling, and accuracy/sensitivity analyses. It does not focus on global-scale only, nor is it a review or purely methodological study. Therefore, it meets all inclusion criteria and none of the exclusion criteria.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15926,\"completion_tokens\":169,\"total_tokens\":16095,\"cost\":0.0066408,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0066408,\"upstream_inference_prompt_cost\":0.0063704,\"upstream_inference_completions_cost\":0.0002704},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653074-VER1xJ4uxbA77R0GpUM2",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 15926,
+        "completion_tokens": 169,
+        "total_tokens": 16095,
+        "cost": 0.0066408,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0066408,
+          "upstream_inference_prompt_cost": 0.0063704,
+          "upstream_inference_completions_cost": 0.0002704
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.851,
+  "call_id": "DS__z1_XH9FNEWH__openai__r1",
+  "fingerprint": "3c7fb5a75bcf033d3207d1b9aa20a84d74a5392fc999d9f481a975737d79da2a",
+  "paper_id": "z1_XH9FNEWH",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:51:12.919865+00:00",
+  "input_sha256": "b9dcd4956861fd2ddfe435b59862a95116fedd47ec611d8fff939aef7b574040",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

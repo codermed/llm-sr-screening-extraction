@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789654709-OilwICcNlUcGmHXi7JUj",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.015289,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 9564,
+    "completion_tokens": 1145,
+    "total_tokens": 10709,
+    "cost": 0.015289,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.015289,
+      "upstream_inference_prompt_cost": 0.009564,
+      "upstream_inference_completions_cost": 0.005725
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Rubber Tree Distribution Modeling in India\n\n## Step 1: Determine if Review Article\n**Result: NOT A REVIEW**\nThis is a research article presenting original species distribution modeling using MaxEnt with occurrence data and climate projections.\n\n---\n\n## Step 2: Evaluate Against Core Inclusion Criteria for Non-Review Papers\n\n### Criterion 1: Explicit national-scale spatial implementation\n**Status: FAIL** ❌\n- Study focuses on TWO REGIONAL areas within India: Western Ghats (southern states) and Brahmaputra valley (northeastern states)\n- NOT national-scale coverage of entire country\n- Explicitly stated: \"Study area includes two rubber tree-growing regions in India\" (not all of India)\n\n### Criterion 2: Primary focus = LULC prediction/simulation\n**Status: FAIL** ❌\n- Primary focus is **species distribution modeling** for rubber trees (*Hevea brasiliensis*)\n- Research question centers on \"plausible shifts of a species occurrence enforced by climate change\"\n- LULC is NOT the primary subject; species habitat suitability is\n- The paper mentions LULC only as a potential improvement: \"incorporation of existing land use and land cover (LULC) scenario...may improve the accuracy\"\n\n### Criterion 3: ≥2 future scenarios with quantitative comparison\n**Status: PASS** ✓\n- Three temporal scenarios: Present (2010), 2020, and 2050\n- SRES-A1B climate scenario from IPCC\n- Quantitative comparisons provided (e.g., suitable area in Brahmaputra: 23,095 sq km present → 31,940 sq km in 2020 → 31,535 sq km in 2050)\n\n### Criterion 4: Spatial modeling with quantitative accuracy metrics\n**Status: PARTIAL** ⚠️\n- Spatial modeling: YES (MaxEnt model with 19 bioclimatic variables, 1 km resolution)\n- Accuracy metrics: AUC reported (0.98 training, 0.99 test for Western Ghats)\n- However, metrics assess **species distribution model accuracy**, not LULC prediction accuracy\n\n### Criterion 5: Outputs include mapped LULC projections\n**Status: FAIL** ❌\n- Outputs are **species suitability maps** (Figures 5-6), not LULC maps\n- Maps show probability of rubber tree presence (0-1 scale), not LULC classes or transitions\n- No LULC classification or change detection\n\n---\n\n## Step 3: Evaluate Against Exclusion Criteria\n\n| Exclusion Criterion | Status |\n|---|---|\n| Global-scale without national disaggregation | N/A (regional) |\n| **Local/regional/global scale focus** | **MATCH** ❌ |\n| No LULC prediction component | **MATCH** ❌ |\n| **Species-specific/ecological focus unrelated to LULC** | **MATCH** ❌ |\n| Economic/urban models lacking LULC outputs | N/A |\n| Biomass/bioenergy without LULC change | N/A |\n| Methodological without application | N/A |\n| Qualitative/historical only | N/A |\n| Remote sensing technical without prediction | N/A |\n| Single scenario only | N/A |\n\n**Exclusion Criteria Met: 3 of 10**\n- Regional scale (not national)\n- No LULC prediction component\n- Species distribution focus (ecological/biological, not LULC)\n\n---\n\n## Step 4: Determine Primary Focus\n\n**Primary Objective:** Species distribution modeling under climate change scenarios\n**LULC Role:** Mentioned as potential future improvement (\"incorporation of existing land use and land cover...may improve the accuracy\"), not implemented\n\n---\n\n## Final Categorization\n\n**EXCLUDED**\n\n**Justification:**\n1. **Scale mismatch**: Regional study (two specific regions) rather than national-scale implementation\n2. **Wrong primary focus**: Core research addresses species distribution modeling (*Hevea brasiliensis* habitat suitability), not LULC prediction/change\n3. **No LULC outputs**: Maps show species probability suitability (0-1), not LULC classes, transitions, or change rates\n4. **Ecological rather than LULC focus**: Paper is fundamentally a biogeographical/ecological modeling study, explicitly stated as \"species distribution model\" research\n5. **LULC as acknowledged gap**: Authors note LULC incorporation would improve predictability but did not implement it, confirming LULC is not the research focus\n\nWhile the paper employs spatial modeling and future projections, it does not meet the core inclusion criterion of having LULC prediction as the primary research objective, nor does it implement national-scale analysis required for this filter.",
+  "automated_status": "invalid_output",
+  "parsed_label": "",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:18:24.468750+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.019,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789654709-OilwICcNlUcGmHXi7JUj\",\"object\":\"chat.completion\",\"created\":1789654709,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Rubber Tree Distribution Modeling in India\\n\\n## Step 1: Determine if Review Article\\n**Result: NOT A REVIEW**\\nThis is a research article presenting original species distribution modeling using MaxEnt with occurrence data and climate projections.\\n\\n---\\n\\n## Step 2: Evaluate Against Core Inclusion Criteria for Non-Review Papers\\n\\n### Criterion 1: Explicit national-scale spatial implementation\\n**Status: FAIL** ❌\\n- Study focuses on TWO REGIONAL areas within India: Western Ghats (southern states) and Brahmaputra valley (northeastern states)\\n- NOT national-scale coverage of entire country\\n- Explicitly stated: \\\"Study area includes two rubber tree-growing regions in India\\\" (not all of India)\\n\\n### Criterion 2: Primary focus = LULC prediction/simulation\\n**Status: FAIL** ❌\\n- Primary focus is **species distribution modeling** for rubber trees (*Hevea brasiliensis*)\\n- Research question centers on \\\"plausible shifts of a species occurrence enforced by climate change\\\"\\n- LULC is NOT the primary subject; species habitat suitability is\\n- The paper mentions LULC only as a potential improvement: \\\"incorporation of existing land use and land cover (LULC) scenario...may improve the accuracy\\\"\\n\\n### Criterion 3: ≥2 future scenarios with quantitative comparison\\n**Status: PASS** ✓\\n- Three temporal scenarios: Present (2010), 2020, and 2050\\n- SRES-A1B climate scenario from IPCC\\n- Quantitative comparisons provided (e.g., suitable area in Brahmaputra: 23,095 sq km present → 31,940 sq km in 2020 → 31,535 sq km in 2050)\\n\\n### Criterion 4: Spatial modeling with quantitative accuracy metrics\\n**Status: PARTIAL** ⚠️\\n- Spatial modeling: YES (MaxEnt model with 19 bioclimatic variables, 1 km resolution)\\n- Accuracy metrics: AUC reported (0.98 training, 0.99 test for Western Ghats)\\n- However, metrics assess **species distribution model accuracy**, not LULC prediction accuracy\\n\\n### Criterion 5: Outputs include mapped LULC projections\\n**Status: FAIL** ❌\\n- Outputs are **species suitability maps** (Figures 5-6), not LULC maps\\n- Maps show probability of rubber tree presence (0-1 scale), not LULC classes or transitions\\n- No LULC classification or change detection\\n\\n---\\n\\n## Step 3: Evaluate Against Exclusion Criteria\\n\\n| Exclusion Criterion | Status |\\n|---|---|\\n| Global-scale without national disaggregation | N/A (regional) |\\n| **Local/regional/global scale focus** | **MATCH** ❌ |\\n| No LULC prediction component | **MATCH** ❌ |\\n| **Species-specific/ecological focus unrelated to LULC** | **MATCH** ❌ |\\n| Economic/urban models lacking LULC outputs | N/A |\\n| Biomass/bioenergy without LULC change | N/A |\\n| Methodological without application | N/A |\\n| Qualitative/historical only | N/A |\\n| Remote sensing technical without prediction | N/A |\\n| Single scenario only | N/A |\\n\\n**Exclusion Criteria Met: 3 of 10**\\n- Regional scale (not national)\\n- No LULC prediction component\\n- Species distribution focus (ecological/biological, not LULC)\\n\\n---\\n\\n## Step 4: Determine Primary Focus\\n\\n**Primary Objective:** Species distribution modeling under climate change scenarios\\n**LULC Role:** Mentioned as potential future improvement (\\\"incorporation of existing land use and land cover...may improve the accuracy\\\"), not implemented\\n\\n---\\n\\n## Final Categorization\\n\\n**EXCLUDED**\\n\\n**Justification:**\\n1. **Scale mismatch**: Regional study (two specific regions) rather than national-scale implementation\\n2. **Wrong primary focus**: Core research addresses species distribution modeling (*Hevea brasiliensis* habitat suitability), not LULC prediction/change\\n3. **No LULC outputs**: Maps show species probability suitability (0-1), not LULC classes, transitions, or change rates\\n4. **Ecological rather than LULC focus**: Paper is fundamentally a biogeographical/ecological modeling study, explicitly stated as \\\"species distribution model\\\" research\\n5. **LULC as acknowledged gap**: Authors note LULC incorporation would improve predictability but did not implement it, confirming LULC is not the research focus\\n\\nWhile the paper employs spatial modeling and future projections, it does not meet the core inclusion criterion of having LULC prediction as the primary research objective, nor does it implement national-scale analysis required for this filter.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":9564,\"completion_tokens\":1145,\"total_tokens\":10709,\"cost\":0.015289,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.015289,\"upstream_inference_prompt_cost\":0.009564,\"upstream_inference_completions_cost\":0.005725},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654709-OilwICcNlUcGmHXi7JUj",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 9564,
+        "completion_tokens": 1145,
+        "total_tokens": 10709,
+        "cost": 0.015289,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.015289,
+          "upstream_inference_prompt_cost": 0.009564,
+          "upstream_inference_completions_cost": 0.005725
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.019,
+  "call_id": "DS__z1_VYIYSFYY__claude__r2",
+  "fingerprint": "0f513a234061c5c0d1fd5ec5951f05c1807c36b31d7a28a8243be5dfc4bc543b",
+  "paper_id": "z1_VYIYSFYY",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:18:36.487530+00:00",
+  "input_sha256": "cf2beafcdc0db382e9264e7eec864aa72508816282b40c7fe4118dc723b7d090",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

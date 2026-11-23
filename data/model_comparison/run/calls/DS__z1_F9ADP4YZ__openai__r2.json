@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653645-s6tZlb9RX42AJhNa8YQL",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0019976,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 17566,
+    "completion_tokens": 121,
+    "total_tokens": 17687,
+    "cost": 0.0019976,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 17408,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0019976,
+      "upstream_inference_prompt_cost": 0.001804,
+      "upstream_inference_completions_cost": 0.0001936
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: The study focuses on a district-level (Prayagraj district, India) land use land cover (LULC) change analysis and prediction, which is a local/regional scale rather than a national-scale implementation. Although it involves LULC prediction using MLP-Markov chain methods, it does not meet the core inclusion criterion of explicit national-scale spatial implementation covering an entire country. The study also involves a single scenario prediction rather than multiple future scenarios with quantitative comparison. Therefore, it fails the core inclusion criteria related to scale and scenario implementation.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:00:40.548534+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.651,
+      "raw_body": "\n         \n{\"id\":\"gen-1789653645-s6tZlb9RX42AJhNa8YQL\",\"object\":\"chat.completion\",\"created\":1789653645,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The study focuses on a district-level (Prayagraj district, India) land use land cover (LULC) change analysis and prediction, which is a local/regional scale rather than a national-scale implementation. Although it involves LULC prediction using MLP-Markov chain methods, it does not meet the core inclusion criterion of explicit national-scale spatial implementation covering an entire country. The study also involves a single scenario prediction rather than multiple future scenarios with quantitative comparison. Therefore, it fails the core inclusion criteria related to scale and scenario implementation.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":17566,\"completion_tokens\":121,\"total_tokens\":17687,\"cost\":0.0019976,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":17408,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0019976,\"upstream_inference_prompt_cost\":0.001804,\"upstream_inference_completions_cost\":0.0001936},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653645-s6tZlb9RX42AJhNa8YQL",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 17566,
+        "completion_tokens": 121,
+        "total_tokens": 17687,
+        "cost": 0.0019976,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 17408,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0019976,
+          "upstream_inference_prompt_cost": 0.001804,
+          "upstream_inference_completions_cost": 0.0001936
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.652,
+  "call_id": "DS__z1_F9ADP4YZ__openai__r2",
+  "fingerprint": "e04ee013550cd491203038af9055b9a0ddd9e0df210f2d17d317f4ebfef8510e",
+  "paper_id": "z1_F9ADP4YZ",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:00:43.199774+00:00",
+  "input_sha256": "52bd2eb9639d74990c0a25fef6775067d18ea501b2fc771809613ae232167f41",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789652715-PyksmC5TDtIC6NZmgPOY",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.006702,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 16031,
+    "completion_tokens": 181,
+    "total_tokens": 16212,
+    "cost": 0.006702,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006702,
+      "upstream_inference_prompt_cost": 0.0064124,
+      "upstream_inference_completions_cost": 0.0002896
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This is a non-review research article focusing primarily on the interactions between U.S. vehicle electrification, climate change, and global agricultural markets, including commodity prices, trade, and land use. Although it discusses land allocation changes and cropland use, the study is global in scale and does not implement an explicit national-scale spatially explicit land-use/land-cover (LULC) prediction model with mapped outputs. The land-use modeling is partial equilibrium and aggregate, lacking spatially explicit LULC projections or quantitative spatial accuracy metrics. It also does not focus centrally on LULC prediction or simulation as the primary research question. Therefore, it fails core inclusion criteria related to explicit spatial national-scale LULC prediction modeling and quantitative mapped outputs. The paper is excluded based on the absence of spatially explicit LULC modeling and national-scale mapped projections.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:45:10.403999+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.228,
+      "raw_body": "\n         \n{\"id\":\"gen-1789652715-PyksmC5TDtIC6NZmgPOY\",\"object\":\"chat.completion\",\"created\":1789652715,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This is a non-review research article focusing primarily on the interactions between U.S. vehicle electrification, climate change, and global agricultural markets, including commodity prices, trade, and land use. Although it discusses land allocation changes and cropland use, the study is global in scale and does not implement an explicit national-scale spatially explicit land-use/land-cover (LULC) prediction model with mapped outputs. The land-use modeling is partial equilibrium and aggregate, lacking spatially explicit LULC projections or quantitative spatial accuracy metrics. It also does not focus centrally on LULC prediction or simulation as the primary research question. Therefore, it fails core inclusion criteria related to explicit spatial national-scale LULC prediction modeling and quantitative mapped outputs. The paper is excluded based on the absence of spatially explicit LULC modeling and national-scale mapped projections.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":16031,\"completion_tokens\":181,\"total_tokens\":16212,\"cost\":0.006702,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.006702,\"upstream_inference_prompt_cost\":0.0064124,\"upstream_inference_completions_cost\":0.0002896},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652715-PyksmC5TDtIC6NZmgPOY",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 16031,
+        "completion_tokens": 181,
+        "total_tokens": 16212,
+        "cost": 0.006702,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.006702,
+          "upstream_inference_prompt_cost": 0.0064124,
+          "upstream_inference_completions_cost": 0.0002896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.228,
+  "call_id": "DS__z1_47GEMLBE__openai__r1",
+  "fingerprint": "b84e5f036e42c2dc160a7acfb1689cbd557e401a409b5161610127e378939e9e",
+  "paper_id": "z1_47GEMLBE",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:45:13.632082+00:00",
+  "input_sha256": "7f9c574a44015f89013b3c002e959bca10a54860fdd9f6f55f160bcd77b79b8f",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

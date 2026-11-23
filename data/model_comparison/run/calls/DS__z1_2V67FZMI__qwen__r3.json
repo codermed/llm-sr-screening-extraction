@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789654882-dKEKJbfPmaSuoC6QQpLG",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.01323816,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 16102,
+    "completion_tokens": 174,
+    "total_tokens": 16276,
+    "cost": 0.01323816,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01323816,
+      "upstream_inference_prompt_cost": 0.01255956,
+      "upstream_inference_completions_cost": 0.0006786
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: The paper is a non-review research article that explicitly implements national-scale (Romania) spatial LULC prediction using the CLUE-S model across the entire country. Its primary objective is to simulate and compare future agricultural land use changes under two distinct quantitative scenarios (S1: 1990–2000 trends; S2: 2000–2006 trends) up to 2050. It uses CORINE Land Cover data as input, produces mapped projections of agricultural classes, and reports quantitative accuracy metrics (Overall Accuracy = 85.7–86.1%, Kappa = 0.80–0.82) and change rates by region and land class. All core inclusion criteria are met, and none of the exclusion criteria apply.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:21:17.178539+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 5.78,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789654882-dKEKJbfPmaSuoC6QQpLG\",\"object\":\"chat.completion\",\"created\":1789654882,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: The paper is a non-review research article that explicitly implements national-scale (Romania) spatial LULC prediction using the CLUE-S model across the entire country. Its primary objective is to simulate and compare future agricultural land use changes under two distinct quantitative scenarios (S1: 1990–2000 trends; S2: 2000–2006 trends) up to 2050. It uses CORINE Land Cover data as input, produces mapped projections of agricultural classes, and reports quantitative accuracy metrics (Overall Accuracy = 85.7–86.1%, Kappa = 0.80–0.82) and change rates by region and land class. All core inclusion criteria are met, and none of the exclusion criteria apply.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":16102,\"completion_tokens\":174,\"total_tokens\":16276,\"cost\":0.01323816,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.01323816,\"upstream_inference_prompt_cost\":0.01255956,\"upstream_inference_completions_cost\":0.0006786},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654882-dKEKJbfPmaSuoC6QQpLG",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 16102,
+        "completion_tokens": 174,
+        "total_tokens": 16276,
+        "cost": 0.01323816,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01323816,
+          "upstream_inference_prompt_cost": 0.01255956,
+          "upstream_inference_completions_cost": 0.0006786
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 5.781,
+  "call_id": "DS__z1_2V67FZMI__qwen__r3",
+  "fingerprint": "bb8df1f1c33aa37f17c976b2eaef25e7af68a4436a127592b62b9fb5ed7b0119",
+  "paper_id": "z1_2V67FZMI",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:21:22.958964+00:00",
+  "input_sha256": "319ab64fd25e5e80a1dd6221daf40d2afd9a48662f3109700458c3729fc01ec4",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

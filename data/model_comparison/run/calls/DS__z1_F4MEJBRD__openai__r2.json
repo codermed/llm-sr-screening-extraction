@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654092-AwmoxN1nvAVRueocqOlh",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0018532,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15649,
+    "completion_tokens": 150,
+    "total_tokens": 15799,
+    "cost": 0.0018532,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 15488,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0018532,
+      "upstream_inference_prompt_cost": 0.0016132,
+      "upstream_inference_completions_cost": 0.00024
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This is a research article focused on long-term hydroclimatic projections and climate change impacts on water resources and agriculture in Morocco. Although land cover is considered as a factor influencing water yield, the primary focus is NOT on land use/land cover (LULC) prediction or simulation. The study uses existing land cover data as an input rather than modeling or projecting future LULC scenarios. There is no implementation of LULC prediction models or mapped LULC projections. The analysis centers on hydrological modeling and climate scenarios, not on spatially explicit national-scale LULC change modeling. Therefore, it fails the core inclusion criterion of primary focus on LULC prediction/simulation.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:08:07.741890+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.415,
+      "raw_body": "\n         \n{\"id\":\"gen-1789654092-AwmoxN1nvAVRueocqOlh\",\"object\":\"chat.completion\",\"created\":1789654092,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This is a research article focused on long-term hydroclimatic projections and climate change impacts on water resources and agriculture in Morocco. Although land cover is considered as a factor influencing water yield, the primary focus is NOT on land use/land cover (LULC) prediction or simulation. The study uses existing land cover data as an input rather than modeling or projecting future LULC scenarios. There is no implementation of LULC prediction models or mapped LULC projections. The analysis centers on hydrological modeling and climate scenarios, not on spatially explicit national-scale LULC change modeling. Therefore, it fails the core inclusion criterion of primary focus on LULC prediction/simulation.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15649,\"completion_tokens\":150,\"total_tokens\":15799,\"cost\":0.0018532,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":15488,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0018532,\"upstream_inference_prompt_cost\":0.0016132,\"upstream_inference_completions_cost\":0.00024},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654092-AwmoxN1nvAVRueocqOlh",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 15649,
+        "completion_tokens": 150,
+        "total_tokens": 15799,
+        "cost": 0.0018532,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 15488,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0018532,
+          "upstream_inference_prompt_cost": 0.0016132,
+          "upstream_inference_completions_cost": 0.00024
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.416,
+  "call_id": "DS__z1_F4MEJBRD__openai__r2",
+  "fingerprint": "e0cfc9f8b7cda66d85acabfa884a115e03a33d72e251faa5473520c66f926ea9",
+  "paper_id": "z1_F4MEJBRD",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:08:10.157302+00:00",
+  "input_sha256": "cc60c22a4c074eeb28260784150566f0a32079034ced97ed81089a7b9aa6510e",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789655369-WofEKg73wlJCfqnwbcG9",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0019324,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 16031,
+    "completion_tokens": 176,
+    "total_tokens": 16207,
+    "cost": 0.0019324,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 15872,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0019324,
+      "upstream_inference_prompt_cost": 0.0016508,
+      "upstream_inference_completions_cost": 0.0002816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This is a non-review research paper focusing primarily on the interactions between U.S. vehicle electrification, climate change, and global agricultural markets. Although land-use change is discussed as an important factor and outcome, the study uses a global agricultural trade partial equilibrium model without spatially explicit national-scale LULC prediction or mapping. The land-use change analysis is aggregate (cropland area changes) without spatially explicit outputs or accuracy metrics. The primary focus is on commodity prices, trade, and food security rather than explicit spatial LULC prediction at the national scale. The study does not meet core inclusion criteria such as explicit national-scale spatial implementation with mapped LULC projections and quantitative spatial accuracy metrics. The analysis is global and regional with no detailed spatial modeling of LULC. Therefore, it fails inclusion criteria and is excluded.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:29:24.678940+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.016,
+      "raw_body": "\n         \n{\"id\":\"gen-1789655369-WofEKg73wlJCfqnwbcG9\",\"object\":\"chat.completion\",\"created\":1789655369,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This is a non-review research paper focusing primarily on the interactions between U.S. vehicle electrification, climate change, and global agricultural markets. Although land-use change is discussed as an important factor and outcome, the study uses a global agricultural trade partial equilibrium model without spatially explicit national-scale LULC prediction or mapping. The land-use change analysis is aggregate (cropland area changes) without spatially explicit outputs or accuracy metrics. The primary focus is on commodity prices, trade, and food security rather than explicit spatial LULC prediction at the national scale. The study does not meet core inclusion criteria such as explicit national-scale spatial implementation with mapped LULC projections and quantitative spatial accuracy metrics. The analysis is global and regional with no detailed spatial modeling of LULC. Therefore, it fails inclusion criteria and is excluded.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":16031,\"completion_tokens\":176,\"total_tokens\":16207,\"cost\":0.0019324,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":15872,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0019324,\"upstream_inference_prompt_cost\":0.0016508,\"upstream_inference_completions_cost\":0.0002816},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655369-WofEKg73wlJCfqnwbcG9",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 16031,
+        "completion_tokens": 176,
+        "total_tokens": 16207,
+        "cost": 0.0019324,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 15872,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0019324,
+          "upstream_inference_prompt_cost": 0.0016508,
+          "upstream_inference_completions_cost": 0.0002816
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.017,
+  "call_id": "DS__z1_47GEMLBE__openai__r3",
+  "fingerprint": "6546babd5f2d021d3476abc0b08b93d2304e3c6d7e1b50052a78462be17e5318",
+  "paper_id": "z1_47GEMLBE",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:29:27.694815+00:00",
+  "input_sha256": "7f9c574a44015f89013b3c002e959bca10a54860fdd9f6f55f160bcd77b79b8f",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

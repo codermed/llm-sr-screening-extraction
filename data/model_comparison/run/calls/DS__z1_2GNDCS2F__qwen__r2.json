@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789654554-Zf3empzoQK2uM76HJQnC",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00889746,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10502,
+    "completion_tokens": 181,
+    "total_tokens": 10683,
+    "cost": 0.00889746,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00889746,
+      "upstream_inference_prompt_cost": 0.00819156,
+      "upstream_inference_completions_cost": 0.0007059
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: POSSIBLE (Justification: The paper is a non-review research article that simulates future land-use change at the national scale for China using a national integrated assessment model (T21-China) coupled with CLUMondo, producing spatially explicit land system maps under three future scenarios. However, the primary objective of the study is not LULC prediction itself, but rather estimating the impacts of those land changes—particularly considering land-use intensity—on terrestrial ecosystem carbon storage (TECS). LULC prediction serves as a necessary input step to the core goal of TECS estimation. The study meets several inclusion criteria (national scale, ≥2 scenarios, spatial modeling, mapped outputs), but because LULC prediction is not the central research focus—it is instrumental to carbon storage analysis—the appropriate label is 'POSSIBLE'. It does not meet exclusion criteria and is not a review.)",
+  "automated_status": "usable",
+  "parsed_label": "POSSIBLE",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:15:49.256980+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 5.088,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789654554-Zf3empzoQK2uM76HJQnC\",\"object\":\"chat.completion\",\"created\":1789654554,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: POSSIBLE (Justification: The paper is a non-review research article that simulates future land-use change at the national scale for China using a national integrated assessment model (T21-China) coupled with CLUMondo, producing spatially explicit land system maps under three future scenarios. However, the primary objective of the study is not LULC prediction itself, but rather estimating the impacts of those land changes—particularly considering land-use intensity—on terrestrial ecosystem carbon storage (TECS). LULC prediction serves as a necessary input step to the core goal of TECS estimation. The study meets several inclusion criteria (national scale, ≥2 scenarios, spatial modeling, mapped outputs), but because LULC prediction is not the central research focus—it is instrumental to carbon storage analysis—the appropriate label is 'POSSIBLE'. It does not meet exclusion criteria and is not a review.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10502,\"completion_tokens\":181,\"total_tokens\":10683,\"cost\":0.00889746,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00889746,\"upstream_inference_prompt_cost\":0.00819156,\"upstream_inference_completions_cost\":0.0007059},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654554-Zf3empzoQK2uM76HJQnC",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 10502,
+        "completion_tokens": 181,
+        "total_tokens": 10683,
+        "cost": 0.00889746,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00889746,
+          "upstream_inference_prompt_cost": 0.00819156,
+          "upstream_inference_completions_cost": 0.0007059
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 5.088,
+  "call_id": "DS__z1_2GNDCS2F__qwen__r2",
+  "fingerprint": "0b49be128f4f6a7067356ffe8a310ec19c383274c62a6853687576d3d3c8c00d",
+  "paper_id": "z1_2GNDCS2F",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:15:54.344974+00:00",
+  "input_sha256": "24406ffea880e23dd42889d9735217df97d793743208c6bc2807f6507cfac3c3",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

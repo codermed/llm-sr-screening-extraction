@@ -1,0 +1,131 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789655739-BvxixSZr6aoDoftoHfVl",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00354718,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12541,
+    "completion_tokens": 754,
+    "total_tokens": 13295,
+    "cost": 0.00354718,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00354718,
+      "upstream_inference_prompt_cost": 0.00326066,
+      "upstream_inference_completions_cost": 0.00028652
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "objective: To simulate past and future forest cover changes in India using Land Change Modeler (LCM) and multi-layer perceptron neural network to understand spatio-temporal patterns of deforestation and afforestation.\ncountry: India\nland_use_classes: Forest; Non-Forest\nbaseline_years: 1880; 1930; 1975; 1985; 1995; 2005; 2013\ntarget_future_years: 2025\nscenarios: Business-as-usual (BAU)\nanalysis_methods: Land Change Modeler (LCM); Multi-layer perceptron (MLP) neural network; Markov-cellular automata (MCA) model; Change detection analysis; Transition potentials modelling; Cramer's V statistic for variable selection; Kappa statistic for validation\nsimulation_method_advantages: LCM considers driver data (e.g., proximity to roads, settlements) for spatial prediction, unlike Markov chain models which only give temporal dynamics. CA-Markov combines temporal and spatial pattern simulation, improving prediction accuracy.\npredictors: Elevation; Slope; Distance to roads; Distance to settlements; Distance to water bodies\npopulation_selected: Yes (population trends and growth mentioned as contextual factors influencing deforestation, but not used as a direct predictor variable in the model)\ndata_sources: Multi-temporal classified forest cover data from National Remote Sensing Centre (National Carbon Project); Historical archives (district and state level); Shuttle Radar Topography Mission (SRTM) DEM; Forest cover maps from previous studies (Reddy et al. 2016a, b)\ntools_software_used: IDRISI Selva software (Land Change Modeler)\nvalidation_performed: Yes\nvalidation_methods: Comparison of simulated forest cover map (2013) with actual classified forest cover map (2013); Computation of Cohen's Kappa statistic from confusion matrix\nvalidation_data_sources: Actual remote sensing derived forest cover map for 2013\nkey_findings: Predicted forest cover in 1880 was 1,042,008 km² (31.7% of India); About 40% of forest cover lost between 1880–2013; Highest deforestation rates in Northeastern states and Andaman & Nicobar Islands (>0.3 annual gross rate from 2005–2013); Model predicted further decrease of 2305 km² of forest area in these regions by 2025; Majority of protected areas successful in protecting forest cover, except Manas, Sonai-Rupai, Nameri and Marat Longri; Deforestation rate greater during British rule (1880–1947) and early post-independence, decreased after 198s due to conservation policies; Inverse relationship between deforestation and elevation (low elevation forests more vulnerable); Slope and elevation were strongest explanatory variables for deforestation.\nimplications: Useful for effective resource management, biodiversity conservation, and climate change mitigation; Supports REDD+ Programme; Can aid in declaration of new protected areas and regional planning.\nlimitations: Model assumes business-as-usual scenario based on historical trends; Does not incorporate all socio-economic or political factors explicitly; Relies on accuracy of input historical and remote sensing data.\nfuture_directions: Focus on vulnerable areas for effective conservation, enhancement of carbon stocks, and sustainable forest management.\nscalability: Methodology can be applied to other regions for forest cover change modelling, given availability of multi-temporal land cover data and relevant spatial drivers.\nnovelty: Reconstruction of past forest cover (1880) using spatial modelling; Long-term (1880–2025) spatio-temporal prediction of forest cover changes at national scale; Integration of historical archives with remote sensing data and neural network modelling for India.",
+  "automated_status": "usable",
+  "parsed_label": "",
+  "extracted_fields": {
+    "objective": "To simulate past and future forest cover changes in India using Land Change Modeler (LCM) and multi-layer perceptron neural network to understand spatio-temporal patterns of deforestation and afforestation.",
+    "country": "India",
+    "land_use_classes": "Forest; Non-Forest",
+    "baseline_years": "1880; 1930; 1975; 1985; 1995; 2005; 2013",
+    "target_future_years": "2025",
+    "scenarios": "Business-as-usual (BAU)",
+    "analysis_methods": "Land Change Modeler (LCM); Multi-layer perceptron (MLP) neural network; Markov-cellular automata (MCA) model; Change detection analysis; Transition potentials modelling; Cramer's V statistic for variable selection; Kappa statistic for validation",
+    "simulation_method_advantages": "LCM considers driver data (e.g., proximity to roads, settlements) for spatial prediction, unlike Markov chain models which only give temporal dynamics. CA-Markov combines temporal and spatial pattern simulation, improving prediction accuracy.",
+    "predictors": "Elevation; Slope; Distance to roads; Distance to settlements; Distance to water bodies",
+    "population_selected": "Yes (population trends and growth mentioned as contextual factors influencing deforestation, but not used as a direct predictor variable in the model)",
+    "data_sources": "Multi-temporal classified forest cover data from National Remote Sensing Centre (National Carbon Project); Historical archives (district and state level); Shuttle Radar Topography Mission (SRTM) DEM; Forest cover maps from previous studies (Reddy et al. 2016a, b)",
+    "tools_software_used": "IDRISI Selva software (Land Change Modeler)",
+    "validation_performed": "Yes",
+    "validation_methods": "Comparison of simulated forest cover map (2013) with actual classified forest cover map (2013); Computation of Cohen's Kappa statistic from confusion matrix",
+    "validation_data_sources": "Actual remote sensing derived forest cover map for 2013",
+    "key_findings": "Predicted forest cover in 1880 was 1,042,008 km² (31.7% of India); About 40% of forest cover lost between 1880–2013; Highest deforestation rates in Northeastern states and Andaman & Nicobar Islands (>0.3 annual gross rate from 2005–2013); Model predicted further decrease of 2305 km² of forest area in these regions by 2025; Majority of protected areas successful in protecting forest cover, except Manas, Sonai-Rupai, Nameri and Marat Longri; Deforestation rate greater during British rule (1880–1947) and early post-independence, decreased after 198s due to conservation policies; Inverse relationship between deforestation and elevation (low elevation forests more vulnerable); Slope and elevation were strongest explanatory variables for deforestation.",
+    "implications": "Useful for effective resource management, biodiversity conservation, and climate change mitigation; Supports REDD+ Programme; Can aid in declaration of new protected areas and regional planning.",
+    "limitations": "Model assumes business-as-usual scenario based on historical trends; Does not incorporate all socio-economic or political factors explicitly; Relies on accuracy of input historical and remote sensing data.",
+    "future_directions": "Focus on vulnerable areas for effective conservation, enhancement of carbon stocks, and sustainable forest management.",
+    "scalability": "Methodology can be applied to other regions for forest cover change modelling, given availability of multi-temporal land cover data and relevant spatial drivers.",
+    "novelty": "Reconstruction of past forest cover (1880) using spatial modelling; Long-term (1880–2025) spatio-temporal prediction of forest cover changes at national scale; Integration of historical archives with remote sensing data and neural network modelling for India."
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:35:34.771202+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 26.592,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655739-BvxixSZr6aoDoftoHfVl\",\"object\":\"chat.completion\",\"created\":1789655739,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"objective: To simulate past and future forest cover changes in India using Land Change Modeler (LCM) and multi-layer perceptron neural network to understand spatio-temporal patterns of deforestation and afforestation.\\ncountry: India\\nland_use_classes: Forest; Non-Forest\\nbaseline_years: 1880; 1930; 1975; 1985; 1995; 2005; 2013\\ntarget_future_years: 2025\\nscenarios: Business-as-usual (BAU)\\nanalysis_methods: Land Change Modeler (LCM); Multi-layer perceptron (MLP) neural network; Markov-cellular automata (MCA) model; Change detection analysis; Transition potentials modelling; Cramer's V statistic for variable selection; Kappa statistic for validation\\nsimulation_method_advantages: LCM considers driver data (e.g., proximity to roads, settlements) for spatial prediction, unlike Markov chain models which only give temporal dynamics. CA-Markov combines temporal and spatial pattern simulation, improving prediction accuracy.\\npredictors: Elevation; Slope; Distance to roads; Distance to settlements; Distance to water bodies\\npopulation_selected: Yes (population trends and growth mentioned as contextual factors influencing deforestation, but not used as a direct predictor variable in the model)\\ndata_sources: Multi-temporal classified forest cover data from National Remote Sensing Centre (National Carbon Project); Historical archives (district and state level); Shuttle Radar Topography Mission (SRTM) DEM; Forest cover maps from previous studies (Reddy et al. 2016a, b)\\ntools_software_used: IDRISI Selva software (Land Change Modeler)\\nvalidation_performed: Yes\\nvalidation_methods: Comparison of simulated forest cover map (2013) with actual classified forest cover map (2013); Computation of Cohen's Kappa statistic from confusion matrix\\nvalidation_data_sources: Actual remote sensing derived forest cover map for 2013\\nkey_findings: Predicted forest cover in 1880 was 1,042,008 km² (31.7% of India); About 40% of forest cover lost between 1880–2013; Highest deforestation rates in Northeastern states and Andaman & Nicobar Islands (>0.3 annual gross rate from 2005–2013); Model predicted further decrease of 2305 km² of forest area in these regions by 2025; Majority of protected areas successful in protecting forest cover, except Manas, Sonai-Rupai, Nameri and Marat Longri; Deforestation rate greater during British rule (1880–1947) and early post-independence, decreased after 198s due to conservation policies; Inverse relationship between deforestation and elevation (low elevation forests more vulnerable); Slope and elevation were strongest explanatory variables for deforestation.\\nimplications: Useful for effective resource management, biodiversity conservation, and climate change mitigation; Supports REDD+ Programme; Can aid in declaration of new protected areas and regional planning.\\nlimitations: Model assumes business-as-usual scenario based on historical trends; Does not incorporate all socio-economic or political factors explicitly; Relies on accuracy of input historical and remote sensing data.\\nfuture_directions: Focus on vulnerable areas for effective conservation, enhancement of carbon stocks, and sustainable forest management.\\nscalability: Methodology can be applied to other regions for forest cover change modelling, given availability of multi-temporal land cover data and relevant spatial drivers.\\nnovelty: Reconstruction of past forest cover (1880) using spatial modelling; Long-term (1880–2025) spatio-temporal prediction of forest cover changes at national scale; Integration of historical archives with remote sensing data and neural network modelling for India.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12541,\"completion_tokens\":754,\"total_tokens\":13295,\"cost\":0.00354718,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00354718,\"upstream_inference_prompt_cost\":0.00326066,\"upstream_inference_completions_cost\":0.00028652},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655739-BvxixSZr6aoDoftoHfVl",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 12541,
+        "completion_tokens": 754,
+        "total_tokens": 13295,
+        "cost": 0.00354718,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00354718,
+          "upstream_inference_prompt_cost": 0.00326066,
+          "upstream_inference_completions_cost": 0.00028652
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 26.592,
+  "call_id": "IE__z1_4VZ2CD2X__deepseek__r3",
+  "fingerprint": "e9f05df9a123c1dfebc6218a5b20c29448b41bc37b857d38ee9c3fc77ce45add",
+  "paper_id": "z1_4VZ2CD2X",
+  "task": "IE",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:36:01.363221+00:00",
+  "input_sha256": "74f305578bb53e61d6488bfd782c4914aba2cf87164faeb1d46dbb7ffeb5d265",
+  "prompt_sha256": "14297bb013796d591ac8b688327218aaaac5b0ba0dfe15ed2d7ceb682fe32d8b",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

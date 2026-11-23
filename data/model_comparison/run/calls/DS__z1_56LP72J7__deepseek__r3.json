@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789655859-3aoARLcltDgpah4zYIFC",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00327096,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12452,
+    "completion_tokens": 88,
+    "total_tokens": 12540,
+    "cost": 0.00327096,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00327096,
+      "upstream_inference_prompt_cost": 0.00323752,
+      "upstream_inference_completions_cost": 3.344e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: Non-review research paper with explicit national-scale spatial implementation for China; primary focus is simulating LULC change (cropland balance scenarios) using the LANDSCAPE model; implements and compares 8 future scenarios (4 scales × 2 balance types) with quantitative outputs; uses spatial modeling with reported accuracy metrics (Kappa Simulation); outputs include mapped LULC projections for 2030.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:37:34.994748+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 6.809,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789655859-3aoARLcltDgpah4zYIFC\",\"object\":\"chat.completion\",\"created\":1789655859,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: Non-review research paper with explicit national-scale spatial implementation for China; primary focus is simulating LULC change (cropland balance scenarios) using the LANDSCAPE model; implements and compares 8 future scenarios (4 scales × 2 balance types) with quantitative outputs; uses spatial modeling with reported accuracy metrics (Kappa Simulation); outputs include mapped LULC projections for 2030.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12452,\"completion_tokens\":88,\"total_tokens\":12540,\"cost\":0.00327096,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00327096,\"upstream_inference_prompt_cost\":0.00323752,\"upstream_inference_completions_cost\":0.00003344},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655859-3aoARLcltDgpah4zYIFC",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 12452,
+        "completion_tokens": 88,
+        "total_tokens": 12540,
+        "cost": 0.00327096,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00327096,
+          "upstream_inference_prompt_cost": 0.00323752,
+          "upstream_inference_completions_cost": 3.344e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 6.809,
+  "call_id": "DS__z1_56LP72J7__deepseek__r3",
+  "fingerprint": "5e5505e910bb8ebce5307cdd2afb910c48d2b8fc166bb3acde06e3891ac7769c",
+  "paper_id": "z1_56LP72J7",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:37:41.803744+00:00",
+  "input_sha256": "02ce782a167a635055197b5ef0db76a25dd37334b358e5141f5153737afd4657",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

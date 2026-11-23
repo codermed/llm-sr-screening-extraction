@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654986-Ev1ycyjA9Oae1NbEEHDz",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0013176,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10994,
+    "completion_tokens": 115,
+    "total_tokens": 11109,
+    "cost": 0.0013176,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 10880,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0013176,
+      "upstream_inference_prompt_cost": 0.0011336,
+      "upstream_inference_completions_cost": 0.000184
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This is a review article focused broadly on Mediterranean ecosystems, biodiversity conservation, and the use of GIS tools for conservation planning and landscape management. It does not focus on land use/land cover (LULC) future prediction or simulation at a national scale with mapped LULC projections and quantitative accuracy metrics. The paper discusses conservation problems and GIS as a tool, but not LULC prediction as a primary research question or with scenario modeling. Therefore, it fails the core inclusion criteria for LULC future prediction studies.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:23:01.570061+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.107,
+      "raw_body": "\n         \n{\"id\":\"gen-1789654986-Ev1ycyjA9Oae1NbEEHDz\",\"object\":\"chat.completion\",\"created\":1789654986,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This is a review article focused broadly on Mediterranean ecosystems, biodiversity conservation, and the use of GIS tools for conservation planning and landscape management. It does not focus on land use/land cover (LULC) future prediction or simulation at a national scale with mapped LULC projections and quantitative accuracy metrics. The paper discusses conservation problems and GIS as a tool, but not LULC prediction as a primary research question or with scenario modeling. Therefore, it fails the core inclusion criteria for LULC future prediction studies.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10994,\"completion_tokens\":115,\"total_tokens\":11109,\"cost\":0.0013176,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":10880,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0013176,\"upstream_inference_prompt_cost\":0.0011336,\"upstream_inference_completions_cost\":0.000184},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654986-Ev1ycyjA9Oae1NbEEHDz",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 10994,
+        "completion_tokens": 115,
+        "total_tokens": 11109,
+        "cost": 0.0013176,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 10880,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0013176,
+          "upstream_inference_prompt_cost": 0.0011336,
+          "upstream_inference_completions_cost": 0.000184
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.108,
+  "call_id": "DS__z1_ZIY26SMV__openai__r3",
+  "fingerprint": "b20ac818b781121cdb865f6215a7abd715db15eb79337b492968934941aa1cd9",
+  "paper_id": "z1_ZIY26SMV",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:23:03.677556+00:00",
+  "input_sha256": "6789e3be39d45696d6e912dbd328a9099acd1397bf2215bf8f00ac7a9d0e926a",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

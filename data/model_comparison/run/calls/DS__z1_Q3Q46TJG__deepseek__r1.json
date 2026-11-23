@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653488-0I33d8LOC7hBtT10S8Ky",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0036574,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 13912,
+    "completion_tokens": 106,
+    "total_tokens": 14018,
+    "cost": 0.0036574,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0036574,
+      "upstream_inference_prompt_cost": 0.00361712,
+      "upstream_inference_completions_cost": 4.028e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper's primary focus is the development and application of an index for ecological integrity assessment and impact evaluation, not on LULC prediction. While it uses a future LULC scenario as an input to demonstrate its 'ecoImpact' index, the LULC prediction itself is not the central research question, and the paper does not implement or compare multiple LULC scenarios itself. It fails the core inclusion criterion that the primary focus must be LULC prediction/simulation.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:58:03.117756+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.94,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789653488-0I33d8LOC7hBtT10S8Ky\",\"object\":\"chat.completion\",\"created\":1789653488,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper's primary focus is the development and application of an index for ecological integrity assessment and impact evaluation, not on LULC prediction. While it uses a future LULC scenario as an input to demonstrate its 'ecoImpact' index, the LULC prediction itself is not the central research question, and the paper does not implement or compare multiple LULC scenarios itself. It fails the core inclusion criterion that the primary focus must be LULC prediction/simulation.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":13912,\"completion_tokens\":106,\"total_tokens\":14018,\"cost\":0.0036574,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0036574,\"upstream_inference_prompt_cost\":0.00361712,\"upstream_inference_completions_cost\":0.00004028},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653488-0I33d8LOC7hBtT10S8Ky",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 13912,
+        "completion_tokens": 106,
+        "total_tokens": 14018,
+        "cost": 0.0036574,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0036574,
+          "upstream_inference_prompt_cost": 0.00361712,
+          "upstream_inference_completions_cost": 4.028e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.941,
+  "call_id": "DS__z1_Q3Q46TJG__deepseek__r1",
+  "fingerprint": "a0061c2cdeb82d87d98b9fdf252c6e612bdf60a59a4cc5987645cd7240c56238",
+  "paper_id": "z1_Q3Q46TJG",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:58:07.057995+00:00",
+  "input_sha256": "ba211db693f32e86e0b5f1b601159c782c6c959233fbc98c1951ad3d19f4262a",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789652617-uEiJtEGtIie3CjVMYlKG",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.012441,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15325,
+    "completion_tokens": 125,
+    "total_tokens": 15450,
+    "cost": 0.012441,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.012441,
+      "upstream_inference_prompt_cost": 0.0119535,
+      "upstream_inference_completions_cost": 0.0004875
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: The paper presents original research with explicit national-scale spatial implementation across EU27 countries using 1×1 km resolution. Its primary objective is to assess spatial uncertainties in future agricultural land allocation under two contrasting quantitative scenarios (Marketeer and Musketeer). It employs a coupled modeling framework (LEITAP + Dyna-CLUE) that produces mapped LULC projections for 2030, includes quantitative metrics (mean, standard deviation, probability maps, confidence intervals), and explicitly compares scenario outcomes. All core inclusion criteria are met, and no exclusion criteria apply.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:43:32.431085+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 5.367,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789652617-uEiJtEGtIie3CjVMYlKG\",\"object\":\"chat.completion\",\"created\":1789652617,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: The paper presents original research with explicit national-scale spatial implementation across EU27 countries using 1×1 km resolution. Its primary objective is to assess spatial uncertainties in future agricultural land allocation under two contrasting quantitative scenarios (Marketeer and Musketeer). It employs a coupled modeling framework (LEITAP + Dyna-CLUE) that produces mapped LULC projections for 2030, includes quantitative metrics (mean, standard deviation, probability maps, confidence intervals), and explicitly compares scenario outcomes. All core inclusion criteria are met, and no exclusion criteria apply.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15325,\"completion_tokens\":125,\"total_tokens\":15450,\"cost\":0.012441,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.012441,\"upstream_inference_prompt_cost\":0.0119535,\"upstream_inference_completions_cost\":0.0004875},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652617-uEiJtEGtIie3CjVMYlKG",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 15325,
+        "completion_tokens": 125,
+        "total_tokens": 15450,
+        "cost": 0.012441,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.012441,
+          "upstream_inference_prompt_cost": 0.0119535,
+          "upstream_inference_completions_cost": 0.0004875
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 5.368,
+  "call_id": "DS__z1_5QVAGURU__qwen__r1",
+  "fingerprint": "9a34f6a007a6a31f4f7be822542cb46ccdbe402ee677a02ba5f0f7acacc6ff5d",
+  "paper_id": "z1_5QVAGURU",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:43:37.798657+00:00",
+  "input_sha256": "d6af530200b28aae37d761b818343f43380bb68cfe2935bf9de501d5e0c139aa",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

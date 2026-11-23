@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789652701-Mh5zzCZjj36XHo4aJYWR",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.017817,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 11812,
+    "completion_tokens": 1201,
+    "total_tokens": 13013,
+    "cost": 0.017817,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.017817,
+      "upstream_inference_prompt_cost": 0.011812,
+      "upstream_inference_completions_cost": 0.006005
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land Degradation Neutrality and Land System Patterns in Turkey\n\n## Step 1: Determine if Review Article\n**Result: NOT A REVIEW**\n\nThis is a primary research paper presenting original scenario simulation modeling with empirical analysis. The authors conducted their own modeling using CLUMondo, developed novel LDN implementation algorithms, and generated original projections. Clear indicators: \"We developed a LDN scenario...\", \"Our results show...\", methodology section describes original implementation.\n\n---\n\n## Step 2: Evaluate Against Inclusion/Exclusion Criteria (Non-Review Paper)\n\n### CORE INCLUSION CRITERIA ASSESSMENT:\n\n**✓ Criterion 1: Explicit national-scale spatial implementation**\n- Study area: Republic of Turkey (entire country)\n- Explicitly stated: \"using the Republic of Turkey as a case study\"\n- Spatial resolution: 2×2 km² grid across entire nation\n- **PASS**\n\n**✓ Criterion 2: Primary focus = LULC prediction/simulation**\n- Central research question: \"How will land degradation neutrality change future land system patterns?\"\n- Primary objective explicitly stated: \"demonstrate how LDN can be implemented in land system modelling and how achieving LDN...could affect future land system patterns\"\n- Land system patterns (LULC) are the primary dependent variable\n- **PASS**\n\n**✓ Criterion 3: ≥2 future scenarios with quantitative comparison**\n- Business-as-usual scenario (BAU) - without LDN\n- LDN scenario - with full LDN implementation\n- Plus 6 sensitivity analyses testing individual LDN principles\n- Quantitative comparisons provided: area measurements, conversion matrices, regional breakdowns\n- **PASS**\n\n**✓ Criterion 4: Spatial modeling with quantitative accuracy metrics**\n- CLUMondo spatial allocation model applied\n- Quantitative outputs: area of degradation/improvement in km², percentage changes, conversion rates\n- Results reported with numerical precision (e.g., \"about 20% of Turkey's territory was afforested\")\n- Spatial suitability maps generated via logistic regression (21 location factors)\n- **PASS**\n\n**✓ Criterion 5: Outputs include mapped LULC projections**\n- Figure 1: Land systems patterns baseline (2010)\n- Figure 4: Comparison of land system projections for 2050 (BAU vs LDN)\n- Figure 6: Spatial patterns of land conversions by region\n- Multiple supplementary spatial figures (S1-S8)\n- **PASS**\n\n### EXCLUSION CRITERIA ASSESSMENT:\n\n**✗ Global-scale without national disaggregation:** Not applicable - explicitly national scale\n**✗ Local/regional focus:** Not applicable - full national coverage\n**✗ No LULC prediction:** Not applicable - LULC is primary focus\n**✗ Species-specific/ecological focus:** Not applicable - focuses on land systems and management\n**✗ Economic/urban models lacking spatial LULC outputs:** Not applicable - produces explicit spatial LULC maps\n**✗ Biomass/carbon studies without LULC change:** Not applicable - LULC change is central\n**✗ Methodological paper without application:** Not applicable - applied to Turkey case study\n**✗ Qualitative/historical only:** Not applicable - includes future projections\n**✗ Remote sensing technical study:** Not applicable - uses remote sensing as input data only\n**✗ Single BAU scenario:** Not applicable - includes LDN scenario plus sensitivity tests\n\n**NONE OF THE EXCLUSION CRITERIA ARE MET**\n\n---\n\n## Step 3: Determine Primary Focus\n\n**Primary objective = LULC prediction**\n\nThe research question, methodology, and outputs all center on predicting and comparing future land system (LULC) patterns under different scenarios. LDN is the policy context/constraint within which LULC predictions are made, not an ancillary application.\n\n---\n\n## FINAL CATEGORIZATION\n\n**Final categorization: OK**\n\n**Justification:**\n\nThis paper meets ALL five core inclusion criteria for national-scale LULC prediction research:\n\n1. **National-scale spatial implementation**: Entire Turkey territory modeled at 2×2 km resolution\n2. **Primary focus on LULC prediction**: Central research question directly addresses how LDN affects future land system patterns; LULC is the primary dependent variable\n3. **Multiple scenarios with quantitative comparison**: Business-as-usual vs. LDN scenario plus 6 sensitivity analyses with detailed numerical comparisons of areas, conversion mechanisms, and regional patterns\n4. **Spatial modeling with quantitative metrics**: CLUMondo allocation model with suitability layers, logistic regression, and quantified outputs (areas in km², percentages, conversion rates)\n5. **Mapped LULC projections**: Multiple figures showing 2050 land system projections spatially distributed across Turkey's biogeographical regions\n\nThe paper satisfies none of the exclusion criteria. It represents a sophisticated application of spatial land use modeling to project future LULC patterns under alternative policy scenarios (LDN vs. BAU) at the national scale with rigorous sensitivity analysis of individual framework components.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:44:56.735430+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.867,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789652701-Mh5zzCZjj36XHo4aJYWR\",\"object\":\"chat.completion\",\"created\":1789652701,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land Degradation Neutrality and Land System Patterns in Turkey\\n\\n## Step 1: Determine if Review Article\\n**Result: NOT A REVIEW**\\n\\nThis is a primary research paper presenting original scenario simulation modeling with empirical analysis. The authors conducted their own modeling using CLUMondo, developed novel LDN implementation algorithms, and generated original projections. Clear indicators: \\\"We developed a LDN scenario...\\\", \\\"Our results show...\\\", methodology section describes original implementation.\\n\\n---\\n\\n## Step 2: Evaluate Against Inclusion/Exclusion Criteria (Non-Review Paper)\\n\\n### CORE INCLUSION CRITERIA ASSESSMENT:\\n\\n**✓ Criterion 1: Explicit national-scale spatial implementation**\\n- Study area: Republic of Turkey (entire country)\\n- Explicitly stated: \\\"using the Republic of Turkey as a case study\\\"\\n- Spatial resolution: 2×2 km² grid across entire nation\\n- **PASS**\\n\\n**✓ Criterion 2: Primary focus = LULC prediction/simulation**\\n- Central research question: \\\"How will land degradation neutrality change future land system patterns?\\\"\\n- Primary objective explicitly stated: \\\"demonstrate how LDN can be implemented in land system modelling and how achieving LDN...could affect future land system patterns\\\"\\n- Land system patterns (LULC) are the primary dependent variable\\n- **PASS**\\n\\n**✓ Criterion 3: ≥2 future scenarios with quantitative comparison**\\n- Business-as-usual scenario (BAU) - without LDN\\n- LDN scenario - with full LDN implementation\\n- Plus 6 sensitivity analyses testing individual LDN principles\\n- Quantitative comparisons provided: area measurements, conversion matrices, regional breakdowns\\n- **PASS**\\n\\n**✓ Criterion 4: Spatial modeling with quantitative accuracy metrics**\\n- CLUMondo spatial allocation model applied\\n- Quantitative outputs: area of degradation/improvement in km², percentage changes, conversion rates\\n- Results reported with numerical precision (e.g., \\\"about 20% of Turkey's territory was afforested\\\")\\n- Spatial suitability maps generated via logistic regression (21 location factors)\\n- **PASS**\\n\\n**✓ Criterion 5: Outputs include mapped LULC projections**\\n- Figure 1: Land systems patterns baseline (2010)\\n- Figure 4: Comparison of land system projections for 2050 (BAU vs LDN)\\n- Figure 6: Spatial patterns of land conversions by region\\n- Multiple supplementary spatial figures (S1-S8)\\n- **PASS**\\n\\n### EXCLUSION CRITERIA ASSESSMENT:\\n\\n**✗ Global-scale without national disaggregation:** Not applicable - explicitly national scale\\n**✗ Local/regional focus:** Not applicable - full national coverage\\n**✗ No LULC prediction:** Not applicable - LULC is primary focus\\n**✗ Species-specific/ecological focus:** Not applicable - focuses on land systems and management\\n**✗ Economic/urban models lacking spatial LULC outputs:** Not applicable - produces explicit spatial LULC maps\\n**✗ Biomass/carbon studies without LULC change:** Not applicable - LULC change is central\\n**✗ Methodological paper without application:** Not applicable - applied to Turkey case study\\n**✗ Qualitative/historical only:** Not applicable - includes future projections\\n**✗ Remote sensing technical study:** Not applicable - uses remote sensing as input data only\\n**✗ Single BAU scenario:** Not applicable - includes LDN scenario plus sensitivity tests\\n\\n**NONE OF THE EXCLUSION CRITERIA ARE MET**\\n\\n---\\n\\n## Step 3: Determine Primary Focus\\n\\n**Primary objective = LULC prediction**\\n\\nThe research question, methodology, and outputs all center on predicting and comparing future land system (LULC) patterns under different scenarios. LDN is the policy context/constraint within which LULC predictions are made, not an ancillary application.\\n\\n---\\n\\n## FINAL CATEGORIZATION\\n\\n**Final categorization: OK**\\n\\n**Justification:**\\n\\nThis paper meets ALL five core inclusion criteria for national-scale LULC prediction research:\\n\\n1. **National-scale spatial implementation**: Entire Turkey territory modeled at 2×2 km resolution\\n2. **Primary focus on LULC prediction**: Central research question directly addresses how LDN affects future land system patterns; LULC is the primary dependent variable\\n3. **Multiple scenarios with quantitative comparison**: Business-as-usual vs. LDN scenario plus 6 sensitivity analyses with detailed numerical comparisons of areas, conversion mechanisms, and regional patterns\\n4. **Spatial modeling with quantitative metrics**: CLUMondo allocation model with suitability layers, logistic regression, and quantified outputs (areas in km², percentages, conversion rates)\\n5. **Mapped LULC projections**: Multiple figures showing 2050 land system projections spatially distributed across Turkey's biogeographical regions\\n\\nThe paper satisfies none of the exclusion criteria. It represents a sophisticated application of spatial land use modeling to project future LULC patterns under alternative policy scenarios (LDN vs. BAU) at the national scale with rigorous sensitivity analysis of individual framework components.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":11812,\"completion_tokens\":1201,\"total_tokens\":13013,\"cost\":0.017817,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.017817,\"upstream_inference_prompt_cost\":0.011812,\"upstream_inference_completions_cost\":0.006005},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652701-Mh5zzCZjj36XHo4aJYWR",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 11812,
+        "completion_tokens": 1201,
+        "total_tokens": 13013,
+        "cost": 0.017817,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.017817,
+          "upstream_inference_prompt_cost": 0.011812,
+          "upstream_inference_completions_cost": 0.006005
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.867,
+  "call_id": "DS__z1_8IH2JJU9__claude__r1",
+  "fingerprint": "bdb49a835d35e73107d752a21fb9da28be6155ca98f305a9cc59a7a2c601c135",
+  "paper_id": "z1_8IH2JJU9",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:45:09.602466+00:00",
+  "input_sha256": "a1ef6b2aae24be14c95abe98d3d084197472fdf671b3f0714968e1a3b1b0ec67",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

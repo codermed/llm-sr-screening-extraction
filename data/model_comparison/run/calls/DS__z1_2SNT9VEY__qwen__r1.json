@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789652661-zboJ2s8axVP0XuEkc6t7",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00898638,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10716,
+    "completion_tokens": 161,
+    "total_tokens": 10877,
+    "cost": 0.00898638,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00898638,
+      "upstream_inference_prompt_cost": 0.00835848,
+      "upstream_inference_completions_cost": 0.0006279
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a non-review research article focused on predicting future distributions of emergent aquatic macrophytes under climate change scenarios in Finland. While it uses spatial modeling and includes multiple future climate scenarios with quantitative comparisons, its primary focus is ecological—specifically on species (aquatic plant) distributions—not land use/land cover (LULC) prediction. The LULC data (CORINE) are used only as a source for current vegetation occurrence, not as a predicted LULC class. The study models species response to climate and geomorphology, falling under species distribution modeling rather than LULC change simulation. Thus, it meets the exclusion criterion: \"Species-specific/ecological focus (flora/fauna) unrelated to LULC.\")",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:44:16.304954+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.597,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789652661-zboJ2s8axVP0XuEkc6t7\",\"object\":\"chat.completion\",\"created\":1789652661,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a non-review research article focused on predicting future distributions of emergent aquatic macrophytes under climate change scenarios in Finland. While it uses spatial modeling and includes multiple future climate scenarios with quantitative comparisons, its primary focus is ecological—specifically on species (aquatic plant) distributions—not land use/land cover (LULC) prediction. The LULC data (CORINE) are used only as a source for current vegetation occurrence, not as a predicted LULC class. The study models species response to climate and geomorphology, falling under species distribution modeling rather than LULC change simulation. Thus, it meets the exclusion criterion: \\\"Species-specific/ecological focus (flora/fauna) unrelated to LULC.\\\")\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10716,\"completion_tokens\":161,\"total_tokens\":10877,\"cost\":0.00898638,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00898638,\"upstream_inference_prompt_cost\":0.00835848,\"upstream_inference_completions_cost\":0.0006279},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652661-zboJ2s8axVP0XuEkc6t7",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 10716,
+        "completion_tokens": 161,
+        "total_tokens": 10877,
+        "cost": 0.00898638,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00898638,
+          "upstream_inference_prompt_cost": 0.00835848,
+          "upstream_inference_completions_cost": 0.0006279
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.598,
+  "call_id": "DS__z1_2SNT9VEY__qwen__r1",
+  "fingerprint": "6d6d045ec2b52ccadb8851e7b3c8131182c5b7bec75486874bc60c2b564f6edf",
+  "paper_id": "z1_2SNT9VEY",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:44:20.902451+00:00",
+  "input_sha256": "fc009e4939d8f197a4a46d822a54606ac143ac0e91bbd10247977a5c43c5dbf6",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

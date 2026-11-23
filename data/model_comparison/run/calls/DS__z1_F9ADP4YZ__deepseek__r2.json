@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653873-o77L6F4wOngsq3kzAjtU",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0045925,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 17567,
+    "completion_tokens": 66,
+    "total_tokens": 17633,
+    "cost": 0.0045925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0045925,
+      "upstream_inference_prompt_cost": 0.00456742,
+      "upstream_inference_completions_cost": 2.508e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The study is a non-review research paper focused on LULC prediction for a single district (Prayagraj) in India. It fails the core inclusion criterion of requiring an explicit national-scale spatial implementation. The methodology, results, and discussion are confined to the district level.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:04:28.681383+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 7.158,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789653873-o77L6F4wOngsq3kzAjtU\",\"object\":\"chat.completion\",\"created\":1789653873,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The study is a non-review research paper focused on LULC prediction for a single district (Prayagraj) in India. It fails the core inclusion criterion of requiring an explicit national-scale spatial implementation. The methodology, results, and discussion are confined to the district level.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":17567,\"completion_tokens\":66,\"total_tokens\":17633,\"cost\":0.0045925,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0045925,\"upstream_inference_prompt_cost\":0.00456742,\"upstream_inference_completions_cost\":0.00002508},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653873-o77L6F4wOngsq3kzAjtU",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 17567,
+        "completion_tokens": 66,
+        "total_tokens": 17633,
+        "cost": 0.0045925,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0045925,
+          "upstream_inference_prompt_cost": 0.00456742,
+          "upstream_inference_completions_cost": 2.508e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 7.158,
+  "call_id": "DS__z1_F9ADP4YZ__deepseek__r2",
+  "fingerprint": "f51a86bdd472df6a12911c1799ee30cd3bb8b1b79f76b5b586dd4a0c65d49e26",
+  "paper_id": "z1_F9ADP4YZ",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:04:35.839403+00:00",
+  "input_sha256": "52bd2eb9639d74990c0a25fef6775067d18ea501b2fc771809613ae232167f41",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

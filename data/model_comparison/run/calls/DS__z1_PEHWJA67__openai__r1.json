@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653465-68xchSMOP7yeLdyUqSU4",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0037208,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 8538,
+    "completion_tokens": 191,
+    "total_tokens": 8729,
+    "cost": 0.0037208,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0037208,
+      "upstream_inference_prompt_cost": 0.0034152,
+      "upstream_inference_completions_cost": 0.0003056
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: OK (Justification: This is a research paper with explicit national-scale spatial implementation covering all of China. The primary focus is on land use land cover (LULC) prediction and simulation, specifically simulating China’s land system evolution and paddy field changes over the next 40 years using a GM-FLUS model. The study implements four future scenarios (SSP1-2.6, SSP2-4.5, SSP3-7.0, SSP5-8.5) with quantitative comparison of potential rice yields under these scenarios. The modeling is spatially explicit with quantitative accuracy metrics reported (e.g., 72.89% overall accuracy and kappa coefficient 0.65 for land use simulation). The outputs include mapped LULC projections (paddy field spatial distribution) and analysis of spatiotemporal variation. Therefore, it meets all core inclusion criteria and no exclusion criteria apply.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:57:40.273400+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.955,
+      "raw_body": "\n         \n{\"id\":\"gen-1789653465-68xchSMOP7yeLdyUqSU4\",\"object\":\"chat.completion\",\"created\":1789653465,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: This is a research paper with explicit national-scale spatial implementation covering all of China. The primary focus is on land use land cover (LULC) prediction and simulation, specifically simulating China’s land system evolution and paddy field changes over the next 40 years using a GM-FLUS model. The study implements four future scenarios (SSP1-2.6, SSP2-4.5, SSP3-7.0, SSP5-8.5) with quantitative comparison of potential rice yields under these scenarios. The modeling is spatially explicit with quantitative accuracy metrics reported (e.g., 72.89% overall accuracy and kappa coefficient 0.65 for land use simulation). The outputs include mapped LULC projections (paddy field spatial distribution) and analysis of spatiotemporal variation. Therefore, it meets all core inclusion criteria and no exclusion criteria apply.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":8538,\"completion_tokens\":191,\"total_tokens\":8729,\"cost\":0.0037208,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0037208,\"upstream_inference_prompt_cost\":0.0034152,\"upstream_inference_completions_cost\":0.0003056},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653465-68xchSMOP7yeLdyUqSU4",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 8538,
+        "completion_tokens": 191,
+        "total_tokens": 8729,
+        "cost": 0.0037208,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0037208,
+          "upstream_inference_prompt_cost": 0.0034152,
+          "upstream_inference_completions_cost": 0.0003056
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.955,
+  "call_id": "DS__z1_PEHWJA67__openai__r1",
+  "fingerprint": "c86414929e86ba633d5546004ac8896e737393330b55b0dbd1b646bc2348d93b",
+  "paper_id": "z1_PEHWJA67",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:57:43.228218+00:00",
+  "input_sha256": "9e9e801236ac629421399d133694dc4ab92ed5cd1bf93656fef21613b82a008f",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

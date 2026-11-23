@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654960-OkNTJC6iE3xiyTubDCW8",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0018392,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 14666,
+    "completion_tokens": 195,
+    "total_tokens": 14861,
+    "cost": 0.0018392,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 14464,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0018392,
+      "upstream_inference_prompt_cost": 0.0015272,
+      "upstream_inference_completions_cost": 0.000312
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This paper is a non-review research article that develops a modelling approach integrating economic activity, greenhouse gas emissions, biodiversity, and agricultural productivity. Although it includes land use and biodiversity linkages and projects future scenarios (to 2050), it does not focus primarily on land use land cover (LULC) prediction or simulation at the national scale with spatially explicit mapped outputs. The modeling is global and country-level but lacks spatially explicit LULC maps or accuracy metrics. The primary focus is on integrated system interactions and feedbacks rather than on LULC prediction per se. It also does not implement multiple spatially explicit future LULC scenarios with quantitative comparison. Therefore, it fails the core inclusion criteria of explicit national-scale spatial LULC prediction with mapped outputs and quantitative accuracy metrics. It also does not meet the criteria for a review focused on LULC future prediction. Hence, it should be excluded.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:22:35.673975+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.411,
+      "raw_body": "\n         \n{\"id\":\"gen-1789654960-OkNTJC6iE3xiyTubDCW8\",\"object\":\"chat.completion\",\"created\":1789654960,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This paper is a non-review research article that develops a modelling approach integrating economic activity, greenhouse gas emissions, biodiversity, and agricultural productivity. Although it includes land use and biodiversity linkages and projects future scenarios (to 2050), it does not focus primarily on land use land cover (LULC) prediction or simulation at the national scale with spatially explicit mapped outputs. The modeling is global and country-level but lacks spatially explicit LULC maps or accuracy metrics. The primary focus is on integrated system interactions and feedbacks rather than on LULC prediction per se. It also does not implement multiple spatially explicit future LULC scenarios with quantitative comparison. Therefore, it fails the core inclusion criteria of explicit national-scale spatial LULC prediction with mapped outputs and quantitative accuracy metrics. It also does not meet the criteria for a review focused on LULC future prediction. Hence, it should be excluded.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":14666,\"completion_tokens\":195,\"total_tokens\":14861,\"cost\":0.0018392,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":14464,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0018392,\"upstream_inference_prompt_cost\":0.0015272,\"upstream_inference_completions_cost\":0.000312},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654960-OkNTJC6iE3xiyTubDCW8",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 14666,
+        "completion_tokens": 195,
+        "total_tokens": 14861,
+        "cost": 0.0018392,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 14464,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0018392,
+          "upstream_inference_prompt_cost": 0.0015272,
+          "upstream_inference_completions_cost": 0.000312
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.412,
+  "call_id": "DS__z1_353TKDX2__openai__r3",
+  "fingerprint": "83bedefdcdd6561eacaa6d7a6c340d6ce6593bed53448817eca13e0f6b64463e",
+  "paper_id": "z1_353TKDX2",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:22:39.085572+00:00",
+  "input_sha256": "bc8695e57321b8238e10b96004cfa8b7a45505691dd08091cc31754194e7efa8",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

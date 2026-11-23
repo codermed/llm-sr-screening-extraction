@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653410-Hn1Ljw0jIPvFMB7k2ePa",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00325482,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12292,
+    "completion_tokens": 155,
+    "total_tokens": 12447,
+    "cost": 0.00325482,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00325482,
+      "upstream_inference_prompt_cost": 0.00319592,
+      "upstream_inference_completions_cost": 5.89e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: This is a research paper, not a review. While it includes a national-scale (Germany) analysis of renewable energy potentials, its primary focus is not LULC prediction/simulation. The core research question is the assessment of renewable energy installation potentials and the influence of input land-use datasets on those assessments. The land-use data (e.g., Basis-DLM, CLC) are used as static inputs for eligibility analysis, not dynamically predicted or simulated into the future. The paper compares different datasets and exclusion scenarios but does not model or project how land use/land cover itself will change over time. It therefore fails the core inclusion criterion: \"Primary focus = LULC prediction/simulation (central research question)\".)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:56:45.798233+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 8.755,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789653410-Hn1Ljw0jIPvFMB7k2ePa\",\"object\":\"chat.completion\",\"created\":1789653410,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This is a research paper, not a review. While it includes a national-scale (Germany) analysis of renewable energy potentials, its primary focus is not LULC prediction/simulation. The core research question is the assessment of renewable energy installation potentials and the influence of input land-use datasets on those assessments. The land-use data (e.g., Basis-DLM, CLC) are used as static inputs for eligibility analysis, not dynamically predicted or simulated into the future. The paper compares different datasets and exclusion scenarios but does not model or project how land use/land cover itself will change over time. It therefore fails the core inclusion criterion: \\\"Primary focus = LULC prediction/simulation (central research question)\\\".)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12292,\"completion_tokens\":155,\"total_tokens\":12447,\"cost\":0.00325482,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00325482,\"upstream_inference_prompt_cost\":0.00319592,\"upstream_inference_completions_cost\":0.0000589},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653410-Hn1Ljw0jIPvFMB7k2ePa",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 12292,
+        "completion_tokens": 155,
+        "total_tokens": 12447,
+        "cost": 0.00325482,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00325482,
+          "upstream_inference_prompt_cost": 0.00319592,
+          "upstream_inference_completions_cost": 5.89e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 8.756,
+  "call_id": "DS__z1_VQ354EQD__deepseek__r1",
+  "fingerprint": "62450b8b0ecb597cca166892fe786da4db49c937357e0c8000c31295ba67a3fd",
+  "paper_id": "z1_VQ354EQD",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:56:54.553656+00:00",
+  "input_sha256": "bd5a0f162cc531c047620b356f458bf27e9c979377609cf72e8dd1bd5b02b44c",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

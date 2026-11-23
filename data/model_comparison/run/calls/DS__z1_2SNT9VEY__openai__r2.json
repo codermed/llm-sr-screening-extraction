@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654547-PxRiyW2Kl4omRmnPiJ4w",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0012816,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 9912,
+    "completion_tokens": 147,
+    "total_tokens": 10059,
+    "cost": 0.0012816,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 9728,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0012816,
+      "upstream_inference_prompt_cost": 0.0010464,
+      "upstream_inference_completions_cost": 0.0002352
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: Although the study involves spatial modeling with future scenarios at the national scale (Finland) and provides mapped projections, its primary focus is on ecological/species distribution modeling of emergent aquatic macrophytes rather than land use/land cover (LULC) prediction. The emergent macrophyte distributions are considered ecological variables derived from CORINE land-cover data but are not themselves LULC classes being predicted or simulated as land cover changes. The paper centers on species distribution and ecological impacts of climate change, not on LULC change modeling or prediction as a primary objective. Thus, it fails the core inclusion criterion that the primary focus must be LULC prediction/simulation.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:15:42.919112+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.542,
+      "raw_body": "\n         \n{\"id\":\"gen-1789654547-PxRiyW2Kl4omRmnPiJ4w\",\"object\":\"chat.completion\",\"created\":1789654547,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: Although the study involves spatial modeling with future scenarios at the national scale (Finland) and provides mapped projections, its primary focus is on ecological/species distribution modeling of emergent aquatic macrophytes rather than land use/land cover (LULC) prediction. The emergent macrophyte distributions are considered ecological variables derived from CORINE land-cover data but are not themselves LULC classes being predicted or simulated as land cover changes. The paper centers on species distribution and ecological impacts of climate change, not on LULC change modeling or prediction as a primary objective. Thus, it fails the core inclusion criterion that the primary focus must be LULC prediction/simulation.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":9912,\"completion_tokens\":147,\"total_tokens\":10059,\"cost\":0.0012816,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":9728,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0012816,\"upstream_inference_prompt_cost\":0.0010464,\"upstream_inference_completions_cost\":0.0002352},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654547-PxRiyW2Kl4omRmnPiJ4w",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 9912,
+        "completion_tokens": 147,
+        "total_tokens": 10059,
+        "cost": 0.0012816,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 9728,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0012816,
+          "upstream_inference_prompt_cost": 0.0010464,
+          "upstream_inference_completions_cost": 0.0002352
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.542,
+  "call_id": "DS__z1_2SNT9VEY__openai__r2",
+  "fingerprint": "0aba1e083be88e44a6dadc5b8c409619193d5d201d2c045d0212fefd4dfdd5e2",
+  "paper_id": "z1_2SNT9VEY",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:15:46.461111+00:00",
+  "input_sha256": "fc009e4939d8f197a4a46d822a54606ac143ac0e91bbd10247977a5c43c5dbf6",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

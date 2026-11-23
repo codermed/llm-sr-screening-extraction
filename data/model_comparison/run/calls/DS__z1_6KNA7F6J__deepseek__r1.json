@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789652850-qRrnHNSjY4juToE9jLdn",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.003022,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 11379,
+    "completion_tokens": 167,
+    "total_tokens": 11546,
+    "cost": 0.003022,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003022,
+      "upstream_inference_prompt_cost": 0.00295854,
+      "upstream_inference_completions_cost": 6.346e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: Not a review article. The paper is a research paper that fails the core inclusion criteria: 1) It is not a national-scale spatial implementation; the model is applied to a stylized, hypothetical forest management unit. 2) Its primary focus is not LULC prediction/simulation; the central research question is the economic and policy analysis of optimal forest management zoning to maximize NPV or timber volume, using a timber supply/forest management scheduling model. 3) It does not implement or compare multiple future LULC scenarios; it compares policy scenarios for forest management intensity allocation. 4) It does not include spatial LULC prediction accuracy metrics. The model allocates land to management zones based on economic optimization, not on simulating or predicting autonomous LULC change.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:47:25.559627+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 8.952,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789652850-qRrnHNSjY4juToE9jLdn\",\"object\":\"chat.completion\",\"created\":1789652850,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: Not a review article. The paper is a research paper that fails the core inclusion criteria: 1) It is not a national-scale spatial implementation; the model is applied to a stylized, hypothetical forest management unit. 2) Its primary focus is not LULC prediction/simulation; the central research question is the economic and policy analysis of optimal forest management zoning to maximize NPV or timber volume, using a timber supply/forest management scheduling model. 3) It does not implement or compare multiple future LULC scenarios; it compares policy scenarios for forest management intensity allocation. 4) It does not include spatial LULC prediction accuracy metrics. The model allocates land to management zones based on economic optimization, not on simulating or predicting autonomous LULC change.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":11379,\"completion_tokens\":167,\"total_tokens\":11546,\"cost\":0.003022,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.003022,\"upstream_inference_prompt_cost\":0.00295854,\"upstream_inference_completions_cost\":0.00006346},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652850-qRrnHNSjY4juToE9jLdn",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 11379,
+        "completion_tokens": 167,
+        "total_tokens": 11546,
+        "cost": 0.003022,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.003022,
+          "upstream_inference_prompt_cost": 0.00295854,
+          "upstream_inference_completions_cost": 6.346e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 8.952,
+  "call_id": "DS__z1_6KNA7F6J__deepseek__r1",
+  "fingerprint": "69ae72d9543b9f90d9ebaeb2b4d907fbb1e59945a340a4829edf3fdf4502f42b",
+  "paper_id": "z1_6KNA7F6J",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:47:34.511880+00:00",
+  "input_sha256": "2d54464c7167ebe2a193299a547089e113c7097ae1e0f9ceeb375c1901e46ec5",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

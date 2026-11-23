@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789652875-ALr6e0UWZjLcTR96kjNm",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.022933,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 16888,
+    "completion_tokens": 1209,
+    "total_tokens": 18097,
+    "cost": 0.022933,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.022933,
+      "upstream_inference_prompt_cost": 0.016888,
+      "upstream_inference_completions_cost": 0.006045
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis\n\n## Initial Assessment\n\n**Is this a review article?** No. This is a research paper presenting original modeling work with empirical results.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA FOR NON-REVIEW PAPERS:\n\n1. **Explicit national-scale spatial implementation (entire country)** ✓\n   - Study area: \"across New Zealand\" (explicitly stated multiple times)\n   - Full country coverage implemented in suitability and land-use modeling\n   - Spatial resolution: 5 km × 5 km VCSN grid, refined to 25 ha in LURNZ model\n\n2. **Primary focus = LULC prediction/simulation (central research question)** ✓\n   - Objective (iii) explicitly states: \"produce refined spatial footprint projections from the preliminary land-use projections\"\n   - Three stated objectives, with LULC projection as primary deliverable\n   - Framework (Figure 1) shows LULC as final output\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\n   - RCP 2.6 (stringent GHG mitigation) and RCP 8.5 (unabated emissions)\n   - Two time periods: mid-century (2028–2058) and late-century (2068–2098)\n   - Quantitative comparisons presented in Tables 1–5 (land area changes in hectares)\n\n4. **Spatial modeling with quantitative accuracy metrics** ✓\n   - Suitability models: continuous 0–1 scale with bias-variance corrections\n   - Accuracy assessment: comparison of RCP Past vs. VCSN suitability scores (Figure 3, one-to-one graphs)\n   - RMSE calculations for uncertainty estimation (Section 2.5)\n   - Regional-level loss/gain analysis (Tables 4–5)\n\n5. **Outputs include mapped LULC projections** ✓\n   - Suitability maps for apple and kiwifruit (Figures 4–7)\n   - Spatial footprint projections by region (Tables 2–5)\n   - Change maps showing projected shifts in spatial distribution\n\n### SPECIFIC EXCLUSION CRITERIA:\n\n- **Global-scale without national disaggregation:** ✗ (Not applicable; national scale only)\n- **Local/regional/global/transboundary focus:** ✗ (National scale explicitly)\n- **No LULC prediction component:** ✗ (LULC prediction is central)\n- **Species-specific/ecological focus unrelated to LULC:** ✗ (Crop suitability drives LULC change)\n- **Economic/urban models lacking spatially explicit LULC outputs:** ✗ (Econometric models produce explicit spatial LULC maps)\n- **Biomass/bioenergy/carbon without LULC change analysis:** ✗ (LULC change is primary focus)\n- **Methodological paper without application:** ✗ (Full application to New Zealand implemented)\n- **Qualitative/historical only:** ✗ (Quantitative future projections throughout)\n- **Remote sensing technical study without prediction:** ✗ (Integrates remote sensing with predictive modeling)\n- **Single-scenario projections:** ✗ (Two RCPs × two time periods = four scenarios)\n\n---\n\n## Primary Focus Determination\n\n**LULC prediction is the primary objective**, not a secondary input:\n- Objective (iii) explicitly targets \"spatial footprint projections\"\n- Section 2.7 dedicates entire methodology to land-use modeling\n- Results (Section 3.3) present detailed LULC outcomes by region\n- Framework shows LULC as final output (Step 7, Figure 1)\n\nWhile suitability modeling precedes LULC projections, the ultimate research goal is to project **where** apple and kiwifruit production will occur spatially under future climates—this is LULC prediction.\n\n---\n\n## Final Categorization\n\n**Final categorization: OK**\n\n**Justification:** \nThis paper meets ALL core inclusion criteria for national-scale LULC prediction research:\n1. Explicit national-scale implementation across entire New Zealand (5 km grid, 25 ha LURNZ resolution)\n2. Primary research objective is spatial footprint projection of horticultural land use under climate change\n3. Two contrasting RCP scenarios (2.6, 8.5) with mid- and late-century periods quantitatively compared\n4. Spatial modeling with rigorous accuracy metrics (bias-variance corrections, RMSE-based uncertainty, one-to-one validation plots)\n5. Mapped outputs showing projected LULC changes by region (Figures 4–7, Tables 2–5)\n\nThe paper passes all exclusion criteria checks. It is neither a methodological study without application, nor a single-scenario projection, nor lacking spatial explicitness. The integration of continuous suitability models with multinomial logit and the LURNZ econometric model represents a sophisticated national-scale LULC prediction framework with quantitative regional-level outcomes.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:47:50.102453+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.331,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789652875-ALr6e0UWZjLcTR96kjNm\",\"object\":\"chat.completion\",\"created\":1789652875,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis\\n\\n## Initial Assessment\\n\\n**Is this a review article?** No. This is a research paper presenting original modeling work with empirical results.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA FOR NON-REVIEW PAPERS:\\n\\n1. **Explicit national-scale spatial implementation (entire country)** ✓\\n   - Study area: \\\"across New Zealand\\\" (explicitly stated multiple times)\\n   - Full country coverage implemented in suitability and land-use modeling\\n   - Spatial resolution: 5 km × 5 km VCSN grid, refined to 25 ha in LURNZ model\\n\\n2. **Primary focus = LULC prediction/simulation (central research question)** ✓\\n   - Objective (iii) explicitly states: \\\"produce refined spatial footprint projections from the preliminary land-use projections\\\"\\n   - Three stated objectives, with LULC projection as primary deliverable\\n   - Framework (Figure 1) shows LULC as final output\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\\n   - RCP 2.6 (stringent GHG mitigation) and RCP 8.5 (unabated emissions)\\n   - Two time periods: mid-century (2028–2058) and late-century (2068–2098)\\n   - Quantitative comparisons presented in Tables 1–5 (land area changes in hectares)\\n\\n4. **Spatial modeling with quantitative accuracy metrics** ✓\\n   - Suitability models: continuous 0–1 scale with bias-variance corrections\\n   - Accuracy assessment: comparison of RCP Past vs. VCSN suitability scores (Figure 3, one-to-one graphs)\\n   - RMSE calculations for uncertainty estimation (Section 2.5)\\n   - Regional-level loss/gain analysis (Tables 4–5)\\n\\n5. **Outputs include mapped LULC projections** ✓\\n   - Suitability maps for apple and kiwifruit (Figures 4–7)\\n   - Spatial footprint projections by region (Tables 2–5)\\n   - Change maps showing projected shifts in spatial distribution\\n\\n### SPECIFIC EXCLUSION CRITERIA:\\n\\n- **Global-scale without national disaggregation:** ✗ (Not applicable; national scale only)\\n- **Local/regional/global/transboundary focus:** ✗ (National scale explicitly)\\n- **No LULC prediction component:** ✗ (LULC prediction is central)\\n- **Species-specific/ecological focus unrelated to LULC:** ✗ (Crop suitability drives LULC change)\\n- **Economic/urban models lacking spatially explicit LULC outputs:** ✗ (Econometric models produce explicit spatial LULC maps)\\n- **Biomass/bioenergy/carbon without LULC change analysis:** ✗ (LULC change is primary focus)\\n- **Methodological paper without application:** ✗ (Full application to New Zealand implemented)\\n- **Qualitative/historical only:** ✗ (Quantitative future projections throughout)\\n- **Remote sensing technical study without prediction:** ✗ (Integrates remote sensing with predictive modeling)\\n- **Single-scenario projections:** ✗ (Two RCPs × two time periods = four scenarios)\\n\\n---\\n\\n## Primary Focus Determination\\n\\n**LULC prediction is the primary objective**, not a secondary input:\\n- Objective (iii) explicitly targets \\\"spatial footprint projections\\\"\\n- Section 2.7 dedicates entire methodology to land-use modeling\\n- Results (Section 3.3) present detailed LULC outcomes by region\\n- Framework shows LULC as final output (Step 7, Figure 1)\\n\\nWhile suitability modeling precedes LULC projections, the ultimate research goal is to project **where** apple and kiwifruit production will occur spatially under future climates—this is LULC prediction.\\n\\n---\\n\\n## Final Categorization\\n\\n**Final categorization: OK**\\n\\n**Justification:** \\nThis paper meets ALL core inclusion criteria for national-scale LULC prediction research:\\n1. Explicit national-scale implementation across entire New Zealand (5 km grid, 25 ha LURNZ resolution)\\n2. Primary research objective is spatial footprint projection of horticultural land use under climate change\\n3. Two contrasting RCP scenarios (2.6, 8.5) with mid- and late-century periods quantitatively compared\\n4. Spatial modeling with rigorous accuracy metrics (bias-variance corrections, RMSE-based uncertainty, one-to-one validation plots)\\n5. Mapped outputs showing projected LULC changes by region (Figures 4–7, Tables 2–5)\\n\\nThe paper passes all exclusion criteria checks. It is neither a methodological study without application, nor a single-scenario projection, nor lacking spatial explicitness. The integration of continuous suitability models with multinomial logit and the LURNZ econometric model represents a sophisticated national-scale LULC prediction framework with quantitative regional-level outcomes.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":16888,\"completion_tokens\":1209,\"total_tokens\":18097,\"cost\":0.022933,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.022933,\"upstream_inference_prompt_cost\":0.016888,\"upstream_inference_completions_cost\":0.006045},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652875-ALr6e0UWZjLcTR96kjNm",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 16888,
+        "completion_tokens": 1209,
+        "total_tokens": 18097,
+        "cost": 0.022933,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.022933,
+          "upstream_inference_prompt_cost": 0.016888,
+          "upstream_inference_completions_cost": 0.006045
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.331,
+  "call_id": "DS__z1_4W3TX86C__claude__r1",
+  "fingerprint": "16288b25ae32efb65f7cfcdd13402e7ac2513ca110506b4d9b082aea7044d912",
+  "paper_id": "z1_4W3TX86C",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:48:02.433457+00:00",
+  "input_sha256": "ee97488c8735d191d22afd0b2d299cd1fad3ff6f5e5ecb05a303b836e0de857c",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

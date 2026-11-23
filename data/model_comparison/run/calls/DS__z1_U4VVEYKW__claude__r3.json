@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789655270-wIdCPWjIjgJmI3HftFuH",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.017333,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10733,
+    "completion_tokens": 1320,
+    "total_tokens": 12053,
+    "cost": 0.017333,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.017333,
+      "upstream_inference_prompt_cost": 0.010733,
+      "upstream_inference_completions_cost": 0.0066
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# FULL TEXT ANALYSIS\n\n## Step 1: Determine if Paper is a Review Article\nThis is a **research paper**, not a review article. It presents original empirical research applying multilayer perceptron neural networks (MLP-NN) to project future AFOLU for SAARC nations.\n\n## Step 2: Apply Categorization Flow for Non-Review Research Papers\n\n### Check ALL Core Inclusion Criteria:\n\n1. **Explicit national-scale spatial implementation (entire country)?**\n   - ✓ YES. Study covers 8 SAARC nations: Afghanistan, Bangladesh, Bhutan, India, Nepal, Maldives, Pakistan, and Sri Lanka. Total study area: 5,099,000 km². Methodology explicitly states \"The MLP-NN driven AFOLU for the countries of SAARC nations...was mapped for the year 2050.\"\n\n2. **Primary focus = LULC prediction/simulation (central research question)?**\n   - ✓ YES. The central research question is explicitly stated: \"projection of future AFOLU is important for planners to develop a strategy to fulfil the projected demands of the human population.\" The entire paper is devoted to projecting AFOLU for 2050.\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ✓ YES. Four RCP (Representative Concentration Pathway) scenarios implemented: RCP 2.6, RCP 4.5, RCP 6.0, and RCP 8.5. Quantitative comparisons provided throughout (Figures 8-10, narrative results section).\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ✓ YES. MLP-NN spatial modeling implemented with quantitative accuracy assessment using Area Under Curve (AUC): AUC = 0.56 (2007), AUC = 0.87 (2016). Total Operating Characteristic (TOC) curves provided (Figure 5). Change rates reported for each country and scenario.\n\n5. **Outputs include mapped LULC projections?**\n   - ✓ YES. Figure 8 shows AFOLU class maps for 2050 under all four RCP scenarios. Figure 9 shows spatial changes. Figure 10 provides polar bar charts with quantitative comparisons.\n\n### Check ALL Exclusion Criteria:\n\n1. **Global-scale analysis without national-level disaggregation?**\n   - ✓ PASS (not excluded). Study is explicitly multi-national (8 countries), not global without disaggregation.\n\n2. **Local/regional/global/transboundary scale focus?**\n   - ✓ PASS (not excluded). Study is national-scale (8 SAARC nations).\n\n3. **No LULC prediction component?**\n   - ✓ PASS (not excluded). LULC prediction is the primary component.\n\n4. **Species-specific/ecological focus unrelated to LULC?**\n   - ✓ PASS (not excluded). Focus is on land use classes (agriculture, forestry, other), not species-specific ecology.\n\n5. **Economic/urban models lacking spatially explicit LULC outputs?**\n   - ✓ PASS (not excluded). Paper provides spatially explicit LULC outputs (mapped projections).\n\n6. **Biomass/bioenergy/carbon studies without LULC change analysis?**\n   - ✓ PASS (not excluded). LULC change is the primary focus.\n\n7. **Methodological papers without application to national-scale prediction?**\n   - ✓ PASS (not excluded). Paper applies MLP-NN methodology to national-scale AFOLU prediction.\n\n8. **Purely qualitative/historical analysis only?**\n   - ✓ PASS (not excluded). Paper includes future projections (2050) with quantitative modeling.\n\n9. **Remote sensing technical studies without predictive modeling?**\n   - ✓ PASS (not excluded). Remote sensing data (MODIS NDVI) used as input to predictive MLP-NN model.\n\n10. **Single-scenario \"business-as-usual\" projections?**\n    - ✓ PASS (not excluded). Four distinct RCP scenarios implemented.\n\n### Verify Additional Checks:\n\n- **Scale claims verified in methodology/results?** YES. Methodology explicitly describes national-scale implementation across 8 SAARC countries with 250m resolution MODIS data.\n- **Quantitative metrics reported?** YES. AUC accuracy metrics, change rates by country and scenario, percentage distributions provided.\n- **Spatial explicitness in modeling?** YES. MLP-NN uses spatial variables (elevation, slope, aspect, curvature, road network, urban sprawl) and produces mapped outputs.\n\n---\n\n## FINAL CATEGORIZATION: **OK**\n\n**Justification:** This paper meets ALL core inclusion criteria for LULC prediction research:\n- Explicit national-scale implementation across 8 SAARC nations (5,099,000 km²)\n- Primary focus on AFOLU prediction/projection for 2050 (central research question)\n- Four quantified future scenarios (RCP 2.6, 4.5, 6.0, 8.5) with comparative analysis\n- Spatial modeling (MLP-NN) with quantitative accuracy metrics (AUC = 0.87 for 2016)\n- Mapped LULC projections provided for all scenarios\n- Passes all exclusion criteria\n\nThe paper is a legitimate empirical research contribution directly addressing LULC future prediction at national scale using machine learning and climate scenarios.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:27:46.101865+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 11.405,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655270-wIdCPWjIjgJmI3HftFuH\",\"object\":\"chat.completion\",\"created\":1789655270,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# FULL TEXT ANALYSIS\\n\\n## Step 1: Determine if Paper is a Review Article\\nThis is a **research paper**, not a review article. It presents original empirical research applying multilayer perceptron neural networks (MLP-NN) to project future AFOLU for SAARC nations.\\n\\n## Step 2: Apply Categorization Flow for Non-Review Research Papers\\n\\n### Check ALL Core Inclusion Criteria:\\n\\n1. **Explicit national-scale spatial implementation (entire country)?**\\n   - ✓ YES. Study covers 8 SAARC nations: Afghanistan, Bangladesh, Bhutan, India, Nepal, Maldives, Pakistan, and Sri Lanka. Total study area: 5,099,000 km². Methodology explicitly states \\\"The MLP-NN driven AFOLU for the countries of SAARC nations...was mapped for the year 2050.\\\"\\n\\n2. **Primary focus = LULC prediction/simulation (central research question)?**\\n   - ✓ YES. The central research question is explicitly stated: \\\"projection of future AFOLU is important for planners to develop a strategy to fulfil the projected demands of the human population.\\\" The entire paper is devoted to projecting AFOLU for 2050.\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ✓ YES. Four RCP (Representative Concentration Pathway) scenarios implemented: RCP 2.6, RCP 4.5, RCP 6.0, and RCP 8.5. Quantitative comparisons provided throughout (Figures 8-10, narrative results section).\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ✓ YES. MLP-NN spatial modeling implemented with quantitative accuracy assessment using Area Under Curve (AUC): AUC = 0.56 (2007), AUC = 0.87 (2016). Total Operating Characteristic (TOC) curves provided (Figure 5). Change rates reported for each country and scenario.\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ✓ YES. Figure 8 shows AFOLU class maps for 2050 under all four RCP scenarios. Figure 9 shows spatial changes. Figure 10 provides polar bar charts with quantitative comparisons.\\n\\n### Check ALL Exclusion Criteria:\\n\\n1. **Global-scale analysis without national-level disaggregation?**\\n   - ✓ PASS (not excluded). Study is explicitly multi-national (8 countries), not global without disaggregation.\\n\\n2. **Local/regional/global/transboundary scale focus?**\\n   - ✓ PASS (not excluded). Study is national-scale (8 SAARC nations).\\n\\n3. **No LULC prediction component?**\\n   - ✓ PASS (not excluded). LULC prediction is the primary component.\\n\\n4. **Species-specific/ecological focus unrelated to LULC?**\\n   - ✓ PASS (not excluded). Focus is on land use classes (agriculture, forestry, other), not species-specific ecology.\\n\\n5. **Economic/urban models lacking spatially explicit LULC outputs?**\\n   - ✓ PASS (not excluded). Paper provides spatially explicit LULC outputs (mapped projections).\\n\\n6. **Biomass/bioenergy/carbon studies without LULC change analysis?**\\n   - ✓ PASS (not excluded). LULC change is the primary focus.\\n\\n7. **Methodological papers without application to national-scale prediction?**\\n   - ✓ PASS (not excluded). Paper applies MLP-NN methodology to national-scale AFOLU prediction.\\n\\n8. **Purely qualitative/historical analysis only?**\\n   - ✓ PASS (not excluded). Paper includes future projections (2050) with quantitative modeling.\\n\\n9. **Remote sensing technical studies without predictive modeling?**\\n   - ✓ PASS (not excluded). Remote sensing data (MODIS NDVI) used as input to predictive MLP-NN model.\\n\\n10. **Single-scenario \\\"business-as-usual\\\" projections?**\\n    - ✓ PASS (not excluded). Four distinct RCP scenarios implemented.\\n\\n### Verify Additional Checks:\\n\\n- **Scale claims verified in methodology/results?** YES. Methodology explicitly describes national-scale implementation across 8 SAARC countries with 250m resolution MODIS data.\\n- **Quantitative metrics reported?** YES. AUC accuracy metrics, change rates by country and scenario, percentage distributions provided.\\n- **Spatial explicitness in modeling?** YES. MLP-NN uses spatial variables (elevation, slope, aspect, curvature, road network, urban sprawl) and produces mapped outputs.\\n\\n---\\n\\n## FINAL CATEGORIZATION: **OK**\\n\\n**Justification:** This paper meets ALL core inclusion criteria for LULC prediction research:\\n- Explicit national-scale implementation across 8 SAARC nations (5,099,000 km²)\\n- Primary focus on AFOLU prediction/projection for 2050 (central research question)\\n- Four quantified future scenarios (RCP 2.6, 4.5, 6.0, 8.5) with comparative analysis\\n- Spatial modeling (MLP-NN) with quantitative accuracy metrics (AUC = 0.87 for 2016)\\n- Mapped LULC projections provided for all scenarios\\n- Passes all exclusion criteria\\n\\nThe paper is a legitimate empirical research contribution directly addressing LULC future prediction at national scale using machine learning and climate scenarios.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10733,\"completion_tokens\":1320,\"total_tokens\":12053,\"cost\":0.017333,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.017333,\"upstream_inference_prompt_cost\":0.010733,\"upstream_inference_completions_cost\":0.0066},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655270-wIdCPWjIjgJmI3HftFuH",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 10733,
+        "completion_tokens": 1320,
+        "total_tokens": 12053,
+        "cost": 0.017333,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.017333,
+          "upstream_inference_prompt_cost": 0.010733,
+          "upstream_inference_completions_cost": 0.0066
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 11.405,
+  "call_id": "DS__z1_U4VVEYKW__claude__r3",
+  "fingerprint": "476562146f669aac39c817bbf6a286699e0d84b82d41f6b2529efe193c5aa28b",
+  "paper_id": "z1_U4VVEYKW",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:27:57.506639+00:00",
+  "input_sha256": "e276eceeaeaed4eccbc48e8acc7d015df2fe426d3fb0a8af639ffcbad69bf8cc",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

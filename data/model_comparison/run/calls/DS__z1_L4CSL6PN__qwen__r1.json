@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789653508-wAF0uOFf8BQwRZLjIg7y",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00655746,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 7647,
+    "completion_tokens": 152,
+    "total_tokens": 7799,
+    "cost": 0.00655746,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00655746,
+      "upstream_inference_prompt_cost": 0.00596466,
+      "upstream_inference_completions_cost": 0.0005928
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a non-review research article that investigates soil organic carbon (SOC) sequestration following afforestation of former agricultural land in the Czech Republic. It does not include any land use/land cover (LULC) prediction or future simulation component. Instead, it analyzes observed SOC changes across existing sites based on stand age, altitude, and land-use history (former farmland vs. forest). The study lacks future scenarios, spatially explicit LULC projections, and any modeling of future land-use change. It falls under carbon/biomass/ecological research without LULC change analysis, meeting exclusion criterion: \"Biomass/bioenergy/carbon studies without LULC change analysis.\")",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:58:24.022126+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.873,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789653508-wAF0uOFf8BQwRZLjIg7y\",\"object\":\"chat.completion\",\"created\":1789653508,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a non-review research article that investigates soil organic carbon (SOC) sequestration following afforestation of former agricultural land in the Czech Republic. It does not include any land use/land cover (LULC) prediction or future simulation component. Instead, it analyzes observed SOC changes across existing sites based on stand age, altitude, and land-use history (former farmland vs. forest). The study lacks future scenarios, spatially explicit LULC projections, and any modeling of future land-use change. It falls under carbon/biomass/ecological research without LULC change analysis, meeting exclusion criterion: \\\"Biomass/bioenergy/carbon studies without LULC change analysis.\\\")\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":7647,\"completion_tokens\":152,\"total_tokens\":7799,\"cost\":0.00655746,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00655746,\"upstream_inference_prompt_cost\":0.00596466,\"upstream_inference_completions_cost\":0.0005928},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653508-wAF0uOFf8BQwRZLjIg7y",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 7647,
+        "completion_tokens": 152,
+        "total_tokens": 7799,
+        "cost": 0.00655746,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00655746,
+          "upstream_inference_prompt_cost": 0.00596466,
+          "upstream_inference_completions_cost": 0.0005928
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.874,
+  "call_id": "DS__z1_L4CSL6PN__qwen__r1",
+  "fingerprint": "5f801c8a6fca405ae513b4eb35f255514a94fe778e8e89580c04f31d63592d88",
+  "paper_id": "z1_L4CSL6PN",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:58:28.895703+00:00",
+  "input_sha256": "f7430750989407df2289c92e241c8a362ba6c5ef7c025421433ca02db2694bfb",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653929-AaCFelKtrnPhnzjStz10",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00163232,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12110,
+    "completion_tokens": 126,
+    "total_tokens": 12236,
+    "cost": 0.00163232,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 12032,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00163232,
+      "upstream_inference_prompt_cost": 0.00158444,
+      "upstream_inference_completions_cost": 4.788e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: The paper is a non-review research article that implements a spatially explicit land use change model (LUC@CMCC, a modified CLUE-S) for a national-scale (Italy) prediction to 2100. It meets all core inclusion criteria: explicit national-scale implementation, primary focus on LULC prediction/simulation, implementation of an ensemble of 32 future scenarios combining different inputs (climate, demography, model configurations), spatial modeling with quantitative accuracy metrics (ROC/AUC), and outputs include mapped LULC projections (hot-spots). It does not meet any exclusion criteria.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:05:24.622772+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.705,
+      "raw_body": "\n         \n{\"id\":\"gen-1789653929-AaCFelKtrnPhnzjStz10\",\"object\":\"chat.completion\",\"created\":1789653929,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: The paper is a non-review research article that implements a spatially explicit land use change model (LUC@CMCC, a modified CLUE-S) for a national-scale (Italy) prediction to 2100. It meets all core inclusion criteria: explicit national-scale implementation, primary focus on LULC prediction/simulation, implementation of an ensemble of 32 future scenarios combining different inputs (climate, demography, model configurations), spatial modeling with quantitative accuracy metrics (ROC/AUC), and outputs include mapped LULC projections (hot-spots). It does not meet any exclusion criteria.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12110,\"completion_tokens\":126,\"total_tokens\":12236,\"cost\":0.00163232,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":12032,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00163232,\"upstream_inference_prompt_cost\":0.00158444,\"upstream_inference_completions_cost\":0.00004788},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653929-AaCFelKtrnPhnzjStz10",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 12110,
+        "completion_tokens": 126,
+        "total_tokens": 12236,
+        "cost": 0.00163232,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 12032,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00163232,
+          "upstream_inference_prompt_cost": 0.00158444,
+          "upstream_inference_completions_cost": 4.788e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.706,
+  "call_id": "DS__z1_D25QFAFZ__deepseek__r2",
+  "fingerprint": "ffb37b5c3268208422cc47c6b4c70ff142a33614fad140a16e7bef95b0a5d9b0",
+  "paper_id": "z1_D25QFAFZ",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:05:28.328260+00:00",
+  "input_sha256": "e3703b826419683f88a0f2079e76435585d5abd37dda2906e2a5f37ba4670692",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

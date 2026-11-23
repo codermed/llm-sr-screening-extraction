@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789655708-i3TMAdpmainV5IvTezmP",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00317086,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 11991,
+    "completion_tokens": 140,
+    "total_tokens": 12131,
+    "cost": 0.00317086,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00317086,
+      "upstream_inference_prompt_cost": 0.00311766,
+      "upstream_inference_completions_cost": 5.32e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper's primary focus is on assessing the aptitude for sugarcane cultivation expansion under climate change scenarios, using a land use change model as a tool to generate future sugarcane area extents. While it implements a national-scale LULC prediction model for Brazil, this prediction is not the central research question. The core objective is to evaluate climatic suitability and water deficit risks for sugarcane. The LULC prediction is used as an input/step to identify where expansion might occur, and the analysis then overlays these areas with climate risk and agroecological zoning. Therefore, it fails the core inclusion criterion that the primary focus must be LULC prediction/simulation.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:35:03.204416+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 5.216,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789655708-i3TMAdpmainV5IvTezmP\",\"object\":\"chat.completion\",\"created\":1789655708,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper's primary focus is on assessing the aptitude for sugarcane cultivation expansion under climate change scenarios, using a land use change model as a tool to generate future sugarcane area extents. While it implements a national-scale LULC prediction model for Brazil, this prediction is not the central research question. The core objective is to evaluate climatic suitability and water deficit risks for sugarcane. The LULC prediction is used as an input/step to identify where expansion might occur, and the analysis then overlays these areas with climate risk and agroecological zoning. Therefore, it fails the core inclusion criterion that the primary focus must be LULC prediction/simulation.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":11991,\"completion_tokens\":140,\"total_tokens\":12131,\"cost\":0.00317086,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00317086,\"upstream_inference_prompt_cost\":0.00311766,\"upstream_inference_completions_cost\":0.0000532},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655708-i3TMAdpmainV5IvTezmP",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 11991,
+        "completion_tokens": 140,
+        "total_tokens": 12131,
+        "cost": 0.00317086,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00317086,
+          "upstream_inference_prompt_cost": 0.00311766,
+          "upstream_inference_completions_cost": 5.32e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 5.217,
+  "call_id": "DS__z1_5TAVYD66__deepseek__r3",
+  "fingerprint": "70771ff95ea48c5979649b4794f0de9bb1585733e34f3a4723cca8ea127d920b",
+  "paper_id": "z1_5TAVYD66",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:35:08.420752+00:00",
+  "input_sha256": "eb0cdbc5542e4389aed1f4fcaf97731eaa2e8128c41adeaff299a1f5d181d089",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

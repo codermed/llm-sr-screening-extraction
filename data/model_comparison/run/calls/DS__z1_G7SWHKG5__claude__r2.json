@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789654420-0tjBdKc4Vh7JjAxkKwd6",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.018543,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 13883,
+    "completion_tokens": 932,
+    "total_tokens": 14815,
+    "cost": 0.018543,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.018543,
+      "upstream_inference_prompt_cost": 0.013883,
+      "upstream_inference_completions_cost": 0.00466
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Carbon Storage in Switzerland Under Climate Change\n\n## Initial Assessment\n\n**Is this a review article?**\nNo. This is an original research article (explicitly labeled \"ORIGINAL ARTICLE\") presenting a modeling study with primary data analysis and simulations.\n\n---\n\n## Non-Review Paper Evaluation\n\n### Core Inclusion Criteria Assessment:\n\n**1. Explicit national-scale spatial implementation (entire country)?**\n- ✅ YES: Study covers entire Switzerland at 2 km spatial resolution\n- Text: \"we use a novel gridded daily climate change data set (spatial resolution *2 km)...to extend this study to the national scale\"\n- 915 study sites distributed across Switzerland (286-2188 m elevation)\n\n**2. Primary focus = LULC prediction/simulation?**\n- ❌ NO: Primary focus is **carbon storage dynamics** in forests, not land use/land cover change prediction\n- The study simulates vegetation carbon stocks and soil carbon under climate scenarios\n- Species composition shifts are modeled as ecological responses, not LULC change mapping\n- No LULC classification scheme (e.g., forest/agriculture/urban/grassland transitions)\n\n**3. Implementation of ≥2 future scenarios with quantitative comparison?**\n- ✅ YES: Three climate scenarios (RCP3PD, A1B, A2) with three variants each (Moderate, Medium, Extreme)\n- Quantitative comparisons in Tables 2 and 3 showing vegetation and soil carbon stocks\n- Time slices: 2035, 2060, 2085\n\n**4. Spatial modeling with quantitative accuracy metrics?**\n- ⚠️ PARTIAL: Spatial modeling present, but accuracy metrics are limited\n- Model validation against NFI (National Forest Inventory) data shows simulated biomass is higher than observed (acknowledged limitation)\n- No explicit accuracy assessment metrics (e.g., RMSE, R², classification accuracy)\n- Focus is on change trajectories rather than predictive accuracy\n\n**5. Outputs include mapped LULC projections?**\n- ❌ NO: Outputs are carbon stock maps (Figures 2-3), not LULC maps\n- Figures show vegetation carbon change, not LULC class transitions\n- No mapping of forest/non-forest or other LULC categories\n\n---\n\n### Exclusion Criteria Assessment:\n\n**Biomass/bioenergy/carbon studies without LULC change analysis?**\n- ✅ MATCHES EXCLUSION: This is fundamentally a carbon storage study\n- Text explicitly states: \"We evaluated climate impacts on vegetation and soil carbon storage for Swiss forests\"\n- While species composition shifts occur (needle-leaved → broadleaved), this is ecological response modeling, not LULC change prediction\n- No analysis of actual land use changes (e.g., forest conversion, deforestation, afforestation)\n\n**Species-specific/ecological focus unrelated to LULC?**\n- ✅ MATCHES EXCLUSION: Extensive discussion of tree species shifts (Picea abies, Fagus sylvatica, Quercus spp.)\n- Focus on species establishment, mortality, and competitive dynamics\n- Discussion of treeline migration and species distribution limits\n\n---\n\n## Conclusion\n\n**Final categorization: EXCLUDED**\n\n**Justification:** \nThis paper is a carbon storage modeling study, not a land use/land cover prediction study. While it implements national-scale spatial modeling with multiple climate scenarios and produces mapped outputs, the primary research objective is quantifying future carbon stocks in Swiss forests under climate change, not predicting LULC transitions or changes. The study models ecological responses (species composition shifts, biomass dynamics) rather than LULC change. The inclusion of species shifts does not constitute LULC prediction—these are within-forest ecological transitions, not changes in land use categories (e.g., forest to agriculture, urban expansion). The paper explicitly excludes management practices and focuses on potential natural vegetation dynamics. This falls squarely within the \"biomass/carbon studies without LULC change analysis\" exclusion criterion.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:13:35.853624+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 11.455,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789654420-0tjBdKc4Vh7JjAxkKwd6\",\"object\":\"chat.completion\",\"created\":1789654420,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Carbon Storage in Switzerland Under Climate Change\\n\\n## Initial Assessment\\n\\n**Is this a review article?**\\nNo. This is an original research article (explicitly labeled \\\"ORIGINAL ARTICLE\\\") presenting a modeling study with primary data analysis and simulations.\\n\\n---\\n\\n## Non-Review Paper Evaluation\\n\\n### Core Inclusion Criteria Assessment:\\n\\n**1. Explicit national-scale spatial implementation (entire country)?**\\n- ✅ YES: Study covers entire Switzerland at 2 km spatial resolution\\n- Text: \\\"we use a novel gridded daily climate change data set (spatial resolution *2 km)...to extend this study to the national scale\\\"\\n- 915 study sites distributed across Switzerland (286-2188 m elevation)\\n\\n**2. Primary focus = LULC prediction/simulation?**\\n- ❌ NO: Primary focus is **carbon storage dynamics** in forests, not land use/land cover change prediction\\n- The study simulates vegetation carbon stocks and soil carbon under climate scenarios\\n- Species composition shifts are modeled as ecological responses, not LULC change mapping\\n- No LULC classification scheme (e.g., forest/agriculture/urban/grassland transitions)\\n\\n**3. Implementation of ≥2 future scenarios with quantitative comparison?**\\n- ✅ YES: Three climate scenarios (RCP3PD, A1B, A2) with three variants each (Moderate, Medium, Extreme)\\n- Quantitative comparisons in Tables 2 and 3 showing vegetation and soil carbon stocks\\n- Time slices: 2035, 2060, 2085\\n\\n**4. Spatial modeling with quantitative accuracy metrics?**\\n- ⚠️ PARTIAL: Spatial modeling present, but accuracy metrics are limited\\n- Model validation against NFI (National Forest Inventory) data shows simulated biomass is higher than observed (acknowledged limitation)\\n- No explicit accuracy assessment metrics (e.g., RMSE, R², classification accuracy)\\n- Focus is on change trajectories rather than predictive accuracy\\n\\n**5. Outputs include mapped LULC projections?**\\n- ❌ NO: Outputs are carbon stock maps (Figures 2-3), not LULC maps\\n- Figures show vegetation carbon change, not LULC class transitions\\n- No mapping of forest/non-forest or other LULC categories\\n\\n---\\n\\n### Exclusion Criteria Assessment:\\n\\n**Biomass/bioenergy/carbon studies without LULC change analysis?**\\n- ✅ MATCHES EXCLUSION: This is fundamentally a carbon storage study\\n- Text explicitly states: \\\"We evaluated climate impacts on vegetation and soil carbon storage for Swiss forests\\\"\\n- While species composition shifts occur (needle-leaved → broadleaved), this is ecological response modeling, not LULC change prediction\\n- No analysis of actual land use changes (e.g., forest conversion, deforestation, afforestation)\\n\\n**Species-specific/ecological focus unrelated to LULC?**\\n- ✅ MATCHES EXCLUSION: Extensive discussion of tree species shifts (Picea abies, Fagus sylvatica, Quercus spp.)\\n- Focus on species establishment, mortality, and competitive dynamics\\n- Discussion of treeline migration and species distribution limits\\n\\n---\\n\\n## Conclusion\\n\\n**Final categorization: EXCLUDED**\\n\\n**Justification:** \\nThis paper is a carbon storage modeling study, not a land use/land cover prediction study. While it implements national-scale spatial modeling with multiple climate scenarios and produces mapped outputs, the primary research objective is quantifying future carbon stocks in Swiss forests under climate change, not predicting LULC transitions or changes. The study models ecological responses (species composition shifts, biomass dynamics) rather than LULC change. The inclusion of species shifts does not constitute LULC prediction—these are within-forest ecological transitions, not changes in land use categories (e.g., forest to agriculture, urban expansion). The paper explicitly excludes management practices and focuses on potential natural vegetation dynamics. This falls squarely within the \\\"biomass/carbon studies without LULC change analysis\\\" exclusion criterion.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":13883,\"completion_tokens\":932,\"total_tokens\":14815,\"cost\":0.018543,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.018543,\"upstream_inference_prompt_cost\":0.013883,\"upstream_inference_completions_cost\":0.00466},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654420-0tjBdKc4Vh7JjAxkKwd6",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 13883,
+        "completion_tokens": 932,
+        "total_tokens": 14815,
+        "cost": 0.018543,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.018543,
+          "upstream_inference_prompt_cost": 0.013883,
+          "upstream_inference_completions_cost": 0.00466
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 11.456,
+  "call_id": "DS__z1_G7SWHKG5__claude__r2",
+  "fingerprint": "30daef3bc1cd42606ee30f33f11d21b232059aa2fcf9818134fc0184cc4e1269",
+  "paper_id": "z1_G7SWHKG5",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:13:47.309178+00:00",
+  "input_sha256": "bf1612e4632e07032a7a303a95b7ec15093309a6eab14d4793b9404d369990a6",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

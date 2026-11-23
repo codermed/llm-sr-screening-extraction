@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789654930-gfEWqMBErzVN3ECKoxlA",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.012954,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 7759,
+    "completion_tokens": 1039,
+    "total_tokens": 8798,
+    "cost": 0.012954,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.012954,
+      "upstream_inference_prompt_cost": 0.007759,
+      "upstream_inference_completions_cost": 0.005195
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis\n\n## Step 1: Determine if Review Article\n**Assessment:** This is a **NON-REVIEW PAPER**. \n\nThe paper presents original empirical research with a specific methodology section (Section 2), data collection from 17 examples across 9 locations in Czech Republic, statistical analysis (Section 3), and results/discussion of original findings. While it cites and discusses literature, it is fundamentally a research paper reporting new data analysis, not a literature synthesis/review article.\n\n---\n\n## Step 2: Evaluate Against Inclusion/Exclusion Criteria for Research Papers\n\n### PRIMARY RESEARCH QUESTION & FOCUS:\nThe paper's objective (stated in Introduction): *\"to investigate how carbon content in the surface humus changes within the altitudinal gradient, species composition (coniferous x deciduous) and the age of the stand on the permanent forest land in comparison to afforested farmland.\"*\n\n**Primary Focus Assessment:** The central research question concerns **soil organic carbon (SOC) accumulation** following afforestation, NOT land use/land cover (LULC) prediction or simulation.\n\n### CORE INCLUSION CRITERIA CHECK:\n\n| Criterion | Status | Evidence |\n|-----------|--------|----------|\n| **Explicit national-scale spatial implementation** | ✗ FAIL | 9 locations across Czech Republic (distributed sampling), not comprehensive national coverage |\n| **Primary focus = LULC prediction/simulation** | ✗ FAIL | Primary focus is carbon sequestration dynamics in soil humus, not LULC change prediction |\n| **≥2 future scenarios with quantitative comparison** | ✗ FAIL | No future scenarios modeled; study compares two land uses (forest vs. afforested farmland) at different ages, not predictive scenarios |\n| **Spatial modeling with quantitative accuracy metrics** | ✗ FAIL | Uses GLMM for statistical modeling of carbon content by altitude/age/species, not spatial LULC modeling; no LULC classification accuracy metrics |\n| **Mapped LULC projections as outputs** | ✗ FAIL | No LULC maps produced; outputs are carbon content predictions by stand characteristics |\n\n**Result:** Fails multiple core inclusion criteria.\n\n### EXCLUSION CRITERIA CHECK:\n\n| Criterion | Status | Evidence |\n|-----------|--------|----------|\n| **No LULC prediction component** | ✓ MATCH | Paper contains no LULC prediction, classification, or change modeling |\n| **Species-specific/ecological focus unrelated to LULC** | ✓ MATCH | Focus is on carbon accumulation in soil humus by tree species and stand age—an ecological/silvicultural concern, not LULC dynamics |\n| **Biomass/bioenergy/carbon studies without LULC change analysis** | ✓ MATCH | Explicitly a carbon sequestration study without LULC change analysis component |\n| **Purely qualitative/historical analysis or single-scenario projections** | ✓ PARTIAL MATCH | While quantitative, the study is retrospective (comparing existing stands of different ages as proxies for temporal change), not forward-looking LULC prediction |\n\n**Result:** Meets multiple exclusion criteria.\n\n---\n\n## Step 3: Final Categorization Decision\n\n**FINAL CATEGORIZATION: EXCLUDED**\n\n**Justification:**\n\nThis paper is fundamentally a **soil carbon/silviculture study**, not an LULC prediction research paper. While it examines afforestation (a land use change process), it:\n\n1. **Does NOT predict LULC change** – No modeling of where/when/how agricultural land will convert to forest\n2. **Does NOT produce spatial LULC outputs** – No maps, projections, or spatial scenarios of land use distribution\n3. **Does NOT implement future LULC scenarios** – Compares existing stands across age classes as temporal proxies; no predictive modeling of future land cover states\n4. **Primary research question concerns carbon dynamics**, not LULC change prediction\n5. **Lacks spatial LULC modeling framework** – Uses statistical models (GLMM) of carbon content by environmental variables, not spatial LULC classification/prediction models\n6. **Meets exclusion criterion:** \"Biomass/bioenergy/carbon studies without LULC change analysis\"\n\nThe paper contributes valuable knowledge about carbon sequestration benefits of afforestation but falls outside the scope of research focused on **predicting land use/land cover change at national scale**.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:22:06.173352+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 13.386,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789654930-gfEWqMBErzVN3ECKoxlA\",\"object\":\"chat.completion\",\"created\":1789654930,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis\\n\\n## Step 1: Determine if Review Article\\n**Assessment:** This is a **NON-REVIEW PAPER**. \\n\\nThe paper presents original empirical research with a specific methodology section (Section 2), data collection from 17 examples across 9 locations in Czech Republic, statistical analysis (Section 3), and results/discussion of original findings. While it cites and discusses literature, it is fundamentally a research paper reporting new data analysis, not a literature synthesis/review article.\\n\\n---\\n\\n## Step 2: Evaluate Against Inclusion/Exclusion Criteria for Research Papers\\n\\n### PRIMARY RESEARCH QUESTION & FOCUS:\\nThe paper's objective (stated in Introduction): *\\\"to investigate how carbon content in the surface humus changes within the altitudinal gradient, species composition (coniferous x deciduous) and the age of the stand on the permanent forest land in comparison to afforested farmland.\\\"*\\n\\n**Primary Focus Assessment:** The central research question concerns **soil organic carbon (SOC) accumulation** following afforestation, NOT land use/land cover (LULC) prediction or simulation.\\n\\n### CORE INCLUSION CRITERIA CHECK:\\n\\n| Criterion | Status | Evidence |\\n|-----------|--------|----------|\\n| **Explicit national-scale spatial implementation** | ✗ FAIL | 9 locations across Czech Republic (distributed sampling), not comprehensive national coverage |\\n| **Primary focus = LULC prediction/simulation** | ✗ FAIL | Primary focus is carbon sequestration dynamics in soil humus, not LULC change prediction |\\n| **≥2 future scenarios with quantitative comparison** | ✗ FAIL | No future scenarios modeled; study compares two land uses (forest vs. afforested farmland) at different ages, not predictive scenarios |\\n| **Spatial modeling with quantitative accuracy metrics** | ✗ FAIL | Uses GLMM for statistical modeling of carbon content by altitude/age/species, not spatial LULC modeling; no LULC classification accuracy metrics |\\n| **Mapped LULC projections as outputs** | ✗ FAIL | No LULC maps produced; outputs are carbon content predictions by stand characteristics |\\n\\n**Result:** Fails multiple core inclusion criteria.\\n\\n### EXCLUSION CRITERIA CHECK:\\n\\n| Criterion | Status | Evidence |\\n|-----------|--------|----------|\\n| **No LULC prediction component** | ✓ MATCH | Paper contains no LULC prediction, classification, or change modeling |\\n| **Species-specific/ecological focus unrelated to LULC** | ✓ MATCH | Focus is on carbon accumulation in soil humus by tree species and stand age—an ecological/silvicultural concern, not LULC dynamics |\\n| **Biomass/bioenergy/carbon studies without LULC change analysis** | ✓ MATCH | Explicitly a carbon sequestration study without LULC change analysis component |\\n| **Purely qualitative/historical analysis or single-scenario projections** | ✓ PARTIAL MATCH | While quantitative, the study is retrospective (comparing existing stands of different ages as proxies for temporal change), not forward-looking LULC prediction |\\n\\n**Result:** Meets multiple exclusion criteria.\\n\\n---\\n\\n## Step 3: Final Categorization Decision\\n\\n**FINAL CATEGORIZATION: EXCLUDED**\\n\\n**Justification:**\\n\\nThis paper is fundamentally a **soil carbon/silviculture study**, not an LULC prediction research paper. While it examines afforestation (a land use change process), it:\\n\\n1. **Does NOT predict LULC change** – No modeling of where/when/how agricultural land will convert to forest\\n2. **Does NOT produce spatial LULC outputs** – No maps, projections, or spatial scenarios of land use distribution\\n3. **Does NOT implement future LULC scenarios** – Compares existing stands across age classes as temporal proxies; no predictive modeling of future land cover states\\n4. **Primary research question concerns carbon dynamics**, not LULC change prediction\\n5. **Lacks spatial LULC modeling framework** – Uses statistical models (GLMM) of carbon content by environmental variables, not spatial LULC classification/prediction models\\n6. **Meets exclusion criterion:** \\\"Biomass/bioenergy/carbon studies without LULC change analysis\\\"\\n\\nThe paper contributes valuable knowledge about carbon sequestration benefits of afforestation but falls outside the scope of research focused on **predicting land use/land cover change at national scale**.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":7759,\"completion_tokens\":1039,\"total_tokens\":8798,\"cost\":0.012954,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.012954,\"upstream_inference_prompt_cost\":0.007759,\"upstream_inference_completions_cost\":0.005195},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654930-gfEWqMBErzVN3ECKoxlA",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 7759,
+        "completion_tokens": 1039,
+        "total_tokens": 8798,
+        "cost": 0.012954,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.012954,
+          "upstream_inference_prompt_cost": 0.007759,
+          "upstream_inference_completions_cost": 0.005195
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 13.387,
+  "call_id": "DS__z1_L4CSL6PN__claude__r2",
+  "fingerprint": "29d9548d72a4840efdc4d7ff3c8e9fdaeaedc05d16ebe5b23ca7939ed54b554c",
+  "paper_id": "z1_L4CSL6PN",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:22:19.560252+00:00",
+  "input_sha256": "f7430750989407df2289c92e241c8a362ba6c5ef7c025421433ca02db2694bfb",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

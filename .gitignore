@@ -1,0 +1,28 @@
+# Secrets and local configuration
+.env
+*.env
+*credentials*.json
+*service-account*.json
+*service_account*.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Outputs of optional re-runs (not part of the reproduced results)
+output/
+results/bertscore_baseline_run/
+*.sqlite
+
+# Full texts and PDFs must not be committed (copyright)
+*.pdf
+!results/figures/*.pdf
+texts/
+
+# OS files
+.DS_Store
+Thumbs.db

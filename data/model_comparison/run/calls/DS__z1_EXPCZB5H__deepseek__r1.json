@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653231-WbvsgS8PCkfOQdQI6FK4",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00386348,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 14082,
+    "completion_tokens": 532,
+    "total_tokens": 14614,
+    "cost": 0.00386348,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00386348,
+      "upstream_inference_prompt_cost": 0.00366132,
+      "upstream_inference_completions_cost": 0.00020216
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: Explicit national-scale spatial implementation for China; primary focus on LULC prediction/simulation; implements and quantitatively compares two future scenarios (A and B); uses spatial allocation modeling with quantitative metrics (conversion matrix, validation against 2010 data); outputs include mapped LULC projections for 2020, 2050, 2080.)\n\n**Justification Details:**\n\n1.  **Not a Review:** The paper presents original research involving model development, integration, and application.\n2.  **Core Inclusion Criteria (All Met):**\n    *   **Explicit National-Scale Spatial Implementation:** The study area is explicitly the entirety of China (\"...to explore the future dynamics of land use under two scenarios **in China**\"). The methodology describes data preparation and model application at the national level (e.g., \"three land use maps of **China** with a resolution of 1 km\").\n    *   **Primary Focus on LULC Prediction:** The central research question is the simulation of future land use patterns. The abstract states the aim is \"to provide an integrated model... to explore the future dynamics of land use,\" and the introduction discusses solving the \"number\" and \"position\" problems of LULC prediction.\n    *   **Implementation of ≥2 Future Scenarios:** The paper explicitly develops and compares two distinct scenarios (Scenario A: yield continues to increase; Scenario B: yield remains constant) to project future LULC.\n    *   **Spatial Modeling with Quantitative Metrics:** It employs an integrated spatial allocation model (based on CLUE principles). Quantitative validation is performed by comparing simulated vs. monitored land use areas for 2010 (Figure 3). Quantitative change rates and a conversion matrix (Table 2, Figure 4) are provided, and quantitative differences between scenarios are analyzed (e.g., \"The projected cropland in 2080 is expected to be 27.37% lower...\").\n    *   **Outputs Include Mapped LULC Projections:** The results present spatial distribution maps of projected land use for 2000, 2005, 2020, 2050, and 2080 under both scenarios (Figures 6 and 8).\n\n3.  **Exclusion Criteria (None Met):** The paper is not global, local, or transboundary in its primary analysis; LULC prediction is the core component; it is not species-focused; it produces spatially explicit LULC maps; it is an applied study, not purely methodological; it includes future projections; and it implements more than one scenario.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:53:46.238485+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 11.841,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653231-WbvsgS8PCkfOQdQI6FK4\",\"object\":\"chat.completion\",\"created\":1789653231,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: Explicit national-scale spatial implementation for China; primary focus on LULC prediction/simulation; implements and quantitatively compares two future scenarios (A and B); uses spatial allocation modeling with quantitative metrics (conversion matrix, validation against 2010 data); outputs include mapped LULC projections for 2020, 2050, 2080.)\\n\\n**Justification Details:**\\n\\n1.  **Not a Review:** The paper presents original research involving model development, integration, and application.\\n2.  **Core Inclusion Criteria (All Met):**\\n    *   **Explicit National-Scale Spatial Implementation:** The study area is explicitly the entirety of China (\\\"...to explore the future dynamics of land use under two scenarios **in China**\\\"). The methodology describes data preparation and model application at the national level (e.g., \\\"three land use maps of **China** with a resolution of 1 km\\\").\\n    *   **Primary Focus on LULC Prediction:** The central research question is the simulation of future land use patterns. The abstract states the aim is \\\"to provide an integrated model... to explore the future dynamics of land use,\\\" and the introduction discusses solving the \\\"number\\\" and \\\"position\\\" problems of LULC prediction.\\n    *   **Implementation of ≥2 Future Scenarios:** The paper explicitly develops and compares two distinct scenarios (Scenario A: yield continues to increase; Scenario B: yield remains constant) to project future LULC.\\n    *   **Spatial Modeling with Quantitative Metrics:** It employs an integrated spatial allocation model (based on CLUE principles). Quantitative validation is performed by comparing simulated vs. monitored land use areas for 2010 (Figure 3). Quantitative change rates and a conversion matrix (Table 2, Figure 4) are provided, and quantitative differences between scenarios are analyzed (e.g., \\\"The projected cropland in 2080 is expected to be 27.37% lower...\\\").\\n    *   **Outputs Include Mapped LULC Projections:** The results present spatial distribution maps of projected land use for 2000, 2005, 2020, 2050, and 2080 under both scenarios (Figures 6 and 8).\\n\\n3.  **Exclusion Criteria (None Met):** The paper is not global, local, or transboundary in its primary analysis; LULC prediction is the core component; it is not species-focused; it produces spatially explicit LULC maps; it is an applied study, not purely methodological; it includes future projections; and it implements more than one scenario.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":14082,\"completion_tokens\":532,\"total_tokens\":14614,\"cost\":0.00386348,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00386348,\"upstream_inference_prompt_cost\":0.00366132,\"upstream_inference_completions_cost\":0.00020216},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653231-WbvsgS8PCkfOQdQI6FK4",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 14082,
+        "completion_tokens": 532,
+        "total_tokens": 14614,
+        "cost": 0.00386348,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00386348,
+          "upstream_inference_prompt_cost": 0.00366132,
+          "upstream_inference_completions_cost": 0.00020216
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 11.841,
+  "call_id": "DS__z1_EXPCZB5H__deepseek__r1",
+  "fingerprint": "c59343e4fb8d438a6ab1c1d22fb97a36d56e8a19cc5165165d8feb271d653073",
+  "paper_id": "z1_EXPCZB5H",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:53:58.079418+00:00",
+  "input_sha256": "40b29472bbd7e8aa5fe91fde7558effa1ae4f450532a3337d7c57d891f2d4e0e",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

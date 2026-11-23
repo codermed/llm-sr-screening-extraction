@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789654748-tBWCBbgmvVHRx1sJi5zJ",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00238152,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 8141,
+    "completion_tokens": 697,
+    "total_tokens": 8838,
+    "cost": 0.00238152,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00238152,
+      "upstream_inference_prompt_cost": 0.00211666,
+      "upstream_inference_completions_cost": 0.00026486
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: **OK** (Justification: Explicit national-scale LULC prediction for Bolivia; Primary objective is to evaluate and compare six deforestation simulation models; Implements multiple scenarios varying deforestation allocation rules; Uses quantitative pixel-level and stratified accuracy metrics (PFOM, SFOM, error decomposition); Produces and evaluates mapped LULC projections for biodiversity impact assessment.)\n\n**Analysis Breakdown:**\n\n1.  **Review Article Check:** The paper is a **NON-REVIEW PAPER**. It is a primary research article presenting original modeling, analysis, and results.\n\n2.  **Core Inclusion Criteria Check (All PASS):**\n    *   ✅ **Explicit National-Scale Spatial Implementation:** The study area is explicitly \"the country of Bolivia\" (Fig. 1, Methods section). The modeling and evaluation are conducted for the entire national forested area.\n    *   ✅ **Primary Focus = LULC Prediction/Simulation:** The central research question is to evaluate and compare the performance of different land cover change (deforestation) simulation models/scenarios. The title, abstract, and objectives clearly state this focus.\n    *   ✅ **Implementation of ≥2 Future Scenarios:** The paper creates and compares **six different deforestation simulation scenarios** (national, province, municipality, ecoregion, carbon-level, department). These are variations of \"business-as-usual\" but differ in their spatial allocation rules, constituting multiple modeled futures.\n    *   ✅ **Spatial Modeling with Quantitative Accuracy Metrics:** The models are spatially explicit (990m resolution). Evaluation uses quantitative metrics including Pixel-level Figure of Merit (PFOM), Stratum Figure of Merit (SFOM), and decomposed quantity and allocation errors. Accuracy is reported numerically in tables and figures.\n    *   ✅ **Outputs Include Mapped LULC Projections:** Simulated deforestation maps are produced for each scenario and compared to a reference map (2014). Figures (e.g., Fig. 4) visually show these spatial projections.\n\n3.  **Exclusion Criteria Check (None MET):**\n    *   ❌ **Not Global/Local/Regional:** It is national-scale (Bolivia).\n    *   ❌ **Has LULC Prediction:** Prediction/simulation is the core component.\n    *   ❌ **Not Purely Species-Focused:** While biodiversity impacts (species ranges) are assessed, this is an *application* of the LULC predictions to evaluate their utility. The primary research aim remains model evaluation and selection.\n    *   ❌ **Spatially Explicit LULC Outputs:** Yes, maps are produced.\n    *   ❌ **Not a Methodological Paper Without Application:** The paper applies an established land change modeling framework (TerrSet/GEOMOD) to a specific national case study.\n    *   ❌ **Has Future Projections:** Projects deforestation from 2010 to 2014 for evaluation.\n    *   ❌ **Has Quantitative Metrics:** PFOM, error decomposition, etc., are reported.\n    *   ❌ **Implements Multiple Scenarios:** Six allocation scenarios are compared.\n\n4.  **Primary Focus Determination:** The paper's primary objective is to evaluate land cover change (LULC) simulation models for their effectiveness in assessing biodiversity impacts. The **LULC prediction is the central object of study**, not merely an input. Therefore, it fits the **'OK'** category.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:19:03.833038+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 15.49,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789654748-tBWCBbgmvVHRx1sJi5zJ\",\"object\":\"chat.completion\",\"created\":1789654748,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: **OK** (Justification: Explicit national-scale LULC prediction for Bolivia; Primary objective is to evaluate and compare six deforestation simulation models; Implements multiple scenarios varying deforestation allocation rules; Uses quantitative pixel-level and stratified accuracy metrics (PFOM, SFOM, error decomposition); Produces and evaluates mapped LULC projections for biodiversity impact assessment.)\\n\\n**Analysis Breakdown:**\\n\\n1.  **Review Article Check:** The paper is a **NON-REVIEW PAPER**. It is a primary research article presenting original modeling, analysis, and results.\\n\\n2.  **Core Inclusion Criteria Check (All PASS):**\\n    *   ✅ **Explicit National-Scale Spatial Implementation:** The study area is explicitly \\\"the country of Bolivia\\\" (Fig. 1, Methods section). The modeling and evaluation are conducted for the entire national forested area.\\n    *   ✅ **Primary Focus = LULC Prediction/Simulation:** The central research question is to evaluate and compare the performance of different land cover change (deforestation) simulation models/scenarios. The title, abstract, and objectives clearly state this focus.\\n    *   ✅ **Implementation of ≥2 Future Scenarios:** The paper creates and compares **six different deforestation simulation scenarios** (national, province, municipality, ecoregion, carbon-level, department). These are variations of \\\"business-as-usual\\\" but differ in their spatial allocation rules, constituting multiple modeled futures.\\n    *   ✅ **Spatial Modeling with Quantitative Accuracy Metrics:** The models are spatially explicit (990m resolution). Evaluation uses quantitative metrics including Pixel-level Figure of Merit (PFOM), Stratum Figure of Merit (SFOM), and decomposed quantity and allocation errors. Accuracy is reported numerically in tables and figures.\\n    *   ✅ **Outputs Include Mapped LULC Projections:** Simulated deforestation maps are produced for each scenario and compared to a reference map (2014). Figures (e.g., Fig. 4) visually show these spatial projections.\\n\\n3.  **Exclusion Criteria Check (None MET):**\\n    *   ❌ **Not Global/Local/Regional:** It is national-scale (Bolivia).\\n    *   ❌ **Has LULC Prediction:** Prediction/simulation is the core component.\\n    *   ❌ **Not Purely Species-Focused:** While biodiversity impacts (species ranges) are assessed, this is an *application* of the LULC predictions to evaluate their utility. The primary research aim remains model evaluation and selection.\\n    *   ❌ **Spatially Explicit LULC Outputs:** Yes, maps are produced.\\n    *   ❌ **Not a Methodological Paper Without Application:** The paper applies an established land change modeling framework (TerrSet/GEOMOD) to a specific national case study.\\n    *   ❌ **Has Future Projections:** Projects deforestation from 2010 to 2014 for evaluation.\\n    *   ❌ **Has Quantitative Metrics:** PFOM, error decomposition, etc., are reported.\\n    *   ❌ **Implements Multiple Scenarios:** Six allocation scenarios are compared.\\n\\n4.  **Primary Focus Determination:** The paper's primary objective is to evaluate land cover change (LULC) simulation models for their effectiveness in assessing biodiversity impacts. The **LULC prediction is the central object of study**, not merely an input. Therefore, it fits the **'OK'** category.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":8141,\"completion_tokens\":697,\"total_tokens\":8838,\"cost\":0.00238152,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00238152,\"upstream_inference_prompt_cost\":0.00211666,\"upstream_inference_completions_cost\":0.00026486},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654748-tBWCBbgmvVHRx1sJi5zJ",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 8141,
+        "completion_tokens": 697,
+        "total_tokens": 8838,
+        "cost": 0.00238152,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00238152,
+          "upstream_inference_prompt_cost": 0.00211666,
+          "upstream_inference_completions_cost": 0.00026486
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 15.49,
+  "call_id": "DS__z1_HXYQTPZG__deepseek__r2",
+  "fingerprint": "5449f1802988c3f754087458caccd5c2696f90f7d18fa7428f38a19bda70f804",
+  "paper_id": "z1_HXYQTPZG",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:19:19.323050+00:00",
+  "input_sha256": "eb8b94cc29c09ec3ab6a925249d85614cca1d2b4246120bf31fdf82f3f6913b2",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

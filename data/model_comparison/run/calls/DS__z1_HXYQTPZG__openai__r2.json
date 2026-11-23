@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654032-D95EoqsudKDKboDShR06",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0011208,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 8234,
+    "completion_tokens": 154,
+    "total_tokens": 8388,
+    "cost": 0.0011208,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 8064,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0011208,
+      "upstream_inference_prompt_cost": 0.0008744,
+      "upstream_inference_completions_cost": 0.0002464
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: Although the study involves spatial land cover change modeling and evaluates multiple scenarios, it does not present future projections but rather evaluates historical deforestation from 2005 to 2014. The demand-for-land model extrapolates quantity linearly but does not produce multiple future scenarios with mapped LULC projections beyond 2014. Also, only a single future time step (2014) is simulated for validation, no multi-scenario future projections are presented. Thus, it lacks the core inclusion criterion of implementing two or more future scenarios with quantitative comparison and producing future mapped LULC projections. The focus is on model evaluation methods and linking evaluation grain to biodiversity impact assessment, not on national-scale future LULC prediction.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:07:07.273480+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.919,
+      "raw_body": "\n         \n{\"id\":\"gen-1789654032-D95EoqsudKDKboDShR06\",\"object\":\"chat.completion\",\"created\":1789654032,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: Although the study involves spatial land cover change modeling and evaluates multiple scenarios, it does not present future projections but rather evaluates historical deforestation from 2005 to 2014. The demand-for-land model extrapolates quantity linearly but does not produce multiple future scenarios with mapped LULC projections beyond 2014. Also, only a single future time step (2014) is simulated for validation, no multi-scenario future projections are presented. Thus, it lacks the core inclusion criterion of implementing two or more future scenarios with quantitative comparison and producing future mapped LULC projections. The focus is on model evaluation methods and linking evaluation grain to biodiversity impact assessment, not on national-scale future LULC prediction.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":8234,\"completion_tokens\":154,\"total_tokens\":8388,\"cost\":0.0011208,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":8064,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0011208,\"upstream_inference_prompt_cost\":0.0008744,\"upstream_inference_completions_cost\":0.0002464},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654032-D95EoqsudKDKboDShR06",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 8234,
+        "completion_tokens": 154,
+        "total_tokens": 8388,
+        "cost": 0.0011208,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 8064,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0011208,
+          "upstream_inference_prompt_cost": 0.0008744,
+          "upstream_inference_completions_cost": 0.0002464
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.92,
+  "call_id": "DS__z1_HXYQTPZG__openai__r2",
+  "fingerprint": "07fb1c3747c638176004f13336bab8f0ed4cf21534cff1c594013d2462baa312",
+  "paper_id": "z1_HXYQTPZG",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:07:10.192933+00:00",
+  "input_sha256": "eb8b94cc29c09ec3ab6a925249d85614cca1d2b4246120bf31fdf82f3f6913b2",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

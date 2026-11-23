@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789652939-ci63RySzuRVLDTqYFJwC",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00348266,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 13256,
+    "completion_tokens": 95,
+    "total_tokens": 13351,
+    "cost": 0.00348266,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00348266,
+      "upstream_inference_prompt_cost": 0.00344656,
+      "upstream_inference_completions_cost": 3.61e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: The paper implements a spatially explicit, national-scale LULC prediction model (GLOBIOM-Brazil) for Brazil. It is a research article with a primary focus on simulating future LULC (agriculture, pasture, forest) under multiple policy scenarios (NoFC, FC, IDC variations) to 2050. The model is validated with quantitative accuracy metrics and projects mapped LULC outputs for comparison across scenarios.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:48:54.787337+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.209,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789652939-ci63RySzuRVLDTqYFJwC\",\"object\":\"chat.completion\",\"created\":1789652939,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: The paper implements a spatially explicit, national-scale LULC prediction model (GLOBIOM-Brazil) for Brazil. It is a research article with a primary focus on simulating future LULC (agriculture, pasture, forest) under multiple policy scenarios (NoFC, FC, IDC variations) to 2050. The model is validated with quantitative accuracy metrics and projects mapped LULC outputs for comparison across scenarios.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":13256,\"completion_tokens\":95,\"total_tokens\":13351,\"cost\":0.00348266,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00348266,\"upstream_inference_prompt_cost\":0.00344656,\"upstream_inference_completions_cost\":0.0000361},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652939-ci63RySzuRVLDTqYFJwC",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 13256,
+        "completion_tokens": 95,
+        "total_tokens": 13351,
+        "cost": 0.00348266,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00348266,
+          "upstream_inference_prompt_cost": 0.00344656,
+          "upstream_inference_completions_cost": 3.61e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.209,
+  "call_id": "DS__z1_WLMPUWUE__deepseek__r1",
+  "fingerprint": "e280b32448e5044f91a0fb74dbacd508cd6b42ee243018c035931760e0cecbd9",
+  "paper_id": "z1_WLMPUWUE",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:48:58.995984+00:00",
+  "input_sha256": "a9e13500c0bd9bb63a4c99ce20e7158e3b17853cf98ecdb1adb966dfd92c024f",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

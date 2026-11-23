@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653803-HlqkYXKbidxryw3nAIGh",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00435188,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 16529,
+    "completion_tokens": 143,
+    "total_tokens": 16672,
+    "cost": 0.00435188,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00435188,
+      "upstream_inference_prompt_cost": 0.00429754,
+      "upstream_inference_completions_cost": 5.434e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The primary research objective is to model the future terrestrial carbon sink, analyzing the impacts of climate change, CO2 fertilization, and LULCC on carbon and water dynamics. LULC prediction is not performed; instead, externally generated LULCC scenarios (SSP245/SSP370 from LUH2) are used as input data to drive the biogeochemical model. The paper's core focus is on the *consequences* of predefined LULCC for carbon stocks/fluxes, not on the spatial prediction or simulation of LULC change itself. It fails the core inclusion criterion that the primary focus must be LULC prediction/simulation.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:03:18.888312+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 10.095,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653803-HlqkYXKbidxryw3nAIGh\",\"object\":\"chat.completion\",\"created\":1789653803,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The primary research objective is to model the future terrestrial carbon sink, analyzing the impacts of climate change, CO2 fertilization, and LULCC on carbon and water dynamics. LULC prediction is not performed; instead, externally generated LULCC scenarios (SSP245/SSP370 from LUH2) are used as input data to drive the biogeochemical model. The paper's core focus is on the *consequences* of predefined LULCC for carbon stocks/fluxes, not on the spatial prediction or simulation of LULC change itself. It fails the core inclusion criterion that the primary focus must be LULC prediction/simulation.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":16529,\"completion_tokens\":143,\"total_tokens\":16672,\"cost\":0.00435188,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00435188,\"upstream_inference_prompt_cost\":0.00429754,\"upstream_inference_completions_cost\":0.00005434},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653803-HlqkYXKbidxryw3nAIGh",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 16529,
+        "completion_tokens": 143,
+        "total_tokens": 16672,
+        "cost": 0.00435188,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00435188,
+          "upstream_inference_prompt_cost": 0.00429754,
+          "upstream_inference_completions_cost": 5.434e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 10.095,
+  "call_id": "DS__z1_CDQYX4ZZ__deepseek__r2",
+  "fingerprint": "48ee09c4df9b964f24f06f17f180a0b0e77a5af32c76e6b449dda7e6f03e0265",
+  "paper_id": "z1_CDQYX4ZZ",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:03:28.983322+00:00",
+  "input_sha256": "93dc2b1c01e72483c3f342abaf8448e09c9e7e6aa4e62ee0d821f4f240d0cf9f",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

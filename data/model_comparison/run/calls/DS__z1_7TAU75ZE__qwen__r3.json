@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789655273-TqtWOnODH6T2k77eBhd9",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.01208298,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 14741,
+    "completion_tokens": 150,
+    "total_tokens": 14891,
+    "cost": 0.01208298,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01208298,
+      "upstream_inference_prompt_cost": 0.01149798,
+      "upstream_inference_completions_cost": 0.000585
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a review article that compares five sustainability impact assessment (SIA) tools used in land use policy advice, but it does not focus on land use/land cover (LULC) future prediction as a central theme. While some of the reviewed tools—such as SIAT and SEAMLESS-IF—incorporate land use modeling components, the article’s primary aim is to analyze end-user participation, tool design phases, and barriers to policy uptake, rather than synthesizing methods or findings specifically related to LULC prediction. Therefore, it does not meet the criterion for a 'REVIEW' focused on LULC future prediction and is classified as 'EXCLUDED'.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:27:49.078501+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.449,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789655273-TqtWOnODH6T2k77eBhd9\",\"object\":\"chat.completion\",\"created\":1789655273,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a review article that compares five sustainability impact assessment (SIA) tools used in land use policy advice, but it does not focus on land use/land cover (LULC) future prediction as a central theme. While some of the reviewed tools—such as SIAT and SEAMLESS-IF—incorporate land use modeling components, the article’s primary aim is to analyze end-user participation, tool design phases, and barriers to policy uptake, rather than synthesizing methods or findings specifically related to LULC prediction. Therefore, it does not meet the criterion for a 'REVIEW' focused on LULC future prediction and is classified as 'EXCLUDED'.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":14741,\"completion_tokens\":150,\"total_tokens\":14891,\"cost\":0.01208298,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.01208298,\"upstream_inference_prompt_cost\":0.01149798,\"upstream_inference_completions_cost\":0.000585},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655273-TqtWOnODH6T2k77eBhd9",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 14741,
+        "completion_tokens": 150,
+        "total_tokens": 14891,
+        "cost": 0.01208298,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01208298,
+          "upstream_inference_prompt_cost": 0.01149798,
+          "upstream_inference_completions_cost": 0.000585
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.45,
+  "call_id": "DS__z1_7TAU75ZE__qwen__r3",
+  "fingerprint": "08cc54d528384c8df7a6feca7b96276cec7daf4780eb80a9463ce22a7fe98f36",
+  "paper_id": "z1_7TAU75ZE",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:27:53.527784+00:00",
+  "input_sha256": "37859721a4192b4723e52705002dd8a524755772c3abd6104e556cf9d8c1009e",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

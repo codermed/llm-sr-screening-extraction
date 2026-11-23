@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789654660-ghhp0eBPvlXgzqrZIl3V",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.022705,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 16445,
+    "completion_tokens": 1252,
+    "total_tokens": 17697,
+    "cost": 0.022705,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.022705,
+      "upstream_inference_prompt_cost": 0.016445,
+      "upstream_inference_completions_cost": 0.00626
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Carbon Sequestration in U.S. Forests\n\n## Initial Classification\nThis is a **NON-REVIEW PAPER** - it presents original applied research with empirical modeling and quantitative results.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA:\n\n1. **Explicit national-scale spatial implementation (entire country)?**\n   - ✓ YES: \"coterminous 48 states\" with four regional models (Pacific Coast, Rocky Mountain, North, South)\n   - Methodology explicitly divides U.S. forest land into state/substate units\n\n2. **Primary focus = LULC prediction/simulation (central research question)?**\n   - ✗ NO: Primary focus is **carbon sequestration valuation**, not LULC prediction\n   - LULC projections are inputs/assumptions, not the central research question\n   - Paper states: \"we estimated the amount of additional carbon sequestration...and the dollar value of associated carbon benefits\"\n   - LULC scenarios are pre-defined from external sources (USDA 2016 biennial report)\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ✓ YES: Four scenarios tested (baseline, reduced development, afforestation/reforestation, fire mitigation)\n   - Quantitative comparisons provided in Tables 5 and Figure 4\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ✗ PARTIAL: Spatial modeling exists (stage-class models by region)\n   - However, NO accuracy metrics reported for LULC predictions themselves\n   - Accuracy uncertainty discussed only for carbon sequestration estimates (±17-40%)\n   - No validation of LULC projection accuracy\n\n5. **Outputs include mapped LULC projections?**\n   - ✗ NO: No maps of projected LULC change\n   - Figure 3 shows carbon sequestration trends, not LULC projections\n   - LULC changes are described numerically (e.g., \"12.1 million hectares of marginal cropland\") but not mapped\n\n---\n\n### EXCLUSION CRITERIA CHECK:\n\n- **Biomass/bioenergy/carbon studies without LULC change analysis?**\n  - ✓ TRIGGERS EXCLUSION: This is fundamentally a carbon sequestration valuation study\n  - LULC change is treated as an external input/assumption, not as the subject of prediction\n  - The paper uses pre-defined LULC scenarios to model carbon outcomes, not the reverse\n\n- **Economic models lacking spatially explicit LULC outputs?**\n  - ✓ TRIGGERS EXCLUSION: While the paper uses spatial forest dynamics models, the primary outputs are economic (present values in dollars)\n  - LULC projections are implicit/internal to the carbon model, not explicit spatial outputs\n\n- **Methodological papers without application to national-scale prediction?**\n  - ✓ PARTIAL: The paper demonstrates application of existing models (Coulston, Wear & Vose 2015; Wear & Coulston 2015)\n  - But the application is to carbon valuation, not LULC prediction development\n\n---\n\n## Primary Focus Analysis\n\n**Central Research Question:** \n\"What is the present value of carbon sequestration benefits from federal policy alternatives?\"\n\n**LULC Role:** \n- Input assumption (forest area changes specified externally)\n- Not the prediction target\n- Derived from USDA 2016 biennial report, not developed in this paper\n\n**Key Evidence:**\n- Abstract emphasizes \"carbon sequestration benefits\" and \"social cost of carbon\"\n- Methods section: \"We used models of forest dynamics and land-use change to forecast our national-level estimates of forest carbon stocks and fluxes\"\n  - Note: LULC change is a component of the forest dynamics model, not its primary output\n- Results section: All tables present carbon values and present values in dollars\n- No LULC change maps or spatial projections of land cover classes\n\n---\n\n## Final Categorization\n\n**Final categorization: EXCLUDED**\n\n**Justification:** \nThis paper fails multiple core inclusion criteria for LULC prediction research:\n\n1. **Primary focus mismatch**: The central research question concerns carbon sequestration valuation, not LULC prediction. LULC scenarios are external inputs (sourced from USDA 2016) rather than products of this research.\n\n2. **No LULC prediction outputs**: While the paper uses forest dynamics models that incorporate land-use change, it does not produce spatially explicit LULC projections as outputs. LULC changes are described numerically but never mapped or spatially visualized.\n\n3. **LULC as input, not focus**: The paper explicitly states it uses \"existing data and models\" to project carbon outcomes given pre-defined LULC scenarios. This is a carbon modeling application, not LULC prediction research.\n\n4. **Missing accuracy metrics for LULC**: No validation or accuracy assessment of LULC projections themselves; uncertainty discussion focuses solely on carbon sequestration estimates.\n\n5. **Exclusion criterion triggered**: This is fundamentally a carbon/economic study that uses LULC change as an input assumption, fitting the \"Biomass/bioenergy/carbon studies without LULC change analysis\" exclusion category.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:17:35.877353+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 13.855,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789654660-ghhp0eBPvlXgzqrZIl3V\",\"object\":\"chat.completion\",\"created\":1789654660,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Carbon Sequestration in U.S. Forests\\n\\n## Initial Classification\\nThis is a **NON-REVIEW PAPER** - it presents original applied research with empirical modeling and quantitative results.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA:\\n\\n1. **Explicit national-scale spatial implementation (entire country)?**\\n   - ✓ YES: \\\"coterminous 48 states\\\" with four regional models (Pacific Coast, Rocky Mountain, North, South)\\n   - Methodology explicitly divides U.S. forest land into state/substate units\\n\\n2. **Primary focus = LULC prediction/simulation (central research question)?**\\n   - ✗ NO: Primary focus is **carbon sequestration valuation**, not LULC prediction\\n   - LULC projections are inputs/assumptions, not the central research question\\n   - Paper states: \\\"we estimated the amount of additional carbon sequestration...and the dollar value of associated carbon benefits\\\"\\n   - LULC scenarios are pre-defined from external sources (USDA 2016 biennial report)\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ✓ YES: Four scenarios tested (baseline, reduced development, afforestation/reforestation, fire mitigation)\\n   - Quantitative comparisons provided in Tables 5 and Figure 4\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ✗ PARTIAL: Spatial modeling exists (stage-class models by region)\\n   - However, NO accuracy metrics reported for LULC predictions themselves\\n   - Accuracy uncertainty discussed only for carbon sequestration estimates (±17-40%)\\n   - No validation of LULC projection accuracy\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ✗ NO: No maps of projected LULC change\\n   - Figure 3 shows carbon sequestration trends, not LULC projections\\n   - LULC changes are described numerically (e.g., \\\"12.1 million hectares of marginal cropland\\\") but not mapped\\n\\n---\\n\\n### EXCLUSION CRITERIA CHECK:\\n\\n- **Biomass/bioenergy/carbon studies without LULC change analysis?**\\n  - ✓ TRIGGERS EXCLUSION: This is fundamentally a carbon sequestration valuation study\\n  - LULC change is treated as an external input/assumption, not as the subject of prediction\\n  - The paper uses pre-defined LULC scenarios to model carbon outcomes, not the reverse\\n\\n- **Economic models lacking spatially explicit LULC outputs?**\\n  - ✓ TRIGGERS EXCLUSION: While the paper uses spatial forest dynamics models, the primary outputs are economic (present values in dollars)\\n  - LULC projections are implicit/internal to the carbon model, not explicit spatial outputs\\n\\n- **Methodological papers without application to national-scale prediction?**\\n  - ✓ PARTIAL: The paper demonstrates application of existing models (Coulston, Wear & Vose 2015; Wear & Coulston 2015)\\n  - But the application is to carbon valuation, not LULC prediction development\\n\\n---\\n\\n## Primary Focus Analysis\\n\\n**Central Research Question:** \\n\\\"What is the present value of carbon sequestration benefits from federal policy alternatives?\\\"\\n\\n**LULC Role:** \\n- Input assumption (forest area changes specified externally)\\n- Not the prediction target\\n- Derived from USDA 2016 biennial report, not developed in this paper\\n\\n**Key Evidence:**\\n- Abstract emphasizes \\\"carbon sequestration benefits\\\" and \\\"social cost of carbon\\\"\\n- Methods section: \\\"We used models of forest dynamics and land-use change to forecast our national-level estimates of forest carbon stocks and fluxes\\\"\\n  - Note: LULC change is a component of the forest dynamics model, not its primary output\\n- Results section: All tables present carbon values and present values in dollars\\n- No LULC change maps or spatial projections of land cover classes\\n\\n---\\n\\n## Final Categorization\\n\\n**Final categorization: EXCLUDED**\\n\\n**Justification:** \\nThis paper fails multiple core inclusion criteria for LULC prediction research:\\n\\n1. **Primary focus mismatch**: The central research question concerns carbon sequestration valuation, not LULC prediction. LULC scenarios are external inputs (sourced from USDA 2016) rather than products of this research.\\n\\n2. **No LULC prediction outputs**: While the paper uses forest dynamics models that incorporate land-use change, it does not produce spatially explicit LULC projections as outputs. LULC changes are described numerically but never mapped or spatially visualized.\\n\\n3. **LULC as input, not focus**: The paper explicitly states it uses \\\"existing data and models\\\" to project carbon outcomes given pre-defined LULC scenarios. This is a carbon modeling application, not LULC prediction research.\\n\\n4. **Missing accuracy metrics for LULC**: No validation or accuracy assessment of LULC projections themselves; uncertainty discussion focuses solely on carbon sequestration estimates.\\n\\n5. **Exclusion criterion triggered**: This is fundamentally a carbon/economic study that uses LULC change as an input assumption, fitting the \\\"Biomass/bioenergy/carbon studies without LULC change analysis\\\" exclusion category.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":16445,\"completion_tokens\":1252,\"total_tokens\":17697,\"cost\":0.022705,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.022705,\"upstream_inference_prompt_cost\":0.016445,\"upstream_inference_completions_cost\":0.00626},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654660-ghhp0eBPvlXgzqrZIl3V",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 16445,
+        "completion_tokens": 1252,
+        "total_tokens": 17697,
+        "cost": 0.022705,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.022705,
+          "upstream_inference_prompt_cost": 0.016445,
+          "upstream_inference_completions_cost": 0.00626
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 13.856,
+  "call_id": "DS__z1_NPLHNBQ8__claude__r2",
+  "fingerprint": "3f47862a02a77b7742f90e7e46a42b6660979a80735c9cb1a5075bbb5d300054",
+  "paper_id": "z1_NPLHNBQ8",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:17:49.733075+00:00",
+  "input_sha256": "4ea9509ef5090e3e1cba1681130c351ac73361c46fce1582d53116a66e8def9a",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

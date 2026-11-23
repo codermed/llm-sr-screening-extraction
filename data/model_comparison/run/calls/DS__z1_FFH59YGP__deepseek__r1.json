@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653097-lskEpI8tev09AXngVi5L",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00426974,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 16292,
+    "completion_tokens": 89,
+    "total_tokens": 16381,
+    "cost": 0.00426974,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00426974,
+      "upstream_inference_prompt_cost": 0.00423592,
+      "upstream_inference_completions_cost": 3.382e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: Explicit national-scale LULC prediction for Afghanistan using the DLS model; implements three future scenarios (BAU, RED, ENP) with quantitative comparison; includes spatial modeling with quantitative accuracy metrics (Kappa=0.78, overall accuracy 89%); outputs mapped LULC projections for 2030; primary research objective is LULC simulation to assess past and future ecosystem service values.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:51:32.241353+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 6.291,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789653097-lskEpI8tev09AXngVi5L\",\"object\":\"chat.completion\",\"created\":1789653097,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: Explicit national-scale LULC prediction for Afghanistan using the DLS model; implements three future scenarios (BAU, RED, ENP) with quantitative comparison; includes spatial modeling with quantitative accuracy metrics (Kappa=0.78, overall accuracy 89%); outputs mapped LULC projections for 2030; primary research objective is LULC simulation to assess past and future ecosystem service values.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":16292,\"completion_tokens\":89,\"total_tokens\":16381,\"cost\":0.00426974,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00426974,\"upstream_inference_prompt_cost\":0.00423592,\"upstream_inference_completions_cost\":0.00003382},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653097-lskEpI8tev09AXngVi5L",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 16292,
+        "completion_tokens": 89,
+        "total_tokens": 16381,
+        "cost": 0.00426974,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00426974,
+          "upstream_inference_prompt_cost": 0.00423592,
+          "upstream_inference_completions_cost": 3.382e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 6.291,
+  "call_id": "DS__z1_FFH59YGP__deepseek__r1",
+  "fingerprint": "501d37d11d21822994043ef75abeeaa1c1ad4ad24d45436b74418ead06e6cab4",
+  "paper_id": "z1_FFH59YGP",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:51:38.531926+00:00",
+  "input_sha256": "99ed07a830354535e9eb0481465e6298a7742a9234011807a1244ddf5d78824a",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

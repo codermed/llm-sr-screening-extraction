@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789654900-2EuEirx2kj5pPgdEItbP",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00403886,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15328,
+    "completion_tokens": 141,
+    "total_tokens": 15469,
+    "cost": 0.00403886,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00403886,
+      "upstream_inference_prompt_cost": 0.00398528,
+      "upstream_inference_completions_cost": 5.358e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper's primary objective is not LULC prediction. It is a research paper focused on improving the estimation of soil organic carbon (SOC) stocks and their changes in agricultural soils using existing land use data. While it overlays land use maps (LPIS) and soil databases using GIS, the LULC data (2000–2014) is used as a static input layer for stratification and historical analysis, not for predicting or simulating future LULC changes. The paper does not implement or compare future LULC scenarios, which is a core inclusion criterion. Its central research question revolves around SOC assessment methodology, not LULC prediction.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:21:35.672686+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.872,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789654900-2EuEirx2kj5pPgdEItbP\",\"object\":\"chat.completion\",\"created\":1789654900,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper's primary objective is not LULC prediction. It is a research paper focused on improving the estimation of soil organic carbon (SOC) stocks and their changes in agricultural soils using existing land use data. While it overlays land use maps (LPIS) and soil databases using GIS, the LULC data (2000–2014) is used as a static input layer for stratification and historical analysis, not for predicting or simulating future LULC changes. The paper does not implement or compare future LULC scenarios, which is a core inclusion criterion. Its central research question revolves around SOC assessment methodology, not LULC prediction.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15328,\"completion_tokens\":141,\"total_tokens\":15469,\"cost\":0.00403886,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00403886,\"upstream_inference_prompt_cost\":0.00398528,\"upstream_inference_completions_cost\":0.00005358},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654900-2EuEirx2kj5pPgdEItbP",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 15328,
+        "completion_tokens": 141,
+        "total_tokens": 15469,
+        "cost": 0.00403886,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00403886,
+          "upstream_inference_prompt_cost": 0.00398528,
+          "upstream_inference_completions_cost": 5.358e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.872,
+  "call_id": "DS__z1_9JIJ9G32__deepseek__r3",
+  "fingerprint": "4921eb58d1825a35ac2f2c4f1d849618e0b2824d18b3fbbb423842acbcd4f409",
+  "paper_id": "z1_9JIJ9G32",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:21:40.544281+00:00",
+  "input_sha256": "70de6962f672a5fd10e268e99299ab6580984901c432198ce2dec398175c73e0",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

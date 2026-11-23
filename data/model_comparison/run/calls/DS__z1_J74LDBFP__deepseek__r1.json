@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789652594-X36WIs0OVdDylUwUkTGy",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00416442,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15865,
+    "completion_tokens": 104,
+    "total_tokens": 15969,
+    "cost": 0.00416442,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00416442,
+      "upstream_inference_prompt_cost": 0.0041249,
+      "upstream_inference_completions_cost": 3.952e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: This is a non-review research paper that meets all core inclusion criteria for a national-scale LULC prediction study. It implements spatial modeling (PLUS model) for mainland China, compares three future policy scenarios (baseline, cropland protection, green development) quantitatively, reports accuracy metrics (kappa, OA, FOM), and produces mapped LULC projections for 2030 and 2060. The primary research objective is the simulation and analysis of LULC change.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:43:09.331269+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.991,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789652594-X36WIs0OVdDylUwUkTGy\",\"object\":\"chat.completion\",\"created\":1789652594,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: This is a non-review research paper that meets all core inclusion criteria for a national-scale LULC prediction study. It implements spatial modeling (PLUS model) for mainland China, compares three future policy scenarios (baseline, cropland protection, green development) quantitatively, reports accuracy metrics (kappa, OA, FOM), and produces mapped LULC projections for 2030 and 2060. The primary research objective is the simulation and analysis of LULC change.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15865,\"completion_tokens\":104,\"total_tokens\":15969,\"cost\":0.00416442,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00416442,\"upstream_inference_prompt_cost\":0.0041249,\"upstream_inference_completions_cost\":0.00003952},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652594-X36WIs0OVdDylUwUkTGy",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 15865,
+        "completion_tokens": 104,
+        "total_tokens": 15969,
+        "cost": 0.00416442,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00416442,
+          "upstream_inference_prompt_cost": 0.0041249,
+          "upstream_inference_completions_cost": 3.952e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.992,
+  "call_id": "DS__z1_J74LDBFP__deepseek__r1",
+  "fingerprint": "9002f950ea8ffad1911cf86415cc26acbe0530d00075f93ea565a13fa471b5e6",
+  "paper_id": "z1_J74LDBFP",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:43:13.322540+00:00",
+  "input_sha256": "ad966324fdc88ad8a59772e59dd22fa60e5b94e807f989afd655f03d0c9cb32a",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

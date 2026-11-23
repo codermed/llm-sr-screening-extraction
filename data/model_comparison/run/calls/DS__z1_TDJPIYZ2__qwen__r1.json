@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789652819-fgZfy5iHgTYcQ51Gbphd",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.01005732,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12054,
+    "completion_tokens": 168,
+    "total_tokens": 12222,
+    "cost": 0.01005732,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01005732,
+      "upstream_inference_prompt_cost": 0.00940212,
+      "upstream_inference_completions_cost": 0.0006552
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a non-review research article that analyzes historical land cover changes (2000–2015) and human impacts on ecosystems in China’s national nature reserves using observed remote sensing data. It does not include any future LULC prediction, simulation, or scenario modeling. While it uses land cover change (LCC) data as an input to compute a human disturbance index, the study’s primary objective is to assess ecosystem dynamics (via VFC, NPP) and human pressures—not to predict or model future LULC. It fails core inclusion criteria because it lacks future projections, scenarios, and predictive modeling. It also does not meet exclusion criteria for being a review, but as a research paper, it is excluded due to absence of LULC prediction.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:46:54.789261+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.515,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789652819-fgZfy5iHgTYcQ51Gbphd\",\"object\":\"chat.completion\",\"created\":1789652819,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a non-review research article that analyzes historical land cover changes (2000–2015) and human impacts on ecosystems in China’s national nature reserves using observed remote sensing data. It does not include any future LULC prediction, simulation, or scenario modeling. While it uses land cover change (LCC) data as an input to compute a human disturbance index, the study’s primary objective is to assess ecosystem dynamics (via VFC, NPP) and human pressures—not to predict or model future LULC. It fails core inclusion criteria because it lacks future projections, scenarios, and predictive modeling. It also does not meet exclusion criteria for being a review, but as a research paper, it is excluded due to absence of LULC prediction.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12054,\"completion_tokens\":168,\"total_tokens\":12222,\"cost\":0.01005732,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.01005732,\"upstream_inference_prompt_cost\":0.00940212,\"upstream_inference_completions_cost\":0.0006552},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652819-fgZfy5iHgTYcQ51Gbphd",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 12054,
+        "completion_tokens": 168,
+        "total_tokens": 12222,
+        "cost": 0.01005732,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01005732,
+          "upstream_inference_prompt_cost": 0.00940212,
+          "upstream_inference_completions_cost": 0.0006552
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.515,
+  "call_id": "DS__z1_TDJPIYZ2__qwen__r1",
+  "fingerprint": "1f36cc9877db10e26dcbecae06fd1615704cc8360d47138f509f7d9e80417215",
+  "paper_id": "z1_TDJPIYZ2",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:46:59.304160+00:00",
+  "input_sha256": "5e376fddcfb10e55e38c21e71e62a6a81bc2f07b0cdefcd49224bbb817dedb16",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

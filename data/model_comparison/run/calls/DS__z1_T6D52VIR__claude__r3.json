@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789655892-D1XtydZ0qXBSMCRfpt1J",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.019253,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 14338,
+    "completion_tokens": 983,
+    "total_tokens": 15321,
+    "cost": 0.019253,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.019253,
+      "upstream_inference_prompt_cost": 0.014338,
+      "upstream_inference_completions_cost": 0.004915
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis\n\n## Initial Assessment: Paper Type\nThis is a **NON-REVIEW RESEARCH PAPER** - it presents original empirical research using species distribution modeling (SDMs) to predict future habitat distributions.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA (Non-Review Papers):\n\n1. **Explicit national-scale spatial implementation (entire country)** \n   - ✓ YES: Study explicitly focuses on China as the study area. Methodology states: \"The study was conducted in China\" and models are applied across Chinese territory.\n\n2. **Primary focus = LULC prediction/simulation (central research question)**\n   - ✗ NO: The primary research objective is **species distribution modeling** for three oak species (*Quercus* spp.). While LULC is incorporated as a factor, the central research question concerns species habitat shifts under climate change, not LULC prediction itself.\n   - Evidence: Abstract states goal is \"to predict the future distributions of East Asian Cerris Oaks\" and \"explore the combined impacts of CC, LULC and dispersal limitations on the future range dynamics\"\n   - LULC is used as an **input variable** to modify habitat fragmentation, not as the primary modeling target.\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison**\n   - ✓ YES: Three RCP scenarios (2.6, 4.5, 6.0) with quantitative comparisons; two migration scenarios (FM and PM)\n\n4. **Spatial modeling with quantitative accuracy metrics**\n   - ✓ YES: AUC values reported (>0.9 for all species); habitat area changes quantified in km²; fragmentation metrics (NP, CA) provided\n\n5. **Outputs include mapped LULC projections**\n   - ✗ PARTIAL: Maps show species habitat suitability (Figures 3-4), not LULC projections. LULC data are extracted from external dataset and used to modify habitats, but no LULC prediction outputs are generated.\n\n---\n\n### SPECIFIC EXCLUSION CRITERIA:\n\n- **Species-specific/ecological focus (flora/fauna) unrelated to LULC**: ✓ **MEETS THIS CRITERION** - The paper's primary focus is on predicting oak species distributions. LULC is incorporated as a secondary factor affecting habitat fragmentation, but the core research question is ecological/biogeographical, not about LULC change prediction.\n\n- **LULC prediction component**: ✗ FAILS - LULC data are sourced from an external global dataset (GCAM/Demeter model outputs), not predicted by this study. The paper uses pre-existing LULC projections as inputs.\n\n---\n\n## Scale and Scope Verification\n\n- **Geographic scale**: National (China) ✓\n- **LULC prediction vs. LULC input**: The paper uses LULC projections from Demeter model as inputs to constrain species habitat suitability. It does NOT develop or predict LULC change itself.\n- **Primary modeling target**: Species habitat suitability under climate + LULC + dispersal scenarios (NOT LULC itself)\n\n---\n\n## Conclusion\n\nThis paper **fails the core inclusion criterion** that the primary focus must be LULC prediction/simulation. While it is a sophisticated national-scale spatial modeling study that incorporates LULC as a factor, its central research question concerns **species biogeography and conservation**, not **land use/land cover change prediction**.\n\nLULC functions as an **input/constraint variable** in the species distribution models, not as the primary modeling objective.\n\n---\n\n**Final categorization: EXCLUDED**\n\n**Justification**: Although this is a rigorous national-scale spatial modeling study meeting several technical criteria (multiple scenarios, quantitative metrics, mapped outputs), it fails the core inclusion requirement because the primary focus is species distribution prediction under climate change, not LULC prediction/simulation. LULC is incorporated as a secondary factor to assess habitat fragmentation effects, but LULC projections themselves are sourced externally and not developed as primary research outputs. The paper's ecological/biogeographical focus places it outside the scope of LULC prediction research.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:38:07.475334+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.859,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655892-D1XtydZ0qXBSMCRfpt1J\",\"object\":\"chat.completion\",\"created\":1789655892,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis\\n\\n## Initial Assessment: Paper Type\\nThis is a **NON-REVIEW RESEARCH PAPER** - it presents original empirical research using species distribution modeling (SDMs) to predict future habitat distributions.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA (Non-Review Papers):\\n\\n1. **Explicit national-scale spatial implementation (entire country)** \\n   - ✓ YES: Study explicitly focuses on China as the study area. Methodology states: \\\"The study was conducted in China\\\" and models are applied across Chinese territory.\\n\\n2. **Primary focus = LULC prediction/simulation (central research question)**\\n   - ✗ NO: The primary research objective is **species distribution modeling** for three oak species (*Quercus* spp.). While LULC is incorporated as a factor, the central research question concerns species habitat shifts under climate change, not LULC prediction itself.\\n   - Evidence: Abstract states goal is \\\"to predict the future distributions of East Asian Cerris Oaks\\\" and \\\"explore the combined impacts of CC, LULC and dispersal limitations on the future range dynamics\\\"\\n   - LULC is used as an **input variable** to modify habitat fragmentation, not as the primary modeling target.\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison**\\n   - ✓ YES: Three RCP scenarios (2.6, 4.5, 6.0) with quantitative comparisons; two migration scenarios (FM and PM)\\n\\n4. **Spatial modeling with quantitative accuracy metrics**\\n   - ✓ YES: AUC values reported (>0.9 for all species); habitat area changes quantified in km²; fragmentation metrics (NP, CA) provided\\n\\n5. **Outputs include mapped LULC projections**\\n   - ✗ PARTIAL: Maps show species habitat suitability (Figures 3-4), not LULC projections. LULC data are extracted from external dataset and used to modify habitats, but no LULC prediction outputs are generated.\\n\\n---\\n\\n### SPECIFIC EXCLUSION CRITERIA:\\n\\n- **Species-specific/ecological focus (flora/fauna) unrelated to LULC**: ✓ **MEETS THIS CRITERION** - The paper's primary focus is on predicting oak species distributions. LULC is incorporated as a secondary factor affecting habitat fragmentation, but the core research question is ecological/biogeographical, not about LULC change prediction.\\n\\n- **LULC prediction component**: ✗ FAILS - LULC data are sourced from an external global dataset (GCAM/Demeter model outputs), not predicted by this study. The paper uses pre-existing LULC projections as inputs.\\n\\n---\\n\\n## Scale and Scope Verification\\n\\n- **Geographic scale**: National (China) ✓\\n- **LULC prediction vs. LULC input**: The paper uses LULC projections from Demeter model as inputs to constrain species habitat suitability. It does NOT develop or predict LULC change itself.\\n- **Primary modeling target**: Species habitat suitability under climate + LULC + dispersal scenarios (NOT LULC itself)\\n\\n---\\n\\n## Conclusion\\n\\nThis paper **fails the core inclusion criterion** that the primary focus must be LULC prediction/simulation. While it is a sophisticated national-scale spatial modeling study that incorporates LULC as a factor, its central research question concerns **species biogeography and conservation**, not **land use/land cover change prediction**.\\n\\nLULC functions as an **input/constraint variable** in the species distribution models, not as the primary modeling objective.\\n\\n---\\n\\n**Final categorization: EXCLUDED**\\n\\n**Justification**: Although this is a rigorous national-scale spatial modeling study meeting several technical criteria (multiple scenarios, quantitative metrics, mapped outputs), it fails the core inclusion requirement because the primary focus is species distribution prediction under climate change, not LULC prediction/simulation. LULC is incorporated as a secondary factor to assess habitat fragmentation effects, but LULC projections themselves are sourced externally and not developed as primary research outputs. The paper's ecological/biogeographical focus places it outside the scope of LULC prediction research.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":14338,\"completion_tokens\":983,\"total_tokens\":15321,\"cost\":0.019253,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.019253,\"upstream_inference_prompt_cost\":0.014338,\"upstream_inference_completions_cost\":0.004915},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655892-D1XtydZ0qXBSMCRfpt1J",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 14338,
+        "completion_tokens": 983,
+        "total_tokens": 15321,
+        "cost": 0.019253,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.019253,
+          "upstream_inference_prompt_cost": 0.014338,
+          "upstream_inference_completions_cost": 0.004915
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.86,
+  "call_id": "DS__z1_T6D52VIR__claude__r3",
+  "fingerprint": "7b259ed63669106d85efeb250ffbe15de316ae3f2a7ec22433767f02df23e4aa",
+  "paper_id": "z1_T6D52VIR",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:38:20.334796+00:00",
+  "input_sha256": "3e961107bded88866898944bed56f7819c6a9c58476170357e056b95a274e35d",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654745-GQkkpJJ9Y8mJusO43bRa",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0034888,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 8110,
+    "completion_tokens": 153,
+    "total_tokens": 8263,
+    "cost": 0.0034888,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0034888,
+      "upstream_inference_prompt_cost": 0.003244,
+      "upstream_inference_completions_cost": 0.0002448
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a research article focused on ecosystem function changes—vegetation coverage, productivity, and carbon balance—in Priority Areas of Biodiversity Conservation in China under future climate change scenarios. It uses dynamic global vegetation models (DGVMs) to simulate ecosystem responses but does not focus on land use land cover (LULC) prediction or simulation as a primary objective. There is no spatially explicit modeling of LULC changes, no quantitative metrics related to LULC prediction, and no mapped LULC projections. The study’s focus is ecological and carbon cycle impacts rather than LULC future predictions. Therefore, it fails core inclusion criteria and meets exclusion criteria regarding lack of LULC prediction component.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:19:00.617652+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.927,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789654745-GQkkpJJ9Y8mJusO43bRa\",\"object\":\"chat.completion\",\"created\":1789654745,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a research article focused on ecosystem function changes—vegetation coverage, productivity, and carbon balance—in Priority Areas of Biodiversity Conservation in China under future climate change scenarios. It uses dynamic global vegetation models (DGVMs) to simulate ecosystem responses but does not focus on land use land cover (LULC) prediction or simulation as a primary objective. There is no spatially explicit modeling of LULC changes, no quantitative metrics related to LULC prediction, and no mapped LULC projections. The study’s focus is ecological and carbon cycle impacts rather than LULC future predictions. Therefore, it fails core inclusion criteria and meets exclusion criteria regarding lack of LULC prediction component.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":8110,\"completion_tokens\":153,\"total_tokens\":8263,\"cost\":0.0034888,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0034888,\"upstream_inference_prompt_cost\":0.003244,\"upstream_inference_completions_cost\":0.0002448},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654745-GQkkpJJ9Y8mJusO43bRa",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 8110,
+        "completion_tokens": 153,
+        "total_tokens": 8263,
+        "cost": 0.0034888,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0034888,
+          "upstream_inference_prompt_cost": 0.003244,
+          "upstream_inference_completions_cost": 0.0002448
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.928,
+  "call_id": "DS__z1_BGCSIU5S__openai__r2",
+  "fingerprint": "0e8cb93452a78c8ab99101b88c321c723646ccee7dc31957935b34bb8e65382f",
+  "paper_id": "z1_BGCSIU5S",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:19:04.545093+00:00",
+  "input_sha256": "0fddcd965e3efd0f6266452e45d8488c0878b252585d053888baca3a25ba84b8",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

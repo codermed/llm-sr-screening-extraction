@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789652552-WTOFGu7jml3NSgQbMMoF",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.01055028,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12491,
+    "completion_tokens": 207,
+    "total_tokens": 12698,
+    "cost": 0.01055028,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01055028,
+      "upstream_inference_prompt_cost": 0.00974298,
+      "upstream_inference_completions_cost": 0.0008073
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED  \n(Justification: The paper is a non-review research article that analyzes the impact of spatial aggregation levels on land use modeling outcomes in the Midwestern United States using the GCAM integrated assessment model. While it includes future land use projections under multiple climate policy scenarios and uses spatial modeling, it fails the core inclusion criterion of **explicit national-scale spatial implementation**—the study focuses exclusively on 14 Midwestern and Mid-Atlantic U.S. states (~2.2 million km²), not the entire United States. Additionally, although LULC change is modeled, the primary objective is to assess how spatial resolution affects model response magnitude, not to develop or evaluate LULC predictions per se. The paper also lacks quantitative accuracy metrics (e.g., validation against observed data, error measures); instead, it compares internal model consistency across aggregation levels. These factors—regional (not national) scale, absence of accuracy assessment, and secondary focus on LULC prediction—trigger exclusion under core criteria.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:42:27.527923+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 7.379,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789652552-WTOFGu7jml3NSgQbMMoF\",\"object\":\"chat.completion\",\"created\":1789652552,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED  \\n(Justification: The paper is a non-review research article that analyzes the impact of spatial aggregation levels on land use modeling outcomes in the Midwestern United States using the GCAM integrated assessment model. While it includes future land use projections under multiple climate policy scenarios and uses spatial modeling, it fails the core inclusion criterion of **explicit national-scale spatial implementation**—the study focuses exclusively on 14 Midwestern and Mid-Atlantic U.S. states (~2.2 million km²), not the entire United States. Additionally, although LULC change is modeled, the primary objective is to assess how spatial resolution affects model response magnitude, not to develop or evaluate LULC predictions per se. The paper also lacks quantitative accuracy metrics (e.g., validation against observed data, error measures); instead, it compares internal model consistency across aggregation levels. These factors—regional (not national) scale, absence of accuracy assessment, and secondary focus on LULC prediction—trigger exclusion under core criteria.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12491,\"completion_tokens\":207,\"total_tokens\":12698,\"cost\":0.01055028,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.01055028,\"upstream_inference_prompt_cost\":0.00974298,\"upstream_inference_completions_cost\":0.0008073},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652552-WTOFGu7jml3NSgQbMMoF",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 12491,
+        "completion_tokens": 207,
+        "total_tokens": 12698,
+        "cost": 0.01055028,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01055028,
+          "upstream_inference_prompt_cost": 0.00974298,
+          "upstream_inference_completions_cost": 0.0008073
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 7.379,
+  "call_id": "DS__z1_74ZQRHDV__qwen__r1",
+  "fingerprint": "8f632925ceff335dbadc9061a83646cf125047385bc5b93649da3c30bf94a77c",
+  "paper_id": "z1_74ZQRHDV",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:42:34.907037+00:00",
+  "input_sha256": "9444e7a06ed4ed781dca0afe84683f048e5cb8797d2fb471325cfbbb2068ed6d",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789655845-GHxpukSYugo9BhIDKwEN",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.014831,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10336,
+    "completion_tokens": 899,
+    "total_tokens": 11235,
+    "cost": 0.014831,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.014831,
+      "upstream_inference_prompt_cost": 0.010336,
+      "upstream_inference_completions_cost": 0.004495
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Analysis of \"Projected land-use change impacts on ecosystem services in the United States\"\n\n## Step 1: Determine if Review Article\nThis is **NOT a review article**. It is an original research paper presenting primary modeling and analysis of land-use change projections with novel econometric modeling and ecosystem service assessments.\n\n## Step 2: Evaluate Against Inclusion/Exclusion Criteria for Non-Review Papers\n\n### CORE INCLUSION CRITERIA ASSESSMENT:\n\n1. **Explicit national-scale spatial implementation (entire country)** ✓\n   - Study explicitly covers \"contiguous United States\" (stated multiple times)\n   - Methodology: \"844,000 sample points of the USDA National Resource Inventory\"\n   - Results presented with spatial maps for entire continental US\n\n2. **Primary focus = LULC prediction/simulation** ✓\n   - Central research question: \"project land-use change in the contiguous United States to 2051\"\n   - Econometric model explicitly designed to \"predict spatially explicit land-use change\"\n   - Primary outputs are LULC projections\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\n   - Two baseline scenarios: \"1990s trend\" and \"high crop demand\"\n   - Three policy scenarios: forest incentives, natural habitats, urban containment\n   - Quantitative comparisons provided (e.g., cropland change: +28.2 million ha vs. -11.2 million ha)\n\n4. **Spatial modeling with quantitative accuracy metrics** ✓\n   - Econometric model parameterized using observed land-use changes\n   - Quantitative outputs: specific hectare changes, percentages, species habitat metrics\n   - Transition probability matrices generated for 2001-2051 period\n\n5. **Outputs include mapped LULC projections** ✓\n   - Figures 1, 2, 3, and 4 show spatial patterns and changes\n   - Maps display land cover changes across contiguous US for all scenarios\n\n### EXCLUSION CRITERIA ASSESSMENT:\n\n- Global-scale without disaggregation? **No** - national scale\n- Local/regional focus? **No** - national scale\n- No LULC prediction? **No** - LULC prediction is primary focus\n- Species-specific focus unrelated to LULC? **No** - species habitat is analyzed as consequence of LULC change\n- Economic models lacking spatial LULC outputs? **No** - econometric model produces explicit spatial LULC maps\n- Biomass/carbon studies without LULC analysis? **No** - LULC change is primary driver\n- Methodological paper without application? **No** - applied to national-scale prediction\n- Qualitative/historical only? **No** - quantitative future projections\n- Remote sensing technical study? **No** - predictive modeling focus\n- Single-scenario only? **No** - multiple scenarios analyzed\n- **NONE of the exclusion criteria are met** ✓\n\n## Step 3: Determine Primary Focus\nThe primary objective is **LULC prediction** - the paper explicitly develops and applies an econometric model to project land-use change across the contiguous United States under multiple scenarios. While ecosystem services are assessed, they are evaluated as consequences of the LULC projections, not as the primary modeling focus.\n\n---\n\n## FINAL CATEGORIZATION: **OK**\n\n**Justification:** This paper meets ALL core inclusion criteria for national-scale LULC prediction research. It presents an explicit econometric modeling framework applied to the entire contiguous United States, implements multiple quantitative scenarios (2 baseline + 3 policy scenarios) with detailed comparative analysis, produces spatially explicit LULC projections with mapped outputs, and reports quantitative metrics throughout. The primary research objective is LULC prediction to 2051, with ecosystem services and species habitat assessed as dependent outcomes. No exclusion criteria are triggered.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:37:20.286540+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 9.541,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789655845-GHxpukSYugo9BhIDKwEN\",\"object\":\"chat.completion\",\"created\":1789655845,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Analysis of \\\"Projected land-use change impacts on ecosystem services in the United States\\\"\\n\\n## Step 1: Determine if Review Article\\nThis is **NOT a review article**. It is an original research paper presenting primary modeling and analysis of land-use change projections with novel econometric modeling and ecosystem service assessments.\\n\\n## Step 2: Evaluate Against Inclusion/Exclusion Criteria for Non-Review Papers\\n\\n### CORE INCLUSION CRITERIA ASSESSMENT:\\n\\n1. **Explicit national-scale spatial implementation (entire country)** ✓\\n   - Study explicitly covers \\\"contiguous United States\\\" (stated multiple times)\\n   - Methodology: \\\"844,000 sample points of the USDA National Resource Inventory\\\"\\n   - Results presented with spatial maps for entire continental US\\n\\n2. **Primary focus = LULC prediction/simulation** ✓\\n   - Central research question: \\\"project land-use change in the contiguous United States to 2051\\\"\\n   - Econometric model explicitly designed to \\\"predict spatially explicit land-use change\\\"\\n   - Primary outputs are LULC projections\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\\n   - Two baseline scenarios: \\\"1990s trend\\\" and \\\"high crop demand\\\"\\n   - Three policy scenarios: forest incentives, natural habitats, urban containment\\n   - Quantitative comparisons provided (e.g., cropland change: +28.2 million ha vs. -11.2 million ha)\\n\\n4. **Spatial modeling with quantitative accuracy metrics** ✓\\n   - Econometric model parameterized using observed land-use changes\\n   - Quantitative outputs: specific hectare changes, percentages, species habitat metrics\\n   - Transition probability matrices generated for 2001-2051 period\\n\\n5. **Outputs include mapped LULC projections** ✓\\n   - Figures 1, 2, 3, and 4 show spatial patterns and changes\\n   - Maps display land cover changes across contiguous US for all scenarios\\n\\n### EXCLUSION CRITERIA ASSESSMENT:\\n\\n- Global-scale without disaggregation? **No** - national scale\\n- Local/regional focus? **No** - national scale\\n- No LULC prediction? **No** - LULC prediction is primary focus\\n- Species-specific focus unrelated to LULC? **No** - species habitat is analyzed as consequence of LULC change\\n- Economic models lacking spatial LULC outputs? **No** - econometric model produces explicit spatial LULC maps\\n- Biomass/carbon studies without LULC analysis? **No** - LULC change is primary driver\\n- Methodological paper without application? **No** - applied to national-scale prediction\\n- Qualitative/historical only? **No** - quantitative future projections\\n- Remote sensing technical study? **No** - predictive modeling focus\\n- Single-scenario only? **No** - multiple scenarios analyzed\\n- **NONE of the exclusion criteria are met** ✓\\n\\n## Step 3: Determine Primary Focus\\nThe primary objective is **LULC prediction** - the paper explicitly develops and applies an econometric model to project land-use change across the contiguous United States under multiple scenarios. While ecosystem services are assessed, they are evaluated as consequences of the LULC projections, not as the primary modeling focus.\\n\\n---\\n\\n## FINAL CATEGORIZATION: **OK**\\n\\n**Justification:** This paper meets ALL core inclusion criteria for national-scale LULC prediction research. It presents an explicit econometric modeling framework applied to the entire contiguous United States, implements multiple quantitative scenarios (2 baseline + 3 policy scenarios) with detailed comparative analysis, produces spatially explicit LULC projections with mapped outputs, and reports quantitative metrics throughout. The primary research objective is LULC prediction to 2051, with ecosystem services and species habitat assessed as dependent outcomes. No exclusion criteria are triggered.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10336,\"completion_tokens\":899,\"total_tokens\":11235,\"cost\":0.014831,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.014831,\"upstream_inference_prompt_cost\":0.010336,\"upstream_inference_completions_cost\":0.004495},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655845-GHxpukSYugo9BhIDKwEN",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 10336,
+        "completion_tokens": 899,
+        "total_tokens": 11235,
+        "cost": 0.014831,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.014831,
+          "upstream_inference_prompt_cost": 0.010336,
+          "upstream_inference_completions_cost": 0.004495
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 9.542,
+  "call_id": "DS__z1_XW6PN3WT__claude__r3",
+  "fingerprint": "dbd58526a1e379a8c7249fbf63517d7ae4997337e583671cd7a72a43cf638a10",
+  "paper_id": "z1_XW6PN3WT",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:37:29.827553+00:00",
+  "input_sha256": "25489d9d24f1bc8c8fd6c409c73975b55128b67b1942798256aa4c047d0f3404",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

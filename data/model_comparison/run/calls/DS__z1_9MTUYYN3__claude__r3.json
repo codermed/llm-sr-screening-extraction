@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789655898-SUQmx2BaZhmDgaLopxH1",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.018991,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 14351,
+    "completion_tokens": 928,
+    "total_tokens": 15279,
+    "cost": 0.018991,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.018991,
+      "upstream_inference_prompt_cost": 0.014351,
+      "upstream_inference_completions_cost": 0.00464
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land Use Simulation Paper\n\n## Initial Assessment\nThis is a **NON-REVIEW PAPER** - it presents original research implementing land use simulation modeling.\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA CHECK:\n\n1. **Explicit national-scale spatial implementation?**\n   - ❌ **FAILS** - Study area is Liyang, a county-level city in Jiangsu Province, China\n   - This is explicitly LOCAL/REGIONAL scale, not national-scale\n   - Paper states: \"Taking Liyang as a case study\" and \"small-scale region\"\n\n2. **Primary focus = LULC prediction/simulation?**\n   - ✅ **PASSES** - Central research objective is land use simulation for 2030\n   - Title explicitly states \"Multi-Scenario Land Use Simulation\"\n   - CLUMondo model used for predictive modeling\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ✅ **PASSES** - Three scenarios implemented:\n     - Natural Growth Scenario (NGS)\n     - Economic Development Scenario (EDS)\n     - Ecological Protection Scenario (EPS)\n   - Quantitative comparisons provided (Table 4, Table 6, Figures 6-7)\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ✅ **PASSES** - Multiple quantitative metrics reported:\n     - Kappa coefficients for model validation (Table S7, overall Kappa > 0.75)\n     - Change rates (e.g., 68.69% for NGS, 101.33% for EDS)\n     - Conflict indices (0.492-0.508 range)\n     - Moran's I spatial autocorrelation (0.76-0.884)\n\n5. **Outputs include mapped LULC projections?**\n   - ✅ **PASSES** - Multiple spatial outputs:\n     - Figure 5: Land use simulation maps for 2030 under three scenarios\n     - Figure 8: Spatial distribution of land use conflicts\n     - Figure 10: Local spatial autocorrelation analysis\n\n### EXCLUSION CRITERIA CHECK:\n\n- ❌ Global-scale analysis? **NO** - Regional/local scale\n- ❌ No LULC prediction? **NO** - LULC prediction is primary focus\n- ❌ Species-specific/ecological flora-fauna focus? **NO** - Land use systems focus\n- ❌ Economic/urban models lacking spatial LULC outputs? **NO** - Spatial LULC outputs provided\n- ❌ Biomass/bioenergy/carbon without LULC analysis? **NO** - LULC change is core\n- ❌ Methodological paper without application? **NO** - Applied implementation\n- ❌ Purely qualitative/historical? **NO** - Quantitative future projections\n- ❌ Remote sensing technical study? **NO** - Predictive modeling focus\n- ❌ Single-scenario projection? **NO** - Three scenarios implemented\n\n## Critical Finding\n\n**FAILS CORE INCLUSION CRITERION #1**: The paper does not meet the requirement for \"explicit national-scale spatial implementation (entire country).\" The study is explicitly regional/local in scale (county-level city of Liyang, Jiangsu Province).\n\n---\n\n## Final Categorization\n\n**EXCLUDED**\n\n**Justification:** While this paper presents high-quality LULC simulation research with multiple scenarios, quantitative metrics, spatial modeling, and mapped projections, it **fails the national-scale spatial implementation requirement**. The study is explicitly focused on a local/regional case study (Liyang county-level city) rather than national-level analysis. Per the inclusion criteria, explicit national-scale spatial implementation is mandatory for non-review papers, and this criterion is not met despite the paper's methodological rigor and relevance to LULC prediction research.",
+  "automated_status": "invalid_output",
+  "parsed_label": "",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:38:14.105404+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 10.821,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655898-SUQmx2BaZhmDgaLopxH1\",\"object\":\"chat.completion\",\"created\":1789655898,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land Use Simulation Paper\\n\\n## Initial Assessment\\nThis is a **NON-REVIEW PAPER** - it presents original research implementing land use simulation modeling.\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA CHECK:\\n\\n1. **Explicit national-scale spatial implementation?**\\n   - ❌ **FAILS** - Study area is Liyang, a county-level city in Jiangsu Province, China\\n   - This is explicitly LOCAL/REGIONAL scale, not national-scale\\n   - Paper states: \\\"Taking Liyang as a case study\\\" and \\\"small-scale region\\\"\\n\\n2. **Primary focus = LULC prediction/simulation?**\\n   - ✅ **PASSES** - Central research objective is land use simulation for 2030\\n   - Title explicitly states \\\"Multi-Scenario Land Use Simulation\\\"\\n   - CLUMondo model used for predictive modeling\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ✅ **PASSES** - Three scenarios implemented:\\n     - Natural Growth Scenario (NGS)\\n     - Economic Development Scenario (EDS)\\n     - Ecological Protection Scenario (EPS)\\n   - Quantitative comparisons provided (Table 4, Table 6, Figures 6-7)\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ✅ **PASSES** - Multiple quantitative metrics reported:\\n     - Kappa coefficients for model validation (Table S7, overall Kappa > 0.75)\\n     - Change rates (e.g., 68.69% for NGS, 101.33% for EDS)\\n     - Conflict indices (0.492-0.508 range)\\n     - Moran's I spatial autocorrelation (0.76-0.884)\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ✅ **PASSES** - Multiple spatial outputs:\\n     - Figure 5: Land use simulation maps for 2030 under three scenarios\\n     - Figure 8: Spatial distribution of land use conflicts\\n     - Figure 10: Local spatial autocorrelation analysis\\n\\n### EXCLUSION CRITERIA CHECK:\\n\\n- ❌ Global-scale analysis? **NO** - Regional/local scale\\n- ❌ No LULC prediction? **NO** - LULC prediction is primary focus\\n- ❌ Species-specific/ecological flora-fauna focus? **NO** - Land use systems focus\\n- ❌ Economic/urban models lacking spatial LULC outputs? **NO** - Spatial LULC outputs provided\\n- ❌ Biomass/bioenergy/carbon without LULC analysis? **NO** - LULC change is core\\n- ❌ Methodological paper without application? **NO** - Applied implementation\\n- ❌ Purely qualitative/historical? **NO** - Quantitative future projections\\n- ❌ Remote sensing technical study? **NO** - Predictive modeling focus\\n- ❌ Single-scenario projection? **NO** - Three scenarios implemented\\n\\n## Critical Finding\\n\\n**FAILS CORE INCLUSION CRITERION #1**: The paper does not meet the requirement for \\\"explicit national-scale spatial implementation (entire country).\\\" The study is explicitly regional/local in scale (county-level city of Liyang, Jiangsu Province).\\n\\n---\\n\\n## Final Categorization\\n\\n**EXCLUDED**\\n\\n**Justification:** While this paper presents high-quality LULC simulation research with multiple scenarios, quantitative metrics, spatial modeling, and mapped projections, it **fails the national-scale spatial implementation requirement**. The study is explicitly focused on a local/regional case study (Liyang county-level city) rather than national-level analysis. Per the inclusion criteria, explicit national-scale spatial implementation is mandatory for non-review papers, and this criterion is not met despite the paper's methodological rigor and relevance to LULC prediction research.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":14351,\"completion_tokens\":928,\"total_tokens\":15279,\"cost\":0.018991,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.018991,\"upstream_inference_prompt_cost\":0.014351,\"upstream_inference_completions_cost\":0.00464},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655898-SUQmx2BaZhmDgaLopxH1",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 14351,
+        "completion_tokens": 928,
+        "total_tokens": 15279,
+        "cost": 0.018991,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.018991,
+          "upstream_inference_prompt_cost": 0.014351,
+          "upstream_inference_completions_cost": 0.00464
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 10.822,
+  "call_id": "DS__z1_9MTUYYN3__claude__r3",
+  "fingerprint": "093d8e4925b748a6bab6992c24200e407255fc975cd7f5e79624aa2fdd676724",
+  "paper_id": "z1_9MTUYYN3",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:38:24.926785+00:00",
+  "input_sha256": "16e16ef5b2b010143187b0a6320f0cf07ae62b68d1243b705c11e52288c0c968",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

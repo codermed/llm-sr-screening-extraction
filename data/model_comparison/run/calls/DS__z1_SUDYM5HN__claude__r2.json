@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789654176-cznPm5FR0DJhVmaZKOXd",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.024412,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 18117,
+    "completion_tokens": 1259,
+    "total_tokens": 19376,
+    "cost": 0.024412,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.024412,
+      "upstream_inference_prompt_cost": 0.018117,
+      "upstream_inference_completions_cost": 0.006295
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land Use Projections in China\n\n## Review Status\n**NOT a review article.** This is a primary research paper presenting original modeling and scenario analysis.\n\n---\n\n## Core Inclusion Criteria Evaluation\n\n### 1. Explicit national-scale spatial implementation\n✓ **PASS** - Study focuses entirely on China as the study area. Methods section explicitly states: \"the scenario-based assessment framework realizes the regional interactions among the land use types and spatial scales over long-term under the constrained quantities from GCAM\" with spatial downscaling to 1 km resolution across all of China.\n\n### 2. Primary focus = LULC prediction/simulation\n✓ **PASS** - Central research question explicitly stated in abstract: \"to evaluate the potential land use projections of China from 2010 to 2100.\" The paper's primary objective is projecting future LULC under alternative scenarios.\n\n### 3. Implementation of ≥2 future scenarios with quantitative comparison\n✓ **PASS** - Eight distinct scenarios designed combining:\n- Five socioeconomic scenarios (S1-S5) based on SSPs\n- Three emission scenarios (S6-S8) with different RCP targets and carbon tax regimes\n- Quantitative comparisons throughout (CO₂ emissions, crop areas, forest areas, pasture areas, urban expansion)\n\n### 4. Spatial modeling with quantitative accuracy metrics\n✓ **PASS** - FLUS model produces spatially explicit outputs (1 km resolution). Validation metrics reported:\n- Kappa coefficient (Table S1, Fig. S1)\n- Figure of Merit (FoM) - explicitly mentioned: \"FoM...has been considered superior to the kappa coefficient\"\n- Overall accuracy assessments for 2010 simulation validation\n- Quantitative change metrics reported (e.g., \"0.152 million km² reduction in pastures\")\n\n### 5. Outputs include mapped LULC projections\n✓ **PASS** - Multiple mapped outputs provided:\n- Figures 8-12 show spatial distributions of urban, crop, forest, and pasture changes\n- Provincial-level fractional changes mapped\n- Detailed regional case studies (Yangtze River Delta, Pearl River Delta)\n- 1 km resolution grids for 2100 compared to 2010 baseline\n\n---\n\n## Exclusion Criteria Evaluation\n\n### Global-scale analysis without national-level disaggregation\n✗ **Does NOT apply** - Paper explicitly disaggregates to China national scale and further to provincial/regional levels.\n\n### Local/regional/global/transboundary scale focus\n✗ **Does NOT apply** - Primary focus is national-scale (China).\n\n### No LULC prediction component\n✗ **Does NOT apply** - LULC prediction is the central focus.\n\n### Species-specific/ecological focus unrelated to LULC\n✗ **Does NOT apply** - Focus is on LULC dynamics, not species-specific ecology.\n\n### Economic/urban models lacking spatially explicit LULC outputs\n✗ **Does NOT apply** - Urban expansion is modeled and mapped spatially (Figures 8-9).\n\n### Biomass/bioenergy studies without LULC change analysis\n✗ **Does NOT apply** - Bioenergy demand is integrated into LULC projections; paper explicitly analyzes biomass crop expansion impacts on LULC patterns.\n\n### Methodological papers without national-scale application\n✗ **Does NOT apply** - Framework is applied to China with full implementation.\n\n### Purely qualitative/historical analysis\n✗ **Does NOT apply** - Paper includes quantitative future projections (2010-2100).\n\n### Remote sensing technical studies without predictive modeling\n✗ **Does NOT apply** - Remote sensing data is calibration input; primary contribution is predictive modeling.\n\n### Single-scenario \"business-as-usual\" projections\n✗ **Does NOT apply** - Eight scenarios with multiple comparisons.\n\n---\n\n## Additional Verification Checks\n\n**Scale verification:** Full text confirms national-scale implementation with spatial downscaling methodology (Section 3.5: \"spatial resolution...from macro scales to regional and local scales\").\n\n**Quantitative metrics:** Extensively reported throughout results (Figures 4-7 show quantitative trajectories; Tables provide numerical values).\n\n**Spatial explicitness:** FLUS model explicitly designed for spatially explicit allocation with ANN probability maps and competition mechanisms (Section 3.5).\n\n**Integration of global and local drivers:** Framework explicitly combines global GCAM outputs with local driving factors (elevation, slope, population, GDP, distance to urban/river/road, temperature, precipitation, soil) in FLUS.\n\n---\n\n## Final Categorization\n\n**OK**\n\n**Justification:** This paper meets ALL core inclusion criteria for a national-scale LULC prediction research paper. It presents explicit spatial modeling of future land use across China at 1 km resolution under eight distinct scenarios combining socioeconomic pathways (SSPs) and emission scenarios (RCPs). The study includes quantitative accuracy validation metrics (kappa, FoM), mapped LULC projections for multiple time periods, and comprehensive scenario comparison. The primary research objective is LULC prediction/simulation, not auxiliary application. All exclusion criteria are satisfied (none apply). The integration of GCAM global assessment with FLUS spatial-explicit modeling, calibration against China Land Use Monitoring data, and detailed provincial-scale analysis demonstrates rigorous national-scale implementation.",
+  "automated_status": "invalid_output",
+  "parsed_label": "",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:09:32.009753+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 14.556,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789654176-cznPm5FR0DJhVmaZKOXd\",\"object\":\"chat.completion\",\"created\":1789654176,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land Use Projections in China\\n\\n## Review Status\\n**NOT a review article.** This is a primary research paper presenting original modeling and scenario analysis.\\n\\n---\\n\\n## Core Inclusion Criteria Evaluation\\n\\n### 1. Explicit national-scale spatial implementation\\n✓ **PASS** - Study focuses entirely on China as the study area. Methods section explicitly states: \\\"the scenario-based assessment framework realizes the regional interactions among the land use types and spatial scales over long-term under the constrained quantities from GCAM\\\" with spatial downscaling to 1 km resolution across all of China.\\n\\n### 2. Primary focus = LULC prediction/simulation\\n✓ **PASS** - Central research question explicitly stated in abstract: \\\"to evaluate the potential land use projections of China from 2010 to 2100.\\\" The paper's primary objective is projecting future LULC under alternative scenarios.\\n\\n### 3. Implementation of ≥2 future scenarios with quantitative comparison\\n✓ **PASS** - Eight distinct scenarios designed combining:\\n- Five socioeconomic scenarios (S1-S5) based on SSPs\\n- Three emission scenarios (S6-S8) with different RCP targets and carbon tax regimes\\n- Quantitative comparisons throughout (CO₂ emissions, crop areas, forest areas, pasture areas, urban expansion)\\n\\n### 4. Spatial modeling with quantitative accuracy metrics\\n✓ **PASS** - FLUS model produces spatially explicit outputs (1 km resolution). Validation metrics reported:\\n- Kappa coefficient (Table S1, Fig. S1)\\n- Figure of Merit (FoM) - explicitly mentioned: \\\"FoM...has been considered superior to the kappa coefficient\\\"\\n- Overall accuracy assessments for 2010 simulation validation\\n- Quantitative change metrics reported (e.g., \\\"0.152 million km² reduction in pastures\\\")\\n\\n### 5. Outputs include mapped LULC projections\\n✓ **PASS** - Multiple mapped outputs provided:\\n- Figures 8-12 show spatial distributions of urban, crop, forest, and pasture changes\\n- Provincial-level fractional changes mapped\\n- Detailed regional case studies (Yangtze River Delta, Pearl River Delta)\\n- 1 km resolution grids for 2100 compared to 2010 baseline\\n\\n---\\n\\n## Exclusion Criteria Evaluation\\n\\n### Global-scale analysis without national-level disaggregation\\n✗ **Does NOT apply** - Paper explicitly disaggregates to China national scale and further to provincial/regional levels.\\n\\n### Local/regional/global/transboundary scale focus\\n✗ **Does NOT apply** - Primary focus is national-scale (China).\\n\\n### No LULC prediction component\\n✗ **Does NOT apply** - LULC prediction is the central focus.\\n\\n### Species-specific/ecological focus unrelated to LULC\\n✗ **Does NOT apply** - Focus is on LULC dynamics, not species-specific ecology.\\n\\n### Economic/urban models lacking spatially explicit LULC outputs\\n✗ **Does NOT apply** - Urban expansion is modeled and mapped spatially (Figures 8-9).\\n\\n### Biomass/bioenergy studies without LULC change analysis\\n✗ **Does NOT apply** - Bioenergy demand is integrated into LULC projections; paper explicitly analyzes biomass crop expansion impacts on LULC patterns.\\n\\n### Methodological papers without national-scale application\\n✗ **Does NOT apply** - Framework is applied to China with full implementation.\\n\\n### Purely qualitative/historical analysis\\n✗ **Does NOT apply** - Paper includes quantitative future projections (2010-2100).\\n\\n### Remote sensing technical studies without predictive modeling\\n✗ **Does NOT apply** - Remote sensing data is calibration input; primary contribution is predictive modeling.\\n\\n### Single-scenario \\\"business-as-usual\\\" projections\\n✗ **Does NOT apply** - Eight scenarios with multiple comparisons.\\n\\n---\\n\\n## Additional Verification Checks\\n\\n**Scale verification:** Full text confirms national-scale implementation with spatial downscaling methodology (Section 3.5: \\\"spatial resolution...from macro scales to regional and local scales\\\").\\n\\n**Quantitative metrics:** Extensively reported throughout results (Figures 4-7 show quantitative trajectories; Tables provide numerical values).\\n\\n**Spatial explicitness:** FLUS model explicitly designed for spatially explicit allocation with ANN probability maps and competition mechanisms (Section 3.5).\\n\\n**Integration of global and local drivers:** Framework explicitly combines global GCAM outputs with local driving factors (elevation, slope, population, GDP, distance to urban/river/road, temperature, precipitation, soil) in FLUS.\\n\\n---\\n\\n## Final Categorization\\n\\n**OK**\\n\\n**Justification:** This paper meets ALL core inclusion criteria for a national-scale LULC prediction research paper. It presents explicit spatial modeling of future land use across China at 1 km resolution under eight distinct scenarios combining socioeconomic pathways (SSPs) and emission scenarios (RCPs). The study includes quantitative accuracy validation metrics (kappa, FoM), mapped LULC projections for multiple time periods, and comprehensive scenario comparison. The primary research objective is LULC prediction/simulation, not auxiliary application. All exclusion criteria are satisfied (none apply). The integration of GCAM global assessment with FLUS spatial-explicit modeling, calibration against China Land Use Monitoring data, and detailed provincial-scale analysis demonstrates rigorous national-scale implementation.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":18117,\"completion_tokens\":1259,\"total_tokens\":19376,\"cost\":0.024412,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.024412,\"upstream_inference_prompt_cost\":0.018117,\"upstream_inference_completions_cost\":0.006295},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654176-cznPm5FR0DJhVmaZKOXd",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 18117,
+        "completion_tokens": 1259,
+        "total_tokens": 19376,
+        "cost": 0.024412,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.024412,
+          "upstream_inference_prompt_cost": 0.018117,
+          "upstream_inference_completions_cost": 0.006295
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 14.556,
+  "call_id": "DS__z1_SUDYM5HN__claude__r2",
+  "fingerprint": "6244969b27f1b3e48ea3c2ec106b89a1300371338cf1e6d101db0fa377e54d29",
+  "paper_id": "z1_SUDYM5HN",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:09:46.565551+00:00",
+  "input_sha256": "cbde37da610320d2267d2dcdc64d7e2e377cd0ec1429938279c5cce072510c9b",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

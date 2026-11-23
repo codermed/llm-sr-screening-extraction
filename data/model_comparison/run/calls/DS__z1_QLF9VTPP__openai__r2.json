@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654474-LHuIrRyPCRdo9HGpdPHo",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0017768,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 14730,
+    "completion_tokens": 164,
+    "total_tokens": 14894,
+    "cost": 0.0017768,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 14592,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0017768,
+      "upstream_inference_prompt_cost": 0.0015144,
+      "upstream_inference_completions_cost": 0.0002624
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: The paper presents a novel energy systems model integrating agriculture, land use, and reforestation to explore carbon mitigation targets in Brazil. While it includes land use and reforestation modeling, the focus is on energy system modeling and carbon mitigation pathways rather than primarily on land use/land cover (LULC) future prediction. The land use module is simplified and non-spatially explicit, and reforestation is modeled with a simple biomass growth function rather than detailed spatial LULC prediction. The study does not implement multiple future spatially explicit LULC scenarios with quantitative accuracy metrics or provide mapped LULC projections. Therefore, it does not meet the core inclusion criteria for primary national-scale spatial LULC prediction modeling with scenario comparison and spatial accuracy assessment.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:14:30.058265+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.362,
+      "raw_body": "\n         \n{\"id\":\"gen-1789654474-LHuIrRyPCRdo9HGpdPHo\",\"object\":\"chat.completion\",\"created\":1789654474,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper presents a novel energy systems model integrating agriculture, land use, and reforestation to explore carbon mitigation targets in Brazil. While it includes land use and reforestation modeling, the focus is on energy system modeling and carbon mitigation pathways rather than primarily on land use/land cover (LULC) future prediction. The land use module is simplified and non-spatially explicit, and reforestation is modeled with a simple biomass growth function rather than detailed spatial LULC prediction. The study does not implement multiple future spatially explicit LULC scenarios with quantitative accuracy metrics or provide mapped LULC projections. Therefore, it does not meet the core inclusion criteria for primary national-scale spatial LULC prediction modeling with scenario comparison and spatial accuracy assessment.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":14730,\"completion_tokens\":164,\"total_tokens\":14894,\"cost\":0.0017768,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":14592,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0017768,\"upstream_inference_prompt_cost\":0.0015144,\"upstream_inference_completions_cost\":0.0002624},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654474-LHuIrRyPCRdo9HGpdPHo",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 14730,
+        "completion_tokens": 164,
+        "total_tokens": 14894,
+        "cost": 0.0017768,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 14592,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0017768,
+          "upstream_inference_prompt_cost": 0.0015144,
+          "upstream_inference_completions_cost": 0.0002624
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.363,
+  "call_id": "DS__z1_QLF9VTPP__openai__r2",
+  "fingerprint": "7c1c3e0377152803147122ff4d6fb5dfeacceea2f77a14f51b1aeafb753452af",
+  "paper_id": "z1_QLF9VTPP",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:14:33.420876+00:00",
+  "input_sha256": "b52511ab0d541ab1cc14fd92909646ca15844bed4e7c50331d3ef3cc7f88eef4",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

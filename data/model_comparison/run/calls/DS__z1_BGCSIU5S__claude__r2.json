@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789653757-sLo5yycCsEDJhm2sSaDq",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.013857,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 9277,
+    "completion_tokens": 916,
+    "total_tokens": 10193,
+    "cost": 0.013857,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.013857,
+      "upstream_inference_prompt_cost": 0.009277,
+      "upstream_inference_completions_cost": 0.00458
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis\n\n## Step 1: Determine if Review Article\nThis is a **NON-REVIEW RESEARCH PAPER**. It presents original simulation research using 5 Dynamic Global Vegetation Models (DGVMs) applied to specific study areas, not a synthesis of existing literature.\n\n## Step 2: Evaluate Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA ASSESSMENT:\n\n1. **Explicit national-scale spatial implementation (entire country)?**\n   - ✅ YES - Study covers 32 terrestrial Priority Areas of Biodiversity Conservation (PABCs) across China at national scale (Fig. 1, Table S1)\n\n2. **Primary focus = LULC prediction/simulation (central research question)?**\n   - ❌ **NO** - Primary focus is **ecosystem function changes** (vegetation coverage, productivity, carbon balance) under climate change. While vegetation dynamics are tracked, the central objective is assessing ecosystem responses, NOT predicting land use/land cover transitions or change patterns.\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ✅ PARTIAL - Uses single B2 emission scenario (IPCC); compares 2050s vs 2100s time periods; uses 5 different DGVMs for ensemble comparison\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ✅ YES - Quantitative metrics reported (coverage percentages, Tg year⁻¹, standard deviations across models); spatial resolution 3.75° × 2.5° latitude\n\n5. **Outputs include mapped LULC projections?**\n   - ✅ PARTIAL - Color matrices show vegetation type changes (evergreen/deciduous/herb vegetation), but these represent **vegetation dynamics** not LULC classification systems\n\n### SPECIFIC EXCLUSION CRITERIA ASSESSMENT:\n\n- **Species-specific/ecological focus unrelated to LULC?** \n  - ✅ **TRIGGERED** - Paper explicitly states focus on \"ecosystem function changes\" and \"biodiversity conservation\" with emphasis on ecological responses (vegetation physiological processes, nutrient cycling, carbon cycle). The vegetation changes analyzed are **ecological succession/dynamics**, not LULC classification changes.\n\n- **Biomass/bioenergy/carbon studies without LULC change analysis?**\n  - ✅ **TRIGGERED** - Significant emphasis on carbon cycle (biomass carbon stock, soil carbon stock, NEE). While vegetation types are tracked, the primary analytical framework is ecosystem carbon balance, not LULC change.\n\n- **No LULC prediction component?**\n  - ✅ **TRIGGERED** - No land use classification system employed. No analysis of agricultural/urban/built-up/managed land transitions. Analysis focuses on natural vegetation succession under climate forcing.\n\n## Step 3: Primary Focus Determination\n\n**Primary Objective:** Ecosystem function assessment under climate change (vegetation productivity and carbon cycling)\n\n**LULC Role:** Vegetation type dynamics are **incidental outputs** of ecosystem modeling, not the primary predictive focus. The paper uses vegetation changes as indicators of ecosystem response, not as LULC predictions per se.\n\n---\n\n## FINAL CATEGORIZATION: **EXCLUDED**\n\n**Justification:** \nThis paper fails CORE INCLUSION CRITERION #2 (primary focus = LULC prediction) and triggers multiple SPECIFIC EXCLUSION CRITERIA. While the study is spatially explicit at national scale and uses sophisticated modeling, its primary research objective is assessing **ecosystem function changes and biodiversity conservation impacts** under climate change, not predicting land use/land cover transitions. The vegetation dynamics analyzed (evergreen/deciduous/herb coverage changes) represent ecological succession and phenological shifts in natural ecosystems, not LULC classification changes. The strong emphasis on carbon cycling, ecosystem productivity, and species habitat impacts further confirms the ecological rather than LULC-predictive focus. This is fundamentally an **ecosystem ecology/biodiversity conservation study**, not an LULC prediction study.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:02:32.763728+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 11.824,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653757-sLo5yycCsEDJhm2sSaDq\",\"object\":\"chat.completion\",\"created\":1789653757,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis\\n\\n## Step 1: Determine if Review Article\\nThis is a **NON-REVIEW RESEARCH PAPER**. It presents original simulation research using 5 Dynamic Global Vegetation Models (DGVMs) applied to specific study areas, not a synthesis of existing literature.\\n\\n## Step 2: Evaluate Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA ASSESSMENT:\\n\\n1. **Explicit national-scale spatial implementation (entire country)?**\\n   - ✅ YES - Study covers 32 terrestrial Priority Areas of Biodiversity Conservation (PABCs) across China at national scale (Fig. 1, Table S1)\\n\\n2. **Primary focus = LULC prediction/simulation (central research question)?**\\n   - ❌ **NO** - Primary focus is **ecosystem function changes** (vegetation coverage, productivity, carbon balance) under climate change. While vegetation dynamics are tracked, the central objective is assessing ecosystem responses, NOT predicting land use/land cover transitions or change patterns.\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ✅ PARTIAL - Uses single B2 emission scenario (IPCC); compares 2050s vs 2100s time periods; uses 5 different DGVMs for ensemble comparison\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ✅ YES - Quantitative metrics reported (coverage percentages, Tg year⁻¹, standard deviations across models); spatial resolution 3.75° × 2.5° latitude\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ✅ PARTIAL - Color matrices show vegetation type changes (evergreen/deciduous/herb vegetation), but these represent **vegetation dynamics** not LULC classification systems\\n\\n### SPECIFIC EXCLUSION CRITERIA ASSESSMENT:\\n\\n- **Species-specific/ecological focus unrelated to LULC?** \\n  - ✅ **TRIGGERED** - Paper explicitly states focus on \\\"ecosystem function changes\\\" and \\\"biodiversity conservation\\\" with emphasis on ecological responses (vegetation physiological processes, nutrient cycling, carbon cycle). The vegetation changes analyzed are **ecological succession/dynamics**, not LULC classification changes.\\n\\n- **Biomass/bioenergy/carbon studies without LULC change analysis?**\\n  - ✅ **TRIGGERED** - Significant emphasis on carbon cycle (biomass carbon stock, soil carbon stock, NEE). While vegetation types are tracked, the primary analytical framework is ecosystem carbon balance, not LULC change.\\n\\n- **No LULC prediction component?**\\n  - ✅ **TRIGGERED** - No land use classification system employed. No analysis of agricultural/urban/built-up/managed land transitions. Analysis focuses on natural vegetation succession under climate forcing.\\n\\n## Step 3: Primary Focus Determination\\n\\n**Primary Objective:** Ecosystem function assessment under climate change (vegetation productivity and carbon cycling)\\n\\n**LULC Role:** Vegetation type dynamics are **incidental outputs** of ecosystem modeling, not the primary predictive focus. The paper uses vegetation changes as indicators of ecosystem response, not as LULC predictions per se.\\n\\n---\\n\\n## FINAL CATEGORIZATION: **EXCLUDED**\\n\\n**Justification:** \\nThis paper fails CORE INCLUSION CRITERION #2 (primary focus = LULC prediction) and triggers multiple SPECIFIC EXCLUSION CRITERIA. While the study is spatially explicit at national scale and uses sophisticated modeling, its primary research objective is assessing **ecosystem function changes and biodiversity conservation impacts** under climate change, not predicting land use/land cover transitions. The vegetation dynamics analyzed (evergreen/deciduous/herb coverage changes) represent ecological succession and phenological shifts in natural ecosystems, not LULC classification changes. The strong emphasis on carbon cycling, ecosystem productivity, and species habitat impacts further confirms the ecological rather than LULC-predictive focus. This is fundamentally an **ecosystem ecology/biodiversity conservation study**, not an LULC prediction study.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":9277,\"completion_tokens\":916,\"total_tokens\":10193,\"cost\":0.013857,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.013857,\"upstream_inference_prompt_cost\":0.009277,\"upstream_inference_completions_cost\":0.00458},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653757-sLo5yycCsEDJhm2sSaDq",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 9277,
+        "completion_tokens": 916,
+        "total_tokens": 10193,
+        "cost": 0.013857,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.013857,
+          "upstream_inference_prompt_cost": 0.009277,
+          "upstream_inference_completions_cost": 0.00458
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 11.825,
+  "call_id": "DS__z1_BGCSIU5S__claude__r2",
+  "fingerprint": "d2245d49823fc6f7135f985d0ca9ba26a38a0db50d0942cd5dc4f384504ddd31",
+  "paper_id": "z1_BGCSIU5S",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:02:44.588072+00:00",
+  "input_sha256": "0fddcd965e3efd0f6266452e45d8488c0878b252585d053888baca3a25ba84b8",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789655866-o34LugsInT3grzVT64yd",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.015163,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10218,
+    "completion_tokens": 989,
+    "total_tokens": 11207,
+    "cost": 0.015163,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.015163,
+      "upstream_inference_prompt_cost": 0.010218,
+      "upstream_inference_completions_cost": 0.004945
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Himalayan Musk Deer Habitat Distribution\n\n## Step 1: Determine if Review Article\n**Conclusion: NOT a review article**\n\nThis is a primary research paper presenting original species distribution modeling using MaxEnt methodology applied to Himalayan Musk Deer (*Moschus chrysogaster*) in Nepal.\n\n---\n\n## Step 2: Apply Categorization Flow for Non-Review Papers\n\nSince this is a **non-review research paper**, I evaluate against inclusion/exclusion criteria:\n\n### CORE INCLUSION CRITERIA ASSESSMENT:\n\n| Criterion | Status | Evidence |\n|-----------|--------|----------|\n| **Explicit national-scale spatial implementation** | ❌ FAIL | Study area is Nepal's Himalayan region only (mountain/hill areas), not entire country. Study explicitly states \"covered the entire hilly and mountainous region from east to west of Nepal\" - excludes southern plains (60m amsl). |\n| **Primary focus = LULC prediction/simulation** | ❌ FAIL | Primary focus is **species habitat distribution modeling**, not land use/land cover prediction. LULC is a minor input variable (one of 11 predictors, contributing only 7.3% to model). |\n| **≥2 future scenarios with quantitative comparison** | ✓ PASS | Two RCP scenarios (RCP4.5, RCP8.5) for two time periods (2050, 2070) with quantitative comparisons provided in Tables 2-3. |\n| **Spatial modeling with quantitative accuracy metrics** | ✓ PASS | MaxEnt model with AUC = 0.975; quantified habitat changes (% area stable, expansion, reduction). |\n| **Mapped LULC projections as outputs** | ❌ FAIL | Outputs are **species habitat suitability maps**, not LULC projections. Maps show habitat suitable/unsuitable areas, not land cover classes or LULC transitions. |\n\n### SPECIFIC EXCLUSION CRITERIA CHECK:\n\n| Exclusion Criterion | Status |\n|-------------------|--------|\n| Species-specific/ecological focus unrelated to LULC | ✓ **APPLIES** - Paper is explicitly about endangered species habitat distribution, not LULC change prediction |\n| Local/regional scale focus | ✓ **APPLIES** - Regional focus (Nepal Himalaya only, not national-scale) |\n| No LULC prediction component | ✓ **APPLIES** - LULC is input variable only; no LULC prediction/change modeling |\n| Remote sensing technical studies without predictive modeling | Partial - Uses remote sensing data but primarily for species distribution, not LULC prediction |\n\n---\n\n## Step 3: Primary Focus Determination\n\n**Primary Research Objective:** Model current and future geographic distribution of an endangered species (*Moschus chrysogaster*) under climate change scenarios.\n\n**LULC Role:** Land cover is used as one of 11 input environmental variables (7.3% contribution). No LULC change prediction, simulation, or projection is performed. The paper does not model or predict how land cover itself will change.\n\n---\n\n## FINAL CATEGORIZATION\n\n**Final categorization: EXCLUDED**\n\n**Justification:** \nThis paper is a species distribution modeling study with ecological/conservation focus, not a land use/land cover prediction study. While it uses climate and land cover variables as inputs to MaxEnt modeling, it:\n\n1. **Fails primary focus criterion** - Central research question concerns endangered species habitat suitability under climate change, not LULC prediction/simulation\n2. **Fails national-scale implementation** - Study covers only Nepal's mountainous regions, explicitly excluding southern plains\n3. **Fails LULC output criterion** - Outputs are species habitat suitability maps, not LULC class maps or LULC change projections\n4. **Meets species-specific ecological exclusion criterion** - Paper is fundamentally about flora/fauna conservation biology, not LULC dynamics\n5. **LULC is incidental input only** - Land cover contributes minimally (7.3%) as one predictor variable; no LULC change analysis or projection\n\nThis paper belongs in conservation biology/species distribution modeling literature, not LULC prediction research.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:37:41.579816+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.387,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655866-o34LugsInT3grzVT64yd\",\"object\":\"chat.completion\",\"created\":1789655866,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Himalayan Musk Deer Habitat Distribution\\n\\n## Step 1: Determine if Review Article\\n**Conclusion: NOT a review article**\\n\\nThis is a primary research paper presenting original species distribution modeling using MaxEnt methodology applied to Himalayan Musk Deer (*Moschus chrysogaster*) in Nepal.\\n\\n---\\n\\n## Step 2: Apply Categorization Flow for Non-Review Papers\\n\\nSince this is a **non-review research paper**, I evaluate against inclusion/exclusion criteria:\\n\\n### CORE INCLUSION CRITERIA ASSESSMENT:\\n\\n| Criterion | Status | Evidence |\\n|-----------|--------|----------|\\n| **Explicit national-scale spatial implementation** | ❌ FAIL | Study area is Nepal's Himalayan region only (mountain/hill areas), not entire country. Study explicitly states \\\"covered the entire hilly and mountainous region from east to west of Nepal\\\" - excludes southern plains (60m amsl). |\\n| **Primary focus = LULC prediction/simulation** | ❌ FAIL | Primary focus is **species habitat distribution modeling**, not land use/land cover prediction. LULC is a minor input variable (one of 11 predictors, contributing only 7.3% to model). |\\n| **≥2 future scenarios with quantitative comparison** | ✓ PASS | Two RCP scenarios (RCP4.5, RCP8.5) for two time periods (2050, 2070) with quantitative comparisons provided in Tables 2-3. |\\n| **Spatial modeling with quantitative accuracy metrics** | ✓ PASS | MaxEnt model with AUC = 0.975; quantified habitat changes (% area stable, expansion, reduction). |\\n| **Mapped LULC projections as outputs** | ❌ FAIL | Outputs are **species habitat suitability maps**, not LULC projections. Maps show habitat suitable/unsuitable areas, not land cover classes or LULC transitions. |\\n\\n### SPECIFIC EXCLUSION CRITERIA CHECK:\\n\\n| Exclusion Criterion | Status |\\n|-------------------|--------|\\n| Species-specific/ecological focus unrelated to LULC | ✓ **APPLIES** - Paper is explicitly about endangered species habitat distribution, not LULC change prediction |\\n| Local/regional scale focus | ✓ **APPLIES** - Regional focus (Nepal Himalaya only, not national-scale) |\\n| No LULC prediction component | ✓ **APPLIES** - LULC is input variable only; no LULC prediction/change modeling |\\n| Remote sensing technical studies without predictive modeling | Partial - Uses remote sensing data but primarily for species distribution, not LULC prediction |\\n\\n---\\n\\n## Step 3: Primary Focus Determination\\n\\n**Primary Research Objective:** Model current and future geographic distribution of an endangered species (*Moschus chrysogaster*) under climate change scenarios.\\n\\n**LULC Role:** Land cover is used as one of 11 input environmental variables (7.3% contribution). No LULC change prediction, simulation, or projection is performed. The paper does not model or predict how land cover itself will change.\\n\\n---\\n\\n## FINAL CATEGORIZATION\\n\\n**Final categorization: EXCLUDED**\\n\\n**Justification:** \\nThis paper is a species distribution modeling study with ecological/conservation focus, not a land use/land cover prediction study. While it uses climate and land cover variables as inputs to MaxEnt modeling, it:\\n\\n1. **Fails primary focus criterion** - Central research question concerns endangered species habitat suitability under climate change, not LULC prediction/simulation\\n2. **Fails national-scale implementation** - Study covers only Nepal's mountainous regions, explicitly excluding southern plains\\n3. **Fails LULC output criterion** - Outputs are species habitat suitability maps, not LULC class maps or LULC change projections\\n4. **Meets species-specific ecological exclusion criterion** - Paper is fundamentally about flora/fauna conservation biology, not LULC dynamics\\n5. **LULC is incidental input only** - Land cover contributes minimally (7.3%) as one predictor variable; no LULC change analysis or projection\\n\\nThis paper belongs in conservation biology/species distribution modeling literature, not LULC prediction research.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10218,\"completion_tokens\":989,\"total_tokens\":11207,\"cost\":0.015163,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.015163,\"upstream_inference_prompt_cost\":0.010218,\"upstream_inference_completions_cost\":0.004945},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655866-o34LugsInT3grzVT64yd",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 10218,
+        "completion_tokens": 989,
+        "total_tokens": 11207,
+        "cost": 0.015163,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.015163,
+          "upstream_inference_prompt_cost": 0.010218,
+          "upstream_inference_completions_cost": 0.004945
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.387,
+  "call_id": "DS__z1_MVYW6T8U__claude__r3",
+  "fingerprint": "1c02630b006424edc873d77eb75cc58caab75804b87810b62952799f20e3a55e",
+  "paper_id": "z1_MVYW6T8U",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:37:53.966761+00:00",
+  "input_sha256": "e389205a975b796ef618687e834d9675169238f42068f5f8e192aa3e89062be6",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789652824-E84MuofPIIecU5SWqeQC",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00347436,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 13151,
+    "completion_tokens": 145,
+    "total_tokens": 13296,
+    "cost": 0.00347436,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00347436,
+      "upstream_inference_prompt_cost": 0.00341926,
+      "upstream_inference_completions_cost": 5.51e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper's primary focus is predicting the distribution of a specific endangered species (Siamese Eld's deer) under land use and climate change scenarios. While it uses predicted future LULC maps as an input for its species distribution model, the LULC predictions themselves are not the central research question. The paper does not implement or validate national-scale LULC prediction models; it applies pre-existing scenario-based LULC maps from another source. The core objective is ecological/conservation-focused, specifically on species habitat suitability and range shifts, which falls under the exclusion criterion of \"Species-specific/ecological focus (flora/fauna) unrelated to LULC.\")",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:46:59.319099+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.454,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789652824-E84MuofPIIecU5SWqeQC\",\"object\":\"chat.completion\",\"created\":1789652824,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper's primary focus is predicting the distribution of a specific endangered species (Siamese Eld's deer) under land use and climate change scenarios. While it uses predicted future LULC maps as an input for its species distribution model, the LULC predictions themselves are not the central research question. The paper does not implement or validate national-scale LULC prediction models; it applies pre-existing scenario-based LULC maps from another source. The core objective is ecological/conservation-focused, specifically on species habitat suitability and range shifts, which falls under the exclusion criterion of \\\"Species-specific/ecological focus (flora/fauna) unrelated to LULC.\\\")\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":13151,\"completion_tokens\":145,\"total_tokens\":13296,\"cost\":0.00347436,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00347436,\"upstream_inference_prompt_cost\":0.00341926,\"upstream_inference_completions_cost\":0.0000551},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652824-E84MuofPIIecU5SWqeQC",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 13151,
+        "completion_tokens": 145,
+        "total_tokens": 13296,
+        "cost": 0.00347436,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00347436,
+          "upstream_inference_prompt_cost": 0.00341926,
+          "upstream_inference_completions_cost": 5.51e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.454,
+  "call_id": "DS__z1_62M9Z4AJ__deepseek__r1",
+  "fingerprint": "eb85e407b799954914caf9440f3bf4dd2063060f97a8fa5fd2f41745e21f563d",
+  "paper_id": "z1_62M9Z4AJ",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:47:03.772789+00:00",
+  "input_sha256": "b116f8e7014f23ab582bf7cfb6feb626427a4df147f546a041ef53b4504e6389",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

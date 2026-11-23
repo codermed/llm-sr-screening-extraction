@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789655760-KScj6jgVtnElomf9kQHE",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0010984,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 8810,
+    "completion_tokens": 92,
+    "total_tokens": 8902,
+    "cost": 0.0010984,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 8576,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010984,
+      "upstream_inference_prompt_cost": 0.0009512,
+      "upstream_inference_completions_cost": 0.0001472
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This is a review article focusing on the potential impacts of climate change on sport, specifically baseball and cross-country skiing. It does not focus on land use land cover (LULC) future prediction, nor does it include spatial modeling, quantitative accuracy metrics, or mapped LULC projections. The paper discusses climate hazards and vulnerabilities broadly and does not meet the core inclusion criteria for LULC prediction studies.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:35:55.415397+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.179,
+      "raw_body": "\n         \n{\"id\":\"gen-1789655760-KScj6jgVtnElomf9kQHE\",\"object\":\"chat.completion\",\"created\":1789655760,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This is a review article focusing on the potential impacts of climate change on sport, specifically baseball and cross-country skiing. It does not focus on land use land cover (LULC) future prediction, nor does it include spatial modeling, quantitative accuracy metrics, or mapped LULC projections. The paper discusses climate hazards and vulnerabilities broadly and does not meet the core inclusion criteria for LULC prediction studies.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":8810,\"completion_tokens\":92,\"total_tokens\":8902,\"cost\":0.0010984,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":8576,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0010984,\"upstream_inference_prompt_cost\":0.0009512,\"upstream_inference_completions_cost\":0.0001472},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655760-KScj6jgVtnElomf9kQHE",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 8810,
+        "completion_tokens": 92,
+        "total_tokens": 8902,
+        "cost": 0.0010984,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 8576,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0010984,
+          "upstream_inference_prompt_cost": 0.0009512,
+          "upstream_inference_completions_cost": 0.0001472
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.18,
+  "call_id": "DS__z1_3FLKIBWN__openai__r3",
+  "fingerprint": "15065e46a024e53c5b44766806ee51be5cbba2048044e287cb1c2f7b70ba4040",
+  "paper_id": "z1_3FLKIBWN",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:35:57.594576+00:00",
+  "input_sha256": "7faa21494bc2fbebbab5417a9c0edcc82448d59ae34e6cd64900576f8a299a64",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

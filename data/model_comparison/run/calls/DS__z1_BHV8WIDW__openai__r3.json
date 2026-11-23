@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654971-aq8Jyvt3Nrx1cjfevTHQ",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.001004,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 6582,
+    "completion_tokens": 182,
+    "total_tokens": 6764,
+    "cost": 0.001004,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 6400,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001004,
+      "upstream_inference_prompt_cost": 0.0007128,
+      "upstream_inference_completions_cost": 0.0002912
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: OK (Justification: This is a research paper focused primarily on national-scale LULC prediction for Belgium. It uses the GLOBIO land use allocation model to downscale coarse global LUH2 land use data (0.25°) to fine spatial resolutions (100 m and 10 m) for current and three future scenarios (SSP-RCP combinations), thus implementing multiple future scenarios with quantitative spatial outputs. The study evaluates the accuracy and agreement of downscaled maps using quantitative metrics (RSR, overall accuracy, Kappa) and compares different reference land cover maps. The spatial modeling is explicit and includes national-level implementation covering the entire country of Belgium. The paper is not a review, does not focus on species/ecology unrelated to LULC, and includes quantitative future projections with mapped outputs. Therefore, it meets all core inclusion criteria and none of the exclusion criteria.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:22:46.943963+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.675,
+      "raw_body": "\n         \n{\"id\":\"gen-1789654971-aq8Jyvt3Nrx1cjfevTHQ\",\"object\":\"chat.completion\",\"created\":1789654971,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: This is a research paper focused primarily on national-scale LULC prediction for Belgium. It uses the GLOBIO land use allocation model to downscale coarse global LUH2 land use data (0.25°) to fine spatial resolutions (100 m and 10 m) for current and three future scenarios (SSP-RCP combinations), thus implementing multiple future scenarios with quantitative spatial outputs. The study evaluates the accuracy and agreement of downscaled maps using quantitative metrics (RSR, overall accuracy, Kappa) and compares different reference land cover maps. The spatial modeling is explicit and includes national-level implementation covering the entire country of Belgium. The paper is not a review, does not focus on species/ecology unrelated to LULC, and includes quantitative future projections with mapped outputs. Therefore, it meets all core inclusion criteria and none of the exclusion criteria.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":6582,\"completion_tokens\":182,\"total_tokens\":6764,\"cost\":0.001004,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":6400,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.001004,\"upstream_inference_prompt_cost\":0.0007128,\"upstream_inference_completions_cost\":0.0002912},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654971-aq8Jyvt3Nrx1cjfevTHQ",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 6582,
+        "completion_tokens": 182,
+        "total_tokens": 6764,
+        "cost": 0.001004,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 6400,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001004,
+          "upstream_inference_prompt_cost": 0.0007128,
+          "upstream_inference_completions_cost": 0.0002912
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.675,
+  "call_id": "DS__z1_BHV8WIDW__openai__r3",
+  "fingerprint": "714ca4bb6ec55c32b0dd3be3ac6339228ed9c4039d5e9478dcdfcd24f87e4337",
+  "paper_id": "z1_BHV8WIDW",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:22:49.618922+00:00",
+  "input_sha256": "49dd108688e4a180df4ad7e93ac29b8a42a0ef072a862f3fac17887ac862b082",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

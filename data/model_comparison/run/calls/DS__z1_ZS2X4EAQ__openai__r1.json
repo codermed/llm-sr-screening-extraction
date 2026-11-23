@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653637-FA72xJLHmAYMB9oFa6bn",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0061836,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15019,
+    "completion_tokens": 110,
+    "total_tokens": 15129,
+    "cost": 0.0061836,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0061836,
+      "upstream_inference_prompt_cost": 0.0060076,
+      "upstream_inference_completions_cost": 0.000176
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This is a review article focused on incorporating climate uncertainty into conservation planning for wildlife managers, emphasizing species status assessments, habitat conservation plans, natural resource management, and nature-based solutions. It does not focus on land use land cover (LULC) future prediction, does not include national-scale spatial implementation of LULC prediction, nor quantitative spatial modeling outputs of LULC scenarios. The paper primarily addresses climate change impacts, conservation policy, and management strategies rather than spatial LULC prediction modeling.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:00:32.295242+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.296,
+      "raw_body": "\n         \n{\"id\":\"gen-1789653637-FA72xJLHmAYMB9oFa6bn\",\"object\":\"chat.completion\",\"created\":1789653637,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This is a review article focused on incorporating climate uncertainty into conservation planning for wildlife managers, emphasizing species status assessments, habitat conservation plans, natural resource management, and nature-based solutions. It does not focus on land use land cover (LULC) future prediction, does not include national-scale spatial implementation of LULC prediction, nor quantitative spatial modeling outputs of LULC scenarios. The paper primarily addresses climate change impacts, conservation policy, and management strategies rather than spatial LULC prediction modeling.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15019,\"completion_tokens\":110,\"total_tokens\":15129,\"cost\":0.0061836,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0061836,\"upstream_inference_prompt_cost\":0.0060076,\"upstream_inference_completions_cost\":0.000176},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653637-FA72xJLHmAYMB9oFa6bn",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 15019,
+        "completion_tokens": 110,
+        "total_tokens": 15129,
+        "cost": 0.0061836,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0061836,
+          "upstream_inference_prompt_cost": 0.0060076,
+          "upstream_inference_completions_cost": 0.000176
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.297,
+  "call_id": "DS__z1_ZS2X4EAQ__openai__r1",
+  "fingerprint": "4308cb1a0f614336d5144e75e389031a99851e2fe1d0b168dbaf5775cf8e61f5",
+  "paper_id": "z1_ZS2X4EAQ",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T14:00:35.591621+00:00",
+  "input_sha256": "f208cc1756aca83f5b7979fea5a8f0b999eb84e50bf946bcba7b2e232affc622",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

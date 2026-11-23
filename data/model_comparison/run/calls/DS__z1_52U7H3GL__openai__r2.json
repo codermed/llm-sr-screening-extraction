@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654167-7LkedRVESITwD96uFclJ",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0045192,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10654,
+    "completion_tokens": 161,
+    "total_tokens": 10815,
+    "cost": 0.0045192,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0045192,
+      "upstream_inference_prompt_cost": 0.0042616,
+      "upstream_inference_completions_cost": 0.0002576
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: OK (Justification: This is a national-scale spatial land use cover change (LUCC) modeling study focused on Mexico. The primary objective is explicit LULC prediction/simulation under two future socioeconomic and climate change scenarios (business as usual and pessimistic), with projections for multiple future time periods (2020, 2050, 2080). The study implements spatially explicit models at 1 km resolution, quantitatively evaluates model accuracy using multiple metrics (similarity index, figure of merit, allocation and quantity disagreement), and provides mapped LULC projections. The study includes quantitative comparison of ≥2 future scenarios, and spatially explicit outputs are presented. Thus, it meets all core inclusion criteria for a research paper focused on LULC prediction at the national scale.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:09:22.228727+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.303,
+      "raw_body": "\n         \n{\"id\":\"gen-1789654167-7LkedRVESITwD96uFclJ\",\"object\":\"chat.completion\",\"created\":1789654167,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: This is a national-scale spatial land use cover change (LUCC) modeling study focused on Mexico. The primary objective is explicit LULC prediction/simulation under two future socioeconomic and climate change scenarios (business as usual and pessimistic), with projections for multiple future time periods (2020, 2050, 2080). The study implements spatially explicit models at 1 km resolution, quantitatively evaluates model accuracy using multiple metrics (similarity index, figure of merit, allocation and quantity disagreement), and provides mapped LULC projections. The study includes quantitative comparison of ≥2 future scenarios, and spatially explicit outputs are presented. Thus, it meets all core inclusion criteria for a research paper focused on LULC prediction at the national scale.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10654,\"completion_tokens\":161,\"total_tokens\":10815,\"cost\":0.0045192,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0045192,\"upstream_inference_prompt_cost\":0.0042616,\"upstream_inference_completions_cost\":0.0002576},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654167-7LkedRVESITwD96uFclJ",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 10654,
+        "completion_tokens": 161,
+        "total_tokens": 10815,
+        "cost": 0.0045192,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0045192,
+          "upstream_inference_prompt_cost": 0.0042616,
+          "upstream_inference_completions_cost": 0.0002576
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.304,
+  "call_id": "DS__z1_52U7H3GL__openai__r2",
+  "fingerprint": "77c35a8d4fd685913793af4d99076e6fa73bae982b727895267e4351ce71e2de",
+  "paper_id": "z1_52U7H3GL",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:09:25.531485+00:00",
+  "input_sha256": "ce40f429364b5d87de9195fad1cadd5c68d7919517a638b4ad1b5f3f5dcf5456",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

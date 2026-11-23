@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654107-3l1jAY8tBuaI25ek9hdE",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0039312,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 9136,
+    "completion_tokens": 173,
+    "total_tokens": 9309,
+    "cost": 0.0039312,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0039312,
+      "upstream_inference_prompt_cost": 0.0036544,
+      "upstream_inference_completions_cost": 0.0002768
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: REVIEW (Justification: The paper is explicitly a review article as indicated in the title and text. It synthesizes existing knowledge on how land-use modelling tools can inform bioenergy policies, with an emphasis on land-use change (LUC), including direct and indirect LUC, and discusses modelling approaches, data issues, and policy implications. Although it does not present new primary LULC prediction modeling with national-scale spatial implementation, it critically evaluates existing land-use change models and data relevant to bioenergy scenarios, thus fitting the definition of a review that touches on LULC future prediction. It is not excluded because it focuses on land-use change in the context of bioenergy, which involves LULC future scenarios, and it is not primarily a biomass/carbon study without LULC analysis. Therefore, it meets the criteria for REVIEW.)",
+  "automated_status": "usable",
+  "parsed_label": "REVIEW",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:08:22.609073+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.876,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789654107-3l1jAY8tBuaI25ek9hdE\",\"object\":\"chat.completion\",\"created\":1789654107,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: REVIEW (Justification: The paper is explicitly a review article as indicated in the title and text. It synthesizes existing knowledge on how land-use modelling tools can inform bioenergy policies, with an emphasis on land-use change (LUC), including direct and indirect LUC, and discusses modelling approaches, data issues, and policy implications. Although it does not present new primary LULC prediction modeling with national-scale spatial implementation, it critically evaluates existing land-use change models and data relevant to bioenergy scenarios, thus fitting the definition of a review that touches on LULC future prediction. It is not excluded because it focuses on land-use change in the context of bioenergy, which involves LULC future scenarios, and it is not primarily a biomass/carbon study without LULC analysis. Therefore, it meets the criteria for REVIEW.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":9136,\"completion_tokens\":173,\"total_tokens\":9309,\"cost\":0.0039312,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0039312,\"upstream_inference_prompt_cost\":0.0036544,\"upstream_inference_completions_cost\":0.0002768},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654107-3l1jAY8tBuaI25ek9hdE",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 9136,
+        "completion_tokens": 173,
+        "total_tokens": 9309,
+        "cost": 0.0039312,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0039312,
+          "upstream_inference_prompt_cost": 0.0036544,
+          "upstream_inference_completions_cost": 0.0002768
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.877,
+  "call_id": "DS__z1_4YG9HWEA__openai__r2",
+  "fingerprint": "34ab78075bb931e8a4d81f759d0b46c253e3e2cfe45d83b427802d476124600f",
+  "paper_id": "z1_4YG9HWEA",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:08:26.485695+00:00",
+  "input_sha256": "80be2ecddfbb77ffcfe5af7424a09301680f77776b42c2922fe0c806ee442a0d",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

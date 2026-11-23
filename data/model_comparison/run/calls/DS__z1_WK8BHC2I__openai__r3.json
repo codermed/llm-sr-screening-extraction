@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789655357-MlHkHZvfB7hwwhBTxd8d",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0018876,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15803,
+    "completion_tokens": 157,
+    "total_tokens": 15960,
+    "cost": 0.0018876,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 15616,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0018876,
+      "upstream_inference_prompt_cost": 0.0016364,
+      "upstream_inference_completions_cost": 0.0002512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: OK (Justification: The paper presents a new coupled model (LPJ-FLUS) integrating a mechanistic DGVM (LPJ) and a CA model (FLUS) for land use and land cover change (LUCC) simulation at the national scale (China). It explicitly performs spatially explicit LULC predictions for the entire country with a 1 km resolution. The study includes multiple future scenarios (SSP1-RCP2.6 and SSP5-RCP8.5), quantitatively compares them, and validates model accuracy using quantitative metrics (Figure of Merit). The outputs include mapped LULC projections. Therefore, it meets all core inclusion criteria for a national-scale, scenario-based, spatially explicit LULC prediction study.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:29:12.694676+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.352,
+      "raw_body": "\n         \n{\"id\":\"gen-1789655357-MlHkHZvfB7hwwhBTxd8d\",\"object\":\"chat.completion\",\"created\":1789655357,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: The paper presents a new coupled model (LPJ-FLUS) integrating a mechanistic DGVM (LPJ) and a CA model (FLUS) for land use and land cover change (LUCC) simulation at the national scale (China). It explicitly performs spatially explicit LULC predictions for the entire country with a 1 km resolution. The study includes multiple future scenarios (SSP1-RCP2.6 and SSP5-RCP8.5), quantitatively compares them, and validates model accuracy using quantitative metrics (Figure of Merit). The outputs include mapped LULC projections. Therefore, it meets all core inclusion criteria for a national-scale, scenario-based, spatially explicit LULC prediction study.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15803,\"completion_tokens\":157,\"total_tokens\":15960,\"cost\":0.0018876,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":15616,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0018876,\"upstream_inference_prompt_cost\":0.0016364,\"upstream_inference_completions_cost\":0.0002512},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655357-MlHkHZvfB7hwwhBTxd8d",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 15803,
+        "completion_tokens": 157,
+        "total_tokens": 15960,
+        "cost": 0.0018876,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 15616,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0018876,
+          "upstream_inference_prompt_cost": 0.0016364,
+          "upstream_inference_completions_cost": 0.0002512
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.354,
+  "call_id": "DS__z1_WK8BHC2I__openai__r3",
+  "fingerprint": "eddb329c8767771cde6e347d1ebfd664dd604d3d2e9d89a93974d2472df6b082",
+  "paper_id": "z1_WK8BHC2I",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:29:15.047602+00:00",
+  "input_sha256": "a57e1cb25fccf0c1cb0321db5e5bb6b3f91cb391adeed083d8fab18e58b757ce",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

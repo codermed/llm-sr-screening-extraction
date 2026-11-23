@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789655086-OgBMB4knutQbKHcHzpNt",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00277842,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 9650,
+    "completion_tokens": 709,
+    "total_tokens": 10359,
+    "cost": 0.00277842,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00277842,
+      "upstream_inference_prompt_cost": 0.002509,
+      "upstream_inference_completions_cost": 0.00026942
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: Explicit national-scale LULC prediction for multiple SAARC countries, MLP-NN modeling of future AFOLU under four RCP scenarios, includes quantitative accuracy metrics and mapped projections.)\n\n**Analysis Breakdown:**\n\n*   **Review Article Check:** This is **not** a review article. It is a primary research paper presenting original modeling work.\n*   **Categorization Flow Applied:** As a non-review paper, it was evaluated against the core inclusion and exclusion criteria.\n\n**Inclusion Criteria Assessment (ALL MET):**\n1.  ✅ **Explicit national-scale spatial implementation:** The study explicitly models LULC (AFOLU) for the entirety of each SAARC nation (Afghanistan, Bangladesh, Bhutan, India, Nepal, Maldives, Pakistan, Sri Lanka). The methodology and results are presented at the national level for each country.\n2.  ✅ **Primary focus = LULC prediction/simulation:** The central research question is to project future AFOLU for 2050 using an MLP-NN model. The title, abstract, introduction, and methodology all center on this predictive goal.\n3.  ✅ **Implementation of ≥2 future scenarios with quantitative comparison:** The study implements and compares four future climate scenarios (RCP 2.6, 4.5, 6.0, and 8.5). Quantitative comparisons of changes in agriculture and forest area are provided for each country under each scenario (e.g., Fig. 9, Fig. 10).\n4.  ✅ **Spatial modeling with quantitative accuracy metrics:** The MLP-NN is a spatial modeling technique. Model accuracy is quantitatively assessed using Total Operating Characteristic (TOC) and Area Under the Curve (AUC = 0.87 for 2016).\n5.  ✅ **Outputs include mapped LULC projections:** The paper provides maps of projected AFOLU for 2050 under each RCP scenario (Fig. 8).\n\n**Exclusion Criteria Assessment (NONE MET):**\n*   ❌ **Not global-scale without national disaggregation:** Analysis is conducted and results are presented per individual SAARC country.\n*   ❌ **Not local/regional/transboundary:** The scale is explicitly the collection of sovereign nations forming SAARC, with analysis applied to each national territory.\n*   ✅ **Has LULC prediction component:** This is the core of the paper.\n*   ❌ **Not species-specific/ecological:** Focus is on land-use categories (agriculture, forest, other).\n*   ❌ **Not an economic/urban model without spatial outputs:** It is a spatially explicit land-use change model.\n*   ❌ **Not a biomass/carbon study without LULC change:** LULC change is the direct output.\n*   ❌ **Not a methodological paper without application:** The MLP-NN methodology is applied to a concrete, national-scale prediction problem.\n*   ❌ **Not purely qualitative/historical:** It includes future projections to 2050.\n*   ❌ **Not a remote sensing technical study without predictive modeling:** Remote sensing data is used as input, but the focus is on predictive modeling.\n*   ❌ **Not a single-scenario projection:** Four scenarios are used.\n\n**Primary Focus Determination:** The paper's primary and sole objective is the prediction of future LULC (AFOLU). Therefore, it categorizes as **'OK'**.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:24:41.675698+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 15.708,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655086-OgBMB4knutQbKHcHzpNt\",\"object\":\"chat.completion\",\"created\":1789655086,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: Explicit national-scale LULC prediction for multiple SAARC countries, MLP-NN modeling of future AFOLU under four RCP scenarios, includes quantitative accuracy metrics and mapped projections.)\\n\\n**Analysis Breakdown:**\\n\\n*   **Review Article Check:** This is **not** a review article. It is a primary research paper presenting original modeling work.\\n*   **Categorization Flow Applied:** As a non-review paper, it was evaluated against the core inclusion and exclusion criteria.\\n\\n**Inclusion Criteria Assessment (ALL MET):**\\n1.  ✅ **Explicit national-scale spatial implementation:** The study explicitly models LULC (AFOLU) for the entirety of each SAARC nation (Afghanistan, Bangladesh, Bhutan, India, Nepal, Maldives, Pakistan, Sri Lanka). The methodology and results are presented at the national level for each country.\\n2.  ✅ **Primary focus = LULC prediction/simulation:** The central research question is to project future AFOLU for 2050 using an MLP-NN model. The title, abstract, introduction, and methodology all center on this predictive goal.\\n3.  ✅ **Implementation of ≥2 future scenarios with quantitative comparison:** The study implements and compares four future climate scenarios (RCP 2.6, 4.5, 6.0, and 8.5). Quantitative comparisons of changes in agriculture and forest area are provided for each country under each scenario (e.g., Fig. 9, Fig. 10).\\n4.  ✅ **Spatial modeling with quantitative accuracy metrics:** The MLP-NN is a spatial modeling technique. Model accuracy is quantitatively assessed using Total Operating Characteristic (TOC) and Area Under the Curve (AUC = 0.87 for 2016).\\n5.  ✅ **Outputs include mapped LULC projections:** The paper provides maps of projected AFOLU for 2050 under each RCP scenario (Fig. 8).\\n\\n**Exclusion Criteria Assessment (NONE MET):**\\n*   ❌ **Not global-scale without national disaggregation:** Analysis is conducted and results are presented per individual SAARC country.\\n*   ❌ **Not local/regional/transboundary:** The scale is explicitly the collection of sovereign nations forming SAARC, with analysis applied to each national territory.\\n*   ✅ **Has LULC prediction component:** This is the core of the paper.\\n*   ❌ **Not species-specific/ecological:** Focus is on land-use categories (agriculture, forest, other).\\n*   ❌ **Not an economic/urban model without spatial outputs:** It is a spatially explicit land-use change model.\\n*   ❌ **Not a biomass/carbon study without LULC change:** LULC change is the direct output.\\n*   ❌ **Not a methodological paper without application:** The MLP-NN methodology is applied to a concrete, national-scale prediction problem.\\n*   ❌ **Not purely qualitative/historical:** It includes future projections to 2050.\\n*   ❌ **Not a remote sensing technical study without predictive modeling:** Remote sensing data is used as input, but the focus is on predictive modeling.\\n*   ❌ **Not a single-scenario projection:** Four scenarios are used.\\n\\n**Primary Focus Determination:** The paper's primary and sole objective is the prediction of future LULC (AFOLU). Therefore, it categorizes as **'OK'**.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":9650,\"completion_tokens\":709,\"total_tokens\":10359,\"cost\":0.00277842,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00277842,\"upstream_inference_prompt_cost\":0.002509,\"upstream_inference_completions_cost\":0.00026942},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655086-OgBMB4knutQbKHcHzpNt",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 9650,
+        "completion_tokens": 709,
+        "total_tokens": 10359,
+        "cost": 0.00277842,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00277842,
+          "upstream_inference_prompt_cost": 0.002509,
+          "upstream_inference_completions_cost": 0.00026942
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 15.709,
+  "call_id": "DS__z1_U4VVEYKW__deepseek__r3",
+  "fingerprint": "08279396b7dc1f94df738e8f3656c0a5b2fb4791e6c3a3fd942e85a090cfdc3a",
+  "paper_id": "z1_U4VVEYKW",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:24:57.384248+00:00",
+  "input_sha256": "e276eceeaeaed4eccbc48e8acc7d015df2fe426d3fb0a8af639ffcbad69bf8cc",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

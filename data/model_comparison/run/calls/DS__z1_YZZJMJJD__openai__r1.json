@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789652833-xTw756ABwglyb52aUz5U",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0077412,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 18689,
+    "completion_tokens": 166,
+    "total_tokens": 18855,
+    "cost": 0.0077412,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0077412,
+      "upstream_inference_prompt_cost": 0.0074756,
+      "upstream_inference_completions_cost": 0.0002656
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a species-specific ecological study focusing on the effects of climate and land-cover change on gibbon conservation status. While it uses future land-cover change scenarios as inputs, the primary focus is on species distribution modeling and conservation prioritization, not on land-use/land-cover (LULC) prediction or simulation at the national scale. The study area is regional (Southeast Asia) and global for gibbons, not explicitly national-scale LULC modeling. It lacks explicit national-scale spatial implementation of LULC prediction as a central research question and does not report quantitative accuracy metrics or detailed spatially explicit LULC projections as primary outcomes. Therefore, it does not meet core inclusion criteria and is excluded as species/ecological focus unrelated to LULC prediction.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:47:08.343513+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.27,
+      "raw_body": "\n         \n{\"id\":\"gen-1789652833-xTw756ABwglyb52aUz5U\",\"object\":\"chat.completion\",\"created\":1789652833,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a species-specific ecological study focusing on the effects of climate and land-cover change on gibbon conservation status. While it uses future land-cover change scenarios as inputs, the primary focus is on species distribution modeling and conservation prioritization, not on land-use/land-cover (LULC) prediction or simulation at the national scale. The study area is regional (Southeast Asia) and global for gibbons, not explicitly national-scale LULC modeling. It lacks explicit national-scale spatial implementation of LULC prediction as a central research question and does not report quantitative accuracy metrics or detailed spatially explicit LULC projections as primary outcomes. Therefore, it does not meet core inclusion criteria and is excluded as species/ecological focus unrelated to LULC prediction.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":18689,\"completion_tokens\":166,\"total_tokens\":18855,\"cost\":0.0077412,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0077412,\"upstream_inference_prompt_cost\":0.0074756,\"upstream_inference_completions_cost\":0.0002656},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652833-xTw756ABwglyb52aUz5U",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 18689,
+        "completion_tokens": 166,
+        "total_tokens": 18855,
+        "cost": 0.0077412,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0077412,
+          "upstream_inference_prompt_cost": 0.0074756,
+          "upstream_inference_completions_cost": 0.0002656
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.27,
+  "call_id": "DS__z1_YZZJMJJD__openai__r1",
+  "fingerprint": "1648c32ed510557c2e40a6c85ba1d62043e62ade307f7abed28f42d8dfeeb085",
+  "paper_id": "z1_YZZJMJJD",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:47:11.613200+00:00",
+  "input_sha256": "a09a5f462e10797c4a980c4cdaf2bf9e5f4a857502861dc396b874eb405a69fa",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

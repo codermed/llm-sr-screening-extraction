@@ -1,0 +1,128 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789655510-8UhU6P87MXGVTTNHXopx",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.01719666,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 16727,
+    "completion_tokens": 1064,
+    "total_tokens": 17791,
+    "cost": 0.01719666,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01719666,
+      "upstream_inference_prompt_cost": 0.01304706,
+      "upstream_inference_completions_cost": 0.0041496
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "objective: To conduct a decadal analysis and simulation of land use and land cover (LULC) changes in Taiwan from 1990 to 2020 and project future LULC for 2030 and 2050 under multiple scenarios, incorporating demographic trends such as negative population growth and using an integrated Support Vector Machine–Markov chain model.\n\ncountry: Taiwan\n\nland_use_classes: barren; uncultivated; shallow water; deep water; built-up; forest; cultivated\n\nbaseline_years: 1990; 2000; 2010; 2020\n\ntarget_future_years: 2030; 2050\n\nscenarios: 2-variables (elevation, distance to roads); 3-variables (elevation, distance to roads, distance to rivers); 5-variables (aspect, elevation, hillshade, distance to rivers, slope); 6-variables (aspect, elevation, hillshade, distance to rivers, distance to roads, slope)\n\nanalysis_methods: Maximum likelihood classifier (supervised classification); Support Vector Machine (SVM) with Radial Basis Function (RBF) kernel; Markov chain modeling; transition probability matrix; accuracy assessment using confusion matrix, kappa coefficient, overall accuracy, producer’s and user’s accuracy; root-mean-square-error (RMSE)\n\nsimulation_method_advantages: The SVM-Markov chain hybrid approach leverages precise LULC classification capabilities of SVM and probabilistic forecasting strength of Markov chains, improving simulation accuracy in complex urban landscapes; it outperforms traditional methods like maximum likelihood classifiers in varied geographic settings and enables national-scale dynamic land-cover prediction.\n\npredictors: aspect; elevation; hillshade; distance to river; distance to road; slope\n\npopulation_selected: Yes\n\ndata_sources: Landsat 5/7/8 Surface Reflectance Tier 1 satellite images (1990–2020); Shuttle Radar Topographic Mission (SRTM) Digital Elevation Model (30 m); OpenStreetMap; Google Earth; Google Earth Engine (for image processing and ROI collection); CIA World Factbook (for population statistics)\n\ntools_software_used: Google Earth Engine; GIS software (implied for spatial analysis and map preparation); SVM and Markov chain modeling frameworks (specific software not named)\n\nvalidation_performed: Yes\n\nvalidation_methods: Confusion matrix; overall accuracy; kappa coefficient; producer’s accuracy; user’s accuracy; RMSE; comparison of simulated 2020 LULC with actual 2020 classified LULC\n\nvalidation_data_sources: Ground control points (GCPs)—655 for classification validation and 300 for simulation validation; actual Landsat-derived LULC map for 2020\n\nkey_findings: Built-up area increased by ~140% from 1990 to 2020 (from 1,027.74 to 2,476.30 km²); under the 6-variable scenario, built-up area is projected to increase by 223% from 1990 levels by 2050; barren land decreased by ~49% from 1990 to 2020 and is projected to decline further; despite negative population growth, impervious surface area continues to expand; forest and cultivated areas slightly increased due to conservation efforts; the 3-variable scenario (elevation, distance to roads, distance to rivers) provided the most balanced and valid simulation results.\n\nimplications: Continued urban expansion despite declining population suggests inefficient land use and potential environmental risks; findings highlight the need for infill development, green space preservation, and policy interventions to align land-use planning with demographic realities; the study provides a framework for integrating demographic shifts into LULC modeling in other regions facing similar transitions.\n\nlimitations: Reliance on static transition probabilities in the Markov model that assume stationarity and ignore non-linear dynamics; exclusion of socio-economic variables beyond population trends; limitations of moderate-resolution Landsat imagery in densely urbanized areas; assumption of spatial independence in cell transitions, neglecting neighborhood effects; cloud cover restricted pre-1990 data availability.\n\nfuture_directions: Incorporate dynamic transition rules and socio-economic drivers (e.g., policy, economic indicators); integrate cellular automata to account for spatial dependencies; apply high-resolution or object-based classification for improved urban accuracy; extend carbon emission modeling linked to LULC projections; replicate methodology in other mid-sized, rapidly urbanizing island or mountainous nations.\n\nscalability: The methodology is scalable to other regions with similar geographic complexity and data availability, particularly mid-sized countries undergoing rapid urbanization and demographic transition; however, local calibration of predictors and validation with ground truth data would be necessary.\n\nnovelty: First national-scale LULC simulation for Taiwan covering 1990–2050; integration of SVM classification with Markov chain modeling at national scale; explicit incorporation of negative population growth as a contextual factor influencing future LULC; multi-scenario testing with varying combinations of physical predictors to assess model sensitivity and robustness.",
+  "automated_status": "usable",
+  "parsed_label": "",
+  "extracted_fields": {
+    "objective": "To conduct a decadal analysis and simulation of land use and land cover (LULC) changes in Taiwan from 1990 to 2020 and project future LULC for 2030 and 2050 under multiple scenarios, incorporating demographic trends such as negative population growth and using an integrated Support Vector Machine–Markov chain model.",
+    "country": "Taiwan",
+    "land_use_classes": "barren; uncultivated; shallow water; deep water; built-up; forest; cultivated",
+    "baseline_years": "1990; 2000; 2010; 2020",
+    "target_future_years": "2030; 2050",
+    "scenarios": "2-variables (elevation, distance to roads); 3-variables (elevation, distance to roads, distance to rivers); 5-variables (aspect, elevation, hillshade, distance to rivers, slope); 6-variables (aspect, elevation, hillshade, distance to rivers, distance to roads, slope)",
+    "analysis_methods": "Maximum likelihood classifier (supervised classification); Support Vector Machine (SVM) with Radial Basis Function (RBF) kernel; Markov chain modeling; transition probability matrix; accuracy assessment using confusion matrix, kappa coefficient, overall accuracy, producer’s and user’s accuracy; root-mean-square-error (RMSE)",
+    "simulation_method_advantages": "The SVM-Markov chain hybrid approach leverages precise LULC classification capabilities of SVM and probabilistic forecasting strength of Markov chains, improving simulation accuracy in complex urban landscapes; it outperforms traditional methods like maximum likelihood classifiers in varied geographic settings and enables national-scale dynamic land-cover prediction.",
+    "predictors": "aspect; elevation; hillshade; distance to river; distance to road; slope",
+    "population_selected": "Yes",
+    "data_sources": "Landsat 5/7/8 Surface Reflectance Tier 1 satellite images (1990–2020); Shuttle Radar Topographic Mission (SRTM) Digital Elevation Model (30 m); OpenStreetMap; Google Earth; Google Earth Engine (for image processing and ROI collection); CIA World Factbook (for population statistics)",
+    "tools_software_used": "Google Earth Engine; GIS software (implied for spatial analysis and map preparation); SVM and Markov chain modeling frameworks (specific software not named)",
+    "validation_performed": "Yes",
+    "validation_methods": "Confusion matrix; overall accuracy; kappa coefficient; producer’s accuracy; user’s accuracy; RMSE; comparison of simulated 2020 LULC with actual 2020 classified LULC",
+    "validation_data_sources": "Ground control points (GCPs)—655 for classification validation and 300 for simulation validation; actual Landsat-derived LULC map for 2020",
+    "key_findings": "Built-up area increased by ~140% from 1990 to 2020 (from 1,027.74 to 2,476.30 km²); under the 6-variable scenario, built-up area is projected to increase by 223% from 1990 levels by 2050; barren land decreased by ~49% from 1990 to 2020 and is projected to decline further; despite negative population growth, impervious surface area continues to expand; forest and cultivated areas slightly increased due to conservation efforts; the 3-variable scenario (elevation, distance to roads, distance to rivers) provided the most balanced and valid simulation results.",
+    "implications": "Continued urban expansion despite declining population suggests inefficient land use and potential environmental risks; findings highlight the need for infill development, green space preservation, and policy interventions to align land-use planning with demographic realities; the study provides a framework for integrating demographic shifts into LULC modeling in other regions facing similar transitions.",
+    "limitations": "Reliance on static transition probabilities in the Markov model that assume stationarity and ignore non-linear dynamics; exclusion of socio-economic variables beyond population trends; limitations of moderate-resolution Landsat imagery in densely urbanized areas; assumption of spatial independence in cell transitions, neglecting neighborhood effects; cloud cover restricted pre-1990 data availability.",
+    "future_directions": "Incorporate dynamic transition rules and socio-economic drivers (e.g., policy, economic indicators); integrate cellular automata to account for spatial dependencies; apply high-resolution or object-based classification for improved urban accuracy; extend carbon emission modeling linked to LULC projections; replicate methodology in other mid-sized, rapidly urbanizing island or mountainous nations.",
+    "scalability": "The methodology is scalable to other regions with similar geographic complexity and data availability, particularly mid-sized countries undergoing rapid urbanization and demographic transition; however, local calibration of predictors and validation with ground truth data would be necessary.",
+    "novelty": "First national-scale LULC simulation for Taiwan covering 1990–2050; integration of SVM classification with Markov chain modeling at national scale; explicit incorporation of negative population growth as a contextual factor influencing future LULC; multi-scenario testing with varying combinations of physical predictors to assess model sensitivity and robustness."
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:31:45.427432+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 22.105,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655510-8UhU6P87MXGVTTNHXopx\",\"object\":\"chat.completion\",\"created\":1789655510,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"objective: To conduct a decadal analysis and simulation of land use and land cover (LULC) changes in Taiwan from 1990 to 2020 and project future LULC for 2030 and 2050 under multiple scenarios, incorporating demographic trends such as negative population growth and using an integrated Support Vector Machine–Markov chain model.\\n\\ncountry: Taiwan\\n\\nland_use_classes: barren; uncultivated; shallow water; deep water; built-up; forest; cultivated\\n\\nbaseline_years: 1990; 2000; 2010; 2020\\n\\ntarget_future_years: 2030; 2050\\n\\nscenarios: 2-variables (elevation, distance to roads); 3-variables (elevation, distance to roads, distance to rivers); 5-variables (aspect, elevation, hillshade, distance to rivers, slope); 6-variables (aspect, elevation, hillshade, distance to rivers, distance to roads, slope)\\n\\nanalysis_methods: Maximum likelihood classifier (supervised classification); Support Vector Machine (SVM) with Radial Basis Function (RBF) kernel; Markov chain modeling; transition probability matrix; accuracy assessment using confusion matrix, kappa coefficient, overall accuracy, producer’s and user’s accuracy; root-mean-square-error (RMSE)\\n\\nsimulation_method_advantages: The SVM-Markov chain hybrid approach leverages precise LULC classification capabilities of SVM and probabilistic forecasting strength of Markov chains, improving simulation accuracy in complex urban landscapes; it outperforms traditional methods like maximum likelihood classifiers in varied geographic settings and enables national-scale dynamic land-cover prediction.\\n\\npredictors: aspect; elevation; hillshade; distance to river; distance to road; slope\\n\\npopulation_selected: Yes\\n\\ndata_sources: Landsat 5/7/8 Surface Reflectance Tier 1 satellite images (1990–2020); Shuttle Radar Topographic Mission (SRTM) Digital Elevation Model (30 m); OpenStreetMap; Google Earth; Google Earth Engine (for image processing and ROI collection); CIA World Factbook (for population statistics)\\n\\ntools_software_used: Google Earth Engine; GIS software (implied for spatial analysis and map preparation); SVM and Markov chain modeling frameworks (specific software not named)\\n\\nvalidation_performed: Yes\\n\\nvalidation_methods: Confusion matrix; overall accuracy; kappa coefficient; producer’s accuracy; user’s accuracy; RMSE; comparison of simulated 2020 LULC with actual 2020 classified LULC\\n\\nvalidation_data_sources: Ground control points (GCPs)—655 for classification validation and 300 for simulation validation; actual Landsat-derived LULC map for 2020\\n\\nkey_findings: Built-up area increased by ~140% from 1990 to 2020 (from 1,027.74 to 2,476.30 km²); under the 6-variable scenario, built-up area is projected to increase by 223% from 1990 levels by 2050; barren land decreased by ~49% from 1990 to 2020 and is projected to decline further; despite negative population growth, impervious surface area continues to expand; forest and cultivated areas slightly increased due to conservation efforts; the 3-variable scenario (elevation, distance to roads, distance to rivers) provided the most balanced and valid simulation results.\\n\\nimplications: Continued urban expansion despite declining population suggests inefficient land use and potential environmental risks; findings highlight the need for infill development, green space preservation, and policy interventions to align land-use planning with demographic realities; the study provides a framework for integrating demographic shifts into LULC modeling in other regions facing similar transitions.\\n\\nlimitations: Reliance on static transition probabilities in the Markov model that assume stationarity and ignore non-linear dynamics; exclusion of socio-economic variables beyond population trends; limitations of moderate-resolution Landsat imagery in densely urbanized areas; assumption of spatial independence in cell transitions, neglecting neighborhood effects; cloud cover restricted pre-1990 data availability.\\n\\nfuture_directions: Incorporate dynamic transition rules and socio-economic drivers (e.g., policy, economic indicators); integrate cellular automata to account for spatial dependencies; apply high-resolution or object-based classification for improved urban accuracy; extend carbon emission modeling linked to LULC projections; replicate methodology in other mid-sized, rapidly urbanizing island or mountainous nations.\\n\\nscalability: The methodology is scalable to other regions with similar geographic complexity and data availability, particularly mid-sized countries undergoing rapid urbanization and demographic transition; however, local calibration of predictors and validation with ground truth data would be necessary.\\n\\nnovelty: First national-scale LULC simulation for Taiwan covering 1990–2050; integration of SVM classification with Markov chain modeling at national scale; explicit incorporation of negative population growth as a contextual factor influencing future LULC; multi-scenario testing with varying combinations of physical predictors to assess model sensitivity and robustness.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":16727,\"completion_tokens\":1064,\"total_tokens\":17791,\"cost\":0.01719666,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.01719666,\"upstream_inference_prompt_cost\":0.01304706,\"upstream_inference_completions_cost\":0.0041496},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655510-8UhU6P87MXGVTTNHXopx",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 16727,
+        "completion_tokens": 1064,
+        "total_tokens": 17791,
+        "cost": 0.01719666,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01719666,
+          "upstream_inference_prompt_cost": 0.01304706,
+          "upstream_inference_completions_cost": 0.0041496
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 22.106,
+  "call_id": "IE__z1_MEE88MWP__qwen__r3",
+  "fingerprint": "20360d6612df631fa9c2c4ffe73ecf79c1f37c0ed9796c0daa4e99cc90a6439d",
+  "paper_id": "z1_MEE88MWP",
+  "task": "IE",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:32:07.533001+00:00",
+  "input_sha256": "7ba93337d4ee8fc18059d82d643e2f5bf44b90fe58928ccef8602d55c1d6bf96",
+  "prompt_sha256": "14297bb013796d591ac8b688327218aaaac5b0ba0dfe15ed2d7ceb682fe32d8b",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

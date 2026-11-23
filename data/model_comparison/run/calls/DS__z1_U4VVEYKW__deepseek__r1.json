@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653147-6Kc1vX7oqua956lSf2u8",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00255764,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 9650,
+    "completion_tokens": 128,
+    "total_tokens": 9778,
+    "cost": 0.00255764,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00255764,
+      "upstream_inference_prompt_cost": 0.002509,
+      "upstream_inference_completions_cost": 4.864e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: The paper implements a multilayer perceptron neural network (MLP-NN) model to explicitly predict national-scale Agriculture, Forestry and Other Land Use (AFOLU) for the year 2050 for all eight SAARC nations (Afghanistan, Bangladesh, Bhutan, India, Nepal, Maldives, Pakistan, Sri Lanka). It uses four IPCC RCP scenarios (2.6, 4.5, 6.0, 8.5), provides quantitative accuracy metrics (AUC via TOC), and outputs mapped spatial projections. LULC prediction is the central research question.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:52:22.571456+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.77,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789653147-6Kc1vX7oqua956lSf2u8\",\"object\":\"chat.completion\",\"created\":1789653147,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: The paper implements a multilayer perceptron neural network (MLP-NN) model to explicitly predict national-scale Agriculture, Forestry and Other Land Use (AFOLU) for the year 2050 for all eight SAARC nations (Afghanistan, Bangladesh, Bhutan, India, Nepal, Maldives, Pakistan, Sri Lanka). It uses four IPCC RCP scenarios (2.6, 4.5, 6.0, 8.5), provides quantitative accuracy metrics (AUC via TOC), and outputs mapped spatial projections. LULC prediction is the central research question.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":9650,\"completion_tokens\":128,\"total_tokens\":9778,\"cost\":0.00255764,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00255764,\"upstream_inference_prompt_cost\":0.002509,\"upstream_inference_completions_cost\":0.00004864},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653147-6Kc1vX7oqua956lSf2u8",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 9650,
+        "completion_tokens": 128,
+        "total_tokens": 9778,
+        "cost": 0.00255764,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00255764,
+          "upstream_inference_prompt_cost": 0.002509,
+          "upstream_inference_completions_cost": 4.864e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.771,
+  "call_id": "DS__z1_U4VVEYKW__deepseek__r1",
+  "fingerprint": "179d325ce192f5da3559d9ea91013369955183a046cb7700150f00c44bf7f917",
+  "paper_id": "z1_U4VVEYKW",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:52:26.341766+00:00",
+  "input_sha256": "e276eceeaeaed4eccbc48e8acc7d015df2fe426d3fb0a8af639ffcbad69bf8cc",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

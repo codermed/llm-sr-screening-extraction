@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653836-qHARcjV97TGgPk93Dd8o",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0028168,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 16538,
+    "completion_tokens": 698,
+    "total_tokens": 17236,
+    "cost": 0.0028168,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 16384,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0028168,
+      "upstream_inference_prompt_cost": 0.0017,
+      "upstream_inference_completions_cost": 0.0011168
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "The paper is a research article (not a review).\n\nEvaluation against inclusion/exclusion criteria:\n\n- Explicit national-scale spatial implementation?  \n  Yes. The study is focused on the conterminous United States and uses spatially explicit modeling at 0.5° resolution.\n\n- Primary focus = LULC prediction/simulation (central research question)?  \n  No. The primary focus is on modeling future terrestrial carbon sink dynamics considering climate change, CO2 fertilization, and land-use and land-cover change (LULCC) effects. While LULCC scenarios (SSP245 and SSP370) are used as inputs, the paper does not develop new LULC predictions or simulations as the main objective. The LULCC data come from LUH2 datasets and scenarios developed elsewhere.\n\n- Implementation of ≥2 future scenarios with quantitative comparison?  \n  Yes. Two SSP scenarios (SSP245 and SSP370) are compared quantitatively.\n\n- Spatial modeling with quantitative accuracy metrics?  \n  The model is spatially explicit, but no accuracy metrics for LULC prediction are reported because the paper does not perform LULC prediction. The LULCC scenarios are taken from external datasets.\n\n- Outputs include mapped LULC projections?  \n  No. The paper provides maps of carbon fluxes and stocks and water variables, but the LULCC input is from LUH2 datasets, not newly predicted or simulated in this study.\n\nExclusion criteria:\n\n- Global-scale analysis without national-level disaggregation?  \n  No, national level (conterminous US) study.\n\n- Local/regional/global/transboundary scale focus?  \n  No, national scale.\n\n- No LULC prediction component?  \n  Yes, the paper uses existing LULCC scenarios as inputs but does not perform LULC prediction or simulation itself.\n\n- Species-specific/ecological focus unrelated to LULC?  \n  No.\n\n- Economic/urban models lacking spatially explicit LULC outputs?  \n  No.\n\n- Biomass/bioenergy/carbon studies without LULC change analysis?  \n  The paper analyzes carbon dynamics including LULCC effects but does not focus on LULC change prediction.\n\n- Methodological papers without application to national-scale prediction?  \n  No.\n\n- Purely qualitative/historical analysis only?  \n  No.\n\n- Remote sensing technical studies without predictive modeling?  \n  No.\n\n- Single-scenario \"business-as-usual\" projections?  \n  No, two scenarios compared.\n\nAdditional checks:\n\n- The paper clearly states it uses LULCC scenarios from LUH2 (Hurtt et al., 2020) as inputs but does not develop new LULC predictions.\n\n- The main objective is to understand the impact of climate, CO2 fertilization, and LULCC on carbon and water fluxes, not to predict LULC changes.\n\nTherefore, the paper uses LULC predictions (scenarios) as inputs/incidental implementation but is not focused on LULC prediction itself.\n\nFinal categorization: POSSIBLE  \n(Justification: The paper is a research article modeling future carbon sink dynamics for the conterminous US including the effects of land use and land cover change, but it does not perform LULC prediction or simulation itself. Instead, it uses existing LULCC scenarios as inputs to explore carbon and water cycle responses under different SSP scenarios. Thus, LULC prediction is not the primary focus but an input step.)",
+  "automated_status": "usable",
+  "parsed_label": "POSSIBLE",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:03:51.176272+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 6.124,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789653836-qHARcjV97TGgPk93Dd8o\",\"object\":\"chat.completion\",\"created\":1789653836,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"The paper is a research article (not a review).\\n\\nEvaluation against inclusion/exclusion criteria:\\n\\n- Explicit national-scale spatial implementation?  \\n  Yes. The study is focused on the conterminous United States and uses spatially explicit modeling at 0.5° resolution.\\n\\n- Primary focus = LULC prediction/simulation (central research question)?  \\n  No. The primary focus is on modeling future terrestrial carbon sink dynamics considering climate change, CO2 fertilization, and land-use and land-cover change (LULCC) effects. While LULCC scenarios (SSP245 and SSP370) are used as inputs, the paper does not develop new LULC predictions or simulations as the main objective. The LULCC data come from LUH2 datasets and scenarios developed elsewhere.\\n\\n- Implementation of ≥2 future scenarios with quantitative comparison?  \\n  Yes. Two SSP scenarios (SSP245 and SSP370) are compared quantitatively.\\n\\n- Spatial modeling with quantitative accuracy metrics?  \\n  The model is spatially explicit, but no accuracy metrics for LULC prediction are reported because the paper does not perform LULC prediction. The LULCC scenarios are taken from external datasets.\\n\\n- Outputs include mapped LULC projections?  \\n  No. The paper provides maps of carbon fluxes and stocks and water variables, but the LULCC input is from LUH2 datasets, not newly predicted or simulated in this study.\\n\\nExclusion criteria:\\n\\n- Global-scale analysis without national-level disaggregation?  \\n  No, national level (conterminous US) study.\\n\\n- Local/regional/global/transboundary scale focus?  \\n  No, national scale.\\n\\n- No LULC prediction component?  \\n  Yes, the paper uses existing LULCC scenarios as inputs but does not perform LULC prediction or simulation itself.\\n\\n- Species-specific/ecological focus unrelated to LULC?  \\n  No.\\n\\n- Economic/urban models lacking spatially explicit LULC outputs?  \\n  No.\\n\\n- Biomass/bioenergy/carbon studies without LULC change analysis?  \\n  The paper analyzes carbon dynamics including LULCC effects but does not focus on LULC change prediction.\\n\\n- Methodological papers without application to national-scale prediction?  \\n  No.\\n\\n- Purely qualitative/historical analysis only?  \\n  No.\\n\\n- Remote sensing technical studies without predictive modeling?  \\n  No.\\n\\n- Single-scenario \\\"business-as-usual\\\" projections?  \\n  No, two scenarios compared.\\n\\nAdditional checks:\\n\\n- The paper clearly states it uses LULCC scenarios from LUH2 (Hurtt et al., 2020) as inputs but does not develop new LULC predictions.\\n\\n- The main objective is to understand the impact of climate, CO2 fertilization, and LULCC on carbon and water fluxes, not to predict LULC changes.\\n\\nTherefore, the paper uses LULC predictions (scenarios) as inputs/incidental implementation but is not focused on LULC prediction itself.\\n\\nFinal categorization: POSSIBLE  \\n(Justification: The paper is a research article modeling future carbon sink dynamics for the conterminous US including the effects of land use and land cover change, but it does not perform LULC prediction or simulation itself. Instead, it uses existing LULCC scenarios as inputs to explore carbon and water cycle responses under different SSP scenarios. Thus, LULC prediction is not the primary focus but an input step.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":16538,\"completion_tokens\":698,\"total_tokens\":17236,\"cost\":0.0028168,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":16384,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0028168,\"upstream_inference_prompt_cost\":0.0017,\"upstream_inference_completions_cost\":0.0011168},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653836-qHARcjV97TGgPk93Dd8o",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 16538,
+        "completion_tokens": 698,
+        "total_tokens": 17236,
+        "cost": 0.0028168,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 16384,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0028168,
+          "upstream_inference_prompt_cost": 0.0017,
+          "upstream_inference_completions_cost": 0.0011168
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 6.125,
+  "call_id": "DS__z1_CDQYX4ZZ__openai__r2",
+  "fingerprint": "baf324d72dbc81e7a8c385982127a10dd54af09805d27e566e5b3de5fc15c38c",
+  "paper_id": "z1_CDQYX4ZZ",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:03:57.300546+00:00",
+  "input_sha256": "93dc2b1c01e72483c3f342abaf8448e09c9e7e6aa4e62ee0d821f4f240d0cf9f",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

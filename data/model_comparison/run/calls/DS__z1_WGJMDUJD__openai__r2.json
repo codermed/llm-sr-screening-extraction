@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654448-Vzojm2pKQnUtSSh2GNiu",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0005116,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 915,
+    "completion_tokens": 91,
+    "total_tokens": 1006,
+    "cost": 0.0005116,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005116,
+      "upstream_inference_prompt_cost": 0.000366,
+      "upstream_inference_completions_cost": 0.0001456
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a review article but does not focus on land use land cover (LULC) future prediction. It reviews interdisciplinary aspects of production potential and land productivity in Eastern Europe and Central Asia but does not synthesize existing LULC prediction research nor provide spatial modeling or scenario-based LULC projections. Therefore, it does not meet the criteria for REVIEW focused on LULC future prediction.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:14:03.351209+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.456,
+      "raw_body": "\n         \n{\"id\":\"gen-1789654448-Vzojm2pKQnUtSSh2GNiu\",\"object\":\"chat.completion\",\"created\":1789654448,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a review article but does not focus on land use land cover (LULC) future prediction. It reviews interdisciplinary aspects of production potential and land productivity in Eastern Europe and Central Asia but does not synthesize existing LULC prediction research nor provide spatial modeling or scenario-based LULC projections. Therefore, it does not meet the criteria for REVIEW focused on LULC future prediction.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":915,\"completion_tokens\":91,\"total_tokens\":1006,\"cost\":0.0005116,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0005116,\"upstream_inference_prompt_cost\":0.000366,\"upstream_inference_completions_cost\":0.0001456},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654448-Vzojm2pKQnUtSSh2GNiu",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 915,
+        "completion_tokens": 91,
+        "total_tokens": 1006,
+        "cost": 0.0005116,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0005116,
+          "upstream_inference_prompt_cost": 0.000366,
+          "upstream_inference_completions_cost": 0.0001456
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.456,
+  "call_id": "DS__z1_WGJMDUJD__openai__r2",
+  "fingerprint": "c7409f1470b752218f3d012f6cbaa461ede02136329afa9c30f11126d398764a",
+  "paper_id": "z1_WGJMDUJD",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:14:05.806968+00:00",
+  "input_sha256": "8f400354dbdc380f8883d130c444d1fa02b027b0e6c613a1f6f80a77b8cab25f",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

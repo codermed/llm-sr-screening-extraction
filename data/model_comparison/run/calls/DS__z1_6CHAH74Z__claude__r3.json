@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789655917-3etGNdYHaUDENpXn0li9",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.023339,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 18069,
+    "completion_tokens": 1054,
+    "total_tokens": 19123,
+    "cost": 0.023339,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.023339,
+      "upstream_inference_prompt_cost": 0.018069,
+      "upstream_inference_completions_cost": 0.00527
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis\n\n## Initial Determination\nThis is **NOT a review article** – it is an original research paper presenting primary empirical modeling work.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA CHECK:\n\n**1. Explicit national-scale spatial implementation (entire country)?**\n- ❌ **FAILS** - Study focuses on Snowdonia National Park in Wales only, not national-scale\n- Stated scope: \"we focus on the Snowdonia National Park in Wales\" (p. 1)\n- Regional/local scale analysis, not country-wide\n\n**2. Primary focus = LULC prediction/simulation?**\n- ⚠️ **PARTIAL** - LULC change is modeled (land cover simulation for 2050 using MLP-MC model), but this is secondary to the primary objective\n- Primary objective: \"delineate current distribution and investigate the impacts of changing landscape and climate on future distribution of R. ponticum\" (p. 6)\n- LULC prediction is instrumental/supporting, not the central research question\n\n**3. Implementation of ≥2 future scenarios with quantitative comparison?**\n- ✅ **PASSES** - Multiple scenarios: 6 GCMs × 2 RCPs = 12 climate scenarios; land cover projections for 2050\n- Quantitative comparisons provided (Table 4: percentage changes in suitable area)\n\n**4. Spatial modeling with quantitative accuracy metrics?**\n- ✅ **PASSES** - MaxEnt model with AUC (80.0 train, 75.61 test), CBI (0.82), variable contribution percentages\n- Accuracy metrics clearly reported\n\n**5. Outputs include mapped LULC projections?**\n- ✅ **PASSES** - Land cover maps for 2015 and projected 2050 (Table 3); habitat suitability maps shown (Figures 2-3)\n\n### SPECIFIC EXCLUSION CRITERIA CHECK:\n\n**Local/regional/global/transboundary scale focus?**\n- ✅ **EXCLUDES** - Explicitly regional scale (Snowdonia National Park, Wales only)\n- Not national-scale implementation\n\n**Species-specific/ecological focus (flora/fauna) unrelated to LULC?**\n- ✅ **EXCLUDES** - Primary focus is invasive species distribution modeling (R. ponticum)\n- LULC is used as a predictor variable, not the subject of investigation\n- The research question centers on species invasiveness under changing conditions, not on predicting land cover changes per se\n\n**Single-scenario \"business-as-usual\" projections?**\n- ❌ Does not apply (multiple scenarios tested)\n\n---\n\n## Scale Verification\nThe paper explicitly states the study area is confined to:\n- Snowdonia National Park, Wales, UK\n- Total area: 2,132 km²\n- Methodological note: \"we covered the entire area of the national park\" (p. 3)\n\nThis is clearly **regional/local scale**, not national-scale.\n\n---\n\n## Primary Research Objective\nFrom the paper's own framing:\n- \"Our modeling effort aims to, (a) delineate 'invasion hotspots' for R. ponticum in Snowdonia National Park, (b) identify key ecological factors driving the spread of R. ponticum in the park, and (c) identify likely spatial patterns of habitat suitability under future climate conditions\" (p. 2)\n\nThe primary objective is **species distribution modeling under climate/land cover change**, not LULC prediction itself.\n\n---\n\n## Final Categorization\n\n**EXCLUDED**\n\n**Justification:** \nThis paper fails multiple core inclusion criteria:\n1. **Scale mismatch**: Regional/local focus (Snowdonia National Park only) rather than national-scale spatial implementation\n2. **Primary focus mismatch**: The research is primarily focused on invasive species distribution modeling, not LULC prediction. While land cover change is modeled and incorporated as a predictor variable, it is instrumental to the species distribution objective, not the central research question\n3. **Disciplinary focus**: The paper is fundamentally an ecological/biogeographical study of invasive species habitat suitability, not a land use/land cover change prediction study\n\nThe inclusion criteria explicitly require LULC prediction to be the primary objective with national-scale implementation. This paper uses LULC projections as supporting inputs to a species distribution model at regional scale, placing it outside the scope of LULC prediction research.",
+  "automated_status": "invalid_output",
+  "parsed_label": "",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:38:33.086783+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 13.24,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655917-3etGNdYHaUDENpXn0li9\",\"object\":\"chat.completion\",\"created\":1789655917,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis\\n\\n## Initial Determination\\nThis is **NOT a review article** – it is an original research paper presenting primary empirical modeling work.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA CHECK:\\n\\n**1. Explicit national-scale spatial implementation (entire country)?**\\n- ❌ **FAILS** - Study focuses on Snowdonia National Park in Wales only, not national-scale\\n- Stated scope: \\\"we focus on the Snowdonia National Park in Wales\\\" (p. 1)\\n- Regional/local scale analysis, not country-wide\\n\\n**2. Primary focus = LULC prediction/simulation?**\\n- ⚠️ **PARTIAL** - LULC change is modeled (land cover simulation for 2050 using MLP-MC model), but this is secondary to the primary objective\\n- Primary objective: \\\"delineate current distribution and investigate the impacts of changing landscape and climate on future distribution of R. ponticum\\\" (p. 6)\\n- LULC prediction is instrumental/supporting, not the central research question\\n\\n**3. Implementation of ≥2 future scenarios with quantitative comparison?**\\n- ✅ **PASSES** - Multiple scenarios: 6 GCMs × 2 RCPs = 12 climate scenarios; land cover projections for 2050\\n- Quantitative comparisons provided (Table 4: percentage changes in suitable area)\\n\\n**4. Spatial modeling with quantitative accuracy metrics?**\\n- ✅ **PASSES** - MaxEnt model with AUC (80.0 train, 75.61 test), CBI (0.82), variable contribution percentages\\n- Accuracy metrics clearly reported\\n\\n**5. Outputs include mapped LULC projections?**\\n- ✅ **PASSES** - Land cover maps for 2015 and projected 2050 (Table 3); habitat suitability maps shown (Figures 2-3)\\n\\n### SPECIFIC EXCLUSION CRITERIA CHECK:\\n\\n**Local/regional/global/transboundary scale focus?**\\n- ✅ **EXCLUDES** - Explicitly regional scale (Snowdonia National Park, Wales only)\\n- Not national-scale implementation\\n\\n**Species-specific/ecological focus (flora/fauna) unrelated to LULC?**\\n- ✅ **EXCLUDES** - Primary focus is invasive species distribution modeling (R. ponticum)\\n- LULC is used as a predictor variable, not the subject of investigation\\n- The research question centers on species invasiveness under changing conditions, not on predicting land cover changes per se\\n\\n**Single-scenario \\\"business-as-usual\\\" projections?**\\n- ❌ Does not apply (multiple scenarios tested)\\n\\n---\\n\\n## Scale Verification\\nThe paper explicitly states the study area is confined to:\\n- Snowdonia National Park, Wales, UK\\n- Total area: 2,132 km²\\n- Methodological note: \\\"we covered the entire area of the national park\\\" (p. 3)\\n\\nThis is clearly **regional/local scale**, not national-scale.\\n\\n---\\n\\n## Primary Research Objective\\nFrom the paper's own framing:\\n- \\\"Our modeling effort aims to, (a) delineate 'invasion hotspots' for R. ponticum in Snowdonia National Park, (b) identify key ecological factors driving the spread of R. ponticum in the park, and (c) identify likely spatial patterns of habitat suitability under future climate conditions\\\" (p. 2)\\n\\nThe primary objective is **species distribution modeling under climate/land cover change**, not LULC prediction itself.\\n\\n---\\n\\n## Final Categorization\\n\\n**EXCLUDED**\\n\\n**Justification:** \\nThis paper fails multiple core inclusion criteria:\\n1. **Scale mismatch**: Regional/local focus (Snowdonia National Park only) rather than national-scale spatial implementation\\n2. **Primary focus mismatch**: The research is primarily focused on invasive species distribution modeling, not LULC prediction. While land cover change is modeled and incorporated as a predictor variable, it is instrumental to the species distribution objective, not the central research question\\n3. **Disciplinary focus**: The paper is fundamentally an ecological/biogeographical study of invasive species habitat suitability, not a land use/land cover change prediction study\\n\\nThe inclusion criteria explicitly require LULC prediction to be the primary objective with national-scale implementation. This paper uses LULC projections as supporting inputs to a species distribution model at regional scale, placing it outside the scope of LULC prediction research.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":18069,\"completion_tokens\":1054,\"total_tokens\":19123,\"cost\":0.023339,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.023339,\"upstream_inference_prompt_cost\":0.018069,\"upstream_inference_completions_cost\":0.00527},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655917-3etGNdYHaUDENpXn0li9",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 18069,
+        "completion_tokens": 1054,
+        "total_tokens": 19123,
+        "cost": 0.023339,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.023339,
+          "upstream_inference_prompt_cost": 0.018069,
+          "upstream_inference_completions_cost": 0.00527
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 13.241,
+  "call_id": "DS__z1_6CHAH74Z__claude__r3",
+  "fingerprint": "058bb2097b1d1ecfc118d27eb35e9c2e500810083fc1b9cb9dc67eeb2a01b6ca",
+  "paper_id": "z1_6CHAH74Z",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:38:46.326543+00:00",
+  "input_sha256": "699eb2b60b5a71ae652b959f4522662099684c0fc9a4e18b4cfccef58b651688",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

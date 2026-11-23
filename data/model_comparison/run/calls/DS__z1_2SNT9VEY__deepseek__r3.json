@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789655695-WO4XhXUgLj4n9Xt7kW6M",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00257258,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 9725,
+    "completion_tokens": 116,
+    "total_tokens": 9841,
+    "cost": 0.00257258,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00257258,
+      "upstream_inference_prompt_cost": 0.0025285,
+      "upstream_inference_completions_cost": 4.408e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper's primary objective is to model the distribution of emergent aquatic macrophytes (a specific ecological component) under climate change scenarios, not to predict or simulate Land Use Land Cover (LULC) change. While it uses GIS data and spatial modeling at a national scale (Finland), its focus is on species distribution and vegetation cover percentage, not on forecasting changes in land cover classes such as forest, urban, or agricultural areas. It fails the core inclusion criterion that the primary focus must be LULC prediction/simulation.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:34:50.627986+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.347,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789655695-WO4XhXUgLj4n9Xt7kW6M\",\"object\":\"chat.completion\",\"created\":1789655695,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper's primary objective is to model the distribution of emergent aquatic macrophytes (a specific ecological component) under climate change scenarios, not to predict or simulate Land Use Land Cover (LULC) change. While it uses GIS data and spatial modeling at a national scale (Finland), its focus is on species distribution and vegetation cover percentage, not on forecasting changes in land cover classes such as forest, urban, or agricultural areas. It fails the core inclusion criterion that the primary focus must be LULC prediction/simulation.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":9725,\"completion_tokens\":116,\"total_tokens\":9841,\"cost\":0.00257258,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00257258,\"upstream_inference_prompt_cost\":0.0025285,\"upstream_inference_completions_cost\":0.00004408},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655695-WO4XhXUgLj4n9Xt7kW6M",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 9725,
+        "completion_tokens": 116,
+        "total_tokens": 9841,
+        "cost": 0.00257258,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00257258,
+          "upstream_inference_prompt_cost": 0.0025285,
+          "upstream_inference_completions_cost": 4.408e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.348,
+  "call_id": "DS__z1_2SNT9VEY__deepseek__r3",
+  "fingerprint": "b4159830cb5e62e69ad2cae29ff67e5d984effc92a0c02ee0205664deb60c94b",
+  "paper_id": "z1_2SNT9VEY",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:34:54.975287+00:00",
+  "input_sha256": "fc009e4939d8f197a4a46d822a54606ac143ac0e91bbd10247977a5c43c5dbf6",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653077-lHkuret870Dnm0TrUyhe",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00257334,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 9725,
+    "completion_tokens": 118,
+    "total_tokens": 9843,
+    "cost": 0.00257334,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00257334,
+      "upstream_inference_prompt_cost": 0.0025285,
+      "upstream_inference_completions_cost": 4.484e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper's primary focus is on predicting the future distribution of aquatic macrophytes (a specific species group) under climate change scenarios, not on Land Use Land Cover (LULC) prediction or simulation. While it uses spatial modeling and multiple scenarios at a national scale (Finland), the core research question and outputs concern species habitat suitability and percentage cover, not changes in LULC categories such as urban, agricultural, or forest land. It therefore fails the core inclusion criterion that the primary focus must be LULC prediction/simulation.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:51:12.934838+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.195,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789653077-lHkuret870Dnm0TrUyhe\",\"object\":\"chat.completion\",\"created\":1789653077,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper's primary focus is on predicting the future distribution of aquatic macrophytes (a specific species group) under climate change scenarios, not on Land Use Land Cover (LULC) prediction or simulation. While it uses spatial modeling and multiple scenarios at a national scale (Finland), the core research question and outputs concern species habitat suitability and percentage cover, not changes in LULC categories such as urban, agricultural, or forest land. It therefore fails the core inclusion criterion that the primary focus must be LULC prediction/simulation.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":9725,\"completion_tokens\":118,\"total_tokens\":9843,\"cost\":0.00257334,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00257334,\"upstream_inference_prompt_cost\":0.0025285,\"upstream_inference_completions_cost\":0.00004484},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653077-lHkuret870Dnm0TrUyhe",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 9725,
+        "completion_tokens": 118,
+        "total_tokens": 9843,
+        "cost": 0.00257334,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00257334,
+          "upstream_inference_prompt_cost": 0.0025285,
+          "upstream_inference_completions_cost": 4.484e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.195,
+  "call_id": "DS__z1_2SNT9VEY__deepseek__r1",
+  "fingerprint": "28a70b996b0a3a0d1d95a9cd5e3b2ec77527da26acfce07904f661466d67a543",
+  "paper_id": "z1_2SNT9VEY",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:51:17.129701+00:00",
+  "input_sha256": "fc009e4939d8f197a4a46d822a54606ac143ac0e91bbd10247977a5c43c5dbf6",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

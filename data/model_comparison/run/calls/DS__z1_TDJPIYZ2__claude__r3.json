@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789656098-roEpDEQEjI8sUVdogQ7Z",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.018875,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12780,
+    "completion_tokens": 1219,
+    "total_tokens": 13999,
+    "cost": 0.018875,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.018875,
+      "upstream_inference_prompt_cost": 0.01278,
+      "upstream_inference_completions_cost": 0.006095
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Categorization Decision\n\n## Paper Identification\n**Title:** \"The Impacts of Human Activities on Ecosystems within China's Nature Reserves\"\n**Type:** Research Paper (Empirical study)\n\n---\n\n## Step 1: Review Article Check\n**Result:** NOT a review article\n- This is an empirical research paper analyzing ecosystem changes in Chinese nature reserves\n- Uses primary remote sensing data analysis (DMSP/OLS, MODIS NDVI, LCC datasets)\n- Presents original spatial-temporal analysis of 299 national nature reserves\n- Does not synthesize existing LULC prediction literature\n\n**Proceed to non-review evaluation criteria**\n\n---\n\n## Step 2: Core Inclusion Criteria Evaluation\n\n### Criterion 1: National-scale spatial implementation\n- **Status:** ✓ PASS\n- Paper analyzes 299 of 428 national nature reserves across China\n- Covers 8 climate zones nationwide\n- Explicitly states: \"national-scale assessments of habitat and ecosystems in NNRs\"\n\n### Criterion 2: Primary focus = LULC prediction/simulation\n- **Status:** ✗ FAIL\n- Primary objective is **ecosystem impact assessment**, not LULC prediction\n- Study analyzes historical LCC (2000-2015) and its impacts on vegetation/NPP\n- No future LULC projections or predictive modeling\n- States: \"temporal and spatial variations of land cover changes (LCC), vegetation fraction (VFC), and net primary productivity (NPP) were studied to present the ecosystem dynamics\"\n\n### Criterion 3: ≥2 future scenarios with quantitative comparison\n- **Status:** ✗ FAIL\n- No future scenarios implemented\n- No predictive modeling of future LULC states\n- Analysis is entirely retrospective (2000-2015)\n\n### Criterion 4: Spatial modeling with quantitative accuracy metrics\n- **Status:** ✗ FAIL (as applied to LULC prediction)\n- Quantitative metrics exist for ecosystem analysis (VFC, NPP, HD index)\n- NO accuracy metrics for LULC prediction models\n- No LULC prediction models presented\n\n### Criterion 5: Mapped LULC projections\n- **Status:** ✗ FAIL\n- No future LULC maps produced\n- Historical LCC maps shown (Figure 2) but no projections\n\n---\n\n## Step 3: Exclusion Criteria Check\n\n### Relevant Exclusion Criteria Met:\n1. **\"No LULC prediction component\"** - ✓ TRIGGERED\n   - Paper contains no predictive LULC modeling\n   \n2. **\"Species-specific/ecological focus unrelated to LULC\"** - ✓ PARTIALLY TRIGGERED\n   - Primary focus is on ecosystem quality assessment (VFC, NPP, biodiversity)\n   - LULC is used as an explanatory variable, not prediction target\n\n3. **\"Purely historical analysis only (no future projections)\"** - ✓ TRIGGERED\n   - Entire analysis covers 2000-2015 retrospectively\n   - No future projections of any kind\n\n4. **\"Remote sensing technical studies without predictive modeling\"** - ✓ TRIGGERED\n   - Uses remote sensing data (DMSP/OLS, MODIS NDVI) for analysis\n   - No predictive modeling component\n\n---\n\n## Step 4: Actual Paper Focus Assessment\n\n**What the paper actually does:**\n- Quantifies historical land cover changes in protected areas (2000-2015)\n- Measures human disturbance through nighttime lights and HD index\n- Analyzes ecosystem response (VFC, NPP) to human activities and climate change\n- Distinguishes climate vs. human drivers of ecosystem change\n\n**What the paper does NOT do:**\n- Predict future LULC states\n- Model LULC transitions or scenarios\n- Project ecosystem changes under future LULC scenarios\n- Develop predictive LULC models\n\n**Correct Categorization:**\nThe LULC component is **retrospective analysis**, not prediction. LULC serves as an explanatory variable for understanding ecosystem impacts, not as the primary research objective.\n\n---\n\n## Final Categorization\n\n**Final categorization: EXCLUDED**\n\n**Justification:** \nThis paper fails multiple core inclusion criteria for LULC prediction research:\n1. **No LULC prediction component** - Study is entirely retrospective (2000-2015), analyzing historical land cover changes and their ecosystem impacts\n2. **No future scenarios** - Zero implementation of predictive scenarios or future LULC projections\n3. **No predictive modeling** - Uses remote sensing for historical analysis only; no LULC prediction models developed\n4. **Primary focus is ecosystem assessment, not LULC prediction** - The research question centers on quantifying human activity impacts on biodiversity/ecosystem services, with LULC as a supporting explanatory variable rather than the prediction target\n5. **Meets exclusion criteria** - Qualifies as \"purely historical analysis only\" and \"remote sensing technical study without predictive modeling\"\n\nWhile the paper provides valuable insights into ecosystem dynamics in Chinese protected areas and uses sophisticated remote sensing methods, it does not constitute LULC prediction research and therefore falls outside the scope of this systematic review.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:41:33.896678+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.264,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789656098-roEpDEQEjI8sUVdogQ7Z\",\"object\":\"chat.completion\",\"created\":1789656098,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Categorization Decision\\n\\n## Paper Identification\\n**Title:** \\\"The Impacts of Human Activities on Ecosystems within China's Nature Reserves\\\"\\n**Type:** Research Paper (Empirical study)\\n\\n---\\n\\n## Step 1: Review Article Check\\n**Result:** NOT a review article\\n- This is an empirical research paper analyzing ecosystem changes in Chinese nature reserves\\n- Uses primary remote sensing data analysis (DMSP/OLS, MODIS NDVI, LCC datasets)\\n- Presents original spatial-temporal analysis of 299 national nature reserves\\n- Does not synthesize existing LULC prediction literature\\n\\n**Proceed to non-review evaluation criteria**\\n\\n---\\n\\n## Step 2: Core Inclusion Criteria Evaluation\\n\\n### Criterion 1: National-scale spatial implementation\\n- **Status:** ✓ PASS\\n- Paper analyzes 299 of 428 national nature reserves across China\\n- Covers 8 climate zones nationwide\\n- Explicitly states: \\\"national-scale assessments of habitat and ecosystems in NNRs\\\"\\n\\n### Criterion 2: Primary focus = LULC prediction/simulation\\n- **Status:** ✗ FAIL\\n- Primary objective is **ecosystem impact assessment**, not LULC prediction\\n- Study analyzes historical LCC (2000-2015) and its impacts on vegetation/NPP\\n- No future LULC projections or predictive modeling\\n- States: \\\"temporal and spatial variations of land cover changes (LCC), vegetation fraction (VFC), and net primary productivity (NPP) were studied to present the ecosystem dynamics\\\"\\n\\n### Criterion 3: ≥2 future scenarios with quantitative comparison\\n- **Status:** ✗ FAIL\\n- No future scenarios implemented\\n- No predictive modeling of future LULC states\\n- Analysis is entirely retrospective (2000-2015)\\n\\n### Criterion 4: Spatial modeling with quantitative accuracy metrics\\n- **Status:** ✗ FAIL (as applied to LULC prediction)\\n- Quantitative metrics exist for ecosystem analysis (VFC, NPP, HD index)\\n- NO accuracy metrics for LULC prediction models\\n- No LULC prediction models presented\\n\\n### Criterion 5: Mapped LULC projections\\n- **Status:** ✗ FAIL\\n- No future LULC maps produced\\n- Historical LCC maps shown (Figure 2) but no projections\\n\\n---\\n\\n## Step 3: Exclusion Criteria Check\\n\\n### Relevant Exclusion Criteria Met:\\n1. **\\\"No LULC prediction component\\\"** - ✓ TRIGGERED\\n   - Paper contains no predictive LULC modeling\\n   \\n2. **\\\"Species-specific/ecological focus unrelated to LULC\\\"** - ✓ PARTIALLY TRIGGERED\\n   - Primary focus is on ecosystem quality assessment (VFC, NPP, biodiversity)\\n   - LULC is used as an explanatory variable, not prediction target\\n\\n3. **\\\"Purely historical analysis only (no future projections)\\\"** - ✓ TRIGGERED\\n   - Entire analysis covers 2000-2015 retrospectively\\n   - No future projections of any kind\\n\\n4. **\\\"Remote sensing technical studies without predictive modeling\\\"** - ✓ TRIGGERED\\n   - Uses remote sensing data (DMSP/OLS, MODIS NDVI) for analysis\\n   - No predictive modeling component\\n\\n---\\n\\n## Step 4: Actual Paper Focus Assessment\\n\\n**What the paper actually does:**\\n- Quantifies historical land cover changes in protected areas (2000-2015)\\n- Measures human disturbance through nighttime lights and HD index\\n- Analyzes ecosystem response (VFC, NPP) to human activities and climate change\\n- Distinguishes climate vs. human drivers of ecosystem change\\n\\n**What the paper does NOT do:**\\n- Predict future LULC states\\n- Model LULC transitions or scenarios\\n- Project ecosystem changes under future LULC scenarios\\n- Develop predictive LULC models\\n\\n**Correct Categorization:**\\nThe LULC component is **retrospective analysis**, not prediction. LULC serves as an explanatory variable for understanding ecosystem impacts, not as the primary research objective.\\n\\n---\\n\\n## Final Categorization\\n\\n**Final categorization: EXCLUDED**\\n\\n**Justification:** \\nThis paper fails multiple core inclusion criteria for LULC prediction research:\\n1. **No LULC prediction component** - Study is entirely retrospective (2000-2015), analyzing historical land cover changes and their ecosystem impacts\\n2. **No future scenarios** - Zero implementation of predictive scenarios or future LULC projections\\n3. **No predictive modeling** - Uses remote sensing for historical analysis only; no LULC prediction models developed\\n4. **Primary focus is ecosystem assessment, not LULC prediction** - The research question centers on quantifying human activity impacts on biodiversity/ecosystem services, with LULC as a supporting explanatory variable rather than the prediction target\\n5. **Meets exclusion criteria** - Qualifies as \\\"purely historical analysis only\\\" and \\\"remote sensing technical study without predictive modeling\\\"\\n\\nWhile the paper provides valuable insights into ecosystem dynamics in Chinese protected areas and uses sophisticated remote sensing methods, it does not constitute LULC prediction research and therefore falls outside the scope of this systematic review.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12780,\"completion_tokens\":1219,\"total_tokens\":13999,\"cost\":0.018875,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.018875,\"upstream_inference_prompt_cost\":0.01278,\"upstream_inference_completions_cost\":0.006095},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789656098-roEpDEQEjI8sUVdogQ7Z",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 12780,
+        "completion_tokens": 1219,
+        "total_tokens": 13999,
+        "cost": 0.018875,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.018875,
+          "upstream_inference_prompt_cost": 0.01278,
+          "upstream_inference_completions_cost": 0.006095
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.264,
+  "call_id": "DS__z1_TDJPIYZ2__claude__r3",
+  "fingerprint": "feeafab3bfb29072a0def7b058e29f21bc8da5b21298aa296587bed6b70400a5",
+  "paper_id": "z1_TDJPIYZ2",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:41:46.160519+00:00",
+  "input_sha256": "5e376fddcfb10e55e38c21e71e62a6a81bc2f07b0cdefcd49224bbb817dedb16",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

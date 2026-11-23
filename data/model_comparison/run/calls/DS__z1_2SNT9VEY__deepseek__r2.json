@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789654436-SoyyRlNifH76LEtIyaja",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00258702,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 9725,
+    "completion_tokens": 154,
+    "total_tokens": 9879,
+    "cost": 0.00258702,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00258702,
+      "upstream_inference_prompt_cost": 0.0025285,
+      "upstream_inference_completions_cost": 5.852e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a non-review research article focused on predicting the future distribution of aquatic macrophytes (emergent aquatic vegetation) under climate change scenarios. While it uses spatial modeling (GAMs) with multiple climate scenarios and quantitative accuracy metrics at a national scale (Finland), its primary focus is on species distribution modeling (SDM) for a specific ecological community, not on land use/land cover (LULC) prediction. The CORINE land cover data is used as a source for the response variable, not as a subject of prediction. The study does not simulate or project changes in LULC classes; it projects changes in the occurrence and cover of a specific vegetation type within existing LULC classes.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:13:51.969951+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.717,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789654436-SoyyRlNifH76LEtIyaja\",\"object\":\"chat.completion\",\"created\":1789654436,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a non-review research article focused on predicting the future distribution of aquatic macrophytes (emergent aquatic vegetation) under climate change scenarios. While it uses spatial modeling (GAMs) with multiple climate scenarios and quantitative accuracy metrics at a national scale (Finland), its primary focus is on species distribution modeling (SDM) for a specific ecological community, not on land use/land cover (LULC) prediction. The CORINE land cover data is used as a source for the response variable, not as a subject of prediction. The study does not simulate or project changes in LULC classes; it projects changes in the occurrence and cover of a specific vegetation type within existing LULC classes.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":9725,\"completion_tokens\":154,\"total_tokens\":9879,\"cost\":0.00258702,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00258702,\"upstream_inference_prompt_cost\":0.0025285,\"upstream_inference_completions_cost\":0.00005852},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654436-SoyyRlNifH76LEtIyaja",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 9725,
+        "completion_tokens": 154,
+        "total_tokens": 9879,
+        "cost": 0.00258702,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00258702,
+          "upstream_inference_prompt_cost": 0.0025285,
+          "upstream_inference_completions_cost": 5.852e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.717,
+  "call_id": "DS__z1_2SNT9VEY__deepseek__r2",
+  "fingerprint": "8e9ec588f6b8fa14071777947a2be477089111bb438f3ce0bba232b9235eec32",
+  "paper_id": "z1_2SNT9VEY",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:13:56.687336+00:00",
+  "input_sha256": "fc009e4939d8f197a4a46d822a54606ac143ac0e91bbd10247977a5c43c5dbf6",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

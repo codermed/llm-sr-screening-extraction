@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789655446-5ODhADI5qGDqt9ucY63X",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0041356,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15665,
+    "completion_tokens": 165,
+    "total_tokens": 15830,
+    "cost": 0.0041356,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0041356,
+      "upstream_inference_prompt_cost": 0.0040729,
+      "upstream_inference_completions_cost": 6.27e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper's primary focus is not land use/land cover (LULC) prediction. It is a research paper assessing soil conservation status and identifying areas for Land Degradation Neutrality (LDN) planning. While it uses a current LULC map as an input and discusses land use change as a management action, its core methodology involves overlaying static maps (soil erosion potential, soil quality, and current land cover) to diagnose current conditions and prioritize restoration. It does not implement or test a predictive model to simulate future LULC scenarios under different drivers. The \"scenarios\" (S1, S2, S3) refer to different static interpretations of the current land cover's protective value (C-factor), not to future LULC projections.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:30:41.242443+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 9.404,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789655446-5ODhADI5qGDqt9ucY63X\",\"object\":\"chat.completion\",\"created\":1789655446,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper's primary focus is not land use/land cover (LULC) prediction. It is a research paper assessing soil conservation status and identifying areas for Land Degradation Neutrality (LDN) planning. While it uses a current LULC map as an input and discusses land use change as a management action, its core methodology involves overlaying static maps (soil erosion potential, soil quality, and current land cover) to diagnose current conditions and prioritize restoration. It does not implement or test a predictive model to simulate future LULC scenarios under different drivers. The \\\"scenarios\\\" (S1, S2, S3) refer to different static interpretations of the current land cover's protective value (C-factor), not to future LULC projections.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15665,\"completion_tokens\":165,\"total_tokens\":15830,\"cost\":0.0041356,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0041356,\"upstream_inference_prompt_cost\":0.0040729,\"upstream_inference_completions_cost\":0.0000627},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655446-5ODhADI5qGDqt9ucY63X",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 15665,
+        "completion_tokens": 165,
+        "total_tokens": 15830,
+        "cost": 0.0041356,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0041356,
+          "upstream_inference_prompt_cost": 0.0040729,
+          "upstream_inference_completions_cost": 6.27e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 9.405,
+  "call_id": "DS__z1_D7IQQ9ZI__deepseek__r3",
+  "fingerprint": "d0fcc98dff750eb0ce68617d72ee86ee8dc3cef47071a45476d34082244732e2",
+  "paper_id": "z1_D7IQQ9ZI",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:30:50.646679+00:00",
+  "input_sha256": "b3ede537b91d7b416be5881332080f38639363a233c7f8551218979260597df1",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

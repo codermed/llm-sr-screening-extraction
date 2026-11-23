@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789653942-nEyXemhwMUzwZ6hGSC4G",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.018865,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 13910,
+    "completion_tokens": 991,
+    "total_tokens": 14901,
+    "cost": 0.018865,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.018865,
+      "upstream_inference_prompt_cost": 0.01391,
+      "upstream_inference_completions_cost": 0.004955
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Carbon Sequestration in Coastal Habitats\n\n## Step 1: Determine if Review Article\n**Result: NO** - This is a research paper, not a review article. It presents original empirical research with primary data collection (soil sampling, vegetation surveys) and quantitative modeling of carbon stocks and sequestration rates.\n\n## Step 2: Apply Categorization Flow for Non-Review Paper\n\n### Core Inclusion Criteria Assessment:\n\n1. **Explicit national-scale spatial implementation (entire country)?**\n   - ✓ YES - Study covers UK (England, Scotland, Wales, Northern Ireland) with explicit country-level disaggregation in Tables 1 and 3\n\n2. **Primary focus = LULC prediction/simulation?**\n   - ✗ NO - Primary focus is **carbon sequestration valuation**, not LULC prediction\n   - LULC change is used as input/context: \"Changes in UK coastal habitat area between 1900 and 2060 are documented\" but this is not the central research objective\n   - The paper uses habitat area projections from other sources (JNCC 2007, French 1997) rather than developing LULC prediction models\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ✓ YES - Two scenarios compared: (a) habitat maintained at current extent, (b) continuation of current habitat loss trends (Table 4)\n   - Quantitative comparison: £1 billion vs £0.25 billion value difference\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ✗ PARTIAL - Spatial modeling exists (habitat areas by region) but no accuracy metrics reported for LULC predictions themselves\n   - Accuracy assessment is absent for habitat projections\n\n5. **Outputs include mapped LULC projections?**\n   - ✗ NO - No maps of projected LULC change are provided. Figures 1-3 show values/sequestration rates, not spatial LULC projections\n\n### Exclusion Criteria Assessment:\n\n- **Biomass/bioenergy/carbon studies without LULC change analysis?**\n  - ✓ TRIGGERED - This is fundamentally a carbon valuation study. While habitat area changes are mentioned, the paper does not develop or validate LULC prediction models. LULC changes are sourced from external projections and used as inputs to ecosystem service valuation.\n\n- **Economic models lacking spatially explicit LULC outputs?**\n  - ✓ TRIGGERED - The economic valuation model (Section 3) produces monetary values, not spatial LULC maps or detailed spatially explicit predictions\n\n- **Methodological papers without application to national-scale prediction?**\n  - PARTIAL - Develops methodology for valuation but not for LULC prediction itself\n\n---\n\n## Final Categorization: **EXCLUDED**\n\n**Justification:** \n\nWhile this paper addresses coastal habitat change at the national (UK) scale and incorporates habitat area projections through 2060, it **does not meet the core inclusion criteria for LULC prediction research**:\n\n1. **Primary focus is ecosystem service valuation (carbon sequestration), NOT LULC prediction** - The central research question concerns the monetary value of carbon storage, not the prediction or simulation of land use/land cover change patterns\n\n2. **LULC projections are inputs, not outputs** - Habitat area changes (Table 1) are sourced from external expert projections (JNCC, French 1997) rather than developed through original LULC modeling by the authors\n\n3. **No spatial LULC prediction models or outputs** - No maps of projected habitat distributions, no LULC classification schemes applied, no spatial modeling framework for predicting where habitat change will occur\n\n4. **No accuracy metrics for LULC predictions** - The habitat projections lack validation or accuracy assessment\n\n5. **Meets exclusion criterion: \"Biomass/carbon studies without LULC change analysis\"** - This is fundamentally a carbon valuation study that uses habitat loss as a parameter rather than a study focused on predicting LULC change itself\n\n**Appropriate venue:** This paper is well-suited for ecosystem services, coastal management, or environmental valuation journals, but not for LULC prediction research synthesis.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:05:37.448870+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 11.395,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653942-nEyXemhwMUzwZ6hGSC4G\",\"object\":\"chat.completion\",\"created\":1789653942,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Carbon Sequestration in Coastal Habitats\\n\\n## Step 1: Determine if Review Article\\n**Result: NO** - This is a research paper, not a review article. It presents original empirical research with primary data collection (soil sampling, vegetation surveys) and quantitative modeling of carbon stocks and sequestration rates.\\n\\n## Step 2: Apply Categorization Flow for Non-Review Paper\\n\\n### Core Inclusion Criteria Assessment:\\n\\n1. **Explicit national-scale spatial implementation (entire country)?**\\n   - ✓ YES - Study covers UK (England, Scotland, Wales, Northern Ireland) with explicit country-level disaggregation in Tables 1 and 3\\n\\n2. **Primary focus = LULC prediction/simulation?**\\n   - ✗ NO - Primary focus is **carbon sequestration valuation**, not LULC prediction\\n   - LULC change is used as input/context: \\\"Changes in UK coastal habitat area between 1900 and 2060 are documented\\\" but this is not the central research objective\\n   - The paper uses habitat area projections from other sources (JNCC 2007, French 1997) rather than developing LULC prediction models\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ✓ YES - Two scenarios compared: (a) habitat maintained at current extent, (b) continuation of current habitat loss trends (Table 4)\\n   - Quantitative comparison: £1 billion vs £0.25 billion value difference\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ✗ PARTIAL - Spatial modeling exists (habitat areas by region) but no accuracy metrics reported for LULC predictions themselves\\n   - Accuracy assessment is absent for habitat projections\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ✗ NO - No maps of projected LULC change are provided. Figures 1-3 show values/sequestration rates, not spatial LULC projections\\n\\n### Exclusion Criteria Assessment:\\n\\n- **Biomass/bioenergy/carbon studies without LULC change analysis?**\\n  - ✓ TRIGGERED - This is fundamentally a carbon valuation study. While habitat area changes are mentioned, the paper does not develop or validate LULC prediction models. LULC changes are sourced from external projections and used as inputs to ecosystem service valuation.\\n\\n- **Economic models lacking spatially explicit LULC outputs?**\\n  - ✓ TRIGGERED - The economic valuation model (Section 3) produces monetary values, not spatial LULC maps or detailed spatially explicit predictions\\n\\n- **Methodological papers without application to national-scale prediction?**\\n  - PARTIAL - Develops methodology for valuation but not for LULC prediction itself\\n\\n---\\n\\n## Final Categorization: **EXCLUDED**\\n\\n**Justification:** \\n\\nWhile this paper addresses coastal habitat change at the national (UK) scale and incorporates habitat area projections through 2060, it **does not meet the core inclusion criteria for LULC prediction research**:\\n\\n1. **Primary focus is ecosystem service valuation (carbon sequestration), NOT LULC prediction** - The central research question concerns the monetary value of carbon storage, not the prediction or simulation of land use/land cover change patterns\\n\\n2. **LULC projections are inputs, not outputs** - Habitat area changes (Table 1) are sourced from external expert projections (JNCC, French 1997) rather than developed through original LULC modeling by the authors\\n\\n3. **No spatial LULC prediction models or outputs** - No maps of projected habitat distributions, no LULC classification schemes applied, no spatial modeling framework for predicting where habitat change will occur\\n\\n4. **No accuracy metrics for LULC predictions** - The habitat projections lack validation or accuracy assessment\\n\\n5. **Meets exclusion criterion: \\\"Biomass/carbon studies without LULC change analysis\\\"** - This is fundamentally a carbon valuation study that uses habitat loss as a parameter rather than a study focused on predicting LULC change itself\\n\\n**Appropriate venue:** This paper is well-suited for ecosystem services, coastal management, or environmental valuation journals, but not for LULC prediction research synthesis.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":13910,\"completion_tokens\":991,\"total_tokens\":14901,\"cost\":0.018865,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.018865,\"upstream_inference_prompt_cost\":0.01391,\"upstream_inference_completions_cost\":0.004955},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653942-nEyXemhwMUzwZ6hGSC4G",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 13910,
+        "completion_tokens": 991,
+        "total_tokens": 14901,
+        "cost": 0.018865,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.018865,
+          "upstream_inference_prompt_cost": 0.01391,
+          "upstream_inference_completions_cost": 0.004955
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 11.396,
+  "call_id": "DS__z1_49VBLG7H__claude__r2",
+  "fingerprint": "ca4f122012258c52887aaa2c2242de374e161d7f269a484a12f130e63e0eba8f",
+  "paper_id": "z1_49VBLG7H",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:05:48.844546+00:00",
+  "input_sha256": "f2529ac0d8e38381e5a035c15bd91233fec1632e744fbbbe6735989e49f931a6",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

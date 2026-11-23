@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789654819-CCpUMRV1wAzD0s1AeZE2",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.010788,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 5808,
+    "completion_tokens": 996,
+    "total_tokens": 6804,
+    "cost": 0.010788,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.010788,
+      "upstream_inference_prompt_cost": 0.005808,
+      "upstream_inference_completions_cost": 0.00498
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis\n\n## REVIEW STATUS\nThis is a **NON-REVIEW PAPER** – it presents original research applying land use simulation modeling to the Netherlands, not a synthesis of existing literature.\n\n## CORE INCLUSION CRITERIA ASSESSMENT\n\n| Criterion | Status | Evidence |\n|-----------|--------|----------|\n| **Explicit national-scale spatial implementation** | ✓ PASS | Study covers entire Netherlands; methodology states \"dividing the Netherlands into cells of 500 × 500 metres\" with 14 land-use types across the country |\n| **Primary focus = LULC prediction/simulation** | ✓ PASS | Central research question explicitly stated: \"how much land will be taken out of production and to what use it will be put\"; primary objective is simulating future agricultural land use patterns |\n| **≥2 future scenarios with quantitative comparison** | ✓ PASS | Two opposing scenarios implemented: \"Global Economy\" and \"Regional Community\"; quantitative projections provided (Figure 1 shows total agricultural area decline rates: dramatic in Global Economy vs. historic trend in Regional Community) |\n| **Spatial modeling with quantitative metrics** | ✓ PASS | Land Use Scanner model with grid-based spatial allocation (500m cells); quantitative outputs include: agricultural area projections to 2030, spatial probability distributions via logit equations, land-use class percentages per region |\n| **Mapped LULC projections** | ✓ PASS | Figure 2 displays current and projected land use maps for both scenarios across central-western Netherlands showing spatial patterns of agriculture, urban, nature, and recreation land uses |\n\n## EXCLUSION CRITERIA ASSESSMENT\n\n| Criterion | Status | Evidence |\n|-----------|--------|----------|\n| Global-scale without national disaggregation | ✓ PASS | National-scale focus only; no global analysis |\n| Local/regional/global/transboundary focus | ✓ PASS | Explicitly national-scale; regional results shown as part of national simulation |\n| No LULC prediction component | ✓ PASS | LULC prediction is primary focus |\n| Species-specific/ecological focus unrelated to LULC | ✓ PASS | Agriculture and land-use change are central; ecology addressed through nature conservation integration |\n| Economic/urban models lacking spatial LULC outputs | ✓ PASS | Spatially explicit LULC outputs provided (maps and quantitative projections) |\n| Biomass/bioenergy/carbon without LULC analysis | ✓ PASS | Not applicable; paper focuses on agricultural land use change |\n| Methodological paper without application | ✓ PASS | Applied to national-scale prediction problem |\n| Purely qualitative/historical only | ✓ PASS | Includes future projections to 2030 with quantitative metrics |\n| Remote sensing technical study without prediction | ✓ PASS | Uses spatial modeling, not remote sensing methodology |\n| Single-scenario \"business-as-usual\" only | ✓ PASS | Two contrasting scenarios implemented |\n\n## ADDITIONAL VERIFICATION CHECKS\n\n- **Scale verification**: Methodology confirms national coverage with 500m grid cells across entire Netherlands; results discussion focuses on \"central-western part\" as representative example, not limitation\n- **Quantitative metrics reported**: Yes – agricultural area projections (hectares), land-use class percentages, probability distributions from logit model\n- **Spatial explicitness**: Yes – grid-based allocation model with suitability maps, location-specific bidding processes, mapped outputs\n- **Primary objective clarity**: Unambiguous – title, abstract, and research questions all center on \"simulating the future of agricultural land use\"\n\n---\n\n## FINAL CATEGORIZATION: **OK**\n\n**Justification:** This paper fully meets all core inclusion criteria for national-scale LULC prediction research. It implements a spatially explicit land-use simulation model (Land Use Scanner) across the entire Netherlands at 500m resolution, compares two quantitatively distinct future scenarios (Global Economy vs. Regional Community) with explicit projections to 2030, and produces mapped LULC outputs showing spatial patterns of agricultural change. The primary research objective is LULC prediction, quantitative metrics are reported (area changes, spatial probability distributions), and the methodology is rigorously applied. No exclusion criteria are triggered.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:20:14.352976+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.441,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789654819-CCpUMRV1wAzD0s1AeZE2\",\"object\":\"chat.completion\",\"created\":1789654819,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis\\n\\n## REVIEW STATUS\\nThis is a **NON-REVIEW PAPER** – it presents original research applying land use simulation modeling to the Netherlands, not a synthesis of existing literature.\\n\\n## CORE INCLUSION CRITERIA ASSESSMENT\\n\\n| Criterion | Status | Evidence |\\n|-----------|--------|----------|\\n| **Explicit national-scale spatial implementation** | ✓ PASS | Study covers entire Netherlands; methodology states \\\"dividing the Netherlands into cells of 500 × 500 metres\\\" with 14 land-use types across the country |\\n| **Primary focus = LULC prediction/simulation** | ✓ PASS | Central research question explicitly stated: \\\"how much land will be taken out of production and to what use it will be put\\\"; primary objective is simulating future agricultural land use patterns |\\n| **≥2 future scenarios with quantitative comparison** | ✓ PASS | Two opposing scenarios implemented: \\\"Global Economy\\\" and \\\"Regional Community\\\"; quantitative projections provided (Figure 1 shows total agricultural area decline rates: dramatic in Global Economy vs. historic trend in Regional Community) |\\n| **Spatial modeling with quantitative metrics** | ✓ PASS | Land Use Scanner model with grid-based spatial allocation (500m cells); quantitative outputs include: agricultural area projections to 2030, spatial probability distributions via logit equations, land-use class percentages per region |\\n| **Mapped LULC projections** | ✓ PASS | Figure 2 displays current and projected land use maps for both scenarios across central-western Netherlands showing spatial patterns of agriculture, urban, nature, and recreation land uses |\\n\\n## EXCLUSION CRITERIA ASSESSMENT\\n\\n| Criterion | Status | Evidence |\\n|-----------|--------|----------|\\n| Global-scale without national disaggregation | ✓ PASS | National-scale focus only; no global analysis |\\n| Local/regional/global/transboundary focus | ✓ PASS | Explicitly national-scale; regional results shown as part of national simulation |\\n| No LULC prediction component | ✓ PASS | LULC prediction is primary focus |\\n| Species-specific/ecological focus unrelated to LULC | ✓ PASS | Agriculture and land-use change are central; ecology addressed through nature conservation integration |\\n| Economic/urban models lacking spatial LULC outputs | ✓ PASS | Spatially explicit LULC outputs provided (maps and quantitative projections) |\\n| Biomass/bioenergy/carbon without LULC analysis | ✓ PASS | Not applicable; paper focuses on agricultural land use change |\\n| Methodological paper without application | ✓ PASS | Applied to national-scale prediction problem |\\n| Purely qualitative/historical only | ✓ PASS | Includes future projections to 2030 with quantitative metrics |\\n| Remote sensing technical study without prediction | ✓ PASS | Uses spatial modeling, not remote sensing methodology |\\n| Single-scenario \\\"business-as-usual\\\" only | ✓ PASS | Two contrasting scenarios implemented |\\n\\n## ADDITIONAL VERIFICATION CHECKS\\n\\n- **Scale verification**: Methodology confirms national coverage with 500m grid cells across entire Netherlands; results discussion focuses on \\\"central-western part\\\" as representative example, not limitation\\n- **Quantitative metrics reported**: Yes – agricultural area projections (hectares), land-use class percentages, probability distributions from logit model\\n- **Spatial explicitness**: Yes – grid-based allocation model with suitability maps, location-specific bidding processes, mapped outputs\\n- **Primary objective clarity**: Unambiguous – title, abstract, and research questions all center on \\\"simulating the future of agricultural land use\\\"\\n\\n---\\n\\n## FINAL CATEGORIZATION: **OK**\\n\\n**Justification:** This paper fully meets all core inclusion criteria for national-scale LULC prediction research. It implements a spatially explicit land-use simulation model (Land Use Scanner) across the entire Netherlands at 500m resolution, compares two quantitatively distinct future scenarios (Global Economy vs. Regional Community) with explicit projections to 2030, and produces mapped LULC outputs showing spatial patterns of agricultural change. The primary research objective is LULC prediction, quantitative metrics are reported (area changes, spatial probability distributions), and the methodology is rigorously applied. No exclusion criteria are triggered.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":5808,\"completion_tokens\":996,\"total_tokens\":6804,\"cost\":0.010788,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.010788,\"upstream_inference_prompt_cost\":0.005808,\"upstream_inference_completions_cost\":0.00498},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654819-CCpUMRV1wAzD0s1AeZE2",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 5808,
+        "completion_tokens": 996,
+        "total_tokens": 6804,
+        "cost": 0.010788,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.010788,
+          "upstream_inference_prompt_cost": 0.005808,
+          "upstream_inference_completions_cost": 0.00498
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.442,
+  "call_id": "DS__z1_ZCDX3G7X__claude__r2",
+  "fingerprint": "0cb61f682fa691c9c485be30a0bd13fb96c76d50879b095b9453b0a71d34abac",
+  "paper_id": "z1_ZCDX3G7X",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:20:26.794718+00:00",
+  "input_sha256": "3c38b8903a1fa4e3ed1c6e8948ade44baa7a5bbbf57aee7790be140407d44e48",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

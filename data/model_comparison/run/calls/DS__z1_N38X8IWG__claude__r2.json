@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789654534-a7L1nULrizw5Ul2rQwMG",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.02185,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 14500,
+    "completion_tokens": 1470,
+    "total_tokens": 15970,
+    "cost": 0.02185,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.02185,
+      "upstream_inference_prompt_cost": 0.0145,
+      "upstream_inference_completions_cost": 0.00735
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: LUCAS Spatially-Explicit State-and-Transition Simulation Model\n\n## DETERMINATION: Is this a review article?\n**NO** - This is a research article presenting methods and application of a specific modeling system (LUCAS) with empirical results.\n\n---\n\n## EVALUATION AGAINST INCLUSION/EXCLUSION CRITERIA\n\n### CORE INCLUSION CRITERIA (Non-Review Paper):\n\n1. **Explicit national-scale spatial implementation (entire country)**\n   - ✓ **PASS**: Paper explicitly states \"conterminous U.S.\" as primary study area. Methods section (2.1) notes: \"Although this research has been conducted for the conterminous U.S. for multiple scenarios, we use Mediterranean California as a regional subset to highlight local to regional aspects.\" All spatial inputs developed nationally at 1-km resolution with seamless boundaries.\n\n2. **Primary focus = LULC prediction/simulation (central research question)**\n   - ✓ **PASS**: Primary objective is developing and parameterizing LUCAS for LULC change projections. Abstract states: \"Spatially-explicit state-and-transition simulation models of land use and land cover (LULC) increase our ability to assess regional landscape characteristics and associated carbon dynamics across multiple scenarios.\"\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison**\n   - ✓ **PASS**: Section 2.5 describes multiple scenarios implemented: \"We developed multiple scenarios to model within LUCAS for the conterminous U.S. These included narratives and spatial data from the global community: IPCC-SRES (A1B, A2, B1, B2), Representative Concentration Pathways (8.5, 6.0, 4.5, 2.6); and extrapolations of historical trends based on findings from USGS Land Cover Trends such as: 'business as usual' (1992–2000), 'drought' (1986–1992), and 'random' (1972–2000).\" Results section presents A1B scenario with quantitative outputs (Table 4).\n\n4. **Spatial modeling with quantitative accuracy metrics**\n   - ✓ **PASS**: Section 3.1 presents model verification with R² values (0.9999, 0.9998, 0.9993 for three transition groups). Section 3.3 includes sensitivity analysis with annual average transition probability distributions and Monte Carlo simulations (20 iterations).\n\n5. **Outputs include mapped LULC projections**\n   - ✓ **PASS**: Figures 7A-B show state class maps for 2000 and 2100 projections. Figure 8 shows forest disturbance projections. Figures 9-10 show transition probability maps over 100-year period.\n\n### SPECIFIC EXCLUSION CRITERIA:\n\n1. **Global-scale analysis without national-level disaggregation**\n   - ✓ **PASS** (not excluded): Explicitly national-scale focus on conterminous U.S.\n\n2. **Local/regional/global/transboundary scale focus**\n   - ✓ **PASS** (not excluded): Primary implementation is national; Mediterranean California used as demonstration subset.\n\n3. **No LULC prediction component**\n   - ✓ **PASS** (not excluded): LULC prediction is central component.\n\n4. **Species-specific/ecological focus unrelated to LULC**\n   - ✓ **PASS** (not excluded): Focus is on LULC change, not species ecology.\n\n5. **Economic/urban models lacking spatially explicit LULC outputs**\n   - ✓ **PASS** (not excluded): Produces explicit spatial LULC maps at 1-km resolution.\n\n6. **Biomass/bioenergy/carbon studies without LULC change analysis**\n   - ✓ **PASS** (not excluded): Carbon is integrated WITH LULC change modeling, not separate.\n\n7. **Methodological papers without application to national-scale prediction**\n   - ✓ **PASS** (not excluded): Methods are applied to national-scale predictions with concrete results.\n\n8. **Purely qualitative/historical analysis only**\n   - ✓ **PASS** (not excluded): Includes 100-year future projections (2000-2100).\n\n9. **Remote sensing technical studies without predictive modeling**\n   - ✓ **PASS** (not excluded): Uses remote sensing data as input to predictive model.\n\n10. **Single-scenario \"business-as-usual\" projections**\n    - ✓ **PASS** (not excluded): Multiple scenarios implemented; paper presents A1B but acknowledges A1B, A2, B1, B2, RCP scenarios developed.\n\n---\n\n## ADDITIONAL VERIFICATION CHECKS:\n\n- **Scale claims verified**: Methodology clearly describes national implementation with 1-km resolution; Mediterranean California subset properly identified as demonstration case.\n- **Quantitative metrics reported**: R² values (0.9999-0.9993), area changes in km², transition probabilities, Monte Carlo simulations documented.\n- **Spatial explicitness confirmed**: Raster-based grid cells, distance-decay spatial multipliers, ecoregional strata, all parameterized spatially.\n- **Future projections confirmed**: 100-year simulations (2000-2100) with 5-year time-step increments.\n\n---\n\n## FINAL CATEGORIZATION: **OK**\n\n**Justification**: \nThis paper meets ALL core inclusion criteria for national-scale LULC prediction research. It presents explicit spatial implementation across the conterminous U.S. at 1-km resolution, with LULC prediction as the primary research objective. The LUCAS model is applied to multiple future scenarios (IPCC-SRES A1B, A2, B1, B2 and RCP pathways) with quantitative verification metrics (R² = 0.9999-0.9993) and sensitivity analysis. Outputs include mapped LULC projections for 2000-2100. The paper passes all exclusion criteria checks. While carbon dynamics are integrated, they are secondary to the LULC prediction framework, not a substitute for it. Mediterranean California is appropriately identified as a regional demonstration subset of the national model.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:15:29.444416+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 17.403,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789654534-a7L1nULrizw5Ul2rQwMG\",\"object\":\"chat.completion\",\"created\":1789654534,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: LUCAS Spatially-Explicit State-and-Transition Simulation Model\\n\\n## DETERMINATION: Is this a review article?\\n**NO** - This is a research article presenting methods and application of a specific modeling system (LUCAS) with empirical results.\\n\\n---\\n\\n## EVALUATION AGAINST INCLUSION/EXCLUSION CRITERIA\\n\\n### CORE INCLUSION CRITERIA (Non-Review Paper):\\n\\n1. **Explicit national-scale spatial implementation (entire country)**\\n   - ✓ **PASS**: Paper explicitly states \\\"conterminous U.S.\\\" as primary study area. Methods section (2.1) notes: \\\"Although this research has been conducted for the conterminous U.S. for multiple scenarios, we use Mediterranean California as a regional subset to highlight local to regional aspects.\\\" All spatial inputs developed nationally at 1-km resolution with seamless boundaries.\\n\\n2. **Primary focus = LULC prediction/simulation (central research question)**\\n   - ✓ **PASS**: Primary objective is developing and parameterizing LUCAS for LULC change projections. Abstract states: \\\"Spatially-explicit state-and-transition simulation models of land use and land cover (LULC) increase our ability to assess regional landscape characteristics and associated carbon dynamics across multiple scenarios.\\\"\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison**\\n   - ✓ **PASS**: Section 2.5 describes multiple scenarios implemented: \\\"We developed multiple scenarios to model within LUCAS for the conterminous U.S. These included narratives and spatial data from the global community: IPCC-SRES (A1B, A2, B1, B2), Representative Concentration Pathways (8.5, 6.0, 4.5, 2.6); and extrapolations of historical trends based on findings from USGS Land Cover Trends such as: 'business as usual' (1992–2000), 'drought' (1986–1992), and 'random' (1972–2000).\\\" Results section presents A1B scenario with quantitative outputs (Table 4).\\n\\n4. **Spatial modeling with quantitative accuracy metrics**\\n   - ✓ **PASS**: Section 3.1 presents model verification with R² values (0.9999, 0.9998, 0.9993 for three transition groups). Section 3.3 includes sensitivity analysis with annual average transition probability distributions and Monte Carlo simulations (20 iterations).\\n\\n5. **Outputs include mapped LULC projections**\\n   - ✓ **PASS**: Figures 7A-B show state class maps for 2000 and 2100 projections. Figure 8 shows forest disturbance projections. Figures 9-10 show transition probability maps over 100-year period.\\n\\n### SPECIFIC EXCLUSION CRITERIA:\\n\\n1. **Global-scale analysis without national-level disaggregation**\\n   - ✓ **PASS** (not excluded): Explicitly national-scale focus on conterminous U.S.\\n\\n2. **Local/regional/global/transboundary scale focus**\\n   - ✓ **PASS** (not excluded): Primary implementation is national; Mediterranean California used as demonstration subset.\\n\\n3. **No LULC prediction component**\\n   - ✓ **PASS** (not excluded): LULC prediction is central component.\\n\\n4. **Species-specific/ecological focus unrelated to LULC**\\n   - ✓ **PASS** (not excluded): Focus is on LULC change, not species ecology.\\n\\n5. **Economic/urban models lacking spatially explicit LULC outputs**\\n   - ✓ **PASS** (not excluded): Produces explicit spatial LULC maps at 1-km resolution.\\n\\n6. **Biomass/bioenergy/carbon studies without LULC change analysis**\\n   - ✓ **PASS** (not excluded): Carbon is integrated WITH LULC change modeling, not separate.\\n\\n7. **Methodological papers without application to national-scale prediction**\\n   - ✓ **PASS** (not excluded): Methods are applied to national-scale predictions with concrete results.\\n\\n8. **Purely qualitative/historical analysis only**\\n   - ✓ **PASS** (not excluded): Includes 100-year future projections (2000-2100).\\n\\n9. **Remote sensing technical studies without predictive modeling**\\n   - ✓ **PASS** (not excluded): Uses remote sensing data as input to predictive model.\\n\\n10. **Single-scenario \\\"business-as-usual\\\" projections**\\n    - ✓ **PASS** (not excluded): Multiple scenarios implemented; paper presents A1B but acknowledges A1B, A2, B1, B2, RCP scenarios developed.\\n\\n---\\n\\n## ADDITIONAL VERIFICATION CHECKS:\\n\\n- **Scale claims verified**: Methodology clearly describes national implementation with 1-km resolution; Mediterranean California subset properly identified as demonstration case.\\n- **Quantitative metrics reported**: R² values (0.9999-0.9993), area changes in km², transition probabilities, Monte Carlo simulations documented.\\n- **Spatial explicitness confirmed**: Raster-based grid cells, distance-decay spatial multipliers, ecoregional strata, all parameterized spatially.\\n- **Future projections confirmed**: 100-year simulations (2000-2100) with 5-year time-step increments.\\n\\n---\\n\\n## FINAL CATEGORIZATION: **OK**\\n\\n**Justification**: \\nThis paper meets ALL core inclusion criteria for national-scale LULC prediction research. It presents explicit spatial implementation across the conterminous U.S. at 1-km resolution, with LULC prediction as the primary research objective. The LUCAS model is applied to multiple future scenarios (IPCC-SRES A1B, A2, B1, B2 and RCP pathways) with quantitative verification metrics (R² = 0.9999-0.9993) and sensitivity analysis. Outputs include mapped LULC projections for 2000-2100. The paper passes all exclusion criteria checks. While carbon dynamics are integrated, they are secondary to the LULC prediction framework, not a substitute for it. Mediterranean California is appropriately identified as a regional demonstration subset of the national model.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":14500,\"completion_tokens\":1470,\"total_tokens\":15970,\"cost\":0.02185,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.02185,\"upstream_inference_prompt_cost\":0.0145,\"upstream_inference_completions_cost\":0.00735},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654534-a7L1nULrizw5Ul2rQwMG",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 14500,
+        "completion_tokens": 1470,
+        "total_tokens": 15970,
+        "cost": 0.02185,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.02185,
+          "upstream_inference_prompt_cost": 0.0145,
+          "upstream_inference_completions_cost": 0.00735
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 17.404,
+  "call_id": "DS__z1_N38X8IWG__claude__r2",
+  "fingerprint": "a3397247ea46989d23883d65c86b81695d193b7f1ee4716abe64df52e67a2984",
+  "paper_id": "z1_N38X8IWG",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:15:46.847445+00:00",
+  "input_sha256": "865c6b6d7e7b15ee5c73086aeb4e90426119d9b63ec4f0aa4fb42788516550ae",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

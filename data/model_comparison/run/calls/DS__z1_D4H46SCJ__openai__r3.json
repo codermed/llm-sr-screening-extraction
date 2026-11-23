@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789655169-AhB5e5MwQoUWW7NpALgt",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0014988,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 11435,
+    "completion_tokens": 190,
+    "total_tokens": 11625,
+    "cost": 0.0014988,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 11264,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0014988,
+      "upstream_inference_prompt_cost": 0.0011948,
+      "upstream_inference_completions_cost": 0.000304
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This paper is a research study using the MC2 dynamic global vegetation model to simulate ecosystem services related to carbon sequestration, timber production, and habitat changes under climate change scenarios for the conterminous USA. While it includes land use and fire suppression as factors, the primary focus is on ecosystem services and carbon dynamics rather than explicit land use/land cover (LULC) future prediction or simulation. There is no evidence of spatial modeling with quantitative accuracy metrics specifically for LULC prediction, nor is LULC prediction the central research question. The study uses land use data as inputs or scenarios but does not primarily aim to predict or simulate future LULC changes with mapped projections and accuracy assessments. The scale is national, but the focus on ecosystem services and carbon modeling excludes it from inclusion. Therefore, it fails the core inclusion criterion that the primary focus be LULC prediction/simulation.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:26:04.693040+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.582,
+      "raw_body": "\n         \n{\"id\":\"gen-1789655169-AhB5e5MwQoUWW7NpALgt\",\"object\":\"chat.completion\",\"created\":1789655169,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This paper is a research study using the MC2 dynamic global vegetation model to simulate ecosystem services related to carbon sequestration, timber production, and habitat changes under climate change scenarios for the conterminous USA. While it includes land use and fire suppression as factors, the primary focus is on ecosystem services and carbon dynamics rather than explicit land use/land cover (LULC) future prediction or simulation. There is no evidence of spatial modeling with quantitative accuracy metrics specifically for LULC prediction, nor is LULC prediction the central research question. The study uses land use data as inputs or scenarios but does not primarily aim to predict or simulate future LULC changes with mapped projections and accuracy assessments. The scale is national, but the focus on ecosystem services and carbon modeling excludes it from inclusion. Therefore, it fails the core inclusion criterion that the primary focus be LULC prediction/simulation.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":11435,\"completion_tokens\":190,\"total_tokens\":11625,\"cost\":0.0014988,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":11264,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0014988,\"upstream_inference_prompt_cost\":0.0011948,\"upstream_inference_completions_cost\":0.000304},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655169-AhB5e5MwQoUWW7NpALgt",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 11435,
+        "completion_tokens": 190,
+        "total_tokens": 11625,
+        "cost": 0.0014988,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 11264,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0014988,
+          "upstream_inference_prompt_cost": 0.0011948,
+          "upstream_inference_completions_cost": 0.000304
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.583,
+  "call_id": "DS__z1_D4H46SCJ__openai__r3",
+  "fingerprint": "36c1c5407e0d3e1f0990f27309b4e18e36fe1555780cd6af4b0e5ffdddc1858c",
+  "paper_id": "z1_D4H46SCJ",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:26:07.275416+00:00",
+  "input_sha256": "830914e1cdf8b0bd500d4172c6c3a10eb4053a87479d5890d920b894332a3673",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

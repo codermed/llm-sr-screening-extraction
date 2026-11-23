@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789654269-xrl3wC38Y6CG7pvo7yHT",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.019209,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12724,
+    "completion_tokens": 1297,
+    "total_tokens": 14021,
+    "cost": 0.019209,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.019209,
+      "upstream_inference_prompt_cost": 0.012724,
+      "upstream_inference_completions_cost": 0.006485
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land Use Change Cellular Automata Scale Analysis\n\n## Initial Classification\n**Is this a review article?** No. This is a research paper presenting original empirical analysis of cellular automata model behavior across different scales.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA CHECK:\n\n1. **Explicit national-scale spatial implementation (entire country)?**\n   - ❌ FAILS: Study uses two regions within China: Beijing Province (16,410 km²) and Miyun County (2,229 km²). These are sub-national administrative units, not national-scale implementation.\n   - The paper explicitly states: \"Two study regions with different spatial scales were chosen for our study\" (Section 2.5)\n   - No national-level disaggregation or country-wide modeling is presented.\n\n2. **Primary focus = LULC prediction/simulation (central research question)?**\n   - ⚠️ PARTIAL: The paper does use LULC modeling (CLUE-S model), but the primary research objective is NOT to predict future LULC. Rather, it is to **explore how scale parameters affect CA model behavior**.\n   - Stated objective: \"The objective of this study was to explore the impact of variation in scale on the behavior of a CA employed for land use change modeling\" (Abstract)\n   - The focus is on **methodological sensitivity analysis** of scale parameters, not on producing LULC predictions.\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ❌ FAILS: The paper does not implement multiple future scenarios. It performs sensitivity analysis by varying scale parameters (cell size, neighborhood size/shape, spatial extent) while keeping other conditions constant.\n   - The simulation in Section 3.2 uses historical data (1991-2004) for model validation, not future projections.\n   - No scenario-based future projections are presented.\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ✓ PASSES: Kappa index is used to measure simulation precision (Section 2.6, Figure 6). Enrichment factors are quantified (Equations 1-3).\n   - However, metrics assess model sensitivity to parameters, not predictive accuracy of future LULC.\n\n5. **Outputs include mapped LULC projections?**\n   - ⚠️ PARTIAL: Figure 5 shows simulation results, but these are retrospective validations (1991→2004 hindcast), not future projections.\n   - Maps demonstrate model capability but not forward-looking LULC predictions.\n\n---\n\n### SPECIFIC EXCLUSION CRITERIA CHECK:\n\n1. **Local/regional/global/transboundary scale focus?**\n   - ✓ **TRIGGERS EXCLUSION**: Study is explicitly regional/local scale (Beijing Province and Miyun County). This violates the national-scale requirement.\n\n2. **No LULC prediction component?**\n   - ⚠️ PARTIAL CONCERN: While LULC modeling is used, the paper does not focus on predicting future LULC. It uses historical data for sensitivity analysis.\n\n3. **Methodological papers without application to national-scale prediction?**\n   - ✓ **TRIGGERS EXCLUSION**: This is fundamentally a methodological sensitivity analysis paper examining how CA model parameters affect behavior. It is not applied to national-scale LULC prediction.\n   - The authors state: \"our study was to evaluate the impact of variation in scale on the behavior of the CA model\" (Section 3, Results introduction)\n\n4. **Single-scenario \"business-as-usual\" projections?**\n   - ✓ **TRIGGERS EXCLUSION**: The paper uses only one historical scenario (1991-2004 actual data) for validation. No future scenarios are modeled.\n\n---\n\n## Critical Findings from Full Text Review:\n\n**Scale of Analysis:**\n- Beijing Province: 16,410 km² (regional)\n- Miyun County: 2,229 km² (local)\n- No national-level implementation\n\n**Research Purpose:**\n- Sensitivity analysis of scale parameters (cell size, neighborhood size/shape, spatial extent)\n- NOT future LULC prediction\n- Stated as exploring \"impact of variation in scale on the behavior of a CA\"\n\n**Temporal Scope:**\n- Historical validation only (1991-2004)\n- No future projections\n- Retrospective hindcast for model calibration\n\n**Scenarios:**\n- Three groups of sensitivity scenarios (Table 1) varying scale parameters\n- NOT multiple future land use scenarios\n- Parameter sensitivity testing, not scenario comparison\n\n---\n\n## Final Categorization\n\n**Final categorization: EXCLUDED**\n\n**Justification:** \nThis paper fails multiple core inclusion criteria:\n1. **Scale**: Regional/local focus (Beijing Province and Miyun County) rather than explicit national-scale implementation\n2. **Primary objective**: Methodological sensitivity analysis of CA model scale parameters, NOT LULC prediction/simulation\n3. **Future scenarios**: No multiple future scenarios implemented; only historical data (1991-2004) used for model validation\n4. **Temporal focus**: Retrospective hindcast validation, not forward-looking LULC projections\n\nWhile the paper employs LULC modeling techniques and demonstrates rigorous quantitative analysis, it is fundamentally a methodological study examining how scale parameters affect CA model behavior, not a study focused on predicting national-scale LULC change. The inclusion criteria explicitly require LULC prediction as the primary focus with national-scale implementation and multiple future scenarios—none of which are present in this work.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:11:04.196267+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 14.451,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789654269-xrl3wC38Y6CG7pvo7yHT\",\"object\":\"chat.completion\",\"created\":1789654269,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land Use Change Cellular Automata Scale Analysis\\n\\n## Initial Classification\\n**Is this a review article?** No. This is a research paper presenting original empirical analysis of cellular automata model behavior across different scales.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA CHECK:\\n\\n1. **Explicit national-scale spatial implementation (entire country)?**\\n   - ❌ FAILS: Study uses two regions within China: Beijing Province (16,410 km²) and Miyun County (2,229 km²). These are sub-national administrative units, not national-scale implementation.\\n   - The paper explicitly states: \\\"Two study regions with different spatial scales were chosen for our study\\\" (Section 2.5)\\n   - No national-level disaggregation or country-wide modeling is presented.\\n\\n2. **Primary focus = LULC prediction/simulation (central research question)?**\\n   - ⚠️ PARTIAL: The paper does use LULC modeling (CLUE-S model), but the primary research objective is NOT to predict future LULC. Rather, it is to **explore how scale parameters affect CA model behavior**.\\n   - Stated objective: \\\"The objective of this study was to explore the impact of variation in scale on the behavior of a CA employed for land use change modeling\\\" (Abstract)\\n   - The focus is on **methodological sensitivity analysis** of scale parameters, not on producing LULC predictions.\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ❌ FAILS: The paper does not implement multiple future scenarios. It performs sensitivity analysis by varying scale parameters (cell size, neighborhood size/shape, spatial extent) while keeping other conditions constant.\\n   - The simulation in Section 3.2 uses historical data (1991-2004) for model validation, not future projections.\\n   - No scenario-based future projections are presented.\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ✓ PASSES: Kappa index is used to measure simulation precision (Section 2.6, Figure 6). Enrichment factors are quantified (Equations 1-3).\\n   - However, metrics assess model sensitivity to parameters, not predictive accuracy of future LULC.\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ⚠️ PARTIAL: Figure 5 shows simulation results, but these are retrospective validations (1991→2004 hindcast), not future projections.\\n   - Maps demonstrate model capability but not forward-looking LULC predictions.\\n\\n---\\n\\n### SPECIFIC EXCLUSION CRITERIA CHECK:\\n\\n1. **Local/regional/global/transboundary scale focus?**\\n   - ✓ **TRIGGERS EXCLUSION**: Study is explicitly regional/local scale (Beijing Province and Miyun County). This violates the national-scale requirement.\\n\\n2. **No LULC prediction component?**\\n   - ⚠️ PARTIAL CONCERN: While LULC modeling is used, the paper does not focus on predicting future LULC. It uses historical data for sensitivity analysis.\\n\\n3. **Methodological papers without application to national-scale prediction?**\\n   - ✓ **TRIGGERS EXCLUSION**: This is fundamentally a methodological sensitivity analysis paper examining how CA model parameters affect behavior. It is not applied to national-scale LULC prediction.\\n   - The authors state: \\\"our study was to evaluate the impact of variation in scale on the behavior of the CA model\\\" (Section 3, Results introduction)\\n\\n4. **Single-scenario \\\"business-as-usual\\\" projections?**\\n   - ✓ **TRIGGERS EXCLUSION**: The paper uses only one historical scenario (1991-2004 actual data) for validation. No future scenarios are modeled.\\n\\n---\\n\\n## Critical Findings from Full Text Review:\\n\\n**Scale of Analysis:**\\n- Beijing Province: 16,410 km² (regional)\\n- Miyun County: 2,229 km² (local)\\n- No national-level implementation\\n\\n**Research Purpose:**\\n- Sensitivity analysis of scale parameters (cell size, neighborhood size/shape, spatial extent)\\n- NOT future LULC prediction\\n- Stated as exploring \\\"impact of variation in scale on the behavior of a CA\\\"\\n\\n**Temporal Scope:**\\n- Historical validation only (1991-2004)\\n- No future projections\\n- Retrospective hindcast for model calibration\\n\\n**Scenarios:**\\n- Three groups of sensitivity scenarios (Table 1) varying scale parameters\\n- NOT multiple future land use scenarios\\n- Parameter sensitivity testing, not scenario comparison\\n\\n---\\n\\n## Final Categorization\\n\\n**Final categorization: EXCLUDED**\\n\\n**Justification:** \\nThis paper fails multiple core inclusion criteria:\\n1. **Scale**: Regional/local focus (Beijing Province and Miyun County) rather than explicit national-scale implementation\\n2. **Primary objective**: Methodological sensitivity analysis of CA model scale parameters, NOT LULC prediction/simulation\\n3. **Future scenarios**: No multiple future scenarios implemented; only historical data (1991-2004) used for model validation\\n4. **Temporal focus**: Retrospective hindcast validation, not forward-looking LULC projections\\n\\nWhile the paper employs LULC modeling techniques and demonstrates rigorous quantitative analysis, it is fundamentally a methodological study examining how scale parameters affect CA model behavior, not a study focused on predicting national-scale LULC change. The inclusion criteria explicitly require LULC prediction as the primary focus with national-scale implementation and multiple future scenarios—none of which are present in this work.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12724,\"completion_tokens\":1297,\"total_tokens\":14021,\"cost\":0.019209,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.019209,\"upstream_inference_prompt_cost\":0.012724,\"upstream_inference_completions_cost\":0.006485},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654269-xrl3wC38Y6CG7pvo7yHT",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 12724,
+        "completion_tokens": 1297,
+        "total_tokens": 14021,
+        "cost": 0.019209,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.019209,
+          "upstream_inference_prompt_cost": 0.012724,
+          "upstream_inference_completions_cost": 0.006485
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 14.452,
+  "call_id": "DS__z1_QFMY66Q8__claude__r2",
+  "fingerprint": "6137590a65944af56a900b696b351794e91a2d9672181056a546e6b6ef99d5bd",
+  "paper_id": "z1_QFMY66Q8",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:11:18.647996+00:00",
+  "input_sha256": "f365f86df6cd0a1521e3822029cb4267ed1af1113ff4c6a71607e8d256dbe570",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

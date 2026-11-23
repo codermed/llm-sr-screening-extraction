@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653288-WU5uMdmG08YlvPXrqcgo",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0025919,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 9735,
+    "completion_tokens": 160,
+    "total_tokens": 9895,
+    "cost": 0.0025919,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0025919,
+      "upstream_inference_prompt_cost": 0.0025311,
+      "upstream_inference_completions_cost": 6.08e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a consequential life cycle assessment (CLCA) study of dairy farming systems, not a review. It fails the core inclusion criteria: 1) It does not implement national-scale spatial LULC prediction; instead, it *uses* results from global economic models (GTAP, LEITAP) as inputs to estimate off-farm land use change impacts. 2) Its primary focus is on comparing the environmental impacts (climate change, land occupation) of two dairy systems, not on LULC prediction/simulation as a central research question. 3) It does not produce spatially explicit LULC maps or projections. The LULC change is treated as a calculated, non-spatial consequence derived from external models.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:54:43.463733+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 8.384,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789653288-WU5uMdmG08YlvPXrqcgo\",\"object\":\"chat.completion\",\"created\":1789653288,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a consequential life cycle assessment (CLCA) study of dairy farming systems, not a review. It fails the core inclusion criteria: 1) It does not implement national-scale spatial LULC prediction; instead, it *uses* results from global economic models (GTAP, LEITAP) as inputs to estimate off-farm land use change impacts. 2) Its primary focus is on comparing the environmental impacts (climate change, land occupation) of two dairy systems, not on LULC prediction/simulation as a central research question. 3) It does not produce spatially explicit LULC maps or projections. The LULC change is treated as a calculated, non-spatial consequence derived from external models.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":9735,\"completion_tokens\":160,\"total_tokens\":9895,\"cost\":0.0025919,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0025919,\"upstream_inference_prompt_cost\":0.0025311,\"upstream_inference_completions_cost\":0.0000608},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653288-WU5uMdmG08YlvPXrqcgo",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 9735,
+        "completion_tokens": 160,
+        "total_tokens": 9895,
+        "cost": 0.0025919,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0025919,
+          "upstream_inference_prompt_cost": 0.0025311,
+          "upstream_inference_completions_cost": 6.08e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 8.385,
+  "call_id": "DS__z1_FXRVVP9G__deepseek__r1",
+  "fingerprint": "a525febfc283ef5439f1eae16bb9a2fdee444739c1f56e0547dc568d4cd61175",
+  "paper_id": "z1_FXRVVP9G",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:54:51.848267+00:00",
+  "input_sha256": "324941c435c7b10b7a13d14e07ed36077f3e816f95accaa9cc31dd1fc0085951",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

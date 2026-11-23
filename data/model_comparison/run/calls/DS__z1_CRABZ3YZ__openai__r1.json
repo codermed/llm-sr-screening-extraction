@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789652737-YPrX84vZKN3uJugYl6Xr",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0053064,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12574,
+    "completion_tokens": 173,
+    "total_tokens": 12747,
+    "cost": 0.0053064,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0053064,
+      "upstream_inference_prompt_cost": 0.0050296,
+      "upstream_inference_completions_cost": 0.0002768
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: OK (Justification: This research article focuses primarily on land use land cover (LULC) future prediction for China at the national scale. It implements spatially explicit simulations of multiple land use classes (forest, grassland, cropland, urban, barren, water) under eight future SSP-RCP scenarios from 2015 to 2100. The study uses a spatially explicit modeling approach (FLUS model), provides quantitative accuracy assessment (Figure of Merit), and outputs mapped LULC projections at 1-km and 5-km resolutions. Multiple future scenarios are compared quantitatively. The paper is not a review and does not meet any exclusion criteria such as global-only scale, single scenario, or lack of spatial explicitness. Therefore, it meets all core inclusion criteria for national-scale spatial LULC prediction research.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:45:32.745364+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.333,
+      "raw_body": "\n         \n{\"id\":\"gen-1789652737-YPrX84vZKN3uJugYl6Xr\",\"object\":\"chat.completion\",\"created\":1789652737,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: This research article focuses primarily on land use land cover (LULC) future prediction for China at the national scale. It implements spatially explicit simulations of multiple land use classes (forest, grassland, cropland, urban, barren, water) under eight future SSP-RCP scenarios from 2015 to 2100. The study uses a spatially explicit modeling approach (FLUS model), provides quantitative accuracy assessment (Figure of Merit), and outputs mapped LULC projections at 1-km and 5-km resolutions. Multiple future scenarios are compared quantitatively. The paper is not a review and does not meet any exclusion criteria such as global-only scale, single scenario, or lack of spatial explicitness. Therefore, it meets all core inclusion criteria for national-scale spatial LULC prediction research.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12574,\"completion_tokens\":173,\"total_tokens\":12747,\"cost\":0.0053064,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0053064,\"upstream_inference_prompt_cost\":0.0050296,\"upstream_inference_completions_cost\":0.0002768},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652737-YPrX84vZKN3uJugYl6Xr",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 12574,
+        "completion_tokens": 173,
+        "total_tokens": 12747,
+        "cost": 0.0053064,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0053064,
+          "upstream_inference_prompt_cost": 0.0050296,
+          "upstream_inference_completions_cost": 0.0002768
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.333,
+  "call_id": "DS__z1_CRABZ3YZ__openai__r1",
+  "fingerprint": "b9667cb28d832c9c830315607238be3ec28d8cb200bb79469220bc83f40ca5be",
+  "paper_id": "z1_CRABZ3YZ",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:45:36.078202+00:00",
+  "input_sha256": "6ef59fd89e7a18ec8a07c97f6a4b822ff0b2f17496d426d7c8afbaad63037ca8",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

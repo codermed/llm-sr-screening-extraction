@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654965-XFfYPF7zIk3FtxwobILb",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0019676,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15943,
+    "completion_tokens": 196,
+    "total_tokens": 16139,
+    "cost": 0.0019676,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 15744,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0019676,
+      "upstream_inference_prompt_cost": 0.001654,
+      "upstream_inference_completions_cost": 0.0003136
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This is an ecological research paper focused on species distribution modeling of an invasive plant species (Rhododendron ponticum) under land cover and climate change scenarios in a specific national park (Snowdonia National Park, Wales). The study does include land cover simulation for 2050 using MLP-Markov Chain model and six GCMs for climate scenarios, but the primary focus is on predicting the future distribution of the invasive species, not on land use/land cover (LULC) prediction itself. The scale is local (national park) rather than national, and the land cover simulation is a supporting step rather than the main research objective. Also, the study does not present multiple quantitative accuracy metrics for the land cover simulation itself, nor a national-scale spatial implementation. Therefore, it fails the core inclusion criteria requiring national-scale spatial implementation and primary focus on LULC prediction. It is also not a review article.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:22:40.802673+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.122,
+      "raw_body": "\n         \n{\"id\":\"gen-1789654965-XFfYPF7zIk3FtxwobILb\",\"object\":\"chat.completion\",\"created\":1789654965,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This is an ecological research paper focused on species distribution modeling of an invasive plant species (Rhododendron ponticum) under land cover and climate change scenarios in a specific national park (Snowdonia National Park, Wales). The study does include land cover simulation for 2050 using MLP-Markov Chain model and six GCMs for climate scenarios, but the primary focus is on predicting the future distribution of the invasive species, not on land use/land cover (LULC) prediction itself. The scale is local (national park) rather than national, and the land cover simulation is a supporting step rather than the main research objective. Also, the study does not present multiple quantitative accuracy metrics for the land cover simulation itself, nor a national-scale spatial implementation. Therefore, it fails the core inclusion criteria requiring national-scale spatial implementation and primary focus on LULC prediction. It is also not a review article.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15943,\"completion_tokens\":196,\"total_tokens\":16139,\"cost\":0.0019676,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":15744,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0019676,\"upstream_inference_prompt_cost\":0.001654,\"upstream_inference_completions_cost\":0.0003136},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654965-XFfYPF7zIk3FtxwobILb",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 15943,
+        "completion_tokens": 196,
+        "total_tokens": 16139,
+        "cost": 0.0019676,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 15744,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0019676,
+          "upstream_inference_prompt_cost": 0.001654,
+          "upstream_inference_completions_cost": 0.0003136
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.122,
+  "call_id": "DS__z1_6CHAH74Z__openai__r3",
+  "fingerprint": "cf2b4231ca85d03216bfdedce7fce96092d0795c6f584142b0830a5efe71e362",
+  "paper_id": "z1_6CHAH74Z",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:22:43.924385+00:00",
+  "input_sha256": "699eb2b60b5a71ae652b959f4522662099684c0fc9a4e18b4cfccef58b651688",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

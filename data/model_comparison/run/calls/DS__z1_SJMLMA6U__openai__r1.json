@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653024-aumn2UISXCqfoZJiH2Z4",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0022912,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 5176,
+    "completion_tokens": 138,
+    "total_tokens": 5314,
+    "cost": 0.0022912,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0022912,
+      "upstream_inference_prompt_cost": 0.0020704,
+      "upstream_inference_completions_cost": 0.0002208
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a non-review research study focused on vegetation health evaluation, forest fire analysis, invasive species impact, and climate change scenario in India, but it does not include any land use land cover (LULC) prediction or simulation component. There is no implementation of future LULC scenarios, no spatial modeling of LULC change, no quantitative accuracy metrics related to LULC projections, and no mapped LULC projections presented. The climate change scenarios relate to temperature and rainfall anomalies, not to future LULC predictions. Thus, it fails the core inclusion criteria requiring primary focus on LULC prediction and modeling.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:50:19.333409+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.981,
+      "raw_body": "\n         \n{\"id\":\"gen-1789653024-aumn2UISXCqfoZJiH2Z4\",\"object\":\"chat.completion\",\"created\":1789653024,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a non-review research study focused on vegetation health evaluation, forest fire analysis, invasive species impact, and climate change scenario in India, but it does not include any land use land cover (LULC) prediction or simulation component. There is no implementation of future LULC scenarios, no spatial modeling of LULC change, no quantitative accuracy metrics related to LULC projections, and no mapped LULC projections presented. The climate change scenarios relate to temperature and rainfall anomalies, not to future LULC predictions. Thus, it fails the core inclusion criteria requiring primary focus on LULC prediction and modeling.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":5176,\"completion_tokens\":138,\"total_tokens\":5314,\"cost\":0.0022912,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0022912,\"upstream_inference_prompt_cost\":0.0020704,\"upstream_inference_completions_cost\":0.0002208},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653024-aumn2UISXCqfoZJiH2Z4",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 5176,
+        "completion_tokens": 138,
+        "total_tokens": 5314,
+        "cost": 0.0022912,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0022912,
+          "upstream_inference_prompt_cost": 0.0020704,
+          "upstream_inference_completions_cost": 0.0002208
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.981,
+  "call_id": "DS__z1_SJMLMA6U__openai__r1",
+  "fingerprint": "20354ec18c8981717663e9f4a48f02cebf5d6a4e8e26758382815937f2b2ab55",
+  "paper_id": "z1_SJMLMA6U",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:50:22.314846+00:00",
+  "input_sha256": "91f8fc7e66d33ad8cab61aa813c767bc219a8be59668a103c78d1ba77a39884e",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

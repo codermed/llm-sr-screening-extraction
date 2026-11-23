@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789655455-uzZQ2YcqER8smGDhpIy5",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.01892,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12990,
+    "completion_tokens": 1186,
+    "total_tokens": 14176,
+    "cost": 0.01892,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01892,
+      "upstream_inference_prompt_cost": 0.01299,
+      "upstream_inference_completions_cost": 0.00593
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land Use Land Cover (LULC) Future Prediction Filtering\n\n## STEP 1: Determine if Review Article\n**Finding:** This is **NOT a review article**. This is a **research/methods paper** describing the development and implementation of Australia's National Carbon Accounting System (NCAS) and the FullCAM model. It presents original system development, calibration procedures, and validation results rather than synthesizing existing literature on a topic.\n\n---\n\n## STEP 2: Evaluate Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA ASSESSMENT (Non-Review Paper):\n\n| Criterion | Status | Evidence |\n|-----------|--------|----------|\n| **Explicit national-scale spatial implementation** | ✅ PASS | Paper explicitly states: \"continental scale ecosystem-modelling system,\" \"bottom-up approach of aggregating 25 m grid resolution data...into a national account,\" covering entire Australia |\n| **Primary focus = LULC prediction/simulation** | ❌ **FAIL** | Primary focus is **carbon and nitrogen accounting** for greenhouse gas emissions reporting. LULC change is used as an INPUT/DRIVER, not the primary prediction objective |\n| **≥2 future scenarios with quantitative comparison** | ❌ **FAIL** | Paper describes historical land cover mapping (1972-2005) and validation. No future scenario projections are presented. The paper states: \"scenario-prediction capability can be used to determine the emissions consequences\" but provides no actual future LULC scenarios |\n| **Spatial modeling with quantitative accuracy metrics** | ✅ PASS | Extensive validation provided: \"2–6% of forest and 4–15% of non-forest was incorrectly classified,\" plantation mapping achieved \"91% accuracy,\" validation against field data and research sites |\n| **Outputs include mapped LULC projections** | ❌ **FAIL** | Outputs are historical land cover change maps (1972-2005) and carbon/nitrogen stocks/fluxes. No future LULC projections are provided |\n\n### EXCLUSION CRITERIA ASSESSMENT:\n\n| Criterion | Status | Evidence |\n|-----------|--------|----------|\n| **Biomass/bioenergy/carbon studies without LULC change analysis** | ⚠️ **TRIGGERED** | Primary objective is carbon and nitrogen accounting for greenhouse gas emissions. While LULC change mapping is included as a component, the core research question is about greenhouse gas emissions estimation, not LULC prediction |\n| **No LULC prediction component** | ❌ Not triggered | LULC component exists (historical mapping) |\n| **Single-scenario \"business-as-usual\" projections** | ✅ Not triggered | No future scenarios presented at all |\n| **Methodological papers without application to national-scale prediction** | ⚠️ **TRIGGERED** | This is primarily a methodological/systems paper describing model development and validation, not demonstrating predictive LULC modeling |\n| **Purely historical analysis only (no future projections)** | ✅ **TRIGGERED** | Paper presents historical land cover change analysis (1972-2005) and model validation, but explicitly does NOT include future LULC projections |\n\n---\n\n## STEP 3: Determine Primary Focus\n\n**Primary Research Question:** How can Australia develop an integrated national carbon accounting system to estimate greenhouse gas emissions and removals from terrestrial ecosystems?\n\n**LULC Role:** LULC change detection (historical, 1972-2005) is a **critical input/component** used to drive the carbon and nitrogen cycling models, but LULC prediction is **not the primary objective**.\n\nThe paper explicitly states: \"Because the primary concern was understanding the effect of changes in land cover and land use on greenhouse gas emissions, the modelling framework was designed to accommodate both forest and agricultural land use.\"\n\n---\n\n## FINAL CATEGORIZATION\n\n**Final categorization: EXCLUDED**\n\n**Justification:** \n\n1. **Primary focus mismatch:** The paper's central research objective is **greenhouse gas emissions accounting**, not LULC prediction. While comprehensive LULC change mapping is implemented as a critical input component, the core outputs are carbon/nitrogen stocks and fluxes, not LULC projections.\n\n2. **No future LULC projections:** The paper presents historical land cover change analysis (1972-2005) and model validation. It explicitly acknowledges scenario-prediction capability but provides **no actual future LULC scenarios** or projections.\n\n3. **Fails multiple core inclusion criteria:** Does not meet criteria for primary focus on LULC prediction (criterion 2), lacks ≥2 future scenarios (criterion 3), and does not output mapped LULC projections (criterion 5).\n\n4. **Meets exclusion criteria:** Qualifies as a biomass/carbon study focused on emissions accounting rather than LULC change prediction, and is primarily a methodological/systems development paper without application to national-scale LULC prediction.\n\nThis paper is highly relevant to **carbon accounting and ecosystem modeling** but falls outside the scope of research specifically focused on **LULC future prediction/change simulation**.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:30:50.289167+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 16.987,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655455-uzZQ2YcqER8smGDhpIy5\",\"object\":\"chat.completion\",\"created\":1789655455,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land Use Land Cover (LULC) Future Prediction Filtering\\n\\n## STEP 1: Determine if Review Article\\n**Finding:** This is **NOT a review article**. This is a **research/methods paper** describing the development and implementation of Australia's National Carbon Accounting System (NCAS) and the FullCAM model. It presents original system development, calibration procedures, and validation results rather than synthesizing existing literature on a topic.\\n\\n---\\n\\n## STEP 2: Evaluate Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA ASSESSMENT (Non-Review Paper):\\n\\n| Criterion | Status | Evidence |\\n|-----------|--------|----------|\\n| **Explicit national-scale spatial implementation** | ✅ PASS | Paper explicitly states: \\\"continental scale ecosystem-modelling system,\\\" \\\"bottom-up approach of aggregating 25 m grid resolution data...into a national account,\\\" covering entire Australia |\\n| **Primary focus = LULC prediction/simulation** | ❌ **FAIL** | Primary focus is **carbon and nitrogen accounting** for greenhouse gas emissions reporting. LULC change is used as an INPUT/DRIVER, not the primary prediction objective |\\n| **≥2 future scenarios with quantitative comparison** | ❌ **FAIL** | Paper describes historical land cover mapping (1972-2005) and validation. No future scenario projections are presented. The paper states: \\\"scenario-prediction capability can be used to determine the emissions consequences\\\" but provides no actual future LULC scenarios |\\n| **Spatial modeling with quantitative accuracy metrics** | ✅ PASS | Extensive validation provided: \\\"2–6% of forest and 4–15% of non-forest was incorrectly classified,\\\" plantation mapping achieved \\\"91% accuracy,\\\" validation against field data and research sites |\\n| **Outputs include mapped LULC projections** | ❌ **FAIL** | Outputs are historical land cover change maps (1972-2005) and carbon/nitrogen stocks/fluxes. No future LULC projections are provided |\\n\\n### EXCLUSION CRITERIA ASSESSMENT:\\n\\n| Criterion | Status | Evidence |\\n|-----------|--------|----------|\\n| **Biomass/bioenergy/carbon studies without LULC change analysis** | ⚠️ **TRIGGERED** | Primary objective is carbon and nitrogen accounting for greenhouse gas emissions. While LULC change mapping is included as a component, the core research question is about greenhouse gas emissions estimation, not LULC prediction |\\n| **No LULC prediction component** | ❌ Not triggered | LULC component exists (historical mapping) |\\n| **Single-scenario \\\"business-as-usual\\\" projections** | ✅ Not triggered | No future scenarios presented at all |\\n| **Methodological papers without application to national-scale prediction** | ⚠️ **TRIGGERED** | This is primarily a methodological/systems paper describing model development and validation, not demonstrating predictive LULC modeling |\\n| **Purely historical analysis only (no future projections)** | ✅ **TRIGGERED** | Paper presents historical land cover change analysis (1972-2005) and model validation, but explicitly does NOT include future LULC projections |\\n\\n---\\n\\n## STEP 3: Determine Primary Focus\\n\\n**Primary Research Question:** How can Australia develop an integrated national carbon accounting system to estimate greenhouse gas emissions and removals from terrestrial ecosystems?\\n\\n**LULC Role:** LULC change detection (historical, 1972-2005) is a **critical input/component** used to drive the carbon and nitrogen cycling models, but LULC prediction is **not the primary objective**.\\n\\nThe paper explicitly states: \\\"Because the primary concern was understanding the effect of changes in land cover and land use on greenhouse gas emissions, the modelling framework was designed to accommodate both forest and agricultural land use.\\\"\\n\\n---\\n\\n## FINAL CATEGORIZATION\\n\\n**Final categorization: EXCLUDED**\\n\\n**Justification:** \\n\\n1. **Primary focus mismatch:** The paper's central research objective is **greenhouse gas emissions accounting**, not LULC prediction. While comprehensive LULC change mapping is implemented as a critical input component, the core outputs are carbon/nitrogen stocks and fluxes, not LULC projections.\\n\\n2. **No future LULC projections:** The paper presents historical land cover change analysis (1972-2005) and model validation. It explicitly acknowledges scenario-prediction capability but provides **no actual future LULC scenarios** or projections.\\n\\n3. **Fails multiple core inclusion criteria:** Does not meet criteria for primary focus on LULC prediction (criterion 2), lacks ≥2 future scenarios (criterion 3), and does not output mapped LULC projections (criterion 5).\\n\\n4. **Meets exclusion criteria:** Qualifies as a biomass/carbon study focused on emissions accounting rather than LULC change prediction, and is primarily a methodological/systems development paper without application to national-scale LULC prediction.\\n\\nThis paper is highly relevant to **carbon accounting and ecosystem modeling** but falls outside the scope of research specifically focused on **LULC future prediction/change simulation**.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12990,\"completion_tokens\":1186,\"total_tokens\":14176,\"cost\":0.01892,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.01892,\"upstream_inference_prompt_cost\":0.01299,\"upstream_inference_completions_cost\":0.00593},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655455-uzZQ2YcqER8smGDhpIy5",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 12990,
+        "completion_tokens": 1186,
+        "total_tokens": 14176,
+        "cost": 0.01892,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01892,
+          "upstream_inference_prompt_cost": 0.01299,
+          "upstream_inference_completions_cost": 0.00593
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 16.988,
+  "call_id": "DS__z1_LIQ6LKQG__claude__r3",
+  "fingerprint": "c2c8c2d48543d1887655651010c070ab946476b65ace79c0f91ab788255fca9a",
+  "paper_id": "z1_LIQ6LKQG",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:31:07.276352+00:00",
+  "input_sha256": "b6ff1124febda557b88102673e40887a9767d006b96d186299822a443bf1d231",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

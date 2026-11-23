@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789655604-dyeMLnPIZFLk7fZsLaCZ",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.020483,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 14578,
+    "completion_tokens": 1181,
+    "total_tokens": 15759,
+    "cost": 0.020483,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.020483,
+      "upstream_inference_prompt_cost": 0.014578,
+      "upstream_inference_completions_cost": 0.005905
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land Use Scenario Dynamics-Urban Model for China\n\n## Initial Classification\nThis is a **NON-REVIEW PAPER** (research article with empirical modeling and projections).\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA:\n\n**1. Explicit national-scale spatial implementation (entire country)** ✓\n- Study area explicitly stated: \"Our study area includes all of China\" (p. 2550)\n- Covers 7 biomes and 59 ecoregions across entire nation\n- 1 km spatial resolution for entire country\n\n**2. Primary focus = LULC prediction/simulation** ✓\n- Central research question: \"simulate future urban expansion and evaluate its impacts on natural habitats in China\"\n- Primary objective explicitly stated in abstract and introduction\n- Urban land is LULC class being predicted\n\n**3. Implementation of ≥2 future scenarios with quantitative comparison** ✓\n- Uses localized Shared Socioeconomic Pathways (SSPs) with 5 pathways (SSP1-SSP5)\n- Results report ranges: \"6.84 (3.94–9.03) × 10⁴ km²\" reflecting scenario variation\n- Quantitative comparisons across scenarios presented in results\n\n**4. Spatial modeling with quantitative accuracy metrics** ✓\n- Improved LUSD-urban model with CNN implementation\n- Accuracy metrics reported:\n  - Overall Accuracy (OA): 99.45% (2010-2020 validation)\n  - Kappa coefficient: 0.73\n  - Figure of Merit (FoM): 0.26\n  - Comparison with other models (GEOMOD, FLUS) with metrics in Table 4\n\n**5. Outputs include mapped LULC projections** ✓\n- Figure 4b shows \"Spatial pattern of urban expansion from 1990 to 2050\"\n- Figure 5 shows urban land growth in biomes and ecoregions\n- Figures 6-7 show habitat loss projections by region\n\n---\n\n### SPECIFIC EXCLUSION CRITERIA:\n\n**Global-scale without national disaggregation** ✗ (Not applicable - national scale)\n\n**Local/regional/global/transboundary focus** ✗ (Not applicable - national scale)\n\n**No LULC prediction component** ✗ (Not applicable - core focus is LULC prediction)\n\n**Species-specific/ecological focus unrelated to LULC** ✗ (Partially addressed but not primary exclusion - species impacts are evaluated as consequence of LULC change, not as primary focus)\n\n**Economic/urban models lacking spatially explicit LULC outputs** ✗ (Not applicable - spatially explicit LULC outputs provided)\n\n**Biomass/bioenergy/carbon studies without LULC change analysis** ✗ (Not applicable - includes LULC change analysis)\n\n**Methodological papers without application** ✗ (Not applicable - applied to national-scale prediction)\n\n**Purely qualitative/historical only** ✗ (Not applicable - includes future projections 2020-2050)\n\n**Remote sensing technical studies without predictive modeling** ✗ (Not applicable - includes predictive modeling)\n\n**Single-scenario \"business-as-usual\" projections** ✗ (Not applicable - uses 5 SSP scenarios)\n\n---\n\n## Additional Full-Text Verification\n\n✓ **Scale claims verified**: Methodology explicitly describes national-scale implementation with 1 km resolution across all China\n\n✓ **Quantitative metrics reported**: Comprehensive accuracy assessment (OA, Kappa, FoM) across multiple cities and models\n\n✓ **Spatial explicitness confirmed**: CNN-based approach explicitly designed to extract \"multiscale neighborhood information\" for spatial allocation\n\n✓ **Future projections present**: Projections from 2020-2050 with scenario ranges\n\n✓ **LULC change analysis**: Quantified habitat loss by type (grasslands, forests, deserts, etc.) and region\n\n---\n\n## Final Categorization\n\n**Final categorization: OK**\n\n**Justification:** This paper fully satisfies all five core inclusion criteria for national-scale LULC prediction research:\n1. Implements modeling across entire China at 1 km resolution\n2. Primary focus is urban land LULC prediction/simulation (central research question)\n3. Uses 5 SSP scenarios with quantitative comparison of outcomes\n4. Employs spatially explicit CNN-based modeling with comprehensive accuracy metrics (OA 99.45%, Kappa 0.73, FoM 0.26)\n5. Produces mapped LULC projections to 2050\n\nThe paper meets no exclusion criteria. While it includes ecological impact assessment (habitat loss, threatened species), this is secondary to the primary LULC prediction objective. The improved LUSD-urban model represents a methodological advance specifically designed for national-scale LULC prediction in China with demonstrated superior accuracy compared to existing models.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:33:19.950653+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 11.452,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655604-dyeMLnPIZFLk7fZsLaCZ\",\"object\":\"chat.completion\",\"created\":1789655604,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land Use Scenario Dynamics-Urban Model for China\\n\\n## Initial Classification\\nThis is a **NON-REVIEW PAPER** (research article with empirical modeling and projections).\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA:\\n\\n**1. Explicit national-scale spatial implementation (entire country)** ✓\\n- Study area explicitly stated: \\\"Our study area includes all of China\\\" (p. 2550)\\n- Covers 7 biomes and 59 ecoregions across entire nation\\n- 1 km spatial resolution for entire country\\n\\n**2. Primary focus = LULC prediction/simulation** ✓\\n- Central research question: \\\"simulate future urban expansion and evaluate its impacts on natural habitats in China\\\"\\n- Primary objective explicitly stated in abstract and introduction\\n- Urban land is LULC class being predicted\\n\\n**3. Implementation of ≥2 future scenarios with quantitative comparison** ✓\\n- Uses localized Shared Socioeconomic Pathways (SSPs) with 5 pathways (SSP1-SSP5)\\n- Results report ranges: \\\"6.84 (3.94–9.03) × 10⁴ km²\\\" reflecting scenario variation\\n- Quantitative comparisons across scenarios presented in results\\n\\n**4. Spatial modeling with quantitative accuracy metrics** ✓\\n- Improved LUSD-urban model with CNN implementation\\n- Accuracy metrics reported:\\n  - Overall Accuracy (OA): 99.45% (2010-2020 validation)\\n  - Kappa coefficient: 0.73\\n  - Figure of Merit (FoM): 0.26\\n  - Comparison with other models (GEOMOD, FLUS) with metrics in Table 4\\n\\n**5. Outputs include mapped LULC projections** ✓\\n- Figure 4b shows \\\"Spatial pattern of urban expansion from 1990 to 2050\\\"\\n- Figure 5 shows urban land growth in biomes and ecoregions\\n- Figures 6-7 show habitat loss projections by region\\n\\n---\\n\\n### SPECIFIC EXCLUSION CRITERIA:\\n\\n**Global-scale without national disaggregation** ✗ (Not applicable - national scale)\\n\\n**Local/regional/global/transboundary focus** ✗ (Not applicable - national scale)\\n\\n**No LULC prediction component** ✗ (Not applicable - core focus is LULC prediction)\\n\\n**Species-specific/ecological focus unrelated to LULC** ✗ (Partially addressed but not primary exclusion - species impacts are evaluated as consequence of LULC change, not as primary focus)\\n\\n**Economic/urban models lacking spatially explicit LULC outputs** ✗ (Not applicable - spatially explicit LULC outputs provided)\\n\\n**Biomass/bioenergy/carbon studies without LULC change analysis** ✗ (Not applicable - includes LULC change analysis)\\n\\n**Methodological papers without application** ✗ (Not applicable - applied to national-scale prediction)\\n\\n**Purely qualitative/historical only** ✗ (Not applicable - includes future projections 2020-2050)\\n\\n**Remote sensing technical studies without predictive modeling** ✗ (Not applicable - includes predictive modeling)\\n\\n**Single-scenario \\\"business-as-usual\\\" projections** ✗ (Not applicable - uses 5 SSP scenarios)\\n\\n---\\n\\n## Additional Full-Text Verification\\n\\n✓ **Scale claims verified**: Methodology explicitly describes national-scale implementation with 1 km resolution across all China\\n\\n✓ **Quantitative metrics reported**: Comprehensive accuracy assessment (OA, Kappa, FoM) across multiple cities and models\\n\\n✓ **Spatial explicitness confirmed**: CNN-based approach explicitly designed to extract \\\"multiscale neighborhood information\\\" for spatial allocation\\n\\n✓ **Future projections present**: Projections from 2020-2050 with scenario ranges\\n\\n✓ **LULC change analysis**: Quantified habitat loss by type (grasslands, forests, deserts, etc.) and region\\n\\n---\\n\\n## Final Categorization\\n\\n**Final categorization: OK**\\n\\n**Justification:** This paper fully satisfies all five core inclusion criteria for national-scale LULC prediction research:\\n1. Implements modeling across entire China at 1 km resolution\\n2. Primary focus is urban land LULC prediction/simulation (central research question)\\n3. Uses 5 SSP scenarios with quantitative comparison of outcomes\\n4. Employs spatially explicit CNN-based modeling with comprehensive accuracy metrics (OA 99.45%, Kappa 0.73, FoM 0.26)\\n5. Produces mapped LULC projections to 2050\\n\\nThe paper meets no exclusion criteria. While it includes ecological impact assessment (habitat loss, threatened species), this is secondary to the primary LULC prediction objective. The improved LUSD-urban model represents a methodological advance specifically designed for national-scale LULC prediction in China with demonstrated superior accuracy compared to existing models.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":14578,\"completion_tokens\":1181,\"total_tokens\":15759,\"cost\":0.020483,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.020483,\"upstream_inference_prompt_cost\":0.014578,\"upstream_inference_completions_cost\":0.005905},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655604-dyeMLnPIZFLk7fZsLaCZ",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 14578,
+        "completion_tokens": 1181,
+        "total_tokens": 15759,
+        "cost": 0.020483,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.020483,
+          "upstream_inference_prompt_cost": 0.014578,
+          "upstream_inference_completions_cost": 0.005905
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 11.452,
+  "call_id": "DS__z1_FAYWZZ4Z__claude__r3",
+  "fingerprint": "43afa8970e69b685a2c63afcddf6fed6e3e7ed66932aacc853f959f7e81c4949",
+  "paper_id": "z1_FAYWZZ4Z",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:33:31.402618+00:00",
+  "input_sha256": "d21921adc2bdf3e8fa7ed93bb436def843bde1ceb30e1347e2e03833ab2d9abd",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

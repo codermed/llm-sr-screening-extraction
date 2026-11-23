@@ -1,0 +1,95 @@
+{
+  "configuration": {
+    "replicates": 3,
+    "order_seed": 20260916,
+    "transport_retries": 2,
+    "timeout_seconds": 180,
+    "max_parallel_total": 4,
+    "max_parallel_per_model": 2,
+    "models": [
+      {
+        "name": "qwen",
+        "enabled": true,
+        "api": "openrouter",
+        "model": "qwen/qwen3-max",
+        "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+        "api_key_env": "OPENROUTER_API_KEY",
+        "provider_slug": "alibaba",
+        "parameters": {
+          "temperature": 0.6,
+          "max_tokens": 4096
+        },
+        "max_parallel_requests": 2
+      },
+      {
+        "name": "deepseek",
+        "enabled": true,
+        "api": "openrouter",
+        "model": "deepseek/deepseek-v3.2",
+        "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+        "api_key_env": "OPENROUTER_API_KEY",
+        "provider_slug": "atlas-cloud/fp8",
+        "parameters": {
+          "temperature": 0.6,
+          "max_tokens": 4096,
+          "reasoning": {
+            "enabled": false
+          }
+        },
+        "max_parallel_requests": 2
+      },
+      {
+        "name": "openai",
+        "enabled": true,
+        "api": "openrouter",
+        "model": "openai/gpt-4.1-mini",
+        "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+        "api_key_env": "OPENROUTER_API_KEY",
+        "provider_slug": "openai",
+        "parameters": {
+          "temperature": 0.6,
+          "max_tokens": 4096
+        },
+        "max_parallel_requests": 2
+      },
+      {
+        "name": "claude",
+        "enabled": true,
+        "api": "openrouter",
+        "model": "anthropic/claude-haiku-4.5",
+        "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+        "api_key_env": "OPENROUTER_API_KEY",
+        "provider_slug": "anthropic",
+        "parameters": {
+          "temperature": 0.6,
+          "max_tokens": 4096,
+          "reasoning": {
+            "enabled": false
+          }
+        },
+        "max_parallel_requests": 2
+      }
+    ]
+  },
+  "prompts": {
+    "DS": {
+      "system": "You are an academic researcher filtering papers.",
+      "user": "Full Text Analysis Request:\nFull Text: {full_text}\nINSTRUCTIONS:\nFIRST determine if paper is a review article\nTHEN apply categorization flow:\nIf REVIEW about or touches on land use land cover (LULC) future prediction ➔ 'REVIEW'\nIf REVIEW NOT focused on LULC future prediction ➔ 'EXCLUDED'\nIf NON-REVIEW PAPER ➔ evaluate against inclusion/exclusion criteria\nFor research papers:\nCheck ALL core inclusion criteria (must pass ALL)\nCheck ALL exclusion criteria (must pass NONE)\nDetermine primary focus:\nPrimary objective = LULC prediction ➔ 'OK'\nLULC prediction used as input/step ➔ 'POSSIBLE'\nCATEGORY LABELS PRIORITIZED ORDER:\n'REVIEW' - Synthesizes existing LULC prediction research (any scale)\n'EXCLUDED' - Fails ANY inclusion OR meets ANY exclusion criteria\n'OK' - Research focused ON LULC prediction meeting ALL criteria\n'POSSIBLE' – LULC prediction not primary focus. It uses LULC predictions made by others/incidental implementation\nCORE INCLUSION CRITERIA (FOR NON-REVIEW PAPERS):\nExplicit national-scale spatial implementation (entire country)\nPrimary focus = LULC prediction/simulation (central research question)\nImplementation of ≥2 future scenarios with quantitative comparison\nSpatial modeling with quantitative accuracy metrics (e.g., accuracy, change rates, etc.)\nEven single-class LULC focus is acceptable if all criteria are met\nOutputs include mapped LULC projections\nSPECIFIC EXCLUSION CRITERIA:\nGlobal-scale analysis without national-level disaggregation\nLocal/regional/global/transboundary scale focus\nNo LULC prediction component\nSpecies-specific/ecological focus (flora/fauna) unrelated to LULC \nEconomic/urban models lacking spatially explicit LULC outputs\nBiomass/bioenergy/carbon studies without LULC change analysis\nMethodological papers without application to national-scale prediction\nPurely Qualitative/Historical analysis only (no future projections)\nRemote sensing technical studies without predictive modeling\nSingle-scenario \"business-as-usual\" projections\nADDITIONAL CHECKS FOR FULL TEXT:\nVerify scale claims in methodology/results (abstract may be misleading)\nEnsure quantitative metrics are reported (e.g., accuracy, change rates, etc.)\nCheck for spatial explicitness in modeling approach\nDo not exclude or skip papers based on territorial disputes, geopolitical status, or contested sovereignty claims. \nAssess national-scale implementation strictly based on the paper’s stated study area and methodology, regardless of external geopolitical context.\nFINAL OUTPUT FORMAT:\nFinal categorization: <CATEGORY_LABEL> (Justification: key reasons based on full text)"
+    },
+    "IE": {
+      "system": "You are an academic researcher extracting structured insights from papers.",
+      "user": "Academic paper full Text Insights Extraction Request:\nExtract detailed insights from the provided paper based on the following categories. \nRespond with a structured text format where each category is followed by its value. \nUse the exact category names shown below. If a category is not explicitly mentioned, \nuse \"Not specified\".\nCATEGORIES TO EXTRACT:\nobjective: <primary objective or aim of the study>\ncountry: <geographical scope of the study>\nland_use_classes: <land use and cover classes considered>\nbaseline_years: <baseline year(s)>\ntarget_future_years: <target future year(s)>\nscenarios: <scenarios used>\nanalysis_methods: <methods or techniques used for analysis>\nsimulation_method_advantages: <advantages of the selected simulation approach over other methods>\npredictors: <list of selected variables/factors for predicting different land uses>\npopulation_selected: <were population trends and future projections considered?> \ndata_sources: <primary and secondary data sources>\ntools_software_used: <tools or software used>\nvalidation_performed: <was validation performed? (Yes/No)>\nvalidation_methods: <methods used for validation>\nvalidation_data_sources: <data sources used for validation>\nkey_findings: <key findings of the study>\nimplications: <implications of the findings>\nlimitations: <limitations acknowledged>\nfuture_directions: <future research directions>\nscalability: <scalability to other regions>\nnovelty: <novel aspects of the study>\nRULES:\nUse exactly the category names shown above\nKeep responses concise but complete\nFor lists, use semicolon-separated values\nFor multi-line values, indent subsequent lines\nMaintain original terminology from the paper\nPAPER FULL TEXT:\nFull Text: {full_text}"
+    },
+    "_provenance": {
+      "source": "Submitted Supplementary Information, Notes 3 and 4; paragraph text transcribed; list formatting normalized.",
+      "source_sha256": "cb173bfb123c31214b0bbae8ea2f04ee1bf9f4bb18422568f6107482dabe97bc",
+      "system_prompts": "Repository DeepScreening.py and InsightsExtraction.py at 15540fd659eecb0b14f6931503c6190ce07dfea1",
+      "historical_byte_identity_verified": false,
+      "IE_fields": 21,
+      "DS_contains_territorial_context_instructions": true
+    }
+  },
+  "inputs_sha256": "802caa058e29610b45c213fb60efb3081f3efb9da36d41e5f464d6e16ef983ec",
+  "runner_sha256": "0ff595cc3e6c8f1c126e8c7276fee35c6796c10a960d1b554a0f608eef662779",
+  "pilot_tasks": 0
+}

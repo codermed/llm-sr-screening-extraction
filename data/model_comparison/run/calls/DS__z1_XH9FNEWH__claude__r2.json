@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789654889-ce9Y44oLz8IrkfVchyJJ",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.024369,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 17884,
+    "completion_tokens": 1297,
+    "total_tokens": 19181,
+    "cost": 0.024369,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.024369,
+      "upstream_inference_prompt_cost": 0.017884,
+      "upstream_inference_completions_cost": 0.006485
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Grundy et al. (2016)\n\n## Step 1: Determine if Review Article\n**Result: NOT A REVIEW** - This is an original research paper presenting novel integrated systems modeling and scenario analysis for Australian agricultural land use and production projections to 2050.\n\n---\n\n## Step 2: Apply Categorization Flow for Non-Review Paper\n\n### Core Inclusion Criteria Evaluation:\n\n**1. Explicit national-scale spatial implementation (entire country)?**\n- ✓ YES - Study covers \"Australia's intensively managed agricultural lands; an area of approximately 85 million ha stretching from central eastern Queensland to the wheat belt of southern Western Australia\" (Section 2.1)\n- Covers ~85 Mha with 33 Mha beef, 18 Mha sheep, 3 Mha dairy, 25 Mha grain production\n- Spatial modeling at ~1.1 km grid resolution across the study area\n\n**2. Primary focus = LULC prediction/simulation?**\n- ✓ YES - Central research question explicitly stated: \"explore the response of Australian land use and agricultural production to these changes from 2013 to 2050\"\n- Primary outputs are land use change projections and spatial patterns\n- LUTO model (Land Use Trade-Offs) is the primary analytical tool\n\n**3. Implementation of ≥2 future scenarios with quantitative comparison?**\n- ✓ YES - \"72 unique scenario combinations of four global outlooks, three productivity rates, three adoption hurdle rates, and two capacity constraint settings\"\n- Four global outlooks: L1, M2, M3, H3 (Table 2)\n- Quantitative comparison across scenarios (Figures 4-8)\n\n**4. Spatial modeling with quantitative accuracy metrics?**\n- ✓ YES - LUTO model produces quantitative outputs:\n  - Land use areas in hectares (e.g., \"37.0 Mha (47.0%) unconstrained versus 14.2 Mha (18.0%) when constrained\")\n  - Production volumes (crop, cattle, sheep)\n  - Output rates (yield metrics: t/ha, head/ha)\n  - Value metrics (real value in 2010 dollars)\n  - Percentage changes documented throughout results\n\n**5. Outputs include mapped LULC projections?**\n- ✓ YES - \"The extent and spatial pattern of this land use change varied across scenarios (Figs. S1–S8)\"\n- Figures 4, 5 show spatial-temporal patterns\n- Multiple supplementary figures (S1-S8) show spatial distribution of land use change\n\n---\n\n### Exclusion Criteria Evaluation:\n\n**Global-scale analysis without national disaggregation?**\n- ✗ NO - Paper is explicitly national-scale for Australia\n\n**Local/regional/global/transboundary focus?**\n- ✗ NO - National-scale focus on Australia\n\n**No LULC prediction component?**\n- ✗ NO - LULC prediction is the primary focus\n\n**Species-specific/ecological focus unrelated to LULC?**\n- ✗ NO - Focus is on land use change, not species-specific ecology\n\n**Economic/urban models lacking spatially explicit LULC outputs?**\n- ✗ NO - Paper includes spatially explicit LULC outputs from LUTO model\n\n**Biomass/bioenergy/carbon studies without LULC change analysis?**\n- ✗ NO - While carbon plantings and bioenergy are discussed, LULC change is the primary focus\n\n**Methodological papers without application?**\n- ✗ NO - Methodological framework is applied to national-scale prediction\n\n**Purely qualitative/historical analysis?**\n- ✗ NO - Includes quantitative future projections (2013-2050)\n\n**Remote sensing technical studies?**\n- ✗ NO - Systems modeling approach, not remote sensing\n\n**Single-scenario projections?**\n- ✗ NO - Multiple scenarios (72 combinations)\n\n---\n\n## Step 3: Verify Against Additional Checks\n\n**Scale claims verification:** Methodology clearly states national-scale study area with ~1.1 km spatial resolution. Results section confirms spatial modeling with quantitative outputs.\n\n**Quantitative metrics reported:** YES - Change rates (Mha, %), production volumes, yields, values all quantified.\n\n**Spatial explicitness:** YES - LUTO model operates at grid cell resolution with spatial outputs for each scenario.\n\n**Geopolitical considerations:** Not applicable - Australia is internationally recognized nation-state.\n\n---\n\n## FINAL CATEGORIZATION\n\n**Final categorization: OK**\n\n**Justification:** \nThis paper meets ALL core inclusion criteria for national-scale LULC prediction research:\n1. Explicit national-scale implementation across Australia's 85 Mha agricultural zone at ~1.1 km spatial resolution\n2. Primary focus is LULC prediction/simulation (central research question and primary outputs)\n3. Implementation of 72 quantitative scenario combinations (4 global outlooks × 3 productivity × 3 adoption hurdle rates × 2 capacity constraints)\n4. Spatial modeling with quantitative metrics (hectares, percentages, production volumes, yields, values)\n5. Mapped LULC projections across scenarios (Figures 4-5, S1-S8)\n\nThe paper passes ALL inclusion criteria and NONE of the exclusion criteria. LULC prediction is unambiguously the primary research focus, with comprehensive scenario analysis and spatial modeling implementation.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:21:24.153947+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 14.156,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789654889-ce9Y44oLz8IrkfVchyJJ\",\"object\":\"chat.completion\",\"created\":1789654889,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Grundy et al. (2016)\\n\\n## Step 1: Determine if Review Article\\n**Result: NOT A REVIEW** - This is an original research paper presenting novel integrated systems modeling and scenario analysis for Australian agricultural land use and production projections to 2050.\\n\\n---\\n\\n## Step 2: Apply Categorization Flow for Non-Review Paper\\n\\n### Core Inclusion Criteria Evaluation:\\n\\n**1. Explicit national-scale spatial implementation (entire country)?**\\n- ✓ YES - Study covers \\\"Australia's intensively managed agricultural lands; an area of approximately 85 million ha stretching from central eastern Queensland to the wheat belt of southern Western Australia\\\" (Section 2.1)\\n- Covers ~85 Mha with 33 Mha beef, 18 Mha sheep, 3 Mha dairy, 25 Mha grain production\\n- Spatial modeling at ~1.1 km grid resolution across the study area\\n\\n**2. Primary focus = LULC prediction/simulation?**\\n- ✓ YES - Central research question explicitly stated: \\\"explore the response of Australian land use and agricultural production to these changes from 2013 to 2050\\\"\\n- Primary outputs are land use change projections and spatial patterns\\n- LUTO model (Land Use Trade-Offs) is the primary analytical tool\\n\\n**3. Implementation of ≥2 future scenarios with quantitative comparison?**\\n- ✓ YES - \\\"72 unique scenario combinations of four global outlooks, three productivity rates, three adoption hurdle rates, and two capacity constraint settings\\\"\\n- Four global outlooks: L1, M2, M3, H3 (Table 2)\\n- Quantitative comparison across scenarios (Figures 4-8)\\n\\n**4. Spatial modeling with quantitative accuracy metrics?**\\n- ✓ YES - LUTO model produces quantitative outputs:\\n  - Land use areas in hectares (e.g., \\\"37.0 Mha (47.0%) unconstrained versus 14.2 Mha (18.0%) when constrained\\\")\\n  - Production volumes (crop, cattle, sheep)\\n  - Output rates (yield metrics: t/ha, head/ha)\\n  - Value metrics (real value in 2010 dollars)\\n  - Percentage changes documented throughout results\\n\\n**5. Outputs include mapped LULC projections?**\\n- ✓ YES - \\\"The extent and spatial pattern of this land use change varied across scenarios (Figs. S1–S8)\\\"\\n- Figures 4, 5 show spatial-temporal patterns\\n- Multiple supplementary figures (S1-S8) show spatial distribution of land use change\\n\\n---\\n\\n### Exclusion Criteria Evaluation:\\n\\n**Global-scale analysis without national disaggregation?**\\n- ✗ NO - Paper is explicitly national-scale for Australia\\n\\n**Local/regional/global/transboundary focus?**\\n- ✗ NO - National-scale focus on Australia\\n\\n**No LULC prediction component?**\\n- ✗ NO - LULC prediction is the primary focus\\n\\n**Species-specific/ecological focus unrelated to LULC?**\\n- ✗ NO - Focus is on land use change, not species-specific ecology\\n\\n**Economic/urban models lacking spatially explicit LULC outputs?**\\n- ✗ NO - Paper includes spatially explicit LULC outputs from LUTO model\\n\\n**Biomass/bioenergy/carbon studies without LULC change analysis?**\\n- ✗ NO - While carbon plantings and bioenergy are discussed, LULC change is the primary focus\\n\\n**Methodological papers without application?**\\n- ✗ NO - Methodological framework is applied to national-scale prediction\\n\\n**Purely qualitative/historical analysis?**\\n- ✗ NO - Includes quantitative future projections (2013-2050)\\n\\n**Remote sensing technical studies?**\\n- ✗ NO - Systems modeling approach, not remote sensing\\n\\n**Single-scenario projections?**\\n- ✗ NO - Multiple scenarios (72 combinations)\\n\\n---\\n\\n## Step 3: Verify Against Additional Checks\\n\\n**Scale claims verification:** Methodology clearly states national-scale study area with ~1.1 km spatial resolution. Results section confirms spatial modeling with quantitative outputs.\\n\\n**Quantitative metrics reported:** YES - Change rates (Mha, %), production volumes, yields, values all quantified.\\n\\n**Spatial explicitness:** YES - LUTO model operates at grid cell resolution with spatial outputs for each scenario.\\n\\n**Geopolitical considerations:** Not applicable - Australia is internationally recognized nation-state.\\n\\n---\\n\\n## FINAL CATEGORIZATION\\n\\n**Final categorization: OK**\\n\\n**Justification:** \\nThis paper meets ALL core inclusion criteria for national-scale LULC prediction research:\\n1. Explicit national-scale implementation across Australia's 85 Mha agricultural zone at ~1.1 km spatial resolution\\n2. Primary focus is LULC prediction/simulation (central research question and primary outputs)\\n3. Implementation of 72 quantitative scenario combinations (4 global outlooks × 3 productivity × 3 adoption hurdle rates × 2 capacity constraints)\\n4. Spatial modeling with quantitative metrics (hectares, percentages, production volumes, yields, values)\\n5. Mapped LULC projections across scenarios (Figures 4-5, S1-S8)\\n\\nThe paper passes ALL inclusion criteria and NONE of the exclusion criteria. LULC prediction is unambiguously the primary research focus, with comprehensive scenario analysis and spatial modeling implementation.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":17884,\"completion_tokens\":1297,\"total_tokens\":19181,\"cost\":0.024369,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.024369,\"upstream_inference_prompt_cost\":0.017884,\"upstream_inference_completions_cost\":0.006485},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654889-ce9Y44oLz8IrkfVchyJJ",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 17884,
+        "completion_tokens": 1297,
+        "total_tokens": 19181,
+        "cost": 0.024369,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.024369,
+          "upstream_inference_prompt_cost": 0.017884,
+          "upstream_inference_completions_cost": 0.006485
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 14.157,
+  "call_id": "DS__z1_XH9FNEWH__claude__r2",
+  "fingerprint": "a9cecafb035b8421ba5a191bc4f3d59021f038fcfbfbe9dbd0abca616665e5f6",
+  "paper_id": "z1_XH9FNEWH",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:21:38.310477+00:00",
+  "input_sha256": "b9dcd4956861fd2ddfe435b59862a95116fedd47ec611d8fff939aef7b574040",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653988-bKgg767dLOlVarHFZmwt",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0014448,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 11540,
+    "completion_tokens": 154,
+    "total_tokens": 11694,
+    "cost": 0.0014448,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 11392,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0014448,
+      "upstream_inference_prompt_cost": 0.0011984,
+      "upstream_inference_completions_cost": 0.0002464
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This is a research article focused primarily on systemic transitions in energy and economy using the Global Change Data Base (GCDB) method. The paper analyzes trends in energy demand, economic sector shifts, and fuel mixes at national and continental scales but does not have a primary focus on land use land cover (LULC) future prediction. Although it references land use change as part of broader systemic transitions, it does not implement spatially explicit national-scale LULC modeling with mapped projections or quantitative accuracy metrics. The paper also lacks multiple future scenario implementations specifically for LULC. It is not a review article synthesizing LULC prediction research, nor does it meet core inclusion criteria for LULC-focused research papers.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:06:23.971801+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.749,
+      "raw_body": "\n         \n{\"id\":\"gen-1789653988-bKgg767dLOlVarHFZmwt\",\"object\":\"chat.completion\",\"created\":1789653988,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This is a research article focused primarily on systemic transitions in energy and economy using the Global Change Data Base (GCDB) method. The paper analyzes trends in energy demand, economic sector shifts, and fuel mixes at national and continental scales but does not have a primary focus on land use land cover (LULC) future prediction. Although it references land use change as part of broader systemic transitions, it does not implement spatially explicit national-scale LULC modeling with mapped projections or quantitative accuracy metrics. The paper also lacks multiple future scenario implementations specifically for LULC. It is not a review article synthesizing LULC prediction research, nor does it meet core inclusion criteria for LULC-focused research papers.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":11540,\"completion_tokens\":154,\"total_tokens\":11694,\"cost\":0.0014448,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":11392,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0014448,\"upstream_inference_prompt_cost\":0.0011984,\"upstream_inference_completions_cost\":0.0002464},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653988-bKgg767dLOlVarHFZmwt",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 11540,
+        "completion_tokens": 154,
+        "total_tokens": 11694,
+        "cost": 0.0014448,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 11392,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0014448,
+          "upstream_inference_prompt_cost": 0.0011984,
+          "upstream_inference_completions_cost": 0.0002464
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.749,
+  "call_id": "DS__z1_TBXIPFA5__openai__r2",
+  "fingerprint": "880e0b6aacccc41f1742e62780820fe8ceb033fd5beba6aa06b7c22ac9ab4101",
+  "paper_id": "z1_TBXIPFA5",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:06:26.720876+00:00",
+  "input_sha256": "fb7b3d1035551c19026316dc13c1ff91d0d1ea30cbf9d4a265958a0696516951",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

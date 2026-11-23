@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789655025-DZBZ6tgR1LsAk9hPxLdz",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00138494,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 5144,
+    "completion_tokens": 125,
+    "total_tokens": 5269,
+    "cost": 0.00138494,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00138494,
+      "upstream_inference_prompt_cost": 0.00133744,
+      "upstream_inference_completions_cost": 4.75e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is not a review article. It is a research paper that evaluates historical vegetation health trends (1982–2006) and analyzes ancillary data (fire, invasive species). While it includes future climate anomaly predictions (temperature/rainfall for 2030), its core focus is on retrospective analysis and assessing current vulnerabilities. It does not implement or present spatial LULC prediction/simulation models, nor does it produce mapped LULC projections under multiple scenarios. The study uses predicted climate data as an input for impact assessment, not for predicting future LULC change.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:23:40.547491+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.184,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789655025-DZBZ6tgR1LsAk9hPxLdz\",\"object\":\"chat.completion\",\"created\":1789655025,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is not a review article. It is a research paper that evaluates historical vegetation health trends (1982–2006) and analyzes ancillary data (fire, invasive species). While it includes future climate anomaly predictions (temperature/rainfall for 2030), its core focus is on retrospective analysis and assessing current vulnerabilities. It does not implement or present spatial LULC prediction/simulation models, nor does it produce mapped LULC projections under multiple scenarios. The study uses predicted climate data as an input for impact assessment, not for predicting future LULC change.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":5144,\"completion_tokens\":125,\"total_tokens\":5269,\"cost\":0.00138494,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00138494,\"upstream_inference_prompt_cost\":0.00133744,\"upstream_inference_completions_cost\":0.0000475},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655025-DZBZ6tgR1LsAk9hPxLdz",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 5144,
+        "completion_tokens": 125,
+        "total_tokens": 5269,
+        "cost": 0.00138494,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00138494,
+          "upstream_inference_prompt_cost": 0.00133744,
+          "upstream_inference_completions_cost": 4.75e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.184,
+  "call_id": "DS__z1_SJMLMA6U__deepseek__r3",
+  "fingerprint": "cbdbd5fd9e259f8e46deda1b1151fa672272729e308ee8356fd040250492b4aa",
+  "paper_id": "z1_SJMLMA6U",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:23:44.731253+00:00",
+  "input_sha256": "91f8fc7e66d33ad8cab61aa813c767bc219a8be59668a103c78d1ba77a39884e",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

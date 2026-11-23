@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789653330-EkhAFICBgHauoawOWvpf",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.021574,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 14269,
+    "completion_tokens": 1461,
+    "total_tokens": 15730,
+    "cost": 0.021574,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.021574,
+      "upstream_inference_prompt_cost": 0.014269,
+      "upstream_inference_completions_cost": 0.007305
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land Use Projections in China under SSP-RCP Scenarios\n\n## Initial Classification\n**Is this a review article?** No. This is a research paper presenting original land use simulation modeling and projections.\n\n---\n\n## Core Inclusion Criteria Evaluation (Non-Review Paper)\n\n### ✓ Criterion 1: Explicit national-scale spatial implementation\n- **Status: PASS**\n- Study area: Entire China (stated throughout: \"land use projections...in China\")\n- Spatial coverage: Nationwide implementation at 1 km × 1 km resolution\n- Evidence: \"The land use simulations are first implemented for six kinds of land use types...at a 1 km × 1 km resolution\" and results shown for all of China\n\n### ✓ Criterion 2: Primary focus = LULC prediction/simulation\n- **Status: PASS**\n- Central research question: Generate high-resolution land use projections for China under SSP-RCP scenarios\n- Stated objective: \"the aim of this study is to generate a set of high-resolution projections of land use changes for regional researches in China\"\n- Primary contribution: FLUS model application to produce spatially explicit LULC projections\n\n### ✓ Criterion 3: ≥2 future scenarios with quantitative comparison\n- **Status: PASS**\n- Eight SSP-RCP scenarios implemented: SSP5-8.5, SSP3-7.0, SSP2-4.5, SSP1-2.6, SSP4-6.0, SSP4-3.4, SSP5-3.4-OS, SSP1-1.9\n- Quantitative comparisons provided:\n  - Fig. 1: Trajectories of land use demand across scenarios\n  - Fig. 4: Land use amounts by PFT level for 2100\n  - Narrative comparison of cropland areas: \"cropland area in the SSP4-3.4 scenario is more than twice that in the SSP3-7.0 scenario\"\n\n### ✓ Criterion 4: Spatial modeling with quantitative accuracy metrics\n- **Status: PASS**\n- Spatial modeling: FLUS (Cellular Automata-based) model with artificial neural networks\n- Quantitative accuracy metrics reported:\n  - Figure of Merit (FoM) values: range 1.52%-20.01%, mean 12.14% (Table 4)\n  - Per-class FoM: Forest 20.01%, Grassland 11.86%, Cropland 14.58%, Urban 12.74%, Barren 1.52%\n  - Validation period: 2001-2015 historical simulation\n  - Spatial uncertainty analysis: kernel density analysis (Fig. S4)\n\n### ✓ Criterion 5: Outputs include mapped LULC projections\n- **Status: PASS**\n- 1 km × 1 km resolution maps for 2015-2100 (6 land use types)\n- 5 km × 5 km resolution maps at PFT level for climate model application\n- Multiple figures showing spatial distributions (Figs. 3, 5, 6, S3, S5, S6, S7)\n- Data publicly available: \"This high-resolution dataset with eight SSP-RCP scenarios for China is freely available\"\n\n---\n\n## Exclusion Criteria Evaluation\n\n### ✗ Global-scale without national disaggregation\n- **Status: PASS (not excluded)** - Study explicitly disaggregates to national China scale\n\n### ✗ Local/regional focus\n- **Status: PASS (not excluded)** - National-scale primary analysis (regional examples are secondary illustrations)\n\n### ✗ No LULC prediction component\n- **Status: PASS (not excluded)** - LULC prediction is the core focus\n\n### ✗ Species-specific/ecological focus unrelated to LULC\n- **Status: PASS (not excluded)** - PFT classification is for climate model compatibility, not ecological focus\n\n### ✗ Economic/urban models lacking spatial LULC outputs\n- **Status: PASS (not excluded)** - Spatially explicit LULC outputs provided\n\n### ✗ Biomass/bioenergy/carbon without LULC change analysis\n- **Status: PASS (not excluded)** - LULC change is primary focus\n\n### ✗ Methodological papers without national-scale application\n- **Status: PASS (not excluded)** - Methodology applied to national-scale China projections\n\n### ✗ Purely qualitative/historical only\n- **Status: PASS (not excluded)** - Future projections 2015-2100 with quantitative results\n\n### ✗ Remote sensing technical studies without predictive modeling\n- **Status: PASS (not excluded)** - Predictive modeling (FLUS) is primary contribution\n\n### ✗ Single-scenario projections\n- **Status: PASS (not excluded)** - Eight scenarios implemented\n\n---\n\n## Primary Focus Determination\n\n**LULC prediction is the primary objective:**\n- Research question explicitly targets LULC projections\n- Methodology centered on FLUS model for spatial downscaling of demand trajectories\n- Results section dedicated to describing LULC changes across scenarios\n- Outputs are mapped LULC projections as end products (not intermediate steps)\n- Climate model compatibility (PFT reclassification) is an application, not the primary focus\n\n---\n\n## Final Categorization\n\n**Final categorization: OK**\n\n**Justification:** \nThis paper meets ALL core inclusion criteria for national-scale LULC prediction research. It presents explicit spatial modeling of land use changes across entire China at 1 km resolution under eight SSP-RCP scenarios (2015-2100) using the FLUS model. The study provides quantitative accuracy metrics (FoM 1.52%-20.01%), implements multiple future scenarios with comparative analysis, and produces mapped LULC projections as primary outputs. The primary research objective is LULC prediction/simulation, and the paper passes all exclusion criteria. This is a high-quality national-scale LULC projection study suitable for inclusion in systematic reviews of land use change prediction research.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:55:25.770707+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 14.787,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653330-EkhAFICBgHauoawOWvpf\",\"object\":\"chat.completion\",\"created\":1789653330,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land Use Projections in China under SSP-RCP Scenarios\\n\\n## Initial Classification\\n**Is this a review article?** No. This is a research paper presenting original land use simulation modeling and projections.\\n\\n---\\n\\n## Core Inclusion Criteria Evaluation (Non-Review Paper)\\n\\n### ✓ Criterion 1: Explicit national-scale spatial implementation\\n- **Status: PASS**\\n- Study area: Entire China (stated throughout: \\\"land use projections...in China\\\")\\n- Spatial coverage: Nationwide implementation at 1 km × 1 km resolution\\n- Evidence: \\\"The land use simulations are first implemented for six kinds of land use types...at a 1 km × 1 km resolution\\\" and results shown for all of China\\n\\n### ✓ Criterion 2: Primary focus = LULC prediction/simulation\\n- **Status: PASS**\\n- Central research question: Generate high-resolution land use projections for China under SSP-RCP scenarios\\n- Stated objective: \\\"the aim of this study is to generate a set of high-resolution projections of land use changes for regional researches in China\\\"\\n- Primary contribution: FLUS model application to produce spatially explicit LULC projections\\n\\n### ✓ Criterion 3: ≥2 future scenarios with quantitative comparison\\n- **Status: PASS**\\n- Eight SSP-RCP scenarios implemented: SSP5-8.5, SSP3-7.0, SSP2-4.5, SSP1-2.6, SSP4-6.0, SSP4-3.4, SSP5-3.4-OS, SSP1-1.9\\n- Quantitative comparisons provided:\\n  - Fig. 1: Trajectories of land use demand across scenarios\\n  - Fig. 4: Land use amounts by PFT level for 2100\\n  - Narrative comparison of cropland areas: \\\"cropland area in the SSP4-3.4 scenario is more than twice that in the SSP3-7.0 scenario\\\"\\n\\n### ✓ Criterion 4: Spatial modeling with quantitative accuracy metrics\\n- **Status: PASS**\\n- Spatial modeling: FLUS (Cellular Automata-based) model with artificial neural networks\\n- Quantitative accuracy metrics reported:\\n  - Figure of Merit (FoM) values: range 1.52%-20.01%, mean 12.14% (Table 4)\\n  - Per-class FoM: Forest 20.01%, Grassland 11.86%, Cropland 14.58%, Urban 12.74%, Barren 1.52%\\n  - Validation period: 2001-2015 historical simulation\\n  - Spatial uncertainty analysis: kernel density analysis (Fig. S4)\\n\\n### ✓ Criterion 5: Outputs include mapped LULC projections\\n- **Status: PASS**\\n- 1 km × 1 km resolution maps for 2015-2100 (6 land use types)\\n- 5 km × 5 km resolution maps at PFT level for climate model application\\n- Multiple figures showing spatial distributions (Figs. 3, 5, 6, S3, S5, S6, S7)\\n- Data publicly available: \\\"This high-resolution dataset with eight SSP-RCP scenarios for China is freely available\\\"\\n\\n---\\n\\n## Exclusion Criteria Evaluation\\n\\n### ✗ Global-scale without national disaggregation\\n- **Status: PASS (not excluded)** - Study explicitly disaggregates to national China scale\\n\\n### ✗ Local/regional focus\\n- **Status: PASS (not excluded)** - National-scale primary analysis (regional examples are secondary illustrations)\\n\\n### ✗ No LULC prediction component\\n- **Status: PASS (not excluded)** - LULC prediction is the core focus\\n\\n### ✗ Species-specific/ecological focus unrelated to LULC\\n- **Status: PASS (not excluded)** - PFT classification is for climate model compatibility, not ecological focus\\n\\n### ✗ Economic/urban models lacking spatial LULC outputs\\n- **Status: PASS (not excluded)** - Spatially explicit LULC outputs provided\\n\\n### ✗ Biomass/bioenergy/carbon without LULC change analysis\\n- **Status: PASS (not excluded)** - LULC change is primary focus\\n\\n### ✗ Methodological papers without national-scale application\\n- **Status: PASS (not excluded)** - Methodology applied to national-scale China projections\\n\\n### ✗ Purely qualitative/historical only\\n- **Status: PASS (not excluded)** - Future projections 2015-2100 with quantitative results\\n\\n### ✗ Remote sensing technical studies without predictive modeling\\n- **Status: PASS (not excluded)** - Predictive modeling (FLUS) is primary contribution\\n\\n### ✗ Single-scenario projections\\n- **Status: PASS (not excluded)** - Eight scenarios implemented\\n\\n---\\n\\n## Primary Focus Determination\\n\\n**LULC prediction is the primary objective:**\\n- Research question explicitly targets LULC projections\\n- Methodology centered on FLUS model for spatial downscaling of demand trajectories\\n- Results section dedicated to describing LULC changes across scenarios\\n- Outputs are mapped LULC projections as end products (not intermediate steps)\\n- Climate model compatibility (PFT reclassification) is an application, not the primary focus\\n\\n---\\n\\n## Final Categorization\\n\\n**Final categorization: OK**\\n\\n**Justification:** \\nThis paper meets ALL core inclusion criteria for national-scale LULC prediction research. It presents explicit spatial modeling of land use changes across entire China at 1 km resolution under eight SSP-RCP scenarios (2015-2100) using the FLUS model. The study provides quantitative accuracy metrics (FoM 1.52%-20.01%), implements multiple future scenarios with comparative analysis, and produces mapped LULC projections as primary outputs. The primary research objective is LULC prediction/simulation, and the paper passes all exclusion criteria. This is a high-quality national-scale LULC projection study suitable for inclusion in systematic reviews of land use change prediction research.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":14269,\"completion_tokens\":1461,\"total_tokens\":15730,\"cost\":0.021574,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.021574,\"upstream_inference_prompt_cost\":0.014269,\"upstream_inference_completions_cost\":0.007305},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653330-EkhAFICBgHauoawOWvpf",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 14269,
+        "completion_tokens": 1461,
+        "total_tokens": 15730,
+        "cost": 0.021574,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.021574,
+          "upstream_inference_prompt_cost": 0.014269,
+          "upstream_inference_completions_cost": 0.007305
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 14.787,
+  "call_id": "DS__z1_CRABZ3YZ__claude__r1",
+  "fingerprint": "15878ccc217aaa7d379bf659e6b19eae089869b0541e53707240fc5418596062",
+  "paper_id": "z1_CRABZ3YZ",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:55:40.557891+00:00",
+  "input_sha256": "6ef59fd89e7a18ec8a07c97f6a4b822ff0b2f17496d426d7c8afbaad63037ca8",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

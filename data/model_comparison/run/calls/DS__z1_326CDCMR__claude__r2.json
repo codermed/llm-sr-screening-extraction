@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789653871-t0Q9cb7YamqTIZzWnsWX",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.01984,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15045,
+    "completion_tokens": 959,
+    "total_tokens": 16004,
+    "cost": 0.01984,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01984,
+      "upstream_inference_prompt_cost": 0.015045,
+      "upstream_inference_completions_cost": 0.004795
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Environmental impacts of dietary shifts in India\n\n## Step 1: Determine if Paper is a Review Article\n**Result: NO** - This is a research paper presenting original modeling analysis of dietary scenarios and their environmental impacts using primary national survey data (2011-12 Indian National Sample Survey).\n\n## Step 2: Apply Categorization Flow for Non-Review Papers\n\n### Evaluation Against Core Inclusion Criteria:\n\n**Criterion 1: Explicit national-scale spatial implementation (entire country)**\n- ✗ FAILS: While the paper uses nationally-representative household data, the modeling is NOT spatially explicit at the national level. The analysis aggregates to national averages and examines results by region, rural/urban, and population subgroups, but does NOT produce spatial LULC maps or grid-based spatial projections across India.\n\n**Criterion 2: Primary focus = LULC prediction/simulation**\n- ✗ FAILS: The primary focus is dietary scenario modeling and associated environmental footprint changes (GHG emissions, water footprints, land use). Land use is treated as an OUTPUT METRIC of dietary change, not as the primary prediction target. The paper does not model LULC transitions, land cover classes, or spatial land use change patterns.\n\n**Criterion 3: Implementation of ≥2 future scenarios with quantitative comparison**\n- ✓ PASSES: Two scenarios modeled (healthy diets and affluent diets) with quantitative comparisons across environmental indicators.\n\n**Criterion 4: Spatial modeling with quantitative accuracy metrics**\n- ✗ FAILS: The modeling is non-spatial. It calculates aggregate changes in land use (m²/capita/day) but does not implement spatial modeling with accuracy assessment, validation metrics, or spatially-explicit projections.\n\n**Criterion 5: Outputs include mapped LULC projections**\n- ✗ FAILS: No spatial LULC maps or projections are produced. Results are presented as aggregate statistics and tables by region/subgroup, not as spatial predictions.\n\n### Evaluation Against Exclusion Criteria:\n\n**Exclusion Check - \"No LULC prediction component\"**\n- ✓ TRIGGERS EXCLUSION: While land use is quantified as an environmental indicator, there is NO prediction of LULC classes, transitions, or spatial patterns. Land use is an output metric derived from food consumption changes, not the subject of predictive modeling.\n\n**Exclusion Check - \"Biomass/bioenergy/carbon studies without LULC change analysis\"**\n- ✓ TRIGGERS EXCLUSION: This is fundamentally a dietary/food system study using land use as one of several environmental footprint metrics. It does not analyze LULC change, transitions, or spatial land use dynamics.\n\n**Exclusion Check - \"Economic/urban models lacking spatially explicit LULC outputs\"**\n- ✓ TRIGGERS EXCLUSION: The modeling is economic/dietary in nature with non-spatial aggregated outputs.\n\n### Primary Focus Assessment:\nThe primary objective is to model dietary scenarios and quantify their environmental consequences (GHG, water, land use footprints). LULC prediction is neither the central research question nor a primary implementation component—land use appears only as a derived environmental metric calculated from food consumption patterns.\n\n---\n\n## Final Categorization: **EXCLUDED**\n\n**Justification:** \nThis paper fails multiple core inclusion criteria for LULC prediction research:\n1. No spatial modeling or mapping of land use/land cover classes or transitions\n2. Land use is treated as an output environmental metric (footprint indicator) derived from dietary modeling, not as the subject of predictive LULC analysis\n3. Results are presented as aggregate statistics by region/subgroup, not as spatially-explicit LULC projections\n4. The primary research focus is dietary scenario analysis and food system environmental impacts, not LULC prediction or change modeling\n5. Triggers multiple exclusion criteria: no LULC prediction component, non-spatial economic/dietary model, lacks spatially explicit LULC outputs\n\nWhile the paper addresses important sustainability questions and includes land use quantification, it does not meet the threshold of being an LULC prediction study at any scale.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:04:26.548946+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.298,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653871-t0Q9cb7YamqTIZzWnsWX\",\"object\":\"chat.completion\",\"created\":1789653871,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Environmental impacts of dietary shifts in India\\n\\n## Step 1: Determine if Paper is a Review Article\\n**Result: NO** - This is a research paper presenting original modeling analysis of dietary scenarios and their environmental impacts using primary national survey data (2011-12 Indian National Sample Survey).\\n\\n## Step 2: Apply Categorization Flow for Non-Review Papers\\n\\n### Evaluation Against Core Inclusion Criteria:\\n\\n**Criterion 1: Explicit national-scale spatial implementation (entire country)**\\n- ✗ FAILS: While the paper uses nationally-representative household data, the modeling is NOT spatially explicit at the national level. The analysis aggregates to national averages and examines results by region, rural/urban, and population subgroups, but does NOT produce spatial LULC maps or grid-based spatial projections across India.\\n\\n**Criterion 2: Primary focus = LULC prediction/simulation**\\n- ✗ FAILS: The primary focus is dietary scenario modeling and associated environmental footprint changes (GHG emissions, water footprints, land use). Land use is treated as an OUTPUT METRIC of dietary change, not as the primary prediction target. The paper does not model LULC transitions, land cover classes, or spatial land use change patterns.\\n\\n**Criterion 3: Implementation of ≥2 future scenarios with quantitative comparison**\\n- ✓ PASSES: Two scenarios modeled (healthy diets and affluent diets) with quantitative comparisons across environmental indicators.\\n\\n**Criterion 4: Spatial modeling with quantitative accuracy metrics**\\n- ✗ FAILS: The modeling is non-spatial. It calculates aggregate changes in land use (m²/capita/day) but does not implement spatial modeling with accuracy assessment, validation metrics, or spatially-explicit projections.\\n\\n**Criterion 5: Outputs include mapped LULC projections**\\n- ✗ FAILS: No spatial LULC maps or projections are produced. Results are presented as aggregate statistics and tables by region/subgroup, not as spatial predictions.\\n\\n### Evaluation Against Exclusion Criteria:\\n\\n**Exclusion Check - \\\"No LULC prediction component\\\"**\\n- ✓ TRIGGERS EXCLUSION: While land use is quantified as an environmental indicator, there is NO prediction of LULC classes, transitions, or spatial patterns. Land use is an output metric derived from food consumption changes, not the subject of predictive modeling.\\n\\n**Exclusion Check - \\\"Biomass/bioenergy/carbon studies without LULC change analysis\\\"**\\n- ✓ TRIGGERS EXCLUSION: This is fundamentally a dietary/food system study using land use as one of several environmental footprint metrics. It does not analyze LULC change, transitions, or spatial land use dynamics.\\n\\n**Exclusion Check - \\\"Economic/urban models lacking spatially explicit LULC outputs\\\"**\\n- ✓ TRIGGERS EXCLUSION: The modeling is economic/dietary in nature with non-spatial aggregated outputs.\\n\\n### Primary Focus Assessment:\\nThe primary objective is to model dietary scenarios and quantify their environmental consequences (GHG, water, land use footprints). LULC prediction is neither the central research question nor a primary implementation component—land use appears only as a derived environmental metric calculated from food consumption patterns.\\n\\n---\\n\\n## Final Categorization: **EXCLUDED**\\n\\n**Justification:** \\nThis paper fails multiple core inclusion criteria for LULC prediction research:\\n1. No spatial modeling or mapping of land use/land cover classes or transitions\\n2. Land use is treated as an output environmental metric (footprint indicator) derived from dietary modeling, not as the subject of predictive LULC analysis\\n3. Results are presented as aggregate statistics by region/subgroup, not as spatially-explicit LULC projections\\n4. The primary research focus is dietary scenario analysis and food system environmental impacts, not LULC prediction or change modeling\\n5. Triggers multiple exclusion criteria: no LULC prediction component, non-spatial economic/dietary model, lacks spatially explicit LULC outputs\\n\\nWhile the paper addresses important sustainability questions and includes land use quantification, it does not meet the threshold of being an LULC prediction study at any scale.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15045,\"completion_tokens\":959,\"total_tokens\":16004,\"cost\":0.01984,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.01984,\"upstream_inference_prompt_cost\":0.015045,\"upstream_inference_completions_cost\":0.004795},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653871-t0Q9cb7YamqTIZzWnsWX",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 15045,
+        "completion_tokens": 959,
+        "total_tokens": 16004,
+        "cost": 0.01984,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01984,
+          "upstream_inference_prompt_cost": 0.015045,
+          "upstream_inference_completions_cost": 0.004795
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.299,
+  "call_id": "DS__z1_326CDCMR__claude__r2",
+  "fingerprint": "d5ee774b514977d2d745929d4ce6cc4e98a0d62f1c55268ea1a9698a6a05c32d",
+  "paper_id": "z1_326CDCMR",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:04:38.847422+00:00",
+  "input_sha256": "b622e10b7b403478b127b9f3c854bc102e92ccb5083ac6b095cde6aa1aabbe12",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

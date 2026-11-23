@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789652531-XFQpercCbB2m1JMScN0r",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0032652,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 7439,
+    "completion_tokens": 181,
+    "total_tokens": 7620,
+    "cost": 0.0032652,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0032652,
+      "upstream_inference_prompt_cost": 0.0029756,
+      "upstream_inference_completions_cost": 0.0002896
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: OK (Justification: This is a research paper focused on land use and land cover (LULC) prediction for continental Portugal at the national scale. It explicitly implements spatial modeling combining Markov chains with cellular automata to produce mapped LULC projections. The study includes multi-decadal projections up to 2040 with multiple future scenarios (business-as-usual, environmental sustainability, GDP-driven, desertification), providing quantitative comparisons between scenarios. Quantitative accuracy metrics such as allocation and quantity disagreement are reported. The modeling is spatially explicit and uses national-scale sample data covering continental Portugal. Thus, all core inclusion criteria are met: national-scale spatial implementation, primary focus on LULC prediction, implementation of multiple future scenarios with quantitative comparison, spatial modeling with accuracy metrics, and mapped LULC outputs. The paper is not a review, and no exclusion criteria are triggered.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:42:06.626963+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.205,
+      "raw_body": "\n         \n{\"id\":\"gen-1789652531-XFQpercCbB2m1JMScN0r\",\"object\":\"chat.completion\",\"created\":1789652531,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: This is a research paper focused on land use and land cover (LULC) prediction for continental Portugal at the national scale. It explicitly implements spatial modeling combining Markov chains with cellular automata to produce mapped LULC projections. The study includes multi-decadal projections up to 2040 with multiple future scenarios (business-as-usual, environmental sustainability, GDP-driven, desertification), providing quantitative comparisons between scenarios. Quantitative accuracy metrics such as allocation and quantity disagreement are reported. The modeling is spatially explicit and uses national-scale sample data covering continental Portugal. Thus, all core inclusion criteria are met: national-scale spatial implementation, primary focus on LULC prediction, implementation of multiple future scenarios with quantitative comparison, spatial modeling with accuracy metrics, and mapped LULC outputs. The paper is not a review, and no exclusion criteria are triggered.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":7439,\"completion_tokens\":181,\"total_tokens\":7620,\"cost\":0.0032652,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0032652,\"upstream_inference_prompt_cost\":0.0029756,\"upstream_inference_completions_cost\":0.0002896},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652531-XFQpercCbB2m1JMScN0r",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 7439,
+        "completion_tokens": 181,
+        "total_tokens": 7620,
+        "cost": 0.0032652,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0032652,
+          "upstream_inference_prompt_cost": 0.0029756,
+          "upstream_inference_completions_cost": 0.0002896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.205,
+  "call_id": "DS__z1_MRT7BTZU__openai__r1",
+  "fingerprint": "0f1108d04182115117f81e5481e184ca349bfa022645b494641dc3a3ce38a1e6",
+  "paper_id": "z1_MRT7BTZU",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:42:09.832210+00:00",
+  "input_sha256": "d061a2d47bdb53f2c3ce396cf31a5e9bb95a122e55027da0323e8ed46e6e7996",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

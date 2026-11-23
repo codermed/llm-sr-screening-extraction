@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654680-vDrFU2oxcgpuSRn4znCV",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0018616,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15590,
+    "completion_tokens": 146,
+    "total_tokens": 15736,
+    "cost": 0.0018616,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 15360,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0018616,
+      "upstream_inference_prompt_cost": 0.001628,
+      "upstream_inference_completions_cost": 0.0002336
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This is a research paper focused on improving estimates of soil organic carbon stocks and their temporal changes in agricultural soils in Ireland. While it involves spatial data and GIS overlay of land use and soil types, its primary research objective is not on land use land cover (LULC) prediction or simulation of future LULC scenarios. There is no implementation of ≥2 future scenarios with quantitative comparison of LULC projections. The study uses historical land use data and focuses on carbon stock estimation and change modeling rather than spatially explicit LULC change prediction. Therefore, it fails the core inclusion criteria requiring primary focus on LULC prediction with mapped future projections and quantitative accuracy metrics.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:17:56.019480+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.009,
+      "raw_body": "\n         \n{\"id\":\"gen-1789654680-vDrFU2oxcgpuSRn4znCV\",\"object\":\"chat.completion\",\"created\":1789654680,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This is a research paper focused on improving estimates of soil organic carbon stocks and their temporal changes in agricultural soils in Ireland. While it involves spatial data and GIS overlay of land use and soil types, its primary research objective is not on land use land cover (LULC) prediction or simulation of future LULC scenarios. There is no implementation of ≥2 future scenarios with quantitative comparison of LULC projections. The study uses historical land use data and focuses on carbon stock estimation and change modeling rather than spatially explicit LULC change prediction. Therefore, it fails the core inclusion criteria requiring primary focus on LULC prediction with mapped future projections and quantitative accuracy metrics.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15590,\"completion_tokens\":146,\"total_tokens\":15736,\"cost\":0.0018616,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":15360,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0018616,\"upstream_inference_prompt_cost\":0.001628,\"upstream_inference_completions_cost\":0.0002336},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654680-vDrFU2oxcgpuSRn4znCV",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 15590,
+        "completion_tokens": 146,
+        "total_tokens": 15736,
+        "cost": 0.0018616,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 15360,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0018616,
+          "upstream_inference_prompt_cost": 0.001628,
+          "upstream_inference_completions_cost": 0.0002336
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.01,
+  "call_id": "DS__z1_9JIJ9G32__openai__r2",
+  "fingerprint": "ae9a114e36d84881f355326741e4464de05edb25d6ed14fdb5c6dfe43ba4e07c",
+  "paper_id": "z1_9JIJ9G32",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:17:59.028988+00:00",
+  "input_sha256": "70de6962f672a5fd10e268e99299ab6580984901c432198ce2dec398175c73e0",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

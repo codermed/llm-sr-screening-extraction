@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789655913-FELSudKaEgqPhaLIQap9",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.022383,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 16888,
+    "completion_tokens": 1099,
+    "total_tokens": 17987,
+    "cost": 0.022383,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.022383,
+      "upstream_inference_prompt_cost": 0.016888,
+      "upstream_inference_completions_cost": 0.005495
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Vetharaniam et al. (2022)\n\n## Initial Classification\n**This is NOT a review article.** It is an original research paper presenting new modeling and projections.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA (Non-Review Papers):\n\n1. **Explicit national-scale spatial implementation (entire country):** ✓ YES\n   - Study explicitly covers \"locations across New Zealand\" (entire country)\n   - Methodology section states: \"projecting the suitability of locations across New Zealand\"\n   - Results present national maps and regional breakdowns\n\n2. **Primary focus = LULC prediction/simulation (central research question):** ✓ YES\n   - Objective (iii) explicitly states: \"produce refined spatial footprint projections from the preliminary land-use projections using an econometric model\"\n   - Three stated objectives, with two directly focused on land-use change projections\n   - Central research question addresses how land use will change spatially under climate scenarios\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison:** ✓ YES\n   - Two contrasting RCPs: RCP 2.6 (stringent GHG mitigation) and RCP 8.5 (unabated emissions)\n   - Mid-century (2028-2058) and late-century (2068-2098) time periods\n   - Quantitative comparisons provided in Tables 1-5 (hectares of land-use change by region and time period)\n\n4. **Spatial modeling with quantitative accuracy metrics:** ✓ YES\n   - Continuous suitability models (0-1 scale) with biological basis\n   - Multinomial logit model with maximum likelihood estimation\n   - LURNZ econometric model with spatial allocation\n   - Quantitative outputs: hectares of change, suitability scores, regional breakdowns\n   - Uncertainty estimation provided (RMSE calculations, projection margins of error)\n\n5. **Outputs include mapped LULC projections:** ✓ YES\n   - Figures 4-7 show spatial suitability maps\n   - Tables 2-5 provide spatially explicit land-use projections by region\n   - National-scale land-use maps at 25 ha resolution produced by LURNZ model\n\n### SPECIFIC EXCLUSION CRITERIA:\n\n- ✓ NOT global-scale without national disaggregation\n- ✓ NOT local/regional focus (national scale explicitly)\n- ✓ INCLUDES LULC prediction component (central)\n- ✓ NOT species-specific ecology focus (focuses on crop suitability and land use)\n- ✓ NOT purely economic/urban model (includes spatial LULC outputs)\n- ✓ NOT biomass/carbon study without LULC analysis (includes LULC change analysis)\n- ✓ NOT methodological paper only (applies methods to national-scale prediction)\n- ✓ NOT purely qualitative/historical (includes future projections to 2098)\n- ✓ NOT remote sensing technical study (includes predictive modeling)\n- ✓ NOT single-scenario (two RCPs with multiple time periods)\n\n---\n\n## Additional Verification Checks:\n\n**Scale verification:** Methodology confirms national-scale implementation with 5 km × 5 km VCSN grid covering all New Zealand. Results section presents national tables and regional analyses.\n\n**Quantitative metrics reported:** \n- Suitability scores (continuous 0-1)\n- Land-use change in hectares (Tables 1-5)\n- Regional gains/losses (Tables 4-5)\n- Uncertainty margins (RMSE-based)\n\n**Spatial explicitness:** LURNZ model produces annual land-use maps at 25 ha resolution; suitability maps at 5 km resolution.\n\n**Modeling approach:** Multi-step integration of biological suitability models → econometric logit model → spatial allocation via LURNZ model.\n\n---\n\n## Final Categorization\n\n**OK**\n\n**Justification:** This paper meets ALL core inclusion criteria for national-scale LULC prediction research. It implements explicit spatial modeling across New Zealand's entire territory, with LULC prediction as the primary research objective. Two contrasting climate scenarios (RCP 2.6 and RCP 8.5) are modeled across multiple time periods with quantitative comparisons reported in hectares and regional breakdowns. Spatial outputs include both suitability maps and land-use projections at fine resolution (25 ha for LURNZ). The methodology integrates biological suitability models with econometric land-use modeling and spatial allocation algorithms. Uncertainty estimation is provided. The paper does not meet any exclusion criteria.",
+  "automated_status": "invalid_output",
+  "parsed_label": "",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:38:28.315994+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.244,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655913-FELSudKaEgqPhaLIQap9\",\"object\":\"chat.completion\",\"created\":1789655913,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Vetharaniam et al. (2022)\\n\\n## Initial Classification\\n**This is NOT a review article.** It is an original research paper presenting new modeling and projections.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA (Non-Review Papers):\\n\\n1. **Explicit national-scale spatial implementation (entire country):** ✓ YES\\n   - Study explicitly covers \\\"locations across New Zealand\\\" (entire country)\\n   - Methodology section states: \\\"projecting the suitability of locations across New Zealand\\\"\\n   - Results present national maps and regional breakdowns\\n\\n2. **Primary focus = LULC prediction/simulation (central research question):** ✓ YES\\n   - Objective (iii) explicitly states: \\\"produce refined spatial footprint projections from the preliminary land-use projections using an econometric model\\\"\\n   - Three stated objectives, with two directly focused on land-use change projections\\n   - Central research question addresses how land use will change spatially under climate scenarios\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison:** ✓ YES\\n   - Two contrasting RCPs: RCP 2.6 (stringent GHG mitigation) and RCP 8.5 (unabated emissions)\\n   - Mid-century (2028-2058) and late-century (2068-2098) time periods\\n   - Quantitative comparisons provided in Tables 1-5 (hectares of land-use change by region and time period)\\n\\n4. **Spatial modeling with quantitative accuracy metrics:** ✓ YES\\n   - Continuous suitability models (0-1 scale) with biological basis\\n   - Multinomial logit model with maximum likelihood estimation\\n   - LURNZ econometric model with spatial allocation\\n   - Quantitative outputs: hectares of change, suitability scores, regional breakdowns\\n   - Uncertainty estimation provided (RMSE calculations, projection margins of error)\\n\\n5. **Outputs include mapped LULC projections:** ✓ YES\\n   - Figures 4-7 show spatial suitability maps\\n   - Tables 2-5 provide spatially explicit land-use projections by region\\n   - National-scale land-use maps at 25 ha resolution produced by LURNZ model\\n\\n### SPECIFIC EXCLUSION CRITERIA:\\n\\n- ✓ NOT global-scale without national disaggregation\\n- ✓ NOT local/regional focus (national scale explicitly)\\n- ✓ INCLUDES LULC prediction component (central)\\n- ✓ NOT species-specific ecology focus (focuses on crop suitability and land use)\\n- ✓ NOT purely economic/urban model (includes spatial LULC outputs)\\n- ✓ NOT biomass/carbon study without LULC analysis (includes LULC change analysis)\\n- ✓ NOT methodological paper only (applies methods to national-scale prediction)\\n- ✓ NOT purely qualitative/historical (includes future projections to 2098)\\n- ✓ NOT remote sensing technical study (includes predictive modeling)\\n- ✓ NOT single-scenario (two RCPs with multiple time periods)\\n\\n---\\n\\n## Additional Verification Checks:\\n\\n**Scale verification:** Methodology confirms national-scale implementation with 5 km × 5 km VCSN grid covering all New Zealand. Results section presents national tables and regional analyses.\\n\\n**Quantitative metrics reported:** \\n- Suitability scores (continuous 0-1)\\n- Land-use change in hectares (Tables 1-5)\\n- Regional gains/losses (Tables 4-5)\\n- Uncertainty margins (RMSE-based)\\n\\n**Spatial explicitness:** LURNZ model produces annual land-use maps at 25 ha resolution; suitability maps at 5 km resolution.\\n\\n**Modeling approach:** Multi-step integration of biological suitability models → econometric logit model → spatial allocation via LURNZ model.\\n\\n---\\n\\n## Final Categorization\\n\\n**OK**\\n\\n**Justification:** This paper meets ALL core inclusion criteria for national-scale LULC prediction research. It implements explicit spatial modeling across New Zealand's entire territory, with LULC prediction as the primary research objective. Two contrasting climate scenarios (RCP 2.6 and RCP 8.5) are modeled across multiple time periods with quantitative comparisons reported in hectares and regional breakdowns. Spatial outputs include both suitability maps and land-use projections at fine resolution (25 ha for LURNZ). The methodology integrates biological suitability models with econometric land-use modeling and spatial allocation algorithms. Uncertainty estimation is provided. The paper does not meet any exclusion criteria.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":16888,\"completion_tokens\":1099,\"total_tokens\":17987,\"cost\":0.022383,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.022383,\"upstream_inference_prompt_cost\":0.016888,\"upstream_inference_completions_cost\":0.005495},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655913-FELSudKaEgqPhaLIQap9",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 16888,
+        "completion_tokens": 1099,
+        "total_tokens": 17987,
+        "cost": 0.022383,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.022383,
+          "upstream_inference_prompt_cost": 0.016888,
+          "upstream_inference_completions_cost": 0.005495
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.245,
+  "call_id": "DS__z1_4W3TX86C__claude__r3",
+  "fingerprint": "9fe1411601ac966cbfd88824c6d98b5694f552de4239dd9b0e9a5bc859747614",
+  "paper_id": "z1_4W3TX86C",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:38:40.560088+00:00",
+  "input_sha256": "ee97488c8735d191d22afd0b2d299cd1fad3ff6f5e5ecb05a303b836e0de857c",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

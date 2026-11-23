@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789655003-kFakPnYDqrxQlv8uz13g",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00198322,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 14706,
+    "completion_tokens": 149,
+    "total_tokens": 14855,
+    "cost": 0.00198322,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 14592,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00198322,
+      "upstream_inference_prompt_cost": 0.0019266,
+      "upstream_inference_completions_cost": 5.662e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: This is a research paper, not a review. It fails the core inclusion criteria as its primary focus is not LULC prediction/simulation. The paper's central objective is to develop and apply an integrated energy system model (MUSE) with a new agriculture and land use module to explore decarbonization pathways. While it models land use change as a *consequence* of agricultural intensification and energy policy, LULC prediction is not the primary research question. The land use component serves as an input/output to assess carbon sequestration and mitigation costs, not as the core predictive focus. The paper also lacks explicit, spatially mapped LULC projections and quantitative accuracy metrics for LULC prediction.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:23:18.622483+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 5.501,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789655003-kFakPnYDqrxQlv8uz13g\",\"object\":\"chat.completion\",\"created\":1789655003,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This is a research paper, not a review. It fails the core inclusion criteria as its primary focus is not LULC prediction/simulation. The paper's central objective is to develop and apply an integrated energy system model (MUSE) with a new agriculture and land use module to explore decarbonization pathways. While it models land use change as a *consequence* of agricultural intensification and energy policy, LULC prediction is not the primary research question. The land use component serves as an input/output to assess carbon sequestration and mitigation costs, not as the core predictive focus. The paper also lacks explicit, spatially mapped LULC projections and quantitative accuracy metrics for LULC prediction.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":14706,\"completion_tokens\":149,\"total_tokens\":14855,\"cost\":0.00198322,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":14592,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00198322,\"upstream_inference_prompt_cost\":0.0019266,\"upstream_inference_completions_cost\":0.00005662},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655003-kFakPnYDqrxQlv8uz13g",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 14706,
+        "completion_tokens": 149,
+        "total_tokens": 14855,
+        "cost": 0.00198322,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 14592,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00198322,
+          "upstream_inference_prompt_cost": 0.0019266,
+          "upstream_inference_completions_cost": 5.662e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 5.502,
+  "call_id": "DS__z1_QLF9VTPP__deepseek__r3",
+  "fingerprint": "fbb6beafd5523159f3e0adc2646e0c7f2220af48cfab6511ec5bb559426b5c86",
+  "paper_id": "z1_QLF9VTPP",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:23:24.123143+00:00",
+  "input_sha256": "b52511ab0d541ab1cc14fd92909646ca15844bed4e7c50331d3ef3cc7f88eef4",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

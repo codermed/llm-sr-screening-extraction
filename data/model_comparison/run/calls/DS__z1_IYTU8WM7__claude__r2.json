@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789653784-nW4BnljnIiTpsiEm8e1J",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.015156,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 9021,
+    "completion_tokens": 1227,
+    "total_tokens": 10248,
+    "cost": 0.015156,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.015156,
+      "upstream_inference_prompt_cost": 0.009021,
+      "upstream_inference_completions_cost": 0.006135
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Sustainable Biomass Production for Energy in Sri Lanka\n\n## Step 1: Determine if Review Article\n**Result: NO** - This is a research paper presenting original analysis of land availability and biomass production potential for Sri Lanka.\n\n---\n\n## Step 2: Apply Categorization Flow for Non-Review Papers\n\n### Evaluation Against Core Inclusion Criteria:\n\n**Criterion 1: Explicit national-scale spatial implementation (entire country)**\n- ✓ **PASS** - Study covers entire Sri Lanka (6.52 Mha total land area)\n- Analysis disaggregated by 3 geographical zones (WZ, IZ, DZ) and 24 Agro-Ecological Regions\n- National-level assessment explicitly stated in abstract and methodology\n\n**Criterion 2: Primary focus = LULC prediction/simulation**\n- ✗ **FAIL** - Primary focus is **biomass production potential estimation**, NOT LULC prediction\n- The paper estimates \"sustainable biomass production potential for energy\"\n- LULC patterns are used as **inputs** to estimate available land, not as primary research output\n- Land use categories (sparsely used cropland, sparse forest/scrub land) are treated as static land types available for conversion, not as predicted LULC change outcomes\n\n**Criterion 3: Implementation of ≥2 future scenarios with quantitative comparison**\n- ✓ **PASS** - Six combined scenarios presented (IBD-1, IBD-2, SBD-1, SBD-2, FBD-1, FBD-2)\n- Two land availability scenarios (Scenario 1 & 2) with quantitative results\n- Three biomass demand scenarios (IBD, SBD, FBD) with quantitative outputs\n- Quantitative comparison provided (e.g., 0.96, 0.66, 0.80, 0.94, 0.60, 0.30 Mha)\n\n**Criterion 4: Spatial modeling with quantitative accuracy metrics**\n- ✗ **FAIL** - No spatial modeling of LULC change\n- No accuracy assessment metrics (e.g., validation, uncertainty analysis)\n- Uses FSMP predictions of land use changes but does not model or validate them\n- Outputs are land area estimates and biomass production potential, not LULC maps or change predictions\n\n**Criterion 5: Outputs include mapped LULC projections**\n- ✗ **FAIL** - No LULC projection maps provided\n- Outputs are tabular land area allocations and biomass production estimates\n- No spatial representation of predicted LULC changes\n\n---\n\n### Evaluation Against Exclusion Criteria:\n\n**Exclusion: Biomass/bioenergy/carbon studies without LULC change analysis**\n- ✓ **MATCH** - This is explicitly a bioenergy study focused on biomass production potential\n- LULC change analysis is NOT the primary focus\n- Land use patterns are treated as constraints/inputs, not as prediction outputs\n\n**Exclusion: Economic/urban models lacking spatially explicit LULC outputs**\n- ✓ **MATCH** - Study includes economic analysis (investment estimation) and land allocation modeling\n- Lacks spatially explicit LULC outputs (no maps, spatial grids, or spatial predictions)\n\n**Exclusion: Methodological papers without application to national-scale prediction**\n- Partial match: While applied to national scale, the methodology is for biomass potential assessment, not LULC prediction methodology\n\n---\n\n## Summary of Findings:\n\n| Criterion | Status | Evidence |\n|-----------|--------|----------|\n| National-scale implementation | PASS | Entire country analyzed |\n| Primary focus = LULC prediction | **FAIL** | Focus is biomass production potential |\n| Multiple scenarios with comparison | PASS | 6 scenarios, quantitative results |\n| Spatial LULC modeling | **FAIL** | No spatial modeling of LULC change |\n| LULC projection outputs | **FAIL** | No maps or spatial LULC predictions |\n| Biomass/energy without LULC change | **MATCH EXCLUSION** | Bioenergy focus without LULC analysis |\n\n---\n\n## Final Categorization: **EXCLUDED**\n\n**Justification:** \n\nThis paper is fundamentally a **biomass/bioenergy resource assessment study**, not an LULC prediction study. While it operates at the national scale and uses land use categories as inputs, it fails multiple core inclusion criteria:\n\n1. **Primary objective is NOT LULC prediction** - The central research question concerns sustainable biomass production potential, not future land use/land cover change\n2. **No spatial LULC modeling** - Uses existing FSMP predictions but does not model or project LULC change spatially\n3. **No LULC projection outputs** - Delivers land area estimates and biomass production figures, not LULC maps or change predictions\n4. **Meets biomass/bioenergy exclusion criterion** - Explicitly excluded category for studies without LULC change analysis as primary focus\n\nThe paper treats land use patterns as static constraints for biomass plantation siting rather than as dynamic phenomena to be predicted. This is fundamentally different from LULC prediction research.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:02:59.793573+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.338,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653784-nW4BnljnIiTpsiEm8e1J\",\"object\":\"chat.completion\",\"created\":1789653784,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Sustainable Biomass Production for Energy in Sri Lanka\\n\\n## Step 1: Determine if Review Article\\n**Result: NO** - This is a research paper presenting original analysis of land availability and biomass production potential for Sri Lanka.\\n\\n---\\n\\n## Step 2: Apply Categorization Flow for Non-Review Papers\\n\\n### Evaluation Against Core Inclusion Criteria:\\n\\n**Criterion 1: Explicit national-scale spatial implementation (entire country)**\\n- ✓ **PASS** - Study covers entire Sri Lanka (6.52 Mha total land area)\\n- Analysis disaggregated by 3 geographical zones (WZ, IZ, DZ) and 24 Agro-Ecological Regions\\n- National-level assessment explicitly stated in abstract and methodology\\n\\n**Criterion 2: Primary focus = LULC prediction/simulation**\\n- ✗ **FAIL** - Primary focus is **biomass production potential estimation**, NOT LULC prediction\\n- The paper estimates \\\"sustainable biomass production potential for energy\\\"\\n- LULC patterns are used as **inputs** to estimate available land, not as primary research output\\n- Land use categories (sparsely used cropland, sparse forest/scrub land) are treated as static land types available for conversion, not as predicted LULC change outcomes\\n\\n**Criterion 3: Implementation of ≥2 future scenarios with quantitative comparison**\\n- ✓ **PASS** - Six combined scenarios presented (IBD-1, IBD-2, SBD-1, SBD-2, FBD-1, FBD-2)\\n- Two land availability scenarios (Scenario 1 & 2) with quantitative results\\n- Three biomass demand scenarios (IBD, SBD, FBD) with quantitative outputs\\n- Quantitative comparison provided (e.g., 0.96, 0.66, 0.80, 0.94, 0.60, 0.30 Mha)\\n\\n**Criterion 4: Spatial modeling with quantitative accuracy metrics**\\n- ✗ **FAIL** - No spatial modeling of LULC change\\n- No accuracy assessment metrics (e.g., validation, uncertainty analysis)\\n- Uses FSMP predictions of land use changes but does not model or validate them\\n- Outputs are land area estimates and biomass production potential, not LULC maps or change predictions\\n\\n**Criterion 5: Outputs include mapped LULC projections**\\n- ✗ **FAIL** - No LULC projection maps provided\\n- Outputs are tabular land area allocations and biomass production estimates\\n- No spatial representation of predicted LULC changes\\n\\n---\\n\\n### Evaluation Against Exclusion Criteria:\\n\\n**Exclusion: Biomass/bioenergy/carbon studies without LULC change analysis**\\n- ✓ **MATCH** - This is explicitly a bioenergy study focused on biomass production potential\\n- LULC change analysis is NOT the primary focus\\n- Land use patterns are treated as constraints/inputs, not as prediction outputs\\n\\n**Exclusion: Economic/urban models lacking spatially explicit LULC outputs**\\n- ✓ **MATCH** - Study includes economic analysis (investment estimation) and land allocation modeling\\n- Lacks spatially explicit LULC outputs (no maps, spatial grids, or spatial predictions)\\n\\n**Exclusion: Methodological papers without application to national-scale prediction**\\n- Partial match: While applied to national scale, the methodology is for biomass potential assessment, not LULC prediction methodology\\n\\n---\\n\\n## Summary of Findings:\\n\\n| Criterion | Status | Evidence |\\n|-----------|--------|----------|\\n| National-scale implementation | PASS | Entire country analyzed |\\n| Primary focus = LULC prediction | **FAIL** | Focus is biomass production potential |\\n| Multiple scenarios with comparison | PASS | 6 scenarios, quantitative results |\\n| Spatial LULC modeling | **FAIL** | No spatial modeling of LULC change |\\n| LULC projection outputs | **FAIL** | No maps or spatial LULC predictions |\\n| Biomass/energy without LULC change | **MATCH EXCLUSION** | Bioenergy focus without LULC analysis |\\n\\n---\\n\\n## Final Categorization: **EXCLUDED**\\n\\n**Justification:** \\n\\nThis paper is fundamentally a **biomass/bioenergy resource assessment study**, not an LULC prediction study. While it operates at the national scale and uses land use categories as inputs, it fails multiple core inclusion criteria:\\n\\n1. **Primary objective is NOT LULC prediction** - The central research question concerns sustainable biomass production potential, not future land use/land cover change\\n2. **No spatial LULC modeling** - Uses existing FSMP predictions but does not model or project LULC change spatially\\n3. **No LULC projection outputs** - Delivers land area estimates and biomass production figures, not LULC maps or change predictions\\n4. **Meets biomass/bioenergy exclusion criterion** - Explicitly excluded category for studies without LULC change analysis as primary focus\\n\\nThe paper treats land use patterns as static constraints for biomass plantation siting rather than as dynamic phenomena to be predicted. This is fundamentally different from LULC prediction research.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":9021,\"completion_tokens\":1227,\"total_tokens\":10248,\"cost\":0.015156,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.015156,\"upstream_inference_prompt_cost\":0.009021,\"upstream_inference_completions_cost\":0.006135},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653784-nW4BnljnIiTpsiEm8e1J",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 9021,
+        "completion_tokens": 1227,
+        "total_tokens": 10248,
+        "cost": 0.015156,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.015156,
+          "upstream_inference_prompt_cost": 0.009021,
+          "upstream_inference_completions_cost": 0.006135
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.338,
+  "call_id": "DS__z1_IYTU8WM7__claude__r2",
+  "fingerprint": "616eb74aedf197d7f3d7261e371aca3fe45cd07c52de41a8fa853afbf9469d02",
+  "paper_id": "z1_IYTU8WM7",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:03:12.131417+00:00",
+  "input_sha256": "2267f7fffbe0aaef86685b1284ab963fa71d3c741ea1835f680d70b34cb45a6b",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

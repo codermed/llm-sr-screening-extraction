@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789654947-GswAMXVoDvl85Rue6JUP",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.021827,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15852,
+    "completion_tokens": 1195,
+    "total_tokens": 17047,
+    "cost": 0.021827,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.021827,
+      "upstream_inference_prompt_cost": 0.015852,
+      "upstream_inference_completions_cost": 0.005975
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land Use Changes in Qinghai-Tibet Plateau\n\n## Step 1: Review Article Determination\n**Is this a review article?** NO\nThis is a primary research paper presenting original analysis of historical land use data (1980-2020) and future projections under multiple scenarios.\n\n---\n\n## Step 2: Non-Review Paper Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA ASSESSMENT:\n\n**1. Explicit national-scale spatial implementation (entire country)?**\n- ❌ FAILS: Study focuses on the Qinghai-Tibet Plateau (QTP), a regional/sub-national area spanning ~2.57 million km² across six provinces (Tibet, Qinghai, Xinjiang, Gansu, Yunnan, Sichuan)\n- This is explicitly a **regional-scale analysis**, not national-scale implementation\n- While the QTP is large, it represents a specific geographical region, not the entire nation of China\n\n**2. Primary focus = LULC prediction/simulation?**\n- ✅ PASSES: The paper's central research question explicitly addresses \"projected land use changes in the Qinghai-Tibet Plateau\" with clear focus on future LULC scenarios\n\n**3. Implementation of ≥2 future scenarios with quantitative comparison?**\n- ✅ PASSES: Paper implements 7 SSP scenarios (SSP1-1.9, SSP1-2.6, SSP2-4.5, SSP3-7.0, SSP4-3.4, SSP4-6.0, SSP5-8.5) with detailed quantitative comparisons across all scenarios\n\n**4. Spatial modeling with quantitative accuracy metrics?**\n- ✅ PASSES: Uses LUH2 dataset with spatial resolution 0.25°-0.5°; validates with correlation coefficients (r=0.88 temporal, r=0.94 spatial, P<0.01); reports quantitative change rates (e.g., grassland 0.7-5.4% reduction)\n\n**5. Outputs include mapped LULC projections?**\n- ✅ PASSES: Figures 5-7 provide spatial distributions and projections of land use changes across future periods\n\n### SPECIFIC EXCLUSION CRITERIA ASSESSMENT:\n\n**Global-scale analysis without national-level disaggregation?**\n- ✅ PASSES: Not global-scale; regional focus\n\n**Local/regional/global/transboundary scale focus?**\n- ❌ **FAILS**: This is explicitly a **REGIONAL-SCALE** analysis (Qinghai-Tibet Plateau region), not national-scale\n\n**No LULC prediction component?**\n- ✅ PASSES: Strong LULC prediction component present\n\n**Species-specific/ecological focus unrelated to LULC?**\n- ✅ PASSES: LULC-focused, not species-specific\n\n**Economic/urban models lacking spatially explicit LULC outputs?**\n- ✅ PASSES: Includes spatially explicit LULC outputs with maps\n\n**Biomass/bioenergy/carbon studies without LULC change analysis?**\n- ✅ PASSES: Includes LULC change analysis (though carbon context mentioned, LULC is primary focus)\n\n**Methodological papers without application?**\n- ✅ PASSES: Applied study with QTP implementation\n\n**Purely qualitative/historical only?**\n- ✅ PASSES: Includes future projections (2021-2100)\n\n**Remote sensing technical studies without predictive modeling?**\n- ✅ PASSES: Includes predictive modeling\n\n**Single-scenario projections?**\n- ✅ PASSES: Multiple scenarios implemented\n\n---\n\n## Step 3: Critical Scale Assessment\n\nThe **inclusion criteria explicitly require \"Explicit national-scale spatial implementation (entire country)\"** as a core requirement. This paper:\n\n- States study area: \"approximately 2.57 million km²\" (QTP region)\n- Covers 6 provinces within China, not the entire nation\n- Methodology section explicitly identifies this as regional analysis\n- Does NOT implement national-scale modeling of China as a whole\n\nThis is a **regional-scale study**, which is listed as a specific exclusion criterion: *\"Local/regional/global/transboundary scale focus\"*\n\n---\n\n## FINAL CATEGORIZATION: \n**EXCLUDED**\n\n**Justification:** \nWhile this paper demonstrates strong technical quality with multiple SSP scenarios (7), quantitative metrics (correlation coefficients, change rates), spatial modeling (0.25°-0.5° resolution), and mapped projections, it **fails the core inclusion criterion of national-scale spatial implementation**. The study explicitly focuses on the Qinghai-Tibet Plateau region (~2.57 million km² across six provinces), which constitutes a **regional-scale analysis**. Regional-scale studies are explicitly listed in the exclusion criteria. The paper does not implement LULC prediction modeling at the national scale (entire China), making it ineligible despite its methodological rigor and LULC prediction focus.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:22:22.513345+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 13.905,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789654947-GswAMXVoDvl85Rue6JUP\",\"object\":\"chat.completion\",\"created\":1789654947,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land Use Changes in Qinghai-Tibet Plateau\\n\\n## Step 1: Review Article Determination\\n**Is this a review article?** NO\\nThis is a primary research paper presenting original analysis of historical land use data (1980-2020) and future projections under multiple scenarios.\\n\\n---\\n\\n## Step 2: Non-Review Paper Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA ASSESSMENT:\\n\\n**1. Explicit national-scale spatial implementation (entire country)?**\\n- ❌ FAILS: Study focuses on the Qinghai-Tibet Plateau (QTP), a regional/sub-national area spanning ~2.57 million km² across six provinces (Tibet, Qinghai, Xinjiang, Gansu, Yunnan, Sichuan)\\n- This is explicitly a **regional-scale analysis**, not national-scale implementation\\n- While the QTP is large, it represents a specific geographical region, not the entire nation of China\\n\\n**2. Primary focus = LULC prediction/simulation?**\\n- ✅ PASSES: The paper's central research question explicitly addresses \\\"projected land use changes in the Qinghai-Tibet Plateau\\\" with clear focus on future LULC scenarios\\n\\n**3. Implementation of ≥2 future scenarios with quantitative comparison?**\\n- ✅ PASSES: Paper implements 7 SSP scenarios (SSP1-1.9, SSP1-2.6, SSP2-4.5, SSP3-7.0, SSP4-3.4, SSP4-6.0, SSP5-8.5) with detailed quantitative comparisons across all scenarios\\n\\n**4. Spatial modeling with quantitative accuracy metrics?**\\n- ✅ PASSES: Uses LUH2 dataset with spatial resolution 0.25°-0.5°; validates with correlation coefficients (r=0.88 temporal, r=0.94 spatial, P<0.01); reports quantitative change rates (e.g., grassland 0.7-5.4% reduction)\\n\\n**5. Outputs include mapped LULC projections?**\\n- ✅ PASSES: Figures 5-7 provide spatial distributions and projections of land use changes across future periods\\n\\n### SPECIFIC EXCLUSION CRITERIA ASSESSMENT:\\n\\n**Global-scale analysis without national-level disaggregation?**\\n- ✅ PASSES: Not global-scale; regional focus\\n\\n**Local/regional/global/transboundary scale focus?**\\n- ❌ **FAILS**: This is explicitly a **REGIONAL-SCALE** analysis (Qinghai-Tibet Plateau region), not national-scale\\n\\n**No LULC prediction component?**\\n- ✅ PASSES: Strong LULC prediction component present\\n\\n**Species-specific/ecological focus unrelated to LULC?**\\n- ✅ PASSES: LULC-focused, not species-specific\\n\\n**Economic/urban models lacking spatially explicit LULC outputs?**\\n- ✅ PASSES: Includes spatially explicit LULC outputs with maps\\n\\n**Biomass/bioenergy/carbon studies without LULC change analysis?**\\n- ✅ PASSES: Includes LULC change analysis (though carbon context mentioned, LULC is primary focus)\\n\\n**Methodological papers without application?**\\n- ✅ PASSES: Applied study with QTP implementation\\n\\n**Purely qualitative/historical only?**\\n- ✅ PASSES: Includes future projections (2021-2100)\\n\\n**Remote sensing technical studies without predictive modeling?**\\n- ✅ PASSES: Includes predictive modeling\\n\\n**Single-scenario projections?**\\n- ✅ PASSES: Multiple scenarios implemented\\n\\n---\\n\\n## Step 3: Critical Scale Assessment\\n\\nThe **inclusion criteria explicitly require \\\"Explicit national-scale spatial implementation (entire country)\\\"** as a core requirement. This paper:\\n\\n- States study area: \\\"approximately 2.57 million km²\\\" (QTP region)\\n- Covers 6 provinces within China, not the entire nation\\n- Methodology section explicitly identifies this as regional analysis\\n- Does NOT implement national-scale modeling of China as a whole\\n\\nThis is a **regional-scale study**, which is listed as a specific exclusion criterion: *\\\"Local/regional/global/transboundary scale focus\\\"*\\n\\n---\\n\\n## FINAL CATEGORIZATION: \\n**EXCLUDED**\\n\\n**Justification:** \\nWhile this paper demonstrates strong technical quality with multiple SSP scenarios (7), quantitative metrics (correlation coefficients, change rates), spatial modeling (0.25°-0.5° resolution), and mapped projections, it **fails the core inclusion criterion of national-scale spatial implementation**. The study explicitly focuses on the Qinghai-Tibet Plateau region (~2.57 million km² across six provinces), which constitutes a **regional-scale analysis**. Regional-scale studies are explicitly listed in the exclusion criteria. The paper does not implement LULC prediction modeling at the national scale (entire China), making it ineligible despite its methodological rigor and LULC prediction focus.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15852,\"completion_tokens\":1195,\"total_tokens\":17047,\"cost\":0.021827,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.021827,\"upstream_inference_prompt_cost\":0.015852,\"upstream_inference_completions_cost\":0.005975},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654947-GswAMXVoDvl85Rue6JUP",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 15852,
+        "completion_tokens": 1195,
+        "total_tokens": 17047,
+        "cost": 0.021827,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.021827,
+          "upstream_inference_prompt_cost": 0.015852,
+          "upstream_inference_completions_cost": 0.005975
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 13.905,
+  "call_id": "DS__z1_4B5FQ2QN__claude__r2",
+  "fingerprint": "c4904a9bfe8682b1b516bf486a9c9adf6ce3477e6b7ee16dcdc9901bce089eb7",
+  "paper_id": "z1_4B5FQ2QN",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:22:36.418049+00:00",
+  "input_sha256": "3ccf3b9deb4dd214f56b55b4086355ade9b680be403bafdbe8304d72134728f6",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

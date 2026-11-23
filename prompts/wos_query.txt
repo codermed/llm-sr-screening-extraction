@@ -1,0 +1,26 @@
+# Web of Science Core Collection search query (Supplementary Note 1)
+# Executed on 6 January 2025; 11,817 records returned.
+# The explicit list of country names is abbreviated with [...] as in the Supplementary Information.
+
+# Land Use/Land Cover Terms
+TS=("land use" OR "land-use" OR "landuse" OR "land cover" OR "land-cover" OR "landcover" OR "LULCC" OR "LULC" OR "LUC" OR "LC" OR "land cover/land use" OR "land system*" OR "land dynamics")
+AND 
+# Prediction/Modeling Terms
+(
+TS=("predict*" OR "forecast*" OR "project*" OR "simulat*" OR "model*" OR "future*" OR "anticipat*" OR "change detection" OR "transition*" OR "dynamics") # General prediction terms
+OR
+TS=("cellular automat*" OR "system* dynamic*" OR "agent-based" OR "agent based" OR "CRAFTY" OR "Artificial Neural Network" OR "PLUS" OR "FLUS" OR "SLEUTH" OR  "CLUE") # Specific modeling approaches
+)
+AND
+# Scenario-based Analysis Terms
+TS=("scenario*" OR "SSP" OR "RCP" OR "SSP-RCP" OR "Shared Socioeconomic Pathways" OR "Representative Concentration Pathways" OR "IPCC") 
+AND
+# National/Country-specific Terms
+(
+TS=("nation*" OR "*country*" OR "domestic*"OR "conterminous") # General terms
+OR
+TS=(Afghanistan OR Albania OR […] OR Japan OR Jordan OR Kazakhstan OR Kenya OR [...] OR "United Arab Emirates" OR "United Kingdom" OR "Great Britain" OR "United States" OR […] OR Yemen OR Zambia OR Zimbabwe) # Explicit list of countries
+)
+AND English (Languages)
+AND 2000-01-01 to 2024-12-31 (Publication Date)
+AND Article or Review Article or Early Access or Data Paper (Document Types)

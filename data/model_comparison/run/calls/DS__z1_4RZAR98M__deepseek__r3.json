@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789655405-MRJ6QiZH79cgAbiZff1p",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0030363,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10940,
+    "completion_tokens": 505,
+    "total_tokens": 11445,
+    "cost": 0.0030363,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0030363,
+      "upstream_inference_prompt_cost": 0.0028444,
+      "upstream_inference_completions_cost": 0.0001919
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: The paper explicitly implements a national-scale land use prediction model for Japan, compares two future population scenarios (centralization/decentralization), reports quantitative accuracy metrics for its model, and produces mapped land use projections for 2050.)\n\n**Justification based on full text analysis:**\n\n*   **Review Article Check:** This is a **non-review** research article presenting original modeling work.\n*   **Core Inclusion Criteria (All Met):**\n    1.  **Explicit national-scale spatial implementation:** The study area is explicitly the entire country of Japan, modeled using a national grid system (Tertiary Mesh Units covering the Japanese archipelago).\n    2.  **Primary focus = LULC prediction/simulation:** The central research question is to develop and apply a \"population-projection-assimilated predictive land use modeling (PPAP-LM) approach\" to project future land use changes under a shrinking population.\n    3.  **Implementation of ≥2 future scenarios with quantitative comparison:** The model is projected under two distinct spatially explicit population scenarios (centralization and decentralization), and the results (e.g., total area changes for each land use type) are quantitatively compared between these scenarios and over time (Figures 3, 4, 5).\n    4.  **Spatial modeling with quantitative accuracy metrics:** The paper uses a machine-learning (CART) model and reports quantitative accuracy metrics (Pearson's r, MAE, MSE, RMSE) for five land use type models (Table 2).\n    5.  **Outputs include mapped LULC projections:** The results include national-scale maps projecting the proportion of different land use types for 2050 under both scenarios, and specific examples are shown for two municipalities (Toyota and Joetsu cities) in Figures 4 and 5.\n*   **Exclusion Criteria (None Met):** The paper is not global, regional, or local; it is fundamentally about LULC prediction; it is not species-specific; it produces spatially explicit LULC outputs; it is an applied study, not purely methodological; it includes future projections; and it implements two distinct scenarios, not a single business-as-usual projection.\n*   **Primary Focus:** The primary objective is unequivocally **LULC prediction** (\"we developed land use change scenarios...by applying the PPAP-LM\"). The prediction is not an incidental step but the core output used to evaluate the effects of population distribution.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:30:00.705589+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 11.587,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655405-MRJ6QiZH79cgAbiZff1p\",\"object\":\"chat.completion\",\"created\":1789655405,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: The paper explicitly implements a national-scale land use prediction model for Japan, compares two future population scenarios (centralization/decentralization), reports quantitative accuracy metrics for its model, and produces mapped land use projections for 2050.)\\n\\n**Justification based on full text analysis:**\\n\\n*   **Review Article Check:** This is a **non-review** research article presenting original modeling work.\\n*   **Core Inclusion Criteria (All Met):**\\n    1.  **Explicit national-scale spatial implementation:** The study area is explicitly the entire country of Japan, modeled using a national grid system (Tertiary Mesh Units covering the Japanese archipelago).\\n    2.  **Primary focus = LULC prediction/simulation:** The central research question is to develop and apply a \\\"population-projection-assimilated predictive land use modeling (PPAP-LM) approach\\\" to project future land use changes under a shrinking population.\\n    3.  **Implementation of ≥2 future scenarios with quantitative comparison:** The model is projected under two distinct spatially explicit population scenarios (centralization and decentralization), and the results (e.g., total area changes for each land use type) are quantitatively compared between these scenarios and over time (Figures 3, 4, 5).\\n    4.  **Spatial modeling with quantitative accuracy metrics:** The paper uses a machine-learning (CART) model and reports quantitative accuracy metrics (Pearson's r, MAE, MSE, RMSE) for five land use type models (Table 2).\\n    5.  **Outputs include mapped LULC projections:** The results include national-scale maps projecting the proportion of different land use types for 2050 under both scenarios, and specific examples are shown for two municipalities (Toyota and Joetsu cities) in Figures 4 and 5.\\n*   **Exclusion Criteria (None Met):** The paper is not global, regional, or local; it is fundamentally about LULC prediction; it is not species-specific; it produces spatially explicit LULC outputs; it is an applied study, not purely methodological; it includes future projections; and it implements two distinct scenarios, not a single business-as-usual projection.\\n*   **Primary Focus:** The primary objective is unequivocally **LULC prediction** (\\\"we developed land use change scenarios...by applying the PPAP-LM\\\"). The prediction is not an incidental step but the core output used to evaluate the effects of population distribution.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10940,\"completion_tokens\":505,\"total_tokens\":11445,\"cost\":0.0030363,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0030363,\"upstream_inference_prompt_cost\":0.0028444,\"upstream_inference_completions_cost\":0.0001919},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655405-MRJ6QiZH79cgAbiZff1p",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 10940,
+        "completion_tokens": 505,
+        "total_tokens": 11445,
+        "cost": 0.0030363,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0030363,
+          "upstream_inference_prompt_cost": 0.0028444,
+          "upstream_inference_completions_cost": 0.0001919
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 11.587,
+  "call_id": "DS__z1_4RZAR98M__deepseek__r3",
+  "fingerprint": "bd60efbfefaaec5acad83fb44b5e704bfc679668d27d746227bc7723acbfd41d",
+  "paper_id": "z1_4RZAR98M",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:30:12.292319+00:00",
+  "input_sha256": "a31931e8d613f05592d54aae7dd34801f1fd1058003ed90bfc5ec5992ce974d4",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

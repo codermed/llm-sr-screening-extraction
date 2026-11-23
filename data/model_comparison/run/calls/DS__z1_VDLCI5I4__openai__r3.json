@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789655686-SwTdlScVDlc4rC530WtF",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0014476,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 11759,
+    "completion_tokens": 149,
+    "total_tokens": 11908,
+    "cost": 0.0014476,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 11648,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0014476,
+      "upstream_inference_prompt_cost": 0.0012092,
+      "upstream_inference_completions_cost": 0.0002384
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This is a global-scale modeling study focusing on the impact of future land-cover changes on atmospheric chemistry processes, specifically dry deposition velocities of ozone and nitric acid. The primary focus is on atmospheric chemistry and deposition modeling rather than on land use/land cover (LULC) prediction or simulation. The land-cover changes used are derived from existing RCP scenarios and integrated assessment models, not predicted or simulated by the authors themselves. The study does not implement ≥2 future LULC prediction scenarios at a national scale with spatially explicit mapped outputs and quantitative accuracy metrics. It is a global-scale analysis without national-level disaggregation and does not meet core inclusion criteria for LULC prediction-focused research.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:34:41.479487+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.754,
+      "raw_body": "\n         \n{\"id\":\"gen-1789655686-SwTdlScVDlc4rC530WtF\",\"object\":\"chat.completion\",\"created\":1789655686,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This is a global-scale modeling study focusing on the impact of future land-cover changes on atmospheric chemistry processes, specifically dry deposition velocities of ozone and nitric acid. The primary focus is on atmospheric chemistry and deposition modeling rather than on land use/land cover (LULC) prediction or simulation. The land-cover changes used are derived from existing RCP scenarios and integrated assessment models, not predicted or simulated by the authors themselves. The study does not implement ≥2 future LULC prediction scenarios at a national scale with spatially explicit mapped outputs and quantitative accuracy metrics. It is a global-scale analysis without national-level disaggregation and does not meet core inclusion criteria for LULC prediction-focused research.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":11759,\"completion_tokens\":149,\"total_tokens\":11908,\"cost\":0.0014476,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":11648,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0014476,\"upstream_inference_prompt_cost\":0.0012092,\"upstream_inference_completions_cost\":0.0002384},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655686-SwTdlScVDlc4rC530WtF",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 11759,
+        "completion_tokens": 149,
+        "total_tokens": 11908,
+        "cost": 0.0014476,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 11648,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0014476,
+          "upstream_inference_prompt_cost": 0.0012092,
+          "upstream_inference_completions_cost": 0.0002384
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.755,
+  "call_id": "DS__z1_VDLCI5I4__openai__r3",
+  "fingerprint": "c57f62b95d5ab83bcc4711ff765b6339c5d9aff0dc0927212524715b4896c619",
+  "paper_id": "z1_VDLCI5I4",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:34:44.233623+00:00",
+  "input_sha256": "32e547cd8b53f387d85cb0878c038e7a9ee7a44cabbb9db5046ebdbeaaf17cda",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

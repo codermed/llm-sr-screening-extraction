@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789654133-nQQq8xZi0zahJJk6XRb5",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00950976,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 11357,
+    "completion_tokens": 167,
+    "total_tokens": 11524,
+    "cost": 0.00950976,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00950976,
+      "upstream_inference_prompt_cost": 0.00885846,
+      "upstream_inference_completions_cost": 0.0006513
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: The paper is a non-review original research article whose primary objective is to model the future distribution of Brazilian rupestrian grasslands—a specific land cover class—under multiple climate and land-use scenarios. It explicitly implements national-scale spatial modeling across Brazil, uses ≥2 future climate scenarios (RCP 4.5 and RCP 8.5) with mining expansion variants, reports quantitative accuracy metrics (AUC = 0.972), and produces mapped projections of environmental suitability interpreted as potential land cover distribution. Although focused on a single ecosystem type, it meets all core inclusion criteria: national-scale implementation, primary focus on LULC prediction, multi-scenario quantitative comparison, spatially explicit modeling with accuracy assessment, and mapped future outputs. It does not meet any exclusion criteria.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:08:48.099664+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 5.342,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789654133-nQQq8xZi0zahJJk6XRb5\",\"object\":\"chat.completion\",\"created\":1789654133,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: The paper is a non-review original research article whose primary objective is to model the future distribution of Brazilian rupestrian grasslands—a specific land cover class—under multiple climate and land-use scenarios. It explicitly implements national-scale spatial modeling across Brazil, uses ≥2 future climate scenarios (RCP 4.5 and RCP 8.5) with mining expansion variants, reports quantitative accuracy metrics (AUC = 0.972), and produces mapped projections of environmental suitability interpreted as potential land cover distribution. Although focused on a single ecosystem type, it meets all core inclusion criteria: national-scale implementation, primary focus on LULC prediction, multi-scenario quantitative comparison, spatially explicit modeling with accuracy assessment, and mapped future outputs. It does not meet any exclusion criteria.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":11357,\"completion_tokens\":167,\"total_tokens\":11524,\"cost\":0.00950976,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00950976,\"upstream_inference_prompt_cost\":0.00885846,\"upstream_inference_completions_cost\":0.0006513},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654133-nQQq8xZi0zahJJk6XRb5",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 11357,
+        "completion_tokens": 167,
+        "total_tokens": 11524,
+        "cost": 0.00950976,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00950976,
+          "upstream_inference_prompt_cost": 0.00885846,
+          "upstream_inference_completions_cost": 0.0006513
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 5.343,
+  "call_id": "DS__z1_QDXNJB9I__qwen__r2",
+  "fingerprint": "b07076b3f1e126bdddd19fbed42da65d35596dfb03ab213d8bd3f7910275c321",
+  "paper_id": "z1_QDXNJB9I",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:08:53.442139+00:00",
+  "input_sha256": "a4e75cce971ba693ac1f55068476354fe32e64b9741d66c7da2d8f0d5a665595",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

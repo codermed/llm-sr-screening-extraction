@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653991-p1A0kB3UgfiiYlqNKCK1",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00132456,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 9767,
+    "completion_tokens": 131,
+    "total_tokens": 9898,
+    "cost": 0.00132456,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 9728,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00132456,
+      "upstream_inference_prompt_cost": 0.00127478,
+      "upstream_inference_completions_cost": 4.978e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper's primary focus is on predicting the range expansion of an invasive insect species (Thrips palmi) under climate change, using species distribution modeling (MaxEnt). While it incorporates future land-use change scenarios (SSPs) as a filtering layer for agricultural areas, the central research objective is ecological pest risk mapping, not LULC prediction itself. The LULC predictions are an externally sourced input used to refine the species distribution model outputs, not the subject of the modeling or validation. The paper does not implement, validate, or focus on spatially explicit LULC prediction as its core aim.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:06:26.756823+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.896,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789653991-p1A0kB3UgfiiYlqNKCK1\",\"object\":\"chat.completion\",\"created\":1789653991,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper's primary focus is on predicting the range expansion of an invasive insect species (Thrips palmi) under climate change, using species distribution modeling (MaxEnt). While it incorporates future land-use change scenarios (SSPs) as a filtering layer for agricultural areas, the central research objective is ecological pest risk mapping, not LULC prediction itself. The LULC predictions are an externally sourced input used to refine the species distribution model outputs, not the subject of the modeling or validation. The paper does not implement, validate, or focus on spatially explicit LULC prediction as its core aim.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":9767,\"completion_tokens\":131,\"total_tokens\":9898,\"cost\":0.00132456,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":9728,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00132456,\"upstream_inference_prompt_cost\":0.00127478,\"upstream_inference_completions_cost\":0.00004978},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653991-p1A0kB3UgfiiYlqNKCK1",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 9767,
+        "completion_tokens": 131,
+        "total_tokens": 9898,
+        "cost": 0.00132456,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 9728,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00132456,
+          "upstream_inference_prompt_cost": 0.00127478,
+          "upstream_inference_completions_cost": 4.978e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.897,
+  "call_id": "DS__z1_DMDFZH9N__deepseek__r2",
+  "fingerprint": "a1b528ed4d00f4ee03ba8231d16332a2b43b06a024e99472ee2f9a363385226d",
+  "paper_id": "z1_DMDFZH9N",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:06:30.653345+00:00",
+  "input_sha256": "44b27af5261eb4b62c7697e939b1e553016b75a1f0c7c4711bd81e489b488f89",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

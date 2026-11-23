@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654296-kIpePESt479lbIqIaXe8",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.001688,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 13264,
+    "completion_tokens": 187,
+    "total_tokens": 13451,
+    "cost": 0.001688,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 13056,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001688,
+      "upstream_inference_prompt_cost": 0.0013888,
+      "upstream_inference_completions_cost": 0.0002992
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: OK (Justification: This is a research article focused on spatially explicit land use/land cover (LULC) prediction of urban expansion across the entire country of China. It implements multiple future scenarios based on localized Shared Socioeconomic Pathways (SSPs). The study uses an improved LUSD-urban model incorporating a convolutional neural network (CNN) to simulate urban expansion from 2020 to 2050, with quantitative accuracy metrics reported (e.g., overall accuracy, Kappa, figure of merit). Outputs include mapped LULC projections and scenario comparisons at national, biome, and ecoregion scales. The paper explicitly evaluates impacts on natural habitats using spatially explicit LULC change simulations. The scale is national, scenarios are multiple, and quantitative spatial modeling with accuracy assessment is provided, meeting all core inclusion criteria. It is not a review, and no exclusion criteria apply.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:11:31.201687+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.965,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789654296-kIpePESt479lbIqIaXe8\",\"object\":\"chat.completion\",\"created\":1789654296,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: This is a research article focused on spatially explicit land use/land cover (LULC) prediction of urban expansion across the entire country of China. It implements multiple future scenarios based on localized Shared Socioeconomic Pathways (SSPs). The study uses an improved LUSD-urban model incorporating a convolutional neural network (CNN) to simulate urban expansion from 2020 to 2050, with quantitative accuracy metrics reported (e.g., overall accuracy, Kappa, figure of merit). Outputs include mapped LULC projections and scenario comparisons at national, biome, and ecoregion scales. The paper explicitly evaluates impacts on natural habitats using spatially explicit LULC change simulations. The scale is national, scenarios are multiple, and quantitative spatial modeling with accuracy assessment is provided, meeting all core inclusion criteria. It is not a review, and no exclusion criteria apply.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":13264,\"completion_tokens\":187,\"total_tokens\":13451,\"cost\":0.001688,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":13056,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.001688,\"upstream_inference_prompt_cost\":0.0013888,\"upstream_inference_completions_cost\":0.0002992},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654296-kIpePESt479lbIqIaXe8",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 13264,
+        "completion_tokens": 187,
+        "total_tokens": 13451,
+        "cost": 0.001688,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 13056,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001688,
+          "upstream_inference_prompt_cost": 0.0013888,
+          "upstream_inference_completions_cost": 0.0002992
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.966,
+  "call_id": "DS__z1_FAYWZZ4Z__openai__r2",
+  "fingerprint": "9d0ff7c09573c2e3bb4e751a804b68de7ffcd5226bb91263b979be1eca7eabdf",
+  "paper_id": "z1_FAYWZZ4Z",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:11:35.167238+00:00",
+  "input_sha256": "d21921adc2bdf3e8fa7ed93bb436def843bde1ceb30e1347e2e03833ab2d9abd",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

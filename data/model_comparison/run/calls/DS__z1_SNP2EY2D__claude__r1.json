@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789653519-NEcRrg9pJ2rAUDzUEyuk",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.015909,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 11669,
+    "completion_tokens": 848,
+    "total_tokens": 12517,
+    "cost": 0.015909,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.015909,
+      "upstream_inference_prompt_cost": 0.011669,
+      "upstream_inference_completions_cost": 0.00424
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Residential construction, land use and the environment\n\n## Step 1: Determine if Review Article\n**Result: NO** - This is a research/application paper, not a literature review. It presents original modeling work applying the Land Use Scanner model to the Netherlands.\n\n## Step 2: Evaluate Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA ASSESSMENT:\n\n1. **Explicit national-scale spatial implementation (entire country)**\n   - ✓ YES: \"The present version covers 193,399 grid cells of 500 by 500 meters each, covering all of the Netherlands.\"\n   - Study explicitly covers entire Netherlands at national scale\n\n2. **Primary focus = LULC prediction/simulation (central research question)**\n   - ✓ YES: \"The simulation model generates future land use in the Netherlands given several growth scenarios\"\n   - Primary objective is LULC simulation for 2020\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison**\n   - ✓ YES: Three scenarios implemented (Divided Europe, European Coordination, Global Competition)\n   - Quantitative land use demands calculated for each scenario (Figure 1)\n\n4. **Spatial modeling with quantitative accuracy metrics**\n   - ✓ YES: Regression equations with B-values and t-values reported (Table 1)\n   - Pseudo R² values provided (0.41-0.67 range)\n   - Suitability maps and allocation probabilities quantified\n\n5. **Outputs include mapped LULC projections**\n   - ✓ YES: Figures 2, 3, and 4 show spatial LULC projections for 2020\n   - Integrated land use maps produced for EC scenario\n\n### EXCLUSION CRITERIA ASSESSMENT:\n\n- ✗ Global-scale analysis: NO - national-scale focus on Netherlands\n- ✗ Local/regional focus only: NO - entire country covered\n- ✗ No LULC prediction: NO - LULC prediction is central\n- ✗ Species-specific/ecological only: NO - includes LULC dynamics\n- ✗ Economic/urban models without spatial LULC outputs: NO - produces spatial LULC maps\n- ✗ Methodological paper without application: NO - applied to national case\n- ✗ Qualitative/historical only: NO - quantitative future projections\n- ✗ Remote sensing technical study: NO - modeling-based approach\n- ✗ Single scenario only: NO - three scenarios implemented\n- ✗ No quantitative metrics: NO - extensive metrics reported\n\n## Step 3: Determine Primary Focus\n**Primary objective = LULC prediction** ✓\n\nThe paper's central research question concerns simulating future land use patterns in the Netherlands under different scenarios using the Land Use Scanner model.\n\n---\n\n## FINAL CATEGORIZATION: **OK**\n\n**Justification:** \nThis paper meets ALL core inclusion criteria for LULC prediction research:\n1. Implements national-scale spatial modeling covering entire Netherlands (193,399 grid cells)\n2. Primary focus is LULC prediction/simulation through 2020\n3. Implements 3 quantitatively distinct future scenarios with comparative analysis\n4. Employs spatial modeling with reported quantitative metrics (regression parameters, pseudo R², allocation probabilities)\n5. Produces mapped LULC projections (Figures 2-4) showing spatial distribution of residential and integrated land use\n6. Passes all exclusion criteria checks\n\nThe paper is a rigorous application of GIS-based land use modeling to national-scale LULC prediction with multiple scenarios and quantitative outputs.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:58:34.656968+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 8.566,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789653519-NEcRrg9pJ2rAUDzUEyuk\",\"object\":\"chat.completion\",\"created\":1789653519,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Residential construction, land use and the environment\\n\\n## Step 1: Determine if Review Article\\n**Result: NO** - This is a research/application paper, not a literature review. It presents original modeling work applying the Land Use Scanner model to the Netherlands.\\n\\n## Step 2: Evaluate Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA ASSESSMENT:\\n\\n1. **Explicit national-scale spatial implementation (entire country)**\\n   - ✓ YES: \\\"The present version covers 193,399 grid cells of 500 by 500 meters each, covering all of the Netherlands.\\\"\\n   - Study explicitly covers entire Netherlands at national scale\\n\\n2. **Primary focus = LULC prediction/simulation (central research question)**\\n   - ✓ YES: \\\"The simulation model generates future land use in the Netherlands given several growth scenarios\\\"\\n   - Primary objective is LULC simulation for 2020\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison**\\n   - ✓ YES: Three scenarios implemented (Divided Europe, European Coordination, Global Competition)\\n   - Quantitative land use demands calculated for each scenario (Figure 1)\\n\\n4. **Spatial modeling with quantitative accuracy metrics**\\n   - ✓ YES: Regression equations with B-values and t-values reported (Table 1)\\n   - Pseudo R² values provided (0.41-0.67 range)\\n   - Suitability maps and allocation probabilities quantified\\n\\n5. **Outputs include mapped LULC projections**\\n   - ✓ YES: Figures 2, 3, and 4 show spatial LULC projections for 2020\\n   - Integrated land use maps produced for EC scenario\\n\\n### EXCLUSION CRITERIA ASSESSMENT:\\n\\n- ✗ Global-scale analysis: NO - national-scale focus on Netherlands\\n- ✗ Local/regional focus only: NO - entire country covered\\n- ✗ No LULC prediction: NO - LULC prediction is central\\n- ✗ Species-specific/ecological only: NO - includes LULC dynamics\\n- ✗ Economic/urban models without spatial LULC outputs: NO - produces spatial LULC maps\\n- ✗ Methodological paper without application: NO - applied to national case\\n- ✗ Qualitative/historical only: NO - quantitative future projections\\n- ✗ Remote sensing technical study: NO - modeling-based approach\\n- ✗ Single scenario only: NO - three scenarios implemented\\n- ✗ No quantitative metrics: NO - extensive metrics reported\\n\\n## Step 3: Determine Primary Focus\\n**Primary objective = LULC prediction** ✓\\n\\nThe paper's central research question concerns simulating future land use patterns in the Netherlands under different scenarios using the Land Use Scanner model.\\n\\n---\\n\\n## FINAL CATEGORIZATION: **OK**\\n\\n**Justification:** \\nThis paper meets ALL core inclusion criteria for LULC prediction research:\\n1. Implements national-scale spatial modeling covering entire Netherlands (193,399 grid cells)\\n2. Primary focus is LULC prediction/simulation through 2020\\n3. Implements 3 quantitatively distinct future scenarios with comparative analysis\\n4. Employs spatial modeling with reported quantitative metrics (regression parameters, pseudo R², allocation probabilities)\\n5. Produces mapped LULC projections (Figures 2-4) showing spatial distribution of residential and integrated land use\\n6. Passes all exclusion criteria checks\\n\\nThe paper is a rigorous application of GIS-based land use modeling to national-scale LULC prediction with multiple scenarios and quantitative outputs.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":11669,\"completion_tokens\":848,\"total_tokens\":12517,\"cost\":0.015909,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.015909,\"upstream_inference_prompt_cost\":0.011669,\"upstream_inference_completions_cost\":0.00424},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653519-NEcRrg9pJ2rAUDzUEyuk",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 11669,
+        "completion_tokens": 848,
+        "total_tokens": 12517,
+        "cost": 0.015909,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.015909,
+          "upstream_inference_prompt_cost": 0.011669,
+          "upstream_inference_completions_cost": 0.00424
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 8.567,
+  "call_id": "DS__z1_SNP2EY2D__claude__r1",
+  "fingerprint": "3de1a696b913d39c24540c9671674e170e4b65bef13c1e71c87d57dde700c942",
+  "paper_id": "z1_SNP2EY2D",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:58:43.223404+00:00",
+  "input_sha256": "45e731a346c69eaf9c909cc06b3612658df1d62a3017e246ec66feacd32522f1",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

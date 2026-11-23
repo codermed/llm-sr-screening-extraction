@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789655737-HSIAGS4e344WmdG5IMJd",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.001866,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15777,
+    "completion_tokens": 150,
+    "total_tokens": 15927,
+    "cost": 0.001866,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 15616,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001866,
+      "upstream_inference_prompt_cost": 0.001626,
+      "upstream_inference_completions_cost": 0.00024
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This paper is a research article focused on ecological restoration priority setting using cost-benefit optimization and ecological performance regimes based on planetary boundaries in China. Although it uses land use/land cover (LULC) data to detect restoration sites and changes over time, it does not have a primary focus on future LULC prediction or simulation. There is no implementation of future LULC scenarios or spatial modeling projecting future LULC changes with quantitative accuracy metrics. The study’s core objective is ecological restoration planning and prioritization, integrating ecosystem services and cost constraints, rather than predicting or simulating future LULC patterns. Therefore, it fails the core inclusion criteria for LULC prediction-focused research.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:35:32.425667+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.329,
+      "raw_body": "\n         \n{\"id\":\"gen-1789655737-HSIAGS4e344WmdG5IMJd\",\"object\":\"chat.completion\",\"created\":1789655737,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This paper is a research article focused on ecological restoration priority setting using cost-benefit optimization and ecological performance regimes based on planetary boundaries in China. Although it uses land use/land cover (LULC) data to detect restoration sites and changes over time, it does not have a primary focus on future LULC prediction or simulation. There is no implementation of future LULC scenarios or spatial modeling projecting future LULC changes with quantitative accuracy metrics. The study’s core objective is ecological restoration planning and prioritization, integrating ecosystem services and cost constraints, rather than predicting or simulating future LULC patterns. Therefore, it fails the core inclusion criteria for LULC prediction-focused research.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15777,\"completion_tokens\":150,\"total_tokens\":15927,\"cost\":0.001866,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":15616,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.001866,\"upstream_inference_prompt_cost\":0.001626,\"upstream_inference_completions_cost\":0.00024},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655737-HSIAGS4e344WmdG5IMJd",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 15777,
+        "completion_tokens": 150,
+        "total_tokens": 15927,
+        "cost": 0.001866,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 15616,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001866,
+          "upstream_inference_prompt_cost": 0.001626,
+          "upstream_inference_completions_cost": 0.00024
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.329,
+  "call_id": "DS__z1_VYGKANT4__openai__r3",
+  "fingerprint": "37921831cf6c86b6853efebb212ee09dc90e09c39858f45e1063690ffc6b151a",
+  "paper_id": "z1_VYGKANT4",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:35:34.754982+00:00",
+  "input_sha256": "333f005ae2dfe31a75a9ec49d572e44389f5a7719c0ae4bd4d6150e066cc19f4",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

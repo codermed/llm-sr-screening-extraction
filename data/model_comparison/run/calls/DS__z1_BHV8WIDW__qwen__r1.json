@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789652845-HWJMqlsK3Z0H3fgoJm2J",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00603642,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 6884,
+    "completion_tokens": 171,
+    "total_tokens": 7055,
+    "cost": 0.00603642,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00603642,
+      "upstream_inference_prompt_cost": 0.00536952,
+      "upstream_inference_completions_cost": 0.0006669
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: The paper presents a non-review research study focused on downscaling global land-use scenario data (LUH2) to national-scale high-resolution (100 m and 10 m) future LULC projections for Belgium. It explicitly implements three future SSP-RCP scenarios (SSP1xRCP2.6, SSP3xRCP6.0, SSP5xRCP8.5) with quantitative comparison. The methodology uses the GLOBIO land allocation model with spatially explicit suitability layers and reference maps, and outputs include mapped LULC projections validated against independent datasets using quantitative accuracy metrics (overall accuracy, Kappa, RSR). The study area is the entire country of Belgium, satisfying national-scale implementation. All core inclusion criteria are met, and no exclusion criteria apply.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:47:20.661723+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.882,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789652845-HWJMqlsK3Z0H3fgoJm2J\",\"object\":\"chat.completion\",\"created\":1789652845,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: The paper presents a non-review research study focused on downscaling global land-use scenario data (LUH2) to national-scale high-resolution (100 m and 10 m) future LULC projections for Belgium. It explicitly implements three future SSP-RCP scenarios (SSP1xRCP2.6, SSP3xRCP6.0, SSP5xRCP8.5) with quantitative comparison. The methodology uses the GLOBIO land allocation model with spatially explicit suitability layers and reference maps, and outputs include mapped LULC projections validated against independent datasets using quantitative accuracy metrics (overall accuracy, Kappa, RSR). The study area is the entire country of Belgium, satisfying national-scale implementation. All core inclusion criteria are met, and no exclusion criteria apply.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":6884,\"completion_tokens\":171,\"total_tokens\":7055,\"cost\":0.00603642,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00603642,\"upstream_inference_prompt_cost\":0.00536952,\"upstream_inference_completions_cost\":0.0006669},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652845-HWJMqlsK3Z0H3fgoJm2J",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 6884,
+        "completion_tokens": 171,
+        "total_tokens": 7055,
+        "cost": 0.00603642,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00603642,
+          "upstream_inference_prompt_cost": 0.00536952,
+          "upstream_inference_completions_cost": 0.0006669
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.883,
+  "call_id": "DS__z1_BHV8WIDW__qwen__r1",
+  "fingerprint": "148e1f81fd89b780c8eb765e8fa25f68a8c946afdf1a71df2bd12de9b83a889f",
+  "paper_id": "z1_BHV8WIDW",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:47:25.544292+00:00",
+  "input_sha256": "49dd108688e4a180df4ad7e93ac29b8a42a0ef072a862f3fac17887ac862b082",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

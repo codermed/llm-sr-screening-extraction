@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789655788-vs3h47yI3LpBT7nzHIz8",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.01183494,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 14283,
+    "completion_tokens": 178,
+    "total_tokens": 14461,
+    "cost": 0.01183494,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01183494,
+      "upstream_inference_prompt_cost": 0.01114074,
+      "upstream_inference_completions_cost": 0.0006942
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a non-review original research article focused on predicting the future distribution of Siamese Eld’s deer under land use and climate change scenarios. While it uses future land use change scenarios as input, its primary objective is species habitat modeling, not land use/land cover (LULC) prediction itself. Furthermore, the study area is a transboundary region spanning parts of Thailand, Cambodia, and Lao PDR—not a national-scale implementation for any single country. Thus, it fails core inclusion criteria: it lacks explicit national-scale spatial implementation and does not have LULC prediction as its primary focus. It also meets an exclusion criterion: “Species-specific/ecological focus (flora/fauna) unrelated to LULC” — here, LULC change is a driver for species modeling, not the central research question.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:36:23.351781+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.759,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789655788-vs3h47yI3LpBT7nzHIz8\",\"object\":\"chat.completion\",\"created\":1789655788,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a non-review original research article focused on predicting the future distribution of Siamese Eld’s deer under land use and climate change scenarios. While it uses future land use change scenarios as input, its primary objective is species habitat modeling, not land use/land cover (LULC) prediction itself. Furthermore, the study area is a transboundary region spanning parts of Thailand, Cambodia, and Lao PDR—not a national-scale implementation for any single country. Thus, it fails core inclusion criteria: it lacks explicit national-scale spatial implementation and does not have LULC prediction as its primary focus. It also meets an exclusion criterion: “Species-specific/ecological focus (flora/fauna) unrelated to LULC” — here, LULC change is a driver for species modeling, not the central research question.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":14283,\"completion_tokens\":178,\"total_tokens\":14461,\"cost\":0.01183494,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.01183494,\"upstream_inference_prompt_cost\":0.01114074,\"upstream_inference_completions_cost\":0.0006942},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655788-vs3h47yI3LpBT7nzHIz8",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 14283,
+        "completion_tokens": 178,
+        "total_tokens": 14461,
+        "cost": 0.01183494,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01183494,
+          "upstream_inference_prompt_cost": 0.01114074,
+          "upstream_inference_completions_cost": 0.0006942
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.761,
+  "call_id": "DS__z1_62M9Z4AJ__qwen__r3",
+  "fingerprint": "60e1f0e67e5c77078cb9c41f0e49e4b0d6eab279aba5b478a5b7f02d15c58066",
+  "paper_id": "z1_62M9Z4AJ",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:36:28.111426+00:00",
+  "input_sha256": "b116f8e7014f23ab582bf7cfb6feb626427a4df147f546a041ef53b4504e6389",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

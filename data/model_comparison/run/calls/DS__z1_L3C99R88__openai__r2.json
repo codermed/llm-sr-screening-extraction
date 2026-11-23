@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653663-kSqfvSUDtgxGz0fSVix6",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00133,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10829,
+    "completion_tokens": 116,
+    "total_tokens": 10945,
+    "cost": 0.00133,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 10624,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00133,
+      "upstream_inference_prompt_cost": 0.0011444,
+      "upstream_inference_completions_cost": 0.0001856
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This is a review article focused on biodiesel production from waste cooking oil in Pakistan, covering energy sector, feedstocks, technology, and economic evaluation. It does not address land use land cover (LULC) future prediction or spatial modeling. There is no implementation of LULC prediction, no spatial modeling or quantitative accuracy metrics, nor future scenario comparisons related to LULC. Therefore, it fails core inclusion criteria related to LULC prediction and does not meet criteria to be labeled as REVIEW for LULC.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:00:58.710144+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 1.987,
+      "raw_body": "\n         \n{\"id\":\"gen-1789653663-kSqfvSUDtgxGz0fSVix6\",\"object\":\"chat.completion\",\"created\":1789653663,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This is a review article focused on biodiesel production from waste cooking oil in Pakistan, covering energy sector, feedstocks, technology, and economic evaluation. It does not address land use land cover (LULC) future prediction or spatial modeling. There is no implementation of LULC prediction, no spatial modeling or quantitative accuracy metrics, nor future scenario comparisons related to LULC. Therefore, it fails core inclusion criteria related to LULC prediction and does not meet criteria to be labeled as REVIEW for LULC.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10829,\"completion_tokens\":116,\"total_tokens\":10945,\"cost\":0.00133,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":10624,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00133,\"upstream_inference_prompt_cost\":0.0011444,\"upstream_inference_completions_cost\":0.0001856},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653663-kSqfvSUDtgxGz0fSVix6",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 10829,
+        "completion_tokens": 116,
+        "total_tokens": 10945,
+        "cost": 0.00133,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 10624,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00133,
+          "upstream_inference_prompt_cost": 0.0011444,
+          "upstream_inference_completions_cost": 0.0001856
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 1.988,
+  "call_id": "DS__z1_L3C99R88__openai__r2",
+  "fingerprint": "2dce25a32cf1cdbd888497d4435fb1dc4fa09e22f6c18f1c0ec63afc6e8089fe",
+  "paper_id": "z1_L3C99R88",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:01:00.697412+00:00",
+  "input_sha256": "96fb528f220384dc9db2a9c8922ae7bcd0b01427444b976b685133fe27cce05d",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

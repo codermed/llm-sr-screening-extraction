@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789654211-f74jhHyRo6yegfbliUPI",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0099645,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12065,
+    "completion_tokens": 142,
+    "total_tokens": 12207,
+    "cost": 0.0099645,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0099645,
+      "upstream_inference_prompt_cost": 0.0094107,
+      "upstream_inference_completions_cost": 0.0005538
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a review article that describes Australia’s National Carbon Accounting System (NCAS) and the FullCAM ecosystem model, which uses land cover change data as an input for greenhouse gas accounting. While it discusses historical land cover mapping derived from Landsat time series (1972–2005), it does not focus on or synthesize research about future land use/land cover (LULC) prediction. The primary aim is carbon and nitrogen accounting for emissions reporting, not LULC forecasting. Therefore, as a review article not centered on LULC future prediction, it falls under 'EXCLUDED' per the categorization flow.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:10:06.591262+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 5.182,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789654211-f74jhHyRo6yegfbliUPI\",\"object\":\"chat.completion\",\"created\":1789654211,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a review article that describes Australia’s National Carbon Accounting System (NCAS) and the FullCAM ecosystem model, which uses land cover change data as an input for greenhouse gas accounting. While it discusses historical land cover mapping derived from Landsat time series (1972–2005), it does not focus on or synthesize research about future land use/land cover (LULC) prediction. The primary aim is carbon and nitrogen accounting for emissions reporting, not LULC forecasting. Therefore, as a review article not centered on LULC future prediction, it falls under 'EXCLUDED' per the categorization flow.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12065,\"completion_tokens\":142,\"total_tokens\":12207,\"cost\":0.0099645,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0099645,\"upstream_inference_prompt_cost\":0.0094107,\"upstream_inference_completions_cost\":0.0005538},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654211-f74jhHyRo6yegfbliUPI",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 12065,
+        "completion_tokens": 142,
+        "total_tokens": 12207,
+        "cost": 0.0099645,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0099645,
+          "upstream_inference_prompt_cost": 0.0094107,
+          "upstream_inference_completions_cost": 0.0005538
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 5.182,
+  "call_id": "DS__z1_LIQ6LKQG__qwen__r2",
+  "fingerprint": "4da453e8252260bfe2176372bee0b39af93f47ffcc58f333f47055ea50b0949e",
+  "paper_id": "z1_LIQ6LKQG",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:10:11.773156+00:00",
+  "input_sha256": "b6ff1124febda557b88102673e40887a9767d006b96d186299822a443bf1d231",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

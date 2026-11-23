@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653072-2bqwgrFEZPs2ul1TST16",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00435494,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 16608,
+    "completion_tokens": 97,
+    "total_tokens": 16705,
+    "cost": 0.00435494,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00435494,
+      "upstream_inference_prompt_cost": 0.00431808,
+      "upstream_inference_completions_cost": 3.686e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: The paper explicitly implements a participatory, spatially explicit framework for predicting national-scale land use and land cover change (LULCC) across mainland Tanzania. It models and quantitatively compares two distinct future scenarios (Business as Usual and Green Economy) to the year 2025. The methodology includes the creation of composite indicators and spatial allocation models to generate national maps of LULCC likelihood and simulated change, with quantitative metrics on change areas and rates provided.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:51:07.916359+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.377,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789653072-2bqwgrFEZPs2ul1TST16\",\"object\":\"chat.completion\",\"created\":1789653072,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: The paper explicitly implements a participatory, spatially explicit framework for predicting national-scale land use and land cover change (LULCC) across mainland Tanzania. It models and quantitatively compares two distinct future scenarios (Business as Usual and Green Economy) to the year 2025. The methodology includes the creation of composite indicators and spatial allocation models to generate national maps of LULCC likelihood and simulated change, with quantitative metrics on change areas and rates provided.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":16608,\"completion_tokens\":97,\"total_tokens\":16705,\"cost\":0.00435494,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00435494,\"upstream_inference_prompt_cost\":0.00431808,\"upstream_inference_completions_cost\":0.00003686},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653072-2bqwgrFEZPs2ul1TST16",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 16608,
+        "completion_tokens": 97,
+        "total_tokens": 16705,
+        "cost": 0.00435494,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00435494,
+          "upstream_inference_prompt_cost": 0.00431808,
+          "upstream_inference_completions_cost": 3.686e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.377,
+  "call_id": "DS__z1_S28UTXLC__deepseek__r1",
+  "fingerprint": "3d367d2d8dba242546d8ee381381480155056daa88a421d3869877fe6dce4d65",
+  "paper_id": "z1_S28UTXLC",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:51:12.293401+00:00",
+  "input_sha256": "80b09b46ce6d744adf017669ecf3f75b7d808905bdc7ef1bbe1193e7cd332480",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789654286-cdwREbQj4KqLriesNQhu",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.01362504,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 16658,
+    "completion_tokens": 162,
+    "total_tokens": 16820,
+    "cost": 0.01362504,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01362504,
+      "upstream_inference_prompt_cost": 0.01299324,
+      "upstream_inference_completions_cost": 0.0006318
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a non-review research article that does not include any land use/land cover (LULC) future prediction component. While it uses a newly developed high-resolution land use map as static input for hydrological modeling, it explicitly states that land use change scenarios were not modeled due to lack of comparable historical land use maps. The study focuses on simulating drainage ratios under observed climate and static land use conditions from 1982–2010, and although it discusses potential future implications of land use and climate change qualitatively, it does not implement or compare ≥2 quantitative future LULC scenarios. Therefore, it fails the core inclusion criterion requiring explicit LULC prediction as the primary focus or even as an implemented step.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:11:22.109789+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 5.288,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789654286-cdwREbQj4KqLriesNQhu\",\"object\":\"chat.completion\",\"created\":1789654286,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a non-review research article that does not include any land use/land cover (LULC) future prediction component. While it uses a newly developed high-resolution land use map as static input for hydrological modeling, it explicitly states that land use change scenarios were not modeled due to lack of comparable historical land use maps. The study focuses on simulating drainage ratios under observed climate and static land use conditions from 1982–2010, and although it discusses potential future implications of land use and climate change qualitatively, it does not implement or compare ≥2 quantitative future LULC scenarios. Therefore, it fails the core inclusion criterion requiring explicit LULC prediction as the primary focus or even as an implemented step.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":16658,\"completion_tokens\":162,\"total_tokens\":16820,\"cost\":0.01362504,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.01362504,\"upstream_inference_prompt_cost\":0.01299324,\"upstream_inference_completions_cost\":0.0006318},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654286-cdwREbQj4KqLriesNQhu",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 16658,
+        "completion_tokens": 162,
+        "total_tokens": 16820,
+        "cost": 0.01362504,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01362504,
+          "upstream_inference_prompt_cost": 0.01299324,
+          "upstream_inference_completions_cost": 0.0006318
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 5.288,
+  "call_id": "DS__z1_D6SZ4M8T__qwen__r2",
+  "fingerprint": "5e64a09bcd4f9d4ec6ffc2f4b58a1aee7beb75731761a9562dea709b92ac6a14",
+  "paper_id": "z1_D6SZ4M8T",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:11:27.397755+00:00",
+  "input_sha256": "4dadea5470b239eec88f7ecd7c7d88d5c733b4928ab8a7f133fa2d96eded2414",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

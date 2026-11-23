@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789655866-uPtn3UCtOyZPrIeEyQsR",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0042547,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 16278,
+    "completion_tokens": 59,
+    "total_tokens": 16337,
+    "cost": 0.0042547,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0042547,
+      "upstream_inference_prompt_cost": 0.00423228,
+      "upstream_inference_completions_cost": 2.242e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: Non-review paper with explicit national-scale LULC prediction for Lithuania, implementing four future scenarios (A0, A1, A2, A3) with quantitative accuracy metrics (80% validation), and producing mapped spatial projections as a primary research focus.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:37:41.824013+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.836,
+      "raw_body": "\n         \n{\"id\":\"gen-1789655866-uPtn3UCtOyZPrIeEyQsR\",\"object\":\"chat.completion\",\"created\":1789655866,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: Non-review paper with explicit national-scale LULC prediction for Lithuania, implementing four future scenarios (A0, A1, A2, A3) with quantitative accuracy metrics (80% validation), and producing mapped spatial projections as a primary research focus.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":16278,\"completion_tokens\":59,\"total_tokens\":16337,\"cost\":0.0042547,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0042547,\"upstream_inference_prompt_cost\":0.00423228,\"upstream_inference_completions_cost\":0.00002242},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655866-uPtn3UCtOyZPrIeEyQsR",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 16278,
+        "completion_tokens": 59,
+        "total_tokens": 16337,
+        "cost": 0.0042547,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0042547,
+          "upstream_inference_prompt_cost": 0.00423228,
+          "upstream_inference_completions_cost": 2.242e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.837,
+  "call_id": "DS__z1_5XHKN2GZ__deepseek__r3",
+  "fingerprint": "bb87c560ed89a47e577eaf038f9343b1ecf4a1989a50394a3c5ab234b45c254c",
+  "paper_id": "z1_5XHKN2GZ",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:37:44.660517+00:00",
+  "input_sha256": "b5367beccda133727a47c6ebf05821a90b1b18fba03fdb6a6c405aeba581bb04",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

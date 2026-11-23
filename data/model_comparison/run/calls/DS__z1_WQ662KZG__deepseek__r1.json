@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653011-KJW8mAfFHUOLf2uni64l",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00214384,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 8057,
+    "completion_tokens": 129,
+    "total_tokens": 8186,
+    "cost": 0.00214384,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00214384,
+      "upstream_inference_prompt_cost": 0.00209482,
+      "upstream_inference_completions_cost": 4.902e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper's primary objective is to assess the impact of sea level rise (SLR) on the Indus delta region of Pakistan, not national-scale LULC prediction. While it uses LULC classification and future simulation (MOLUSCE) as a methodological step to understand what land covers are at risk from SLR, LULC prediction is not the central research question. The study area is explicitly the Indus delta, a regional coastal area, not the entire nation of Pakistan. It also fails the core inclusion criterion of \"explicit national-scale spatial implementation (entire country).\")",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:50:06.779936+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.92,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789653011-KJW8mAfFHUOLf2uni64l\",\"object\":\"chat.completion\",\"created\":1789653011,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper's primary objective is to assess the impact of sea level rise (SLR) on the Indus delta region of Pakistan, not national-scale LULC prediction. While it uses LULC classification and future simulation (MOLUSCE) as a methodological step to understand what land covers are at risk from SLR, LULC prediction is not the central research question. The study area is explicitly the Indus delta, a regional coastal area, not the entire nation of Pakistan. It also fails the core inclusion criterion of \\\"explicit national-scale spatial implementation (entire country).\\\")\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":8057,\"completion_tokens\":129,\"total_tokens\":8186,\"cost\":0.00214384,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00214384,\"upstream_inference_prompt_cost\":0.00209482,\"upstream_inference_completions_cost\":0.00004902},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653011-KJW8mAfFHUOLf2uni64l",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 8057,
+        "completion_tokens": 129,
+        "total_tokens": 8186,
+        "cost": 0.00214384,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00214384,
+          "upstream_inference_prompt_cost": 0.00209482,
+          "upstream_inference_completions_cost": 4.902e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.92,
+  "call_id": "DS__z1_WQ662KZG__deepseek__r1",
+  "fingerprint": "410010e8aa0c650a53ffb070d3a58343732ddc8f929bbb2843429dea331cb3a2",
+  "paper_id": "z1_WQ662KZG",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:50:10.699622+00:00",
+  "input_sha256": "c7525cbeecb47b852b70841e3ab3207d2d6300bc798e4e06de0c6c65c2965697",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

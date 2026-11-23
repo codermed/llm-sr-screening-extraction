@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789653625-H5vXTeIJGEh7FRJTelKM",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.016308,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 11728,
+    "completion_tokens": 916,
+    "total_tokens": 12644,
+    "cost": 0.016308,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.016308,
+      "upstream_inference_prompt_cost": 0.011728,
+      "upstream_inference_completions_cost": 0.00458
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Vulnerability of Forest Vegetation to Climate Change in China\n\n## Step 1: Determine if Review Article\n**Finding:** This is a **research paper**, not a review article. It presents original empirical research with methods, results, and analysis of forest vegetation vulnerability.\n\n---\n\n## Step 2: Evaluate Against Inclusion/Exclusion Criteria\n\n### Core Inclusion Criteria Assessment:\n\n1. **Explicit national-scale spatial implementation (entire country)?**\n   - ✓ YES: Study explicitly covers China nationally with 204 forest communities across 16 vegetation types mapped at 10×10 km grid resolution across the entire country (Figure 1 shows national distribution)\n\n2. **Primary focus = LULC prediction/simulation?**\n   - ✗ NO: Primary focus is **forest vegetation vulnerability assessment to climate change**, not land-use/land-cover prediction. The paper assesses changes in distribution areas of forest communities under climate scenarios, but this is a **species distribution modeling (SDM) and ecological vulnerability study**, not LULC prediction.\n   - The study models potential distribution shifts of forest vegetation types based on bioclimatic variables, not LULC transitions or land-use changes.\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ✓ YES: Two RCP scenarios (4.5 and 8.5) with quantitative vulnerability indices and statistical comparison (paired t-tests, P<0.05)\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ✓ YES: MaxEnt SDM with AUC values (all >0.7), training omission rates (<17%), binomial tests reported\n\n5. **Outputs include mapped LULC projections?**\n   - ✗ NO: Outputs are mapped vulnerability indices and distribution area changes for forest vegetation types, not LULC classification maps or LULC transitions\n\n### Exclusion Criteria Assessment:\n\n- **Species-specific/ecological focus unrelated to LULC?** \n  - ✓ MEETS EXCLUSION: Paper is explicitly focused on species distribution modeling and ecological vulnerability of forest communities to climate change. The methodology centers on endemic-area relationships (EAR) and species extinction risk, not LULC change analysis.\n  \n- **No LULC prediction component?**\n  - ✓ MEETS EXCLUSION: While the paper models distribution area changes, it does not predict LULC categories, transitions, or land-use/land-cover conversions. It predicts habitat suitability and distribution ranges for ecological communities.\n\n---\n\n## Step 3: Determine Primary Focus\n\nThe paper's primary objective is **ecological vulnerability assessment**, specifically:\n- Quantifying vulnerability of forest vegetation types to climate change\n- Projecting changes in suitable habitat distribution areas\n- Assessing endemic species extinction risk using EAR methodology\n\nThis is fundamentally different from LULC prediction, which would involve:\n- Predicting transitions between land-use categories (e.g., forest→agriculture, urban→forest)\n- Modeling human land-use decisions and drivers\n- Producing LULC classification maps for future periods\n\n---\n\n## FINAL CATEGORIZATION\n\n**Final categorization: EXCLUDED**\n\n**Justification:** \nThis paper is a species distribution and ecological vulnerability study, not a land-use/land-cover prediction study. While it operates at national scale with sophisticated spatial modeling and multiple climate scenarios, it fails the core inclusion criterion that primary focus must be LULC prediction/simulation. The paper explicitly models forest vegetation distribution shifts under climate change using species distribution modeling (MaxEnt) and endemic-area relationships to assess extinction risk—an ecological/conservation biology approach, not a LULC prediction approach. The study produces vulnerability maps and habitat suitability projections, not LULC classification or transition predictions. Therefore, it meets the specific exclusion criterion: \"Species-specific/ecological focus unrelated to LULC\" and \"No LULC prediction component.\"",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:00:20.449012+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 11.827,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653625-H5vXTeIJGEh7FRJTelKM\",\"object\":\"chat.completion\",\"created\":1789653625,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Vulnerability of Forest Vegetation to Climate Change in China\\n\\n## Step 1: Determine if Review Article\\n**Finding:** This is a **research paper**, not a review article. It presents original empirical research with methods, results, and analysis of forest vegetation vulnerability.\\n\\n---\\n\\n## Step 2: Evaluate Against Inclusion/Exclusion Criteria\\n\\n### Core Inclusion Criteria Assessment:\\n\\n1. **Explicit national-scale spatial implementation (entire country)?**\\n   - ✓ YES: Study explicitly covers China nationally with 204 forest communities across 16 vegetation types mapped at 10×10 km grid resolution across the entire country (Figure 1 shows national distribution)\\n\\n2. **Primary focus = LULC prediction/simulation?**\\n   - ✗ NO: Primary focus is **forest vegetation vulnerability assessment to climate change**, not land-use/land-cover prediction. The paper assesses changes in distribution areas of forest communities under climate scenarios, but this is a **species distribution modeling (SDM) and ecological vulnerability study**, not LULC prediction.\\n   - The study models potential distribution shifts of forest vegetation types based on bioclimatic variables, not LULC transitions or land-use changes.\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ✓ YES: Two RCP scenarios (4.5 and 8.5) with quantitative vulnerability indices and statistical comparison (paired t-tests, P<0.05)\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ✓ YES: MaxEnt SDM with AUC values (all >0.7), training omission rates (<17%), binomial tests reported\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ✗ NO: Outputs are mapped vulnerability indices and distribution area changes for forest vegetation types, not LULC classification maps or LULC transitions\\n\\n### Exclusion Criteria Assessment:\\n\\n- **Species-specific/ecological focus unrelated to LULC?** \\n  - ✓ MEETS EXCLUSION: Paper is explicitly focused on species distribution modeling and ecological vulnerability of forest communities to climate change. The methodology centers on endemic-area relationships (EAR) and species extinction risk, not LULC change analysis.\\n  \\n- **No LULC prediction component?**\\n  - ✓ MEETS EXCLUSION: While the paper models distribution area changes, it does not predict LULC categories, transitions, or land-use/land-cover conversions. It predicts habitat suitability and distribution ranges for ecological communities.\\n\\n---\\n\\n## Step 3: Determine Primary Focus\\n\\nThe paper's primary objective is **ecological vulnerability assessment**, specifically:\\n- Quantifying vulnerability of forest vegetation types to climate change\\n- Projecting changes in suitable habitat distribution areas\\n- Assessing endemic species extinction risk using EAR methodology\\n\\nThis is fundamentally different from LULC prediction, which would involve:\\n- Predicting transitions between land-use categories (e.g., forest→agriculture, urban→forest)\\n- Modeling human land-use decisions and drivers\\n- Producing LULC classification maps for future periods\\n\\n---\\n\\n## FINAL CATEGORIZATION\\n\\n**Final categorization: EXCLUDED**\\n\\n**Justification:** \\nThis paper is a species distribution and ecological vulnerability study, not a land-use/land-cover prediction study. While it operates at national scale with sophisticated spatial modeling and multiple climate scenarios, it fails the core inclusion criterion that primary focus must be LULC prediction/simulation. The paper explicitly models forest vegetation distribution shifts under climate change using species distribution modeling (MaxEnt) and endemic-area relationships to assess extinction risk—an ecological/conservation biology approach, not a LULC prediction approach. The study produces vulnerability maps and habitat suitability projections, not LULC classification or transition predictions. Therefore, it meets the specific exclusion criterion: \\\"Species-specific/ecological focus unrelated to LULC\\\" and \\\"No LULC prediction component.\\\"\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":11728,\"completion_tokens\":916,\"total_tokens\":12644,\"cost\":0.016308,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.016308,\"upstream_inference_prompt_cost\":0.011728,\"upstream_inference_completions_cost\":0.00458},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653625-H5vXTeIJGEh7FRJTelKM",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 11728,
+        "completion_tokens": 916,
+        "total_tokens": 12644,
+        "cost": 0.016308,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.016308,
+          "upstream_inference_prompt_cost": 0.011728,
+          "upstream_inference_completions_cost": 0.00458
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 11.828,
+  "call_id": "DS__z1_VN2L9BE9__claude__r1",
+  "fingerprint": "f5337ff281ccca6ca7cfba909fe8beb9c488886669a7e55f735bbdfff57d3af2",
+  "paper_id": "z1_VN2L9BE9",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T14:00:32.276529+00:00",
+  "input_sha256": "2878aabf7aa90385eaf32d2c9591488d86cb44a57804057db2bfae2311c9c571",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

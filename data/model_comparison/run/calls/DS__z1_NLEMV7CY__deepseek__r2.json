@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789654278-sSYfrYSPKrODQWIuYyGD",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0023085,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 8702,
+    "completion_tokens": 121,
+    "total_tokens": 8823,
+    "cost": 0.0023085,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0023085,
+      "upstream_inference_prompt_cost": 0.00226252,
+      "upstream_inference_completions_cost": 4.598e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: **OK** (Justification: This is a non-review research paper that meets all core inclusion criteria. It implements a spatially-explicit deforestation prediction model (Dinamica EGO) for the entire national scale of Colombia. The study's primary focus is on modeling and projecting land use/land cover (LULC) change (specifically deforestation). It implements and quantitatively compares two distinct future scenarios (Business as Usual and Governance) for 2030 and 2050. The methodology includes quantitative accuracy metrics and validation, and the outputs include mapped spatial projections of forest loss.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:11:13.739624+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 8.353,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789654278-sSYfrYSPKrODQWIuYyGD\",\"object\":\"chat.completion\",\"created\":1789654278,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: **OK** (Justification: This is a non-review research paper that meets all core inclusion criteria. It implements a spatially-explicit deforestation prediction model (Dinamica EGO) for the entire national scale of Colombia. The study's primary focus is on modeling and projecting land use/land cover (LULC) change (specifically deforestation). It implements and quantitatively compares two distinct future scenarios (Business as Usual and Governance) for 2030 and 2050. The methodology includes quantitative accuracy metrics and validation, and the outputs include mapped spatial projections of forest loss.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":8702,\"completion_tokens\":121,\"total_tokens\":8823,\"cost\":0.0023085,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0023085,\"upstream_inference_prompt_cost\":0.00226252,\"upstream_inference_completions_cost\":0.00004598},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654278-sSYfrYSPKrODQWIuYyGD",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 8702,
+        "completion_tokens": 121,
+        "total_tokens": 8823,
+        "cost": 0.0023085,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0023085,
+          "upstream_inference_prompt_cost": 0.00226252,
+          "upstream_inference_completions_cost": 4.598e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 8.354,
+  "call_id": "DS__z1_NLEMV7CY__deepseek__r2",
+  "fingerprint": "b377dafb088afb22d26c555512eb0d6f1815ec0a0c9175b5624e59ef67cba9bb",
+  "paper_id": "z1_NLEMV7CY",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:11:22.093182+00:00",
+  "input_sha256": "1b82b06f380446d02b7982ab01598493506f41e3e9ac489b97794759aaa5d8da",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

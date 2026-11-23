@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789654023-KBUVRMXsw9hsg9N60vUB",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0091416,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10835,
+    "completion_tokens": 177,
+    "total_tokens": 11012,
+    "cost": 0.0091416,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0091416,
+      "upstream_inference_prompt_cost": 0.0084513,
+      "upstream_inference_completions_cost": 0.0006903
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK  \n(Justification: The paper is a non-review research article that explicitly develops national-scale (entire Brazil), spatially explicit future land-use and land-cover (LULC) change scenarios until 2050 using the LuccME modeling framework. Its primary objective is LULC prediction, aligned with three SSP/RCP scenarios (SSP1/RCP1.9, SSP2/RCP4.5, SSP3/RCP7.0), enabling quantitative comparison across multiple futures. The study implements a spatial allocation model incorporating biophysical, socioeconomic, and institutional drivers at 10 km resolution, produces mapped LULC projections for six classes, and reports quantitative validation metrics (e.g., 84.44% average spatial fit, omission/commission errors). It meets all core inclusion criteria and avoids all exclusion criteria.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:06:58.937518+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 5.08,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789654023-KBUVRMXsw9hsg9N60vUB\",\"object\":\"chat.completion\",\"created\":1789654023,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK  \\n(Justification: The paper is a non-review research article that explicitly develops national-scale (entire Brazil), spatially explicit future land-use and land-cover (LULC) change scenarios until 2050 using the LuccME modeling framework. Its primary objective is LULC prediction, aligned with three SSP/RCP scenarios (SSP1/RCP1.9, SSP2/RCP4.5, SSP3/RCP7.0), enabling quantitative comparison across multiple futures. The study implements a spatial allocation model incorporating biophysical, socioeconomic, and institutional drivers at 10 km resolution, produces mapped LULC projections for six classes, and reports quantitative validation metrics (e.g., 84.44% average spatial fit, omission/commission errors). It meets all core inclusion criteria and avoids all exclusion criteria.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10835,\"completion_tokens\":177,\"total_tokens\":11012,\"cost\":0.0091416,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0091416,\"upstream_inference_prompt_cost\":0.0084513,\"upstream_inference_completions_cost\":0.0006903},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654023-KBUVRMXsw9hsg9N60vUB",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 10835,
+        "completion_tokens": 177,
+        "total_tokens": 11012,
+        "cost": 0.0091416,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0091416,
+          "upstream_inference_prompt_cost": 0.0084513,
+          "upstream_inference_completions_cost": 0.0006903
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 5.08,
+  "call_id": "DS__z1_6L57TUK8__qwen__r2",
+  "fingerprint": "41e93f01d96eeae5add8324914e4118c2da6c510675bc0167399c8c92faa5a76",
+  "paper_id": "z1_6L57TUK8",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:07:04.017568+00:00",
+  "input_sha256": "65181bb7b5d3f98ed52039cf201c8a1eb909ba482d812c6f111f1103f588bbf0",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

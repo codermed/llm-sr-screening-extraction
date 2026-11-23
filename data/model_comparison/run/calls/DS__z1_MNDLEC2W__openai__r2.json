@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654060-KgvJSmwMVe2DqxN6Ot64",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00124,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 9532,
+    "completion_tokens": 144,
+    "total_tokens": 9676,
+    "cost": 0.00124,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 9344,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00124,
+      "upstream_inference_prompt_cost": 0.0010096,
+      "upstream_inference_completions_cost": 0.0002304
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This is a non-review research paper focused on modeling soil organic carbon (SOC) changes under climate change and compost amendment scenarios at the national scale in Italy. However, the primary focus is on soil carbon dynamics and sequestration potential, not on land use land cover (LULC) future prediction or simulation. The paper does not include LULC prediction as a central research question, nor does it generate mapped future LULC projections or scenarios. It models SOC changes based on existing land use classes but does not simulate or predict future LULC changes. Therefore, it fails the core inclusion criterion of having a primary focus on LULC prediction/simulation.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:07:35.536418+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.463,
+      "raw_body": "\n         \n{\"id\":\"gen-1789654060-KgvJSmwMVe2DqxN6Ot64\",\"object\":\"chat.completion\",\"created\":1789654060,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This is a non-review research paper focused on modeling soil organic carbon (SOC) changes under climate change and compost amendment scenarios at the national scale in Italy. However, the primary focus is on soil carbon dynamics and sequestration potential, not on land use land cover (LULC) future prediction or simulation. The paper does not include LULC prediction as a central research question, nor does it generate mapped future LULC projections or scenarios. It models SOC changes based on existing land use classes but does not simulate or predict future LULC changes. Therefore, it fails the core inclusion criterion of having a primary focus on LULC prediction/simulation.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":9532,\"completion_tokens\":144,\"total_tokens\":9676,\"cost\":0.00124,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":9344,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00124,\"upstream_inference_prompt_cost\":0.0010096,\"upstream_inference_completions_cost\":0.0002304},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654060-KgvJSmwMVe2DqxN6Ot64",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 9532,
+        "completion_tokens": 144,
+        "total_tokens": 9676,
+        "cost": 0.00124,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 9344,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00124,
+          "upstream_inference_prompt_cost": 0.0010096,
+          "upstream_inference_completions_cost": 0.0002304
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.463,
+  "call_id": "DS__z1_MNDLEC2W__openai__r2",
+  "fingerprint": "c78f3af14fed8e337887272add54f725eae31b46328a9656ccb438bcd38fba30",
+  "paper_id": "z1_MNDLEC2W",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:07:37.999428+00:00",
+  "input_sha256": "ec376081d608569def67f5f7ae8c6e58904922bd96581f2505e9d73ce06ea8de",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

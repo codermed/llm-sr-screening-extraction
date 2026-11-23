@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653383-gr0Kz6LsbtkgR65KLPr2",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0063148,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15163,
+    "completion_tokens": 156,
+    "total_tokens": 15319,
+    "cost": 0.0063148,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0063148,
+      "upstream_inference_prompt_cost": 0.0060652,
+      "upstream_inference_completions_cost": 0.0002496
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: OK (Justification: This research paper presents a national-scale (New Zealand) spatial implementation projecting future land use changes specifically for apple and kiwifruit cultivation under different climate change scenarios (RCP 2.6 and 8.5). The study integrates continuous suitability modeling with econometric modeling (multinomial logit and LURNZ model) to simulate spatial land-use changes across the entire country. It implements multiple future scenarios with quantitative comparison of land-use changes, provides mapped suitability and land-use projections, and reports quantitative estimates of land use areas over time and by region. The primary focus is on land use prediction and spatial footprint shifts driven by climate change impacts on horticulture, meeting all core inclusion criteria and none of the exclusion criteria.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:56:18.442947+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.626,
+      "raw_body": "\n         \n{\"id\":\"gen-1789653383-gr0Kz6LsbtkgR65KLPr2\",\"object\":\"chat.completion\",\"created\":1789653383,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: This research paper presents a national-scale (New Zealand) spatial implementation projecting future land use changes specifically for apple and kiwifruit cultivation under different climate change scenarios (RCP 2.6 and 8.5). The study integrates continuous suitability modeling with econometric modeling (multinomial logit and LURNZ model) to simulate spatial land-use changes across the entire country. It implements multiple future scenarios with quantitative comparison of land-use changes, provides mapped suitability and land-use projections, and reports quantitative estimates of land use areas over time and by region. The primary focus is on land use prediction and spatial footprint shifts driven by climate change impacts on horticulture, meeting all core inclusion criteria and none of the exclusion criteria.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15163,\"completion_tokens\":156,\"total_tokens\":15319,\"cost\":0.0063148,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0063148,\"upstream_inference_prompt_cost\":0.0060652,\"upstream_inference_completions_cost\":0.0002496},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653383-gr0Kz6LsbtkgR65KLPr2",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 15163,
+        "completion_tokens": 156,
+        "total_tokens": 15319,
+        "cost": 0.0063148,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0063148,
+          "upstream_inference_prompt_cost": 0.0060652,
+          "upstream_inference_completions_cost": 0.0002496
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.626,
+  "call_id": "DS__z1_4W3TX86C__openai__r1",
+  "fingerprint": "4b6a1ade6f769f632015085613e4fd98a24c819c5eb101f0ed52f06e2a2d8691",
+  "paper_id": "z1_4W3TX86C",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:56:22.068565+00:00",
+  "input_sha256": "ee97488c8735d191d22afd0b2d299cd1fad3ff6f5e5ecb05a303b836e0de857c",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

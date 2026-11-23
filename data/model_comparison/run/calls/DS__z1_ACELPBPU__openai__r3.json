@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789655129-ntAlWUkEfQKeRjosJIEc",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0021152,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 17668,
+    "completion_tokens": 193,
+    "total_tokens": 17861,
+    "cost": 0.0021152,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 17536,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0021152,
+      "upstream_inference_prompt_cost": 0.0018064,
+      "upstream_inference_completions_cost": 0.0003088
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This paper focuses on projecting net irrigation requirement (NIR) over India using bias-corrected and downscaled climate datasets combined with satellite-derived evapotranspiration and crop coefficient layers. The primary objective is estimation of irrigation water demand under current and future climate scenarios, not land use land cover (LULC) prediction or simulation. Although LULC data (cropping pixels: Kharif-only, Rabi-only, double/triple cropping) is used as input for analysis, there is no modeling or projection of future LULC changes. The study does not implement spatially explicit LULC prediction with quantitative accuracy metrics or mapped LULC projections. The scale is national, but the core focus is on hydrological and irrigation water requirement modeling under climate change, not LULC prediction. Thus, it fails the core inclusion criteria and meets exclusion criteria of no LULC prediction component.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:25:24.915896+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.181,
+      "raw_body": "\n         \n{\"id\":\"gen-1789655129-ntAlWUkEfQKeRjosJIEc\",\"object\":\"chat.completion\",\"created\":1789655129,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This paper focuses on projecting net irrigation requirement (NIR) over India using bias-corrected and downscaled climate datasets combined with satellite-derived evapotranspiration and crop coefficient layers. The primary objective is estimation of irrigation water demand under current and future climate scenarios, not land use land cover (LULC) prediction or simulation. Although LULC data (cropping pixels: Kharif-only, Rabi-only, double/triple cropping) is used as input for analysis, there is no modeling or projection of future LULC changes. The study does not implement spatially explicit LULC prediction with quantitative accuracy metrics or mapped LULC projections. The scale is national, but the core focus is on hydrological and irrigation water requirement modeling under climate change, not LULC prediction. Thus, it fails the core inclusion criteria and meets exclusion criteria of no LULC prediction component.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":17668,\"completion_tokens\":193,\"total_tokens\":17861,\"cost\":0.0021152,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":17536,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0021152,\"upstream_inference_prompt_cost\":0.0018064,\"upstream_inference_completions_cost\":0.0003088},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655129-ntAlWUkEfQKeRjosJIEc",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 17668,
+        "completion_tokens": 193,
+        "total_tokens": 17861,
+        "cost": 0.0021152,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 17536,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0021152,
+          "upstream_inference_prompt_cost": 0.0018064,
+          "upstream_inference_completions_cost": 0.0003088
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.182,
+  "call_id": "DS__z1_ACELPBPU__openai__r3",
+  "fingerprint": "ffd8553c3c23f12691c7ad5506c15389688ee062c5ababc7be323cdc0db4a325",
+  "paper_id": "z1_ACELPBPU",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:25:28.097392+00:00",
+  "input_sha256": "3de22c5f649533d690d2e59a03cb28f0c95f0b00b9629d4e93c2344404d393f7",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

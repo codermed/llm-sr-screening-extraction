@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789655856-5KhdLn6BybWvyiDfEVRd",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0107172,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12930,
+    "completion_tokens": 162,
+    "total_tokens": 13092,
+    "cost": 0.0107172,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0107172,
+      "upstream_inference_prompt_cost": 0.0100854,
+      "upstream_inference_completions_cost": 0.0006318
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a non-review research article that models environmental impacts (GHG emissions, water use, land use) of dietary shifts in India, but it does not perform or focus on land use land cover (LULC) prediction or simulation. Land use (LU) is used as a static environmental footprint metric (m²/kg food product), derived from FAO yield data, to estimate total area required under different dietary scenarios—not to project spatially explicit future LULC changes. The study lacks spatial modeling, mapped LULC projections, accuracy metrics, or any LULC prediction component. It fails core inclusion criteria: no LULC prediction/simulation as primary focus, no spatially explicit modeling, and no mapped LULC outputs.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:37:31.664674+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.362,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789655856-5KhdLn6BybWvyiDfEVRd\",\"object\":\"chat.completion\",\"created\":1789655856,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a non-review research article that models environmental impacts (GHG emissions, water use, land use) of dietary shifts in India, but it does not perform or focus on land use land cover (LULC) prediction or simulation. Land use (LU) is used as a static environmental footprint metric (m²/kg food product), derived from FAO yield data, to estimate total area required under different dietary scenarios—not to project spatially explicit future LULC changes. The study lacks spatial modeling, mapped LULC projections, accuracy metrics, or any LULC prediction component. It fails core inclusion criteria: no LULC prediction/simulation as primary focus, no spatially explicit modeling, and no mapped LULC outputs.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12930,\"completion_tokens\":162,\"total_tokens\":13092,\"cost\":0.0107172,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0107172,\"upstream_inference_prompt_cost\":0.0100854,\"upstream_inference_completions_cost\":0.0006318},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655856-5KhdLn6BybWvyiDfEVRd",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 12930,
+        "completion_tokens": 162,
+        "total_tokens": 13092,
+        "cost": 0.0107172,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0107172,
+          "upstream_inference_prompt_cost": 0.0100854,
+          "upstream_inference_completions_cost": 0.0006318
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.363,
+  "call_id": "DS__z1_326CDCMR__qwen__r3",
+  "fingerprint": "690fb53a0d3645dcfae8ebe9bfbee24fc8763c370557c8932ca541ace9804405",
+  "paper_id": "z1_326CDCMR",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:37:36.027252+00:00",
+  "input_sha256": "b622e10b7b403478b127b9f3c854bc102e92ccb5083ac6b095cde6aa1aabbe12",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

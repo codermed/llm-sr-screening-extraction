@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789655360-UbcAMyjeFN8UMda1N8Ia",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.017517,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12252,
+    "completion_tokens": 1053,
+    "total_tokens": 13305,
+    "cost": 0.017517,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.017517,
+      "upstream_inference_prompt_cost": 0.012252,
+      "upstream_inference_completions_cost": 0.005265
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land Use Scenario Modeling in Japan\n\n## Initial Assessment\nThis is a **research paper**, not a review article. It presents original empirical research applying a specific modeling approach (PPAP-LM) to generate future land use projections.\n\n## Evaluation Against Inclusion Criteria\n\n### CORE INCLUSION CRITERIA (Non-Review Papers):\n\n1. **Explicit national-scale spatial implementation** ✓\n   - Study area: Japan (entire archipelago, 6,852 islands, 377,972 km²)\n   - Methodology: 367,705 Tertiary Mesh Units (TMUs) covering whole Japanese archipelago\n   - Explicitly stated: \"national-scale predictive land use model\"\n\n2. **Primary focus = LULC prediction/simulation** ✓\n   - Central research question: \"we developed land use change scenarios for 2015–2050 under a shrinking population in Japan\"\n   - Primary objective is generating future land use projections\n   - Not using LULC as input to other models; LULC change IS the focus\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\n   - Two distinct scenarios: \"centralization\" and \"decentralization\"\n   - Quantitative comparisons throughout (Figures 3-5)\n   - Example: \"paddy field decreased by 23.5% [centralization] vs. 15.0% [decentralization]\"\n   - Spatial distribution differences analyzed for both scenarios\n\n4. **Spatial modeling with quantitative accuracy metrics** ✓\n   - Machine-learning method (CART - Classification and Regression Trees)\n   - Quantitative accuracy metrics reported (Table 2):\n     - Pearson's r values (0.793-0.964)\n     - MAE, MSE, RMSE for all five land use types\n   - Model validation: 90% training / 10% test data with 10-fold cross-validation\n   - Simulation validation for 1985-2010 with error propagation analysis (Table S2)\n\n5. **Outputs include mapped LULC projections** ✓\n   - Figures 4-5 show spatial maps of land use proportions\n   - High-resolution projections available online (OSF.IO/A9QVY)\n   - Temporal series: 1985-2050 with 5-year intervals\n\n### EXCLUSION CRITERIA CHECK:\n\n- ❌ Global-scale without national disaggregation: NOT applicable (national focus)\n- ❌ Local/regional/global/transboundary focus: NOT applicable (national-scale)\n- ❌ No LULC prediction: NOT applicable (LULC is primary focus)\n- ❌ Species-specific/ecological focus unrelated to LULC: NOT applicable (LULC-focused)\n- ❌ Economic/urban models lacking spatial LULC outputs: NOT applicable (includes spatial LULC maps)\n- ❌ Biomass/bioenergy without LULC change: NOT applicable (includes LULC change analysis)\n- ❌ Methodological paper without application: NOT applicable (applied to national-scale case)\n- ❌ Purely qualitative/historical only: NOT applicable (includes future projections 2015-2050)\n- ❌ Remote sensing technical study without predictive modeling: NOT applicable (includes predictive modeling)\n- ❌ Single-scenario projections: NOT applicable (two scenarios compared)\n\n## Additional Verification\n\n**Scale verification**: Methodology section explicitly states national coverage with 367,705 grid cells. Results section reports national-level totals and spatial distributions. No misrepresentation.\n\n**Quantitative metrics**: Comprehensive accuracy assessment (Table 2, Table S1, S2) with multiple standard metrics.\n\n**Spatial explicitness**: Grid-based modeling at 1-km resolution (TMUs), with mapped outputs showing spatial heterogeneity.\n\n**Multiple scenarios**: Two contrasting population distribution scenarios with quantitative comparison of outcomes.\n\n---\n\n**Final categorization: OK**\n\n**Justification**: This paper fully satisfies all core inclusion criteria for national-scale LULC prediction research. It implements a spatially explicit machine-learning model across Japan's entire territory, generates two distinct future scenarios (2015-2050) with quantitative comparison, reports comprehensive accuracy metrics, and produces mapped LULC projections. The primary research objective is LULC prediction under different population distribution scenarios. It meets none of the exclusion criteria.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:29:15.067867+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 11.069,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655360-UbcAMyjeFN8UMda1N8Ia\",\"object\":\"chat.completion\",\"created\":1789655360,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land Use Scenario Modeling in Japan\\n\\n## Initial Assessment\\nThis is a **research paper**, not a review article. It presents original empirical research applying a specific modeling approach (PPAP-LM) to generate future land use projections.\\n\\n## Evaluation Against Inclusion Criteria\\n\\n### CORE INCLUSION CRITERIA (Non-Review Papers):\\n\\n1. **Explicit national-scale spatial implementation** ✓\\n   - Study area: Japan (entire archipelago, 6,852 islands, 377,972 km²)\\n   - Methodology: 367,705 Tertiary Mesh Units (TMUs) covering whole Japanese archipelago\\n   - Explicitly stated: \\\"national-scale predictive land use model\\\"\\n\\n2. **Primary focus = LULC prediction/simulation** ✓\\n   - Central research question: \\\"we developed land use change scenarios for 2015–2050 under a shrinking population in Japan\\\"\\n   - Primary objective is generating future land use projections\\n   - Not using LULC as input to other models; LULC change IS the focus\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\\n   - Two distinct scenarios: \\\"centralization\\\" and \\\"decentralization\\\"\\n   - Quantitative comparisons throughout (Figures 3-5)\\n   - Example: \\\"paddy field decreased by 23.5% [centralization] vs. 15.0% [decentralization]\\\"\\n   - Spatial distribution differences analyzed for both scenarios\\n\\n4. **Spatial modeling with quantitative accuracy metrics** ✓\\n   - Machine-learning method (CART - Classification and Regression Trees)\\n   - Quantitative accuracy metrics reported (Table 2):\\n     - Pearson's r values (0.793-0.964)\\n     - MAE, MSE, RMSE for all five land use types\\n   - Model validation: 90% training / 10% test data with 10-fold cross-validation\\n   - Simulation validation for 1985-2010 with error propagation analysis (Table S2)\\n\\n5. **Outputs include mapped LULC projections** ✓\\n   - Figures 4-5 show spatial maps of land use proportions\\n   - High-resolution projections available online (OSF.IO/A9QVY)\\n   - Temporal series: 1985-2050 with 5-year intervals\\n\\n### EXCLUSION CRITERIA CHECK:\\n\\n- ❌ Global-scale without national disaggregation: NOT applicable (national focus)\\n- ❌ Local/regional/global/transboundary focus: NOT applicable (national-scale)\\n- ❌ No LULC prediction: NOT applicable (LULC is primary focus)\\n- ❌ Species-specific/ecological focus unrelated to LULC: NOT applicable (LULC-focused)\\n- ❌ Economic/urban models lacking spatial LULC outputs: NOT applicable (includes spatial LULC maps)\\n- ❌ Biomass/bioenergy without LULC change: NOT applicable (includes LULC change analysis)\\n- ❌ Methodological paper without application: NOT applicable (applied to national-scale case)\\n- ❌ Purely qualitative/historical only: NOT applicable (includes future projections 2015-2050)\\n- ❌ Remote sensing technical study without predictive modeling: NOT applicable (includes predictive modeling)\\n- ❌ Single-scenario projections: NOT applicable (two scenarios compared)\\n\\n## Additional Verification\\n\\n**Scale verification**: Methodology section explicitly states national coverage with 367,705 grid cells. Results section reports national-level totals and spatial distributions. No misrepresentation.\\n\\n**Quantitative metrics**: Comprehensive accuracy assessment (Table 2, Table S1, S2) with multiple standard metrics.\\n\\n**Spatial explicitness**: Grid-based modeling at 1-km resolution (TMUs), with mapped outputs showing spatial heterogeneity.\\n\\n**Multiple scenarios**: Two contrasting population distribution scenarios with quantitative comparison of outcomes.\\n\\n---\\n\\n**Final categorization: OK**\\n\\n**Justification**: This paper fully satisfies all core inclusion criteria for national-scale LULC prediction research. It implements a spatially explicit machine-learning model across Japan's entire territory, generates two distinct future scenarios (2015-2050) with quantitative comparison, reports comprehensive accuracy metrics, and produces mapped LULC projections. The primary research objective is LULC prediction under different population distribution scenarios. It meets none of the exclusion criteria.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12252,\"completion_tokens\":1053,\"total_tokens\":13305,\"cost\":0.017517,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.017517,\"upstream_inference_prompt_cost\":0.012252,\"upstream_inference_completions_cost\":0.005265},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655360-UbcAMyjeFN8UMda1N8Ia",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 12252,
+        "completion_tokens": 1053,
+        "total_tokens": 13305,
+        "cost": 0.017517,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.017517,
+          "upstream_inference_prompt_cost": 0.012252,
+          "upstream_inference_completions_cost": 0.005265
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 11.069,
+  "call_id": "DS__z1_4RZAR98M__claude__r3",
+  "fingerprint": "52d694cc2654f5173f1bdf69bb7ea0bc20fc80da4f41b0497411b54334dc8115",
+  "paper_id": "z1_4RZAR98M",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:29:26.136969+00:00",
+  "input_sha256": "a31931e8d613f05592d54aae7dd34801f1fd1058003ed90bfc5ec5992ce974d4",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

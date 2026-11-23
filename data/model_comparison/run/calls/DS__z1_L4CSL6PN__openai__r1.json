@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653323-NPH7CR2WyrSpOaRqPVOM",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0030216,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 6966,
+    "completion_tokens": 147,
+    "total_tokens": 7113,
+    "cost": 0.0030216,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0030216,
+      "upstream_inference_prompt_cost": 0.0027864,
+      "upstream_inference_completions_cost": 0.0002352
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is not a review article but an original research study focusing on soil organic carbon (SOC) sequestration following afforestation of former agricultural land in the Czech Republic. It does not address land use land cover (LULC) future prediction, national-scale spatial implementation of LULC models, or any scenario-based spatial modeling of LULC changes. The focus is on empirical measurement and statistical analysis of SOC stocks related to stand age, altitude, and tree species, without any spatial LULC prediction or mapping components. Therefore, it fails the core inclusion criteria related to LULC prediction and meets exclusion criteria for biomass/carbon studies without LULC change analysis.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:55:19.034340+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.281,
+      "raw_body": "\n         \n{\"id\":\"gen-1789653323-NPH7CR2WyrSpOaRqPVOM\",\"object\":\"chat.completion\",\"created\":1789653323,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is not a review article but an original research study focusing on soil organic carbon (SOC) sequestration following afforestation of former agricultural land in the Czech Republic. It does not address land use land cover (LULC) future prediction, national-scale spatial implementation of LULC models, or any scenario-based spatial modeling of LULC changes. The focus is on empirical measurement and statistical analysis of SOC stocks related to stand age, altitude, and tree species, without any spatial LULC prediction or mapping components. Therefore, it fails the core inclusion criteria related to LULC prediction and meets exclusion criteria for biomass/carbon studies without LULC change analysis.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":6966,\"completion_tokens\":147,\"total_tokens\":7113,\"cost\":0.0030216,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0030216,\"upstream_inference_prompt_cost\":0.0027864,\"upstream_inference_completions_cost\":0.0002352},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653323-NPH7CR2WyrSpOaRqPVOM",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 6966,
+        "completion_tokens": 147,
+        "total_tokens": 7113,
+        "cost": 0.0030216,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0030216,
+          "upstream_inference_prompt_cost": 0.0027864,
+          "upstream_inference_completions_cost": 0.0002352
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.282,
+  "call_id": "DS__z1_L4CSL6PN__openai__r1",
+  "fingerprint": "1f1b969356f88aa60e57b8dfb3a067378521be620eb829380e7db1631bfdd967",
+  "paper_id": "z1_L4CSL6PN",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:55:22.315981+00:00",
+  "input_sha256": "f7430750989407df2289c92e241c8a362ba6c5ef7c025421433ca02db2694bfb",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

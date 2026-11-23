@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654879-i1qaExDmIjn4akWICNk4",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0017968,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15428,
+    "completion_tokens": 122,
+    "total_tokens": 15550,
+    "cost": 0.0017968,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 15232,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0017968,
+      "upstream_inference_prompt_cost": 0.0016016,
+      "upstream_inference_completions_cost": 0.0001952
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a systematic review of health impact modeling studies related to transport mode shifts, focusing on health outcomes such as physical activity, air pollution, and road injury. It does not involve land use land cover (LULC) future prediction or spatial modeling of LULC, nor does it implement national-scale spatial LULC projections with quantitative accuracy metrics. The focus is on health impact assessment methodologies and transport scenarios rather than LULC prediction. Therefore, it fails the core inclusion criteria and does not meet the scope for LULC-focused research.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:21:14.676220+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.484,
+      "raw_body": "\n         \n{\"id\":\"gen-1789654879-i1qaExDmIjn4akWICNk4\",\"object\":\"chat.completion\",\"created\":1789654879,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a systematic review of health impact modeling studies related to transport mode shifts, focusing on health outcomes such as physical activity, air pollution, and road injury. It does not involve land use land cover (LULC) future prediction or spatial modeling of LULC, nor does it implement national-scale spatial LULC projections with quantitative accuracy metrics. The focus is on health impact assessment methodologies and transport scenarios rather than LULC prediction. Therefore, it fails the core inclusion criteria and does not meet the scope for LULC-focused research.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15428,\"completion_tokens\":122,\"total_tokens\":15550,\"cost\":0.0017968,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":15232,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0017968,\"upstream_inference_prompt_cost\":0.0016016,\"upstream_inference_completions_cost\":0.0001952},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654879-i1qaExDmIjn4akWICNk4",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 15428,
+        "completion_tokens": 122,
+        "total_tokens": 15550,
+        "cost": 0.0017968,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 15232,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0017968,
+          "upstream_inference_prompt_cost": 0.0016016,
+          "upstream_inference_completions_cost": 0.0001952
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.485,
+  "call_id": "DS__z1_CBVY7342__openai__r3",
+  "fingerprint": "ecb1444ff67152e69558133b067056ba3cc9f439ec1786f3113100ed05e9b98a",
+  "paper_id": "z1_CBVY7342",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:21:17.160650+00:00",
+  "input_sha256": "8f0ad2a741125a35b8e909e2d3889e3e5cd736c93a43ea46382fb464bcda36c0",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653130-lkELq8jY40TRAaRowsMw",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00333464,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 11687,
+    "completion_tokens": 779,
+    "total_tokens": 12466,
+    "cost": 0.00333464,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00333464,
+      "upstream_inference_prompt_cost": 0.00303862,
+      "upstream_inference_completions_cost": 0.00029602
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a global-scale analysis with national-level examples but not a national-scale spatial implementation focused on LULC prediction. It uses existing LULC scenarios as inputs to calculate ecosystem service values, making LULC prediction an incidental step rather than the primary research focus.)\n\n**Detailed Justification:**\n\n1.  **Review Article Check:** This is **not** a review article. It presents original research estimating the future value of ecosystem services under different scenarios.\n\n2.  **Core Inclusion Criteria Evaluation (for Non-Review Papers):**\n    *   ❌ **Explicit national-scale spatial implementation:** The study's primary implementation is **global**. While it extracts and reports results for individual countries (e.g., in Table 4 and Supplementary Table S1), the core spatial modeling and scenario land-use projections are conducted at the global scale (\"globally for each scenario\"). The national results are derived from downscaling the global model outputs. The paper's central question and methodology are not designed to predict LULC change *within* a specific country as a primary objective.\n    *   ✅ **Primary focus = LULC prediction/simulation:** The paper's primary focus is on **valuing ecosystem services**, not on predicting or simulating LULC change. LULC projections are taken from the pre-existing Great Transition Initiative (GTI) scenarios. The paper states: \"We used previous estimates... We mapped projected land-use... **based on** the Great Transition Initiative (GTI) scenarios\" and \"We utilized the fact that the GTI scenarios also included impacts on land use and management.\" The LULC maps are an **input** to the valuation model, not the core output of the research.\n    *   ✅ **Implementation of ≥2 future scenarios:** Yes, it uses four scenarios (Market Forces, Fortress World, Policy Reform, Great Transition).\n    *   ✅ **Spatial modeling with quantitative accuracy metrics:** It performs spatial allocation of land-use changes at 1 km² resolution but does not report predictive accuracy metrics for the LULC projections themselves (e.g., Kappa, Figure of Merit). The quantitative metrics reported (e.g., changes in total ecosystem service value in USD) are related to the valuation output, not to the accuracy of the LULC predictions.\n    *   ✅ **Outputs include mapped LULC projections:** Yes, it produces global LULC maps for the scenarios (Fig. 2).\n\n3.  **Exclusion Criteria Check:**\n    *   ✅ **Global-scale analysis without national-level disaggregation:** This criterion **partially applies**. While the paper does provide national-level disaggregation of results, its core analysis and modeling are conducted at the global scale. The national results are secondary outputs. More critically, the paper fails the \"primary focus\" inclusion criterion.\n\n4.  **Additional Checks:**\n    *   The methodology confirms the LULC data is derived from external scenarios: \"The interactive web tool, Futures in Motion, on the GTI website was used to derive estimates of land use change... for these four future scenarios.\"\n    *   The paper's primary research question is to estimate the *value of ecosystem services* under different futures, not to generate novel LULC predictions. The \"Limitations and caveats\" section discusses uncertainties in ecosystem service valuation, not in LULC modeling accuracy.\n\n**Conclusion:** The paper uses existing LULC projections as a key input to its primary analysis of ecosystem service valuation. While it touches on LULC change, the prediction of LULC is **not its central research question or methodological contribution**. Therefore, it does not meet the core criterion of having \"Primary focus = LULC prediction/simulation\" and is categorized as **EXCLUDED**.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:52:06.042046+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 16.602,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653130-lkELq8jY40TRAaRowsMw\",\"object\":\"chat.completion\",\"created\":1789653130,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a global-scale analysis with national-level examples but not a national-scale spatial implementation focused on LULC prediction. It uses existing LULC scenarios as inputs to calculate ecosystem service values, making LULC prediction an incidental step rather than the primary research focus.)\\n\\n**Detailed Justification:**\\n\\n1.  **Review Article Check:** This is **not** a review article. It presents original research estimating the future value of ecosystem services under different scenarios.\\n\\n2.  **Core Inclusion Criteria Evaluation (for Non-Review Papers):**\\n    *   ❌ **Explicit national-scale spatial implementation:** The study's primary implementation is **global**. While it extracts and reports results for individual countries (e.g., in Table 4 and Supplementary Table S1), the core spatial modeling and scenario land-use projections are conducted at the global scale (\\\"globally for each scenario\\\"). The national results are derived from downscaling the global model outputs. The paper's central question and methodology are not designed to predict LULC change *within* a specific country as a primary objective.\\n    *   ✅ **Primary focus = LULC prediction/simulation:** The paper's primary focus is on **valuing ecosystem services**, not on predicting or simulating LULC change. LULC projections are taken from the pre-existing Great Transition Initiative (GTI) scenarios. The paper states: \\\"We used previous estimates... We mapped projected land-use... **based on** the Great Transition Initiative (GTI) scenarios\\\" and \\\"We utilized the fact that the GTI scenarios also included impacts on land use and management.\\\" The LULC maps are an **input** to the valuation model, not the core output of the research.\\n    *   ✅ **Implementation of ≥2 future scenarios:** Yes, it uses four scenarios (Market Forces, Fortress World, Policy Reform, Great Transition).\\n    *   ✅ **Spatial modeling with quantitative accuracy metrics:** It performs spatial allocation of land-use changes at 1 km² resolution but does not report predictive accuracy metrics for the LULC projections themselves (e.g., Kappa, Figure of Merit). The quantitative metrics reported (e.g., changes in total ecosystem service value in USD) are related to the valuation output, not to the accuracy of the LULC predictions.\\n    *   ✅ **Outputs include mapped LULC projections:** Yes, it produces global LULC maps for the scenarios (Fig. 2).\\n\\n3.  **Exclusion Criteria Check:**\\n    *   ✅ **Global-scale analysis without national-level disaggregation:** This criterion **partially applies**. While the paper does provide national-level disaggregation of results, its core analysis and modeling are conducted at the global scale. The national results are secondary outputs. More critically, the paper fails the \\\"primary focus\\\" inclusion criterion.\\n\\n4.  **Additional Checks:**\\n    *   The methodology confirms the LULC data is derived from external scenarios: \\\"The interactive web tool, Futures in Motion, on the GTI website was used to derive estimates of land use change... for these four future scenarios.\\\"\\n    *   The paper's primary research question is to estimate the *value of ecosystem services* under different futures, not to generate novel LULC predictions. The \\\"Limitations and caveats\\\" section discusses uncertainties in ecosystem service valuation, not in LULC modeling accuracy.\\n\\n**Conclusion:** The paper uses existing LULC projections as a key input to its primary analysis of ecosystem service valuation. While it touches on LULC change, the prediction of LULC is **not its central research question or methodological contribution**. Therefore, it does not meet the core criterion of having \\\"Primary focus = LULC prediction/simulation\\\" and is categorized as **EXCLUDED**.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":11687,\"completion_tokens\":779,\"total_tokens\":12466,\"cost\":0.00333464,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00333464,\"upstream_inference_prompt_cost\":0.00303862,\"upstream_inference_completions_cost\":0.00029602},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653130-lkELq8jY40TRAaRowsMw",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 11687,
+        "completion_tokens": 779,
+        "total_tokens": 12466,
+        "cost": 0.00333464,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00333464,
+          "upstream_inference_prompt_cost": 0.00303862,
+          "upstream_inference_completions_cost": 0.00029602
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 16.603,
+  "call_id": "DS__z1_E9BBMTEI__deepseek__r1",
+  "fingerprint": "6958c87ef1a569b8c28046c20ef876fdf72606c77734698e1ed7c81956b4d222",
+  "paper_id": "z1_E9BBMTEI",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:52:22.644765+00:00",
+  "input_sha256": "eefe4e2434955bac8efe3268af79eb00411177bf046ec30f437b07307577eb5a",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

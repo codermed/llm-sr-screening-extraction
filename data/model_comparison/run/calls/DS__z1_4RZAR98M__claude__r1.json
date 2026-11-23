@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789652691-I8pr5DSqmwajw3vWS9GY",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.017297,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12252,
+    "completion_tokens": 1009,
+    "total_tokens": 13261,
+    "cost": 0.017297,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.017297,
+      "upstream_inference_prompt_cost": 0.012252,
+      "upstream_inference_completions_cost": 0.005045
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land Use Scenario Modeling in Japan\n\n## Initial Assessment\nThis is a **NON-REVIEW PAPER** - it presents original research implementing a predictive land use modeling approach.\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA:\n\n**1. Explicit national-scale spatial implementation (entire country)** ✓\n- Study area explicitly stated: \"Japan, an archipelago consisting of 6,852 islands with a total land area of 377,972 km²\"\n- Coverage: 367,705 Tertiary Mesh Units (TMUs) covering the whole Japanese archipelago\n- Methods: \"Grid‐based national population census data for 1980–2010\"\n\n**2. Primary focus = LULC prediction/simulation** ✓\n- Central research question: \"we developed land use change scenarios for 2015–2050 under a shrinking population in Japan\"\n- Primary objective explicitly stated: \"to analyze the effects of future population distributions on land use, we developed models for five land use types\"\n- Five land use categories modeled: paddy field, forest and wasteland, built-up area, other agricultural land, other artificial land\n\n**3. Implementation of ≥2 future scenarios with quantitative comparison** ✓\n- Two distinct scenarios developed: \"centralization\" and \"decentralization\"\n- Quantitative comparisons provided (Figures 3a-e):\n  - Centralization: paddy field decreased 23.5%, forest/wasteland increased 1.4%\n  - Decentralization: paddy field decreased 15.0%, forest/wasteland decreased 0.2%\n  - Built-up area: -6.0% (centralization) vs -4.4% (decentralization)\n\n**4. Spatial modeling with quantitative accuracy metrics** ✓\n- Machine-learning approach (CART) with explicit accuracy evaluation\n- Table 2 reports: Pearson's r, MAE, MSE, RMSE for all five land use models\n- Model accuracy: Pearson's r ranging from 0.793-0.964\n- Validation: \"90% training, 10% test data\" with \"10‐fold cross‐validation\"\n- Temporal validation: \"simulation for 1985–2010 using predicted values from the previous time step as inputs\"\n\n**5. Outputs include mapped LULC projections** ✓\n- Figures 4 and 5 show spatial maps of land use proportions for 2010, 2050 centralization, and 2050 decentralization scenarios\n- Explicit statement: \"We made the projected high‐resolution land use available online (OSF.IO/A9QVY)\"\n\n### EXCLUSION CRITERIA CHECK:\n\n- ✓ NOT global-scale without national disaggregation (explicitly national)\n- ✓ NOT local/regional focus (entire nation modeled)\n- ✓ INCLUDES LULC prediction component (primary focus)\n- ✓ NOT species-specific ecological focus (landscape-scale LULC analysis)\n- ✓ NOT purely economic/urban model (spatially explicit LULC outputs provided)\n- ✓ NOT biomass/carbon study without LULC analysis (LULC is primary focus)\n- ✓ NOT methodological paper without application (applied to national-scale prediction)\n- ✓ NOT purely qualitative/historical (includes 2015-2050 future projections)\n- ✓ NOT remote sensing technical study (includes predictive modeling)\n- ✓ NOT single-scenario projection (two scenarios with comparison)\n\n---\n\n## Final Categorization: **OK**\n\n**Justification:** This paper fully meets all core inclusion criteria for national-scale LULC prediction research. It implements an explicit national-scale spatial modeling framework (PPAP-LM) for Japan covering 367,705 grid cells, with LULC prediction as the primary research objective. The study develops and quantitatively compares two contrasting future scenarios (centralization vs. decentralization) for 2015-2050, reports comprehensive accuracy metrics (Pearson's r = 0.793-0.964), and produces spatially explicit mapped projections of five LULC categories. The paper satisfies all mandatory criteria and triggers none of the exclusion criteria.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:44:46.188819+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 11.326,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789652691-I8pr5DSqmwajw3vWS9GY\",\"object\":\"chat.completion\",\"created\":1789652691,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land Use Scenario Modeling in Japan\\n\\n## Initial Assessment\\nThis is a **NON-REVIEW PAPER** - it presents original research implementing a predictive land use modeling approach.\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA:\\n\\n**1. Explicit national-scale spatial implementation (entire country)** ✓\\n- Study area explicitly stated: \\\"Japan, an archipelago consisting of 6,852 islands with a total land area of 377,972 km²\\\"\\n- Coverage: 367,705 Tertiary Mesh Units (TMUs) covering the whole Japanese archipelago\\n- Methods: \\\"Grid‐based national population census data for 1980–2010\\\"\\n\\n**2. Primary focus = LULC prediction/simulation** ✓\\n- Central research question: \\\"we developed land use change scenarios for 2015–2050 under a shrinking population in Japan\\\"\\n- Primary objective explicitly stated: \\\"to analyze the effects of future population distributions on land use, we developed models for five land use types\\\"\\n- Five land use categories modeled: paddy field, forest and wasteland, built-up area, other agricultural land, other artificial land\\n\\n**3. Implementation of ≥2 future scenarios with quantitative comparison** ✓\\n- Two distinct scenarios developed: \\\"centralization\\\" and \\\"decentralization\\\"\\n- Quantitative comparisons provided (Figures 3a-e):\\n  - Centralization: paddy field decreased 23.5%, forest/wasteland increased 1.4%\\n  - Decentralization: paddy field decreased 15.0%, forest/wasteland decreased 0.2%\\n  - Built-up area: -6.0% (centralization) vs -4.4% (decentralization)\\n\\n**4. Spatial modeling with quantitative accuracy metrics** ✓\\n- Machine-learning approach (CART) with explicit accuracy evaluation\\n- Table 2 reports: Pearson's r, MAE, MSE, RMSE for all five land use models\\n- Model accuracy: Pearson's r ranging from 0.793-0.964\\n- Validation: \\\"90% training, 10% test data\\\" with \\\"10‐fold cross‐validation\\\"\\n- Temporal validation: \\\"simulation for 1985–2010 using predicted values from the previous time step as inputs\\\"\\n\\n**5. Outputs include mapped LULC projections** ✓\\n- Figures 4 and 5 show spatial maps of land use proportions for 2010, 2050 centralization, and 2050 decentralization scenarios\\n- Explicit statement: \\\"We made the projected high‐resolution land use available online (OSF.IO/A9QVY)\\\"\\n\\n### EXCLUSION CRITERIA CHECK:\\n\\n- ✓ NOT global-scale without national disaggregation (explicitly national)\\n- ✓ NOT local/regional focus (entire nation modeled)\\n- ✓ INCLUDES LULC prediction component (primary focus)\\n- ✓ NOT species-specific ecological focus (landscape-scale LULC analysis)\\n- ✓ NOT purely economic/urban model (spatially explicit LULC outputs provided)\\n- ✓ NOT biomass/carbon study without LULC analysis (LULC is primary focus)\\n- ✓ NOT methodological paper without application (applied to national-scale prediction)\\n- ✓ NOT purely qualitative/historical (includes 2015-2050 future projections)\\n- ✓ NOT remote sensing technical study (includes predictive modeling)\\n- ✓ NOT single-scenario projection (two scenarios with comparison)\\n\\n---\\n\\n## Final Categorization: **OK**\\n\\n**Justification:** This paper fully meets all core inclusion criteria for national-scale LULC prediction research. It implements an explicit national-scale spatial modeling framework (PPAP-LM) for Japan covering 367,705 grid cells, with LULC prediction as the primary research objective. The study develops and quantitatively compares two contrasting future scenarios (centralization vs. decentralization) for 2015-2050, reports comprehensive accuracy metrics (Pearson's r = 0.793-0.964), and produces spatially explicit mapped projections of five LULC categories. The paper satisfies all mandatory criteria and triggers none of the exclusion criteria.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12252,\"completion_tokens\":1009,\"total_tokens\":13261,\"cost\":0.017297,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.017297,\"upstream_inference_prompt_cost\":0.012252,\"upstream_inference_completions_cost\":0.005045},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652691-I8pr5DSqmwajw3vWS9GY",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 12252,
+        "completion_tokens": 1009,
+        "total_tokens": 13261,
+        "cost": 0.017297,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.017297,
+          "upstream_inference_prompt_cost": 0.012252,
+          "upstream_inference_completions_cost": 0.005045
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 11.327,
+  "call_id": "DS__z1_4RZAR98M__claude__r1",
+  "fingerprint": "25e29f3031d552eb14223932cbc614975ebdd9950bfc30be36f543a468ef8757",
+  "paper_id": "z1_4RZAR98M",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:44:57.515246+00:00",
+  "input_sha256": "a31931e8d613f05592d54aae7dd34801f1fd1058003ed90bfc5ec5992ce974d4",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

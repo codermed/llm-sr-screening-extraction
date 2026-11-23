@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654268-arXcSXN3fYMxiGsItMNc",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0018708,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15397,
+    "completion_tokens": 176,
+    "total_tokens": 15573,
+    "cost": 0.0018708,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 15232,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0018708,
+      "upstream_inference_prompt_cost": 0.0015892,
+      "upstream_inference_completions_cost": 0.0002816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This paper is a hydrological modeling study focused on spatial and temporal variability of water (blue and green water) availability and drainage ratios in the upper Blue Nile basin. It does not focus on land use/land cover (LULC) future prediction as a primary objective, nor does it implement or compare multiple future LULC scenarios with quantitative accuracy metrics and spatially explicit LULC projections. Although it uses a detailed land use map as model input, LULC prediction is not the central research question. The study area is national-scale (upper Blue Nile basin in Ethiopia) but the core focus is hydrological response and water resources rather than LULC change modeling or prediction. Therefore, it does not meet the core inclusion criteria for LULC prediction studies and is excluded from the LULC prediction corpus.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:11:03.645744+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 6.873,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789654268-arXcSXN3fYMxiGsItMNc\",\"object\":\"chat.completion\",\"created\":1789654268,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This paper is a hydrological modeling study focused on spatial and temporal variability of water (blue and green water) availability and drainage ratios in the upper Blue Nile basin. It does not focus on land use/land cover (LULC) future prediction as a primary objective, nor does it implement or compare multiple future LULC scenarios with quantitative accuracy metrics and spatially explicit LULC projections. Although it uses a detailed land use map as model input, LULC prediction is not the central research question. The study area is national-scale (upper Blue Nile basin in Ethiopia) but the core focus is hydrological response and water resources rather than LULC change modeling or prediction. Therefore, it does not meet the core inclusion criteria for LULC prediction studies and is excluded from the LULC prediction corpus.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15397,\"completion_tokens\":176,\"total_tokens\":15573,\"cost\":0.0018708,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":15232,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0018708,\"upstream_inference_prompt_cost\":0.0015892,\"upstream_inference_completions_cost\":0.0002816},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654268-arXcSXN3fYMxiGsItMNc",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 15397,
+        "completion_tokens": 176,
+        "total_tokens": 15573,
+        "cost": 0.0018708,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 15232,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0018708,
+          "upstream_inference_prompt_cost": 0.0015892,
+          "upstream_inference_completions_cost": 0.0002816
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 6.874,
+  "call_id": "DS__z1_D6SZ4M8T__openai__r2",
+  "fingerprint": "743ec029f6059eed86ec50b69d47c4138561c52a44fc2d7dc8c01d3af0ae6e90",
+  "paper_id": "z1_D6SZ4M8T",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:11:10.519319+00:00",
+  "input_sha256": "4dadea5470b239eec88f7ecd7c7d88d5c733b4928ab8a7f133fa2d96eded2414",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

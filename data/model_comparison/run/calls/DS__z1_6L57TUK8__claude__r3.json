@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789655284-0eHjdKvo5E9QQgtAce04",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.016983,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 11458,
+    "completion_tokens": 1105,
+    "total_tokens": 12563,
+    "cost": 0.016983,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.016983,
+      "upstream_inference_prompt_cost": 0.011458,
+      "upstream_inference_completions_cost": 0.005525
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land-Use Change Scenarios for Brazil\n\n## Initial Assessment\n\n**Is this a review article?** NO - This is a research article presenting original scenario modeling and spatially explicit projections.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA CHECK (Non-Review Paper):\n\n1. **Explicit national-scale spatial implementation (entire country)** ✓\n   - Full text confirms: \"The regionalized scenarios developed here aim to represent the diversity of processes linked to land-use change in the Brazilian territory\" (p.2)\n   - \"spatial distribution of land use and coverage for Brazil between 2000 and 2050\" (p.10)\n   - Study covers all five Brazilian biomes across the entire nation\n\n2. **Primary focus = LULC prediction/simulation** ✓\n   - Central research question explicitly stated: \"develop scenarios that consider the balance between global...and local factors\" for land-use change\n   - Primary objective is creating \"spatially explicit scenarios until 2050\" (Abstract)\n   - Modeling framework (LuccME) explicitly designed for LUCC prediction\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\n   - Three scenarios implemented: SSP1/RCP1.9, SSP2/RCP4.5, SSP3/RCP7.0\n   - Quantitative comparisons provided in Table 6 and Results section\n   - Example: \"forest vegetation will suffer a reduction of approximately 805,956 and 933,092 km²\" (middle-of-road vs. strong inequality scenarios)\n\n4. **Spatial modeling with quantitative accuracy metrics** ✓\n   - Multi-resolution adjustment validation metric applied (Eq. 5)\n   - Table 5 reports: 84.44% average spatial fit index, 52.55% for modified areas\n   - Per-class accuracy reported (Forest vegetation: 95.45%, Agriculture: 85.28%, etc.)\n   - Omission/commission errors quantified (average 6.80% and 6.39%)\n\n5. **Outputs include mapped LULC projections** ✓\n   - Figures 4, 5, 6 show spatial distributions\n   - Dataset available: \"35 maps of the spatial distribution of land use and coverage for Brazil between 2000 and 2050\" (p.10)\n   - NetCDF format with 10 km × 10 km cells provided via Zenodo\n\n---\n\n### EXCLUSION CRITERIA CHECK:\n\n- ✓ NOT global-scale without national disaggregation (explicitly national)\n- ✓ NOT local/regional focus (entire country)\n- ✓ NOT lacking LULC prediction (primary focus)\n- ✓ NOT species-specific/ecological focus (LULC-centered)\n- ✓ NOT economic/urban models without spatial LULC (includes spatial allocation)\n- ✓ NOT biomass/carbon without LULC change (LULC is primary output)\n- ✓ NOT methodological-only (applied to national scale)\n- ✓ NOT purely qualitative (quantitative projections to 2050)\n- ✓ NOT remote sensing technical study (predictive modeling included)\n- ✓ NOT single scenario (three scenarios compared)\n\n---\n\n### ADDITIONAL VERIFICATION:\n\n**Scale verification:** Methodology explicitly uses 10 km × 10 km cellular grids across entire Brazilian territory with IBGE national land-use data (2000, 2010, 2012, 2014). Results section confirms national-level outputs.\n\n**Quantitative metrics:** Comprehensive reporting of accuracy (Table 5), change rates (Table 6), and spatial fit indices throughout.\n\n**Spatial explicitness:** LuccME framework includes demand, potential, and allocation components with explicit spatial lag regression and cell-based allocation (Eqs. 3-4).\n\n---\n\n## Final Categorization\n\n**OK** \n\n**Justification:** This is a peer-reviewed research article that meets ALL core inclusion criteria: (1) explicit national-scale implementation across entire Brazil with 10 km × 10 km spatial resolution; (2) primary research focus on LULC prediction/simulation through 2050; (3) three quantitatively compared future scenarios aligned with SSP/RCP framework; (4) spatially explicit modeling with rigorous validation metrics (84.44% spatial fit, per-class accuracy reported); and (5) mapped LULC projections provided as datasets. The paper implements a sophisticated multi-scale integration approach (global demand from IMAGE model + national/local drivers) and passes all exclusion criteria checks. This represents a well-executed national-scale LULC scenario modeling study appropriate for systematic review synthesis.",
+  "automated_status": "invalid_output",
+  "parsed_label": "",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:27:59.665002+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 13.25,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655284-0eHjdKvo5E9QQgtAce04\",\"object\":\"chat.completion\",\"created\":1789655284,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land-Use Change Scenarios for Brazil\\n\\n## Initial Assessment\\n\\n**Is this a review article?** NO - This is a research article presenting original scenario modeling and spatially explicit projections.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA CHECK (Non-Review Paper):\\n\\n1. **Explicit national-scale spatial implementation (entire country)** ✓\\n   - Full text confirms: \\\"The regionalized scenarios developed here aim to represent the diversity of processes linked to land-use change in the Brazilian territory\\\" (p.2)\\n   - \\\"spatial distribution of land use and coverage for Brazil between 2000 and 2050\\\" (p.10)\\n   - Study covers all five Brazilian biomes across the entire nation\\n\\n2. **Primary focus = LULC prediction/simulation** ✓\\n   - Central research question explicitly stated: \\\"develop scenarios that consider the balance between global...and local factors\\\" for land-use change\\n   - Primary objective is creating \\\"spatially explicit scenarios until 2050\\\" (Abstract)\\n   - Modeling framework (LuccME) explicitly designed for LUCC prediction\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\\n   - Three scenarios implemented: SSP1/RCP1.9, SSP2/RCP4.5, SSP3/RCP7.0\\n   - Quantitative comparisons provided in Table 6 and Results section\\n   - Example: \\\"forest vegetation will suffer a reduction of approximately 805,956 and 933,092 km²\\\" (middle-of-road vs. strong inequality scenarios)\\n\\n4. **Spatial modeling with quantitative accuracy metrics** ✓\\n   - Multi-resolution adjustment validation metric applied (Eq. 5)\\n   - Table 5 reports: 84.44% average spatial fit index, 52.55% for modified areas\\n   - Per-class accuracy reported (Forest vegetation: 95.45%, Agriculture: 85.28%, etc.)\\n   - Omission/commission errors quantified (average 6.80% and 6.39%)\\n\\n5. **Outputs include mapped LULC projections** ✓\\n   - Figures 4, 5, 6 show spatial distributions\\n   - Dataset available: \\\"35 maps of the spatial distribution of land use and coverage for Brazil between 2000 and 2050\\\" (p.10)\\n   - NetCDF format with 10 km × 10 km cells provided via Zenodo\\n\\n---\\n\\n### EXCLUSION CRITERIA CHECK:\\n\\n- ✓ NOT global-scale without national disaggregation (explicitly national)\\n- ✓ NOT local/regional focus (entire country)\\n- ✓ NOT lacking LULC prediction (primary focus)\\n- ✓ NOT species-specific/ecological focus (LULC-centered)\\n- ✓ NOT economic/urban models without spatial LULC (includes spatial allocation)\\n- ✓ NOT biomass/carbon without LULC change (LULC is primary output)\\n- ✓ NOT methodological-only (applied to national scale)\\n- ✓ NOT purely qualitative (quantitative projections to 2050)\\n- ✓ NOT remote sensing technical study (predictive modeling included)\\n- ✓ NOT single scenario (three scenarios compared)\\n\\n---\\n\\n### ADDITIONAL VERIFICATION:\\n\\n**Scale verification:** Methodology explicitly uses 10 km × 10 km cellular grids across entire Brazilian territory with IBGE national land-use data (2000, 2010, 2012, 2014). Results section confirms national-level outputs.\\n\\n**Quantitative metrics:** Comprehensive reporting of accuracy (Table 5), change rates (Table 6), and spatial fit indices throughout.\\n\\n**Spatial explicitness:** LuccME framework includes demand, potential, and allocation components with explicit spatial lag regression and cell-based allocation (Eqs. 3-4).\\n\\n---\\n\\n## Final Categorization\\n\\n**OK** \\n\\n**Justification:** This is a peer-reviewed research article that meets ALL core inclusion criteria: (1) explicit national-scale implementation across entire Brazil with 10 km × 10 km spatial resolution; (2) primary research focus on LULC prediction/simulation through 2050; (3) three quantitatively compared future scenarios aligned with SSP/RCP framework; (4) spatially explicit modeling with rigorous validation metrics (84.44% spatial fit, per-class accuracy reported); and (5) mapped LULC projections provided as datasets. The paper implements a sophisticated multi-scale integration approach (global demand from IMAGE model + national/local drivers) and passes all exclusion criteria checks. This represents a well-executed national-scale LULC scenario modeling study appropriate for systematic review synthesis.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":11458,\"completion_tokens\":1105,\"total_tokens\":12563,\"cost\":0.016983,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.016983,\"upstream_inference_prompt_cost\":0.011458,\"upstream_inference_completions_cost\":0.005525},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655284-0eHjdKvo5E9QQgtAce04",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 11458,
+        "completion_tokens": 1105,
+        "total_tokens": 12563,
+        "cost": 0.016983,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.016983,
+          "upstream_inference_prompt_cost": 0.011458,
+          "upstream_inference_completions_cost": 0.005525
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 13.251,
+  "call_id": "DS__z1_6L57TUK8__claude__r3",
+  "fingerprint": "535a7cc3f02880ad85a97b7e4f87c13e8a914e8b34f5dc7ecb85a1eaea7d19fd",
+  "paper_id": "z1_6L57TUK8",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:28:12.915014+00:00",
+  "input_sha256": "65181bb7b5d3f98ed52039cf201c8a1eb909ba482d812c6f111f1103f588bbf0",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

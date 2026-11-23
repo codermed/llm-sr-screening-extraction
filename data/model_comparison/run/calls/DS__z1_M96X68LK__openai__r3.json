@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789655288-0XMInvhybQs55ClWpcbD",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0017116,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 13655,
+    "completion_tokens": 176,
+    "total_tokens": 13831,
+    "cost": 0.0017116,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 13440,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0017116,
+      "upstream_inference_prompt_cost": 0.00143,
+      "upstream_inference_completions_cost": 0.0002816
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: OK (Justification: This is a research article focused on spatially explicit land-use/land-cover (LULC) change prediction at the national scale (Switzerland, 41,000 km2). It develops and implements three distinct future land-use change scenarios (business as usual, liberalisation, lowered agricultural production) with quantitative spatial modeling of land-use transitions using logistic regression and scenario-specific transition probabilities. The study includes mapped LULC projections, quantifies landscape pattern changes with metrics, and evaluates model predictive performance. It explicitly addresses scenario-based LULC prediction as the central research question at the national scale with multiple quantitative future scenarios and spatially explicit outputs. Although it also models species habitat distributions, the primary focus remains on LULC change prediction and its impacts. Thus, it meets all core inclusion criteria and none of the exclusion criteria.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:28:03.388023+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.117,
+      "raw_body": "\n         \n{\"id\":\"gen-1789655288-0XMInvhybQs55ClWpcbD\",\"object\":\"chat.completion\",\"created\":1789655288,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: This is a research article focused on spatially explicit land-use/land-cover (LULC) change prediction at the national scale (Switzerland, 41,000 km2). It develops and implements three distinct future land-use change scenarios (business as usual, liberalisation, lowered agricultural production) with quantitative spatial modeling of land-use transitions using logistic regression and scenario-specific transition probabilities. The study includes mapped LULC projections, quantifies landscape pattern changes with metrics, and evaluates model predictive performance. It explicitly addresses scenario-based LULC prediction as the central research question at the national scale with multiple quantitative future scenarios and spatially explicit outputs. Although it also models species habitat distributions, the primary focus remains on LULC change prediction and its impacts. Thus, it meets all core inclusion criteria and none of the exclusion criteria.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":13655,\"completion_tokens\":176,\"total_tokens\":13831,\"cost\":0.0017116,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":13440,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0017116,\"upstream_inference_prompt_cost\":0.00143,\"upstream_inference_completions_cost\":0.0002816},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655288-0XMInvhybQs55ClWpcbD",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 13655,
+        "completion_tokens": 176,
+        "total_tokens": 13831,
+        "cost": 0.0017116,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 13440,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0017116,
+          "upstream_inference_prompt_cost": 0.00143,
+          "upstream_inference_completions_cost": 0.0002816
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.118,
+  "call_id": "DS__z1_M96X68LK__openai__r3",
+  "fingerprint": "b83dc889520d85c7163ee822b99ca0e887989e8c32ba929cfce94700b178118a",
+  "paper_id": "z1_M96X68LK",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:28:06.505145+00:00",
+  "input_sha256": "1baf40e9e9c3d655a6e099bf571433a85cb15ff231fefe2e3782f5a4db8a139f",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

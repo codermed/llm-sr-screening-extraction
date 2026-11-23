@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789653987-Tg65BGz7d7cxbIFtptrO",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00641862,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 7574,
+    "completion_tokens": 131,
+    "total_tokens": 7705,
+    "cost": 0.00641862,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00641862,
+      "upstream_inference_prompt_cost": 0.00590772,
+      "upstream_inference_completions_cost": 0.0005109
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a review article, but it does not focus on land use/land cover (LULC) future prediction. Instead, it reviews carbon stocks and dynamics in rubber plantations, addressing components like biomass, soil carbon, latex production, and life cycle emissions. While it discusses land use change (e.g., forest to rubber), its primary aim is assessing carbon balance uncertainties—not synthesizing or evaluating methods, models, or projections related to future LULC change. Therefore, it falls under 'EXCLUDED' per the categorization flow for reviews not focused on LULC future prediction.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:06:22.804031+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.934,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789653987-Tg65BGz7d7cxbIFtptrO\",\"object\":\"chat.completion\",\"created\":1789653987,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a review article, but it does not focus on land use/land cover (LULC) future prediction. Instead, it reviews carbon stocks and dynamics in rubber plantations, addressing components like biomass, soil carbon, latex production, and life cycle emissions. While it discusses land use change (e.g., forest to rubber), its primary aim is assessing carbon balance uncertainties—not synthesizing or evaluating methods, models, or projections related to future LULC change. Therefore, it falls under 'EXCLUDED' per the categorization flow for reviews not focused on LULC future prediction.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":7574,\"completion_tokens\":131,\"total_tokens\":7705,\"cost\":0.00641862,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00641862,\"upstream_inference_prompt_cost\":0.00590772,\"upstream_inference_completions_cost\":0.0005109},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653987-Tg65BGz7d7cxbIFtptrO",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 7574,
+        "completion_tokens": 131,
+        "total_tokens": 7705,
+        "cost": 0.00641862,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00641862,
+          "upstream_inference_prompt_cost": 0.00590772,
+          "upstream_inference_completions_cost": 0.0005109
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.935,
+  "call_id": "DS__z1_AKH53ZI9__qwen__r2",
+  "fingerprint": "bc52d3cdc2087ee135cdcdf5b8d27bed4604279776a4021842e2921bd4081134",
+  "paper_id": "z1_AKH53ZI9",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:06:26.738473+00:00",
+  "input_sha256": "45d2badb9ab5fa5a5c22af63edad9516b64133aaba635d55f95fe8ebd1b6ee75",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

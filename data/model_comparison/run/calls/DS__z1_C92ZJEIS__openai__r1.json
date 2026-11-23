@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653549-HpIS0eHAjksTPKMP2vR6",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0022688,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 5172,
+    "completion_tokens": 125,
+    "total_tokens": 5297,
+    "cost": 0.0022688,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0022688,
+      "upstream_inference_prompt_cost": 0.0020688,
+      "upstream_inference_completions_cost": 0.0002
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: The paper focuses on optimizing agricultural intensity allocation to reconcile food production and biodiversity outcomes at a national scale. However, it does not involve land use land cover (LULC) prediction or simulation as the primary research question. The study models agricultural intensity levels and their spatial allocation but does not produce mapped future LULC projections or conduct spatially explicit LULC change predictions under multiple future scenarios. The biodiversity focus is on farmland bird communities rather than on LULC changes. Therefore, it does not meet the core inclusion criteria for national-scale LULC prediction studies.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:59:04.958427+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.701,
+      "raw_body": "\n         \n{\"id\":\"gen-1789653549-HpIS0eHAjksTPKMP2vR6\",\"object\":\"chat.completion\",\"created\":1789653549,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper focuses on optimizing agricultural intensity allocation to reconcile food production and biodiversity outcomes at a national scale. However, it does not involve land use land cover (LULC) prediction or simulation as the primary research question. The study models agricultural intensity levels and their spatial allocation but does not produce mapped future LULC projections or conduct spatially explicit LULC change predictions under multiple future scenarios. The biodiversity focus is on farmland bird communities rather than on LULC changes. Therefore, it does not meet the core inclusion criteria for national-scale LULC prediction studies.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":5172,\"completion_tokens\":125,\"total_tokens\":5297,\"cost\":0.0022688,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0022688,\"upstream_inference_prompt_cost\":0.0020688,\"upstream_inference_completions_cost\":0.0002},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653549-HpIS0eHAjksTPKMP2vR6",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 5172,
+        "completion_tokens": 125,
+        "total_tokens": 5297,
+        "cost": 0.0022688,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0022688,
+          "upstream_inference_prompt_cost": 0.0020688,
+          "upstream_inference_completions_cost": 0.0002
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.702,
+  "call_id": "DS__z1_C92ZJEIS__openai__r1",
+  "fingerprint": "a2ee2c9e2c17317d4086394d79bd0e966d715363416489d51b0c586747c2035e",
+  "paper_id": "z1_C92ZJEIS",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:59:07.659747+00:00",
+  "input_sha256": "23dc3cd226443edc63923ee3e569c4933474eed09fe6337ff63eb17bb6f7ac53",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

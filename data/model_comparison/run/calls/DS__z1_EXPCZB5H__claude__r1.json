@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789652622-ObtH6dUdCy0K3cI6vZJF",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.021251,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15786,
+    "completion_tokens": 1093,
+    "total_tokens": 16879,
+    "cost": 0.021251,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.021251,
+      "upstream_inference_prompt_cost": 0.015786,
+      "upstream_inference_completions_cost": 0.005465
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land Use Change Simulation in China\n\n## Review Status\n**NOT a review article** – This is a primary research paper presenting original modeling work and empirical results.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA CHECK:\n\n1. **Explicit national-scale spatial implementation (entire country)** ✓\n   - Study area: All of China (stated in title and throughout)\n   - Methodology section confirms national coverage\n   - Results present spatiotemporal patterns across China\n\n2. **Primary focus = LULCC prediction/simulation** ✓\n   - Central research question explicitly stated: \"How can we construct an integrated model that combines socioeconomic and ecological processes and land use?\" and \"What are the quantitative features and spatial patterns of land use types in the future?\"\n   - Entire modeling framework (3 linked components) designed specifically for LULCC projection\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\n   - Scenario A: Grain yield continues to increase at current rate\n   - Scenario B: Grain yield remains constant\n   - Quantitative comparisons provided (Figure 5, Section 3.3): cropland change of -27.37% vs +29.41%; forest change of +6.66% vs -11.15%; grassland change of +4.50% vs -5.88%\n\n4. **Spatial modeling with quantitative accuracy metrics** ✓\n   - Model validation section (3.1) compares simulated vs. monitored areas\n   - Quantitative metrics reported: cropland \"relatively similar,\" forest overestimated by 8.2%, grassland overestimated by 5.8%\n   - Conversion matrices with transition probabilities (Table 2, Figure 4)\n   - Spatial allocation model (CLUE-based) with explicit equations (3-7)\n\n5. **Outputs include mapped LULC projections** ✓\n   - Figure 6: Land use patterns for 2000, 2005, 2020, 2050, 2080\n   - Figure 7: Hotspot maps showing specific regional changes\n   - Figure 8: Comparative spatial distribution patterns between scenarios\n\n---\n\n### EXCLUSION CRITERIA CHECK:\n\n- ❌ Global-scale analysis without national disaggregation: NOT applicable (national-scale study)\n- ❌ Local/regional/global/transboundary focus: NOT applicable (national focus)\n- ❌ No LULCC prediction component: NOT applicable (core component)\n- ❌ Species-specific/ecological focus unrelated to LULCC: NOT applicable (LULCC is primary focus)\n- ❌ Economic/urban models lacking spatially explicit LULC outputs: NOT applicable (spatially explicit outputs provided)\n- ❌ Biomass/bioenergy/carbon studies without LULCC analysis: NOT applicable (LULCC is primary focus)\n- ❌ Methodological paper without application: NOT applicable (applied to China)\n- ❌ Purely qualitative/historical only: NOT applicable (includes future projections to 2080)\n- ❌ Remote sensing technical study: NOT applicable (integrative modeling study)\n- ❌ Single-scenario projections: NOT applicable (two contrasting scenarios)\n\n---\n\n## Additional Full Text Verification:\n\n**Scale verification:** Methodology explicitly describes national-scale implementation with 10 km resolution spatial variables across all of China. Results section confirms spatiotemporal analysis across the entire country.\n\n**Quantitative metrics:** Conversion rates (Table 2), transition probabilities (Figure 4), proportional changes (Figure 5), and validation comparisons (Figure 3) all reported with numerical values.\n\n**Spatial explicitness:** CLUE-based allocation model with logistic regression (Equation 4), fuzzy membership functions (Equations 5-6), and iterative spatial allocation procedure clearly described.\n\n---\n\n## Final Categorization: **OK**\n\n**Justification:** This paper meets ALL core inclusion criteria for national-scale LULCC prediction research. It presents an integrated modeling framework coupling socioeconomic, ecological, and spatial allocation components applied to China at 10 km resolution. The study implements two quantitatively distinct future scenarios (yield increase vs. constant yield) with explicit spatial projections to 2020, 2050, and 2080. Quantitative accuracy metrics are reported (validation comparisons, conversion matrices, transition probabilities). Mapped outputs showing spatially explicit LULCC projections are provided for both scenarios. The paper passes all exclusion criteria checks. This is a primary research contribution focused directly on national-scale LULCC prediction with appropriate methodological rigor and spatial explicitness.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:43:37.745149+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.02,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789652622-ObtH6dUdCy0K3cI6vZJF\",\"object\":\"chat.completion\",\"created\":1789652622,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land Use Change Simulation in China\\n\\n## Review Status\\n**NOT a review article** – This is a primary research paper presenting original modeling work and empirical results.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA CHECK:\\n\\n1. **Explicit national-scale spatial implementation (entire country)** ✓\\n   - Study area: All of China (stated in title and throughout)\\n   - Methodology section confirms national coverage\\n   - Results present spatiotemporal patterns across China\\n\\n2. **Primary focus = LULCC prediction/simulation** ✓\\n   - Central research question explicitly stated: \\\"How can we construct an integrated model that combines socioeconomic and ecological processes and land use?\\\" and \\\"What are the quantitative features and spatial patterns of land use types in the future?\\\"\\n   - Entire modeling framework (3 linked components) designed specifically for LULCC projection\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\\n   - Scenario A: Grain yield continues to increase at current rate\\n   - Scenario B: Grain yield remains constant\\n   - Quantitative comparisons provided (Figure 5, Section 3.3): cropland change of -27.37% vs +29.41%; forest change of +6.66% vs -11.15%; grassland change of +4.50% vs -5.88%\\n\\n4. **Spatial modeling with quantitative accuracy metrics** ✓\\n   - Model validation section (3.1) compares simulated vs. monitored areas\\n   - Quantitative metrics reported: cropland \\\"relatively similar,\\\" forest overestimated by 8.2%, grassland overestimated by 5.8%\\n   - Conversion matrices with transition probabilities (Table 2, Figure 4)\\n   - Spatial allocation model (CLUE-based) with explicit equations (3-7)\\n\\n5. **Outputs include mapped LULC projections** ✓\\n   - Figure 6: Land use patterns for 2000, 2005, 2020, 2050, 2080\\n   - Figure 7: Hotspot maps showing specific regional changes\\n   - Figure 8: Comparative spatial distribution patterns between scenarios\\n\\n---\\n\\n### EXCLUSION CRITERIA CHECK:\\n\\n- ❌ Global-scale analysis without national disaggregation: NOT applicable (national-scale study)\\n- ❌ Local/regional/global/transboundary focus: NOT applicable (national focus)\\n- ❌ No LULCC prediction component: NOT applicable (core component)\\n- ❌ Species-specific/ecological focus unrelated to LULCC: NOT applicable (LULCC is primary focus)\\n- ❌ Economic/urban models lacking spatially explicit LULC outputs: NOT applicable (spatially explicit outputs provided)\\n- ❌ Biomass/bioenergy/carbon studies without LULCC analysis: NOT applicable (LULCC is primary focus)\\n- ❌ Methodological paper without application: NOT applicable (applied to China)\\n- ❌ Purely qualitative/historical only: NOT applicable (includes future projections to 2080)\\n- ❌ Remote sensing technical study: NOT applicable (integrative modeling study)\\n- ❌ Single-scenario projections: NOT applicable (two contrasting scenarios)\\n\\n---\\n\\n## Additional Full Text Verification:\\n\\n**Scale verification:** Methodology explicitly describes national-scale implementation with 10 km resolution spatial variables across all of China. Results section confirms spatiotemporal analysis across the entire country.\\n\\n**Quantitative metrics:** Conversion rates (Table 2), transition probabilities (Figure 4), proportional changes (Figure 5), and validation comparisons (Figure 3) all reported with numerical values.\\n\\n**Spatial explicitness:** CLUE-based allocation model with logistic regression (Equation 4), fuzzy membership functions (Equations 5-6), and iterative spatial allocation procedure clearly described.\\n\\n---\\n\\n## Final Categorization: **OK**\\n\\n**Justification:** This paper meets ALL core inclusion criteria for national-scale LULCC prediction research. It presents an integrated modeling framework coupling socioeconomic, ecological, and spatial allocation components applied to China at 10 km resolution. The study implements two quantitatively distinct future scenarios (yield increase vs. constant yield) with explicit spatial projections to 2020, 2050, and 2080. Quantitative accuracy metrics are reported (validation comparisons, conversion matrices, transition probabilities). Mapped outputs showing spatially explicit LULCC projections are provided for both scenarios. The paper passes all exclusion criteria checks. This is a primary research contribution focused directly on national-scale LULCC prediction with appropriate methodological rigor and spatial explicitness.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15786,\"completion_tokens\":1093,\"total_tokens\":16879,\"cost\":0.021251,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.021251,\"upstream_inference_prompt_cost\":0.015786,\"upstream_inference_completions_cost\":0.005465},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652622-ObtH6dUdCy0K3cI6vZJF",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 15786,
+        "completion_tokens": 1093,
+        "total_tokens": 16879,
+        "cost": 0.021251,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.021251,
+          "upstream_inference_prompt_cost": 0.015786,
+          "upstream_inference_completions_cost": 0.005465
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.021,
+  "call_id": "DS__z1_EXPCZB5H__claude__r1",
+  "fingerprint": "2d6f3a5ee552920b630915c8b5727e88d03b07144fe2dd5a336089c52bdf0cd1",
+  "paper_id": "z1_EXPCZB5H",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:43:49.766152+00:00",
+  "input_sha256": "40b29472bbd7e8aa5fe91fde7558effa1ae4f450532a3337d7c57d891f2d4e0e",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

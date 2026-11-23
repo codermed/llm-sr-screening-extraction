@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789655200-QqVM5pbVwU06oEjngWsY",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00399044,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15171,
+    "completion_tokens": 121,
+    "total_tokens": 15292,
+    "cost": 0.00399044,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00399044,
+      "upstream_inference_prompt_cost": 0.00394446,
+      "upstream_inference_completions_cost": 4.598e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a non-review article that does not meet the core inclusion criteria. Its primary focus is on reconciling and harmonizing existing estimates of land-use CO2 fluxes between global models and national inventories, not on predicting or simulating future LULC. The study analyzes historical data (2000–2020) and does not implement spatial LULC prediction models, produce mapped LULC projections, or report quantitative accuracy metrics for spatial prediction. It is a synthesis and methodological comparison at a global/regional scale, not a national-scale predictive implementation.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:26:35.709084+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.194,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789655200-QqVM5pbVwU06oEjngWsY\",\"object\":\"chat.completion\",\"created\":1789655200,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a non-review article that does not meet the core inclusion criteria. Its primary focus is on reconciling and harmonizing existing estimates of land-use CO2 fluxes between global models and national inventories, not on predicting or simulating future LULC. The study analyzes historical data (2000–2020) and does not implement spatial LULC prediction models, produce mapped LULC projections, or report quantitative accuracy metrics for spatial prediction. It is a synthesis and methodological comparison at a global/regional scale, not a national-scale predictive implementation.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15171,\"completion_tokens\":121,\"total_tokens\":15292,\"cost\":0.00399044,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00399044,\"upstream_inference_prompt_cost\":0.00394446,\"upstream_inference_completions_cost\":0.00004598},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655200-QqVM5pbVwU06oEjngWsY",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 15171,
+        "completion_tokens": 121,
+        "total_tokens": 15292,
+        "cost": 0.00399044,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00399044,
+          "upstream_inference_prompt_cost": 0.00394446,
+          "upstream_inference_completions_cost": 4.598e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.195,
+  "call_id": "DS__z1_Q2UT53FZ__deepseek__r3",
+  "fingerprint": "c5fdd0f1a797ce53ad1cea9bcc76aa118342b07c32de4686a854122420eb2807",
+  "paper_id": "z1_Q2UT53FZ",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:26:39.902976+00:00",
+  "input_sha256": "23d64cf40079a5f52d4f0282e02883de77dbd090159903cbfb0b3762ce113b3e",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

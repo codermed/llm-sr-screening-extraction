@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654432-wtBMdvIMUCjpIj2vwz5N",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0018588,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15803,
+    "completion_tokens": 139,
+    "total_tokens": 15942,
+    "cost": 0.0018588,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 15616,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0018588,
+      "upstream_inference_prompt_cost": 0.0016364,
+      "upstream_inference_completions_cost": 0.0002224
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: OK (Justification: This is an original research paper focused on simulating land use and land cover change (LUCC) at the national scale for China. It explicitly conducts spatially explicit modeling with quantitative metrics (Figure of Merit) to validate historical simulations and implements ≥2 future scenarios (SSP1-RCP2.6 and SSP5-RCP8.5) with quantitative comparison of land demands and spatial distributions. The model outputs mapped LULC projections at 1 km resolution. The study tightly couples mechanistic and cellular automata models at the cell level to improve future LUCC predictions. It meets all core inclusion criteria and none of the exclusion criteria.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:13:48.040996+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.91,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789654432-wtBMdvIMUCjpIj2vwz5N\",\"object\":\"chat.completion\",\"created\":1789654432,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: This is an original research paper focused on simulating land use and land cover change (LUCC) at the national scale for China. It explicitly conducts spatially explicit modeling with quantitative metrics (Figure of Merit) to validate historical simulations and implements ≥2 future scenarios (SSP1-RCP2.6 and SSP5-RCP8.5) with quantitative comparison of land demands and spatial distributions. The model outputs mapped LULC projections at 1 km resolution. The study tightly couples mechanistic and cellular automata models at the cell level to improve future LUCC predictions. It meets all core inclusion criteria and none of the exclusion criteria.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15803,\"completion_tokens\":139,\"total_tokens\":15942,\"cost\":0.0018588,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":15616,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0018588,\"upstream_inference_prompt_cost\":0.0016364,\"upstream_inference_completions_cost\":0.0002224},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654432-wtBMdvIMUCjpIj2vwz5N",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 15803,
+        "completion_tokens": 139,
+        "total_tokens": 15942,
+        "cost": 0.0018588,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 15616,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0018588,
+          "upstream_inference_prompt_cost": 0.0016364,
+          "upstream_inference_completions_cost": 0.0002224
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.91,
+  "call_id": "DS__z1_WK8BHC2I__openai__r2",
+  "fingerprint": "d5173fa1a726ebb6d2d647f6e762d799fb47bfca0cb215249f48f4fbb30b8432",
+  "paper_id": "z1_WK8BHC2I",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:13:51.950878+00:00",
+  "input_sha256": "a57e1cb25fccf0c1cb0321db5e5bb6b3f91cb391adeed083d8fab18e58b757ce",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

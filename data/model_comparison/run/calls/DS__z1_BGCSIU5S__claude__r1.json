@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789653228-mznD0YlTRKZkQzBc2sSE",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.014047,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 9277,
+    "completion_tokens": 954,
+    "total_tokens": 10231,
+    "cost": 0.014047,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.014047,
+      "upstream_inference_prompt_cost": 0.009277,
+      "upstream_inference_completions_cost": 0.00477
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Categorization Decision\n\n## Initial Assessment\nThis is a **NON-REVIEW PAPER** - it presents original research using dynamic global vegetation models (DGVMs) to simulate ecosystem changes.\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA CHECK:\n\n1. **Explicit national-scale spatial implementation (entire country)**: ✓ YES\n   - Study covers \"32 terrestrial PABCs in China\" across the entire country\n   - Methods state: \"First, we simulated the whole China area and then picked out the grids where 32 PABCs locate\"\n\n2. **Primary focus = LULC prediction/simulation**: ✗ NO\n   - Primary focus is **ecosystem function changes** under climate change\n   - Assessment parameters are: vegetation dynamics, vegetation productivity, and ecosystem carbon balance\n   - NOT land use/land cover change prediction per se\n   - Study tracks **vegetation type coverage changes** (evergreen woody, deciduous woody, herb vegetation) but this is vegetation response modeling, not LULC prediction\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison**: ✗ PARTIAL\n   - Only ONE future scenario used: \"B2 scenario recommended by IPCC\"\n   - Multiple time periods (2050s, 2100s) but single emission scenario\n   - Does NOT meet the ≥2 future scenarios requirement\n\n4. **Spatial modeling with quantitative accuracy metrics**: ✗ PARTIAL\n   - Provides quantitative outputs (coverage percentages, carbon stocks in Tg)\n   - BUT no accuracy validation metrics (accuracy assessment, validation against observed data)\n   - Authors acknowledge: \"In short of the field observation data in GPP, NPP, and soil carbon in PABCs, the study does not validate the simulation results\"\n\n5. **Outputs include mapped LULC projections**: ✗ NO\n   - Outputs are color matrices showing vegetation type changes\n   - These are vegetation coverage changes, not land use/land cover classifications\n   - No explicit LULC category mapping (e.g., cropland, forest, urban, etc.)\n\n### EXCLUSION CRITERIA CHECK:\n\n- **Species-specific/ecological focus unrelated to LULC**: ✓ MEETS EXCLUSION\n  - Paper is fundamentally an ecological modeling study focused on ecosystem functions and vegetation responses to climate change\n  - Not a LULC prediction study\n\n- **Biomass/bioenergy/carbon studies without LULC change analysis**: ✓ MEETS EXCLUSION\n  - Significant focus on carbon cycle (biomass carbon stock, soil carbon stock, NEE)\n  - Vegetation changes are secondary outputs of ecosystem modeling, not primary LULC predictions\n\n- **No LULC prediction component**: ✓ MEETS EXCLUSION\n  - No explicit land use categories modeled\n  - No LULC transition matrices or conversions between use classes\n  - Vegetation type changes ≠ LULC change prediction\n\n---\n\n## Final Categorization: **EXCLUDED**\n\n**Justification:** \n\nThis paper fails multiple core inclusion criteria and meets specific exclusion criteria:\n\n1. **Primary focus mismatch**: The research is fundamentally an **ecosystem function assessment** under climate change, not LULC prediction. While vegetation coverage changes are reported, these represent ecological responses to climate, not land use/land cover change modeling.\n\n2. **Insufficient scenarios**: Only one future emission scenario (B2) is implemented, failing the ≥2 scenarios requirement for comparative analysis.\n\n3. **No LULC framework**: The study models vegetation types (evergreen woody, deciduous woody, herb) as ecological categories, not LULC classes. There is no explicit mapping to standard LULC categories (cropland, forest, urban, grassland, etc.).\n\n4. **Ecological focus**: The paper explicitly states its purpose is assessing \"impacts of climate change on ecosystem function\" with indicators of \"vegetation dynamics, ecosystem productivity, and carbon cycle\" - this is ecological modeling, not LULC prediction.\n\n5. **Validation limitations**: Acknowledged lack of field validation data undermines accuracy assessment capabilities.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:53:44.135873+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 11.726,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653228-mznD0YlTRKZkQzBc2sSE\",\"object\":\"chat.completion\",\"created\":1789653228,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Categorization Decision\\n\\n## Initial Assessment\\nThis is a **NON-REVIEW PAPER** - it presents original research using dynamic global vegetation models (DGVMs) to simulate ecosystem changes.\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA CHECK:\\n\\n1. **Explicit national-scale spatial implementation (entire country)**: ✓ YES\\n   - Study covers \\\"32 terrestrial PABCs in China\\\" across the entire country\\n   - Methods state: \\\"First, we simulated the whole China area and then picked out the grids where 32 PABCs locate\\\"\\n\\n2. **Primary focus = LULC prediction/simulation**: ✗ NO\\n   - Primary focus is **ecosystem function changes** under climate change\\n   - Assessment parameters are: vegetation dynamics, vegetation productivity, and ecosystem carbon balance\\n   - NOT land use/land cover change prediction per se\\n   - Study tracks **vegetation type coverage changes** (evergreen woody, deciduous woody, herb vegetation) but this is vegetation response modeling, not LULC prediction\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison**: ✗ PARTIAL\\n   - Only ONE future scenario used: \\\"B2 scenario recommended by IPCC\\\"\\n   - Multiple time periods (2050s, 2100s) but single emission scenario\\n   - Does NOT meet the ≥2 future scenarios requirement\\n\\n4. **Spatial modeling with quantitative accuracy metrics**: ✗ PARTIAL\\n   - Provides quantitative outputs (coverage percentages, carbon stocks in Tg)\\n   - BUT no accuracy validation metrics (accuracy assessment, validation against observed data)\\n   - Authors acknowledge: \\\"In short of the field observation data in GPP, NPP, and soil carbon in PABCs, the study does not validate the simulation results\\\"\\n\\n5. **Outputs include mapped LULC projections**: ✗ NO\\n   - Outputs are color matrices showing vegetation type changes\\n   - These are vegetation coverage changes, not land use/land cover classifications\\n   - No explicit LULC category mapping (e.g., cropland, forest, urban, etc.)\\n\\n### EXCLUSION CRITERIA CHECK:\\n\\n- **Species-specific/ecological focus unrelated to LULC**: ✓ MEETS EXCLUSION\\n  - Paper is fundamentally an ecological modeling study focused on ecosystem functions and vegetation responses to climate change\\n  - Not a LULC prediction study\\n\\n- **Biomass/bioenergy/carbon studies without LULC change analysis**: ✓ MEETS EXCLUSION\\n  - Significant focus on carbon cycle (biomass carbon stock, soil carbon stock, NEE)\\n  - Vegetation changes are secondary outputs of ecosystem modeling, not primary LULC predictions\\n\\n- **No LULC prediction component**: ✓ MEETS EXCLUSION\\n  - No explicit land use categories modeled\\n  - No LULC transition matrices or conversions between use classes\\n  - Vegetation type changes ≠ LULC change prediction\\n\\n---\\n\\n## Final Categorization: **EXCLUDED**\\n\\n**Justification:** \\n\\nThis paper fails multiple core inclusion criteria and meets specific exclusion criteria:\\n\\n1. **Primary focus mismatch**: The research is fundamentally an **ecosystem function assessment** under climate change, not LULC prediction. While vegetation coverage changes are reported, these represent ecological responses to climate, not land use/land cover change modeling.\\n\\n2. **Insufficient scenarios**: Only one future emission scenario (B2) is implemented, failing the ≥2 scenarios requirement for comparative analysis.\\n\\n3. **No LULC framework**: The study models vegetation types (evergreen woody, deciduous woody, herb) as ecological categories, not LULC classes. There is no explicit mapping to standard LULC categories (cropland, forest, urban, grassland, etc.).\\n\\n4. **Ecological focus**: The paper explicitly states its purpose is assessing \\\"impacts of climate change on ecosystem function\\\" with indicators of \\\"vegetation dynamics, ecosystem productivity, and carbon cycle\\\" - this is ecological modeling, not LULC prediction.\\n\\n5. **Validation limitations**: Acknowledged lack of field validation data undermines accuracy assessment capabilities.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":9277,\"completion_tokens\":954,\"total_tokens\":10231,\"cost\":0.014047,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.014047,\"upstream_inference_prompt_cost\":0.009277,\"upstream_inference_completions_cost\":0.00477},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653228-mznD0YlTRKZkQzBc2sSE",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 9277,
+        "completion_tokens": 954,
+        "total_tokens": 10231,
+        "cost": 0.014047,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.014047,
+          "upstream_inference_prompt_cost": 0.009277,
+          "upstream_inference_completions_cost": 0.00477
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 11.726,
+  "call_id": "DS__z1_BGCSIU5S__claude__r1",
+  "fingerprint": "999746f652a00fcf497e3f9887752a79cfc7346778d7be5e0866935bac821703",
+  "paper_id": "z1_BGCSIU5S",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:53:55.861788+00:00",
+  "input_sha256": "0fddcd965e3efd0f6266452e45d8488c0878b252585d053888baca3a25ba84b8",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

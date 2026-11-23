@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789654138-fjcO5M1L7ybXivjcbutq",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0050544,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 5455,
+    "completion_tokens": 205,
+    "total_tokens": 5660,
+    "cost": 0.0050544,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0050544,
+      "upstream_inference_prompt_cost": 0.0042549,
+      "upstream_inference_completions_cost": 0.0007995
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: OK (Justification: The paper presents original research with a primary focus on simulating future agricultural land use across the entire Netherlands using the Land Use Scanner model. It implements two distinct, quantitatively defined socio-economic scenarios (Global Economy and Regional Community) and produces spatially explicit, mapped projections of land use change to 2030. The methodology is grid-based (500 × 500 m) and covers the national territory, satisfying explicit national-scale spatial implementation. Outputs include quantitative estimates of agricultural area change (Figure 1) and mapped land use configurations (Figure 2). Although accuracy metrics like Kappa or overall accuracy are not reported, the model uses quantitative suitability scores and logit-based allocation to simulate competitive land-use claims—sufficient for meeting the criterion of \"spatial modeling with quantitative... change rates.\" The study centers on LULC prediction as its core objective, not as an ancillary input, and meets all inclusion criteria while avoiding all exclusion conditions.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:08:53.458495+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 6.237,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789654138-fjcO5M1L7ybXivjcbutq\",\"object\":\"chat.completion\",\"created\":1789654138,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: The paper presents original research with a primary focus on simulating future agricultural land use across the entire Netherlands using the Land Use Scanner model. It implements two distinct, quantitatively defined socio-economic scenarios (Global Economy and Regional Community) and produces spatially explicit, mapped projections of land use change to 2030. The methodology is grid-based (500 × 500 m) and covers the national territory, satisfying explicit national-scale spatial implementation. Outputs include quantitative estimates of agricultural area change (Figure 1) and mapped land use configurations (Figure 2). Although accuracy metrics like Kappa or overall accuracy are not reported, the model uses quantitative suitability scores and logit-based allocation to simulate competitive land-use claims—sufficient for meeting the criterion of \\\"spatial modeling with quantitative... change rates.\\\" The study centers on LULC prediction as its core objective, not as an ancillary input, and meets all inclusion criteria while avoiding all exclusion conditions.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":5455,\"completion_tokens\":205,\"total_tokens\":5660,\"cost\":0.0050544,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0050544,\"upstream_inference_prompt_cost\":0.0042549,\"upstream_inference_completions_cost\":0.0007995},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654138-fjcO5M1L7ybXivjcbutq",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 5455,
+        "completion_tokens": 205,
+        "total_tokens": 5660,
+        "cost": 0.0050544,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0050544,
+          "upstream_inference_prompt_cost": 0.0042549,
+          "upstream_inference_completions_cost": 0.0007995
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 6.237,
+  "call_id": "DS__z1_ZCDX3G7X__qwen__r2",
+  "fingerprint": "cf42220a4b5b8504cba410e26cf25262358dc840fb18c8760a33f2183dc496dc",
+  "paper_id": "z1_ZCDX3G7X",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:08:59.695346+00:00",
+  "input_sha256": "3c38b8903a1fa4e3ed1c6e8948ade44baa7a5bbbf57aee7790be140407d44e48",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

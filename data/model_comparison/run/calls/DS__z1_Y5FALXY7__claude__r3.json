@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789655973-eKzaB4wnJwRDJRFKmmUp",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.016003,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12083,
+    "completion_tokens": 784,
+    "total_tokens": 12867,
+    "cost": 0.016003,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.016003,
+      "upstream_inference_prompt_cost": 0.012083,
+      "upstream_inference_completions_cost": 0.00392
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# FULL TEXT ANALYSIS\n\n## Step 1: Determine if Paper is a Review Article\n\n**Result: YES - This is a REVIEW article**\n\nEvidence from full text:\n- Explicitly stated in title: \"Review Transforming agroforestry in contested landscapes\"\n- Methodology section 2.2 clearly describes: \"We adopted systematic literature review (SLR) and review of government policies and project reports for this study\"\n- Describes SLR protocol with search strings, database searches (Scopus, Web of Science), screening process (102 articles screened, 51 selected for full-text analysis)\n- Data extraction framework developed for synthesizing literature\n- Paper synthesizes findings across 51 peer-reviewed articles plus government policies and project reports\n\n## Step 2: Apply Review Categorization Flow\n\n**Question: Is this REVIEW focused on or touching LULC future prediction?**\n\n**Analysis of content scope:**\n\nThe review examines:\n1. **Agroforestry practices** - forms, management modalities, implementation outcomes\n2. **Ecosystem services (ES)** - provisioning, regulating, supporting, cultural services\n3. **Sustainable Development Goals (SDGs)** - alignment with SDGs #1, #2, #13, #15\n4. **Trade-offs in ES** - how integrated agroforestry minimizes conflicts between services\n5. **Case study**: Super Zone Development Program (SZDP) in Nepal with production metrics\n6. **Factors affecting agroforestry** - socio-economic, ecological, institutional drivers\n\n**Critical Assessment - Does this touch LULC future prediction?**\n\nThe paper:\n- ✗ Does NOT contain land use/land cover change projections or future scenarios\n- ✗ Does NOT model or predict future LULC distributions\n- ✗ Does NOT implement predictive modeling for LULC change\n- ✗ Does NOT compare multiple future LULC scenarios quantitatively\n- ✓ DOES discuss land use practices (agroforestry vs. shifting cultivation transitions)\n- ✓ DOES discuss historical shifts in land use practices (forest-based → farm-based)\n- ✗ Historical land use transitions ≠ LULC future prediction\n\n**Scope**: The review focuses on **current and historical agroforestry practices, ecosystem service supply, and sustainable development outcomes** - NOT on predicting or projecting future LULC change.\n\n---\n\n## Final Categorization\n\n**Final categorization: EXCLUDED**\n\n**Justification:** \n\nThis is a systematic review article, but it does NOT focus on or touch LULC future prediction. While the paper discusses land use practices and historical transitions in agroforestry systems (from forest-based to farm-based approaches), it:\n\n1. Contains no LULC change projections or future scenarios\n2. Implements no spatial predictive modeling for future land cover\n3. Does not quantitatively compare multiple future LULC scenarios\n4. Does not produce mapped LULC projections\n5. Focuses instead on ecosystem service supply, trade-offs, SDG alignment, and current/historical agroforestry practices\n\nThe paper's primary objective is synthesizing evidence on how integrated agroforestry can minimize trade-offs in ecosystem services and support sustainable development goals in Nepal—a valuable contribution to agroforestry science, but outside the scope of LULC prediction research.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:39:28.330951+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 9.544,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789655973-eKzaB4wnJwRDJRFKmmUp\",\"object\":\"chat.completion\",\"created\":1789655973,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# FULL TEXT ANALYSIS\\n\\n## Step 1: Determine if Paper is a Review Article\\n\\n**Result: YES - This is a REVIEW article**\\n\\nEvidence from full text:\\n- Explicitly stated in title: \\\"Review Transforming agroforestry in contested landscapes\\\"\\n- Methodology section 2.2 clearly describes: \\\"We adopted systematic literature review (SLR) and review of government policies and project reports for this study\\\"\\n- Describes SLR protocol with search strings, database searches (Scopus, Web of Science), screening process (102 articles screened, 51 selected for full-text analysis)\\n- Data extraction framework developed for synthesizing literature\\n- Paper synthesizes findings across 51 peer-reviewed articles plus government policies and project reports\\n\\n## Step 2: Apply Review Categorization Flow\\n\\n**Question: Is this REVIEW focused on or touching LULC future prediction?**\\n\\n**Analysis of content scope:**\\n\\nThe review examines:\\n1. **Agroforestry practices** - forms, management modalities, implementation outcomes\\n2. **Ecosystem services (ES)** - provisioning, regulating, supporting, cultural services\\n3. **Sustainable Development Goals (SDGs)** - alignment with SDGs #1, #2, #13, #15\\n4. **Trade-offs in ES** - how integrated agroforestry minimizes conflicts between services\\n5. **Case study**: Super Zone Development Program (SZDP) in Nepal with production metrics\\n6. **Factors affecting agroforestry** - socio-economic, ecological, institutional drivers\\n\\n**Critical Assessment - Does this touch LULC future prediction?**\\n\\nThe paper:\\n- ✗ Does NOT contain land use/land cover change projections or future scenarios\\n- ✗ Does NOT model or predict future LULC distributions\\n- ✗ Does NOT implement predictive modeling for LULC change\\n- ✗ Does NOT compare multiple future LULC scenarios quantitatively\\n- ✓ DOES discuss land use practices (agroforestry vs. shifting cultivation transitions)\\n- ✓ DOES discuss historical shifts in land use practices (forest-based → farm-based)\\n- ✗ Historical land use transitions ≠ LULC future prediction\\n\\n**Scope**: The review focuses on **current and historical agroforestry practices, ecosystem service supply, and sustainable development outcomes** - NOT on predicting or projecting future LULC change.\\n\\n---\\n\\n## Final Categorization\\n\\n**Final categorization: EXCLUDED**\\n\\n**Justification:** \\n\\nThis is a systematic review article, but it does NOT focus on or touch LULC future prediction. While the paper discusses land use practices and historical transitions in agroforestry systems (from forest-based to farm-based approaches), it:\\n\\n1. Contains no LULC change projections or future scenarios\\n2. Implements no spatial predictive modeling for future land cover\\n3. Does not quantitatively compare multiple future LULC scenarios\\n4. Does not produce mapped LULC projections\\n5. Focuses instead on ecosystem service supply, trade-offs, SDG alignment, and current/historical agroforestry practices\\n\\nThe paper's primary objective is synthesizing evidence on how integrated agroforestry can minimize trade-offs in ecosystem services and support sustainable development goals in Nepal—a valuable contribution to agroforestry science, but outside the scope of LULC prediction research.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12083,\"completion_tokens\":784,\"total_tokens\":12867,\"cost\":0.016003,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.016003,\"upstream_inference_prompt_cost\":0.012083,\"upstream_inference_completions_cost\":0.00392},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655973-eKzaB4wnJwRDJRFKmmUp",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 12083,
+        "completion_tokens": 784,
+        "total_tokens": 12867,
+        "cost": 0.016003,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.016003,
+          "upstream_inference_prompt_cost": 0.012083,
+          "upstream_inference_completions_cost": 0.00392
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 9.544,
+  "call_id": "DS__z1_Y5FALXY7__claude__r3",
+  "fingerprint": "14099f5f764110f4dd6fe8bc815b168592942182dbca48524da27e070d844231",
+  "paper_id": "z1_Y5FALXY7",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:39:37.874799+00:00",
+  "input_sha256": "2bff40084b172bac62116d5a3c76ed5ea530e47fd3308762bddbeb61ede976c4",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

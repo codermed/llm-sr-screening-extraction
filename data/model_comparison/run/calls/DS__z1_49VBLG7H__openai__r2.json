@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654133-QyQJiO3fTFibSuYlNE4J",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0014804,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12293,
+    "completion_tokens": 132,
+    "total_tokens": 12425,
+    "cost": 0.0014804,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 12160,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0014804,
+      "upstream_inference_prompt_cost": 0.0012692,
+      "upstream_inference_completions_cost": 0.0002112
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: Although the paper discusses changes in coastal habitat area in the UK from 1900 to 2060 and projects future habitat loss scenarios, it does not present explicit spatially explicit land use/land cover (LULC) prediction or simulation with mapped outputs or quantitative accuracy metrics. The focus is on carbon sequestration valuation and ecosystem services rather than on LULC modeling or prediction as a primary research objective. The habitat area changes are presented as aggregate estimates and linear extrapolations without spatial modeling or scenario comparison with spatial outputs. Therefore, it fails the core inclusion criteria for LULC prediction studies.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:08:48.233482+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.187,
+      "raw_body": "\n         \n{\"id\":\"gen-1789654133-QyQJiO3fTFibSuYlNE4J\",\"object\":\"chat.completion\",\"created\":1789654133,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: Although the paper discusses changes in coastal habitat area in the UK from 1900 to 2060 and projects future habitat loss scenarios, it does not present explicit spatially explicit land use/land cover (LULC) prediction or simulation with mapped outputs or quantitative accuracy metrics. The focus is on carbon sequestration valuation and ecosystem services rather than on LULC modeling or prediction as a primary research objective. The habitat area changes are presented as aggregate estimates and linear extrapolations without spatial modeling or scenario comparison with spatial outputs. Therefore, it fails the core inclusion criteria for LULC prediction studies.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12293,\"completion_tokens\":132,\"total_tokens\":12425,\"cost\":0.0014804,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":12160,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0014804,\"upstream_inference_prompt_cost\":0.0012692,\"upstream_inference_completions_cost\":0.0002112},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654133-QyQJiO3fTFibSuYlNE4J",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 12293,
+        "completion_tokens": 132,
+        "total_tokens": 12425,
+        "cost": 0.0014804,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 12160,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0014804,
+          "upstream_inference_prompt_cost": 0.0012692,
+          "upstream_inference_completions_cost": 0.0002112
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.188,
+  "call_id": "DS__z1_49VBLG7H__openai__r2",
+  "fingerprint": "06deaf9b5846e5edd476c35f990bba472b622e554b6a656b4fe212e2735bd77b",
+  "paper_id": "z1_49VBLG7H",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:08:50.420946+00:00",
+  "input_sha256": "f2529ac0d8e38381e5a035c15bd91233fec1632e744fbbbe6735989e49f931a6",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

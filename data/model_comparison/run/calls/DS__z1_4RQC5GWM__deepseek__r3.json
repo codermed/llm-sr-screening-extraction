@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789655213-TqcliYpRQijFDKztYBQ4",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00345378,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 13180,
+    "completion_tokens": 71,
+    "total_tokens": 13251,
+    "cost": 0.00345378,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00345378,
+      "upstream_inference_prompt_cost": 0.0034268,
+      "upstream_inference_completions_cost": 2.698e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: Paper is a bibliometric review article focused on synthesizing existing research on land cover change and global warming interactions, not on conducting or presenting new LULC future predictions. Its primary objective is to analyze the literature's development, trends, and clusters, not to model or predict future LULC scenarios.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:26:48.772464+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.735,
+      "raw_body": "\n         \n{\"id\":\"gen-1789655213-TqcliYpRQijFDKztYBQ4\",\"object\":\"chat.completion\",\"created\":1789655213,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: Paper is a bibliometric review article focused on synthesizing existing research on land cover change and global warming interactions, not on conducting or presenting new LULC future predictions. Its primary objective is to analyze the literature's development, trends, and clusters, not to model or predict future LULC scenarios.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":13180,\"completion_tokens\":71,\"total_tokens\":13251,\"cost\":0.00345378,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00345378,\"upstream_inference_prompt_cost\":0.0034268,\"upstream_inference_completions_cost\":0.00002698},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655213-TqcliYpRQijFDKztYBQ4",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 13180,
+        "completion_tokens": 71,
+        "total_tokens": 13251,
+        "cost": 0.00345378,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00345378,
+          "upstream_inference_prompt_cost": 0.0034268,
+          "upstream_inference_completions_cost": 2.698e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.736,
+  "call_id": "DS__z1_4RQC5GWM__deepseek__r3",
+  "fingerprint": "ef6cf53f1675fa493c265fc2107afb2e588ee0e8f33d78c29b2028deaff3d93a",
+  "paper_id": "z1_4RQC5GWM",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:26:52.508187+00:00",
+  "input_sha256": "4e29725f14fd0a8d945a0de8b7053a44a7d3d70c5c04f7bb4dbb855b44b1872d",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

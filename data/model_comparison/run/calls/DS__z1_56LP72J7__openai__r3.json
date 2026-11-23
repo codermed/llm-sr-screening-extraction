@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789655417-DynRVh0gVmInFeb91tlz",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00156,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12468,
+    "completion_tokens": 162,
+    "total_tokens": 12630,
+    "cost": 0.00156,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 12288,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00156,
+      "upstream_inference_prompt_cost": 0.0013008,
+      "upstream_inference_completions_cost": 0.0002592
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: OK (Justification: This is an original research article focused on land use land cover (LULC) prediction/simulation at the national scale for mainland China. It explicitly implements multi-scale (national, provincial, municipal, county) spatial modeling scenarios of cropland quantity and quality balance from 2015 to 2030 using the LANDSCAPE cellular automata model. The study includes ≥2 future scenarios with quantitative comparisons of habitat quality impacts. Quantitative accuracy metrics (e.g., Kappa simulation) are reported for model calibration. Outputs include spatially explicit mapped LULC projections and scenario-based habitat quality assessments. The primary focus is on LULC prediction and its ecological impacts under cropland protection policies, meeting all core inclusion criteria. It is not a review article.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:30:12.311044+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.384,
+      "raw_body": "\n         \n{\"id\":\"gen-1789655417-DynRVh0gVmInFeb91tlz\",\"object\":\"chat.completion\",\"created\":1789655417,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: This is an original research article focused on land use land cover (LULC) prediction/simulation at the national scale for mainland China. It explicitly implements multi-scale (national, provincial, municipal, county) spatial modeling scenarios of cropland quantity and quality balance from 2015 to 2030 using the LANDSCAPE cellular automata model. The study includes ≥2 future scenarios with quantitative comparisons of habitat quality impacts. Quantitative accuracy metrics (e.g., Kappa simulation) are reported for model calibration. Outputs include spatially explicit mapped LULC projections and scenario-based habitat quality assessments. The primary focus is on LULC prediction and its ecological impacts under cropland protection policies, meeting all core inclusion criteria. It is not a review article.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12468,\"completion_tokens\":162,\"total_tokens\":12630,\"cost\":0.00156,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":12288,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00156,\"upstream_inference_prompt_cost\":0.0013008,\"upstream_inference_completions_cost\":0.0002592},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655417-DynRVh0gVmInFeb91tlz",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 12468,
+        "completion_tokens": 162,
+        "total_tokens": 12630,
+        "cost": 0.00156,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 12288,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00156,
+          "upstream_inference_prompt_cost": 0.0013008,
+          "upstream_inference_completions_cost": 0.0002592
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.384,
+  "call_id": "DS__z1_56LP72J7__openai__r3",
+  "fingerprint": "2d720622dc6d61843c5175a71a03419d7ba8d91eab4d4a0605005e115cd117db",
+  "paper_id": "z1_56LP72J7",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:30:15.694838+00:00",
+  "input_sha256": "02ce782a167a635055197b5ef0db76a25dd37334b358e5141f5153737afd4657",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

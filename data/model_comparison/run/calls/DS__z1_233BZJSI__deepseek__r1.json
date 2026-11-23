@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653573-lFlUv0hMo5SG5lecScWK",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00319028,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 11940,
+    "completion_tokens": 226,
+    "total_tokens": 12166,
+    "cost": 0.00319028,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00319028,
+      "upstream_inference_prompt_cost": 0.0031044,
+      "upstream_inference_completions_cost": 8.588e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper's primary objective is to analyze the economic and land-use impacts of transportation decarbonization policies on U.S. agriculture. It uses a county-level agricultural model to simulate changes in crop area allocation *in response to* exogenous changes in ethanol demand. The model projects future crop areas, but this is a consequential land-use *response* to a socio-economic driver, not a primary LULC prediction or simulation exercise. The core research question is about policy impacts on commodity prices, land allocation, and farm returns, not about predicting or simulating LULC change itself. The paper does not implement a spatial LULC prediction model with accuracy metrics; it uses an economic equilibrium model with area elasticities. Furthermore, it does not meet the inclusion criterion of implementing \"≥2 future scenarios with quantitative comparison\" for LULC prediction; its scenarios are variations in policy and macroeconomic conditions, not alternative LULC prediction pathways. The scale is sub-national (county-level within the U.S.), not an explicit national-scale spatial implementation for the purpose of LULC prediction.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:59:28.467074+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.881,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653573-lFlUv0hMo5SG5lecScWK\",\"object\":\"chat.completion\",\"created\":1789653573,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper's primary objective is to analyze the economic and land-use impacts of transportation decarbonization policies on U.S. agriculture. It uses a county-level agricultural model to simulate changes in crop area allocation *in response to* exogenous changes in ethanol demand. The model projects future crop areas, but this is a consequential land-use *response* to a socio-economic driver, not a primary LULC prediction or simulation exercise. The core research question is about policy impacts on commodity prices, land allocation, and farm returns, not about predicting or simulating LULC change itself. The paper does not implement a spatial LULC prediction model with accuracy metrics; it uses an economic equilibrium model with area elasticities. Furthermore, it does not meet the inclusion criterion of implementing \\\"≥2 future scenarios with quantitative comparison\\\" for LULC prediction; its scenarios are variations in policy and macroeconomic conditions, not alternative LULC prediction pathways. The scale is sub-national (county-level within the U.S.), not an explicit national-scale spatial implementation for the purpose of LULC prediction.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":11940,\"completion_tokens\":226,\"total_tokens\":12166,\"cost\":0.00319028,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00319028,\"upstream_inference_prompt_cost\":0.0031044,\"upstream_inference_completions_cost\":0.00008588},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653573-lFlUv0hMo5SG5lecScWK",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 11940,
+        "completion_tokens": 226,
+        "total_tokens": 12166,
+        "cost": 0.00319028,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00319028,
+          "upstream_inference_prompt_cost": 0.0031044,
+          "upstream_inference_completions_cost": 8.588e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.882,
+  "call_id": "DS__z1_233BZJSI__deepseek__r1",
+  "fingerprint": "e4181eb456fbc43819674e902f5d6aea867a519571b998ae5f4d5f940fbf5355",
+  "paper_id": "z1_233BZJSI",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:59:41.347793+00:00",
+  "input_sha256": "e88df0063ae9960e71cd69f6fbe30ee69cbe861693d1ba8f32d499b156280780",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

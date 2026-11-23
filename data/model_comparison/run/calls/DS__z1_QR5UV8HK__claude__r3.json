@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789656111-Q3SlpMHsSNkArdHsdeUx",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.023038,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 19503,
+    "completion_tokens": 707,
+    "total_tokens": 20210,
+    "cost": 0.023038,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.023038,
+      "upstream_inference_prompt_cost": 0.019503,
+      "upstream_inference_completions_cost": 0.003535
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Iverson & Prasad (2002)\n\n## Initial Assessment\nThis is a **non-review research paper** presenting original modeling work on tree species habitat redistribution.\n\n## Evaluation Against Criteria\n\n### Core Inclusion Criteria Check:\n\n1. **Explicit national-scale spatial implementation?**\n   - Study area: \"76 common tree species in the eastern US\" with \"more than 2100 counties east of the 100th meridian\"\n   - Geographic scope: Eastern United States (sub-national, not full country)\n   - ❌ FAILS: Regional scale (eastern US), not national-scale implementation\n\n2. **Primary focus = LULC prediction/simulation?**\n   - Primary objective: Model \"potential suitable habitat\" for tree species under climate change scenarios\n   - This is **species distribution modeling**, not land use/land cover change prediction\n   - ❌ FAILS: Ecological/species-specific focus, not LULC prediction\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ✓ PASSES: Five climate change scenarios (GFDL, GISS, UKMO, Hadley, CCC) with quantitative comparisons\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ✓ PASSES: Regression tree analysis models with importance values, area scores, latitudinal shifts quantified\n\n5. **Outputs include mapped LULC projections?**\n   - ❌ FAILS: Outputs are species habitat suitability maps, not LULC classifications\n\n### Exclusion Criteria Check:\n\n- **Species-specific/ecological focus unrelated to LULC?** ✓ YES - This is explicitly a species distribution study\n- **No LULC prediction component?** ✓ YES - Paper does not predict land use or land cover change\n- **Regional scale focus?** ✓ YES - Eastern US regional focus, not national\n\n---\n\n## Final Categorization: **EXCLUDED**\n\n**Justification:** \nThis paper is a species distribution modeling study focused on predicting tree habitat shifts under climate change scenarios. While it employs rigorous quantitative modeling with multiple scenarios and spatial analysis, it:\n\n1. **Fails primary focus criterion**: The research objective is ecological species habitat prediction, not land use/land cover (LULC) change prediction. The paper models where tree species *can grow*, not how land is *used or classified*.\n\n2. **Fails scale criterion**: Study area is limited to eastern US (regional), not national-scale implementation.\n\n3. **Lacks LULC prediction component**: The paper does not predict LULC classes, transitions, or changes. Land use is mentioned only as one of 33 environmental variables used as model inputs (percent forest, grazing, crops, disturbed), not as a predicted output.\n\n4. **Meets species-specific exclusion criterion**: Explicitly focused on flora distribution rather than LULC dynamics.\n\nThe paper is methodologically sound but outside the scope of national-scale LULC prediction research.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:41:46.184824+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 8.3,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789656111-Q3SlpMHsSNkArdHsdeUx\",\"object\":\"chat.completion\",\"created\":1789656111,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Iverson & Prasad (2002)\\n\\n## Initial Assessment\\nThis is a **non-review research paper** presenting original modeling work on tree species habitat redistribution.\\n\\n## Evaluation Against Criteria\\n\\n### Core Inclusion Criteria Check:\\n\\n1. **Explicit national-scale spatial implementation?**\\n   - Study area: \\\"76 common tree species in the eastern US\\\" with \\\"more than 2100 counties east of the 100th meridian\\\"\\n   - Geographic scope: Eastern United States (sub-national, not full country)\\n   - ❌ FAILS: Regional scale (eastern US), not national-scale implementation\\n\\n2. **Primary focus = LULC prediction/simulation?**\\n   - Primary objective: Model \\\"potential suitable habitat\\\" for tree species under climate change scenarios\\n   - This is **species distribution modeling**, not land use/land cover change prediction\\n   - ❌ FAILS: Ecological/species-specific focus, not LULC prediction\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ✓ PASSES: Five climate change scenarios (GFDL, GISS, UKMO, Hadley, CCC) with quantitative comparisons\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ✓ PASSES: Regression tree analysis models with importance values, area scores, latitudinal shifts quantified\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ❌ FAILS: Outputs are species habitat suitability maps, not LULC classifications\\n\\n### Exclusion Criteria Check:\\n\\n- **Species-specific/ecological focus unrelated to LULC?** ✓ YES - This is explicitly a species distribution study\\n- **No LULC prediction component?** ✓ YES - Paper does not predict land use or land cover change\\n- **Regional scale focus?** ✓ YES - Eastern US regional focus, not national\\n\\n---\\n\\n## Final Categorization: **EXCLUDED**\\n\\n**Justification:** \\nThis paper is a species distribution modeling study focused on predicting tree habitat shifts under climate change scenarios. While it employs rigorous quantitative modeling with multiple scenarios and spatial analysis, it:\\n\\n1. **Fails primary focus criterion**: The research objective is ecological species habitat prediction, not land use/land cover (LULC) change prediction. The paper models where tree species *can grow*, not how land is *used or classified*.\\n\\n2. **Fails scale criterion**: Study area is limited to eastern US (regional), not national-scale implementation.\\n\\n3. **Lacks LULC prediction component**: The paper does not predict LULC classes, transitions, or changes. Land use is mentioned only as one of 33 environmental variables used as model inputs (percent forest, grazing, crops, disturbed), not as a predicted output.\\n\\n4. **Meets species-specific exclusion criterion**: Explicitly focused on flora distribution rather than LULC dynamics.\\n\\nThe paper is methodologically sound but outside the scope of national-scale LULC prediction research.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":19503,\"completion_tokens\":707,\"total_tokens\":20210,\"cost\":0.023038,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.023038,\"upstream_inference_prompt_cost\":0.019503,\"upstream_inference_completions_cost\":0.003535},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789656111-Q3SlpMHsSNkArdHsdeUx",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 19503,
+        "completion_tokens": 707,
+        "total_tokens": 20210,
+        "cost": 0.023038,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.023038,
+          "upstream_inference_prompt_cost": 0.019503,
+          "upstream_inference_completions_cost": 0.003535
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 8.3,
+  "call_id": "DS__z1_QR5UV8HK__claude__r3",
+  "fingerprint": "9b89c9c6c9040454a01fbeaeacf8c83a71ecd18c2e1ae477efb8386af9c97399",
+  "paper_id": "z1_QR5UV8HK",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:41:54.484780+00:00",
+  "input_sha256": "7f0bd85cf36e3fe5cf3e73f842ca0a4f4ce16948e540df88ec985f995e6e6275",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

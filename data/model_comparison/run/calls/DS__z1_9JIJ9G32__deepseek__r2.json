@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789654023-0xdSDq0jaxaPXHVibtEo",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0020511,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15328,
+    "completion_tokens": 121,
+    "total_tokens": 15449,
+    "cost": 0.0020511,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 15232,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0020511,
+      "upstream_inference_prompt_cost": 0.00200512,
+      "upstream_inference_completions_cost": 4.598e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: This is a research paper on soil organic carbon (SOC) assessment in Ireland. Its primary focus is quantifying and modeling SOC stocks and changes, not land use land cover (LULC) prediction. While it uses LULC data as an input and mentions future scenarios, the LULC prediction itself is not the central research question or a methodological output of the paper. The core objective is improving SOC estimates, not simulating future LULC patterns. The paper fails the core inclusion criterion that the primary focus must be LULC prediction/simulation.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:06:58.145127+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.364,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789654023-0xdSDq0jaxaPXHVibtEo\",\"object\":\"chat.completion\",\"created\":1789654023,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This is a research paper on soil organic carbon (SOC) assessment in Ireland. Its primary focus is quantifying and modeling SOC stocks and changes, not land use land cover (LULC) prediction. While it uses LULC data as an input and mentions future scenarios, the LULC prediction itself is not the central research question or a methodological output of the paper. The core objective is improving SOC estimates, not simulating future LULC patterns. The paper fails the core inclusion criterion that the primary focus must be LULC prediction/simulation.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15328,\"completion_tokens\":121,\"total_tokens\":15449,\"cost\":0.0020511,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":15232,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0020511,\"upstream_inference_prompt_cost\":0.00200512,\"upstream_inference_completions_cost\":0.00004598},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654023-0xdSDq0jaxaPXHVibtEo",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 15328,
+        "completion_tokens": 121,
+        "total_tokens": 15449,
+        "cost": 0.0020511,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 15232,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0020511,
+          "upstream_inference_prompt_cost": 0.00200512,
+          "upstream_inference_completions_cost": 4.598e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.364,
+  "call_id": "DS__z1_9JIJ9G32__deepseek__r2",
+  "fingerprint": "72282f64392169cff5e77976571e0a486092d5ed893f14882566793d185a7aea",
+  "paper_id": "z1_9JIJ9G32",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:07:02.509176+00:00",
+  "input_sha256": "70de6962f672a5fd10e268e99299ab6580984901c432198ce2dec398175c73e0",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

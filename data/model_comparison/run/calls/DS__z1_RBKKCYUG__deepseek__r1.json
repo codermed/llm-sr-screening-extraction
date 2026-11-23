@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653280-CLrVwwKwjiWdjmZKVjrU",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0042186,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 16050,
+    "completion_tokens": 120,
+    "total_tokens": 16170,
+    "cost": 0.0042186,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0042186,
+      "upstream_inference_prompt_cost": 0.004173,
+      "upstream_inference_completions_cost": 4.56e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a comprehensive data synthesis and comparison study of greenhouse gas emissions across Africa, not a review of LULC prediction methods. Its primary focus is on quantifying and comparing emissions from fossil fuels, LULUCF, CH4, and N2O using various bottom-up and top-down methods over the past three decades. While it analyzes LULUCF CO2 fluxes, it does not involve spatial modeling, prediction, or simulation of future LULC change under different scenarios. The study is diagnostic and evaluative, not predictive.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:54:35.764334+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 7.683,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789653280-CLrVwwKwjiWdjmZKVjrU\",\"object\":\"chat.completion\",\"created\":1789653280,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a comprehensive data synthesis and comparison study of greenhouse gas emissions across Africa, not a review of LULC prediction methods. Its primary focus is on quantifying and comparing emissions from fossil fuels, LULUCF, CH4, and N2O using various bottom-up and top-down methods over the past three decades. While it analyzes LULUCF CO2 fluxes, it does not involve spatial modeling, prediction, or simulation of future LULC change under different scenarios. The study is diagnostic and evaluative, not predictive.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":16050,\"completion_tokens\":120,\"total_tokens\":16170,\"cost\":0.0042186,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0042186,\"upstream_inference_prompt_cost\":0.004173,\"upstream_inference_completions_cost\":0.0000456},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653280-CLrVwwKwjiWdjmZKVjrU",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 16050,
+        "completion_tokens": 120,
+        "total_tokens": 16170,
+        "cost": 0.0042186,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0042186,
+          "upstream_inference_prompt_cost": 0.004173,
+          "upstream_inference_completions_cost": 4.56e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 7.684,
+  "call_id": "DS__z1_RBKKCYUG__deepseek__r1",
+  "fingerprint": "55f376ac9c5d42fa8631a6a606b904e6785d8a5e6bb10f2dd4a8c0181761ede2",
+  "paper_id": "z1_RBKKCYUG",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:54:43.447832+00:00",
+  "input_sha256": "ef542f13d0426926fd90396ad03219f2f37677559a836a6c5ba7e5d42f1e2194",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

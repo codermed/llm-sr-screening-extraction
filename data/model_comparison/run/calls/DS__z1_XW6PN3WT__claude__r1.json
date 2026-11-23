@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789653744-Iv3YpuEPJowg8BM0pixJ",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.016201,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10336,
+    "completion_tokens": 1173,
+    "total_tokens": 11509,
+    "cost": 0.016201,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.016201,
+      "upstream_inference_prompt_cost": 0.010336,
+      "upstream_inference_completions_cost": 0.005865
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land-Use Change Impacts on Ecosystem Services\n\n## Step 1: Determine if Review Article\nThis is **NOT a review article**. It is a primary research paper presenting original empirical modeling and analysis of land-use change projections.\n\n---\n\n## Step 2: Apply Categorization Flow for Non-Review Paper\n\n### Core Inclusion Criteria Assessment:\n\n**1. Explicit national-scale spatial implementation (entire country)**\n- ✅ **PASS**: Study covers \"contiguous United States\" with explicit spatial modeling across all counties. Methods state: \"we generated a land-use transition probability matrix for the period 2001–2051 for each county–soil type combination\" across the nation.\n\n**2. Primary focus = LULC prediction/simulation**\n- ✅ **PASS**: Central research question explicitly stated: \"Here we project land-use change in the contiguous United States to 2051 under two plausible baseline trajectories.\" LULC prediction is the primary objective, not a secondary input.\n\n**3. Implementation of ≥2 future scenarios with quantitative comparison**\n- ✅ **PASS**: Two baseline scenarios (1990s trend and high crop demand) plus three policy scenarios analyzed with quantitative comparisons. Results show explicit numerical differences (e.g., \"28.2 million ha\" vs \"−11.2 million ha\" cropland change).\n\n**4. Spatial modeling with quantitative accuracy metrics**\n- ✅ **PASS**: Econometric model parameterized using 844,000 sample points from USDA National Resource Inventory. Outputs include quantified changes in hectares, percentages, and species habitat metrics. Spatial resolution: 100-m grid resampled from 30-m NLCD.\n\n**5. Outputs include mapped LULC projections**\n- ✅ **PASS**: Figures 1, 3, and 4 display explicit spatial maps of land-use changes across the contiguous US showing geographic patterns of cropland, forest, pasture, urban, and range transitions.\n\n---\n\n### Specific Exclusion Criteria Assessment:\n\n- ❌ **Global-scale without national disaggregation**: Not applicable—study is national-scale.\n- ❌ **Local/regional/global/transboundary focus**: Not applicable—contiguous US is national-scale.\n- ❌ **No LULC prediction component**: Not applicable—LULC prediction is primary focus.\n- ❌ **Species-specific/ecological focus unrelated to LULC**: Not applicable—species habitat assessment is *driven by* LULC change projections.\n- ❌ **Economic/urban models lacking spatially explicit LULC outputs**: Not applicable—econometric model produces explicit spatial LULC maps.\n- ❌ **Biomass/bioenergy/carbon studies without LULC change analysis**: Not applicable—carbon/timber are ecosystem services *resulting from* LULC projections.\n- ❌ **Methodological papers without application**: Not applicable—full application to national-scale prediction.\n- ❌ **Purely qualitative/historical only**: Not applicable—includes future projections to 2051.\n- ❌ **Remote sensing technical studies**: Not applicable—uses remote sensing data as input, not focus.\n- ❌ **Single-scenario projections**: Not applicable—multiple scenarios analyzed.\n\n---\n\n### Additional Full-Text Verification:\n\n**Scale Claims**: Methodology confirms national-scale implementation with county-level net returns data and 100-m spatial resolution grid across contiguous US. No contradiction between abstract and methods.\n\n**Quantitative Metrics**: Extensive quantitative reporting throughout:\n- Land-use changes in millions of hectares with directional indicators\n- Ecosystem service changes (carbon in Mg, food in kcal, timber in millions)\n- Species habitat changes with percentage thresholds (>10% loss/gain categories)\n- Policy cost estimates ($7.5 billion/year for forest incentives; $1.8 billion/year tax receipts for natural habitats)\n\n**Spatial Explicitness**: Econometric model explicitly accounts for spatial heterogeneity via county-specific net returns and soil type characteristics. Transition probability matrices generated for each county-soil combination, applied to 100-m resolution grid.\n\n---\n\n## Final Categorization: **OK**\n\n**Justification**: This paper fully meets all core inclusion criteria for national-scale LULC prediction research. It presents an econometric model projecting spatially explicit land-use change across the contiguous United States from 2001 to 2051 under multiple scenarios (2 baseline + 3 policy alternatives) with quantitative comparisons and mapped outputs. LULC prediction is the explicit primary objective, not incidental to other analyses. The study implements rigorous spatial modeling with documented data sources (844,000 NRI sample points) and produces quantified ecosystem service impacts derived from the LULC projections. All exclusion criteria are satisfied (paper is not a review, not global-scale, includes predictive modeling, and provides spatial outputs).",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:02:19.672468+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 13.075,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653744-Iv3YpuEPJowg8BM0pixJ\",\"object\":\"chat.completion\",\"created\":1789653744,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land-Use Change Impacts on Ecosystem Services\\n\\n## Step 1: Determine if Review Article\\nThis is **NOT a review article**. It is a primary research paper presenting original empirical modeling and analysis of land-use change projections.\\n\\n---\\n\\n## Step 2: Apply Categorization Flow for Non-Review Paper\\n\\n### Core Inclusion Criteria Assessment:\\n\\n**1. Explicit national-scale spatial implementation (entire country)**\\n- ✅ **PASS**: Study covers \\\"contiguous United States\\\" with explicit spatial modeling across all counties. Methods state: \\\"we generated a land-use transition probability matrix for the period 2001–2051 for each county–soil type combination\\\" across the nation.\\n\\n**2. Primary focus = LULC prediction/simulation**\\n- ✅ **PASS**: Central research question explicitly stated: \\\"Here we project land-use change in the contiguous United States to 2051 under two plausible baseline trajectories.\\\" LULC prediction is the primary objective, not a secondary input.\\n\\n**3. Implementation of ≥2 future scenarios with quantitative comparison**\\n- ✅ **PASS**: Two baseline scenarios (1990s trend and high crop demand) plus three policy scenarios analyzed with quantitative comparisons. Results show explicit numerical differences (e.g., \\\"28.2 million ha\\\" vs \\\"−11.2 million ha\\\" cropland change).\\n\\n**4. Spatial modeling with quantitative accuracy metrics**\\n- ✅ **PASS**: Econometric model parameterized using 844,000 sample points from USDA National Resource Inventory. Outputs include quantified changes in hectares, percentages, and species habitat metrics. Spatial resolution: 100-m grid resampled from 30-m NLCD.\\n\\n**5. Outputs include mapped LULC projections**\\n- ✅ **PASS**: Figures 1, 3, and 4 display explicit spatial maps of land-use changes across the contiguous US showing geographic patterns of cropland, forest, pasture, urban, and range transitions.\\n\\n---\\n\\n### Specific Exclusion Criteria Assessment:\\n\\n- ❌ **Global-scale without national disaggregation**: Not applicable—study is national-scale.\\n- ❌ **Local/regional/global/transboundary focus**: Not applicable—contiguous US is national-scale.\\n- ❌ **No LULC prediction component**: Not applicable—LULC prediction is primary focus.\\n- ❌ **Species-specific/ecological focus unrelated to LULC**: Not applicable—species habitat assessment is *driven by* LULC change projections.\\n- ❌ **Economic/urban models lacking spatially explicit LULC outputs**: Not applicable—econometric model produces explicit spatial LULC maps.\\n- ❌ **Biomass/bioenergy/carbon studies without LULC change analysis**: Not applicable—carbon/timber are ecosystem services *resulting from* LULC projections.\\n- ❌ **Methodological papers without application**: Not applicable—full application to national-scale prediction.\\n- ❌ **Purely qualitative/historical only**: Not applicable—includes future projections to 2051.\\n- ❌ **Remote sensing technical studies**: Not applicable—uses remote sensing data as input, not focus.\\n- ❌ **Single-scenario projections**: Not applicable—multiple scenarios analyzed.\\n\\n---\\n\\n### Additional Full-Text Verification:\\n\\n**Scale Claims**: Methodology confirms national-scale implementation with county-level net returns data and 100-m spatial resolution grid across contiguous US. No contradiction between abstract and methods.\\n\\n**Quantitative Metrics**: Extensive quantitative reporting throughout:\\n- Land-use changes in millions of hectares with directional indicators\\n- Ecosystem service changes (carbon in Mg, food in kcal, timber in millions)\\n- Species habitat changes with percentage thresholds (>10% loss/gain categories)\\n- Policy cost estimates ($7.5 billion/year for forest incentives; $1.8 billion/year tax receipts for natural habitats)\\n\\n**Spatial Explicitness**: Econometric model explicitly accounts for spatial heterogeneity via county-specific net returns and soil type characteristics. Transition probability matrices generated for each county-soil combination, applied to 100-m resolution grid.\\n\\n---\\n\\n## Final Categorization: **OK**\\n\\n**Justification**: This paper fully meets all core inclusion criteria for national-scale LULC prediction research. It presents an econometric model projecting spatially explicit land-use change across the contiguous United States from 2001 to 2051 under multiple scenarios (2 baseline + 3 policy alternatives) with quantitative comparisons and mapped outputs. LULC prediction is the explicit primary objective, not incidental to other analyses. The study implements rigorous spatial modeling with documented data sources (844,000 NRI sample points) and produces quantified ecosystem service impacts derived from the LULC projections. All exclusion criteria are satisfied (paper is not a review, not global-scale, includes predictive modeling, and provides spatial outputs).\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10336,\"completion_tokens\":1173,\"total_tokens\":11509,\"cost\":0.016201,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.016201,\"upstream_inference_prompt_cost\":0.010336,\"upstream_inference_completions_cost\":0.005865},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653744-Iv3YpuEPJowg8BM0pixJ",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 10336,
+        "completion_tokens": 1173,
+        "total_tokens": 11509,
+        "cost": 0.016201,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.016201,
+          "upstream_inference_prompt_cost": 0.010336,
+          "upstream_inference_completions_cost": 0.005865
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 13.075,
+  "call_id": "DS__z1_XW6PN3WT__claude__r1",
+  "fingerprint": "c8ded602890e9821c713cd56f6a8c121cb54501ae108d67964368cdc0e204938",
+  "paper_id": "z1_XW6PN3WT",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T14:02:32.747527+00:00",
+  "input_sha256": "25489d9d24f1bc8c8fd6c409c73975b55128b67b1942798256aa4c047d0f3404",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

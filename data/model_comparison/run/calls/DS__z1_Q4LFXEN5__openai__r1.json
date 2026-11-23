@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789652684-Jq8Gt9nrlxhHdn4mhp5l",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0053728,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12808,
+    "completion_tokens": 156,
+    "total_tokens": 12964,
+    "cost": 0.0053728,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0053728,
+      "upstream_inference_prompt_cost": 0.0051232,
+      "upstream_inference_completions_cost": 0.0002496
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: This original research paper focuses on geospatial analysis to model renewable energy requirements and urban expansion scenarios for the new capital city of Indonesia. Although it includes land use classification and urban growth modeling, the spatial scale is regional/local (area of the new capital city and its surroundings), not national-scale. The primary focus is on energy requirements and renewable energy potential rather than a central research question of land use/land cover (LULC) future prediction. While multiple scenarios and land use classification are used, the study does not present national-scale implementation, nor does it emphasize quantitative accuracy metrics for LULC prediction as the core objective. Therefore, it does not meet the core inclusion criteria for national-scale LULC prediction-focused research.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:44:39.927827+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.645,
+      "raw_body": "\n         \n{\"id\":\"gen-1789652684-Jq8Gt9nrlxhHdn4mhp5l\",\"object\":\"chat.completion\",\"created\":1789652684,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: This original research paper focuses on geospatial analysis to model renewable energy requirements and urban expansion scenarios for the new capital city of Indonesia. Although it includes land use classification and urban growth modeling, the spatial scale is regional/local (area of the new capital city and its surroundings), not national-scale. The primary focus is on energy requirements and renewable energy potential rather than a central research question of land use/land cover (LULC) future prediction. While multiple scenarios and land use classification are used, the study does not present national-scale implementation, nor does it emphasize quantitative accuracy metrics for LULC prediction as the core objective. Therefore, it does not meet the core inclusion criteria for national-scale LULC prediction-focused research.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12808,\"completion_tokens\":156,\"total_tokens\":12964,\"cost\":0.0053728,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0053728,\"upstream_inference_prompt_cost\":0.0051232,\"upstream_inference_completions_cost\":0.0002496},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652684-Jq8Gt9nrlxhHdn4mhp5l",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 12808,
+        "completion_tokens": 156,
+        "total_tokens": 12964,
+        "cost": 0.0053728,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0053728,
+          "upstream_inference_prompt_cost": 0.0051232,
+          "upstream_inference_completions_cost": 0.0002496
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.646,
+  "call_id": "DS__z1_Q4LFXEN5__openai__r1",
+  "fingerprint": "61c06e05ee7ca9b938ffd84dcdb689849ba51db5f48009928b74bb8e4b9f0ab4",
+  "paper_id": "z1_Q4LFXEN5",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:44:42.573168+00:00",
+  "input_sha256": "b1e5d92cbd5d22059d6ca4a4218c643898dd340dcaaebf2016496eb38fd410a9",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789654815-wGpCCfmHSvRQIBXWHJMk",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00207138,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15572,
+    "completion_tokens": 95,
+    "total_tokens": 15667,
+    "cost": 0.00207138,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 15488,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00207138,
+      "upstream_inference_prompt_cost": 0.00203528,
+      "upstream_inference_completions_cost": 3.61e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: **EXCLUDED** (Justification: The paper's primary focus is on projecting water yield under climate change scenarios using hydrological modeling (InVEST). While it incorporates land cover data as a static input for the baseline, it does not perform or focus on Land Use Land Cover (LULC) prediction, simulation, or future projection. The core research question is the assessment of hydroclimatic impacts on water resources, not LULC change.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:20:10.363531+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.97,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789654815-wGpCCfmHSvRQIBXWHJMk\",\"object\":\"chat.completion\",\"created\":1789654815,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: **EXCLUDED** (Justification: The paper's primary focus is on projecting water yield under climate change scenarios using hydrological modeling (InVEST). While it incorporates land cover data as a static input for the baseline, it does not perform or focus on Land Use Land Cover (LULC) prediction, simulation, or future projection. The core research question is the assessment of hydroclimatic impacts on water resources, not LULC change.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15572,\"completion_tokens\":95,\"total_tokens\":15667,\"cost\":0.00207138,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":15488,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00207138,\"upstream_inference_prompt_cost\":0.00203528,\"upstream_inference_completions_cost\":0.0000361},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654815-wGpCCfmHSvRQIBXWHJMk",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 15572,
+        "completion_tokens": 95,
+        "total_tokens": 15667,
+        "cost": 0.00207138,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 15488,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00207138,
+          "upstream_inference_prompt_cost": 0.00203528,
+          "upstream_inference_completions_cost": 3.61e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.97,
+  "call_id": "DS__z1_F4MEJBRD__deepseek__r3",
+  "fingerprint": "b6d9865f26ad1d27eb53b3c2a302b71cc7ecaf4cee5e998e92e91cd3b2ab9cd5",
+  "paper_id": "z1_F4MEJBRD",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:20:14.333702+00:00",
+  "input_sha256": "cc60c22a4c074eeb28260784150566f0a32079034ced97ed81089a7b9aa6510e",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

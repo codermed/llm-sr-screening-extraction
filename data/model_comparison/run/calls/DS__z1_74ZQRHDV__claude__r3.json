@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789655353-obXLk1M054Zlop1Rr7MB",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.017402,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 13047,
+    "completion_tokens": 871,
+    "total_tokens": 13918,
+    "cost": 0.017402,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.017402,
+      "upstream_inference_prompt_cost": 0.013047,
+      "upstream_inference_completions_cost": 0.004355
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land Use Modeling in the Midwestern United States\n\n## Initial Classification\nThis is a **NON-REVIEW PAPER** - it presents original research using the Global Change Assessment Model (GCAM) to analyze land use dynamics.\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA ASSESSMENT:\n\n1. **Explicit national-scale spatial implementation (entire country)?**\n   - ❌ FAILS: Study focuses on 14 Midwestern and Mid-Atlantic U.S. states (~2.2 million km²), not the entire nation. The paper explicitly states: \"the present study focuses entirely on dynamics within an individual study region of interest nested within the global model\" and \"our study region is a group of 14 Midwestern and Mid-Atlantic states.\"\n\n2. **Primary focus = LULC prediction/simulation?**\n   - ✓ PASSES: The paper's central research question explicitly addresses land use modeling and spatial resolution effects on land allocation outcomes.\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\n   - ✓ PASSES: Three climate policy scenarios analyzed (Reference/no mitigation, 4.5 W/m², 3.7 W/m²) with quantitative comparisons in Tables 2-3 and Figures 3-4.\n\n4. **Spatial modeling with quantitative accuracy metrics?**\n   - ⚠️ PARTIAL: The paper includes quantitative land use change metrics (km², percentages) but lacks traditional accuracy assessment metrics (e.g., validation against observed data, accuracy statistics, ROC curves). The focus is on comparing outputs across spatial resolutions rather than validating predictions against ground truth.\n\n5. **Outputs include mapped LULC projections?**\n   - ✓ PASSES: Figures 3-4 and 7-9 show land use projections through 2095.\n\n### SPECIFIC EXCLUSION CRITERIA ASSESSMENT:\n\n- **Global-scale analysis without national-level disaggregation?** ✓ FAILS THIS CRITERION: The study is explicitly regional (14 states), not national or global.\n- **Local/regional/global/transboundary scale focus?** ✓ MEETS THIS EXCLUSION: Regional scale (Midwestern U.S. states) is the primary focus.\n- **No LULC prediction component?** ✓ PASSES (not excluded): LULC prediction is central.\n- **Economic/urban models lacking spatially explicit LULC outputs?** ✓ PASSES (not excluded): LULC outputs are spatially explicit.\n- **Single-scenario projections?** ✓ PASSES (not excluded): Multiple scenarios included.\n\n## Critical Finding\n\nThe paper **FAILS the mandatory national-scale requirement** (Inclusion Criterion #1). The study explicitly analyzes a regional subset of the United States (14 states representing ~2.2 million km²), not the entire nation. While the methodology could theoretically be applied nationally, the actual implementation and analysis are confined to a regional study area.\n\n---\n\n## Final Categorization: **EXCLUDED**\n\n**Justification:** This paper fails the core inclusion criterion requiring explicit national-scale spatial implementation. Despite having a strong primary focus on LULC prediction with multiple scenarios and quantitative comparisons, the study is explicitly regional in scope (14 Midwestern/Mid-Atlantic U.S. states). The paper acknowledges this limitation and positions itself as a diagnostic study of spatial resolution effects within a regional context, not as a national-scale LULC prediction model. The authors state their analysis is \"focused on the study region\" and use GCAM to analyze \"land use in the Midwestern United States,\" which does not meet the national-scale requirement for inclusion.",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:29:08.868915+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 11.144,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655353-obXLk1M054Zlop1Rr7MB\",\"object\":\"chat.completion\",\"created\":1789655353,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land Use Modeling in the Midwestern United States\\n\\n## Initial Classification\\nThis is a **NON-REVIEW PAPER** - it presents original research using the Global Change Assessment Model (GCAM) to analyze land use dynamics.\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA ASSESSMENT:\\n\\n1. **Explicit national-scale spatial implementation (entire country)?**\\n   - ❌ FAILS: Study focuses on 14 Midwestern and Mid-Atlantic U.S. states (~2.2 million km²), not the entire nation. The paper explicitly states: \\\"the present study focuses entirely on dynamics within an individual study region of interest nested within the global model\\\" and \\\"our study region is a group of 14 Midwestern and Mid-Atlantic states.\\\"\\n\\n2. **Primary focus = LULC prediction/simulation?**\\n   - ✓ PASSES: The paper's central research question explicitly addresses land use modeling and spatial resolution effects on land allocation outcomes.\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison?**\\n   - ✓ PASSES: Three climate policy scenarios analyzed (Reference/no mitigation, 4.5 W/m², 3.7 W/m²) with quantitative comparisons in Tables 2-3 and Figures 3-4.\\n\\n4. **Spatial modeling with quantitative accuracy metrics?**\\n   - ⚠️ PARTIAL: The paper includes quantitative land use change metrics (km², percentages) but lacks traditional accuracy assessment metrics (e.g., validation against observed data, accuracy statistics, ROC curves). The focus is on comparing outputs across spatial resolutions rather than validating predictions against ground truth.\\n\\n5. **Outputs include mapped LULC projections?**\\n   - ✓ PASSES: Figures 3-4 and 7-9 show land use projections through 2095.\\n\\n### SPECIFIC EXCLUSION CRITERIA ASSESSMENT:\\n\\n- **Global-scale analysis without national-level disaggregation?** ✓ FAILS THIS CRITERION: The study is explicitly regional (14 states), not national or global.\\n- **Local/regional/global/transboundary scale focus?** ✓ MEETS THIS EXCLUSION: Regional scale (Midwestern U.S. states) is the primary focus.\\n- **No LULC prediction component?** ✓ PASSES (not excluded): LULC prediction is central.\\n- **Economic/urban models lacking spatially explicit LULC outputs?** ✓ PASSES (not excluded): LULC outputs are spatially explicit.\\n- **Single-scenario projections?** ✓ PASSES (not excluded): Multiple scenarios included.\\n\\n## Critical Finding\\n\\nThe paper **FAILS the mandatory national-scale requirement** (Inclusion Criterion #1). The study explicitly analyzes a regional subset of the United States (14 states representing ~2.2 million km²), not the entire nation. While the methodology could theoretically be applied nationally, the actual implementation and analysis are confined to a regional study area.\\n\\n---\\n\\n## Final Categorization: **EXCLUDED**\\n\\n**Justification:** This paper fails the core inclusion criterion requiring explicit national-scale spatial implementation. Despite having a strong primary focus on LULC prediction with multiple scenarios and quantitative comparisons, the study is explicitly regional in scope (14 Midwestern/Mid-Atlantic U.S. states). The paper acknowledges this limitation and positions itself as a diagnostic study of spatial resolution effects within a regional context, not as a national-scale LULC prediction model. The authors state their analysis is \\\"focused on the study region\\\" and use GCAM to analyze \\\"land use in the Midwestern United States,\\\" which does not meet the national-scale requirement for inclusion.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":13047,\"completion_tokens\":871,\"total_tokens\":13918,\"cost\":0.017402,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.017402,\"upstream_inference_prompt_cost\":0.013047,\"upstream_inference_completions_cost\":0.004355},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655353-obXLk1M054Zlop1Rr7MB",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 13047,
+        "completion_tokens": 871,
+        "total_tokens": 13918,
+        "cost": 0.017402,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.017402,
+          "upstream_inference_prompt_cost": 0.013047,
+          "upstream_inference_completions_cost": 0.004355
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 11.145,
+  "call_id": "DS__z1_74ZQRHDV__claude__r3",
+  "fingerprint": "f9bc74038a07cd0b19eac36fcb4ce6f1473790d885068ab0eda5a89d07e2b133",
+  "paper_id": "z1_74ZQRHDV",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:29:20.012972+00:00",
+  "input_sha256": "9444e7a06ed4ed781dca0afe84683f048e5cb8797d2fb471325cfbbb2068ed6d",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

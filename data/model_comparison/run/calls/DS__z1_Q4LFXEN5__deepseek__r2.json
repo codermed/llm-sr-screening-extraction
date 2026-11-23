@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653665-LQdJH2wWUftINjfgQx2U",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0016873,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 12697,
+    "completion_tokens": 88,
+    "total_tokens": 12785,
+    "cost": 0.0016873,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 12672,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0016873,
+      "upstream_inference_prompt_cost": 0.00165386,
+      "upstream_inference_completions_cost": 3.344e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "**Final categorization: EXCLUDED** (Justification: The paper is not a review article. It fails the core inclusion criteria for a research paper because its primary focus is on modeling renewable energy requirements and spatial conflicts for a specific new city, not on national-scale Land Use/Land Cover (LULC) prediction. The LULC analysis and urban growth modeling are inputs used to assess energy needs, not the central research objective.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:01:00.717617+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.148,
+      "raw_body": "\n         \n{\"id\":\"gen-1789653665-LQdJH2wWUftINjfgQx2U\",\"object\":\"chat.completion\",\"created\":1789653665,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"**Final categorization: EXCLUDED** (Justification: The paper is not a review article. It fails the core inclusion criteria for a research paper because its primary focus is on modeling renewable energy requirements and spatial conflicts for a specific new city, not on national-scale Land Use/Land Cover (LULC) prediction. The LULC analysis and urban growth modeling are inputs used to assess energy needs, not the central research objective.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":12697,\"completion_tokens\":88,\"total_tokens\":12785,\"cost\":0.0016873,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":12672,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0016873,\"upstream_inference_prompt_cost\":0.00165386,\"upstream_inference_completions_cost\":0.00003344},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653665-LQdJH2wWUftINjfgQx2U",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 12697,
+        "completion_tokens": 88,
+        "total_tokens": 12785,
+        "cost": 0.0016873,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 12672,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0016873,
+          "upstream_inference_prompt_cost": 0.00165386,
+          "upstream_inference_completions_cost": 3.344e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.149,
+  "call_id": "DS__z1_Q4LFXEN5__deepseek__r2",
+  "fingerprint": "880dd01e220a0304bf1dfc013b9e25bbaee211f1d8d25ca66c889903c3b5bba6",
+  "paper_id": "z1_Q4LFXEN5",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:01:03.865970+00:00",
+  "input_sha256": "b1e5d92cbd5d22059d6ca4a4218c643898dd340dcaaebf2016496eb38fd410a9",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

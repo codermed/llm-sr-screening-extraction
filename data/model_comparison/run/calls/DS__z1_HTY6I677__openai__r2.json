@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789654509-0lBkjfUuFDbBYpbIYIdA",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0009488,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 5992,
+    "completion_tokens": 175,
+    "total_tokens": 6167,
+    "cost": 0.0009488,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 5760,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0009488,
+      "upstream_inference_prompt_cost": 0.0006688,
+      "upstream_inference_completions_cost": 0.00028
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: Although the paper involves spatial land use change scenarios for oil palm expansion in Par´a, Brazil, it does not implement an explicit national-scale spatial model covering the entire country. The study focuses regionally on Par´a state only. Furthermore, the modeling approach uses three enforcement scenarios but lacks reported quantitative accuracy metrics such as model validation statistics or accuracy assessments. The spatial modeling is scenario-based but does not clearly report quantitative accuracy metrics or spatial accuracy assessments. Also, the paper’s primary focus is on estimating GHG emissions from land use change under different policy enforcement scenarios rather than on detailed spatial LULC prediction with quantitative model evaluation at the national scale. The study does not meet the core inclusion criteria of explicit national-scale spatial implementation and reporting of quantitative accuracy metrics for LULC prediction. Therefore, it should be excluded.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:15:04.785466+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 3.58,
+      "raw_body": "\n         \n{\"id\":\"gen-1789654509-0lBkjfUuFDbBYpbIYIdA\",\"object\":\"chat.completion\",\"created\":1789654509,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: Although the paper involves spatial land use change scenarios for oil palm expansion in Par´a, Brazil, it does not implement an explicit national-scale spatial model covering the entire country. The study focuses regionally on Par´a state only. Furthermore, the modeling approach uses three enforcement scenarios but lacks reported quantitative accuracy metrics such as model validation statistics or accuracy assessments. The spatial modeling is scenario-based but does not clearly report quantitative accuracy metrics or spatial accuracy assessments. Also, the paper’s primary focus is on estimating GHG emissions from land use change under different policy enforcement scenarios rather than on detailed spatial LULC prediction with quantitative model evaluation at the national scale. The study does not meet the core inclusion criteria of explicit national-scale spatial implementation and reporting of quantitative accuracy metrics for LULC prediction. Therefore, it should be excluded.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":5992,\"completion_tokens\":175,\"total_tokens\":6167,\"cost\":0.0009488,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":5760,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0009488,\"upstream_inference_prompt_cost\":0.0006688,\"upstream_inference_completions_cost\":0.00028},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789654509-0lBkjfUuFDbBYpbIYIdA",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 5992,
+        "completion_tokens": 175,
+        "total_tokens": 6167,
+        "cost": 0.0009488,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 5760,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0009488,
+          "upstream_inference_prompt_cost": 0.0006688,
+          "upstream_inference_completions_cost": 0.00028
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 3.581,
+  "call_id": "DS__z1_HTY6I677__openai__r2",
+  "fingerprint": "dd5189e2cf12644e147139753d5e981f7a077053d1dcda76a9f94cacb4b06113",
+  "paper_id": "z1_HTY6I677",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:15:08.365764+00:00",
+  "input_sha256": "5df5bb01123962e1729bfcc527172501d8194f72da5c9a7401009bdbb7302728",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

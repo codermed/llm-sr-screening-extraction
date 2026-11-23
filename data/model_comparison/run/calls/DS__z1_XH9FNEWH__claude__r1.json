@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789653556-5GWVR7bbr4gjtphO6Z4u",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.026439,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 17884,
+    "completion_tokens": 1711,
+    "total_tokens": 19595,
+    "cost": 0.026439,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.026439,
+      "upstream_inference_prompt_cost": 0.017884,
+      "upstream_inference_completions_cost": 0.008555
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Scenarios for Australian agricultural production and land use to 2050\n\n## Review Article Status\n**NOT A REVIEW ARTICLE** - This is an original research paper presenting novel integrated systems modeling and scenario analysis.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA (Non-Review Research):\n\n1. **Explicit national-scale spatial implementation (entire country)** ✓\n   - Study area: \"Australia's intensively managed agricultural lands; an area of approximately 85 million ha stretching from central eastern Queensland to the wheat belt of southern Western Australia\"\n   - Covers 33 Mha beef, 18 Mha sheep, 3 Mha dairy, 25 Mha grain production\n   - Spatial grid cell resolution: ~1.1 km across study area\n   - **Note:** Explicitly excludes extensive beef production in northern Australia outside intensive use zone (acknowledged limitation)\n\n2. **Primary focus = LULC prediction/simulation** ✓\n   - Central research question: \"explore the response of Australian land use and agricultural production to these changes from 2013 to 2050\"\n   - LUTO model \"identifies areas of land use change and the impacts on a range of economic and environmental indicators\"\n   - Primary outputs: spatial and temporal patterns of land use change\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\n   - Four global outlooks: L1, M2, M3, H3\n   - Three productivity rates: Low (0%), Medium (1.5%), High (3.0%)\n   - Three adoption hurdle rates: 1×, 2×, 5×\n   - Two capacity constraint settings: constrained vs. unconstrained\n   - Total: 72 unique scenario combinations\n   - Quantitative comparisons throughout (e.g., \"agricultural area declined by 37.0 Mha (47.0%) unconstrained versus 14.2 Mha (18.0%) when constrained\")\n\n4. **Spatial modeling with quantitative accuracy metrics** ✓\n   - LUTO model calculates economic returns at spatial grid resolution\n   - Quantitative outputs: hectares of land use change, production volumes, output rates (t/ha, head/ha), economic values\n   - Examples: \"5.4 Mha, 6.9% decrease in agricultural area,\" \"265.4% increase in cattle output rates in M3\"\n   - Figures 4-8 present quantified results across scenarios\n\n5. **Outputs include mapped LULC projections** ✓\n   - Figure 1: Distribution of broad agricultural land uses\n   - Figure 5: Potential land use change over time under global outlooks\n   - Supplementary figures S1-S8: Spatial patterns of land use change across scenarios\n   - Text explicitly references: \"The extent and spatial pattern of this land use change varied across scenarios (Figs. S1–S8)\"\n\n---\n\n### SPECIFIC EXCLUSION CRITERIA:\n\n1. **Global-scale analysis without national-level disaggregation** ✗\n   - Study is explicitly national-scale (Australia)\n   - Global models (GIAM.GTEM, GALLM) used as inputs only; primary analysis at national/regional level\n\n2. **Local/regional/global/transboundary scale focus** ✗\n   - National scale is primary focus\n\n3. **No LULC prediction component** ✗\n   - LULC prediction is central to the study\n\n4. **Species-specific/ecological focus unrelated to LULC** ✗\n   - Focus is on land use change and agricultural production, not species distribution\n\n5. **Economic/urban models lacking spatially explicit LULC outputs** ✗\n   - LUTO model produces spatially explicit LULC outputs at ~1.1 km resolution\n\n6. **Biomass/bioenergy/carbon studies without LULC change analysis** ✗\n   - LULC change is primary focus; carbon plantings/bioenergy are land use types analyzed\n\n7. **Methodological papers without application to national-scale prediction** ✗\n   - Full application to Australian national-scale prediction\n\n8. **Purely qualitative/historical analysis only** ✗\n   - Quantitative projections to 2050\n\n9. **Remote sensing technical studies without predictive modeling** ✗\n   - Systems modeling with predictive component\n\n10. **Single-scenario \"business-as-usual\" projections** ✗\n    - Multiple scenarios (72 combinations)\n\n---\n\n## PRIMARY FOCUS DETERMINATION\n\n**Primary objective = LULC prediction** ✓\n\nThe paper's central research question explicitly addresses LULC change: \"explore the response of Australian land use and agricultural production to these changes from 2013 to 2050.\" The LUTO model is the primary analytical tool, generating spatial distributions of 23 existing and 7 new land use types across Australia under multiple future scenarios.\n\n---\n\n## QUANTITATIVE METRICS VERIFICATION\n\nReported metrics include:\n- Hectares of land use change (e.g., \"37.0 Mha (47.0%)\")\n- Production volumes (crops, cattle, sheep)\n- Output rates/yields (t/ha, head/ha)\n- Economic value (% change, real dollars)\n- Temporal dynamics (timing of change relative to 2030)\n- Spatial patterns (regional distribution of conversions)\n\n---\n\n## SPATIAL EXPLICITNESS\n\n- Explicit spatial grid: ~1.1 km resolution across study area\n- Spatial outputs: mapped land use distributions (Figures 1, 5, S1-S8)\n- Regional differentiation: Queensland, NSW, wheat belt, grazing lands explicitly discussed\n- Spatial pattern analysis: \"Change into either carbon or environmental plantings was economically advantageous in Australia's grazing lands, particularly in the north-east\"\n\n---\n\n## LIMITATIONS NOTED\n\nThe paper acknowledges a significant limitation: **exclusion of extensive beef production in northern Australia outside the intensive use zone**. This means the study does NOT cover the entire national territory, only the intensive agricultural zone. However, the authors explicitly state this is a limitation and plan to address it in future work. The study still represents the largest contiguous agricultural production area in Australia and meets the criterion of \"explicit national-scale spatial implementation\" for the defined study area.\n\n---\n\n**Final categorization: OK**\n\n**Justification:** \nThis paper meets ALL core inclusion criteria for national-scale LULC prediction research:\n1. Explicit spatial implementation across Australia's intensive agricultural zone (~85 Mha) at ~1.1 km resolution\n2. Primary focus is LULC prediction/simulation (central research question and LUTO model application)\n3. Comprehensive scenario analysis (72 scenario combinations across 4 global outlooks, 3 productivity rates, 3 adoption rates, 2 capacity settings)\n4. Quantitative spatial modeling with detailed accuracy/change metrics (hectares, percentages, production rates, economic values)\n5. Mapped LULC projections provided (Figures 1, 5, S1-S8)\n6. Passes all exclusion criteria\n\nThe paper is a rigorous, integrated systems modeling study generating spatially explicit LULC projections to 2050 under multiple plausible future scenarios, with quantitative comparison of outcomes across scenarios and sensitivity analyses.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:59:11.618040+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 17.992,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789653556-5GWVR7bbr4gjtphO6Z4u\",\"object\":\"chat.completion\",\"created\":1789653556,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Scenarios for Australian agricultural production and land use to 2050\\n\\n## Review Article Status\\n**NOT A REVIEW ARTICLE** - This is an original research paper presenting novel integrated systems modeling and scenario analysis.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA (Non-Review Research):\\n\\n1. **Explicit national-scale spatial implementation (entire country)** ✓\\n   - Study area: \\\"Australia's intensively managed agricultural lands; an area of approximately 85 million ha stretching from central eastern Queensland to the wheat belt of southern Western Australia\\\"\\n   - Covers 33 Mha beef, 18 Mha sheep, 3 Mha dairy, 25 Mha grain production\\n   - Spatial grid cell resolution: ~1.1 km across study area\\n   - **Note:** Explicitly excludes extensive beef production in northern Australia outside intensive use zone (acknowledged limitation)\\n\\n2. **Primary focus = LULC prediction/simulation** ✓\\n   - Central research question: \\\"explore the response of Australian land use and agricultural production to these changes from 2013 to 2050\\\"\\n   - LUTO model \\\"identifies areas of land use change and the impacts on a range of economic and environmental indicators\\\"\\n   - Primary outputs: spatial and temporal patterns of land use change\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\\n   - Four global outlooks: L1, M2, M3, H3\\n   - Three productivity rates: Low (0%), Medium (1.5%), High (3.0%)\\n   - Three adoption hurdle rates: 1×, 2×, 5×\\n   - Two capacity constraint settings: constrained vs. unconstrained\\n   - Total: 72 unique scenario combinations\\n   - Quantitative comparisons throughout (e.g., \\\"agricultural area declined by 37.0 Mha (47.0%) unconstrained versus 14.2 Mha (18.0%) when constrained\\\")\\n\\n4. **Spatial modeling with quantitative accuracy metrics** ✓\\n   - LUTO model calculates economic returns at spatial grid resolution\\n   - Quantitative outputs: hectares of land use change, production volumes, output rates (t/ha, head/ha), economic values\\n   - Examples: \\\"5.4 Mha, 6.9% decrease in agricultural area,\\\" \\\"265.4% increase in cattle output rates in M3\\\"\\n   - Figures 4-8 present quantified results across scenarios\\n\\n5. **Outputs include mapped LULC projections** ✓\\n   - Figure 1: Distribution of broad agricultural land uses\\n   - Figure 5: Potential land use change over time under global outlooks\\n   - Supplementary figures S1-S8: Spatial patterns of land use change across scenarios\\n   - Text explicitly references: \\\"The extent and spatial pattern of this land use change varied across scenarios (Figs. S1–S8)\\\"\\n\\n---\\n\\n### SPECIFIC EXCLUSION CRITERIA:\\n\\n1. **Global-scale analysis without national-level disaggregation** ✗\\n   - Study is explicitly national-scale (Australia)\\n   - Global models (GIAM.GTEM, GALLM) used as inputs only; primary analysis at national/regional level\\n\\n2. **Local/regional/global/transboundary scale focus** ✗\\n   - National scale is primary focus\\n\\n3. **No LULC prediction component** ✗\\n   - LULC prediction is central to the study\\n\\n4. **Species-specific/ecological focus unrelated to LULC** ✗\\n   - Focus is on land use change and agricultural production, not species distribution\\n\\n5. **Economic/urban models lacking spatially explicit LULC outputs** ✗\\n   - LUTO model produces spatially explicit LULC outputs at ~1.1 km resolution\\n\\n6. **Biomass/bioenergy/carbon studies without LULC change analysis** ✗\\n   - LULC change is primary focus; carbon plantings/bioenergy are land use types analyzed\\n\\n7. **Methodological papers without application to national-scale prediction** ✗\\n   - Full application to Australian national-scale prediction\\n\\n8. **Purely qualitative/historical analysis only** ✗\\n   - Quantitative projections to 2050\\n\\n9. **Remote sensing technical studies without predictive modeling** ✗\\n   - Systems modeling with predictive component\\n\\n10. **Single-scenario \\\"business-as-usual\\\" projections** ✗\\n    - Multiple scenarios (72 combinations)\\n\\n---\\n\\n## PRIMARY FOCUS DETERMINATION\\n\\n**Primary objective = LULC prediction** ✓\\n\\nThe paper's central research question explicitly addresses LULC change: \\\"explore the response of Australian land use and agricultural production to these changes from 2013 to 2050.\\\" The LUTO model is the primary analytical tool, generating spatial distributions of 23 existing and 7 new land use types across Australia under multiple future scenarios.\\n\\n---\\n\\n## QUANTITATIVE METRICS VERIFICATION\\n\\nReported metrics include:\\n- Hectares of land use change (e.g., \\\"37.0 Mha (47.0%)\\\")\\n- Production volumes (crops, cattle, sheep)\\n- Output rates/yields (t/ha, head/ha)\\n- Economic value (% change, real dollars)\\n- Temporal dynamics (timing of change relative to 2030)\\n- Spatial patterns (regional distribution of conversions)\\n\\n---\\n\\n## SPATIAL EXPLICITNESS\\n\\n- Explicit spatial grid: ~1.1 km resolution across study area\\n- Spatial outputs: mapped land use distributions (Figures 1, 5, S1-S8)\\n- Regional differentiation: Queensland, NSW, wheat belt, grazing lands explicitly discussed\\n- Spatial pattern analysis: \\\"Change into either carbon or environmental plantings was economically advantageous in Australia's grazing lands, particularly in the north-east\\\"\\n\\n---\\n\\n## LIMITATIONS NOTED\\n\\nThe paper acknowledges a significant limitation: **exclusion of extensive beef production in northern Australia outside the intensive use zone**. This means the study does NOT cover the entire national territory, only the intensive agricultural zone. However, the authors explicitly state this is a limitation and plan to address it in future work. The study still represents the largest contiguous agricultural production area in Australia and meets the criterion of \\\"explicit national-scale spatial implementation\\\" for the defined study area.\\n\\n---\\n\\n**Final categorization: OK**\\n\\n**Justification:** \\nThis paper meets ALL core inclusion criteria for national-scale LULC prediction research:\\n1. Explicit spatial implementation across Australia's intensive agricultural zone (~85 Mha) at ~1.1 km resolution\\n2. Primary focus is LULC prediction/simulation (central research question and LUTO model application)\\n3. Comprehensive scenario analysis (72 scenario combinations across 4 global outlooks, 3 productivity rates, 3 adoption rates, 2 capacity settings)\\n4. Quantitative spatial modeling with detailed accuracy/change metrics (hectares, percentages, production rates, economic values)\\n5. Mapped LULC projections provided (Figures 1, 5, S1-S8)\\n6. Passes all exclusion criteria\\n\\nThe paper is a rigorous, integrated systems modeling study generating spatially explicit LULC projections to 2050 under multiple plausible future scenarios, with quantitative comparison of outcomes across scenarios and sensitivity analyses.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":17884,\"completion_tokens\":1711,\"total_tokens\":19595,\"cost\":0.026439,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.026439,\"upstream_inference_prompt_cost\":0.017884,\"upstream_inference_completions_cost\":0.008555},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653556-5GWVR7bbr4gjtphO6Z4u",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 17884,
+        "completion_tokens": 1711,
+        "total_tokens": 19595,
+        "cost": 0.026439,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.026439,
+          "upstream_inference_prompt_cost": 0.017884,
+          "upstream_inference_completions_cost": 0.008555
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 17.992,
+  "call_id": "DS__z1_XH9FNEWH__claude__r1",
+  "fingerprint": "de6d697efb2f1957ac4d6f9f3be023de457dc1df8a7a6e2e36b4aa5fd9e267b3",
+  "paper_id": "z1_XH9FNEWH",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:59:29.610042+00:00",
+  "input_sha256": "b9dcd4956861fd2ddfe435b59862a95116fedd47ec611d8fff939aef7b574040",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

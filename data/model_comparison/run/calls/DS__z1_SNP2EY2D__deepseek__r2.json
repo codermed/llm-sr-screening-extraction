@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789653751-uxZMGrqFz41y9sms39to",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0028358,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 10714,
+    "completion_tokens": 132,
+    "total_tokens": 10846,
+    "cost": 0.0028358,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0028358,
+      "upstream_inference_prompt_cost": 0.00278564,
+      "upstream_inference_completions_cost": 5.016e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: **OK** (Justification: The paper's primary objective is the national-scale prediction of future land use for the Netherlands using the GIS-based Land Use Scanner model. It explicitly implements and compares three distinct socio-economic scenarios (Divided Europe, European Co-ordination, Global Competition) for the year 2020. The modeling is spatially explicit (500m grid cells covering the entire country), uses quantitative suitability maps and a doubly-constrained allocation algorithm, and produces mapped LULC projections. The analysis includes quantitative metrics for model calibration (e.g., regression parameters for residential construction) and assesses environmental impacts based on the simulated land use changes.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:02:26.361261+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 7.611,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789653751-uxZMGrqFz41y9sms39to\",\"object\":\"chat.completion\",\"created\":1789653751,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: **OK** (Justification: The paper's primary objective is the national-scale prediction of future land use for the Netherlands using the GIS-based Land Use Scanner model. It explicitly implements and compares three distinct socio-economic scenarios (Divided Europe, European Co-ordination, Global Competition) for the year 2020. The modeling is spatially explicit (500m grid cells covering the entire country), uses quantitative suitability maps and a doubly-constrained allocation algorithm, and produces mapped LULC projections. The analysis includes quantitative metrics for model calibration (e.g., regression parameters for residential construction) and assesses environmental impacts based on the simulated land use changes.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":10714,\"completion_tokens\":132,\"total_tokens\":10846,\"cost\":0.0028358,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0028358,\"upstream_inference_prompt_cost\":0.00278564,\"upstream_inference_completions_cost\":0.00005016},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653751-uxZMGrqFz41y9sms39to",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 10714,
+        "completion_tokens": 132,
+        "total_tokens": 10846,
+        "cost": 0.0028358,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0028358,
+          "upstream_inference_prompt_cost": 0.00278564,
+          "upstream_inference_completions_cost": 5.016e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 7.612,
+  "call_id": "DS__z1_SNP2EY2D__deepseek__r2",
+  "fingerprint": "d1e1ef5f20e7906a6a1c219e51ee2abeb526530f6d96f4ca55516d24e6ca9196",
+  "paper_id": "z1_SNP2EY2D",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:02:33.972205+00:00",
+  "input_sha256": "45e731a346c69eaf9c909cc06b3612658df1d62a3017e246ec66feacd32522f1",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

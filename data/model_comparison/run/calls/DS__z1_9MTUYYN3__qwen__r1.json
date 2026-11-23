@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "qwen/qwen3-max",
+  "response_id": "gen-1789652953-qBbN0lEqeBPnPmBvZqeu",
+  "returned_provider": "Alibaba",
+  "requested_provider": "alibaba",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.01156974,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 14118,
+    "completion_tokens": 143,
+    "total_tokens": 14261,
+    "cost": 0.01156974,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01156974,
+      "upstream_inference_prompt_cost": 0.01101204,
+      "upstream_inference_completions_cost": 0.0005577
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The study is a non-review research paper focused on LULC simulation and land use conflict assessment, but it is conducted at the local scale—Liyang, a county-level city in China—not at the national scale. This violates the core inclusion criterion requiring \"explicit national-scale spatial implementation (entire country).\" Although the paper implements three future scenarios, uses the CLUMondo model with spatially explicit outputs, reports quantitative accuracy metrics (e.g., Kappa > 0.75), and maps LULC projections, its geographic scope is regional/local, which triggers exclusion under the specific exclusion criterion: \"Local/regional/global/transboundary scale focus.\")",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:49:08.715547+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 5.107,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789652953-qBbN0lEqeBPnPmBvZqeu\",\"object\":\"chat.completion\",\"created\":1789652953,\"model\":\"qwen/qwen3-max\",\"provider\":\"Alibaba\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The study is a non-review research paper focused on LULC simulation and land use conflict assessment, but it is conducted at the local scale—Liyang, a county-level city in China—not at the national scale. This violates the core inclusion criterion requiring \\\"explicit national-scale spatial implementation (entire country).\\\" Although the paper implements three future scenarios, uses the CLUMondo model with spatially explicit outputs, reports quantitative accuracy metrics (e.g., Kappa > 0.75), and maps LULC projections, its geographic scope is regional/local, which triggers exclusion under the specific exclusion criterion: \\\"Local/regional/global/transboundary scale focus.\\\")\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":14118,\"completion_tokens\":143,\"total_tokens\":14261,\"cost\":0.01156974,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.01156974,\"upstream_inference_prompt_cost\":0.01101204,\"upstream_inference_completions_cost\":0.0005577},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652953-qBbN0lEqeBPnPmBvZqeu",
+      "returned_model": "qwen/qwen3-max",
+      "returned_provider": "Alibaba",
+      "usage": {
+        "prompt_tokens": 14118,
+        "completion_tokens": 143,
+        "total_tokens": 14261,
+        "cost": 0.01156974,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.01156974,
+          "upstream_inference_prompt_cost": 0.01101204,
+          "upstream_inference_completions_cost": 0.0005577
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 5.107,
+  "call_id": "DS__z1_9MTUYYN3__qwen__r1",
+  "fingerprint": "02b05e5a2a4c2fd7674d5595220191254297e2fb3744ead276dc766fd6eb2710",
+  "paper_id": "z1_9MTUYYN3",
+  "task": "DS",
+  "model_name": "qwen",
+  "requested_model": "qwen/qwen3-max",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:49:13.822633+00:00",
+  "input_sha256": "16e16ef5b2b010143187b0a6320f0cf07ae62b68d1243b705c11e52288c0c968",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "qwen",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "qwen/qwen3-max",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "alibaba",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

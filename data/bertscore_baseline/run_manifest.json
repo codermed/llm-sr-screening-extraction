@@ -1,0 +1,273 @@
+{
+  "analysis_version": "1.0.0",
+  "source_commit": "543af726f861acca9f66105e557129371f9989d6",
+  "run_mode": "full",
+  "fields": [
+    "Objective",
+    "Sim. Method Advantages",
+    "Key Findings",
+    "Implications",
+    "Limitations",
+    "Future Directions",
+    "Scalability",
+    "Novelty",
+    "LULC Classes",
+    "Scenarios",
+    "Analysis Methods",
+    "Predictors",
+    "Data Sources",
+    "Tools/Soft Used",
+    "Validation Methods",
+    "Validation Data Sources"
+  ],
+  "n_shuffles": 10,
+  "seed": 20260920,
+  "include_pairwise_set_f1": false,
+  "model_type": "roberta-large",
+  "num_layers": 17,
+  "idf": false,
+  "rescale_with_baseline": false,
+  "use_fast_tokenizer": false,
+  "pair_threshold": 0.7,
+  "exclusions": {
+    "10.1007/s12040-016-0786-7": {
+      "zotero_key": "4VZ2CD2X",
+      "reason": "Original extraction refusal reported in manuscript"
+    },
+    "10.1007/s10668-024-05859-w": {
+      "zotero_key": "MEE88MWP",
+      "reason": "Original extraction refusal reported in manuscript"
+    },
+    "10.1371/journal.pone.0311816": {
+      "zotero_key": "SR52IV4U",
+      "reason": "Original unusable extraction output; excluded in NB_Results.ipynb"
+    }
+  },
+  "historical_mean_tolerance": 0.001,
+  "inputs": {
+    "human": {
+      "source": "04-4a_Supplementary_Data_Human_Extraction-1-.csv",
+      "sha256": "c33fa3aa6926e05075cee9df9fc91bff78796f90e9371e4f851ff0b55bc0d49e",
+      "rows": 345
+    },
+    "llm": {
+      "source": "03-4b_Supplementary_Data_LLM_Extraction-1-.csv",
+      "sha256": "ad5bb0122333bbd14d50cb9412279aea2f077b9e0a533bfbd4965bccdc5428e1",
+      "rows": 345
+    }
+  },
+  "packages": {
+    "bert-score": "0.3.13",
+    "transformers": "4.57.6",
+    "torch": "2.14.0",
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "scipy": "1.18.1",
+    "nltk": "3.10.3",
+    "matplotlib": "3.11.2"
+  },
+  "requested_device": "auto",
+  "batch_size": 8,
+  "score_chunk_size": 4096,
+  "started_utc": "2026-09-20T12:50:43.652089+00:00",
+  "python": "3.14.3",
+  "analyzed_papers": 342,
+  "completed": true,
+  "historical_environment_fully_known": false,
+  "interpretation": "Descriptive within-corpus similarity calibration, not factual accuracy.",
+  "model": {
+    "requested_model": "roberta-large",
+    "num_layers": 17,
+    "bertscore_hash": "roberta-large_L17_no-idf_version=0.3.12(hug_trans=4.57.6)",
+    "resolved_revision": "722cf37b1afa9454edce342e7895e588b6ff1d59",
+    "revision_known": true,
+    "device": "cpu",
+    "model_config": {
+      "return_dict": true,
+      "output_hidden_states": false,
+      "torchscript": false,
+      "dtype": "float32",
+      "pruned_heads": {},
+      "tie_word_embeddings": true,
+      "chunk_size_feed_forward": 0,
+      "is_encoder_decoder": false,
+      "is_decoder": false,
+      "cross_attention_hidden_size": null,
+      "add_cross_attention": false,
+      "tie_encoder_decoder": false,
+      "architectures": [
+        "RobertaForMaskedLM"
+      ],
+      "finetuning_task": null,
+      "id2label": {
+        "0": "LABEL_0",
+        "1": "LABEL_1"
+      },
+      "label2id": {
+        "LABEL_0": 0,
+        "LABEL_1": 1
+      },
+      "task_specific_params": null,
+      "problem_type": null,
+      "tokenizer_class": null,
+      "prefix": null,
+      "bos_token_id": 0,
+      "pad_token_id": 1,
+      "eos_token_id": 2,
+      "sep_token_id": null,
+      "decoder_start_token_id": null,
+      "max_length": 20,
+      "min_length": 0,
+      "do_sample": false,
+      "early_stopping": false,
+      "num_beams": 1,
+      "temperature": 1.0,
+      "top_k": 50,
+      "top_p": 1.0,
+      "typical_p": 1.0,
+      "repetition_penalty": 1.0,
+      "length_penalty": 1.0,
+      "no_repeat_ngram_size": 0,
+      "encoder_no_repeat_ngram_size": 0,
+      "bad_words_ids": null,
+      "num_return_sequences": 1,
+      "output_scores": false,
+      "return_dict_in_generate": false,
+      "forced_bos_token_id": null,
+      "forced_eos_token_id": null,
+      "remove_invalid_values": false,
+      "exponential_decay_length_penalty": null,
+      "suppress_tokens": null,
+      "begin_suppress_tokens": null,
+      "num_beam_groups": 1,
+      "diversity_penalty": 0.0,
+      "_name_or_path": "roberta-large",
+      "transformers_version": "4.57.6",
+      "model_type": "roberta",
+      "tf_legacy_loss": false,
+      "use_bfloat16": false,
+      "vocab_size": 50265,
+      "hidden_size": 1024,
+      "num_hidden_layers": 24,
+      "num_attention_heads": 16,
+      "hidden_act": "gelu",
+      "intermediate_size": 4096,
+      "hidden_dropout_prob": 0.1,
+      "attention_probs_dropout_prob": 0.1,
+      "max_position_embeddings": 514,
+      "type_vocab_size": 1,
+      "initializer_range": 0.02,
+      "layer_norm_eps": 1e-05,
+      "position_embedding_type": "absolute",
+      "use_cache": true,
+      "classifier_dropout": null,
+      "output_attentions": false
+    },
+    "tokenizer_class": "RobertaTokenizer",
+    "tokenizer_init": {
+      "model_max_length": "512",
+      "name_or_path": "roberta-large"
+    },
+    "packages": {
+      "bert-score": "0.3.13",
+      "transformers": "4.57.6",
+      "torch": "2.14.0",
+      "numpy": "2.5.3",
+      "pandas": "2.3.3",
+      "scipy": "1.18.1",
+      "nltk": "3.10.3",
+      "matplotlib": "3.11.2"
+    }
+  },
+  "score_fingerprint": "739e28228dcda59b5af612d989a7706f1b3d7dbd50f63b12f3645bc2e7d255c9",
+  "completed_utc": "2026-09-20T13:07:48.789788+00:00",
+  "scoring_minutes": 12.616602329999901,
+  "field_metric_rows": 16,
+  "scored_document_pairs": 54714,
+  "historical_comparison_fields_to_check": [],
+  "token_truncation_entries": 0,
+  "primary_denominators": [
+    {
+      "field": "Objective",
+      "pairs_analyzed": 342
+    },
+    {
+      "field": "Sim. Method Advantages",
+      "pairs_analyzed": 304
+    },
+    {
+      "field": "Key Findings",
+      "pairs_analyzed": 342
+    },
+    {
+      "field": "Implications",
+      "pairs_analyzed": 342
+    },
+    {
+      "field": "Limitations",
+      "pairs_analyzed": 326
+    },
+    {
+      "field": "Future Directions",
+      "pairs_analyzed": 312
+    },
+    {
+      "field": "Scalability",
+      "pairs_analyzed": 255
+    },
+    {
+      "field": "Novelty",
+      "pairs_analyzed": 341
+    },
+    {
+      "field": "LULC Classes",
+      "pairs_analyzed": 341
+    },
+    {
+      "field": "Scenarios",
+      "pairs_analyzed": 336
+    },
+    {
+      "field": "Analysis Methods",
+      "pairs_analyzed": 342
+    },
+    {
+      "field": "Predictors",
+      "pairs_analyzed": 333
+    },
+    {
+      "field": "Data Sources",
+      "pairs_analyzed": 339
+    },
+    {
+      "field": "Tools/Soft Used",
+      "pairs_analyzed": 291
+    },
+    {
+      "field": "Validation Methods",
+      "pairs_analyzed": 216
+    },
+    {
+      "field": "Validation Data Sources",
+      "pairs_analyzed": 212
+    }
+  ],
+  "share_files": [
+    "baseline_summary.csv",
+    "baseline_by_reassignment.csv",
+    "per_paper_comparison.csv",
+    "pair_scores.csv",
+    "historical_method_check.csv",
+    "field_eligibility_audit.csv",
+    "prepared_fields.csv",
+    "pairing_audit.csv",
+    "token_length_audit.csv",
+    "excluded_papers.csv",
+    "included_papers.csv",
+    "missing_value_rules.json",
+    "matched_vs_mismatched.png",
+    "matched_vs_mismatched.pdf",
+    "RESULTS_README.txt",
+    "run_manifest.json"
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789655896-ABGCrskGOxBgSxR6gZqe",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00390144,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 14798,
+    "completion_tokens": 142,
+    "total_tokens": 14940,
+    "cost": 0.00390144,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00390144,
+      "upstream_inference_prompt_cost": 0.00384748,
+      "upstream_inference_completions_cost": 5.396e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "**Final categorization: EXCLUDED** (Justification: This is a systematic review article, but its primary focus is on the application domains of System Dynamics (SD) methodology across business, environment, and health. It does not specifically synthesize or focus on Land Use Land Cover (LULC) future prediction research. While it includes a subsection on \"Land Use\" within the broader \"Environment\" section, this is a brief summary of a few SD applications in that domain, not a dedicated review of LULC prediction methods or outcomes. The paper's objective is to map the realm of SD methodology, not to review LULC prediction studies. Therefore, it fails the categorization flow for review articles.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:38:11.142643+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 4.938,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789655896-ABGCrskGOxBgSxR6gZqe\",\"object\":\"chat.completion\",\"created\":1789655896,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"**Final categorization: EXCLUDED** (Justification: This is a systematic review article, but its primary focus is on the application domains of System Dynamics (SD) methodology across business, environment, and health. It does not specifically synthesize or focus on Land Use Land Cover (LULC) future prediction research. While it includes a subsection on \\\"Land Use\\\" within the broader \\\"Environment\\\" section, this is a brief summary of a few SD applications in that domain, not a dedicated review of LULC prediction methods or outcomes. The paper's objective is to map the realm of SD methodology, not to review LULC prediction studies. Therefore, it fails the categorization flow for review articles.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":14798,\"completion_tokens\":142,\"total_tokens\":14940,\"cost\":0.00390144,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00390144,\"upstream_inference_prompt_cost\":0.00384748,\"upstream_inference_completions_cost\":0.00005396},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655896-ABGCrskGOxBgSxR6gZqe",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 14798,
+        "completion_tokens": 142,
+        "total_tokens": 14940,
+        "cost": 0.00390144,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00390144,
+          "upstream_inference_prompt_cost": 0.00384748,
+          "upstream_inference_completions_cost": 5.396e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 4.939,
+  "call_id": "DS__z1_V27CY8JQ__deepseek__r3",
+  "fingerprint": "e37c114d52956ba76f01bb92e75ef86d6be43265da9a2efe11d2a59a5a2a9c37",
+  "paper_id": "z1_V27CY8JQ",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:38:16.080750+00:00",
+  "input_sha256": "d5b0a0aa575b3c71d67a847f06469aa7ab5364a39dcb4eb06ef85fee06d64e45",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789652610-Lg1cw1YGvhtEEvbGIbIg",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.021038,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15728,
+    "completion_tokens": 1062,
+    "total_tokens": 16790,
+    "cost": 0.021038,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.021038,
+      "upstream_inference_prompt_cost": 0.015728,
+      "upstream_inference_completions_cost": 0.00531
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land Use Change Scenarios in Switzerland\n\n## Initial Classification\n**NOT a review article** - This is an original research article presenting primary empirical analysis.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA (Non-Review Papers):\n\n1. **Explicit national-scale spatial implementation (entire country)** ✓\n   - Study area: Switzerland (41,000 km²) - entire nation\n   - Methods: \"spatially explicit transitions\" applied nationwide\n   - Results presented at national and biogeographic regional scales\n\n2. **Primary focus = LULC prediction/simulation** ✓\n   - Central research question: \"What are the potential landscape-pattern changes under scenarios of land-use change?\"\n   - Three-step analysis explicitly designed for LULC scenario modeling\n   - Abstract states: \"We assess potential effects of agricultural decline in Switzerland...under land-use change scenarios\"\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\n   - Four scenarios developed: (1) Business-as-usual, (2) Liberalisation, (3) Lowered agricultural production (moderate), (4) Lowered agricultural production (strong)\n   - Quantitative comparison across scenarios (Table 2a-e shows transition frequencies; Table 5 shows habitat gains/losses)\n   - Landscape metrics quantitatively compare scenarios (Figure 5)\n\n4. **Spatial modeling with quantitative accuracy metrics** ✓\n   - GLM-based logistic regression for transition probabilities (spatially explicit)\n   - Species habitat suitability models with performance metrics: AUC ranges 0.81-0.96 (Table 4)\n   - 10-fold cross-validation reported (AUCeval, AUC'eval)\n   - Confusion matrices and ROC analysis applied\n\n5. **Outputs include mapped LULC projections** ✓\n   - Figure 4a-e: Mapped land-use scenarios for all four scenarios\n   - Figure 6a-d: Spatial sensitivity maps showing habitat gains/losses\n   - Figure 7a-b: Magnitude of change by biogeographic region\n\n---\n\n### SPECIFIC EXCLUSION CRITERIA:\n\n- ✓ NOT global-scale without national disaggregation\n- ✓ NOT local/regional focus (national scale)\n- ✓ LULC prediction IS a core component\n- ✗ **Species-specific/ecological focus unrelated to LULC**: Paper uses species habitat models as **evaluation metric** for LULC scenarios, not as primary focus. However, species modeling is explicitly integrated into LULC assessment methodology (Section 2.3: \"Species habitat distribution models\")\n- ✓ NOT purely economic/urban models\n- ✓ NOT biomass/carbon studies without LULC analysis\n- ✓ NOT methodological paper (applies methods to national case)\n- ✓ NOT purely qualitative/historical (future projections with quantitative metrics)\n- ✓ NOT remote sensing technical study (applied modeling)\n- ✓ NOT single scenario only (4 scenarios)\n\n---\n\n## Critical Assessment\n\n**Potential Ambiguity**: The paper could be classified as \"POSSIBLE\" because species habitat modeling is a substantial component. However, the explicit research design demonstrates that:\n\n1. Species models serve as **dependent variables** to assess LULC scenario impacts\n2. LULC scenarios are the **primary research focus** (Figure 2 shows LULC scenarios as step 1, species models as step 2)\n3. The core research questions address LULC pattern changes first, species impacts second\n4. All five core inclusion criteria are unambiguously met\n\nThe integration of species habitat analysis strengthens rather than diminishes the LULC prediction focus—it demonstrates applied LULC modeling for conservation outcomes.\n\n---\n\n## Final Categorization\n\n**OK** \n\n**Justification**: This paper meets ALL five core inclusion criteria: (1) explicit national-scale implementation across entire Switzerland; (2) primary focus on LULC prediction under agricultural change scenarios; (3) four distinct future scenarios with quantitative comparative analysis; (4) spatially explicit GLM-based transition modeling with validated accuracy metrics (AUC 0.81-0.96); (5) mapped LULC projections for all scenarios. The paper passes all exclusion criteria. While species habitat modeling is a methodological component, it functions as an evaluation framework for LULC scenarios rather than the primary research objective. The study represents rigorous national-scale LULC scenario modeling with quantified outputs.",
+  "automated_status": "invalid_output",
+  "parsed_label": "",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:43:25.772460+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 13.744,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789652610-Lg1cw1YGvhtEEvbGIbIg\",\"object\":\"chat.completion\",\"created\":1789652610,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land Use Change Scenarios in Switzerland\\n\\n## Initial Classification\\n**NOT a review article** - This is an original research article presenting primary empirical analysis.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA (Non-Review Papers):\\n\\n1. **Explicit national-scale spatial implementation (entire country)** ✓\\n   - Study area: Switzerland (41,000 km²) - entire nation\\n   - Methods: \\\"spatially explicit transitions\\\" applied nationwide\\n   - Results presented at national and biogeographic regional scales\\n\\n2. **Primary focus = LULC prediction/simulation** ✓\\n   - Central research question: \\\"What are the potential landscape-pattern changes under scenarios of land-use change?\\\"\\n   - Three-step analysis explicitly designed for LULC scenario modeling\\n   - Abstract states: \\\"We assess potential effects of agricultural decline in Switzerland...under land-use change scenarios\\\"\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\\n   - Four scenarios developed: (1) Business-as-usual, (2) Liberalisation, (3) Lowered agricultural production (moderate), (4) Lowered agricultural production (strong)\\n   - Quantitative comparison across scenarios (Table 2a-e shows transition frequencies; Table 5 shows habitat gains/losses)\\n   - Landscape metrics quantitatively compare scenarios (Figure 5)\\n\\n4. **Spatial modeling with quantitative accuracy metrics** ✓\\n   - GLM-based logistic regression for transition probabilities (spatially explicit)\\n   - Species habitat suitability models with performance metrics: AUC ranges 0.81-0.96 (Table 4)\\n   - 10-fold cross-validation reported (AUCeval, AUC'eval)\\n   - Confusion matrices and ROC analysis applied\\n\\n5. **Outputs include mapped LULC projections** ✓\\n   - Figure 4a-e: Mapped land-use scenarios for all four scenarios\\n   - Figure 6a-d: Spatial sensitivity maps showing habitat gains/losses\\n   - Figure 7a-b: Magnitude of change by biogeographic region\\n\\n---\\n\\n### SPECIFIC EXCLUSION CRITERIA:\\n\\n- ✓ NOT global-scale without national disaggregation\\n- ✓ NOT local/regional focus (national scale)\\n- ✓ LULC prediction IS a core component\\n- ✗ **Species-specific/ecological focus unrelated to LULC**: Paper uses species habitat models as **evaluation metric** for LULC scenarios, not as primary focus. However, species modeling is explicitly integrated into LULC assessment methodology (Section 2.3: \\\"Species habitat distribution models\\\")\\n- ✓ NOT purely economic/urban models\\n- ✓ NOT biomass/carbon studies without LULC analysis\\n- ✓ NOT methodological paper (applies methods to national case)\\n- ✓ NOT purely qualitative/historical (future projections with quantitative metrics)\\n- ✓ NOT remote sensing technical study (applied modeling)\\n- ✓ NOT single scenario only (4 scenarios)\\n\\n---\\n\\n## Critical Assessment\\n\\n**Potential Ambiguity**: The paper could be classified as \\\"POSSIBLE\\\" because species habitat modeling is a substantial component. However, the explicit research design demonstrates that:\\n\\n1. Species models serve as **dependent variables** to assess LULC scenario impacts\\n2. LULC scenarios are the **primary research focus** (Figure 2 shows LULC scenarios as step 1, species models as step 2)\\n3. The core research questions address LULC pattern changes first, species impacts second\\n4. All five core inclusion criteria are unambiguously met\\n\\nThe integration of species habitat analysis strengthens rather than diminishes the LULC prediction focus—it demonstrates applied LULC modeling for conservation outcomes.\\n\\n---\\n\\n## Final Categorization\\n\\n**OK** \\n\\n**Justification**: This paper meets ALL five core inclusion criteria: (1) explicit national-scale implementation across entire Switzerland; (2) primary focus on LULC prediction under agricultural change scenarios; (3) four distinct future scenarios with quantitative comparative analysis; (4) spatially explicit GLM-based transition modeling with validated accuracy metrics (AUC 0.81-0.96); (5) mapped LULC projections for all scenarios. The paper passes all exclusion criteria. While species habitat modeling is a methodological component, it functions as an evaluation framework for LULC scenarios rather than the primary research objective. The study represents rigorous national-scale LULC scenario modeling with quantified outputs.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15728,\"completion_tokens\":1062,\"total_tokens\":16790,\"cost\":0.021038,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.021038,\"upstream_inference_prompt_cost\":0.015728,\"upstream_inference_completions_cost\":0.00531},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652610-Lg1cw1YGvhtEEvbGIbIg",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 15728,
+        "completion_tokens": 1062,
+        "total_tokens": 16790,
+        "cost": 0.021038,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.021038,
+          "upstream_inference_prompt_cost": 0.015728,
+          "upstream_inference_completions_cost": 0.00531
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 13.744,
+  "call_id": "DS__z1_M96X68LK__claude__r1",
+  "fingerprint": "e67c734bec48ec9fdc26574956d50d4a95fd624247ce6626069badc01a35d996",
+  "paper_id": "z1_M96X68LK",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:43:39.516301+00:00",
+  "input_sha256": "1baf40e9e9c3d655a6e099bf571433a85cb15ff231fefe2e3782f5a4db8a139f",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

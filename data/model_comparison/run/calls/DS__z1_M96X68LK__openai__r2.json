@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653805-UKXV1HupuMnLMaEN360a",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.001686,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 13655,
+    "completion_tokens": 160,
+    "total_tokens": 13815,
+    "cost": 0.001686,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 13440,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001686,
+      "upstream_inference_prompt_cost": 0.00143,
+      "upstream_inference_completions_cost": 0.000256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: OK (Justification: This is a research article focusing on land-use change scenarios for the entire country of Switzerland (~41,000 km2), explicitly modeling ≥3 future scenarios (business as usual, liberalisation, lowered agricultural production). It includes spatially explicit implementation of these scenarios with quantitative landscape metrics assessing changes (e.g., patch size, fragmentation). The study produces mapped LULC projections under each scenario and evaluates quantitative accuracy metrics related to species habitat suitability models. The primary objective is clearly on LULC prediction and simulation at a national scale, with quantitative scenario comparisons and spatial modeling. Although species habitat impacts are assessed, the core focus and methods center on national-scale LULC scenario modeling. Thus, it meets all core inclusion criteria and no exclusion criteria apply.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:03:20.943088+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.656,
+      "raw_body": "\n         \n{\"id\":\"gen-1789653805-UKXV1HupuMnLMaEN360a\",\"object\":\"chat.completion\",\"created\":1789653805,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: This is a research article focusing on land-use change scenarios for the entire country of Switzerland (~41,000 km2), explicitly modeling ≥3 future scenarios (business as usual, liberalisation, lowered agricultural production). It includes spatially explicit implementation of these scenarios with quantitative landscape metrics assessing changes (e.g., patch size, fragmentation). The study produces mapped LULC projections under each scenario and evaluates quantitative accuracy metrics related to species habitat suitability models. The primary objective is clearly on LULC prediction and simulation at a national scale, with quantitative scenario comparisons and spatial modeling. Although species habitat impacts are assessed, the core focus and methods center on national-scale LULC scenario modeling. Thus, it meets all core inclusion criteria and no exclusion criteria apply.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":13655,\"completion_tokens\":160,\"total_tokens\":13815,\"cost\":0.001686,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":13440,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.001686,\"upstream_inference_prompt_cost\":0.00143,\"upstream_inference_completions_cost\":0.000256},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653805-UKXV1HupuMnLMaEN360a",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 13655,
+        "completion_tokens": 160,
+        "total_tokens": 13815,
+        "cost": 0.001686,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 13440,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001686,
+          "upstream_inference_prompt_cost": 0.00143,
+          "upstream_inference_completions_cost": 0.000256
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.657,
+  "call_id": "DS__z1_M96X68LK__openai__r2",
+  "fingerprint": "89ed65cab9fba7930578f85b59d88922aaf7705b0a7d19d905b984b4fe36b41e",
+  "paper_id": "z1_M96X68LK",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 2,
+  "completed_utc": "2026-09-17T14:03:23.599405+00:00",
+  "input_sha256": "1baf40e9e9c3d655a6e099bf571433a85cb15ff231fefe2e3782f5a4db8a139f",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

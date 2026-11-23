@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789655177-Kmt3UaUFstSupsC24xUS",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00410772,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 15644,
+    "completion_tokens": 106,
+    "total_tokens": 15750,
+    "cost": 0.00410772,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00410772,
+      "upstream_inference_prompt_cost": 0.00406744,
+      "upstream_inference_completions_cost": 4.028e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: EXCLUDED (Justification: The paper is a research article, not a review. Its primary focus is on multi-objective optimization for ecological restoration priority zoning using current ecosystem services and cost layers. While it uses historical land use data to *identify past* restoration projects, it does not involve *predicting or simulating future* LULC changes under multiple scenarios, which is the core inclusion criterion. The study's central research question is about spatial prioritization for restoration, not LULC prediction.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:26:12.391719+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 8.533,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789655177-Kmt3UaUFstSupsC24xUS\",\"object\":\"chat.completion\",\"created\":1789655177,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The paper is a research article, not a review. Its primary focus is on multi-objective optimization for ecological restoration priority zoning using current ecosystem services and cost layers. While it uses historical land use data to *identify past* restoration projects, it does not involve *predicting or simulating future* LULC changes under multiple scenarios, which is the core inclusion criterion. The study's central research question is about spatial prioritization for restoration, not LULC prediction.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":15644,\"completion_tokens\":106,\"total_tokens\":15750,\"cost\":0.00410772,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00410772,\"upstream_inference_prompt_cost\":0.00406744,\"upstream_inference_completions_cost\":0.00004028},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655177-Kmt3UaUFstSupsC24xUS",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 15644,
+        "completion_tokens": 106,
+        "total_tokens": 15750,
+        "cost": 0.00410772,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00410772,
+          "upstream_inference_prompt_cost": 0.00406744,
+          "upstream_inference_completions_cost": 4.028e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 8.534,
+  "call_id": "DS__z1_VYGKANT4__deepseek__r3",
+  "fingerprint": "dcb53e86087e02a37b76672ef730d5dc64b599c1619bd13b4d583ceb0326ecc5",
+  "paper_id": "z1_VYGKANT4",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:26:20.924804+00:00",
+  "input_sha256": "333f005ae2dfe31a75a9ec49d572e44389f5a7719c0ae4bd4d6150e066cc19f4",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

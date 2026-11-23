@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789655120-9mrsQuJLxYhRd3WpNI9F",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.001076,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 8234,
+    "completion_tokens": 126,
+    "total_tokens": 8360,
+    "cost": 0.001076,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 8064,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001076,
+      "upstream_inference_prompt_cost": 0.0008744,
+      "upstream_inference_completions_cost": 0.0002016
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: Although the paper involves spatial land cover change modeling and evaluates multiple scenarios, it does not include future projections beyond the 2014 reference date; it assesses historical deforestation patterns and model evaluation methods rather than implementing ≥2 future scenarios with quantitative comparison. The study period ends in 2014 with no explicit future simulation or projection. Also, the scenarios created vary model components but represent deforestation from 2010 to 2014, effectively a single historical scenario rather than future projections. Therefore, it fails the inclusion criterion of implementing multiple future scenarios with mapped LULC projections.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:25:16.082295+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.853,
+      "raw_body": "\n         \n{\"id\":\"gen-1789655120-9mrsQuJLxYhRd3WpNI9F\",\"object\":\"chat.completion\",\"created\":1789655120,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: Although the paper involves spatial land cover change modeling and evaluates multiple scenarios, it does not include future projections beyond the 2014 reference date; it assesses historical deforestation patterns and model evaluation methods rather than implementing ≥2 future scenarios with quantitative comparison. The study period ends in 2014 with no explicit future simulation or projection. Also, the scenarios created vary model components but represent deforestation from 2010 to 2014, effectively a single historical scenario rather than future projections. Therefore, it fails the inclusion criterion of implementing multiple future scenarios with mapped LULC projections.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":8234,\"completion_tokens\":126,\"total_tokens\":8360,\"cost\":0.001076,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":8064,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.001076,\"upstream_inference_prompt_cost\":0.0008744,\"upstream_inference_completions_cost\":0.0002016},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655120-9mrsQuJLxYhRd3WpNI9F",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 8234,
+        "completion_tokens": 126,
+        "total_tokens": 8360,
+        "cost": 0.001076,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 8064,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.001076,
+          "upstream_inference_prompt_cost": 0.0008744,
+          "upstream_inference_completions_cost": 0.0002016
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.853,
+  "call_id": "DS__z1_HXYQTPZG__openai__r3",
+  "fingerprint": "b4829308912a11a92e5449ef86bf0a67e7300769837f80acb96ee7bf28dafbb5",
+  "paper_id": "z1_HXYQTPZG",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:25:18.935285+00:00",
+  "input_sha256": "eb8b94cc29c09ec3ab6a925249d85614cca1d2b4246120bf31fdf82f3f6913b2",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

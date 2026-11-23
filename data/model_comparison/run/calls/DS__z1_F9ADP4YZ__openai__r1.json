@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789653272-IDjAxK6Drx9fs04Ed9Bs",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0071656,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 17566,
+    "completion_tokens": 87,
+    "total_tokens": 17653,
+    "cost": 0.0071656,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0071656,
+      "upstream_inference_prompt_cost": 0.0070264,
+      "upstream_inference_completions_cost": 0.0001392
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: EXCLUDED (Justification: The study focuses on LULC change analysis and future prediction but is conducted at a district (local) scale, not national-scale. It uses a single scenario for future prediction (years 2035 and 2050) without implementation of multiple future scenarios or quantitative scenario comparison. Although spatial modeling and accuracy assessment are performed, the scale and scenario requirements for inclusion are not met.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:54:27.124673+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 5.075,
+      "raw_body": "\n         \n\n         \n{\"id\":\"gen-1789653272-IDjAxK6Drx9fs04Ed9Bs\",\"object\":\"chat.completion\",\"created\":1789653272,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: EXCLUDED (Justification: The study focuses on LULC change analysis and future prediction but is conducted at a district (local) scale, not national-scale. It uses a single scenario for future prediction (years 2035 and 2050) without implementation of multiple future scenarios or quantitative scenario comparison. Although spatial modeling and accuracy assessment are performed, the scale and scenario requirements for inclusion are not met.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":17566,\"completion_tokens\":87,\"total_tokens\":17653,\"cost\":0.0071656,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0071656,\"upstream_inference_prompt_cost\":0.0070264,\"upstream_inference_completions_cost\":0.0001392},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789653272-IDjAxK6Drx9fs04Ed9Bs",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 17566,
+        "completion_tokens": 87,
+        "total_tokens": 17653,
+        "cost": 0.0071656,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0071656,
+          "upstream_inference_prompt_cost": 0.0070264,
+          "upstream_inference_completions_cost": 0.0001392
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 5.076,
+  "call_id": "DS__z1_F9ADP4YZ__openai__r1",
+  "fingerprint": "38f71c4b8ef397db10f72ddef1607043c1eca9d91d1d5e7e3a93a49cbe8be783",
+  "paper_id": "z1_F9ADP4YZ",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:54:32.200010+00:00",
+  "input_sha256": "52bd2eb9639d74990c0a25fef6775067d18ea501b2fc771809613ae232167f41",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

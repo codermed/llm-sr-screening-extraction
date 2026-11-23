@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789655956-aKEkhyOuuiYomqy2IVgg",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.020369,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 14269,
+    "completion_tokens": 1220,
+    "total_tokens": 15489,
+    "cost": 0.020369,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.020369,
+      "upstream_inference_prompt_cost": 0.014269,
+      "upstream_inference_completions_cost": 0.0061
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land Use Change Projections under SSP-RCP Scenarios in China\n\n## REVIEW STATUS\nThis is **NOT a review article**. It is a research paper presenting original land use simulation modeling and projections.\n\n---\n\n## EVALUATION AGAINST INCLUSION/EXCLUSION CRITERIA\n\n### CORE INCLUSION CRITERIA (Non-Review Papers):\n\n1. **Explicit national-scale spatial implementation (entire country)** ✓\n   - Study area: entire China (stated throughout)\n   - Methodology: \"land use simulations in China for the period from 2015 to 2100\"\n   - Results cover all of China at 1 km × 1 km and 5 km × 5 km resolution\n\n2. **Primary focus = LULC prediction/simulation** ✓\n   - Central research question: Generate high-resolution land use projections under SSP-RCP scenarios\n   - Abstract states: \"here we first conduct land use simulations...to generate a high-resolution land use product\"\n   - Methods section (2.2) implements FLUS model specifically for land use change simulation\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\n   - Eight SSP-RCP scenarios implemented: SSP5-8.5, SSP3-7.0, SSP2-4.5, SSP1-2.6, SSP4-6.0, SSP4-3.4, SSP5-3.4-OS, SSP1-1.9\n   - Quantitative comparisons provided (e.g., Fig. 1 trajectories, Fig. 4 land use amounts by scenario)\n   - Detailed scenario-specific analysis in Results section (3.2)\n\n4. **Spatial modeling with quantitative accuracy metrics** ✓\n   - FLUS model implemented with spatial resolution specifications (1 km × 1 km, 5 km × 5 km)\n   - Accuracy metrics reported: Figure of Merit (FoM) values ranging 1.52%-20.01% (Table 4, mean 12.14%)\n   - Model validation conducted comparing 2001-2015 simulations against observed MODIS data\n   - Quantitative change metrics: transition percentages, land use amounts in km²\n\n5. **Outputs include mapped LULC projections** ✓\n   - Figures S3-S7 show spatial land use maps under different scenarios\n   - Figure 5 shows dominant PFT distributions for 2100 across eight scenarios\n   - Figure 6 demonstrates spatial detail of urban projections at multiple resolutions\n   - Dataset described as \"freely available\" with specific temporal (5-year) and spatial (5 km) resolution\n\n### SPECIFIC EXCLUSION CRITERIA:\n\n- **Global-scale analysis without national-level disaggregation** ✗ (Not applicable - national scale)\n- **Local/regional/global/transboundary scale focus** ✗ (National scale study)\n- **No LULC prediction component** ✗ (LULC prediction is primary focus)\n- **Species-specific/ecological focus unrelated to LULC** ✗ (PFT classification is for climate modeling, not species focus)\n- **Economic/urban models lacking spatially explicit LULC outputs** ✗ (Spatially explicit LULC outputs provided)\n- **Biomass/bioenergy/carbon studies without LULC change analysis** ✗ (LULC change is primary focus)\n- **Methodological papers without application to national-scale prediction** ✗ (Full application to China implemented)\n- **Purely qualitative/historical analysis only** ✗ (Future projections to 2100 provided)\n- **Remote sensing technical studies without predictive modeling** ✗ (Predictive modeling implemented)\n- **Single-scenario \"business-as-usual\" projections** ✗ (Eight scenarios implemented)\n\n---\n\n## PRIMARY FOCUS DETERMINATION\n\n**Primary objective = LULC prediction** ✓\n\nThe paper's central aim is explicitly stated: \"To generate a set of high-resolution projections of land use changes for regional researches in China with the new integrated scenarios of SSPs-RCPs.\"\n\nLULC simulation and projection is the primary research objective, not an incidental input or methodological step.\n\n---\n\n## Final categorization: **OK**\n\n**Justification:** \n\nThis paper meets ALL core inclusion criteria for national-scale LULC prediction research:\n- Implements explicit spatial modeling across entire China at fine resolution (1 km and 5 km)\n- Primary focus is LULC prediction/simulation using the FLUS model\n- Evaluates eight distinct SSP-RCP scenarios with quantitative comparisons\n- Reports spatial accuracy metrics (FoM values) and model validation\n- Produces mapped LULC projections for 2015-2100 with temporal resolution of 5 years\n- Meets none of the exclusion criteria\n\nThe paper directly addresses the gap between coarse global land use products (LUH2 at 0.25°) and regional climate modeling needs by downscaling to high-resolution national projections at the PFT classification level suitable for Earth System Models.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:39:11.866449+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 12.435,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789655956-aKEkhyOuuiYomqy2IVgg\",\"object\":\"chat.completion\",\"created\":1789655956,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land Use Change Projections under SSP-RCP Scenarios in China\\n\\n## REVIEW STATUS\\nThis is **NOT a review article**. It is a research paper presenting original land use simulation modeling and projections.\\n\\n---\\n\\n## EVALUATION AGAINST INCLUSION/EXCLUSION CRITERIA\\n\\n### CORE INCLUSION CRITERIA (Non-Review Papers):\\n\\n1. **Explicit national-scale spatial implementation (entire country)** ✓\\n   - Study area: entire China (stated throughout)\\n   - Methodology: \\\"land use simulations in China for the period from 2015 to 2100\\\"\\n   - Results cover all of China at 1 km × 1 km and 5 km × 5 km resolution\\n\\n2. **Primary focus = LULC prediction/simulation** ✓\\n   - Central research question: Generate high-resolution land use projections under SSP-RCP scenarios\\n   - Abstract states: \\\"here we first conduct land use simulations...to generate a high-resolution land use product\\\"\\n   - Methods section (2.2) implements FLUS model specifically for land use change simulation\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\\n   - Eight SSP-RCP scenarios implemented: SSP5-8.5, SSP3-7.0, SSP2-4.5, SSP1-2.6, SSP4-6.0, SSP4-3.4, SSP5-3.4-OS, SSP1-1.9\\n   - Quantitative comparisons provided (e.g., Fig. 1 trajectories, Fig. 4 land use amounts by scenario)\\n   - Detailed scenario-specific analysis in Results section (3.2)\\n\\n4. **Spatial modeling with quantitative accuracy metrics** ✓\\n   - FLUS model implemented with spatial resolution specifications (1 km × 1 km, 5 km × 5 km)\\n   - Accuracy metrics reported: Figure of Merit (FoM) values ranging 1.52%-20.01% (Table 4, mean 12.14%)\\n   - Model validation conducted comparing 2001-2015 simulations against observed MODIS data\\n   - Quantitative change metrics: transition percentages, land use amounts in km²\\n\\n5. **Outputs include mapped LULC projections** ✓\\n   - Figures S3-S7 show spatial land use maps under different scenarios\\n   - Figure 5 shows dominant PFT distributions for 2100 across eight scenarios\\n   - Figure 6 demonstrates spatial detail of urban projections at multiple resolutions\\n   - Dataset described as \\\"freely available\\\" with specific temporal (5-year) and spatial (5 km) resolution\\n\\n### SPECIFIC EXCLUSION CRITERIA:\\n\\n- **Global-scale analysis without national-level disaggregation** ✗ (Not applicable - national scale)\\n- **Local/regional/global/transboundary scale focus** ✗ (National scale study)\\n- **No LULC prediction component** ✗ (LULC prediction is primary focus)\\n- **Species-specific/ecological focus unrelated to LULC** ✗ (PFT classification is for climate modeling, not species focus)\\n- **Economic/urban models lacking spatially explicit LULC outputs** ✗ (Spatially explicit LULC outputs provided)\\n- **Biomass/bioenergy/carbon studies without LULC change analysis** ✗ (LULC change is primary focus)\\n- **Methodological papers without application to national-scale prediction** ✗ (Full application to China implemented)\\n- **Purely qualitative/historical analysis only** ✗ (Future projections to 2100 provided)\\n- **Remote sensing technical studies without predictive modeling** ✗ (Predictive modeling implemented)\\n- **Single-scenario \\\"business-as-usual\\\" projections** ✗ (Eight scenarios implemented)\\n\\n---\\n\\n## PRIMARY FOCUS DETERMINATION\\n\\n**Primary objective = LULC prediction** ✓\\n\\nThe paper's central aim is explicitly stated: \\\"To generate a set of high-resolution projections of land use changes for regional researches in China with the new integrated scenarios of SSPs-RCPs.\\\"\\n\\nLULC simulation and projection is the primary research objective, not an incidental input or methodological step.\\n\\n---\\n\\n## Final categorization: **OK**\\n\\n**Justification:** \\n\\nThis paper meets ALL core inclusion criteria for national-scale LULC prediction research:\\n- Implements explicit spatial modeling across entire China at fine resolution (1 km and 5 km)\\n- Primary focus is LULC prediction/simulation using the FLUS model\\n- Evaluates eight distinct SSP-RCP scenarios with quantitative comparisons\\n- Reports spatial accuracy metrics (FoM values) and model validation\\n- Produces mapped LULC projections for 2015-2100 with temporal resolution of 5 years\\n- Meets none of the exclusion criteria\\n\\nThe paper directly addresses the gap between coarse global land use products (LUH2 at 0.25°) and regional climate modeling needs by downscaling to high-resolution national projections at the PFT classification level suitable for Earth System Models.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":14269,\"completion_tokens\":1220,\"total_tokens\":15489,\"cost\":0.020369,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.020369,\"upstream_inference_prompt_cost\":0.014269,\"upstream_inference_completions_cost\":0.0061},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655956-aKEkhyOuuiYomqy2IVgg",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 14269,
+        "completion_tokens": 1220,
+        "total_tokens": 15489,
+        "cost": 0.020369,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.020369,
+          "upstream_inference_prompt_cost": 0.014269,
+          "upstream_inference_completions_cost": 0.0061
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 12.436,
+  "call_id": "DS__z1_CRABZ3YZ__claude__r3",
+  "fingerprint": "04c5fbad9b86f45f86e3dbae8cd30709e973c57fb047787e677cb74fdcc35e46",
+  "paper_id": "z1_CRABZ3YZ",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:39:24.301855+00:00",
+  "input_sha256": "6ef59fd89e7a18ec8a07c97f6a4b822ff0b2f17496d426d7c8afbaad63037ca8",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

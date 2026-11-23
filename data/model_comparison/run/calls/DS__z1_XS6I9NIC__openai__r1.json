@@ -1,0 +1,106 @@
+{
+  "http_status": 200,
+  "returned_model": "openai/gpt-4.1-mini",
+  "response_id": "gen-1789652748-IPgWfyQhFXHXuVKmHD7j",
+  "returned_provider": "OpenAI",
+  "requested_provider": "openai",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.0031784,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 7250,
+    "completion_tokens": 174,
+    "total_tokens": 7424,
+    "cost": 0.0031784,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0031784,
+      "upstream_inference_prompt_cost": 0.0029,
+      "upstream_inference_completions_cost": 0.0002784
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "completed",
+  "text": "Final categorization: OK (Justification: This is a research paper focused on land-use/land-cover (LULC) prediction for the entire country of Jordan (national-scale). It uses spatially explicit, high-resolution land change simulations with a chain of models integrating climate and socioeconomic scenarios. The study implements multiple future scenarios (including urban expansion, climate change, and socioeconomic change) with quantitative comparison of outputs such as urban area, irrigated and rainfed farmland, crop yields, and irrigation water requirements. The outputs include mapped LULC projections and quantitative metrics (e.g., area changes, yields). The study is not a review. It meets all core inclusion criteria: national-scale spatial implementation, primary focus on LULC prediction, multi-scenario quantitative comparison, spatial modeling with quantitative accuracy, and mapped projections. It does not meet any exclusion criteria.)",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:45:44.030446+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 2.669,
+      "raw_body": "\n         \n{\"id\":\"gen-1789652748-IPgWfyQhFXHXuVKmHD7j\",\"object\":\"chat.completion\",\"created\":1789652748,\"model\":\"openai/gpt-4.1-mini\",\"provider\":\"OpenAI\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"completed\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: OK (Justification: This is a research paper focused on land-use/land-cover (LULC) prediction for the entire country of Jordan (national-scale). It uses spatially explicit, high-resolution land change simulations with a chain of models integrating climate and socioeconomic scenarios. The study implements multiple future scenarios (including urban expansion, climate change, and socioeconomic change) with quantitative comparison of outputs such as urban area, irrigated and rainfed farmland, crop yields, and irrigation water requirements. The outputs include mapped LULC projections and quantitative metrics (e.g., area changes, yields). The study is not a review. It meets all core inclusion criteria: national-scale spatial implementation, primary focus on LULC prediction, multi-scenario quantitative comparison, spatial modeling with quantitative accuracy, and mapped projections. It does not meet any exclusion criteria.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":7250,\"completion_tokens\":174,\"total_tokens\":7424,\"cost\":0.0031784,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.0031784,\"upstream_inference_prompt_cost\":0.0029,\"upstream_inference_completions_cost\":0.0002784},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652748-IPgWfyQhFXHXuVKmHD7j",
+      "returned_model": "openai/gpt-4.1-mini",
+      "returned_provider": "OpenAI",
+      "usage": {
+        "prompt_tokens": 7250,
+        "completion_tokens": 174,
+        "total_tokens": 7424,
+        "cost": 0.0031784,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.0031784,
+          "upstream_inference_prompt_cost": 0.0029,
+          "upstream_inference_completions_cost": 0.0002784
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 2.67,
+  "call_id": "DS__z1_XS6I9NIC__openai__r1",
+  "fingerprint": "c2c2a3ccc392164737797c7630a170cbf67ad3c16fa5e3bf38ffb166e796617d",
+  "paper_id": "z1_XS6I9NIC",
+  "task": "DS",
+  "model_name": "openai",
+  "requested_model": "openai/gpt-4.1-mini",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:45:46.700107+00:00",
+  "input_sha256": "a1817ab987d0526021fed65191ea3fe0e65f5cc66ed8a0eb388a478069844ac3",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "openai",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "openai",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

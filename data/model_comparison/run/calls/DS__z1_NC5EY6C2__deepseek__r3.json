@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "deepseek/deepseek-v3.2",
+  "response_id": "gen-1789655349-P9sv61fSiWSY0Oo2vi2g",
+  "returned_provider": "AtlasCloud",
+  "requested_provider": "atlas-cloud/fp8",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.00345632,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 13048,
+    "completion_tokens": 168,
+    "total_tokens": 13216,
+    "cost": 0.00345632,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00345632,
+      "upstream_inference_prompt_cost": 0.00339248,
+      "upstream_inference_completions_cost": 6.384e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "stop",
+  "text": "Final categorization: **EXCLUDED** (Justification: The paper's primary focus is on modeling the economic and environmental impacts of global socioeconomic pathways (SSPs) on the forest sector, using forest area projections as an *input* from linked models. It does not implement or validate a spatial LULC prediction model itself. The national-scale analysis for New Zealand uses pre-determined forest area changes from a global economic model (GTM) within a regional land-use allocation model (NZFARM). The core research question is not LULC prediction, but rather the assessment of sectoral outputs—timber production, carbon sequestration, GHG emissions—under different scenarios. While it includes future scenarios and national-scale application, it lacks the implementation of a spatial LULC prediction model with quantitative accuracy metrics for LULC change.)",
+  "automated_status": "usable",
+  "parsed_label": "EXCLUDED",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T14:29:04.388770+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 8.174,
+      "raw_body": "\n         \n\n         \n\n         \n{\"id\":\"gen-1789655349-P9sv61fSiWSY0Oo2vi2g\",\"object\":\"chat.completion\",\"created\":1789655349,\"model\":\"deepseek/deepseek-v3.2\",\"provider\":\"AtlasCloud\",\"system_fingerprint\":null,\"service_tier\":null,\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"stop\",\"message\":{\"role\":\"assistant\",\"content\":\"Final categorization: **EXCLUDED** (Justification: The paper's primary focus is on modeling the economic and environmental impacts of global socioeconomic pathways (SSPs) on the forest sector, using forest area projections as an *input* from linked models. It does not implement or validate a spatial LULC prediction model itself. The national-scale analysis for New Zealand uses pre-determined forest area changes from a global economic model (GTM) within a regional land-use allocation model (NZFARM). The core research question is not LULC prediction, but rather the assessment of sectoral outputs—timber production, carbon sequestration, GHG emissions—under different scenarios. While it includes future scenarios and national-scale application, it lacks the implementation of a spatial LULC prediction model with quantitative accuracy metrics for LULC change.)\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":13048,\"completion_tokens\":168,\"total_tokens\":13216,\"cost\":0.00345632,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.00345632,\"upstream_inference_prompt_cost\":0.00339248,\"upstream_inference_completions_cost\":0.00006384},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789655349-P9sv61fSiWSY0Oo2vi2g",
+      "returned_model": "deepseek/deepseek-v3.2",
+      "returned_provider": "AtlasCloud",
+      "usage": {
+        "prompt_tokens": 13048,
+        "completion_tokens": 168,
+        "total_tokens": 13216,
+        "cost": 0.00345632,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.00345632,
+          "upstream_inference_prompt_cost": 0.00339248,
+          "upstream_inference_completions_cost": 6.384e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 8.175,
+  "call_id": "DS__z1_NC5EY6C2__deepseek__r3",
+  "fingerprint": "cde3e5fedcbfb1f221975015a4a989b99c367c1183af7134af5e2b698cd6bc4c",
+  "paper_id": "z1_NC5EY6C2",
+  "task": "DS",
+  "model_name": "deepseek",
+  "requested_model": "deepseek/deepseek-v3.2",
+  "replicate": 3,
+  "completed_utc": "2026-09-17T14:29:12.563478+00:00",
+  "input_sha256": "c815ac374878237ff1fb4375ba5ab601960bc271743cb0657cc77889a21776e8",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "deepseek",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "deepseek/deepseek-v3.2",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "atlas-cloud/fp8",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}

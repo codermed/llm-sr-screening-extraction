@@ -1,0 +1,109 @@
+{
+  "http_status": 200,
+  "returned_model": "anthropic/claude-haiku-4.5",
+  "response_id": "gen-1789652983-AT0SrsluvIwbw3iJXmIn",
+  "returned_provider": "Anthropic",
+  "requested_provider": "anthropic",
+  "error": {},
+  "router_metadata": {},
+  "response_cache_status": "",
+  "reported_cost_usd": 0.023952,
+  "attempts_with_reported_cost": 1,
+  "attempts_without_reported_cost": 0,
+  "usage": {
+    "prompt_tokens": 18002,
+    "completion_tokens": 1190,
+    "total_tokens": 19192,
+    "cost": 0.023952,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.023952,
+      "upstream_inference_prompt_cost": 0.018002,
+      "upstream_inference_completions_cost": 0.00595
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "finish_reason": "stop",
+  "native_finish_reason": "end_turn",
+  "text": "# Full Text Analysis: Land Changes in Slovakia\n\n## Initial Assessment\n**Is this a review article?** NO - This is a research paper presenting original empirical analysis of land-use change in Slovakia from 1980-2012 and future projections to 2040.\n\n---\n\n## Evaluation Against Inclusion/Exclusion Criteria\n\n### CORE INCLUSION CRITERIA (Non-Review Research Papers):\n\n1. **Explicit national-scale spatial implementation (entire country)** ✓\n   - Study area: Slovakia (49,036 km²), entire national territory\n   - Methods section 2.1: \"The study area encompassed the territory of Slovakia\"\n   - All analysis conducted at national level with spatial disaggregation to lowlands vs. mountains\n\n2. **Primary focus = LULC prediction/simulation** ✓\n   - Research objectives explicitly state: \"(2) assess the potential future spatial development of Slovakia to the year 2040 using scenario-based modelling\"\n   - Central research questions include: \"What are the expected land changes between 2012 and 2040?\"\n   - Future scenarios (Section 2.5) are core component\n\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\n   - Five scenarios developed: TREND, A1, A2, B1, B2 (Section 2.5)\n   - Quantitative comparison across scenarios in Results section 3.4\n   - Table S3-S7 provide scenario-specific parameters\n   - Figure 6 shows quantitative comparison of land-use change by scenario\n\n4. **Spatial modeling with quantitative accuracy metrics** ✓\n   - Boosted Regression Trees (BRT) modeling with cross-validation\n   - Accuracy metrics reported: AUC values (0.73-0.99) and correlation coefficients (Fig. 4)\n   - Change rates quantified: annual rates of change calculated for each transition\n   - CLUmondo spatially explicit modeling framework used\n\n5. **Outputs include mapped LULC projections** ✓\n   - Figure 7: Spatial distribution of land-use transitions for 2040\n   - Figures S29-S33 (supplementary): Detailed spatial allocations by scenario\n   - Raster format outputs at 20-m resolution\n\n### SPECIFIC EXCLUSION CRITERIA:\n\n- **Global-scale without national disaggregation?** NO - National-scale focus ✓\n- **Local/regional/global/transboundary focus?** NO - National scale ✓\n- **No LULC prediction component?** NO - Future projections central ✓\n- **Species-specific/ecological focus unrelated to LULC?** NO - Ecological aspects integrated into LULC modeling ✓\n- **Economic/urban models lacking spatial LULC outputs?** NO - Spatial LULC outputs provided ✓\n- **Biomass/bioenergy/carbon without LULC change?** NO - LULC change is primary focus ✓\n- **Methodological paper without national-scale application?** NO - Full application demonstrated ✓\n- **Purely qualitative/historical only?** NO - Future projections included ✓\n- **Remote sensing technical study without predictive modeling?** NO - Predictive modeling implemented ✓\n- **Single-scenario business-as-usual only?** NO - Five scenarios with comparisons ✓\n\n---\n\n## Additional Verification Checks:\n\n**Scale verification in methodology:** \n- Section 2.1 confirms national territory coverage\n- Data processed at 20-m resolution nationwide\n- Results (Section 3) report national aggregates and spatial patterns\n\n**Quantitative metrics reported:**\n- Past changes: Annual rates (%), absolute areas (ha), relative annual rates\n- Model performance: AUC, Pearson correlation coefficients\n- Future projections: Percentage changes by scenario, absolute areas\n\n**Spatial explicitness:**\n- Raster-based modeling at 20-m resolution\n- Friction maps calculated for accessibility\n- Spatial determinants analyzed (distance-based, biophysical, socioeconomic)\n- Mapped outputs showing spatial allocation of changes\n\n**Temporal scope:**\n- Historical analysis (1980-2012) provides foundation\n- Future projections to 2040 with multiple scenarios\n- Clear distinction between past determinants and future suitability modeling\n\n---\n\n## Final Categorization: **OK**\n\n**Justification:** This paper meets ALL core inclusion criteria for a national-scale LULC prediction study. It presents explicit spatial modeling of land-use change across Slovakia's entire territory using boosted regression trees, implements five quantified future scenarios (TREND, A1, A2, B1, B2) with comparative analysis, reports comprehensive accuracy metrics (AUC 0.73-0.99, correlation coefficients), and produces spatially explicit mapped projections to 2040. The primary research objective is LULC prediction, and all outputs are quantitative with spatial disaggregation. The study successfully integrates past institutional changes (socialism, postsocialism, EU accession, EU membership) as drivers of land-use transitions while projecting plausible futures under different policy scenarios.",
+  "automated_status": "usable",
+  "parsed_label": "OK",
+  "extracted_fields": {},
+  "attempts": [
+    {
+      "attempt": 1,
+      "utc": "2026-09-17T13:49:38.379270+00:00",
+      "http_status": 200,
+      "request_id": "",
+      "latency_seconds": 14.373,
+      "raw_body": "\n         \n\n         \n\n         \n\n         \n\n         \n{\"id\":\"gen-1789652983-AT0SrsluvIwbw3iJXmIn\",\"object\":\"chat.completion\",\"created\":1789652983,\"model\":\"anthropic/claude-haiku-4.5\",\"provider\":\"Anthropic\",\"system_fingerprint\":null,\"service_tier\":\"default\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"stop\",\"native_finish_reason\":\"end_turn\",\"message\":{\"role\":\"assistant\",\"content\":\"# Full Text Analysis: Land Changes in Slovakia\\n\\n## Initial Assessment\\n**Is this a review article?** NO - This is a research paper presenting original empirical analysis of land-use change in Slovakia from 1980-2012 and future projections to 2040.\\n\\n---\\n\\n## Evaluation Against Inclusion/Exclusion Criteria\\n\\n### CORE INCLUSION CRITERIA (Non-Review Research Papers):\\n\\n1. **Explicit national-scale spatial implementation (entire country)** ✓\\n   - Study area: Slovakia (49,036 km²), entire national territory\\n   - Methods section 2.1: \\\"The study area encompassed the territory of Slovakia\\\"\\n   - All analysis conducted at national level with spatial disaggregation to lowlands vs. mountains\\n\\n2. **Primary focus = LULC prediction/simulation** ✓\\n   - Research objectives explicitly state: \\\"(2) assess the potential future spatial development of Slovakia to the year 2040 using scenario-based modelling\\\"\\n   - Central research questions include: \\\"What are the expected land changes between 2012 and 2040?\\\"\\n   - Future scenarios (Section 2.5) are core component\\n\\n3. **Implementation of ≥2 future scenarios with quantitative comparison** ✓\\n   - Five scenarios developed: TREND, A1, A2, B1, B2 (Section 2.5)\\n   - Quantitative comparison across scenarios in Results section 3.4\\n   - Table S3-S7 provide scenario-specific parameters\\n   - Figure 6 shows quantitative comparison of land-use change by scenario\\n\\n4. **Spatial modeling with quantitative accuracy metrics** ✓\\n   - Boosted Regression Trees (BRT) modeling with cross-validation\\n   - Accuracy metrics reported: AUC values (0.73-0.99) and correlation coefficients (Fig. 4)\\n   - Change rates quantified: annual rates of change calculated for each transition\\n   - CLUmondo spatially explicit modeling framework used\\n\\n5. **Outputs include mapped LULC projections** ✓\\n   - Figure 7: Spatial distribution of land-use transitions for 2040\\n   - Figures S29-S33 (supplementary): Detailed spatial allocations by scenario\\n   - Raster format outputs at 20-m resolution\\n\\n### SPECIFIC EXCLUSION CRITERIA:\\n\\n- **Global-scale without national disaggregation?** NO - National-scale focus ✓\\n- **Local/regional/global/transboundary focus?** NO - National scale ✓\\n- **No LULC prediction component?** NO - Future projections central ✓\\n- **Species-specific/ecological focus unrelated to LULC?** NO - Ecological aspects integrated into LULC modeling ✓\\n- **Economic/urban models lacking spatial LULC outputs?** NO - Spatial LULC outputs provided ✓\\n- **Biomass/bioenergy/carbon without LULC change?** NO - LULC change is primary focus ✓\\n- **Methodological paper without national-scale application?** NO - Full application demonstrated ✓\\n- **Purely qualitative/historical only?** NO - Future projections included ✓\\n- **Remote sensing technical study without predictive modeling?** NO - Predictive modeling implemented ✓\\n- **Single-scenario business-as-usual only?** NO - Five scenarios with comparisons ✓\\n\\n---\\n\\n## Additional Verification Checks:\\n\\n**Scale verification in methodology:** \\n- Section 2.1 confirms national territory coverage\\n- Data processed at 20-m resolution nationwide\\n- Results (Section 3) report national aggregates and spatial patterns\\n\\n**Quantitative metrics reported:**\\n- Past changes: Annual rates (%), absolute areas (ha), relative annual rates\\n- Model performance: AUC, Pearson correlation coefficients\\n- Future projections: Percentage changes by scenario, absolute areas\\n\\n**Spatial explicitness:**\\n- Raster-based modeling at 20-m resolution\\n- Friction maps calculated for accessibility\\n- Spatial determinants analyzed (distance-based, biophysical, socioeconomic)\\n- Mapped outputs showing spatial allocation of changes\\n\\n**Temporal scope:**\\n- Historical analysis (1980-2012) provides foundation\\n- Future projections to 2040 with multiple scenarios\\n- Clear distinction between past determinants and future suitability modeling\\n\\n---\\n\\n## Final Categorization: **OK**\\n\\n**Justification:** This paper meets ALL core inclusion criteria for a national-scale LULC prediction study. It presents explicit spatial modeling of land-use change across Slovakia's entire territory using boosted regression trees, implements five quantified future scenarios (TREND, A1, A2, B1, B2) with comparative analysis, reports comprehensive accuracy metrics (AUC 0.73-0.99, correlation coefficients), and produces spatially explicit mapped projections to 2040. The primary research objective is LULC prediction, and all outputs are quantitative with spatial disaggregation. The study successfully integrates past institutional changes (socialism, postsocialism, EU accession, EU membership) as drivers of land-use transitions while projecting plausible futures under different policy scenarios.\",\"refusal\":null,\"reasoning\":null}}],\"usage\":{\"prompt_tokens\":18002,\"completion_tokens\":1190,\"total_tokens\":19192,\"cost\":0.023952,\"is_byok\":false,\"prompt_tokens_details\":{\"cached_tokens\":0,\"cache_write_tokens\":0,\"audio_tokens\":0,\"video_tokens\":0},\"cost_details\":{\"upstream_inference_cost\":0.023952,\"upstream_inference_prompt_cost\":0.018002,\"upstream_inference_completions_cost\":0.00595},\"completion_tokens_details\":{\"reasoning_tokens\":0,\"image_tokens\":0,\"audio_tokens\":0}}}",
+      "response_id": "gen-1789652983-AT0SrsluvIwbw3iJXmIn",
+      "returned_model": "anthropic/claude-haiku-4.5",
+      "returned_provider": "Anthropic",
+      "usage": {
+        "prompt_tokens": 18002,
+        "completion_tokens": 1190,
+        "total_tokens": 19192,
+        "cost": 0.023952,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.023952,
+          "upstream_inference_prompt_cost": 0.018002,
+          "upstream_inference_completions_cost": 0.00595
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "error": {},
+      "response_cache_status": "",
+      "retry_after": ""
+    }
+  ],
+  "total_seconds": 14.374,
+  "call_id": "DS__z1_ICVB77WI__claude__r1",
+  "fingerprint": "85f7b8975b159f92a41f17f057e7b5bac5fa4052e885eb8299761fb3cf5663db",
+  "paper_id": "z1_ICVB77WI",
+  "task": "DS",
+  "model_name": "claude",
+  "requested_model": "anthropic/claude-haiku-4.5",
+  "replicate": 1,
+  "completed_utc": "2026-09-17T13:49:52.752549+00:00",
+  "input_sha256": "7eeec8cddcdb1263749ee6fd652bf906f0ab1606aceeaa50619be678e919c8fd",
+  "prompt_sha256": "c4c66a2d2b0d67fe24454a630b2e0d2e4b20d35c904f736874fa3c933f177663",
+  "settings": {
+    "name": "claude",
+    "enabled": true,
+    "api": "openrouter",
+    "model": "anthropic/claude-haiku-4.5",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "provider_slug": "anthropic",
+    "parameters": {
+      "temperature": 0.6,
+      "max_tokens": 4096,
+      "reasoning": {
+        "enabled": false
+      }
+    },
+    "max_parallel_requests": 2
+  },
+  "prior_transient_result_files": []
+}
