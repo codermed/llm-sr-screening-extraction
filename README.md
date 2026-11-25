@@ -1,10 +1,15 @@
 # LLM-assisted screening and extraction for systematic reviews: code and data
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24521568.svg)](https://doi.org/10.5281/zenodo.24521568)
+
 Code and data for:
 
 > Derdouri, A., Oyama, T., Murayama, Y., & Masago, Y. *LLM-assisted screening and extraction for
 > systematic reviews: performance and refusal-related missingness in a land-use evidence synthesis.*
 > Environmental Evidence (under review).
+
+Archived on Zenodo: version v1.0.0, used in the paper, https://doi.org/10.5281/zenodo.24521569
+(all versions: https://doi.org/10.5281/zenodo.24521568).
 
 The study evaluated a hosted large language model (Qwen Max, `qwen-max-2025-01-25`) for title–abstract
 screening, full-text screening and structured data extraction in a corpus of national-scale
@@ -144,4 +149,9 @@ be audited and reused.
 
 ## Citation
 
-If you use this code or data, please cite the article above and this repository (see `CITATION.cff`).
+If you use this code or data, please cite the article above and the archived code:
+
+> Derdouri, A. (2026). *LLM-assisted screening and extraction for systematic reviews: code and data*
+> (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.24521569
+
+Citation metadata are also in `CITATION.cff` (GitHub's "Cite this repository" button).
