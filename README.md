@@ -151,7 +151,7 @@ be audited and reused.
 
 If you use this code or data, please cite the article above and the archived code:
 
-> Derdouri, A. (2026). *LLM-assisted screening and extraction for systematic reviews: code and data*
-> (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.24521569
+> Derdouri, A., Oyama, T., Murayama, Y., & Masago, Y. (2026). *LLM-assisted screening and extraction for
+> systematic reviews: code and data* (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.24521569
 
 Citation metadata are also in `CITATION.cff` (GitHub's "Cite this repository" button).
